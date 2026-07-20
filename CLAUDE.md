@@ -62,7 +62,7 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 - **Publish** — generated JSON / search index is committed to the repo. No database.
 - **Serve** — static site on GitHub Pages or Cloudflare Pages (free). Client-side search.
 
-**Cost note:** Phase 1 has effectively zero running cost. The only variable cost is Phase 2 LLM summaries — one-time per acta, cached permanently, trivial at ~75 actas per term.
+**Cost note:** Phase 1 has effectively zero running cost — confirmed, it is static files plus a scheduled Action. **Phase 2's cost estimate changed:** it is no longer "just summaries". Every acta needs OCR *before* any summary, and the corpus is 636 sessions across 5 terms, not ~75. Scope Phase 2 to the current term first.
 
 ---
 
@@ -70,8 +70,8 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 
 | Phase | Name | Scope |
 |---|---|---|
-| **1** | The Index *(current)* | Live static site: **search bar + browsable session timeline** over agenda text. Solves the original frustration on its own. |
-| **2** | The Deepening | Extract PDF text; attach plain-language summaries to each agenda item + its outcome; full-content search. |
+| **1** | The Index | Static site: **search bar + browsable session timeline** over agenda text. **Built and verified locally 2026-07-19/20; not yet public** (gated on X1 + X2). |
+| **2** | The Deepening *(next)* | **OCR the scanned PDFs**, then attach plain-language summaries to each agenda item + its outcome; full-content search. |
 | **3** | Trends & Scale | Trend dashboards (licencias, fraccionamientos, budgets per quarter) + multi-municipality abstraction. |
 
 ---
@@ -79,47 +79,71 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 ## Phase 1 backlog
 
 Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are Fable's.
+**Status as of 2026-07-20: A, B and C are done; X1 and X2 are open and gate launch.**
 
-### Epic A — Data acquisition
+### Epic A — Data acquisition ✅
 
-- **A1 — Scrape the index into structured records.** Fields: `fecha`, `no_acta`, `período`, `agenda_items[]`, `pdf_url`.
-  ✓ Every row on the page becomes one clean JSON record, agenda split into individual numbered items.
-- **A2 — Handle the messy bits.** Inconsistent numbering (`074` vs `0070` vs `051`), dashed separators inside agenda text, duplicate dates (two actas on 14 marzo 2025).
-  ✓ Parser survives all current rows with no manual cleanup.
-- **A3 — [EARLY SPIKE] Verify PDF text-extractability** on 5–8 actas spread across the date range.
-  ✓ We know the % of actas needing OCR. Run this early — it de-risks Phase 2 cheaply.
+- **A1 — Scrape the index into structured records.** ✅ `scraper/scrape_colima.py`, stdlib only.
+  ✓ 640 rows → **636 sessions / 6,992 agenda items**, no manual cleanup.
+- **A2 — Handle the messy bits.** ✅ All absorbed: numbering variants, three período spellings + one blank, four agenda numbering styles, dash-run separators, spilled minutes text, 4 duplicated sessions (deduped), and a **numbering gap in the source itself** (acta 76/2017 runs VI→VIII). Full rules in `docs/metodologia.md` §3.
+- **A3 — [EARLY SPIKE] Verify PDF text-extractability.** ✅ **Result inverted the plan** — see `docs/a3-spike.md`. ~100% of actas need OCR.
 
-### Epic B — Search & interface
+### Epic B — Search & interface ✅
 
-- **B1 — Static scaffold + browser-side search index** over agenda text.
-  ✓ Typing "CARSOL CHEVROLET" returns acta #71, item IX, dated 15 abril 2026, linking to the PDF.
-- **B2 — Combined interface: search bar + results list AND a browsable session timeline** (agreed primary interaction).
-  ✓ A resident can either search a keyword or scroll the timeline, and reach a source PDF in two clicks.
-- **B3 — Result view:** date, acta number, matching agenda item highlighted, link to source PDF.
-  ✓ Match context is legible at a glance without opening the PDF.
-- **B4 — Filters:** date range and período. (Theme filter deferred to Phase 2.)
-  ✓ Date-range filter narrows timeline and results correctly.
+- **B1 — Static scaffold + browser-side search index.** ✅ In-memory over ~7k items, accent/case-folded, no dependencies.
+  ✓ Verified: "carsol" → acta 71, punto IX, 15 abril 2026, linking to the PDF.
+- **B2 — Combined interface.** ✅ Search + results, or year-grouped timeline expanding to full agendas.
+- **B3 — Result view.** ✅ Date, acta number, punto, período, highlighted match, PDF link.
+- **B4 — Filters.** ✅ Período + date range, applying to both timeline and results.
+- **B5 — Design pass against the Umbral brand system.** ✅ *(added 2026-07-20)* Signal budget, type scale, 8px spacing, KPI stat row, table spec for the timeline, self-hosted fonts, a11y. Recorded in `docs/diseno.md`.
 
-### Epic C — Deploy & refresh
+### Epic C — Deploy & refresh ✅ *(scaffolded, not yet public)*
 
-- **C1 — Deploy** to GitHub Pages / Cloudflare Pages with a scheduled GitHub Action to re-scrape.
-  ✓ Site is live at a public URL and refreshes automatically when new actas are published.
+- **C1 — Deploy** with a scheduled GitHub Action to re-scrape. ✅ Workflow written; **target agreed: `umbralmx/cabildo-libre` → https://umbralmx.github.io/cabildo-libre/** (project page, own repo). Not yet pushed: repo doesn't exist on GitHub yet and `gh` isn't authenticated locally.
+  ✓ *Pending:* create repo, push, enable Pages (Source: GitHub Actions), trigger first run.
 
 ### Cross-cutting — validate early
 
-- **X1 — Legal check.** Review the site's *Términos y Condiciones* (linked on the actas page) to confirm scraping public actas is within terms. *(You + Claude)*
-  ✓ A short written go/no-go note. Needed before public launch, not before development.
-- **X2 — Hosting identity.** Memorable domain vs. free subdomain for v1. *(You)*
-  ✓ A URL is chosen so C1 can ship.
+- **X1 — Legal check.** ⚠️ **Reviewed 2026-07-20 → `docs/x1-terminos-legal.md`. Not a clean go.** The portal's T&C prohibit reproduction, distribution and public communication of its contents except for private use, research or study. There are serious counterarguments (official texts aren't copyrightable under LFDA art. 14; actas are transparency-obligated public information), but **this needs a human decision and ideally counsel.** Interim mitigation already applied: we no longer claim CC BY 4.0 over the source text, only over our own structuring work.
+- **X2 — Hosting identity.** Partially resolved: `umbralmx.github.io/cabildo-libre/` is the free path and needs no purchase. A memorable domain is still an open preference. *(You)*
 
 ---
 
 ## Open items & checkpoints
 
-- **Run A3 first.** The OCR spike is the cheapest way to de-risk Phase 2 — even though it's Phase-2-facing.
-- **"Decision outcome" is a Phase 2 concept.** Phase 1 shows what was *on the agenda*; confirming *approved vs. tabled* depends on PDF parsing. Flag any acta where agenda ≠ outcome as a design case.
-- **Legal (X1)** gates public launch, not development.
-- **Suggested checkpoint cadence:** short review after A1–A3 (is the data clean?) → after B1–B2 (does search actually answer the neighborhood question?) → pre-deploy.
+- **X1 is now the real blocker** and it is not a formality. Cheap parallel moves: a formal transparency request to the Ayuntamiento, and a consult with R3D or Artículo 19 México. Options table in `docs/x1-terminos-legal.md` §5.
+- **"Decision outcome" is a Phase 2 concept.** Phase 1 shows what was *on the agenda*; confirming *approved vs. tabled* depends on OCR + PDF parsing. The site states this limitation explicitly in its methodology section and in the empty-search state — keep it that way.
+- **Phase 2 needs a scoping decision before any code:** OCR engine (Tesseract `spa` on Actions = free/slow/medium quality on stamped, signed scans; vs. a vision model = one-time cost per acta, cached) and corpus scope (all 636 actas vs. current term's 74). Do a small OCR quality spike on 3 actas of different vintages before committing.
+- **Watch for source drift.** The scraper prints a control summary each run (records, items, empty agendas, problems). If those numbers move oddly after a scheduled run, the page's HTML likely changed.
+- **Link rot is the ayuntamiento's, not ours** — but a periodic link check is worth adding in Phase 2/3.
+- **Checkpoint cadence:** A1–A3 review ✅ done · B1–B2 review ✅ done · **pre-deploy review ← we are here**, blocked on X1.
+
+---
+
+## Next steps (2026-07-20)
+
+**For the maintainer (human-only):**
+1. **Decide X1.** Read `docs/x1-terminos-legal.md`. Start a transparency request and/or a consult with R3D / Artículo 19 — both are cheap and run in the background while you decide between launching with attribution or launching in reduced "index mode".
+2. **Create `umbralmx/cabildo-libre` on GitHub** (public) and authenticate `gh` locally if you want the agent to push and configure Pages.
+3. **Confirm X2** — free `umbralmx.github.io/cabildo-libre/` for v1, or buy a domain.
+
+**Ready for the agent, once unblocked:**
+4. Push, enable Pages, trigger the first workflow run, verify the live URL.
+5. Phase 2 scoping spike: OCR quality test on 3 actas (2014 / 2020 / 2026 vintages) with Tesseract `spa` vs. a vision model, on a page containing a stamp and signatures — that is the hard case.
+
+---
+
+## Documentation map
+
+| File | What it holds |
+|---|---|
+| `CLAUDE.md` *(this file)* | Project context, scope, backlog, status |
+| `docs/metodologia.md` | **How the data is produced** — pipeline, parsing rules, editorial decisions, known gaps, how to reproduce |
+| `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
+| `docs/x1-terminos-legal.md` | T&C findings, risk, and options — **read before launching** |
+| `docs/diseno.md` | How the Umbral brand system was applied, and deliberate deviations |
+| `data/SOURCE.md` | Dataset provenance, caveats, licensing position |
+| `README.md` | Orientation for anyone landing in the repo |
 
 ---
 
@@ -128,3 +152,5 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 - Keep the Colima-specific scraping logic isolated (one module/file) so Phase 3 generalization is a refactor, not a rewrite — but **do not build the multi-city abstraction now.**
 - Prefer boring, well-supported static tooling over clever infra. The maintainer inherits this; it must stay runnable with zero ops.
 - When a task is ambiguous, surface the question at the next checkpoint rather than guessing at scope.
+- **Never fill a gap in the source by inference.** Missing dates, missing agendas, skipped numerals and dead links stay visible in the data and, where it matters, on screen. The one exception (backfilling a blank período from the session date) is documented in `docs/metodologia.md` §3.3.
+- **Follow the brand system in `assets/`** for anything user-facing; record interpretation calls in `docs/diseno.md` rather than drifting silently.

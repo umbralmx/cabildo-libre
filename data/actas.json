@@ -1,6 +1,6 @@
 {
  "fuente": "https://www.colima.gob.mx/portal2016/actas-de-cabildo/",
- "generado": "2026-07-20T01:21:50+00:00",
+ "generado": "2026-07-20T16:55:50+00:00",
  "actas": [
   {
    "id": "2024-2027-74",
@@ -5910,7 +5910,17 @@
     {
      "n": 11,
      "numeral": "XI",
-     "texto": "Entrega por la Presidenta Municipal del documento que contiene el Informe Anual de su Gestión Administrativa y lectura del mensaje. XIII.- Intervención de la Gobernadora del Estado o del representante de Gobierno del Estado. XIV.- Clausura de la sesión."
+     "texto": "Entrega por la Presidenta Municipal del documento que contiene el Informe Anual de su Gestión Administrativa y lectura del mensaje."
+    },
+    {
+     "n": 13,
+     "numeral": "XIII",
+     "texto": "Intervención de la Gobernadora del Estado o del representante de Gobierno del Estado."
+    },
+    {
+     "n": 14,
+     "numeral": "XIV",
+     "texto": "Clausura de la sesión."
     }
    ],
    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/10/acta-n-125.pdf",
@@ -29599,7 +29609,32 @@
     {
      "n": 6,
      "numeral": "VI",
-     "texto": "Lectura, discusión y aprobación en su caso, del Dictamen que autoriza realizar las aperturas y transferencias de los recutsos fiscales de diversas partidas presupuestales. VIII.- Lectura, discusión y aprobación en su caso, del Dictamen que aprueba el REGLAMENTO INTERIOR DEL CENTRO MUNICIPAL DE NEGOCIOS. IX.- Lectura, discusión y aprobación en su caso, del Dictamen que autoriza la expedición de dos licencias para el funcionamiento de establecimientos comerciales con giro de Venta y Consumo de Bebidas Alcohólicas, asimismo, se autoriza una de cambio de domicilio y una de cambio de giro de establecimientos ya autorizados. X.- Lectura, discusión y aprobación en su caso, del Dictamen que autoriza al Director General de Servicios Públicos suscriba los Convenios de Recoección de Residuos Sólidos y del Uso del Relleno Sanitario, así como se elaboren los convenios del Traslado de Materiales y Depósito de Residuos Sólidos con los factores de cobro vigentes. XI.- Asuntos Generales. XII.- Clausura."
+     "texto": "Lectura, discusión y aprobación en su caso, del Dictamen que autoriza realizar las aperturas y transferencias de los recutsos fiscales de diversas partidas presupuestales."
+    },
+    {
+     "n": 8,
+     "numeral": "VIII",
+     "texto": "Lectura, discusión y aprobación en su caso, del Dictamen que aprueba el REGLAMENTO INTERIOR DEL CENTRO MUNICIPAL DE NEGOCIOS."
+    },
+    {
+     "n": 9,
+     "numeral": "IX",
+     "texto": "Lectura, discusión y aprobación en su caso, del Dictamen que autoriza la expedición de dos licencias para el funcionamiento de establecimientos comerciales con giro de Venta y Consumo de Bebidas Alcohólicas, asimismo, se autoriza una de cambio de domicilio y una de cambio de giro de establecimientos ya autorizados."
+    },
+    {
+     "n": 10,
+     "numeral": "X",
+     "texto": "Lectura, discusión y aprobación en su caso, del Dictamen que autoriza al Director General de Servicios Públicos suscriba los Convenios de Recoección de Residuos Sólidos y del Uso del Relleno Sanitario, así como se elaboren los convenios del Traslado de Materiales y Depósito de Residuos Sólidos con los factores de cobro vigentes."
+    },
+    {
+     "n": 11,
+     "numeral": "XI",
+     "texto": "Asuntos Generales."
+    },
+    {
+     "n": 12,
+     "numeral": "XII",
+     "texto": "Clausura."
     }
    ],
    "pdf_url": "http://www.colima.gob.mx/portal2016/wp-content/uploads/2017/09/acta76_2017.pdf",
@@ -30682,7 +30717,12 @@
     {
      "n": 16,
      "numeral": "XVI",
-     "texto": "Aprobación o reprobación de la Minuta Proyecto de Decreto por el que se reforma la fracción I, párrafo segundo y la fracción V, párrafo segundo ambos del Artículo 1° de la Constitución Política del Estado Libre y Soberano de Colima, para Homologar la disminución de la edad para acceder a las políticas públicas que beneficien a los adultos mayores, de 64 a 60 años. XVII.Asuntos Generales. XVIII. Clausura."
+     "texto": "Aprobación o reprobación de la Minuta Proyecto de Decreto por el que se reforma la fracción I, párrafo segundo y la fracción V, párrafo segundo ambos del Artículo 1° de la Constitución Política del Estado Libre y Soberano de Colima, para Homologar la disminución de la edad para acceder a las políticas públicas que beneficien a los adultos mayores, de 64 a 60 años. XVII.Asuntos Generales."
+    },
+    {
+     "n": 18,
+     "numeral": "XVIII",
+     "texto": "Clausura."
     }
    ],
    "pdf_url": "http://www.colima.gob.mx/portal2016/wp-content/uploads/2017/09/Acta87_2017.pdf",

@@ -6,6 +6,13 @@
 const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
   "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
 
+/* A point is "substantive" if it decides something; "procedural" if it is the
+   scaffolding every session repeats (roll call, quorum, reading the agenda,
+   approving previous minutes, recess, closing). Used only for visual
+   hierarchy — the full text is always rendered either way. */
+const SUSTANTIVO = /dictamen|punto de acuerdo|iniciativa|convenio|reglamento|presupuesto|propuesta|autoriza|aprueba la|informe/i;
+const PROCEDIMIENTO = /^(lista de (asistencia|presentes)|declaraci[oó]n de qu[oó]rum|instalaci[oó]n legal|lectura (y aprobaci[oó]n[^.]*acta|del [oó]rden|del orden)|receso|clausura|asuntos generales)/i;
+
 const $ = (sel) => document.querySelector(sel);
 
 const state = { actas: [], q: "", periodo: "", desde: "", hasta: "" };
@@ -25,6 +32,31 @@ function fold(s) {
   let out = "";
   for (const ch of s) out += foldChar(ch);
   return out;
+}
+
+function esProcedural(texto) {
+  return !SUSTANTIVO.test(texto) && PROCEDIMIENTO.test(texto);
+}
+
+/* Nearly every point opens with the same formula ("Lectura, discusión y
+   aprobación en su caso, del Dictamen que autoriza…"), which buries the
+   subject. Strip that lead-in for the one-line session label only — the
+   untouched text is always shown in the expanded agenda and in the data. */
+const LEAD_INS = [
+  /^lectura[^,]*,\s*/i,
+  /^(discusi[oó]n\s*y\s*)?aprobaci[oó]n[^,]*,\s*/i,
+  /^en su caso,?\s*/i,
+  /^d(el|e la|e los|e las)\s+/i,
+  /^(dictamen|punto de acuerdo|iniciativa|propuesta)\s+/i,
+  /^(que|por el que|por la que|mediante el cual)\s+(se\s+)?/i,
+];
+
+function tituloCorto(texto) {
+  let t = texto;
+  for (const re of LEAD_INS) t = t.replace(re, "");
+  t = t.trim();
+  if (t.length < 12) return texto;                     // over-stripped — keep original
+  return t.charAt(0).toUpperCase() + t.slice(1);
 }
 
 function fechaLarga(iso) {
@@ -101,6 +133,20 @@ function renderResults() {
   $("#result-count").textContent = hits.length >= 400
     ? "400+ puntos coinciden — afina la búsqueda"
     : `${hits.length} ${hits.length === 1 ? "punto coincide" : "puntos coinciden"}`;
+
+  if (!hits.length) {
+    const filtrando = state.periodo || state.desde || state.hasta;
+    $("#result-list").innerHTML = `
+      <li class="result sin-resultados">
+        <p class="texto">Ningún punto del órden del día contiene esos términos${
+          filtrando ? " dentro del período filtrado" : ""}.</p>
+        <p class="texto nota">La búsqueda cubre el órden del día de cada sesión, no el
+        contenido íntegro de las actas: los PDF son escaneos sin capa de texto. Un asunto
+        puede haberse discutido sin que su nombre aparezca en el órden del día.${
+          filtrando ? " Prueba ampliando el período." : ""}</p>
+      </li>`;
+    return;
+  }
   $("#result-list").innerHTML = hits.slice(0, 400).map(({ acta, item }) => `
     <li class="result">
       <p class="meta mono">
@@ -134,41 +180,58 @@ function renderTimeline() {
     return `
     <details class="year-group"${open}>
       <summary><h2>${esc(y)}</h2>
-        <span class="count mono">${actas.length} ${actas.length === 1 ? "sesión" : "sesiones"}</span>
+        <span class="count">${actas.length} ${actas.length === 1 ? "sesión" : "sesiones"}</span>
       </summary>
       ${actas.map(sessionHTML).join("")}
     </details>`;
-  }).join("") || `<p class="agenda empty">Ninguna sesión coincide con los filtros.</p>`;
+  }).join("") || `<p class="section"><span class="empty">Ninguna sesión coincide con los filtros.</span></p>`;
 }
 
 function sessionHTML(acta) {
-  const sustantivo = /dictamen|punto de acuerdo|iniciativa|convenio|reglamento|presupuesto|propuesta|autoriza|aprueba/i;
-  const procesal = /^(lista de|declaraci[oó]n|instalaci[oó]n|receso|clausura|asuntos generales|lectura(?! *, *discusi[oó]n))/i;
-  const primera = acta.agenda_items.find((i) => sustantivo.test(i.texto))
-    ?? acta.agenda_items.find((i) => !procesal.test(i.texto));
-  const titulo = (primera ?? acta.agenda_items[0])?.texto ?? "Órden del día no publicado en el índice";
+  const primera = acta.agenda_items.find((i) => SUSTANTIVO.test(i.texto))
+    ?? acta.agenda_items.find((i) => !esProcedural(i.texto));
+  const crudo = (primera ?? acta.agenda_items[0])?.texto;
+  const titulo = crudo ? tituloCorto(crudo) : "Órden del día no publicado en el índice";
   const items = acta.agenda_items.length
-    ? acta.agenda_items.map((i) =>
-        `<li>${i.numeral ? `<span class="num">${i.numeral}.</span>` : ""}${esc(i.texto)}</li>`).join("")
-    : `<li class="empty">El índice oficial no publica el órden del día de esta sesión.</li>`;
+    ? acta.agenda_items.map((i) => `
+        <li${esProcedural(i.texto) ? ' class="proc"' : ""}>
+          <span class="num">${i.numeral ? esc(i.numeral) + "." : "·"}</span>
+          <span class="texto">${esc(i.texto)}</span>
+        </li>`).join("")
+    : `<li class="empty"><span class="num">·</span>
+         <span class="texto">El índice oficial no publica el órden del día de esta sesión.</span></li>`;
   return `
   <details class="session">
     <summary>
       <span class="s-fecha">${acta.fecha ?? "sin fecha"}</span>
-      <span class="s-titulo">Acta ${acta.no_acta ?? "s/n"} · ${esc(titulo.slice(0, 110))}${titulo.length > 110 ? "…" : ""}</span>
+      <span class="s-titulo"><span class="s-acta">Acta ${acta.no_acta ?? "s/n"}</span> · ${esc(titulo.slice(0, 110))}${titulo.length > 110 ? "…" : ""}</span>
       ${acta.pdf_url ? `<a class="s-pdf" href="${esc(acta.pdf_url)}" rel="external" onclick="event.stopPropagation()">PDF →</a>` : ""}
     </summary>
     <ol class="agenda">${items}</ol>
   </details>`;
 }
 
-function renderStats() {
+function renderStats(generado) {
   const n = state.actas.length;
   const items = state.actas.reduce((a, x) => a + x.agenda_items.length, 0);
   const fechas = state.actas.map((a) => a.fecha).filter(Boolean).sort();
-  $("#stats").textContent =
-    `${n} sesiones · ${items.toLocaleString("es-MX")} puntos de agenda · ` +
-    `${fechas[0].slice(0, 4)}–${fechas[fechas.length - 1].slice(0, 4)}`;
+  const periodos = new Set(state.actas.map((a) => a.periodo).filter(Boolean)).size;
+  const stats = [
+    ["Sesiones", n.toLocaleString("es-MX")],
+    ["Puntos de agenda", items.toLocaleString("es-MX")],
+    ["Período cubierto", `${fechas[0].slice(0, 4)}–${fechas[fechas.length - 1].slice(0, 4)}`],
+    ["Administraciones", periodos],
+  ];
+  $("#statrow").innerHTML = stats.map(([label, value]) => `
+    <div class="stat">
+      <span class="stat-label">${label}</span>
+      <span class="stat-value">${value}</span>
+    </div>`).join("");
+
+  if (generado) {
+    $("#snapshot").textContent =
+      `Última actualización de los datos: ${fechaLarga(generado.slice(0, 10))}.`;
+  }
 }
 
 function initFilters() {
@@ -202,12 +265,12 @@ async function main() {
   for (const acta of state.actas) {
     for (const item of acta.agenda_items) item._folded = fold(item.texto);
   }
-  renderStats();
+  renderStats(data.generado);
   initFilters();
   renderTimeline();
 }
 
 main().catch((err) => {
-  $("#stats").textContent = "Error al cargar los datos. Recarga la página.";
+  $("#statrow").textContent = "Error al cargar los datos. Recarga la página.";
   console.error(err);
 });

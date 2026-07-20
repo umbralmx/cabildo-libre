@@ -13,22 +13,26 @@
 <body>
 
 <header class="site-header">
-  <a class="brand" href="./">
-    <img src="assets/umbral-isotype-light.svg" alt="" height="28">
-    <span class="wordmark">umbral<span class="underscore">_</span></span>
+  <a class="brand" href="./" aria-label="umbral_ — inicio">
+    <img src="assets/umbral-isotype-light.svg" alt="" width="24" height="24">
+    <span class="wordmark" aria-hidden="true">umbral<span class="underscore">_</span></span>
   </a>
   <nav aria-label="Secciones">
+    <a href="#datos">Datos</a>
     <a href="#metodologia">Metodología</a>
-    <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">Fuente original</a>
+    <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">Fuente oficial</a>
   </nav>
 </header>
 
 <main>
   <section class="hero">
+    <p class="kicker">Ayuntamiento de Colima · sesiones de cabildo</p>
     <h1>Actas Abiertas — <span class="accent">Cabildo de Colima</span></h1>
-    <p class="lede">Qué discutió y aprobó el ayuntamiento, sesión por sesión.
-    Busca por tema, colonia o palabra clave y llega al acta original en dos clics.</p>
-    <p class="stats mono" id="stats" aria-live="polite"></p>
+    <p class="lede">Qué discutió y aprobó el cabildo, sesión por sesión. El ayuntamiento
+    publica sus actas como documentos sueltos, sin buscador; aquí el órden del día de
+    cada sesión es texto buscable que enlaza al acta original.</p>
+
+    <div class="statrow" id="statrow"></div>
   </section>
 
   <section class="controls" aria-label="Búsqueda y filtros">
@@ -38,15 +42,16 @@
              aria-label="Buscar en los órdenes del día">
     </div>
     <div class="filterrow">
-      <label>Período
-        <select id="f-periodo">
-          <option value="">Todos</option>
-        </select>
+      <label>
+        <span class="field-label">Período</span>
+        <select id="f-periodo"><option value="">Todos</option></select>
       </label>
-      <label>Desde
+      <label>
+        <span class="field-label">Desde</span>
         <input type="date" id="f-desde" min="2012-01-01" max="2027-12-31">
       </label>
-      <label>Hasta
+      <label>
+        <span class="field-label">Hasta</span>
         <input type="date" id="f-hasta" min="2012-01-01" max="2027-12-31">
       </label>
       <button id="f-clear" type="button" class="btn-secondary">Limpiar</button>
@@ -62,21 +67,40 @@
     <div id="timeline-body"></div>
   </section>
 
-  <section id="metodologia" class="method">
+  <section id="datos" class="section">
+    <h2>Datos</h2>
+    <p>Esta información es pública y vuelve al público, ordenada. Cada registro procede
+    del índice oficial mediante un script reproducible; no hay ediciones manuales.</p>
+    <p>El contenido de los órdenes del día es del Ayuntamiento de Colima y se atribuye
+    a su fuente. Lo que aportamos —el trabajo de extracción y estructuración— se
+    comparte bajo CC BY 4.0, y el código bajo licencia MIT.</p>
+    <p class="datalinks">
+      <a href="actas.json" download>Descargar JSON — sesiones con su órden del día</a>
+      <a href="actas.csv" download>Descargar CSV — un renglón por punto de agenda</a>
+    </p>
+    <p class="snapshot" id="snapshot"></p>
+  </section>
+
+  <section id="metodologia" class="section">
     <h2>Metodología</h2>
-    <p>Este sitio reorganiza información pública: el índice de
+    <p>El texto buscable proviene del índice HTML de
     <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">actas de cabildo
-    del Ayuntamiento de Colima</a>. Cada sesión muestra su órden del día tal como lo publica el
-    ayuntamiento, dividido en puntos numerados y enlazado al PDF original del acta.
-    El texto proviene del índice oficial, no de los PDF; los documentos escaneados
-    aún no son buscables (lo serán en una fase posterior). Algunos enlaces de
-    2013–2014 están rotos en el sitio del ayuntamiento. Los datos se actualizan
-    automáticamente y se publican en JSON reutilizable.</p>
+    del Ayuntamiento de Colima</a>, donde el órden del día de cada sesión ya se publica como
+    texto. Un script lo convierte en registros estructurados: fecha, número de acta, período,
+    puntos numerados y enlace al PDF original.</p>
+    <p>Los PDF de las actas son escaneos sin capa de texto, por lo que su contenido íntegro
+    —la discusión y el sentido de cada votación— todavía no es buscable. Este sitio muestra
+    lo que estuvo <em>en la mesa</em>, no el resultado de cada punto; para eso, el enlace lleva
+    siempre al documento original.</p>
+    <p>Vacíos conocidos, declarados y no imputados: 27 sesiones cuyo órden del día no aparece
+    en el índice oficial, una sesión sin fecha publicada, y enlaces PDF de 2013–2014 que el
+    servidor del ayuntamiento ya no resuelve. Se conservan en los datos tal como están.</p>
   </section>
 </main>
 
 <footer class="site-footer">
-  <p class="mono">Fuente: Ayuntamiento de Colima · actas de cabildo · datos CC BY 4.0 · código MIT · umbral_</p>
+  <p>Fuente: Ayuntamiento de Colima, actas de cabildo · umbral.mx · estructura CC BY 4.0
+  · proyecto independiente, sin relación con el Ayuntamiento</p>
 </footer>
 
 <script src="app.js"></script>

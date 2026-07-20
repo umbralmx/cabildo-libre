@@ -16,11 +16,12 @@ Usage:
 """
 
 import argparse
+import csv
 import datetime
+import io
 import json
 import re
 import sys
-import unicodedata
 import urllib.request
 from html import unescape
 from pathlib import Path
@@ -109,8 +110,14 @@ def split_agenda_items(text: str) -> list[dict]:
     dash runs). An item's number can also continue mid-line right after the
     previous sentence. Candidate matches are validated against the expected
     sequence (the first item must be I or II — one agenda starts at II — and
-    each later one exactly previous + 1), which rejects look-alikes such as
+    each later one a small step forward), which rejects look-alikes such as
     the honorific 'C.' (C = 100) or the V in 'C.V.'.
+
+    The step tolerance matters: some agendas skip a numeral outright (acta 76
+    of 2017 runs VI → VIII — the ayuntamiento's own typo). Demanding exactly
+    previous + 1 there rejects every later numeral and swallows five points
+    into one item. Allowing a gap of up to MAX_SALTO keeps them separate while
+    staying far too tight for a stray 'C.' (a jump of ~90) to slip in.
     """
     candidates = []
     pattern = (
@@ -123,15 +130,17 @@ def split_agenda_items(text: str) -> list[dict]:
         if val:
             candidates.append((m.start(), m.end(), numeral, val))
 
+    MAX_SALTO = 3
     starts = []
     expected = None
     for cand in candidates:
-        if expected is None and cand[3] in (1, 2):
+        val = cand[3]
+        if expected is None and val in (1, 2):
             starts.append(cand)
-            expected = cand[3] + 1
-        elif expected is not None and cand[3] == expected:
+            expected = val + 1
+        elif expected is not None and expected <= val <= expected + MAX_SALTO:
             starts.append(cand)
-            expected += 1
+            expected = val + 1
 
     items = []
     for i, (start, end, numeral, val) in enumerate(starts):
@@ -242,6 +251,23 @@ def parse_rows(html: str) -> list[dict]:
     return records, problems
 
 
+def to_csv(records: list[dict]) -> str:
+    """Long format — one row per agenda item, the shape analysis wants."""
+    buf = io.StringIO()
+    w = csv.writer(buf, lineterminator="\n")
+    w.writerow(["id_sesion", "fecha", "no_acta", "periodo",
+                "punto_n", "punto_numeral", "punto_texto", "pdf_url"])
+    for rec in records:
+        if not rec["agenda_items"]:
+            w.writerow([rec["id"], rec["fecha"] or "", rec["no_acta"] or "",
+                        rec["periodo"] or "", "", "", "", rec["pdf_url"] or ""])
+        for item in rec["agenda_items"]:
+            w.writerow([rec["id"], rec["fecha"] or "", rec["no_acta"] or "",
+                        rec["periodo"] or "", item["n"], item["numeral"] or "",
+                        item["texto"], rec["pdf_url"] or ""])
+    return buf.getvalue()
+
+
 def summarize(records: list[dict], problems: list[str]) -> str:
     n_items = sum(len(r["agenda_items"]) for r in records)
     empty_agenda = sum(1 for r in records if not r["agenda_items"])
@@ -286,6 +312,10 @@ def main() -> None:
     print(summarize(records, problems))
     print(f"wrote {out_path} ({out_path.stat().st_size / 1e6:.1f} MB)")
 
+    csv_path = out_path.with_suffix(".csv")
+    csv_path.write_text(to_csv(records), encoding="utf-8")
+    print(f"wrote {csv_path} ({csv_path.stat().st_size / 1e6:.1f} MB)")
+
     if args.site_out:
         site_path = Path(args.site_out)
         site_path.parent.mkdir(parents=True, exist_ok=True)
@@ -293,7 +323,8 @@ def main() -> None:
             json.dumps(out, ensure_ascii=False, separators=(",", ":")),
             encoding="utf-8",
         )
-        print(f"wrote {site_path} ({site_path.stat().st_size / 1e6:.1f} MB)")
+        site_path.with_suffix(".csv").write_text(to_csv(records), encoding="utf-8")
+        print(f"wrote {site_path} ({site_path.stat().st_size / 1e6:.1f} MB) + .csv")
 
 
 if __name__ == "__main__":
