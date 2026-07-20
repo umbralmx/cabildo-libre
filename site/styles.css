@@ -1,0 +1,167 @@
+/* Actas Abiertas — Umbral modo laboratorio (light). Tokens in assets/tokens.css. */
+
+* { box-sizing: border-box; margin: 0; }
+
+body {
+  background: var(--u-base);
+  color: var(--u-ink);
+  font-family: var(--u-font-body);
+  font-size: 16px;
+  line-height: 1.55;
+}
+
+a { color: var(--u-ink); text-decoration-color: var(--u-baseline); text-underline-offset: 3px; }
+a:hover { color: var(--u-signal); text-decoration-color: var(--u-signal); }
+:focus-visible { outline: 2px solid var(--u-signal); outline-offset: 2px; }
+
+.mono { font-family: var(--u-font-mono); font-variant-numeric: tabular-nums; }
+
+h1, h2, h3 {
+  font-family: var(--u-font-display);
+  font-weight: var(--u-weight-display);
+  letter-spacing: var(--u-tracking-display);
+}
+
+/* ── header ── */
+.site-header {
+  display: flex; align-items: center; justify-content: space-between;
+  padding: 16px 32px;
+  border-bottom: var(--u-rule) solid var(--u-border);
+}
+.brand { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+.wordmark {
+  font-family: var(--u-font-display); font-weight: 500; font-size: 22px;
+  letter-spacing: var(--u-tracking-display);
+}
+.wordmark .underscore { color: var(--u-signal); }
+.site-header nav { display: flex; gap: 24px; font-size: 14px; }
+
+main { max-width: 880px; margin: 0 auto; padding: 0 24px 64px; }
+
+/* ── hero ── */
+.hero { padding: 64px 0 40px; }
+.hero h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.12; }
+.hero .accent { color: var(--u-signal); }
+.lede { max-width: 65ch; margin-top: 16px; color: var(--u-muted); font-size: 17px; }
+.stats { margin-top: 16px; font-size: 12px; color: var(--u-caption); }
+
+/* ── controls ── */
+.controls { margin-bottom: 40px; }
+.searchrow input[type="search"] {
+  width: 100%;
+  padding: 14px 16px;
+  font: 16px var(--u-font-body);
+  color: var(--u-ink);
+  background: var(--u-panel);
+  border: var(--u-rule) solid var(--u-baseline);
+  border-radius: var(--u-radius);
+  -webkit-appearance: none; appearance: none;
+}
+.searchrow input:focus { border-color: var(--u-signal); outline: none; }
+.filterrow {
+  display: flex; flex-wrap: wrap; gap: 16px; align-items: end;
+  margin-top: 16px; font-size: 13px; color: var(--u-muted);
+}
+.filterrow label { display: flex; flex-direction: column; gap: 4px; }
+.filterrow select, .filterrow input[type="date"] {
+  padding: 8px 10px;
+  font: 14px var(--u-font-body);
+  color: var(--u-ink);
+  background: var(--u-panel);
+  border: var(--u-rule) solid var(--u-border);
+  border-radius: var(--u-radius);
+}
+.btn-secondary {
+  padding: 9px 20px;
+  font: 500 14px var(--u-font-display);
+  color: var(--u-ink);
+  background: transparent;
+  border: var(--u-rule) solid var(--u-baseline);
+  border-radius: var(--u-radius);
+  cursor: pointer;
+}
+.btn-secondary:hover { color: var(--u-signal); border-color: var(--u-signal); }
+
+/* ── results ── */
+.result-count { font-size: 12px; color: var(--u-caption); margin-bottom: 16px; }
+.result-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+.result {
+  background: var(--u-panel);
+  border: var(--u-rule) solid var(--u-border);
+  padding: 20px 24px;
+}
+.result .meta {
+  display: flex; flex-wrap: wrap; gap: 8px 20px; align-items: baseline;
+  font-size: 12px; color: var(--u-muted); margin-bottom: 8px;
+}
+.result .meta .fecha { color: var(--u-ink); }
+.result .texto { max-width: 72ch; }
+.result mark {
+  background: transparent;
+  color: var(--u-signal);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--u-signal);
+  text-underline-offset: 3px;
+}
+.result .acta-link { font-size: 13px; margin-top: 10px; display: inline-block; }
+
+/* ── timeline ── */
+.timeline h2 { font-size: 24px; margin-bottom: 8px; }
+.year-group { border-top: 2px solid var(--u-ink); margin-top: 32px; }
+.year-group > summary {
+  cursor: pointer; list-style: none;
+  display: flex; justify-content: space-between; align-items: baseline;
+  padding: 12px 0;
+}
+.year-group > summary::-webkit-details-marker { display: none; }
+.year-group > summary h2 { font-size: 28px; }
+.year-group > summary .count { font-size: 12px; color: var(--u-caption); }
+.session { border-top: var(--u-rule) solid var(--u-border); }
+.session > summary {
+  cursor: pointer; list-style: none;
+  display: grid;
+  grid-template-columns: 110px 1fr auto;
+  gap: 16px; align-items: baseline;
+  padding: 10px 0;
+  font-size: 14px;
+}
+.session > summary::-webkit-details-marker { display: none; }
+.session .s-fecha { font-family: var(--u-font-mono); font-size: 13px; }
+.session .s-titulo { color: var(--u-muted); }
+.session[open] .s-titulo, .session > summary:hover .s-titulo { color: var(--u-ink); }
+.session .s-pdf { font-size: 13px; white-space: nowrap; }
+.agenda {
+  list-style: none;
+  margin: 4px 0 20px 110px;
+  padding-left: 16px;
+  border-left: var(--u-rule) solid var(--u-border);
+  font-size: 14px;
+}
+.agenda li { margin: 6px 0; max-width: 68ch; }
+.agenda .num { font-family: var(--u-font-mono); font-size: 12px; color: var(--u-caption); margin-right: 6px; }
+.agenda .empty { color: var(--u-caption); font-style: italic; }
+
+/* ── method / footer ── */
+.method { margin-top: 72px; border-top: 2px solid var(--u-ink); padding-top: 24px; }
+.method h2 { font-size: 22px; margin-bottom: 12px; }
+.method p { max-width: 65ch; color: var(--u-muted); font-size: 15px; }
+.site-footer {
+  border-top: var(--u-rule) solid var(--u-border);
+  padding: 24px 32px;
+  font-size: 12px; color: var(--u-caption);
+}
+
+@media (max-width: 640px) {
+  .site-header { padding: 12px 16px; }
+  main { padding: 0 16px 48px; }
+  .hero { padding: 40px 0 28px; }
+  .session > summary { grid-template-columns: 1fr auto; }
+  .session .s-fecha { grid-column: 1 / -1; }
+  .agenda { margin-left: 0; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  details[open] > *:not(summary) { animation: fadein 0.15s ease-out; }
+  @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
+}

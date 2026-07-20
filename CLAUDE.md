@@ -2,7 +2,10 @@
 
 > Persistent project context for the coding agent. Read this before any task.
 > **Roles:** PM & ideation = Claude (chat). Development, testing, validation = Fable.
-> **Status:** Phase 1 scope defined. Phases 2–3 briefs to follow once Phase 1 data quality is confirmed.
+> **Status (2026-07-19):** Phase 1 **built and verified locally** — scraper, data, site, and
+> deploy workflow are done (see backlog checkmarks below). Launch is gated on X1 (legal
+> note) and X2 (URL), plus pushing to GitHub and enabling Pages. Phase 2 brief pending;
+> its key input changed: **the acta PDFs are scans → OCR required** (`docs/a3-spike.md`).
 
 ---
 
@@ -37,8 +40,10 @@ Municipal *actas de cabildo* record what a city council discussed and approved �
 
 ## Key findings from the source (these shape everything)
 
-- **The agenda (órden del día) is already plain HTML text on the index page** — *not* locked inside the PDFs. Each session lists its numbered items as readable text. → **Phase 1 search can be built without opening a single PDF.**
-- **The acta PDFs appear to be text-based, not scans** (filenames like `acta-no-74_opt.pdf`, `_compressed`). Little to no OCR should be needed → Phase 2 is far cheaper. **A sample test (A3) must confirm this.**
+- **The agenda (órden del día) is already plain HTML text on the index page** — *not* locked inside the PDFs. Each session lists its numbered items as readable text. → **Phase 1 search was built without opening a single PDF.** Confirmed in practice: 636 sessions, 6,984 agenda items parsed from the index alone.
+- **~~The acta PDFs appear to be text-based~~ — DISPROVEN by the A3 spike (2026-07-19).** All sampled PDFs (2016–2026) are **scanner output with zero extractable text** (image-only pages, no fonts; producers are literal office scanners). The `_opt`/`_compressed` suffixes meant file compression (iLovePDF), not digital text. → **Phase 2 requires OCR on ~100% of actas.** Details and options in `docs/a3-spike.md`.
+- **The corpus is 5 terms (2012–2026), not one.** 636 sessions after dedup — far more than the ~75-actas-per-term planning figure. Phase 2 should probably scope OCR/summaries to the current término (2024-2027, 74 actas) first.
+- **Some source links are dead.** Part of the 2013–2014 PDFs (old `portal2014` paths) 404 on the ayuntamiento's server. We link them anyway (the rot is theirs), but a periodic link check belongs in Phase 2/3.
 
 **Two data tiers:**
 - **Tier 1** — agenda text, already available on the index page → tells you *what was on the table*. **Phase 1 ships this.**

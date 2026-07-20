@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Actas Abiertas — Cabildo de Colima · umbral_</title>
+  <meta name="description" content="Buscador ciudadano de las actas de cabildo del Ayuntamiento de Colima: qué discutió y aprobó el cabildo, sesión por sesión, desde 2012.">
+  <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
+  <link rel="stylesheet" href="assets/fonts.css">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="./">
+    <img src="assets/umbral-isotype-light.svg" alt="" height="28">
+    <span class="wordmark">umbral<span class="underscore">_</span></span>
+  </a>
+  <nav aria-label="Secciones">
+    <a href="#metodologia">Metodología</a>
+    <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">Fuente original</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Actas Abiertas — <span class="accent">Cabildo de Colima</span></h1>
+    <p class="lede">Qué discutió y aprobó el ayuntamiento, sesión por sesión.
+    Busca por tema, colonia o palabra clave y llega al acta original en dos clics.</p>
+    <p class="stats mono" id="stats" aria-live="polite"></p>
+  </section>
+
+  <section class="controls" aria-label="Búsqueda y filtros">
+    <div class="searchrow">
+      <input id="q" type="search" autocomplete="off" spellcheck="false"
+             placeholder="Buscar en el órden del día — p. ej. «fraccionamiento», «licencia», «presupuesto»"
+             aria-label="Buscar en los órdenes del día">
+    </div>
+    <div class="filterrow">
+      <label>Período
+        <select id="f-periodo">
+          <option value="">Todos</option>
+        </select>
+      </label>
+      <label>Desde
+        <input type="date" id="f-desde" min="2012-01-01" max="2027-12-31">
+      </label>
+      <label>Hasta
+        <input type="date" id="f-hasta" min="2012-01-01" max="2027-12-31">
+      </label>
+      <button id="f-clear" type="button" class="btn-secondary">Limpiar</button>
+    </div>
+  </section>
+
+  <section id="results" class="results" aria-live="polite" hidden>
+    <p class="result-count mono" id="result-count"></p>
+    <ol id="result-list" class="result-list"></ol>
+  </section>
+
+  <section id="timeline" class="timeline" aria-label="Línea de tiempo de sesiones">
+    <div id="timeline-body"></div>
+  </section>
+
+  <section id="metodologia" class="method">
+    <h2>Metodología</h2>
+    <p>Este sitio reorganiza información pública: el índice de
+    <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">actas de cabildo
+    del Ayuntamiento de Colima</a>. Cada sesión muestra su órden del día tal como lo publica el
+    ayuntamiento, dividido en puntos numerados y enlazado al PDF original del acta.
+    El texto proviene del índice oficial, no de los PDF; los documentos escaneados
+    aún no son buscables (lo serán en una fase posterior). Algunos enlaces de
+    2013–2014 están rotos en el sitio del ayuntamiento. Los datos se actualizan
+    automáticamente y se publican en JSON reutilizable.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p class="mono">Fuente: Ayuntamiento de Colima · actas de cabildo · datos CC BY 4.0 · código MIT · umbral_</p>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
