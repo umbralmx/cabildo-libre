@@ -1,0 +1,96 @@
+{
+ "id": "2024-2027-54",
+ "no_acta": 54,
+ "fecha": "2025-11-27",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:03:20+00:00",
+ "resumen_sesion": "Se aprobó la ampliación presupuestaria para basificaciones y sindicalizaciones; otros puntos sobre financiamientos y convenios quedaron sin resolución en el acta.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se consideró la aprobación de las actas 51, 52 y 53; se aprobaron las actas 52 y 53, pero el acta 51 quedó pendiente.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza ampliaciones presupuestarias para cubrir basificaciones y sindicalizaciones de trabajadores municipales.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se discutió un punto de acuerdo para contratar un financiamiento de hasta 32.5 millones de pesos, pero no se registró el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se discutió un dictamen para contratar un financiamiento a corto plazo por 55 millones de pesos, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se discutió un dictamen para celebrar convenio con el Instituto de Formación Policial para evaluaciones de ascenso, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se discutió un dictamen para celebrar convenio con el CEPAVI, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se discutió un dictamen para convenio de hermanamiento con San Luis Potosí, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se discutió un dictamen sobre estudio de impacto territorial para modificar zonificación de dos parcelas, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se discutió un dictamen sobre incentivos fiscales del programa Vivienda para el Bienestar, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se discutió un dictamen para desafectar, desincorporar y enajenar un bien inmueble para el programa Vivienda para el Bienestar, sin resultado conocido.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

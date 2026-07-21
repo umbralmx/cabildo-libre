@@ -1,0 +1,54 @@
+{
+ "id": "2024-2027-62",
+ "no_acta": 62,
+ "fecha": "2026-01-10",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:05:34+00:00",
+ "resumen_sesion": "En sesión extraordinaria, el Cabildo aprobó la leyenda oficial del año 2026 y declaró Recinto Ferial el Jardín Principal de Lo de Villa para las fiestas del Señor de la Expiración del 10 al 20 de enero de 2026.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia de los integrantes del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló legalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó y aprobó por unanimidad presentar las Actas de Cabildo N° 60 y 61 en la próxima sesión, por lo que su aprobación quedó aplazada.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la leyenda oficial para 2026: '2026, Año del 170 Aniversario de la creación del Estado de Colima'.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial el Jardín Principal de la comunidad de Lo de Villa y calles colindantes para las Fiestas en Honor al Señor de la Expiración 2026, del 10 al 20 de enero.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "No se trataron asuntos generales y se declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

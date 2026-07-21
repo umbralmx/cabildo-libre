@@ -1,0 +1,66 @@
+{
+ "id": "2024-2027-56",
+ "no_acta": 56,
+ "fecha": "2025-12-04",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:03:51+00:00",
+ "resumen_sesion": "Se aprobó una licencia de venta de alcohol y un cambio de domicilio para un restaurante, se dieron de baja tres licencias de alcohol, y se presentaron reformas a reglamentos comerciales y de alcohol.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se verificó quórum legal y se declaró instalada la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó el Acta N° 55 y se aplazó la lectura de las Actas 51 y 54 para la próxima sesión.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó la expedición de una licencia comercial (cambio de domicilio para restaurante 'Poca Sushi' y apertura de autoservicio 'Súper Kiosko') para venta de alcohol.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó dar de baja tres licencias para venta de bebidas alcohólicas de establecimientos en Colima.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se presentó dictamen para reformar el Reglamento para el funcionamiento de establecimientos comerciales, industriales y de servicio.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentó dictamen para reformar el Reglamento para la venta y consumo de bebidas alcohólicas.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

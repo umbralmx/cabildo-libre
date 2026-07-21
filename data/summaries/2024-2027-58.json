@@ -1,0 +1,84 @@
+{
+ "id": "2024-2027-58",
+ "no_acta": 58,
+ "fecha": "2025-12-11",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:04:38+00:00",
+ "resumen_sesion": "Sesión solemne para la entrega del Primer Informe Anual de Gestión; se aplazó la aprobación de las actas 56 y 57.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del Ayuntamiento.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró el quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar las actas 56 y 57 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se declaró un receso para la recepción de invitados especiales.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se realizaron los Honores a la Bandera con participación de la escolta militar.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se entonó el Himno del Estado de Colima.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentaron los invitados especiales, incluyendo representantes del gobierno estatal y del Congreso.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Cada fracción partidista (PVEM, Morena, Movimiento Ciudadano, PRI, PAN) fijó su posicionamiento sobre el informe.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "El Presidente Municipal entregó el Primer Informe Anual de Gestión y dirigió un mensaje.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "El representante de la Gobernadora del Estado dirigió un mensaje destacando la inversión estatal.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

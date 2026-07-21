@@ -1,0 +1,60 @@
+{
+ "id": "2024-2027-63",
+ "no_acta": 63,
+ "fecha": "2026-01-13",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:05:46+00:00",
+ "resumen_sesion": "Se aprobó reforma al Reglamento del Gobierno Municipal creando Dirección General de Educación; se consideró Presupuesto 2026 sin resolverse; se aplazaron actas.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Declaración de quórum legal e instalación de la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Lectura del Orden del Día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar las Actas 60, 61 y 62 en la próxima sesión, lo cual fue aprobado.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad el dictamen que reforma, adiciona y deroga artículos del Reglamento del Gobierno Municipal de Colima, creando la Dirección General de Educación, Cultura y Recreación.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se presentó y discutió el dictamen del Presupuesto de Egresos 2026 por un monto de $1,077,523,004.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se consideró el dictamen para expedir una licencia comercial para horno crematorio.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Clausura de la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

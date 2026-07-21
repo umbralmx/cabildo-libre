@@ -1,0 +1,48 @@
+{
+ "id": "2024-2027-57",
+ "no_acta": 57,
+ "fecha": "2025-12-05",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:04:17+00:00",
+ "resumen_sesion": "Se aprobaron las actas 51 y 54, la reforma de los artículos 136 y 142 del Reglamento Ambiental sobre ruido, y las disposiciones para el Primer Informe Anual de Gobierno.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se verificó la asistencia de los miembros del cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la instalación legal de la sesión al contar con quórum.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se discutieron y aprobaron las actas de cabildo número 51 (unanimidad) y 54 (mayoría), tras debate sobre su exactitud.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la reforma de los artículos 136 y 142 del Reglamento Ambiental para actualizar los límites de ruido en vehículos, motocicletas y establecimientos.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la sesión solemne del Primer Informe de Gestión Administrativa para el 11 de diciembre, con intervenciones de hasta 3 minutos por fracción.",
+   "sentido": "aprobado"
+  }
+ ]
+}

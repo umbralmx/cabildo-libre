@@ -1,0 +1,48 @@
+{
+ "id": "2024-2027-55",
+ "no_acta": 55,
+ "fecha": "2025-12-01",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:03:31+00:00",
+ "resumen_sesion": "Se aprobó una fe de erratas al Programa de Ordenamiento Territorial para corregir la zonificación de un predio en el Parque Metropolitano Griselda Álvarez, y se aplazó la aprobación de las actas 51 y 54.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó y aprobó por mayoría diferir la lectura y aprobación de las actas 51 y 54 para la próxima sesión.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se presentó, discutió y aprobó por unanimidad la fe de erratas al Programa Municipal de Ordenamiento Territorial y Desarrollo Urbano para el predio clave 02-01-03-085-031-000.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

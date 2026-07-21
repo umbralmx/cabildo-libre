@@ -1,0 +1,84 @@
+{
+ "id": "2024-2027-60",
+ "no_acta": 60,
+ "fecha": "2025-12-20",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:05:11+00:00",
+ "resumen_sesion": "Se aprobó el cuarto listado de obras del POA 2025 y la Fe de Erratas de Rivera del Jazmín II; otros puntos quedaron sin resultado claro en el acta.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día de la sesión.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron las Actas de Cabildo 56 y 58 por unanimidad, el acta 57 por mayoría, y se autorizó presentar el acta 59 en próxima sesión.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza la publicación del cuarto listado de obras del POA 2025 y el cierre presupuestal en SIFAIS, con inversión de $1,404,041.41 del FAISMUN.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la Fe de Erratas de la Primera Modificación al Programa Parcial de Urbanización 'Rivera del Jazmín II'.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se puso a consideración el dictamen para la Incorporación Municipal Anticipada de la Etapa Única del Fraccionamiento 'Sección 39 SNTE'.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se puso a consideración el dictamen para aceptar el avalúo del predio clave catastral 02-99-90-039-857-000.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se puso a consideración el dictamen para la Incorporación Municipal Anticipada de las etapas 6, 7 y 8 del Fraccionamiento 'El Mirador de Colima'.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se puso a consideración el dictamen para reformar diversas disposiciones del Reglamento de Zonificación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias para enero, febrero y marzo de 2026.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "no_determinable"
+  }
+ ]
+}

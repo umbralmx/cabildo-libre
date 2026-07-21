@@ -1,0 +1,66 @@
+{
+ "id": "2024-2027-59",
+ "no_acta": 59,
+ "fecha": "2025-12-15",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:04:43+00:00",
+ "resumen_sesion": "Sesión extraordinaria para tratar adecuaciones presupuestarias, cuenta pública y licencias de alcohol, sin resoluciones registradas en el acta.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia de la mayoría de los regidores.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó presentar las actas de cabildo 56, 57 y 58 en la próxima sesión.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se leyó el dictamen que autoriza adecuaciones presupuestarias por $49,334,692.05 para noviembre de 2025.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se leyó el dictamen que autoriza remitir la cuenta pública de noviembre de 2025 al Congreso del Estado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se leyó el dictamen que autoriza dar de baja la licencia B-002619 para venta de bebidas alcohólicas.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se leyó el dictamen que autoriza expedir tres licencias comerciales para venta de alcohol y un cambio de giro.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Asuntos generales y clausura de la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

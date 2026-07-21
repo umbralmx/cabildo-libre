@@ -1,0 +1,48 @@
+{
+ "id": "2024-2027-61",
+ "no_acta": 61,
+ "fecha": "2025-12-31",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T16:05:22+00:00",
+ "resumen_sesion": "Se aprobó el festival 'Colima Resplandece 2025' con declaratoria de recinto ferial, autorización de cobros y permisos, y se aprobaron las actas de cabildo 59 y 60.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Lista de asistencia de regidores, síndica y presidente municipal.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Declaración de quórum legal e instalación formal de la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Lectura del orden del día por el Secretario del Ayuntamiento.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Aprobación del acta 59 por unanimidad y autorización para presentar el acta 60 en la próxima sesión.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Lectura y discusión del dictamen que autoriza el festival 'Colima Resplandece 2025', declarando recinto ferial, autorizando cobros y firma de contratos. Se presentaron posicionamientos a favor y una abstención.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Clausura de la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}
