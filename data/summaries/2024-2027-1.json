@@ -1,0 +1,101 @@
+{
+ "id": "2024-2027-1",
+ "no_acta": 1,
+ "fecha": "2024-10-16",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T03:15:38+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia del Presidente Municipal, Síndica y regidores.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró instalada la sesión ordinaria.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Presidente Municipal dio lectura al Orden del Día, el cual fue aprobado por unanimidad.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del LAE. J. Francisco Anzar Herrera como Secretario del H. Ayuntamiento, tomando protesta de ley.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Acta de la Sesión anterior, la cual fue aprobada por unanimidad.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de la Licda. Susana Romero Castrejón como Tesorera Municipal, tomando protesta.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del Lic. José Manuel Oviedo Guedea como Oficial Mayor, tomando protesta.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de la Licda. Graciela Montserrat García Mendoza como Contralora Municipal, tomando protesta.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del Gral. Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica, tomando protesta.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de cuatro Jueces Cívicos: Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca, tomando protesta.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "El Presidente Municipal solicitó al pleno que las Comisiones del Cabildo se designaran en la próxima sesión, siendo aprobado por unanimidad.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se informó al Cabildo sobre la presentación del informe detallado de acciones de la Comisión Municipal para la Transmisión de Mando.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "El Presidente Municipal indicó que la Entrega-Recepción de la administración pública municipal se llevaría a cabo al término de la sesión, con participación de la Contraloría y OSAFIG.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "No hubo asuntos generales que tratar.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Agotado el Orden del Día, el Presidente Municipal declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

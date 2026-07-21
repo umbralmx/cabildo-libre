@@ -1,0 +1,66 @@
+name: Procesar actas (Fase 2 — OCR + resúmenes)
+
+# La mitad pesada del proyecto: OCR de los PDF escaneados y resúmenes en lenguaje
+# llano. Corre por lotes (no en cada push) y va llenando el corpus unas actas por
+# corrida — ambas etapas son idempotentes, así que reintentar es seguro y barato.
+#
+# Requiere el secreto DEEPSEEK_API_KEY para la etapa de resúmenes. Sin él, la etapa
+# de OCR corre igual (es gratis) y los resúmenes se saltan.
+
+on:
+  workflow_dispatch:
+    inputs:
+      periodo:
+        description: "Período a procesar"
+        default: "2024-2027"
+      lote:
+        description: "Máximo de actas por corrida"
+        default: "10"
+  schedule:
+    - cron: "0 7 * * 6" # sábados 1:00 Colima, fuera de horas pico
+
+permissions:
+  contents: write
+
+concurrency:
+  group: procesar
+  cancel-in-progress: false
+
+jobs:
+  procesar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 330
+    env:
+      DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar Tesseract (español) y PyMuPDF
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y tesseract-ocr tesseract-ocr-spa
+          pip install -r processor/requirements.txt
+
+      - name: OCR (gratis, un lote)
+        run: |
+          python3 processor/ocr_colima.py \
+            --periodo "${{ github.event.inputs.periodo || '2024-2027' }}" \
+            --limit "${{ github.event.inputs.lote || '10' }}"
+
+      - name: Resúmenes (DeepSeek) — sólo si hay llave
+        if: ${{ env.DEEPSEEK_API_KEY != '' }}
+        run: |
+          python3 processor/summarize_colima.py \
+            --limit "${{ github.event.inputs.lote || '10' }}"
+
+      - name: Commitear lo procesado
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/ocr data/summaries 2>/dev/null || true
+          git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
+          git push

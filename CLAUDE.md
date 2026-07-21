@@ -2,10 +2,12 @@
 
 > Persistent project context for the coding agent. Read this before any task.
 > **Roles:** PM & ideation = Claude (chat). Development, testing, validation = Fable.
-> **Status (2026-07-19):** Phase 1 **built and verified locally** — scraper, data, site, and
-> deploy workflow are done (see backlog checkmarks below). Launch is gated on X1 (legal
-> note) and X2 (URL), plus pushing to GitHub and enabling Pages. Phase 2 brief pending;
-> its key input changed: **the acta PDFs are scans → OCR required** (`docs/a3-spike.md`).
+> **Status (2026-07-20):** Phase 1 is **live** at https://umbralmx.github.io/cabildo-libre/
+> (public repo `umbralmx/cabildo-libre`, Pages on, scheduled refresh running). X1 (legal)
+> is still open — the site launched in attribution mode with the license claim softened.
+> **Phase 2 is underway**, scoped to the current term (2024-2027, 74 actas): a two-stage
+> processing pipeline in `processor/` — **Tesseract OCR** (free) + **DeepSeek summaries**
+> (text-only, ~$1/term). Engine spike and cost table in `docs/phase2-ocr-spike.md`.
 
 ---
 
@@ -71,7 +73,7 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 | Phase | Name | Scope |
 |---|---|---|
 | **1** | The Index | Static site: **search bar + browsable session timeline** over agenda text. **Built and verified locally 2026-07-19/20; not yet public** (gated on X1 + X2). |
-| **2** | The Deepening *(next)* | **OCR the scanned PDFs**, then attach plain-language summaries to each agenda item + its outcome; full-content search. |
+| **2** | The Deepening *(in progress)* | **OCR the scanned PDFs** (Tesseract) + plain-language summaries with outcome per agenda item (DeepSeek). Scoped to term 2024-2027 first. Pipeline built in `processor/`; site integration (full-content search + summary display) pending. |
 | **3** | Trends & Scale | Trend dashboards (licencias, fraccionamientos, budgets per quarter) + multi-municipality abstraction. |
 
 ---
@@ -122,14 +124,17 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 
 ## Next steps (2026-07-20)
 
-**For the maintainer (human-only):**
-1. **Decide X1.** Read `docs/x1-terminos-legal.md`. Start a transparency request and/or a consult with R3D / Artículo 19 — both are cheap and run in the background while you decide between launching with attribution or launching in reduced "index mode".
-2. **Create `umbralmx/cabildo-libre` on GitHub** (public) and authenticate `gh` locally if you want the agent to push and configure Pages.
-3. **Confirm X2** — free `umbralmx.github.io/cabildo-libre/` for v1, or buy a domain.
+**Done since last update:** Phase 1 is public (`umbralmx/cabildo-libre`, Pages live). Repo metadata set. Font path bug fixed. Phase 2 pipeline built (`processor/`) and OCR proven on 3 current-term actas.
 
-**Ready for the agent, once unblocked:**
-4. Push, enable Pages, trigger the first workflow run, verify the live URL.
-5. Phase 2 scoping spike: OCR quality test on 3 actas (2014 / 2020 / 2026 vintages) with Tesseract `spa` vs. a vision model, on a page containing a stamp and signatures — that is the hard case.
+**For the maintainer (human-only):**
+1. **Decide X1.** Read `docs/x1-terminos-legal.md`. The site is already public in attribution mode, so this is now about response posture, not gating — start a transparency request and/or an R3D / Artículo 19 consult.
+2. **Add the `DEEPSEEK_API_KEY` secret** to `umbralmx/cabildo-libre` (Settings → Secrets → Actions) so the Phase 2 `procesar.yml` workflow can run summaries. Without it, OCR still runs; summaries skip.
+3. **Confirm X2** — keep `umbralmx.github.io/cabildo-libre/` or buy a domain (add a `CNAME`).
+
+**Ready for the agent:**
+4. Once the secret exists: trigger `procesar.yml` (workflow_dispatch) to OCR + summarize a first batch of the term; verify output quality on real DeepSeek summaries (this is the one thing not yet proven end-to-end — no key was available at build time).
+5. **Site integration for Phase 2** (not started): full-content search over `data/ocr/`, and render `data/summaries/` under each agenda item with its `sentido` and a clear "resumen generado por IA sobre texto OCR" disclaimer.
+6. Watch the OCR text cap: `summarize_colima.py` sends the first 45K chars/acta — fine for most, but very large actas (e.g. acta 74, 108pp) get truncated. Revisit if outcomes on late pages get missed.
 
 ---
 
@@ -140,6 +145,8 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 | `CLAUDE.md` *(this file)* | Project context, scope, backlog, status |
 | `docs/metodologia.md` | **How the data is produced** — pipeline, parsing rules, editorial decisions, known gaps, how to reproduce |
 | `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
+| `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |
+| `processor/README.md` | **How Phase 2 runs** — the OCR + summary stages, deps, provider-swap, honesty rules |
 | `docs/x1-terminos-legal.md` | T&C findings, risk, and options — **read before launching** |
 | `docs/diseno.md` | How the Umbral brand system was applied, and deliberate deviations |
 | `data/SOURCE.md` | Dataset provenance, caveats, licensing position |

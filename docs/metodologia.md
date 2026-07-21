@@ -168,3 +168,41 @@ comunicación pública de sus contenidos. Eso está sin resolver y condiciona qu
 publicar y bajo qué licencia. El código es MIT; la estructura que aportamos se comparte
 bajo CC BY 4.0; el texto oficial se atribuye a su fuente sin que nosotros pretendamos
 licenciarlo.
+
+## 10. Fase 2 — texto completo y resúmenes (en construcción)
+
+Fase 1 indexa el **órden del día**. Fase 2 abre el **contenido de las actas** y le pone
+resúmenes en lenguaje llano. Alcance inicial: el término **2024-2027** (74 actas). El
+código vive en `processor/` y corre por lotes en GitHub Actions (`procesar.yml`), nunca
+en el request. Detalle operativo en `processor/README.md`; la decisión de motores y su
+costo en `docs/phase2-ocr-spike.md`.
+
+Dos etapas, cada una idempotente y cacheada:
+
+1. **OCR — `ocr_colima.py` (Tesseract `spa`, gratis).** Los PDF son escaneos sin capa de
+   texto (`a3-spike.md`), así que se rasteriza cada página a 200 DPI y se pasa por
+   Tesseract. Salida: `data/ocr/<id>.json`, texto por página. Es un OCR **imperfecto**
+   —numerales romanos mal leídos, caracteres sueltos, nombres propios aproximados— y así
+   se declara; sirve para búsqueda de texto completo, que tolera ruido.
+2. **Resúmenes — `summarize_colima.py` (DeepSeek, de pago, ~$1 el término).** Sobre el
+   texto OCR, un modelo redacta por cada punto del órden del día un resumen llano y un
+   `sentido` del acuerdo (`aprobado`, `rechazado`, `aplazado`, `retirado`, `tramite` o
+   `no_determinable`). La llamada al modelo está aislada en `call_llm()` para poder
+   cambiar de proveedor —o subir a un modelo de visión sobre las imágenes, si se quiere
+   más calidad que la del texto OCR— sin tocar el resto del pipeline.
+
+**La honestidad se mantiene con un summarizer de por medio.** El prompt obliga a
+interpretar el sentido a pesar del ruido del OCR, pero prohíbe inventar: si el acta no
+declara con claridad el resultado de un punto, queda `no_determinable`. La validación
+descarta cualquier punto que el modelo devuelva y que no exista en el órden del día.
+Cada resumen registra el `modelo` y la `fuente_texto` que lo produjeron.
+
+**Límite conocido:** el paso de resúmenes envía hasta 45,000 caracteres de texto por
+acta (para acotar costo), así que en actas muy largas —sobre todo las de anexos
+tabulares extensos— el desenlace de puntos que caen en páginas tardías puede quedar
+fuera. Es un ajuste pendiente, no un vacío que se rellene por inferencia.
+
+**Contrapartida del proveedor elegido:** DeepSeek es sólo texto, por lo que resume sobre
+el OCR ruidoso, más flojo justo en nombres de colonias y fraccionamientos —lo que la
+gente busca. Se documenta como decisión consciente (`phase2-ocr-spike.md`) y es
+reversible: subir a visión es cambiar tres variables de entorno.

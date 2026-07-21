@@ -1,0 +1,11 @@
+# Phase 2 processing dependencies (the heavy, occasional half of the pipeline).
+# The Phase 1 scraper needs none of this — it is stdlib-only.
+#
+# The `tesseract` binary + Spanish data is a system package, not pip:
+#   Debian/Actions: apt-get install -y tesseract-ocr tesseract-ocr-spa
+#   macOS:          brew install tesseract tesseract-lang
+#
+# The summary stage (summarize_colima.py) is stdlib-only — it calls the LLM
+# over plain HTTPS — so it needs nothing here, only DEEPSEEK_API_KEY at runtime.
+
+PyMuPDF==1.28.0
