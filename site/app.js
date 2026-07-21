@@ -15,7 +15,12 @@ const PROCEDIMIENTO = /^(lista de (asistencia|presentes)|declaraci[oó]n de qu[o
 
 const $ = (sel) => document.querySelector(sel);
 
-const state = { actas: [], q: "", periodo: "", desde: "", hasta: "" };
+const state = {
+  actas: [], q: "", periodo: "", desde: "", hasta: "",
+  summaries: {},      // acta id → { modelo, puntos: { n → {resumen, sentido} } }
+  fulltext: null,     // acta id → OCR text; lazy-loaded on first full-text search
+  _ftFolded: {},
+};
 
 /* Per-character accent/case folding that preserves string indices, so match
    positions found in the folded text map 1:1 back onto the original. */
@@ -36,6 +41,25 @@ function fold(s) {
 
 function esProcedural(texto) {
   return !SUSTANTIVO.test(texto) && PROCEDIMIENTO.test(texto);
+}
+
+/* Phase 2 summaries. `sentido` renders as a restrained mono label — monochrome
+   by default so it never competes with the search-match signal; alert only for
+   the rare, notable rejection; procedural 'tramite' points show no label. */
+const SENTIDO_LABEL = {
+  aprobado: "aprobado", rechazado: "rechazado",
+  aplazado: "aplazado", retirado: "retirado",
+  no_determinable: "sin resultado registrado en el acta",
+};
+function sentidoHTML(sentido) {
+  if (!sentido || sentido === "tramite") return "";
+  const label = SENTIDO_LABEL[sentido] || sentido;
+  const cls = sentido === "rechazado" ? " sd-alert"
+    : sentido === "no_determinable" ? " sd-open" : "";
+  return `<span class="sentido${cls}">${esc(label)}</span>`;
+}
+function resumenDe(actaId, n) {
+  return state.summaries[actaId]?.puntos?.[n] ?? null;
 }
 
 /* Nearly every point opens with the same formula ("Lectura, discusión y
@@ -124,6 +148,7 @@ function renderResults() {
   if (!terms.length) {
     resultsEl.hidden = true;
     timelineEl.hidden = false;
+    $("#fulltext").hidden = true;
     renderTimeline();
     return;
   }
@@ -140,14 +165,17 @@ function renderResults() {
       <li class="result sin-resultados">
         <p class="texto">Ningún punto del órden del día contiene esos términos${
           filtrando ? " dentro del período filtrado" : ""}.</p>
-        <p class="texto nota">La búsqueda cubre el órden del día de cada sesión, no el
-        contenido íntegro de las actas: los PDF son escaneos sin capa de texto. Un asunto
-        puede haberse discutido sin que su nombre aparezca en el órden del día.${
-          filtrando ? " Prueba ampliando el período." : ""}</p>
+        <p class="texto nota">Esta búsqueda cubre el órden del día de cada sesión. El
+        contenido íntegro de las actas se está incorporando poco a poco (los PDF son
+        escaneos que hay que pasar por OCR). Prueba también la búsqueda en el texto
+        completo, abajo.${filtrando ? " O amplía el período." : ""}</p>
       </li>`;
+    renderFulltext(terms);
     return;
   }
-  $("#result-list").innerHTML = hits.slice(0, 400).map(({ acta, item }) => `
+  $("#result-list").innerHTML = hits.slice(0, 400).map(({ acta, item }) => {
+    const r = resumenDe(acta.id, item.n);
+    return `
     <li class="result">
       <p class="meta mono">
         <span class="fecha">${fechaLarga(acta.fecha)}</span>
@@ -156,8 +184,66 @@ function renderResults() {
         <span>${esc(acta.periodo ?? "")}</span>
       </p>
       <p class="texto">${highlight(item.texto, terms)}</p>
+      ${r ? `<p class="resumen">${esc(r.resumen)} ${sentidoHTML(r.sentido)}</p>` : ""}
       ${acta.pdf_url ? `<a class="acta-link" href="${esc(acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
-    </li>`).join("");
+    </li>`;
+  }).join("");
+  renderFulltext(terms);
+}
+
+/* Full-content search over OCR text. Loaded lazily — the payload is large and
+   only grows as more actas are processed, so it isn't part of the initial page.
+   Honest about coverage: only the OCR'd actas are searchable here. */
+async function ensureFulltext() {
+  if (state.fulltext) return state.fulltext;
+  const r = await fetch("fulltext.json");
+  state.fulltext = (await r.json()).textos || {};
+  return state.fulltext;
+}
+function ftFolded(id) {
+  return state._ftFolded[id] ?? (state._ftFolded[id] = fold(state.fulltext[id]));
+}
+function fullTextSearch(terms) {
+  const out = [];
+  for (const acta of state.actas) {
+    const texto = state.fulltext[acta.id];
+    if (!texto) continue;
+    const folded = ftFolded(acta.id);
+    if (!terms.every((t) => folded.includes(t))) continue;
+    const i = folded.indexOf(terms[0]);
+    const start = Math.max(0, i - 90), end = Math.min(texto.length, i + 170);
+    const snip = texto.slice(start, end).replace(/\s+/g, " ").trim();
+    out.push({ acta, snip: (start > 0 ? "…" : "") + snip + (end < texto.length ? "…" : "") });
+  }
+  return out;
+}
+function renderFulltext(terms) {
+  const el = $("#fulltext");
+  el.hidden = false;
+  const q = esc(state.q.trim());
+  if (!state.fulltext) {
+    el.innerHTML =
+      `<button id="ft-btn" class="ft-btn">Buscar «${q}» también en el texto completo de las actas escaneadas →</button>`;
+    $("#ft-btn").onclick = async () => {
+      $("#ft-btn").textContent = "Cargando texto completo…";
+      try { await ensureFulltext(); } catch {
+        el.innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
+        return;
+      }
+      renderFulltext(terms);
+    };
+    return;
+  }
+  const hits = fullTextSearch(terms);
+  const total = Object.keys(state.fulltext).length;
+  el.innerHTML = `
+    <p class="ft-intro mono">Texto completo · ${hits.length} de ${total} ${total === 1 ? "acta procesada" : "actas procesadas"} contienen «${q}». El OCR abarca ${total} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
+    <ol class="result-list">${hits.map((h) => `
+      <li class="result ft-result">
+        <p class="meta mono"><span class="fecha">${fechaLarga(h.acta.fecha)}</span><span>Acta ${h.acta.no_acta ?? "s/n"}</span><span>texto completo</span></p>
+        <p class="texto">${highlight(h.snip, terms)}</p>
+        ${h.acta.pdf_url ? `<a class="acta-link" href="${esc(h.acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
+      </li>`).join("") || `<li class="result"><p class="texto nota">Ninguna de las ${total} actas con texto completo contiene esos términos.</p></li>`}</ol>`;
 }
 
 function renderTimeline() {
@@ -192,12 +278,17 @@ function sessionHTML(acta) {
     ?? acta.agenda_items.find((i) => !esProcedural(i.texto));
   const crudo = (primera ?? acta.agenda_items[0])?.texto;
   const titulo = crudo ? tituloCorto(crudo) : "Órden del día no publicado en el índice";
+  const resumido = state.summaries[acta.id];
   const items = acta.agenda_items.length
-    ? acta.agenda_items.map((i) => `
+    ? acta.agenda_items.map((i) => {
+        const r = resumenDe(acta.id, i.n);
+        return `
         <li${esProcedural(i.texto) ? ' class="proc"' : ""}>
           <span class="num">${i.numeral ? esc(i.numeral) + "." : "·"}</span>
-          <span class="texto">${esc(i.texto)}</span>
-        </li>`).join("")
+          <span class="texto">${esc(i.texto)}${r ? `
+            <span class="resumen">${esc(r.resumen)} ${sentidoHTML(r.sentido)}</span>` : ""}</span>
+        </li>`;
+      }).join("")
     : `<li class="empty"><span class="num">·</span>
          <span class="texto">El índice oficial no publica el órden del día de esta sesión.</span></li>`;
   return `
@@ -208,6 +299,7 @@ function sessionHTML(acta) {
       ${acta.pdf_url ? `<a class="s-pdf" href="${esc(acta.pdf_url)}" rel="external" onclick="event.stopPropagation()">PDF →</a>` : ""}
     </summary>
     <ol class="agenda">${items}</ol>
+    ${resumido ? `<p class="resumen-nota">Resumen y sentido de cada punto generados con IA (${esc(resumido.modelo)}) sobre el texto OCR del acta escaneada; pueden contener errores — verifica siempre en el PDF original.</p>` : ""}
   </details>`;
 }
 
@@ -259,9 +351,12 @@ function initFilters() {
 }
 
 async function main() {
-  const resp = await fetch("actas.json");
-  const data = await resp.json();
+  const [data, summaries] = await Promise.all([
+    fetch("actas.json").then((r) => r.json()),
+    fetch("summaries.json").then((r) => r.json()).catch(() => ({ resumenes: {} })),
+  ]);
   state.actas = data.actas;
+  state.summaries = summaries.resumenes || {};
   for (const acta of state.actas) {
     for (const item of acta.agenda_items) item._folded = fold(item.texto);
   }

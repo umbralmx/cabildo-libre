@@ -61,6 +61,7 @@
   <section id="results" class="results" aria-live="polite" hidden>
     <p class="result-count mono" id="result-count"></p>
     <ol id="result-list" class="result-list"></ol>
+    <div id="fulltext" class="fulltext" hidden></div>
   </section>
 
   <section id="timeline" class="timeline" aria-label="Línea de tiempo de sesiones">
@@ -68,7 +69,7 @@
   </section>
 
   <section id="datos" class="section">
-    <h2>Datos</h2>
+    <h2><span class="section-num">01</span>Datos</h2>
     <p>Esta información es pública y vuelve al público, ordenada. Cada registro procede
     del índice oficial mediante un script reproducible; no hay ediciones manuales.</p>
     <p>El contenido de los órdenes del día es del Ayuntamiento de Colima y se atribuye
@@ -82,16 +83,22 @@
   </section>
 
   <section id="metodologia" class="section">
-    <h2>Metodología</h2>
+    <h2><span class="section-num">02</span>Metodología</h2>
     <p>El texto buscable proviene del índice HTML de
     <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">actas de cabildo
     del Ayuntamiento de Colima</a>, donde el órden del día de cada sesión ya se publica como
     texto. Un script lo convierte en registros estructurados: fecha, número de acta, período,
     puntos numerados y enlace al PDF original.</p>
-    <p>Los PDF de las actas son escaneos sin capa de texto, por lo que su contenido íntegro
-    —la discusión y el sentido de cada votación— todavía no es buscable. Este sitio muestra
-    lo que estuvo <em>en la mesa</em>, no el resultado de cada punto; para eso, el enlace lleva
-    siempre al documento original.</p>
+    <p>Los PDF de las actas son escaneos sin capa de texto. Su contenido íntegro se está
+    incorporando poco a poco: cada acta se pasa por OCR para volverla buscable en el texto
+    completo, y sobre ese texto un modelo redacta un resumen en lenguaje llano y el
+    <em>sentido</em> de cada punto (aprobado, rechazado, aplazado…). Estos resúmenes son
+    <strong>generados por IA sobre texto OCR y pueden contener errores</strong>: cuando el
+    acta no declara con claridad un resultado, se marca como «sin resultado registrado» en
+    vez de inventarlo, y el enlace lleva siempre al documento original para verificar.</p>
+    <p>Este proceso avanza por lotes y empieza por el término actual (2024-2027). Mientras
+    tanto, la búsqueda principal cubre el órden del día; la búsqueda en el texto completo
+    abarca sólo las actas ya procesadas, y lo dice.</p>
     <p>Vacíos conocidos, declarados y no imputados: 27 sesiones cuyo órden del día no aparece
     en el índice oficial, una sesión sin fecha publicada, y enlaces PDF de 2013–2014 que el
     servidor del ayuntamiento ya no resuelve. Se conservan en los datos tal como están.</p>

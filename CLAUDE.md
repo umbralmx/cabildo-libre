@@ -133,7 +133,7 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 
 **Ready for the agent:**
 4. Once the secret exists: trigger `procesar.yml` (workflow_dispatch) to OCR + summarize a first batch of the term; verify output quality on real DeepSeek summaries (this is the one thing not yet proven end-to-end — no key was available at build time).
-5. **Site integration for Phase 2** (not started): full-content search over `data/ocr/`, and render `data/summaries/` under each agenda item with its `sentido` and a clear "resumen generado por IA sobre texto OCR" disclaimer.
+5. **Site integration for Phase 2** ✅ *(done 2026-07-20)*: summaries render under each agenda item (timeline + results) with a `sentido` label and an AI/OCR disclaimer; lazy full-content search over `data/ocr/` with honest coverage; `processor/build_site_index.py` compiles `site/summaries.json` + `site/fulltext.json` (wired into `procesar.yml`). Section-number brand flourish added. Verified by a headless render smoke-test — **not yet a visual pass** (browser tool was down); eyeball the live page.
 6. Watch the OCR text cap: `summarize_colima.py` sends the first 45K chars/acta — fine for most, but very large actas (e.g. acta 74, 108pp) get truncated. Revisit if outcomes on late pages get missed.
 
 ---

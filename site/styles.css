@@ -160,6 +160,57 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .result .acta-link { font-size: 13px; margin-top: 16px; display: inline-block; }
 .sin-resultados .nota { margin-top: 16px; color: var(--u-muted); font-size: 14px; }
 
+/* ── Phase 2: plain-language summary + outcome ──
+   The resumen sits under the point it explains. `sentido` is a mono label,
+   monochrome so it never competes with the search-match signal; alert only for
+   a rejection; caption italic when the acta records no result. */
+.resumen {
+  display: block;
+  margin-top: 8px;
+  color: var(--u-muted);
+  font-size: 14px;
+  max-width: 68ch;
+  text-wrap: pretty;
+}
+.result .resumen { margin-top: 12px; }
+.sentido {
+  font-family: var(--u-font-mono);
+  font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase;
+  color: var(--u-caption);
+  white-space: nowrap;
+}
+.sentido::before { content: "· "; }
+.sentido.sd-alert { color: var(--u-alert); }
+.sentido.sd-open { text-transform: none; letter-spacing: 0; font-style: italic; }
+.resumen-nota {
+  margin: 8px 0 20px 160px;
+  font-size: 12px; color: var(--u-caption); font-style: italic;
+  max-width: 68ch;
+}
+
+/* ── Phase 2: full-content search over OCR text ── */
+.fulltext { margin-top: 40px; }
+.ft-btn {
+  width: 100%;
+  padding: 14px 16px;
+  font: 500 14px var(--u-font-display);
+  letter-spacing: var(--u-tracking-display);
+  text-align: left;
+  color: var(--u-ink);
+  background: transparent;
+  border: var(--u-rule) solid var(--u-baseline);
+  border-radius: var(--u-radius);
+  cursor: pointer;
+}
+.ft-btn:hover { color: var(--u-signal); border-color: var(--u-signal); }
+.ft-intro {
+  font-size: 12px; color: var(--u-caption);
+  padding-top: 16px; margin-bottom: 16px;
+  border-top: 2px solid var(--u-ink);
+  max-width: 72ch; line-height: 1.5;
+}
+.ft-result .meta { color: var(--u-caption); }
+
 /* ── timeline ── table spec: 2px ink top rule, 1px row rules ── */
 .year-group { border-top: 2px solid var(--u-ink); margin-top: 40px; }
 .year-group > summary {
@@ -235,6 +286,16 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 /* ── data / method / footer ── */
 .section { margin-top: 80px; border-top: 2px solid var(--u-ink); padding-top: 32px; }
 .section h2 { font-size: 24px; margin-bottom: 16px; }   /* 22–26px */
+/* Section number in signal-mono — the brand book's chapter-header signature. */
+.section-num {
+  font-family: var(--u-font-mono);
+  font-weight: 400;
+  font-size: 0.6em;
+  color: var(--u-signal);
+  margin-right: 12px;
+  vertical-align: 0.15em;
+  letter-spacing: 0;
+}
 .section p { max-width: 65ch; color: var(--u-muted); font-size: 15px; }
 .section p + p { margin-top: 16px; }
 .datalinks {
@@ -264,6 +325,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   .session .s-fecha { grid-column: 1 / -1; }
   .agenda { padding-left: 24px; padding-right: 0; }
   .agenda li { grid-template-columns: 40px 1fr; gap: 8px; }
+  .resumen-nota { margin-left: 24px; }
 }
 
 @media (prefers-reduced-motion: no-preference) {

@@ -89,6 +89,25 @@ lugar de sólo decir «sin resultados».
    fuentes auto-hospedadas: caería a una sans genérica. El isotipo (sin texto) sí se
    usa como SVG.
 
+## Fase 2 en la interfaz (2026-07-20)
+
+Al integrar OCR y resúmenes al sitio se tomaron dos decisiones de marca:
+
+- **Número de sección en señal-mono.** Los encabezados de sección (`01 Datos`,
+  `02 Metodología`) llevan el número en mono, color señal — la firma de encabezado del
+  brand book (§Contenido y §Esencia lo usan así). Es un uso estructural de señal, uno por
+  sección/vista, sancionado por el propio manual; no gasta el presupuesto de señal de la
+  vista principal.
+- **El `sentido` no usa señal.** En resultados, la señal ya la lleva el resaltado de la
+  coincidencia (`<mark>`). Por eso las etiquetas de sentido (aprobado, aplazado…) van en
+  **mono monocromo** (color `muted`/`caption`), no en señal — así no compiten por el único
+  elemento señal de la vista. La excepción `rechazado` usa `alert` (el token para lo
+  excepcional), y `no_determinable` va en `caption` en cursiva. Esto también cumple «nunca
+  codificar por color solamente»: el sentido se lee como palabra, no como color.
+- **Aviso de IA visible.** Cada acta con resúmenes muestra una nota: «generados con IA
+  sobre texto OCR; pueden contener errores — verifica en el PDF». La honestidad es parte
+  de la marca (voz civil-científica), no una nota al pie.
+
 ## Lista de verificación previa al lanzamiento
 
 - [x] Modo correcto para el medio (laboratorio/light para sitio web)
