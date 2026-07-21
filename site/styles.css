@@ -210,6 +210,8 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   max-width: 72ch; line-height: 1.5;
 }
 .ft-result .meta { color: var(--u-caption); }
+.ft-snip { margin-top: 10px; padding-left: 12px; border-left: var(--u-rule) solid var(--u-border); }
+.ft-snip:first-of-type { margin-top: 0; }
 
 /* ── on-site acta detail: session brief + full OCR text ── */
 .acta-detalle { margin-top: 16px; }

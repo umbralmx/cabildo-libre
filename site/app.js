@@ -18,7 +18,8 @@ const $ = (sel) => document.querySelector(sel);
 const state = {
   actas: [], q: "", periodo: "", desde: "", hasta: "",
   summaries: {},      // acta id → { modelo, puntos: { n → {resumen, sentido} } }
-  fulltext: null,     // acta id → OCR text; lazy-loaded on first full-text search
+  fulltext: null,     // acta id → OCR text; loaded once, on first search
+  fulltextLoading: false,
   _ftFolded: {},
 };
 
@@ -204,47 +205,80 @@ async function ensureFulltext() {
 function ftFolded(id) {
   return state._ftFolded[id] ?? (state._ftFolded[id] = fold(state.fulltext[id]));
 }
-function fullTextSearch(terms) {
-  const out = [];
-  for (const acta of state.actas) {
-    const texto = state.fulltext[acta.id];
-    if (!texto) continue;
-    const folded = ftFolded(acta.id);
-    if (!terms.every((t) => folded.includes(t))) continue;
-    const i = folded.indexOf(terms[0]);
-    const start = Math.max(0, i - 90), end = Math.min(texto.length, i + 170);
-    const snip = texto.slice(start, end).replace(/\s+/g, " ").trim();
-    out.push({ acta, snip: (start > 0 ? "…" : "") + snip + (end < texto.length ? "…" : "") });
+/* Every occurrence of the primary term in one acta's OCR text, as context
+   snippets. Requires all terms present in the doc; anchors snippets on the
+   first term and merges overlapping windows. Capped so a very common word
+   doesn't flood the page (the count reports the true total). */
+function fullTextMatches(id, terms) {
+  const folded = ftFolded(id);
+  if (!terms.every((t) => folded.includes(t))) return null;
+  const texto = state.fulltext[id];
+  const positions = [];
+  let i = 0;
+  while ((i = folded.indexOf(terms[0], i)) !== -1) {
+    positions.push(i);
+    i += terms[0].length;
+    if (positions.length >= 200) break;
   }
-  return out;
+  const snippets = [];
+  let lastEnd = -1;
+  for (const p of positions) {
+    if (snippets.length >= 8) break;
+    if (p < lastEnd) continue;               // already inside the previous window
+    const start = Math.max(0, p - 70);
+    const end = Math.min(texto.length, p + terms[0].length + 120);
+    lastEnd = end;
+    const snip = texto.slice(start, end).replace(/\s+/g, " ").trim();
+    snippets.push((start > 0 ? "…" : "") + snip + (end < texto.length ? "…" : ""));
+  }
+  return { count: positions.length, shown: snippets.length, snippets };
 }
+
+/* Full-text search runs automatically once the OCR payload is loaded. It loads
+   on the first search (not on page load, to keep the initial page light), then
+   stays live for subsequent queries. */
+async function loadFulltextThenRerender() {
+  if (state.fulltext || state.fulltextLoading) return;
+  state.fulltextLoading = true;
+  try { await ensureFulltext(); }
+  catch {
+    state.fulltextLoading = false;
+    $("#fulltext").innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
+    return;
+  }
+  state.fulltextLoading = false;
+  const t = fold(state.q.trim()).split(/\s+/).filter(Boolean);
+  if (t.length) renderFulltext(t);
+}
+
 function renderFulltext(terms) {
   const el = $("#fulltext");
   el.hidden = false;
   const q = esc(state.q.trim());
   if (!state.fulltext) {
-    el.innerHTML =
-      `<button id="ft-btn" class="ft-btn">Buscar «${q}» también en el texto completo de las actas escaneadas →</button>`;
-    $("#ft-btn").onclick = async () => {
-      $("#ft-btn").textContent = "Cargando texto completo…";
-      try { await ensureFulltext(); } catch {
-        el.innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
-        return;
-      }
-      renderFulltext(terms);
-    };
+    el.innerHTML = `<p class="ft-intro mono">Buscando «${q}» en el texto completo de las actas escaneadas…</p>`;
+    loadFulltextThenRerender();
     return;
   }
-  const hits = fullTextSearch(terms);
-  const total = Object.keys(state.fulltext).length;
+  const results = [];
+  let totalOcc = 0;
+  for (const acta of state.actas) {
+    if (!state.fulltext[acta.id]) continue;
+    const m = fullTextMatches(acta.id, terms);
+    if (!m) continue;
+    totalOcc += m.count;
+    results.push({ acta, ...m });
+  }
+  const totalActas = Object.keys(state.fulltext).length;
   el.innerHTML = `
-    <p class="ft-intro mono">Texto completo · ${hits.length} de ${total} ${total === 1 ? "acta procesada" : "actas procesadas"} contienen «${q}». El OCR abarca ${total} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
-    <ol class="result-list">${hits.map((h) => `
+    <p class="ft-intro mono">Texto completo · «${q}» aparece ${totalOcc} ${totalOcc === 1 ? "vez" : "veces"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
+    <ol class="result-list">${results.map((r) => `
       <li class="result ft-result">
-        <p class="meta mono"><span class="fecha">${fechaLarga(h.acta.fecha)}</span><span>Acta ${h.acta.no_acta ?? "s/n"}</span><span>texto completo</span></p>
-        <p class="texto">${highlight(h.snip, terms)}</p>
-        ${h.acta.pdf_url ? `<a class="acta-link" href="${esc(h.acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
-      </li>`).join("") || `<li class="result"><p class="texto nota">Ninguna de las ${total} actas con texto completo contiene esos términos.</p></li>`}</ol>`;
+        <p class="meta mono"><span class="fecha">${fechaLarga(r.acta.fecha)}</span><span>Acta ${r.acta.no_acta ?? "s/n"}</span><span>${r.count} ${r.count === 1 ? "aparición" : "apariciones"}${r.shown < r.count ? ` · se muestran ${r.shown}` : ""}</span></p>
+        ${r.snippets.map((s) => `<p class="texto ft-snip">${highlight(s, terms)}</p>`).join("")}
+        ${state.summaries[r.acta.id] ? actaDetalleHTML(r.acta.id, "Ver texto completo (OCR) de esta acta →") : ""}
+        ${r.acta.pdf_url ? `<a class="acta-link" href="${esc(r.acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
+      </li>`).join("") || `<li class="result"><p class="texto nota">Ninguna de las ${totalActas} actas con texto completo contiene «${q}».</p></li>`}</ol>`;
 }
 
 function renderTimeline() {
