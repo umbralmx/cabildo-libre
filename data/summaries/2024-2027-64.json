@@ -1,0 +1,77 @@
+{
+ "id": "2024-2027-64",
+ "no_acta": 64,
+ "fecha": "2026-01-15",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T14:59:54+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día de la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar las actas de cabildo números 60, 61, 62 y 63 en la próxima sesión, lo cual fue aprobado por unanimidad, quedando pendiente su lectura y aprobación.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la ampliación al presupuesto de ingresos y egresos del municipio para el ejercicio fiscal 2025, con recursos del FORTAMUN 2025 y recursos fiscales.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se presentó el dictamen que autoriza realizar las adecuaciones presupuestales correspondientes a diciembre de 2025, pero no se especifica el resultado de la votación en el acta disponible.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de diciembre de 2025, pero no se especifica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentó el dictamen que autoriza la expedición de tres licencias comerciales para venta de bebidas alcohólicas, pero no se especifica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se presentó el dictamen que autoriza la baja de cinco licencias comerciales, pero no se especifica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se presentó el dictamen que aprueba la incorporación municipal de la etapa única del desarrollo denominado Instituto Adonai, ubicado al norte de Colima, pero no se especifica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se procedió a la clausura de la sesión, pero no se menciona en el acta disponible.",
+   "sentido": "no_determinable"
+  }
+ ]
+}

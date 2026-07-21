@@ -1,0 +1,89 @@
+{
+ "id": "2024-2027-67",
+ "no_acta": 67,
+ "fecha": "2026-03-06",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:00:48+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se verificó que hubiera quórum legal y se declaró instalada la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó el acta de la sesión anterior (Acta N° 66).",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza el comodato de 22 inmuebles a favor del DIF Municipal Colima, así como del estacionamiento del Auditorio Miguel de la Madrid Hurtado, para posible subarrendamiento.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el dictamen que autoriza suscribir un convenio de colaboración entre el Municipio de Colima y el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó el dictamen que autoriza la expedición de una licencia comercial para venta de bebidas alcohólicas (apertura de 'Acuarela Glu Glu' en Colonia Rinconada San Pablo) y un cambio de propietario de la licencia B-00158 ('Chamorros Ponce' en Carretera Colima-Coquimatlán, Parque Industrial).",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se consideró el dictamen que aprueba el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-04-66-023-019-000, ubicado en el fraccionamiento Granjas y Campestres del Chanal.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se consideró el dictamen que aprueba el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN'.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se consideró el dictamen que autoriza la Incorporación Municipal Anticipada de las Etapas 1, 2, 6, 7 y 8 del Fraccionamiento Primavera Hills.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se consideró el dictamen que aprueba la suscripción de un convenio de colaboración entre el Municipio de Colima y la empresa Bebiendo, S.A. de C.V.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se consideró la aprobación o reprobación de la Minuta de reforma a la Constitución del Estado de Colima en materia de igualdad sustantiva.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

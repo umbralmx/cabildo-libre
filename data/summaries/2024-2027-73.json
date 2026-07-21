@@ -1,0 +1,59 @@
+{
+ "id": "2024-2027-73",
+ "no_acta": 73,
+ "fecha": "2026-04-29",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:02:40+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar las Actas de Cabildo N° 71 y 72 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se decretó un receso para el desarrollo de la Sesión Extraordinaria del Cabildo Infantil 2026, a cargo del DIF Municipal.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se reanudó la Sesión Extraordinaria de Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se procedió a la entrega de reconocimientos a los integrantes del Cabildo Infantil.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes y se declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

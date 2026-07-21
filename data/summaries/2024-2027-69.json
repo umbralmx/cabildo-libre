@@ -1,0 +1,71 @@
+{
+ "id": "2024-2027-69",
+ "no_acta": 69,
+ "fecha": "2026-03-14",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:01:25+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia; estuvieron presentes el Presidente Municipal, la Síndica, y varios regidores, con dos faltas justificadas.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "El Presidente Municipal solicitó autorización para presentar el Acta de Cabildo N° 68 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se presentó el dictamen que autoriza adecuaciones presupuestales solicitadas por la Tesorería Municipal para febrero de 2026, pero el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado la Cuenta Pública de febrero de 2026, pero el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se presentó el dictamen para municipalizar el Fraccionamiento Residencial San Javier, pero el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentó el dictamen para el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-99-93-101-172-000, pero el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se presentó el dictamen para aprobar el Reglamento de Reconocimiento al Mérito Ciudadano, pero el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

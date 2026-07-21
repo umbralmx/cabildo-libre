@@ -1,0 +1,95 @@
+{
+ "id": "2024-2027-72",
+ "no_acta": 72,
+ "fecha": "2026-04-29",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:02:20+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar el Acta de Cabildo N° 71 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad suscribir el Convenio de Colaboración con la Secretaría de Seguridad y Protección Ciudadana y la Secretaría de Infraestructura, Comunicaciones y Transportes para la construcción y equipamiento del centro comunitario 'México Imparable' en la colonia Villas del Bosque.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se presentó el dictamen para autorizar el Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, pero no se cuenta con el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se puso a consideración el dictamen para dar de baja cinco licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se puso a consideración el dictamen para expedir cuatro licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se puso a consideración el dictamen para dar de baja siete licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se puso a consideración el dictamen para expedir cuatro nuevas licencias comerciales para venta y consumo de bebidas alcohólicas, solicitadas con el Memorándum No. 175. No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se puso a consideración el dictamen para autorizar el Cierre Fiscal de Obras 2025. No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se puso a consideración el dictamen para suscribir convenio de colaboración con el Organismo Descentralizado Financiera para el Bienestar (FINABIEN). No se determina el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se declaró la clausura de la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}

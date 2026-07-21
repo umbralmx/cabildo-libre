@@ -1,0 +1,83 @@
+{
+ "id": "2024-2027-68",
+ "no_acta": 68,
+ "fecha": "2026-03-11",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:01:13+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se verificó la asistencia de los miembros del cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día y se aprobó por unanimidad incluir un dictamen sobre la modificación al programa parcial de urbanización del fraccionamiento Margaritas.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura del acta 67 y se aprobó por unanimidad.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad declarar recinto ferial los espacios públicos Jardín Libertad, Jardín Torres Quintero y calles Reforma, 16 de Septiembre, Santos Degollado, Francisco I. Madero, Medellín, Miguel Hidalgo y Gabino Barreda para el festival SABORA FEST 2026 del 19 al 22 de marzo, autorizando los cobros correspondientes.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad dar de baja seis licencias comerciales cuyos establecimientos ya no funcionan.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la expedición de ocho licencias para venta y consumo de bebidas alcohólicas en establecimientos ubicados en colonias Parque Industrial, La Guadalupe, Centro, Residencial Esmeralda, Puerta del Sol, El Moralete y Guadalajarita.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se sometió a consideración el dictamen para autorizar la incorporación municipal anticipada de la Etapa 2 del fraccionamiento San Bernardo.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se sometió a consideración el dictamen que autoriza el programa parcial de urbanización del fraccionamiento Savanna Hábitat Residencial.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se sometió a consideración el dictamen que aprueba el Reglamento de la Dirección de Fomento Deportivo y abroga los anteriores.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se pasó a Asuntos Generales.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "no_determinable"
+  }
+ ]
+}

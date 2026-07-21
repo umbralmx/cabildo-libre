@@ -1,0 +1,101 @@
+{
+ "id": "2024-2027-70",
+ "no_acta": 70,
+ "fecha": "2026-03-27",
+ "periodo": "2024-2027",
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-21T15:01:43+00:00",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al orden del día.",
+   "sentido": "tramite"
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó presentar las actas de Cabildo 68 y 69 en la próxima sesión, sin aprobarlas ahora.",
+   "sentido": "aplazado"
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó celebrar contratos de arrendamiento para la Biblioteca Pública Municipal Marina Larios Arreola y la Financiera para el Bienestar en Los Tepames, y para oficinas municipales en la calle Manuel Álvarez 44, colonia Centro, Colima.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el Programa de Trabajo Municipal de Salud Pública, en el marco del Programa Federal de Municipios Promotores de Salud.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó celebrar contratos de compensación por desgaste de uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
+   "sentido": "aprobado"
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentó dictamen para dar de baja las licencias de venta de bebidas alcohólicas B-000630, B-002784 y B-002664; el acta no indica el resultado de la votación.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se presentó dictamen para expedir cuatro licencias comerciales de bebidas alcohólicas y un cambio de propietario; el acta no indica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se presentó dictamen para municipalizar la etapa única del fraccionamiento 'La Castellana'; el acta no indica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se presentó dictamen para la incorporación municipal anticipada de la etapa 4 del fraccionamiento 'Puerta Real'; el acta no indica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se presentó dictamen para aprobar el estudio de impacto territorial y urbano del lote con clave catastral 02-01-04-080-004-000, en la colonia Jardines de la Corregidora; el acta no indica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se presentó dictamen para instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de las y los maestros; el acta no indica el resultado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias de abril a junio; el acta no indica si fue aprobado.",
+   "sentido": "no_determinable"
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite"
+  }
+ ]
+}
