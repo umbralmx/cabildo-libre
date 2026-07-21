@@ -5,96 +5,97 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:01:59+00:00",
+ "generado": "2026-07-21T15:21:47+00:00",
+ "resumen_sesion": "Se aprobaron actas previas y se discutieron temas de presupuesto, fraccionamientos y nombramientos, sin que consten los resultados de la mayoría de las votaciones en el acta.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "resumen": "Se verificó la lista de asistencia de los miembros del cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día de la sesión.",
+   "resumen": "Se dio lectura al orden del día de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron las Actas de Cabildo números 68, 69 y 70 por unanimidad, con las abstenciones de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno.",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 68, 69 y 70, con dos abstenciones.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se sometió a consideración el dictamen que autoriza adecuaciones presupuestales solicitadas por la Tesorería Municipal para marzo de 2026, pero no se determinó el resultado de la votación.",
+   "resumen": "Se presentó el dictamen para autorizar adecuaciones presupuestales solicitadas por la Tesorería Municipal de marzo de 2026.",
    "sentido": "no_determinable"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se sometió a consideración el dictamen que autoriza remitir al Congreso del Estado la Cuenta Pública de marzo de 2026, pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de marzo de 2026.",
    "sentido": "no_determinable"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se sometió a consideración el dictamen para inscribir con letras doradas nombres de mujeres y hombres ilustres en el Auditorio Gral. Manuel Álvarez, pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para inscribir con letras doradas nombres de mujeres y hombres ilustres en el Auditorio General Manuel Álvarez.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se sometió a consideración el dictamen para aceptar el avalúo de predios ubicados al sur de la ciudad (claves catastrales 02-99-90-043-328-000 y 02-99-92-039-003-000), pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para aceptar el avalúo de dos predios ubicados al sur de la ciudad, con claves catastrales 02-99-90-043-328-000 y 02-99-92-039-003-000.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se sometió a consideración el dictamen que autoriza la Incorporación Municipal Anticipada de la Etapa Única del Fraccionamiento CARSOL CHEVROLET COLIMA, pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para autorizar la incorporación municipal anticipada de la etapa única del fraccionamiento CARSOL CHEVROLET COLIMA.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se sometió a consideración el dictamen que autoriza la Incorporación Municipal Anticipada de las Etapas 2 a la 7 del Fraccionamiento LOMAS DE SAN GERMÁN II, pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para autorizar la incorporación municipal anticipada de las etapas 2 a la 7 del fraccionamiento LOMAS DE SAN GERMÁN II.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se sometió a consideración el dictamen que aprueba el Estudio de Impacto Territorial y Urbano de los lotes urbanos 02-04-66-024-005-000 y 02-04-66-024-006-000 del Fraccionamiento Granjas y Campestres Del Chanal, pero no se determinó el resultado.",
+   "resumen": "Se presentó el dictamen para aprobar el estudio de impacto territorial y urbano de los lotes urbanos 02-04-66-024-005-000 y 02-04-66-024-006-000 del fraccionamiento Granjas y Campestres Del Chanal.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se sometió a consideración el punto de acuerdo para declarar el Patio Central de la Presidencia Municipal como recinto oficial para la Sesión Extraordinaria del Cabildo Infantil 2026, pero no se determinó el resultado.",
+   "resumen": "Se propuso declarar el Patio Central de la Presidencia Municipal como recinto oficial para la sesión extraordinaria del Cabildo Infantil 2026 el 29 de abril.",
    "sentido": "no_determinable"
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se propuso el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico del Municipio de Colima, pero no se determinó si fue aprobado.",
+   "resumen": "Se propuso el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico del Municipio de Colima.",
    "sentido": "no_determinable"
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales.",
-   "sentido": "tramite"
+   "resumen": "Se trataron asuntos generales no especificados en el acta.",
+   "sentido": "no_determinable"
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se dio por clausurada la sesión.",
    "sentido": "tramite"
   }
  ]

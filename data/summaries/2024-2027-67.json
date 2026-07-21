@@ -5,84 +5,85 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:00:48+00:00",
+ "generado": "2026-07-21T15:20:17+00:00",
+ "resumen_sesion": "Se aprobaron comodatos de 22 inmuebles al DIF municipal, convenio con CRREAD, dos licencias de alcohol, estudio urbano, y otros puntos; los puntos 9 a 13 no se determinaron por falta de información.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "resumen": "Lista de asistencia de los miembros del cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se verificó que hubiera quórum legal y se declaró instalada la sesión.",
+   "resumen": "Declaración de quórum legal e instalación de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
+   "resumen": "Lectura del orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el acta de la sesión anterior (Acta N° 66).",
+   "resumen": "Lectura y aprobación del acta de cabildo número 66.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el dictamen que autoriza el comodato de 22 inmuebles a favor del DIF Municipal Colima, así como del estacionamiento del Auditorio Miguel de la Madrid Hurtado, para posible subarrendamiento.",
+   "resumen": "Dictamen que autoriza comodato de 22 bienes inmuebles al DIF Municipal y del estacionamiento del Auditorio Miguel de la Madrid para posible subarrendamiento.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el dictamen que autoriza suscribir un convenio de colaboración entre el Municipio de Colima y el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
+   "resumen": "Dictamen que autoriza convenio de colaboración con el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
    "sentido": "aprobado"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó el dictamen que autoriza la expedición de una licencia comercial para venta de bebidas alcohólicas (apertura de 'Acuarela Glu Glu' en Colonia Rinconada San Pablo) y un cambio de propietario de la licencia B-00158 ('Chamorros Ponce' en Carretera Colima-Coquimatlán, Parque Industrial).",
+   "resumen": "Dictamen que autoriza expedición de una licencia comercial con venta de bebidas alcohólicas y un cambio de propietario.",
    "sentido": "aprobado"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se consideró el dictamen que aprueba el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-04-66-023-019-000, ubicado en el fraccionamiento Granjas y Campestres del Chanal.",
-   "sentido": "no_determinable"
+   "resumen": "Dictamen que aprueba el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-04-66-023-019-000.",
+   "sentido": "aprobado"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se consideró el dictamen que aprueba el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN'.",
+   "resumen": "Dictamen que aprueba el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN'.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se consideró el dictamen que autoriza la Incorporación Municipal Anticipada de las Etapas 1, 2, 6, 7 y 8 del Fraccionamiento Primavera Hills.",
+   "resumen": "Dictamen que autoriza la Incorporación Municipal Anticipada de las Etapas 1, 2, 6, 7 y 8 del Fraccionamiento Primavera Hills.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se consideró el dictamen que aprueba la suscripción de un convenio de colaboración entre el Municipio de Colima y la empresa Bebiendo, S.A. de C.V.",
+   "resumen": "Dictamen que aprueba la suscripción de Convenio de Colaboración con la empresa Bebiendo, S.A. de C.V.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se consideró la aprobación o reprobación de la Minuta de reforma a la Constitución del Estado de Colima en materia de igualdad sustantiva.",
+   "resumen": "Aprobación o reprobación de la Minuta con proyecto de Decreto en materia de Igualdad Sustantiva.",
    "sentido": "no_determinable"
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Clausura de la sesión.",
    "sentido": "tramite"
   }
  ]

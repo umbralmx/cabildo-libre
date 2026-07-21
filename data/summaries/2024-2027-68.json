@@ -5,78 +5,79 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:01:13+00:00",
+ "generado": "2026-07-21T15:20:50+00:00",
+ "resumen_sesion": "Se aprobó la declaración de recinto ferial para el festival SABORA FEST, la baja de seis licencias comerciales y la expedición de ocho licencias para venta de alcohol, así como actas y modificación del orden del día.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se verificó la asistencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia de los miembros del cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día y se aprobó por unanimidad incluir un dictamen sobre la modificación al programa parcial de urbanización del fraccionamiento Margaritas.",
+   "resumen": "Se leyó y aprobó el orden del día, con una modificación para incluir el dictamen sobre el fraccionamiento Margaritas.",
    "sentido": "aprobado"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura del acta 67 y se aprobó por unanimidad.",
+   "resumen": "Se dispensó la lectura y se aprobó el acta de cabildo número 67.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad declarar recinto ferial los espacios públicos Jardín Libertad, Jardín Torres Quintero y calles Reforma, 16 de Septiembre, Santos Degollado, Francisco I. Madero, Medellín, Miguel Hidalgo y Gabino Barreda para el festival SABORA FEST 2026 del 19 al 22 de marzo, autorizando los cobros correspondientes.",
+   "resumen": "Se aprobó declarar recinto ferial varios puntos de la ciudad (Jardín Libertad, Jardín Torres Quintero, calle Francisco I. Madero) para el festival SABORA FEST del 19 al 22 de marzo de 2026, con autorización de cobros y suscripción de convenios.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad dar de baja seis licencias comerciales cuyos establecimientos ya no funcionan.",
+   "resumen": "Se aprobó dar de baja seis licencias comerciales para venta de bebidas alcohólicas cuyos establecimientos ya no funcionan.",
    "sentido": "aprobado"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad la expedición de ocho licencias para venta y consumo de bebidas alcohólicas en establecimientos ubicados en colonias Parque Industrial, La Guadalupe, Centro, Residencial Esmeralda, Puerta del Sol, El Moralete y Guadalajarita.",
-   "sentido": "aprobado"
+   "resumen": "Se presentó el dictamen para expedir ocho licencias comerciales para venta de bebidas alcohólicas en diversos establecimientos; no se registra votación en el acta disponible.",
+   "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se sometió a consideración el dictamen para autorizar la incorporación municipal anticipada de la Etapa 2 del fraccionamiento San Bernardo.",
+   "resumen": "No se encontró información en la parte disponible del acta sobre este punto.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se sometió a consideración el dictamen que autoriza el programa parcial de urbanización del fraccionamiento Savanna Hábitat Residencial.",
+   "resumen": "No se encontró información en la parte disponible del acta sobre este punto.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se sometió a consideración el dictamen que aprueba el Reglamento de la Dirección de Fomento Deportivo y abroga los anteriores.",
+   "resumen": "No se encontró información en la parte disponible del acta sobre este punto.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se pasó a Asuntos Generales.",
+   "resumen": "No se encontró información en la parte disponible del acta sobre este punto.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "No se encontró información en la parte disponible del acta sobre este punto.",
    "sentido": "no_determinable"
   }
  ]

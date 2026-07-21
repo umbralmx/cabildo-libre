@@ -5,12 +5,13 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T03:16:17+00:00",
+ "generado": "2026-07-21T15:22:21+00:00",
+ "resumen_sesion": "El cabildo aprobó actas previas, ajustes presupuestales, convenios, incorporación de predio, licencia de alcohol, beneficios a policías, bono a madres trabajadoras e incentivos fiscales.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registraron los presentes.",
+   "resumen": "Se pasó lista de asistencia de los integrantes del cabildo.",
    "sentido": "tramite"
   },
   {
@@ -22,74 +23,74 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
+   "resumen": "Se leyó y aprobó el orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 71, 72 y 73.",
+   "resumen": "Se dispensó la lectura y se aprobaron por unanimidad las actas 71, 72 y 73.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó el dictamen para autorizar transferencias presupuestarias compensadas por $27,569,322.77 solicitadas por la Tesorería Municipal para abril de 2026.",
+   "resumen": "Se presentó dictamen para autorizar adecuaciones presupuestales de abril 2026 solicitadas por Tesorería.",
    "sentido": "no_determinable"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se discutió el dictamen para enviar la cuenta pública de abril de 2026 al Congreso del Estado.",
+   "resumen": "Se presentó dictamen para remitir la Cuenta Pública de abril 2026 al Congreso del Estado.",
    "sentido": "no_determinable"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se discutió el dictamen para firmar un convenio con la Fundación Humanista de Ayuda a Discapacitados FHADI.",
+   "resumen": "Se presentó dictamen para suscribir convenio con la Fundación Humanista de Ayuda a Discapacitados FHADI.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se discutió el dictamen para incorporar al municipio un predio con clave catastral 02-01-06-165-010-000 del fraccionamiento Girasoles.",
+   "resumen": "Se presentó dictamen para la incorporación municipal del predio con clave catastral 02-01-06-165-010-000 del Fraccionamiento Girasoles.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se discutió el dictamen para autorizar una licencia de venta de alcohol y un cambio de domicilio.",
+   "resumen": "Se presentó dictamen para expedir una licencia comercial con venta de alcohol y otra de cambio de domicilio.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se discutió el dictamen para otorgar seguridad social a aspirantes a policías y crear 13 plazas de policía.",
+   "resumen": "Se presentó dictamen para otorgar seguridad social y equiparar beca a aspirantes a policías, y crear 13 plazas de policía.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se discutió el dictamen para firmar un convenio con el establecimiento VIVO FIT GYM.",
+   "resumen": "Se presentó dictamen para suscribir convenio con el establecimiento Vivo Fit Gym.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se discutió el dictamen para otorgar un bono a madres trabajadoras del Ayuntamiento.",
+   "resumen": "Se presentó dictamen para otorgar bono a madres trabajadoras del ayuntamiento con motivo del día social, equiparándolo al convenio de concertación laboral.",
    "sentido": "no_determinable"
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se discutió el punto de acuerdo para aprobar incentivos fiscales a contribuyentes del Municipio de Colima.",
+   "resumen": "Se presentó punto de acuerdo para aprobar iniciativa de incentivos fiscales a contribuyentes del municipio.",
    "sentido": "no_determinable"
   },
   {
    "n": 14,
    "numeral": "XIV",
    "resumen": "Se trataron asuntos generales.",
-   "sentido": "no_determinable"
+   "sentido": "tramite"
   },
   {
    "n": 15,

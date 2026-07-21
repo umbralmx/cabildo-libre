@@ -5,90 +5,91 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:02:20+00:00",
+ "generado": "2026-07-21T15:21:59+00:00",
+ "resumen_sesion": "Se aprobó la Cuenta Pública 2025 y el convenio para el centro comunitario México Imparable; se difirió el acta previa; varios dictámenes quedaron sin resolución por corte del acta.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "resumen": "Se registró la asistencia de los integrantes del Cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día previsto para la sesión.",
+   "resumen": "Se dio lectura al orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó autorización para presentar el Acta de Cabildo N° 71 en la próxima sesión, lo cual fue aprobado por unanimidad.",
-   "sentido": "aprobado"
+   "resumen": "Se solicitó y aprobó presentar el acta de la sesión 71 en la próxima sesión, por lo que no se aprobó en esta.",
+   "sentido": "aplazado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025.",
+   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del ejercicio 2025.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad suscribir el Convenio de Colaboración con la Secretaría de Seguridad y Protección Ciudadana y la Secretaría de Infraestructura, Comunicaciones y Transportes para la construcción y equipamiento del centro comunitario 'México Imparable' en la colonia Villas del Bosque.",
+   "resumen": "Se aprobó suscribir convenio con la SSPC y SICT para la construcción y equipamiento del centro comunitario México Imparable en la colonia Villas del Bosque.",
    "sentido": "aprobado"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para autorizar el Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, pero no se cuenta con el resultado de la votación.",
+   "resumen": "Se presentó el dictamen del Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, pero el acta no registra la votación.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se puso a consideración el dictamen para dar de baja cinco licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "resumen": "Se presentó dictamen para dar de baja cinco licencias comerciales de venta de alcohol, sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se puso a consideración el dictamen para expedir cuatro licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "resumen": "Se presentó dictamen para expedir cuatro licencias comerciales de venta de alcohol, sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se puso a consideración el dictamen para dar de baja siete licencias comerciales para venta y consumo de bebidas alcohólicas. No se determina el resultado.",
+   "resumen": "Se presentó dictamen para dar de baja siete licencias comerciales de venta de alcohol, sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se puso a consideración el dictamen para expedir cuatro nuevas licencias comerciales para venta y consumo de bebidas alcohólicas, solicitadas con el Memorándum No. 175. No se determina el resultado.",
+   "resumen": "Se presentó dictamen para expedir cuatro nuevas licencias comerciales de venta de alcohol (Memorándum 175), sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se puso a consideración el dictamen para autorizar el Cierre Fiscal de Obras 2025. No se determina el resultado.",
+   "resumen": "Se presentó dictamen para autorizar el cierre fiscal de obras 2025, sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se puso a consideración el dictamen para suscribir convenio de colaboración con el Organismo Descentralizado Financiera para el Bienestar (FINABIEN). No se determina el resultado.",
+   "resumen": "Se presentó dictamen para suscribir convenio con FINABIEN, sin registrarse resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se declaró la clausura de la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite"
   }
  ]

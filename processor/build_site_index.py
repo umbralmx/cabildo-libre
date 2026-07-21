@@ -34,6 +34,7 @@ def build_summaries() -> dict:
         d = json.loads(f.read_text(encoding="utf-8"))
         resumenes[d["id"]] = {
             "modelo": d["modelo"],
+            "sesion": d.get("resumen_sesion", ""),
             "puntos": {str(p["n"]): {"resumen": p["resumen"], "sentido": p["sentido"]}
                        for p in d["puntos"] if p["resumen"]},
         }

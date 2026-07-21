@@ -185,6 +185,7 @@ function renderResults() {
       </p>
       <p class="texto">${highlight(item.texto, terms)}</p>
       ${r ? `<p class="resumen">${esc(r.resumen)} ${sentidoHTML(r.sentido)}</p>` : ""}
+      ${state.summaries[acta.id] ? actaDetalleHTML(acta.id, "Ver resumen de la sesión y texto completo (OCR) →") : ""}
       ${acta.pdf_url ? `<a class="acta-link" href="${esc(acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
     </li>`;
   }).join("");
@@ -273,12 +274,33 @@ function renderTimeline() {
   }).join("") || `<p class="section"><span class="empty">Ninguna sesión coincide con los filtros.</span></p>`;
 }
 
-function sessionHTML(acta) {
+/* The one-line description after "Acta N ·". When the acta has been processed,
+   this is the AI session brief (a real summary of the sitting); otherwise it
+   falls back to the lead subject of the first substantive agenda point. */
+function tituloSesion(acta) {
+  const brief = state.summaries[acta.id]?.sesion;
+  if (brief) return { texto: brief, esBrief: true };
   const primera = acta.agenda_items.find((i) => SUSTANTIVO.test(i.texto))
     ?? acta.agenda_items.find((i) => !esProcedural(i.texto));
   const crudo = (primera ?? acta.agenda_items[0])?.texto;
-  const titulo = crudo ? tituloCorto(crudo) : "Órden del día no publicado en el índice";
+  return { texto: crudo ? tituloCorto(crudo) : "Órden del día no publicado en el índice", esBrief: false };
+}
+
+/* Disclosure that reveals an acta's session brief + full OCR text on-site.
+   Body is filled lazily on first open (see onDetalleClick). Only offered for
+   processed actas. */
+function actaDetalleHTML(id, label) {
+  return `<details class="acta-detalle" data-id="${id}">
+    <summary>${label}</summary>
+    <div class="acta-detalle-body"></div>
+  </details>`;
+}
+
+function sessionHTML(acta) {
   const resumido = state.summaries[acta.id];
+  const t = tituloSesion(acta);
+  const tituloVis = t.esBrief ? esc(t.texto)
+    : `${esc(t.texto.slice(0, 110))}${t.texto.length > 110 ? "…" : ""}`;
   const items = acta.agenda_items.length
     ? acta.agenda_items.map((i) => {
         const r = resumenDe(acta.id, i.n);
@@ -295,12 +317,41 @@ function sessionHTML(acta) {
   <details class="session">
     <summary>
       <span class="s-fecha">${acta.fecha ?? "sin fecha"}</span>
-      <span class="s-titulo"><span class="s-acta">Acta ${acta.no_acta ?? "s/n"}</span> · ${esc(titulo.slice(0, 110))}${titulo.length > 110 ? "…" : ""}</span>
+      <span class="s-titulo"><span class="s-acta">Acta ${acta.no_acta ?? "s/n"}</span> · ${tituloVis}</span>
       ${acta.pdf_url ? `<a class="s-pdf" href="${esc(acta.pdf_url)}" rel="external" onclick="event.stopPropagation()">PDF →</a>` : ""}
     </summary>
     <ol class="agenda">${items}</ol>
-    ${resumido ? `<p class="resumen-nota">Resumen y sentido de cada punto generados con IA (${esc(resumido.modelo)}) sobre el texto OCR del acta escaneada; pueden contener errores — verifica siempre en el PDF original.</p>` : ""}
+    ${resumido ? `<p class="resumen-nota">Resumen de la sesión y de cada punto generados con IA (${esc(resumido.modelo)}) sobre el texto OCR del acta escaneada; pueden contener errores — verifica siempre en el PDF original.</p>` : ""}
+    ${resumido ? actaDetalleHTML(acta.id, "Texto completo del acta (OCR) →") : ""}
   </details>`;
+}
+
+/* Fill an acta-detalle disclosure the first time it opens: the session brief
+   plus the full OCR text, with the current query highlighted. Wired once, via
+   delegation, in main(). */
+async function onDetalleClick(e) {
+  const sum = e.target.closest(".acta-detalle > summary");
+  if (!sum) return;
+  const det = sum.parentElement;
+  const body = det.querySelector(".acta-detalle-body");
+  if (body.dataset.loaded) return;
+  body.dataset.loaded = "1";
+  body.innerHTML = `<p class="ft-intro mono">Cargando texto completo…</p>`;
+  try { await ensureFulltext(); } catch {
+    body.innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
+    return;
+  }
+  const id = det.dataset.id;
+  const s = state.summaries[id];
+  const texto = state.fulltext[id];
+  const terms = fold(state.q.trim()).split(/\s+/).filter(Boolean);
+  body.innerHTML = `
+    ${s?.sesion ? `<p class="detalle-brief">${esc(s.sesion)}</p>` : ""}
+    ${texto ? `<div class="ocr-text">${highlight(texto, terms)}</div>`
+            : `<p class="ft-intro mono">El texto completo de esta acta aún no está disponible.</p>`}
+    <p class="detalle-nota">Texto obtenido por OCR de un PDF escaneado; puede contener errores.${
+      s ? ` Resumen generado con IA (${esc(s.modelo)}).` : ""} Verifica en el
+      <a href="${esc(state.actas.find((a) => a.id === id)?.pdf_url || "#")}" rel="external">PDF original</a>.</p>`;
 }
 
 function renderStats(generado) {
@@ -362,6 +413,7 @@ async function main() {
   }
   renderStats(data.generado);
   initFilters();
+  document.addEventListener("click", onDetalleClick); // fills OCR disclosures lazily
   renderTimeline();
 }
 

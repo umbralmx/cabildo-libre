@@ -5,96 +5,97 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:01:43+00:00",
+ "generado": "2026-07-21T15:21:31+00:00",
+ "resumen_sesion": "Se aprobaron arrendamientos en Los Tepames y Centro, programa de salud, compensaciones a 11 trabajadores, y se aplazó aprobación de actas.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia de los miembros del Cabildo.",
+   "resumen": "Lista de asistencia de los miembros del Cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Declaración de quórum legal e instalación de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al orden del día.",
+   "resumen": "Lectura del Orden del Día de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó presentar las actas de Cabildo 68 y 69 en la próxima sesión, sin aprobarlas ahora.",
+   "resumen": "Solicitud de autorización para presentar las Actas de Cabildo N° 68 y 69 en la próxima sesión, aprobada por unanimidad.",
    "sentido": "aplazado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó celebrar contratos de arrendamiento para la Biblioteca Pública Municipal Marina Larios Arreola y la Financiera para el Bienestar en Los Tepames, y para oficinas municipales en la calle Manuel Álvarez 44, colonia Centro, Colima.",
+   "resumen": "Autorización para celebrar contratos de arrendamiento de inmuebles para Biblioteca Pública Municipal en Los Tepames y oficinas en calle Manuel Álvarez, Colonia Centro.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el Programa de Trabajo Municipal de Salud Pública, en el marco del Programa Federal de Municipios Promotores de Salud.",
+   "resumen": "Aprobación del Programa de Trabajo Municipal de Salud Pública para certificar a Colima como Municipio Promotor de la Salud.",
    "sentido": "aprobado"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó celebrar contratos de compensación por desgaste de uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
+   "resumen": "Autorización de contratos de compensación por desgaste de uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
    "sentido": "aprobado"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para dar de baja las licencias de venta de bebidas alcohólicas B-000630, B-002784 y B-002664; el acta no indica el resultado de la votación.",
+   "resumen": "Dictamen para dar de baja tres licencias de venta de bebidas alcohólicas (B-000630, B-002784, B-002664).",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para expedir cuatro licencias comerciales de bebidas alcohólicas y un cambio de propietario; el acta no indica el resultado.",
+   "resumen": "Dictamen para expedir cuatro licencias comerciales para venta de alcohol y un cambio de propietario.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para municipalizar la etapa única del fraccionamiento 'La Castellana'; el acta no indica el resultado.",
+   "resumen": "Dictamen para autorizar la municipalización de la Etapa Única del Fraccionamiento LA CASTELLANA.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó dictamen para la incorporación municipal anticipada de la etapa 4 del fraccionamiento 'Puerta Real'; el acta no indica el resultado.",
+   "resumen": "Dictamen para autorizar la incorporación municipal anticipada de la Etapa 4 del Fraccionamiento PUERTA REAL.",
    "sentido": "no_determinable"
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se presentó dictamen para aprobar el estudio de impacto territorial y urbano del lote con clave catastral 02-01-04-080-004-000, en la colonia Jardines de la Corregidora; el acta no indica el resultado.",
+   "resumen": "Dictamen para aprobar el Estudio de Impacto Territorial y Urbano de un lote en Jardines de la Corregidora.",
    "sentido": "no_determinable"
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se presentó dictamen para instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de las y los maestros; el acta no indica el resultado.",
+   "resumen": "Dictamen para instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de los maestros.",
    "sentido": "no_determinable"
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias de abril a junio; el acta no indica si fue aprobado.",
-   "sentido": "no_determinable"
+   "resumen": "Presentación del calendario trimestral de sesiones ordinarias de abril a junio.",
+   "sentido": "tramite"
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Clausura de la sesión.",
    "sentido": "tramite"
   }
  ]

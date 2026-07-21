@@ -5,60 +5,61 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:00:02+00:00",
+ "generado": "2026-07-21T15:19:40+00:00",
+ "resumen_sesion": "Se aprobaron traspasos de locales en mercados, la declaración de recinto ferial para el Festival Zona Colima Capital, y un convenio de transporte escolar rural.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia. Estuvieron presentes el Presidente Municipal, la Síndica y varios regidores, con una regidora vía remota.",
+   "resumen": "Se pasó lista de asistencia.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Habiendo quórum legal, se declaró instalada la sesión.",
+   "resumen": "Se declaró quórum legal e instalación de la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura de las actas 60, 61, 62, 63 y 64, y fueron aprobadas por unanimidad.",
+   "resumen": "Se aprobaron las actas de cabildo números 60, 61, 62, 63 y 64.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó el traspaso de seis locales en los Mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón, a favor de los solicitantes indicados. El dictamen fue aprobado por unanimidad.",
+   "resumen": "Se autorizó el traspaso de seis locales en los mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se declaró Recinto Ferial para el Festival Zona Colima Capital 2026 del 6 al 24 de febrero, en calles Francisco I. Madero, Av. Pino Suárez, Jardín de San Francisco de Almoloyan y Maclovio Herrera. Se autorizaron cobros y la suscripción de convenios. Aprobado por unanimidad.",
+   "resumen": "Se declaró recinto ferial en varios puntos de la ciudad para el Festival Zona Colima Capital del 6 al 24 de febrero de 2026.",
    "sentido": "aprobado"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la suscripción del Convenio de Colaboración con Federico Lucatero Ramírez para transporte escolar en la zona rural, beneficiando a comunidades como Astillero de Arriba, El Bordo, Trapichillos, La Media Luna, entre otras. Aprobado por unanimidad.",
+   "resumen": "Se autorizó la suscripción de un convenio de colaboración con el C. Federico Lucatero Ramírez para transporte escolar en zona rural.",
    "sentido": "aprobado"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se trataron asuntos generales: reconocimiento al Festival del Tamal y entrega de informes trimestrales de regidores.",
+   "resumen": "Se trataron asuntos generales: reconocimiento al Festival del Tamal y entrega de informes trimestrales.",
    "sentido": "tramite"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se dio por clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite"
   }
  ]

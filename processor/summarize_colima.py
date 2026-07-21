@@ -62,7 +62,12 @@ SISTEMA = (
 )
 
 INSTRUCCION = (
-    "Para cada punto del órden del día que te doy, redacta:\n"
+    "Primero redacta un 'resumen_sesion': UNA sola frase (máx. ~30 palabras), en "
+    "lenguaje llano, que le diga a un vecino de qué trató esta sesión en conjunto — "
+    "los asuntos de fondo que se decidieron, no el trámite. Nombra lo concreto "
+    "(colonias, obras, licencias, montos) si aparece. No inventes; si la sesión sólo "
+    "tuvo trámites o el texto no alcanza, dilo con sobriedad.\n\n"
+    "Luego, para cada punto del órden del día, redacta:\n"
     "- resumen: una o dos frases en lenguaje llano sobre qué se puso a consideración. "
     "Nombra colonias, fraccionamientos o calles si el acta los menciona.\n"
     "- sentido: uno de exactamente estos valores, según lo que el acta declare: "
@@ -70,7 +75,7 @@ INSTRUCCION = (
     "procedimiento: lista de asistencia, quórum, lectura del órden, clausura), o "
     "'no_determinable' si el texto no permite afirmar el resultado.\n"
     "Responde SOLO con JSON válido, sin texto alrededor, con esta forma:\n"
-    '{"puntos": [{"n": <entero del punto>, "resumen": "...", "sentido": "..."}]}'
+    '{"resumen_sesion": "...", "puntos": [{"n": <entero>, "resumen": "...", "sentido": "..."}]}'
 )
 
 SENTIDOS = {"aprobado", "rechazado", "aplazado", "retirado", "tramite", "no_determinable"}
@@ -111,14 +116,16 @@ def call_llm(messages: list[dict]) -> str:
     return data["choices"][0]["message"]["content"]
 
 
-def parse_summary(raw: str, acta: dict) -> list[dict]:
-    """Validate the model output against the agenda; drop anything malformed."""
+def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
+    """Validate the model output against the agenda; drop anything malformed.
+    Returns (resumen_sesion, puntos)."""
     try:
         payload = json.loads(raw)
         rows = payload["puntos"]
     except (json.JSONDecodeError, KeyError, TypeError):
         raise ValueError("model did not return the expected JSON shape")
 
+    resumen_sesion = (payload.get("resumen_sesion") or "").strip()
     by_n = {it["n"]: it for it in acta["agenda_items"]}
     out = []
     for row in rows:
@@ -132,7 +139,7 @@ def parse_summary(raw: str, acta: dict) -> list[dict]:
             "resumen": (row.get("resumen") or "").strip(),
             "sentido": sentido if sentido in SENTIDOS else "no_determinable",
         })
-    return out
+    return resumen_sesion, out
 
 
 def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
@@ -141,7 +148,7 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         print(messages[1]["content"][:1500])
         return None
     raw = call_llm(messages)
-    puntos = parse_summary(raw, acta)
+    resumen_sesion, puntos = parse_summary(raw, acta)
     return {
         "id": acta["id"],
         "no_acta": acta["no_acta"],
@@ -150,6 +157,7 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         "modelo": LLM_MODEL,
         "fuente_texto": ocr["motor"],
         "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        "resumen_sesion": resumen_sesion,
         "puntos": puntos,
     }
 

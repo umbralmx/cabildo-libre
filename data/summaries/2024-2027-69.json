@@ -5,66 +5,67 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:01:25+00:00",
+ "generado": "2026-07-21T15:21:14+00:00",
+ "resumen_sesion": "Sesión en la que se aplazó el acta anterior y se trataron adecuaciones presupuestales, cuenta pública, municipalización del fraccionamiento Residencial San Javier, estudio de impacto territorial y un reglamento de mérito ciudadano.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia; estuvieron presentes el Presidente Municipal, la Síndica, y varios regidores, con dos faltas justificadas.",
+   "resumen": "Se registró la asistencia de los integrantes del cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "resumen": "Se leyó el orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "El Presidente Municipal solicitó autorización para presentar el Acta de Cabildo N° 68 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "resumen": "Se aprobó por unanimidad presentar el acta de la sesión anterior en la próxima sesión.",
    "sentido": "aplazado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó el dictamen que autoriza adecuaciones presupuestales solicitadas por la Tesorería Municipal para febrero de 2026, pero el acta no indica el resultado de la votación.",
+   "resumen": "Se presentó dictamen para autorizar adecuaciones presupuestales de la Tesorería Municipal por febrero de 2026.",
    "sentido": "no_determinable"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado la Cuenta Pública de febrero de 2026, pero el acta no indica el resultado de la votación.",
+   "resumen": "Se presentó dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de febrero de 2026.",
    "sentido": "no_determinable"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para municipalizar el Fraccionamiento Residencial San Javier, pero el acta no indica el resultado de la votación.",
+   "resumen": "Se presentó dictamen para autorizar la municipalización del Fraccionamiento Residencial San Javier.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen para el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-99-93-101-172-000, pero el acta no indica el resultado de la votación.",
+   "resumen": "Se presentó dictamen para autorizar el Estudio de Impacto Territorial y Urbano de un predio rústico con clave catastral 02-99-93-101-172-000.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó el dictamen para aprobar el Reglamento de Reconocimiento al Mérito Ciudadano, pero el acta no indica el resultado de la votación.",
+   "resumen": "Se presentó dictamen para aprobar el Reglamento para el Reconocimiento al Mérito Ciudadano del Municipio de Colima.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite"
   }
  ]

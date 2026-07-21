@@ -5,66 +5,67 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:00:29+00:00",
+ "generado": "2026-07-21T15:20:07+00:00",
+ "resumen_sesion": "Se aprobó el acta anterior y se presentaron dictámenes presupuestales, de cuenta pública, alumbrado en Los Volcanes y licencias; los resultados de las votaciones no son determinables.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día de la sesión.",
+   "resumen": "El Secretario dio lectura al orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura del acta 65 y se aprobó por unanimidad.",
+   "resumen": "Se dispensó la lectura del acta anterior y se aprobó por unanimidad.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó dictamen para autorizar adecuaciones presupuestales de enero 2026 solicitadas por Tesorería, por un monto de $30,358,101.65.",
+   "resumen": "Se presentó el dictamen que autoriza transferencias presupuestarias compensadas por $30,358,101.65 del mes de enero de 2026.",
    "sentido": "no_determinable"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó dictamen para autorizar remitir al Congreso del Estado la Cuenta Pública de enero 2026.",
+   "resumen": "Se presentó el dictamen para remitir los resultados de la Cuenta Pública del mes de enero de 2026 al Congreso del Estado.",
    "sentido": "no_determinable"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó dictamen para autorizar la entrega-recepción de infraestructura de alumbrado público del Fraccionamiento Los Volcanes etapas 3 y 4.",
+   "resumen": "Se presentó el dictamen para autorizar la entrega-recepción de la infraestructura de alumbrado público del Fraccionamiento Los Volcanes, etapas 3 y 4.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para autorizar dar de baja seis licencias comerciales.",
+   "resumen": "Se presentó el dictamen para dar de baja seis licencias comerciales.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para corregir el giro comercial de la licencia número 1431.",
+   "resumen": "Se presentó el dictamen para corregir el giro comercial de la solicitud de licencia número 1431.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para autorizar un cambio de giro comercial para venta y consumo de bebidas alcohólicas.",
+   "resumen": "Se presentó el dictamen para autorizar un cambio de giro comercial para la venta y/o consumo de bebidas alcohólicas.",
    "sentido": "no_determinable"
   }
  ]

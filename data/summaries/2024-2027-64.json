@@ -5,7 +5,8 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T14:59:54+00:00",
+ "generado": "2026-07-21T15:19:30+00:00",
+ "resumen_sesion": "Se aprobó la ampliación al presupuesto 2025 (FORTAMUN y fiscales) y se aplazó la aprobación de las actas 60-63.",
  "puntos": [
   {
    "n": 1,
@@ -22,56 +23,56 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día de la sesión.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó autorización para presentar las actas de cabildo números 60, 61, 62 y 63 en la próxima sesión, lo cual fue aprobado por unanimidad, quedando pendiente su lectura y aprobación.",
+   "resumen": "Se solicitó y aprobó por unanimidad aplazar la aprobación de las actas 60, 61, 62 y 63 para la próxima sesión.",
    "sentido": "aplazado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la ampliación al presupuesto de ingresos y egresos del municipio para el ejercicio fiscal 2025, con recursos del FORTAMUN 2025 y recursos fiscales.",
+   "resumen": "Se aprobó por unanimidad la ampliación al presupuesto de ingresos y egresos 2025 por $3,419,765.36, con recursos FORTAMUN y fiscales.",
    "sentido": "aprobado"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó el dictamen que autoriza realizar las adecuaciones presupuestales correspondientes a diciembre de 2025, pero no se especifica el resultado de la votación en el acta disponible.",
+   "resumen": "Se puso a consideración el dictamen que autoriza adecuaciones presupuestales de diciembre 2025 por $101,517,849.00, pero el acta no registra el resultado de la votación.",
    "sentido": "no_determinable"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de diciembre de 2025, pero no se especifica el resultado.",
+   "resumen": "Se puso a consideración el dictamen para remitir al Congreso la Cuenta Pública de diciembre 2025, pero el acta no registra el resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen que autoriza la expedición de tres licencias comerciales para venta de bebidas alcohólicas, pero no se especifica el resultado.",
+   "resumen": "Se puso a consideración el dictamen para expedir tres licencias comerciales de bebidas alcohólicas, pero el acta no registra el resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó el dictamen que autoriza la baja de cinco licencias comerciales, pero no se especifica el resultado.",
+   "resumen": "Se puso a consideración el dictamen para dar de baja cinco licencias comerciales, pero el acta no registra el resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen que aprueba la incorporación municipal de la etapa única del desarrollo denominado Instituto Adonai, ubicado al norte de Colima, pero no se especifica el resultado.",
+   "resumen": "Se puso a consideración el dictamen para la incorporación municipal del desarrollo Instituto Adonai, al norte de la ciudad, pero el acta no registra el resultado.",
    "sentido": "no_determinable"
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se procedió a la clausura de la sesión, pero no se menciona en el acta disponible.",
-   "sentido": "no_determinable"
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite"
   }
  ]
 }

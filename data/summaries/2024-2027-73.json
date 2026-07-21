@@ -5,54 +5,55 @@
  "periodo": "2024-2027",
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:02:40+00:00",
+ "generado": "2026-07-21T15:22:12+00:00",
+ "resumen_sesion": "Sesión extraordinaria para realizar el Cabildo Infantil 2026; se aplazó la aprobación de las actas 71 y 72.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de concejales.",
    "sentido": "tramite"
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró la instalación legal de la sesión al contar con quórum.",
    "sentido": "tramite"
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El secretario dio lectura al orden del día.",
    "sentido": "tramite"
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó autorización para presentar las Actas de Cabildo N° 71 y 72 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "resumen": "Se solicitó autorización para presentar las actas 71 y 72 en la próxima sesión, aprobado por unanimidad.",
    "sentido": "aprobado"
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se decretó un receso para el desarrollo de la Sesión Extraordinaria del Cabildo Infantil 2026, a cargo del DIF Municipal.",
+   "resumen": "Se decretó un receso para el desarrollo del Cabildo Infantil.",
    "sentido": "tramite"
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se reanudó la Sesión Extraordinaria de Cabildo.",
+   "resumen": "Se reanudó la sesión a las 19:02 horas.",
    "sentido": "tramite"
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se procedió a la entrega de reconocimientos a los integrantes del Cabildo Infantil.",
-   "sentido": "no_determinable"
+   "resumen": "Se entregaron reconocimientos a los integrantes del Cabildo Infantil.",
+   "sentido": "tramite"
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes y se declaró clausurada la sesión.",
+   "resumen": "El presidente municipal dirigió un mensaje a los presentes.",
    "sentido": "tramite"
   }
  ]
