@@ -95,17 +95,38 @@ function esc(s) {
     { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
 }
 
-/* Highlight every folded occurrence of each term inside original text. */
-function highlight(texto, terms) {
-  const folded = fold(texto);
-  const spans = [];
-  for (const t of terms) {
-    let i = 0;
-    while ((i = folded.indexOf(t, i)) !== -1) {
-      spans.push([i, i + t.length]);
-      i += t.length;
+/* Match tokens as words, not raw substrings — so a short stopword like "la"
+   stops matching inside "las" / "plana". Rule: a token of ≤3 chars must be a
+   whole word (\bla\b); a longer token matches a word-prefix (\bestancia[a-z]*)
+   so plurals and inflections still hit ("licencia" → "licencias"). Folded text
+   is accent-stripped lowercase ASCII, so \b behaves. */
+function buildMatchers(qFolded) {
+  return qFolded.split(/\s+/).filter(Boolean).map((term) => {
+    const e = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const src = term.length <= 3 ? `\\b${e}\\b` : `\\b${e}[a-z0-9]*`;
+    return { term, re: new RegExp(src, "g") };
+  });
+}
+function docMatches(folded, ms) {
+  return ms.every((m) => { m.re.lastIndex = 0; return m.re.test(folded); });
+}
+function matchRanges(folded, ms) {
+  const ranges = [];
+  for (const m of ms) {
+    m.re.lastIndex = 0;
+    let x;
+    while ((x = m.re.exec(folded)) !== null) {
+      ranges.push([x.index, x.index + x[0].length]);
+      if (x[0].length === 0) m.re.lastIndex++;   // guard zero-width
     }
   }
+  return ranges;
+}
+
+/* Highlight the matched words inside original text (indices come from the
+   folded copy, which preserves positions 1:1). */
+function highlight(texto, ms) {
+  const spans = matchRanges(fold(texto), ms);
   if (!spans.length) return esc(texto);
   spans.sort((a, b) => a[0] - b[0]);
   const merged = [spans[0]];
@@ -129,12 +150,12 @@ function pasaFiltros(acta) {
   return true;
 }
 
-function buscar(terms) {
+function buscar(ms) {
   const hits = [];
   for (const acta of state.actas) {
     if (!pasaFiltros(acta)) continue;
     for (const item of acta.agenda_items) {
-      if (terms.every((t) => item._folded.includes(t))) {
+      if (docMatches(item._folded, ms)) {
         hits.push({ acta, item });
         if (hits.length >= 400) return hits;
       }
@@ -144,16 +165,16 @@ function buscar(terms) {
 }
 
 function renderResults() {
-  const terms = fold(state.q.trim()).split(/\s+/).filter(Boolean);
+  const ms = buildMatchers(fold(state.q.trim()));
   const resultsEl = $("#results"), timelineEl = $("#timeline");
-  if (!terms.length) {
+  if (!ms.length) {
     resultsEl.hidden = true;
     timelineEl.hidden = false;
     $("#fulltext").hidden = true;
     renderTimeline();
     return;
   }
-  const hits = buscar(terms);
+  const hits = buscar(ms);
   resultsEl.hidden = false;
   timelineEl.hidden = true;
   $("#result-count").textContent = hits.length >= 400
@@ -171,7 +192,7 @@ function renderResults() {
         escaneos que hay que pasar por OCR). Prueba también la búsqueda en el texto
         completo, abajo.${filtrando ? " O amplía el período." : ""}</p>
       </li>`;
-    renderFulltext(terms);
+    renderFulltext(ms);
     return;
   }
   $("#result-list").innerHTML = hits.slice(0, 400).map(({ acta, item }) => {
@@ -184,13 +205,13 @@ function renderResults() {
         ${item.numeral ? `<span>Punto ${item.numeral}</span>` : ""}
         <span>${esc(acta.periodo ?? "")}</span>
       </p>
-      <p class="texto">${highlight(item.texto, terms)}</p>
+      <p class="texto">${highlight(item.texto, ms)}</p>
       ${r ? `<p class="resumen">${esc(r.resumen)} ${sentidoHTML(r.sentido)}</p>` : ""}
       ${state.summaries[acta.id] ? actaDetalleHTML(acta.id, "Ver resumen de la sesión y texto completo (OCR) →") : ""}
       ${acta.pdf_url ? `<a class="acta-link" href="${esc(acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
     </li>`;
   }).join("");
-  renderFulltext(terms);
+  renderFulltext(ms);
 }
 
 /* Full-content search over OCR text. Loaded lazily — the payload is large and
@@ -205,28 +226,30 @@ async function ensureFulltext() {
 function ftFolded(id) {
   return state._ftFolded[id] ?? (state._ftFolded[id] = fold(state.fulltext[id]));
 }
-/* Every occurrence of the primary term in one acta's OCR text, as context
-   snippets. Requires all terms present in the doc; anchors snippets on the
-   first term and merges overlapping windows. Capped so a very common word
-   doesn't flood the page (the count reports the true total). */
-function fullTextMatches(id, terms) {
+/* Occurrences of the query in one acta's OCR text, as context snippets.
+   Requires every token present (as a word); anchors snippets on the most
+   distinctive token — the longest — so "la estancia" centres on "estancia",
+   not on every "la". Snippets highlight all matched words. */
+function fullTextMatches(id, ms) {
   const folded = ftFolded(id);
-  if (!terms.every((t) => folded.includes(t))) return null;
+  if (!docMatches(folded, ms)) return null;
+  const anchor = ms.reduce((a, b) => (b.term.length > a.term.length ? b : a));
   const texto = state.fulltext[id];
   const positions = [];
-  let i = 0;
-  while ((i = folded.indexOf(terms[0], i)) !== -1) {
-    positions.push(i);
-    i += terms[0].length;
+  anchor.re.lastIndex = 0;
+  let x;
+  while ((x = anchor.re.exec(folded)) !== null) {
+    positions.push([x.index, x.index + x[0].length]);
+    if (x[0].length === 0) anchor.re.lastIndex++;
     if (positions.length >= 200) break;
   }
   const snippets = [];
   let lastEnd = -1;
-  for (const p of positions) {
+  for (const [p, pe] of positions) {
     if (snippets.length >= 8) break;
     if (p < lastEnd) continue;               // already inside the previous window
     const start = Math.max(0, p - 70);
-    const end = Math.min(texto.length, p + terms[0].length + 120);
+    const end = Math.min(texto.length, pe + 120);
     lastEnd = end;
     const snip = texto.slice(start, end).replace(/\s+/g, " ").trim();
     snippets.push((start > 0 ? "…" : "") + snip + (end < texto.length ? "…" : ""));
@@ -247,11 +270,11 @@ async function loadFulltextThenRerender() {
     return;
   }
   state.fulltextLoading = false;
-  const t = fold(state.q.trim()).split(/\s+/).filter(Boolean);
-  if (t.length) renderFulltext(t);
+  const ms = buildMatchers(fold(state.q.trim()));
+  if (ms.length) renderFulltext(ms);
 }
 
-function renderFulltext(terms) {
+function renderFulltext(ms) {
   const el = $("#fulltext");
   el.hidden = false;
   const q = esc(state.q.trim());
@@ -264,18 +287,18 @@ function renderFulltext(terms) {
   let totalOcc = 0;
   for (const acta of state.actas) {
     if (!state.fulltext[acta.id]) continue;
-    const m = fullTextMatches(acta.id, terms);
+    const m = fullTextMatches(acta.id, ms);
     if (!m) continue;
     totalOcc += m.count;
     results.push({ acta, ...m });
   }
   const totalActas = Object.keys(state.fulltext).length;
   el.innerHTML = `
-    <p class="ft-intro mono">Texto completo · «${q}» aparece ${totalOcc} ${totalOcc === 1 ? "vez" : "veces"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
+    <p class="ft-intro mono">Texto completo · «${q}» — ${totalOcc} ${totalOcc === 1 ? "coincidencia" : "coincidencias"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
     <ol class="result-list">${results.map((r) => `
       <li class="result ft-result">
-        <p class="meta mono"><span class="fecha">${fechaLarga(r.acta.fecha)}</span><span>Acta ${r.acta.no_acta ?? "s/n"}</span><span>${r.count} ${r.count === 1 ? "aparición" : "apariciones"}${r.shown < r.count ? ` · se muestran ${r.shown}` : ""}</span></p>
-        ${r.snippets.map((s) => `<p class="texto ft-snip">${highlight(s, terms)}</p>`).join("")}
+        <p class="meta mono"><span class="fecha">${fechaLarga(r.acta.fecha)}</span><span>Acta ${r.acta.no_acta ?? "s/n"}</span><span>${r.count} ${r.count === 1 ? "coincidencia" : "coincidencias"}${r.shown < r.count ? ` · se muestran ${r.shown}` : ""}</span></p>
+        ${r.snippets.map((s) => `<p class="texto ft-snip">${highlight(s, ms)}</p>`).join("")}
         ${state.summaries[r.acta.id] ? actaDetalleHTML(r.acta.id, "Ver texto completo (OCR) de esta acta →") : ""}
         ${r.acta.pdf_url ? `<a class="acta-link" href="${esc(r.acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
       </li>`).join("") || `<li class="result"><p class="texto nota">Ninguna de las ${totalActas} actas con texto completo contiene «${q}».</p></li>`}</ol>`;
@@ -378,10 +401,10 @@ async function onDetalleClick(e) {
   const id = det.dataset.id;
   const s = state.summaries[id];
   const texto = state.fulltext[id];
-  const terms = fold(state.q.trim()).split(/\s+/).filter(Boolean);
+  const ms = buildMatchers(fold(state.q.trim()));
   body.innerHTML = `
     ${s?.sesion ? `<p class="detalle-brief">${esc(s.sesion)}</p>` : ""}
-    ${texto ? `<div class="ocr-text">${highlight(texto, terms)}</div>`
+    ${texto ? `<div class="ocr-text">${highlight(texto, ms)}</div>`
             : `<p class="ft-intro mono">El texto completo de esta acta aún no está disponible.</p>`}
     <p class="detalle-nota">Texto obtenido por OCR de un PDF escaneado; puede contener errores.${
       s ? ` Resumen generado con IA (${esc(s.modelo)}).` : ""} Verifica en el
