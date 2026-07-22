@@ -100,12 +100,30 @@ function esc(s) {
    whole word (\bla\b); a longer token matches a word-prefix (\bestancia[a-z]*)
    so plurals and inflections still hit ("licencia" → "licencias"). Folded text
    is accent-stripped lowercase ASCII, so \b behaves. */
+const RE_ESC = /[.*+?^${}()|[\]\\]/g;
+/* Per-token regex source: a token ≤3 chars matches a whole word; a longer one
+   matches a word-prefix so plurals/inflections still hit. `last` controls the
+   trailing boundary — inside a phrase, a following \s+ already provides it. */
+function tokenSrc(t, last = true) {
+  const e = t.replace(RE_ESC, "\\$&");
+  if (t.length <= 3) return last ? `${e}\\b` : e;
+  return `${e}[a-z0-9]*`;
+}
 function buildMatchers(qFolded) {
-  return qFolded.split(/\s+/).filter(Boolean).map((term) => {
-    const e = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-    const src = term.length <= 3 ? `\\b${e}\\b` : `\\b${e}[a-z0-9]*`;
-    return { term, re: new RegExp(src, "g") };
-  });
+  const q = qFolded.trim();
+  // Quoted phrase: a leading quote switches to exact-phrase mode — the tokens
+  // must appear adjacent, in order (whitespace between them may vary in OCR).
+  if (q && "\"«“".includes(q[0])) {
+    const inner = q.replace(/^["«“]+/, "").replace(/["»”]+$/, "").trim();
+    const tokens = inner.split(/\s+/).filter(Boolean);
+    if (!tokens.length) return [];
+    const src = tokens.map((t, i) => tokenSrc(t, i === tokens.length - 1)).join("\\s+");
+    return [{ term: inner, re: new RegExp("\\b" + src, "g"), phrase: true }];
+  }
+  // Token mode: every word must appear (as a word), in any order.
+  return q.split(/\s+/).filter(Boolean).map((t) => ({
+    term: t, re: new RegExp("\\b" + tokenSrc(t), "g"),
+  }));
 }
 function docMatches(folded, ms) {
   return ms.every((m) => { m.re.lastIndex = 0; return m.re.test(folded); });
