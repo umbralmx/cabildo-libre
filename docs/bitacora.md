@@ -6,6 +6,29 @@
 
 ---
 
+## 2026-07-23 — L2: roster canónico del cabildo 2024-2027
+
+**Hecho.** `data/regidores-2024-2027.json`: los 13 integrantes del cabildo (presidente,
+síndica y 11 regidores), construidos a partir del **pase de lista de las propias actas**, no
+de una fuente externa.
+
+**El cruce importó.** El OCR del pase de lista del acta 1 traía dos nombres contaminados con
+el apellido del regidor contiguo. Cruzando las actas 1/38/54/55 se corrigieron:
+«Alondra Isabel Gallardo» → **López Alonso**; «Emilio Rosario Aldorica López Alonso» →
+**Aldorica Pulido**; y se quitó una «H.» espuria de Edgar Osiris Alcaraz Saucedo. Se toma
+como canónica la grafía que coincide en la mayoría de las actas, no la de una sola.
+
+**Honestidad.** El roster es el cabildo *tal como se instaló*; no infiere sustituciones ni
+licencias del período. Si el pase de lista de una sesión nombra a alguien fuera de la lista,
+el extractor de asistencia (pendiente) debe marcarlo, no forzar la coincidencia. Cada
+integrante lleva `variantes_ocr` para el mapeo de nombres ruidosos.
+
+**Pendiente.** El extractor de asistencia por sesión que lea el pase de lista y lo cruce
+contra este roster (marcando presente / ausente / remoto / falta justificada, que las actas
+sí distinguen).
+
+---
+
 ## 2026-07-23 — L1: esquema Tier A en el resumidor
 
 **Hecho.** Se amplió el esquema por punto en `summarize_colima.py` para extraer, en la

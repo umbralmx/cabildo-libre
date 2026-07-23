@@ -1,0 +1,125 @@
+{
+  "municipio": "Colima",
+  "administracion": "2024-2027",
+  "generado": "2026-07-23",
+  "fuente": {
+    "descripcion": "Roster construido a partir del pase de lista de las actas de cabildo, no de una fuente externa. Los nombres se depuraron cruzando varias actas para corregir el ruido de OCR.",
+    "actas_consultadas": ["2024-2027-1", "2024-2027-38", "2024-2027-54", "2024-2027-55"]
+  },
+  "metodologia": {
+    "por_que": "El OCR del pase de lista es ruidoso y a veces contamina un nombre con el apellido del siguiente. Se toma como canónica la grafía que coincide en la mayoría de las actas cruzadas, no la de una sola acta.",
+    "correcciones": [
+      "Acta 1 leyó 'Alondra Isabel Gallardo'; las actas 38/54/55 coinciden en 'Alondra Isabel López Alonso' (el 'Gallardo' se filtró del regidor contiguo).",
+      "Acta 1 leyó 'Emilio Rosario Aldorica López Alonso'; las actas 38/54/55 coinciden en 'Emilio Rosario Aldorica Pulido'.",
+      "Acta 1 leyó 'Edgar Osiris H. Alcaraz Saucedo'; la 'H.' es ruido, no aparece en las demás actas."
+    ],
+    "honestidad": "Este roster es el cabildo tal como quedó instalado. No infiere sustituciones, licencias o suplencias que pudieran ocurrir durante el término; si el pase de lista de una sesión nombra a alguien fuera de esta lista, la extracción de asistencia debe marcarlo, no forzar la coincidencia.",
+    "matching": "Para mapear un nombre ruidoso de OCR a esta lista: normalizar acentos y mayúsculas y comparar por los apellidos; 'variantes_ocr' recoge las grafías alternas ya observadas."
+  },
+  "integrantes": [
+    {
+      "id": "riult-rivera-gutierrez",
+      "nombre": "Riult Rivera Gutiérrez",
+      "titulo": "Mtro.",
+      "cargo": "presidente_municipal",
+      "apellidos": ["Rivera", "Gutiérrez"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "itzel-sarahi-rios-de-la-mora",
+      "nombre": "Itzel Sarahí Ríos de la Mora",
+      "titulo": "Dra.",
+      "cargo": "sindica",
+      "apellidos": ["Ríos", "de la Mora"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "edgar-osiris-alcaraz-saucedo",
+      "nombre": "Edgar Osiris Alcaraz Saucedo",
+      "titulo": "Mtro.",
+      "cargo": "regidor",
+      "apellidos": ["Alcaraz", "Saucedo"],
+      "variantes_ocr": ["Edgar Osiris H. Alcaraz Saucedo"]
+    },
+    {
+      "id": "alondra-isabel-lopez-alonso",
+      "nombre": "Alondra Isabel López Alonso",
+      "titulo": "Licda.",
+      "cargo": "regidora",
+      "apellidos": ["López", "Alonso"],
+      "variantes_ocr": ["Alondra Isabel Gallardo"]
+    },
+    {
+      "id": "francisco-javier-bravo-gallardo",
+      "nombre": "Francisco Javier Bravo Gallardo",
+      "titulo": "Lic.",
+      "cargo": "regidor",
+      "apellidos": ["Bravo", "Gallardo"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "claudia-janeth-farias-lopez",
+      "nombre": "Claudia Janeth Farías López",
+      "titulo": "Licda.",
+      "cargo": "regidora",
+      "apellidos": ["Farías", "López"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "emilio-rosario-aldorica-pulido",
+      "nombre": "Emilio Rosario Aldorica Pulido",
+      "titulo": "Lic.",
+      "cargo": "regidor",
+      "apellidos": ["Aldorica", "Pulido"],
+      "variantes_ocr": ["Emilio Rosario Aldorica López Alonso"]
+    },
+    {
+      "id": "ana-isabel-flores-viera",
+      "nombre": "Ana Isabel Flores Viera",
+      "titulo": "Profra.",
+      "cargo": "regidora",
+      "apellidos": ["Flores", "Viera"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "azucena-lopez-legorreta",
+      "nombre": "Azucena López Legorreta",
+      "titulo": "C.",
+      "cargo": "regidora",
+      "apellidos": ["López", "Legorreta"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "diana-gabriela-vizcaino-aguirre",
+      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "titulo": "Licda.",
+      "cargo": "regidora",
+      "apellidos": ["Vizcaíno", "Aguirre"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "juan-carlos-gomez-diaz",
+      "nombre": "Juan Carlos Gómez Díaz",
+      "titulo": "Lic.",
+      "cargo": "regidor",
+      "apellidos": ["Gómez", "Díaz"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "elia-margarita-moreno-gonzalez",
+      "nombre": "Elia Margarita Moreno González",
+      "titulo": "Licda.",
+      "cargo": "regidora",
+      "apellidos": ["Moreno", "González"],
+      "variantes_ocr": []
+    },
+    {
+      "id": "federico-rangel-lozano",
+      "nombre": "Federico Rangel Lozano",
+      "titulo": "Mtro.",
+      "cargo": "regidor",
+      "apellidos": ["Rangel", "Lozano"],
+      "variantes_ocr": []
+    }
+  ]
+}

@@ -157,7 +157,11 @@ scoped to what the acta actually states.
   **Re-run pending on `DEEPSEEK_API_KEY`:** run `procesar.yml` with `resumir_forzar: true` and
   `lote ≥ 23` to refresh the existing summaries (leaving `lote` at 10 only refreshes 10).
 - **L2 — Canonical regidor roster** for 2024-2027 + `asistencia` extraction from the pase de
-  lista (Tier B).
+  lista (Tier B). **Roster ✅ (2026-07-23):** `data/regidores-2024-2027.json` — 13 members
+  (presidente, síndica, 11 regidores), built from the actas' own pase de lista and **depurated
+  by cross-checking actas 1/38/54/55** (the cross-check caught two real OCR name errors in acta
+  1). Carries `variantes_ocr` per person for name matching. **Pending:** the `asistencia`
+  extractor that reads each session's roll call and maps names against this roster.
 - **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
   (counts by categoría, vote sense, colonia, montos declarados, attendance).
 - **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
