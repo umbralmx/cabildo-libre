@@ -174,7 +174,13 @@ scoped to what the acta actually states.
   **Pending:** modeling suplencias *in the roster* (which titular, which sessions), and
   surfacing attendance on the site (part of L4).
 - **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
-  (counts by categoría, vote sense, colonia, montos declarados, attendance).
+  (counts by categoría, vote sense, colonia, montos declarados, attendance). **✅ (2026-07-23):**
+  writes `site/analytics-2024-2027.json` from `data/summaries/` + `data/asistencia/`, wired into
+  `procesar.yml`. Honesty is structural: every section reports its `cobertura` (74 in term vs how
+  many summarized vs how many carry Tier A — currently 2), montos are `suma_declarada_mxn` with a
+  "not the budget" nota, attendance `tasa` excludes `no_determinable` sessions, and suplentes are
+  listed. Numbers grow with each batch; the categoría/votación/colonia/monto aggregates stay thin
+  until the `resumir_forzar` backfill lifts the older 23 summaries to `esquema 2`.
 - **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
   with the honesty caveats rendered inline, not buried.
 

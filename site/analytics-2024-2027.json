@@ -1,0 +1,517 @@
+{
+ "termino": "2024-2027",
+ "municipio": "Colima",
+ "generado": "2026-07-23T16:10:52+00:00",
+ "cobertura": {
+  "actas_en_termino": 74,
+  "con_resumen": 25,
+  "con_tier_a": 2,
+  "con_asistencia": 25,
+  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 2 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
+ },
+ "decisiones": {
+  "n_puntos": 269,
+  "n_sustantivos": 159,
+  "por_sentido": {
+   "no_determinable": 96,
+   "aprobado": 52,
+   "aplazado": 11
+  },
+  "por_categoria": {
+   "tramite": 2,
+   "presupuesto_finanzas": 1,
+   "nombramiento": 1,
+   "convenio": 1
+  },
+  "por_votacion": {
+   "unanime": 4,
+   "mayoria": 1
+  },
+  "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
+ },
+ "montos": {
+  "n_declarados": 1,
+  "n_con_valor": 1,
+  "suma_declarada_mxn": 661792051.55,
+  "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados.",
+  "mayores": [
+   {
+    "texto": "$661,792,051.55 (SEISCIENTOS SESENTA Y UN MILLONES SETECIENTOS NOVENTA Y DOS MIL CINCUENTA Y UN PESOS 55/100 M.N)",
+    "valor_mxn": 661792051.55,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   }
+  ]
+ },
+ "colonias": [
+  {
+   "nombre": "Fatima",
+   "menciones": 1
+  },
+  {
+   "nombre": "Miguel Hidalgo",
+   "menciones": 1
+  }
+ ],
+ "asistencia": {
+  "sesiones_consideradas": 25,
+  "por_integrante": [
+   {
+    "id": "riult-rivera-gutierrez",
+    "nombre": "Riult Rivera Gutiérrez",
+    "cargo": "presidente_municipal",
+    "sesiones": 25,
+    "presente": 25,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   },
+   {
+    "id": "itzel-sarahi-rios-de-la-mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "cargo": "sindica",
+    "sesiones": 25,
+    "presente": 21,
+    "remoto": 2,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 23,
+    "tasa_asistencia": 0.92
+   },
+   {
+    "id": "edgar-osiris-alcaraz-saucedo",
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "cargo": "regidor",
+    "sesiones": 25,
+    "presente": 25,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   },
+   {
+    "id": "alondra-isabel-lopez-alonso",
+    "nombre": "Alondra Isabel López Alonso",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 24,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   },
+   {
+    "id": "francisco-javier-bravo-gallardo",
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "cargo": "regidor",
+    "sesiones": 25,
+    "presente": 25,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   },
+   {
+    "id": "claudia-janeth-farias-lopez",
+    "nombre": "Claudia Janeth Farías López",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 23,
+    "remoto": 1,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 24,
+    "tasa_asistencia": 0.96
+   },
+   {
+    "id": "emilio-rosario-aldorica-pulido",
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "cargo": "regidor",
+    "sesiones": 25,
+    "presente": 20,
+    "remoto": 4,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 24,
+    "tasa_asistencia": 0.96
+   },
+   {
+    "id": "ana-isabel-flores-viera",
+    "nombre": "Ana Isabel Flores Viera",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 25,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   },
+   {
+    "id": "azucena-lopez-legorreta",
+    "nombre": "Azucena López Legorreta",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 19,
+    "remoto": 5,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 24,
+    "tasa_asistencia": 0.96
+   },
+   {
+    "id": "diana-gabriela-vizcaino-aguirre",
+    "nombre": "Diana Gabriela Vizcaíno Aguirre",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 16,
+    "remoto": 4,
+    "falta_justificada": 5,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 20,
+    "tasa_asistencia": 0.8
+   },
+   {
+    "id": "juan-carlos-gomez-diaz",
+    "nombre": "Juan Carlos Gómez Díaz",
+    "cargo": "regidor",
+    "sesiones": 25,
+    "presente": 24,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 24,
+    "tasa_asistencia": 0.96
+   },
+   {
+    "id": "elia-margarita-moreno-gonzalez",
+    "nombre": "Elia Margarita Moreno González",
+    "cargo": "regidora",
+    "sesiones": 25,
+    "presente": 10,
+    "remoto": 8,
+    "falta_justificada": 5,
+    "ausente": 0,
+    "no_determinable": 2,
+    "asistio": 18,
+    "tasa_asistencia": 0.783
+   },
+   {
+    "id": "federico-rangel-lozano",
+    "nombre": "Federico Rangel Lozano",
+    "cargo": "regidor",
+    "sesiones": 25,
+    "presente": 24,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0,
+    "asistio": 25,
+    "tasa_asistencia": 1.0
+   }
+  ],
+  "suplencias": [
+   {
+    "acta": "2024-2027-52",
+    "no_acta": 52,
+    "fecha": "2025-11-14",
+    "nombre": "Nancy Susana Martínez Briceño"
+   }
+  ],
+  "sesiones": [
+   {
+    "acta": "2024-2027-1",
+    "no_acta": 1,
+    "fecha": "2024-10-16",
+    "asistio": 13,
+    "presente": 13,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-38",
+    "no_acta": 38,
+    "fecha": "2025-06-30",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-52",
+    "no_acta": 52,
+    "fecha": "2025-11-14",
+    "asistio": 12,
+    "presente": 11,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 1
+   },
+   {
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "fecha": "2025-11-21",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-54",
+    "no_acta": 54,
+    "fecha": "2025-11-27",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-55",
+    "no_acta": 55,
+    "fecha": "2025-12-01",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-56",
+    "no_acta": 56,
+    "fecha": "2025-12-04",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-57",
+    "no_acta": 57,
+    "fecha": "2025-12-05",
+    "asistio": 11,
+    "presente": 9,
+    "remoto": 2,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-58",
+    "no_acta": 58,
+    "fecha": "2025-12-11",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-59",
+    "no_acta": 59,
+    "fecha": "2025-12-15",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-60",
+    "no_acta": 60,
+    "fecha": "2025-12-20",
+    "asistio": 12,
+    "presente": 8,
+    "remoto": 4,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-61",
+    "no_acta": 61,
+    "fecha": "2025-12-31",
+    "asistio": 12,
+    "presente": 10,
+    "remoto": 2,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-62",
+    "no_acta": 62,
+    "fecha": "2026-01-10",
+    "asistio": 13,
+    "presente": 12,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-63",
+    "no_acta": 63,
+    "fecha": "2026-01-13",
+    "asistio": 13,
+    "presente": 12,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-64",
+    "no_acta": 64,
+    "fecha": "2026-01-15",
+    "asistio": 11,
+    "presente": 11,
+    "remoto": 0,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-65",
+    "no_acta": 65,
+    "fecha": "2026-02-03",
+    "asistio": 13,
+    "presente": 12,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-66",
+    "no_acta": 66,
+    "fecha": "2026-02-14",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-67",
+    "no_acta": 67,
+    "fecha": "2026-03-06",
+    "asistio": 13,
+    "presente": 12,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-68",
+    "no_acta": 68,
+    "fecha": "2026-03-11",
+    "asistio": 13,
+    "presente": 13,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-69",
+    "no_acta": 69,
+    "fecha": "2026-03-14",
+    "asistio": 11,
+    "presente": 11,
+    "remoto": 0,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-70",
+    "no_acta": 70,
+    "fecha": "2026-03-27",
+    "asistio": 11,
+    "presente": 9,
+    "remoto": 2,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-71",
+    "no_acta": 71,
+    "fecha": "2026-04-15",
+    "asistio": 13,
+    "presente": 13,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-72",
+    "no_acta": 72,
+    "fecha": "2026-04-29",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-73",
+    "no_acta": 73,
+    "fecha": "2026-04-29",
+    "asistio": 11,
+    "presente": 11,
+    "remoto": 0,
+    "falta_justificada": 2,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-74",
+    "no_acta": 74,
+    "fecha": "2026-05-13",
+    "asistio": 12,
+    "presente": 11,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 1
+   }
+  ],
+  "nota": "La tasa de asistencia excluye las sesiones en que el OCR no permite leer el pase de lista (no_determinable), para no contarlas ni como presencia ni como falta."
+ }
+}

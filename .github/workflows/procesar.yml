@@ -68,10 +68,13 @@ jobs:
       - name: Compilar payloads del sitio (summaries.json + fulltext.json)
         run: python3 processor/build_site_index.py
 
+      - name: Compilar analítica por administración (Fase 3)
+        run: python3 processor/build_analytics.py
+
       - name: Commitear lo procesado
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ocr data/summaries data/asistencia site/summaries.json site/fulltext.json 2>/dev/null || true
+          git add data/ocr data/summaries data/asistencia site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
           git push
