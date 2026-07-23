@@ -6,6 +6,26 @@
 
 ---
 
+## 2026-07-23 — L3: agregador de analítica por administración
+
+**Hecho.** `processor/build_analytics.py` compila `site/analytics-2024-2027.json` a partir de
+`data/summaries/` y `data/asistencia/`, integrado a `procesar.yml`. Secciones: cobertura,
+decisiones (por sentido / categoría / votación), montos declarados, colonias y asistencia por
+integrante (con suplencias y una fila por sesión).
+
+**La honestidad va en la estructura, porque los agregados esconden sus propios huecos.**
+Cada sección declara su base: el término tiene 74 actas, hay 25 con resumen y sólo **2** con
+campos Tier A (categoría/votación/colonias/montos) hasta que corra el backfill `resumir_forzar`.
+Los montos son `suma_declarada_mxn` con la nota de que **no** es el presupuesto del municipio,
+sólo lo que las actas nombran. La tasa de asistencia excluye las sesiones `no_determinable`
+(un mal escaneo no cuenta ni como presencia ni como falta): p. ej. Elia Moreno queda 18/23 =
+0.783, sin castigarla por el acta 52 donde tuvo suplente. Los suplentes se listan, no se funden.
+
+**Pendiente.** L4: la sección de gráficas en el sitio (dataviz + marca Umbral) con estas
+salvedades a la vista, no enterradas. Y el backfill para engordar los agregados Tier A.
+
+---
+
 ## 2026-07-23 — Cotejo contra PDF + detección de suplentes (no_reconocidos)
 
 **Primera corrida real de DeepSeek.** Con la llave ya cargada, se corrió `procesar.yml`
