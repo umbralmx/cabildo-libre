@@ -1,0 +1,30 @@
+{
+ "id": "2024-2027-60",
+ "esquema": 1,
+ "generado": "2026-07-23T15:21:18+00:00",
+ "roster": "regidores-2024-2027",
+ "region_encontrada": true,
+ "resumen": {
+  "presente": 8,
+  "remoto": 4,
+  "falta_justificada": 1,
+  "ausente": 0,
+  "no_determinable": 0,
+  "asistio": 12
+ },
+ "estados": {
+  "riult-rivera-gutierrez": "presente",
+  "itzel-sarahi-rios-de-la-mora": "presente",
+  "edgar-osiris-alcaraz-saucedo": "presente",
+  "alondra-isabel-lopez-alonso": "presente",
+  "francisco-javier-bravo-gallardo": "presente",
+  "claudia-janeth-farias-lopez": "remoto",
+  "emilio-rosario-aldorica-pulido": "remoto",
+  "ana-isabel-flores-viera": "presente",
+  "azucena-lopez-legorreta": "remoto",
+  "diana-gabriela-vizcaino-aguirre": "falta_justificada",
+  "juan-carlos-gomez-diaz": "presente",
+  "elia-margarita-moreno-gonzalez": "remoto",
+  "federico-rangel-lozano": "presente"
+ }
+}

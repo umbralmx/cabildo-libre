@@ -6,6 +6,29 @@
 
 ---
 
+## 2026-07-23 — L2: extractor de asistencia por sesión
+
+**Hecho.** `processor/asistencia_colima.py` lee el pase de lista de cada acta y clasifica a
+los 13 integrantes en `presente` / `remoto` / `falta_justificada` / `ausente` /
+`no_determinable`, sin API (texto sobre el OCR). Corrió sobre las 23 actas: se ubican 12–13
+de 13 en casi todas. Salida en `data/asistencia/`, integrada a `procesar.yml`.
+
+**Dos trampas del OCR resueltas.** (1) Anclar en «Lista de asistencia» capturaba el *órden
+del día* y colaba «licencia comercial» como si fuera un regidor con licencia; se ancló en
+«manifestaron su presencia», que es el pase de lista real, no la agenda. (2) El OCR mutila
+los apellidos (trunca «Legorret[a]», cambia «Aguirre»→«Aquitte»); emparejar el *par* de
+apellidos fallaba. Se cambió a emparejar por el apellido **único** de cada integrante en el
+roster, con tolerancia a truncamiento (prefijo) y a erratas (difflib) — así se ubica a Diana
+por «Vizcaíno» sin depender del «Aguirre» que el escáner arruinó.
+
+**La honestidad, otra vez en el borde.** En el acta 74 el acta sí nombra a Elia Margarita
+Moreno en la asistencia remota, pero el OCR la deja como «ela mirar moro ar»: ilegible. Un
+humano la deduciría por descarte; la regla del proyecto dice **no inferir**, así que queda
+`no_determinable`, no `remoto`. Es el único `nd` de las 23. Las actas además distinguen
+asistencia presencial, remota y falta justificada, y el extractor lo conserva.
+
+---
+
 ## 2026-07-23 — L2: roster canónico del cabildo 2024-2027
 
 **Hecho.** `data/regidores-2024-2027.json`: los 13 integrantes del cabildo (presidente,

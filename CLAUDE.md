@@ -160,8 +160,14 @@ scoped to what the acta actually states.
   lista (Tier B). **Roster ✅ (2026-07-23):** `data/regidores-2024-2027.json` — 13 members
   (presidente, síndica, 11 regidores), built from the actas' own pase de lista and **depurated
   by cross-checking actas 1/38/54/55** (the cross-check caught two real OCR name errors in acta
-  1). Carries `variantes_ocr` per person for name matching. **Pending:** the `asistencia`
-  extractor that reads each session's roll call and maps names against this roster.
+  1). Carries `variantes_ocr` per person for name matching. **Extractor ✅ (2026-07-23):**
+  `processor/asistencia_colima.py` reads each session's pase de lista (anchored on
+  "manifestaron su presencia", so agenda/permit text never leaks in) and assigns every member
+  `presente` / `remoto` / `falta_justificada` / `ausente` / `no_determinable`, matching on each
+  member's *unique* apellido token with truncation+fuzzy tolerance. Ran on all 23 OCR'd actas:
+  12–13/13 placed each, a single honest `no_determinable` (acta 74 — a member the acta names but
+  the OCR mangles past legibility). Output in `data/asistencia/`; wired into `procesar.yml`.
+  **Pending:** surfacing attendance on the site (part of L4).
 - **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
   (counts by categoría, vote sense, colonia, montos declarados, attendance).
 - **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
