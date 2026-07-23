@@ -1,0 +1,79 @@
+{
+ "id": "2024-2027-52",
+ "no_acta": 52,
+ "fecha": "2025-11-14",
+ "periodo": "2024-2027",
+ "esquema": 2,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-23T15:33:58+00:00",
+ "resumen_sesion": "Se aplazó la aprobación del acta anterior y se aprobó la exención del impuesto predial de 32 predios del Parque Regional Griselda Álvarez.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se registró la asistencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó y aprobó por unanimidad presentar el Acta de Cabildo N° 51 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la exención total del impuesto predial de 32 predios del Gobierno del Estado, ubicados en el Parque Regional Metropolitano Griselda Álvarez.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  }
+ ]
+}

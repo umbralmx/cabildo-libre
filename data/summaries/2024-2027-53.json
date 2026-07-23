@@ -1,0 +1,111 @@
+{
+ "id": "2024-2027-53",
+ "no_acta": 53,
+ "fecha": "2025-11-21",
+ "periodo": "2024-2027",
+ "esquema": 2,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-23T15:35:00+00:00",
+ "resumen_sesion": "Se nombró a la nueva tesorera municipal y se aprobó un convenio para gestionar recursos extraordinarios por 661 millones de pesos para obras de pavimentación y rehabilitación en diversas calles de Colima.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la existencia de quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se solicitó autorización para presentar las actas de Cabildo 51 y 52 en la próxima sesión, lo cual fue aprobado por unanimidad.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se nombró a la Licda. María Teresa Pérez Ramírez como nueva Tesorera Municipal tras la renuncia de la C.P. Susana Romero Castrejón.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la firma del convenio con CNEEG S. DE R.L. DE C.V. para la gestión y ejecución de obras con recursos extraordinarios por un monto total de $661,792,051.55, incluyendo 24 obras de pavimentación y rehabilitación en calles de Colima, así como en las colonias Miguel Hidalgo y Fátima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "mayoria",
+   "colonias": [
+    "Colonia Miguel Hidalgo",
+    "Colonia Fatima"
+   ],
+   "obras": [
+    "Construcción de pavimentación asfáltica en Colima, en la calle José Francisco Vá",
+    "Construcción de pavimentación asfáltica en Colima, en la calle Lebrón de Quiñone",
+    "Construcción de pavimentación asfáltica en Colima, en la calle Ricardo B. Nuñez,",
+    "Construcción de pavimentación asfáltica en Colima, en la calle Prof. Juan Silva ",
+    "Construcción de pavimentación asfáltica en Colima, en la calle Malva, tramo entr",
+    "Construcción de pavimentación asfáltica en Colima, en la calle Gral. Doroteo Ara",
+    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Gonzalo de Sandov",
+    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Javier Mina, entr",
+    "Rehabilitación de pavimentación asfáltica en Colima, en la calle Cuauhtémoc, ent",
+    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Anastasio Brizuel",
+    "Rehabilitación de pavimentación en Colima, Colonia Miguel Hidalgo, Calzada La Ar",
+    "Rehabilitación de pavimentación en Colima, Colonia Fátima, tramo entre calle Bal"
+   ],
+   "montos": [
+    {
+     "texto": "$661,792,051.55 (SEISCIENTOS SESENTA Y UN MILLONES SETECIENTOS NOVENTA Y DOS MIL CINCUENTA Y UN PESOS 55/100 M.N)",
+     "valor_mxn": 661792051.55
+    }
+   ]
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": []
+  }
+ ]
+}
