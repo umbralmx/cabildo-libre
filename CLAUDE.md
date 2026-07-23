@@ -167,7 +167,12 @@ scoped to what the acta actually states.
   member's *unique* apellido token with truncation+fuzzy tolerance. Ran on all 23 OCR'd actas:
   12–13/13 placed each, a single honest `no_determinable` (acta 74 — a member the acta names but
   the OCR mangles past legibility). Output in `data/asistencia/`; wired into `procesar.yml`.
-  **Pending:** surfacing attendance on the site (part of L4).
+  **`no_reconocidos` ✅ (2026-07-23):** the extractor now parses título-anchored names from the
+  roll call and reports any that match **no** roster member — a **suplente**. Surfaced a real
+  case: acta 52 seats *Nancy Susana Martínez Briceño* in place of Elia Moreno (a one-session
+  suplencia; Elia returns in acta 53). Reported verbatim, never forced onto a roster slot.
+  **Pending:** modeling suplencias *in the roster* (which titular, which sessions), and
+  surfacing attendance on the site (part of L4).
 - **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
   (counts by categoría, vote sense, colonia, montos declarados, attendance).
 - **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),

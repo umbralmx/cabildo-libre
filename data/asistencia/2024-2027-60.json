@@ -1,7 +1,7 @@
 {
  "id": "2024-2027-60",
- "esquema": 1,
- "generado": "2026-07-23T15:21:18+00:00",
+ "esquema": 2,
+ "generado": "2026-07-23T15:55:02+00:00",
  "roster": "regidores-2024-2027",
  "region_encontrada": true,
  "resumen": {
@@ -10,7 +10,8 @@
   "falta_justificada": 1,
   "ausente": 0,
   "no_determinable": 0,
-  "asistio": 12
+  "asistio": 12,
+  "no_reconocidos": 0
  },
  "estados": {
   "riult-rivera-gutierrez": "presente",
@@ -26,5 +27,6 @@
   "juan-carlos-gomez-diaz": "presente",
   "elia-margarita-moreno-gonzalez": "remoto",
   "federico-rangel-lozano": "presente"
- }
+ },
+ "no_reconocidos": []
 }

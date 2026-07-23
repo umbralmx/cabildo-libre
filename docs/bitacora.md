@@ -6,6 +6,34 @@
 
 ---
 
+## 2026-07-23 — Cotejo contra PDF + detección de suplentes (no_reconocidos)
+
+**Primera corrida real de DeepSeek.** Con la llave ya cargada, se corrió `procesar.yml`
+(`lote: 2`) y se cotejaron las actas 52 y 53 contra el **PDF fuente** (verdad de origen, no
+el OCR). Los campos Tier A salieron fiables: el monto del convenio CNEEG en el acta 53 es
+**$661,792,051.55** exacto; `categoria: convenio`, `sentido: aprobado`, `votacion: mayoria`
+—y el acta sí dice «aprobado por mayoría con los votos en contra de las Regidoras Azucena
+López Legorreta y Diana Vizcaíno», así que la distinción unánime/mayoría es correcta—; las
+colonias (Miguel Hidalgo, Fátima) son las dos únicas filas rotuladas «COLONIA» de una tabla
+de 20, sin inventar colonias a partir de nombres de calle. Veredicto: **los resúmenes son
+confiables, se puede escalar al término.**
+
+**Hallazgo del cotejo: una suplencia.** El pase de lista del acta 52 nombra a **Nancy Susana
+Martínez Briceño**, que no está en el roster, y **no** nombra a Elia Margarita Moreno (que
+reaparece en el acta 53). Es una suplencia de una sesión. El extractor marcaba a la titular
+como `no_determinable` y **descartaba en silencio** a la suplente.
+
+**Arreglo (a): `no_reconocidos`.** El extractor ahora parsea los nombres del pase de lista
+anclados en su título y reporta los que no casan con **ningún** integrante del roster —el
+suplente— textualmente, sin forzarlo a un lugar del roster (regla de no inferir a quién
+sustituye). Se resolvieron tres falsos positivos: cuando el OCR sólo deja los nombres de pila
+(«Edgar Osiris», «Elia Margarita»), el reconocimiento ahora casa también por nombre de pila
+(≥2 tokens), no sólo por apellido. Prueba: única acta marcada = 52 → «Nancy Susana Martínez
+Briceño»; las otras 24, limpias. Salida `esquema: 2`. **Pendiente:** modelar la suplencia en
+el propio roster (qué titular, qué sesiones).
+
+---
+
 ## 2026-07-23 — L2: extractor de asistencia por sesión
 
 **Hecho.** `processor/asistencia_colima.py` lee el pase de lista de cada acta y clasifica a
