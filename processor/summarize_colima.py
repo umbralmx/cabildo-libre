@@ -2,9 +2,12 @@
 """Phase 2, stage 2 — plain-language summaries + outcome per agenda item.
 
 Reads the OCR text produced by `ocr_colima.py` and, for each session, asks an
-LLM to (a) restate each agenda point in plain Spanish and (b) record its
-outcome *only when the acta states it clearly*. Writes one JSON per acta to
-`data/summaries/<id>.json`.
+LLM to (a) restate each agenda point in plain Spanish, (b) record its outcome
+*only when the acta states it clearly*, and (c) extract Tier A structured fields
+for Phase 3 analytics — categoría, votación, colonias, obras and explicitly
+declared montos — as a byproduct of the same call. Writes one JSON per acta to
+`data/summaries/<id>.json`. The structured fields obey the same honesty rule as
+the outcome: only what the acta declares, never inferred (see `parse_summary`).
 
 Provider: DeepSeek (`deepseek-v4-flash`, OpenAI-compatible). The single network
 call lives in `call_llm()` — swap that one function (base URL, model, auth
@@ -58,6 +61,8 @@ SISTEMA = (
     "propios imperfectos. Interpreta el sentido a pesar del ruido, pero NO inventes "
     "datos. Nunca inventes el resultado de una votación: si el acta no dice con "
     "claridad qué se resolvió en un punto, marca su sentido como 'no_determinable'. "
+    "Nunca inventes montos, colonias ni obras: sólo reporta los que el acta declare "
+    "de forma explícita; ante la duda, deja la lista vacía. "
     "No uses signos de admiración, ni emoji, ni adjetivos de bombo. Frases completas."
 )
 
@@ -67,18 +72,41 @@ INSTRUCCION = (
     "los asuntos de fondo que se decidieron, no el trámite. Nombra lo concreto "
     "(colonias, obras, licencias, montos) si aparece. No inventes; si la sesión sólo "
     "tuvo trámites o el texto no alcanza, dilo con sobriedad.\n\n"
-    "Luego, para cada punto del órden del día, redacta:\n"
+    "Luego, para cada punto del órden del día, redacta estos campos:\n"
     "- resumen: una o dos frases en lenguaje llano sobre qué se puso a consideración. "
     "Nombra colonias, fraccionamientos o calles si el acta los menciona.\n"
     "- sentido: uno de exactamente estos valores, según lo que el acta declare: "
     "'aprobado', 'rechazado', 'aplazado', 'retirado', 'tramite' (puntos de mero "
     "procedimiento: lista de asistencia, quórum, lectura del órden, clausura), o "
     "'no_determinable' si el texto no permite afirmar el resultado.\n"
+    "- categoria: el tipo de asunto, UNO de exactamente: 'obra_publica', 'licencia', "
+    "'fraccionamiento', 'presupuesto_finanzas', 'nombramiento', 'convenio', "
+    "'reglamento_normativo', 'patrimonio', 'tramite' (procedimiento interno), u 'otro'. "
+    "Elige la que mejor describa el fondo del punto.\n"
+    "- votacion: cómo se votó, UNO de: 'unanime', 'mayoria', o 'no_determinable' si el "
+    "acta no lo dice. Es distinto del sentido: describe la forma de la votación, no su "
+    "resultado.\n"
+    "- colonias: lista de nombres de colonias, fraccionamientos o localidades que el acta "
+    "mencione EN ESTE PUNTO, tal como aparecen. Lista vacía si no menciona ninguna.\n"
+    "- obras: lista de obras, calles o proyectos nombrados EN ESTE PUNTO. Vacía si no hay.\n"
+    "- montos: lista de cantidades de dinero que el acta declare EXPLÍCITAMENTE en este "
+    "punto. Cada una es {\"texto\": <la cifra tal como aparece>, \"valor_mxn\": <el número "
+    "en pesos, o null si no puedes normalizarlo con certeza>}. NUNCA inventes, estimes ni "
+    "sumes cifras; NO incluyas montos de otros puntos; si el punto no declara dinero, "
+    "devuelve lista vacía.\n"
     "Responde SOLO con JSON válido, sin texto alrededor, con esta forma:\n"
-    '{"resumen_sesion": "...", "puntos": [{"n": <entero>, "resumen": "...", "sentido": "..."}]}'
+    '{"resumen_sesion": "...", "puntos": [{"n": <entero>, "resumen": "...", '
+    '"sentido": "...", "categoria": "...", "votacion": "...", "colonias": [], '
+    '"obras": [], "montos": [{"texto": "...", "valor_mxn": null}]}]}'
 )
 
 SENTIDOS = {"aprobado", "rechazado", "aplazado", "retirado", "tramite", "no_determinable"}
+CATEGORIAS = {
+    "obra_publica", "licencia", "fraccionamiento", "presupuesto_finanzas",
+    "nombramiento", "convenio", "reglamento_normativo", "patrimonio", "tramite", "otro",
+}
+VOTACIONES = {"unanime", "mayoria", "no_determinable"}
+ESQUEMA = 2  # bumped when the per-punto shape changes; lets the aggregator tell tiers apart
 
 
 def build_messages(acta: dict, ocr_text: str) -> list[dict]:
@@ -116,6 +144,48 @@ def call_llm(messages: list[dict]) -> str:
     return data["choices"][0]["message"]["content"]
 
 
+def _clean_strings(raw: object, cap: int = 12, maxlen: int = 80) -> list[str]:
+    """Coerce a model field into a deduped list of trimmed strings, capped."""
+    if not isinstance(raw, list):
+        return []
+    seen: set[str] = set()
+    out: list[str] = []
+    for s in raw:
+        if not isinstance(s, str):
+            continue
+        s = s.strip()[:maxlen]
+        key = s.lower()
+        if s and key not in seen:
+            seen.add(key)
+            out.append(s)
+    return out[:cap]
+
+
+def _clean_montos(raw: object, cap: int = 20) -> list[dict]:
+    """Keep only amounts with a literal text; carry a numeric value only when the
+    model gave a real number (never coerce a string into one — that would fabricate
+    precision the acta didn't state)."""
+    if not isinstance(raw, list):
+        return []
+    out: list[dict] = []
+    for m in raw:
+        if isinstance(m, dict):
+            texto = (m.get("texto") or "").strip()
+            val = m.get("valor_mxn")
+        elif isinstance(m, str):
+            texto, val = m.strip(), None
+        else:
+            continue
+        if not texto:
+            continue
+        if isinstance(val, bool) or not isinstance(val, (int, float)):
+            val = None
+        out.append({"texto": texto[:120], "valor_mxn": val})
+        if len(out) >= cap:
+            break
+    return out
+
+
 def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
     """Validate the model output against the agenda; drop anything malformed.
     Returns (resumen_sesion, puntos)."""
@@ -133,11 +203,18 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
         if n not in by_n:
             continue  # hallucinated point number — discard
         sentido = row.get("sentido")
+        categoria = row.get("categoria")
+        votacion = row.get("votacion")
         out.append({
             "n": n,
             "numeral": by_n[n].get("numeral"),
             "resumen": (row.get("resumen") or "").strip(),
             "sentido": sentido if sentido in SENTIDOS else "no_determinable",
+            "categoria": categoria if categoria in CATEGORIAS else "otro",
+            "votacion": votacion if votacion in VOTACIONES else "no_determinable",
+            "colonias": _clean_strings(row.get("colonias")),
+            "obras": _clean_strings(row.get("obras")),
+            "montos": _clean_montos(row.get("montos")),
         })
     return resumen_sesion, out
 
@@ -154,6 +231,7 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         "no_acta": acta["no_acta"],
         "fecha": acta["fecha"],
         "periodo": acta["periodo"],
+        "esquema": ESQUEMA,
         "modelo": LLM_MODEL,
         "fuente_texto": ocr["motor"],
         "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),

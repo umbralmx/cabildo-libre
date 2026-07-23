@@ -74,7 +74,8 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 |---|---|---|
 | **1** | The Index | Static site: **search bar + browsable session timeline** over agenda text. **Built and verified locally 2026-07-19/20; not yet public** (gated on X1 + X2). |
 | **2** | The Deepening *(in progress)* | **OCR the scanned PDFs** (Tesseract) + plain-language summaries with outcome per agenda item (DeepSeek). Scoped to term 2024-2027 first. Pipeline built in `processor/`; site integration (full-content search + summary display) pending. |
-| **3** | Trends & Scale | Trend dashboards (licencias, fraccionamientos, budgets per quarter) + multi-municipality abstraction. |
+| **3** | The Lens *(new — added 2026-07-23)* | **Per-administration analytics, in a separate section.** Structured, queryable fields extracted as a byproduct of the Phase 2 summary pass — categoría del asunto, sentido de la votación, colonias/obras mencionadas, montos *declarados explícitamente*, y **asistencia de regidores** (pase de lista) — aggregated per término into prebuilt static JSON, rendered as client-side charts under the Umbral brand. See the Phase 3 spec below. |
+| **4** | Scale | Multi-municipality abstraction (was the second half of the old Phase 3). Phase 3 generalization is a refactor, not a rewrite. |
 
 ---
 
@@ -108,6 +109,63 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 
 - **X1 — Legal check.** ⚠️ **Reviewed 2026-07-20 → `docs/x1-terminos-legal.md`. Not a clean go.** The portal's T&C prohibit reproduction, distribution and public communication of its contents except for private use, research or study. There are serious counterarguments (official texts aren't copyrightable under LFDA art. 14; actas are transparency-obligated public information), but **this needs a human decision and ideally counsel.** Interim mitigation already applied: we no longer claim CC BY 4.0 over the source text, only over our own structuring work.
 - **X2 — Hosting identity.** Partially resolved: `umbralmx.github.io/cabildo-libre/` is the free path and needs no purchase. A memorable domain is still an open preference. *(You)*
+
+---
+
+## Phase 3 spec — The Lens (per-administration analytics)
+
+> A **separate analytics section** ("Panel por administración") that turns the corpus into
+> a picture of a council term: what kinds of decisions it made, how it voted, where in the
+> city, and who showed up. Static + client-side like everything else — prebuilt aggregate
+> JSON per término, charts rendered in the browser under the Umbral brand system.
+
+**The load-bearing insight (decide this *before* finishing Phase 2).** The Phase 2
+summarizer already reads the full OCR of each acta and already touches categorías, colonias
+and montos — but only as **free-text prose** inside `resumen`. Nothing is queryable. The
+cheap path is to **add structured fields to the same `summarize_colima.py` JSON schema** so
+the analytics data falls out of the pass we're already paying for. **23 of 74 actas are
+processed.** If we extend the schema now, the remaining 51 come out analytics-ready and we
+re-run only 23 (~cents). If we finish the term first and extract later, we re-run all 74.
+
+### Data-honesty tiers (this is what keeps the phase honest)
+
+The project rule stands: **never fill a gap in the source by inference.** Each category is
+scoped to what the acta actually states.
+
+- **Tier A — safe, structured, rides on the Phase 2 pass:**
+  - `categoria` per punto — obra pública · licencia · fraccionamiento · presupuesto/finanzas ·
+    nombramiento · convenio · reglamento/normativo · patrimonio · trámite · otro.
+  - `votacion` — unánime · mayoría · no_determinable (distinct from `sentido`).
+  - `colonias` [] and `obras` [] — **mentions only**, labeled non-exhaustive on screen.
+  - `montos` [] — only amounts the acta **states explicitly**, attached to their punto.
+    **Never** a synthesized grand total presented as authoritative; "total discussed" is
+    shown as *sum of amounts the actas explicitly named*, with that caveat visible.
+- **Tier B — needs a hand-built roster (one-time):** **asistencia de regidores** from the
+  pase de lista. Requires a canonical roster of the 2024-2027 cabildo to map OCR-noisy names
+  against. Yields attendance per session and per regidor across the term.
+- **Tier C — deferred / out of scope for v1:** speaker-level *participation* (who proposed,
+  spoke, or voted against). Discussion parsing is too noisy to be honest yet. v1 stops at
+  attendance + vote sense.
+
+### Epics (PM-level, acceptance criteria are Fable's)
+
+- **L1 — Extend the extraction schema** in `summarize_colima.py` (Tier A fields) + re-run the
+  23 done actas; new actas inherit it. **Code ✅ (2026-07-23):** per-punto now carries
+  `categoria`, `votacion`, `colonias`, `obras`, `montos` (`{texto, valor_mxn}`), all validated
+  against controlled vocabularies with the honesty guards in `parse_summary` (bad values →
+  safe defaults; non-numeric `valor_mxn` → `null`, never coerced). Output tagged `esquema: 2`.
+  **Re-run pending on `DEEPSEEK_API_KEY`:** run `procesar.yml` with `resumir_forzar: true` and
+  `lote ≥ 23` to refresh the existing summaries (leaving `lote` at 10 only refreshes 10).
+- **L2 — Canonical regidor roster** for 2024-2027 + `asistencia` extraction from the pase de
+  lista (Tier B).
+- **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
+  (counts by categoría, vote sense, colonia, montos declarados, attendance).
+- **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
+  with the honesty caveats rendered inline, not buried.
+
+**Prereq / ordering:** L1 should land *before* the Phase 2 batch finishes (extract-once).
+L2–L4 can follow. Do **not** generalize across administrations' data models yet — Colima term
+2024-2027 first, same as everywhere else.
 
 ---
 

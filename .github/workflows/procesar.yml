@@ -16,6 +16,10 @@ on:
       lote:
         description: "Máximo de actas por corrida"
         default: "10"
+      resumir_forzar:
+        description: "Re-generar resúmenes ya existentes (para actualizar el esquema Tier A)"
+        type: boolean
+        default: false
   schedule:
     - cron: "0 7 * * 6" # sábados 1:00 Colima, fuera de horas pico
 
@@ -55,7 +59,8 @@ jobs:
         if: ${{ env.DEEPSEEK_API_KEY != '' }}
         run: |
           python3 processor/summarize_colima.py \
-            --limit "${{ github.event.inputs.lote || '10' }}"
+            --limit "${{ github.event.inputs.lote || '10' }}" \
+            ${{ github.event.inputs.resumir_forzar == 'true' && '--force' || '' }}
 
       - name: Compilar payloads del sitio (summaries.json + fulltext.json)
         run: python3 processor/build_site_index.py

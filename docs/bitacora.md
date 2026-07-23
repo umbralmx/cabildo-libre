@@ -6,6 +6,55 @@
 
 ---
 
+## 2026-07-23 — L1: esquema Tier A en el resumidor
+
+**Hecho.** Se amplió el esquema por punto en `summarize_colima.py` para extraer, en la
+misma llamada al modelo que ya se paga, los campos estructurados de la Fase 3 (Tier A):
+`categoria` (vocabulario cerrado de 10), `votacion` (`unanime`/`mayoria`/`no_determinable`),
+`colonias`, `obras` y `montos` (`{texto, valor_mxn}`). Salida marcada con `esquema: 2`.
+
+**Honestidad, en el código y no sólo en el prompt.** `parse_summary` valida todo contra
+vocabularios cerrados: categoría/sentido/votación inválidos caen a un valor seguro; las
+listas mal formadas quedan vacías; y un `valor_mxn` que no sea número real se vuelve `null`
+—nunca se coacciona un texto a número, para no fabricar una precisión que el acta no dio—.
+Probado con entradas hostiles (categoría inventada, punto alucinado, monto = «mucho»): todo
+se sanea. `build_site_index.py` no se toca (sólo lee `resumen`+`sentido`); los campos nuevos
+son aditivos y el agregador (L3) leerá los `data/summaries/*.json` completos.
+
+**Pendiente (necesita llave).** Re-generar las 23 actas ya resumidas para poblar el esquema:
+`procesar.yml` con `resumir_forzar: true` y `lote ≥ 23`. Las 51 restantes ya salen con Tier A.
+
+---
+
+## 2026-07-23 — Nueva Fase 3: «The Lens» (analítica por administración)
+
+**Decisión de alcance.** Se separó la antigua Fase 3 («Trends & Scale») en dos: la
+**Fase 3 «The Lens»** —analítica por administración en una sección aparte— y la **Fase 4
+«Scale»** —abstracción multi-municipio—. Motivo: la analítica es el trabajo de rendición
+de cuentas #3 («seguir tendencias») y debe profundizarse sobre Colima *antes* de
+generalizar a otras ciudades («Colima primero»).
+
+**Qué medirá.** Por término: categoría del asunto (obra, licencia, fraccionamiento,
+presupuesto, nombramiento…), sentido de la votación (unánime/mayoría), colonias y obras
+*mencionadas*, montos *declarados explícitamente*, y **asistencia de regidores** (pase de
+lista). Todo estático: JSON agregado por término, gráficas en el navegador (marca Umbral).
+
+**El punto que sostiene la fase.** El resumidor de la Fase 2 ya lee el OCR completo y ya
+toca categorías, colonias y montos, pero sólo como **prosa** dentro de `resumen`; nada es
+consultable. La vía barata es **añadir campos estructurados al mismo esquema JSON de
+`summarize_colima.py`** para que el dato analítico caiga del paso que ya se paga. **Van
+23 de 74 actas.** Si se amplía el esquema *ahora*, las 51 restantes salen listas y sólo
+se re-corren 23; si se termina el término primero, se re-corren las 74. → **Decisión
+pendiente del mantenedor antes de seguir el lote de la Fase 2.**
+
+**Honestidad.** Se conserva la regla del proyecto: nada de inferir vacíos. Montos y
+colonias se muestran como *lo que el acta declara explícitamente*, con la salvedad visible;
+«total discutido» = suma de montos nombrados, nunca un gran total sintético presentado como
+autoridad. Participación a nivel de quién habló/propuso queda **fuera del v1** (demasiado
+ruido para ser honesto). Épicas L1–L4 en `CLAUDE.md`.
+
+---
+
 ## 2026-07-22 — Precisión de búsqueda y estado del término
 
 **Hecho**
