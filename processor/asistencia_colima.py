@@ -146,7 +146,70 @@ def find_member(tokens: list[tuple[int, str]], keys: list[str], variantes: list[
     return -1
 
 
-def extract(texto: str, roster: list[dict], keys: dict[str, list[str]]) -> dict:
+# A person entry in the roll call: a title, then 2–5 Title-Case name words. Used
+# to catch names the roll call declares that belong to *no* roster member — a
+# suplente sitting in for a titular. Role words never start a real name entry.
+_TITULOS = r"Mtr[oa]|Licda|Lic|Dra|Dr|Profr?a|Prof|Ing|Arq|LAE|C"
+NAME_ENTRY = re.compile(
+    rf"\b(?:{_TITULOS})\.\s*"
+    r"([A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ]+(?:\s+[A-ZÁÉÍÓÚÑ][A-Za-zÁÉÍÓÚÑáéíóúñ.]+){1,4})"
+)
+_STOP = {
+    "regidor", "regidora", "regidores", "regidoras", "sindico", "sindica",
+    "presidente", "presidenta", "municipal", "secretario", "secretaria",
+    "ayuntamiento", "cabildo", "honorable", "pleno", "comision", "comisiones",
+    "orden", "dia", "sesion", "estado", "gobierno", "colima",
+}
+
+
+_CONECTORES = {"de", "la", "del", "los", "las", "y", "e"}
+
+
+def member_tokens(roster: list[dict]) -> dict[str, set[str]]:
+    """Every meaningful name token (given names + apellidos) per member, so a
+    roll-call entry can be recognized even when OCR gives only the given names
+    ('Edgar Osiris') and drops or mangles the apellido."""
+    mt: dict[str, set[str]] = {}
+    for m in roster:
+        words = norm(m["nombre"]).split() + [w for a in m["apellidos"] for w in norm(a).split()]
+        mt[m["id"]] = {w for w in words if len(w) >= 3 and w not in _CONECTORES}
+    return mt
+
+
+def _recognized(cand: list[str], keys: dict[str, list[str]], mtoks: dict[str, set[str]]) -> bool:
+    """A candidate name belongs to a roster member if it hits their unique
+    apellido, or shares ≥2 name tokens with them (given-name-led fragments)."""
+    for mid, member_toks in mtoks.items():
+        if any(_tok_match(t, k) for t in cand for k in keys[mid]):
+            return True
+        overlap = sum(1 for t in cand if any(_tok_match(t, mt) for mt in member_toks))
+        if overlap >= 2:
+            return True
+    return False
+
+
+def unrecognized(region: str, keys: dict[str, list[str]], mtoks: dict[str, set[str]]) -> list[str]:
+    """Names the roll call declares that match no roster member — i.e. a likely
+    suplente. Reported verbatim (not forced onto a roster slot), per the rule of
+    not inferring who a substitute stands in for."""
+    out: list[str] = []
+    seen: set[str] = set()
+    for m in NAME_ENTRY.finditer(region):
+        name = re.sub(r"\s+", " ", m.group(1)).strip(" .")
+        toks = [norm(w) for w in name.split() if w]
+        if not toks or toks[0] in _STOP:
+            continue
+        if _recognized(toks, keys, mtoks):
+            continue
+        key = " ".join(toks)
+        if key not in seen:
+            seen.add(key)
+            out.append(name)
+    return out
+
+
+def extract(texto: str, roster: list[dict], keys: dict[str, list[str]],
+            mtoks: dict[str, set[str]]) -> dict:
     region = roll_call_region(texto)
     region_n = norm(region)
     marks = clause_markers(region_n)
@@ -157,15 +220,23 @@ def extract(texto: str, roster: list[dict], keys: dict[str, list[str]]) -> dict:
         pos = find_member(tokens, keys[member["id"]], member.get("variantes_ocr", []), region_n)
         estados[member["id"]] = estado_en(pos, marks) if pos >= 0 else "no_determinable"
 
+    # Only surface un-rostered names when the roster isn't fully accounted for
+    # (someone is not present/remote) — a substitute implies a titular is out.
+    # This keeps a garbled-but-present roster name from being mis-flagged.
+    hay_vacante = any(e not in ("presente", "remoto") for e in estados.values())
+    no_reconocidos = unrecognized(region, keys, mtoks) if hay_vacante else []
+
     resumen = {e: 0 for e in ("presente", "remoto", "falta_justificada", "ausente", "no_determinable")}
     for e in estados.values():
         resumen[e] += 1
     resumen["asistio"] = resumen["presente"] + resumen["remoto"]  # present, in person or remote
+    resumen["no_reconocidos"] = len(no_reconocidos)
 
     return {
         "region_encontrada": bool(region),
         "resumen": resumen,
         "estados": estados,
+        "no_reconocidos": no_reconocidos,
     }
 
 
@@ -179,6 +250,7 @@ def main() -> None:
 
     roster = json.loads(ROSTER_JSON.read_text(encoding="utf-8"))["integrantes"]
     keys = distinctive_keys(roster)
+    mtoks = member_tokens(roster)
     ASIST_DIR.mkdir(parents=True, exist_ok=True)
 
     ocr_ids = [args.id] if args.id else sorted(
@@ -196,9 +268,11 @@ def main() -> None:
     ok = 0
     for acta_id in pending:
         ocr = json.loads((OCR_DIR / f"{acta_id}.json").read_text(encoding="utf-8"))
-        data = extract(ocr["texto_completo"], roster, keys)
+        data = extract(ocr["texto_completo"], roster, keys, mtoks)
         r = data["resumen"]
         flag = "" if data["region_encontrada"] else "  ⚠ sin pase de lista legible"
+        if data["no_reconocidos"]:
+            flag += "  ⚠ suplente?: " + "; ".join(data["no_reconocidos"])
         print(f"[{acta_id}] asistió {r['asistio']}/{len(roster)} "
               f"(pres {r['presente']}, remoto {r['remoto']}, "
               f"justif {r['falta_justificada']}, ausente {r['ausente']}, "
@@ -207,7 +281,7 @@ def main() -> None:
             continue
         out = {
             "id": acta_id,
-            "esquema": 1,
+            "esquema": 2,  # +no_reconocidos (suplentes named outside the roster)
             "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
             "roster": "regidores-2024-2027",
             **data,
