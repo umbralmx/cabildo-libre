@@ -174,12 +174,36 @@ scoped to what the acta actually states.
   **Pending:** modeling suplencias *in the roster* (which titular, which sessions), and
   surfacing attendance on the site (part of L4).
 - **L3 — Aggregator** (`processor/build_analytics.py`): compile per-término static JSON
-  (counts by categoría, vote sense, colonia, montos declarados, attendance).
+  (counts by categoría, vote sense, colonia, montos declarados, attendance). **✅ (2026-07-23):**
+  writes `site/analytics-2024-2027.json` from `data/summaries/` + `data/asistencia/`, wired into
+  `procesar.yml`. Honesty is structural: every section reports its `cobertura` (74 in term vs how
+  many summarized vs how many carry Tier A — currently 2), montos are `suma_declarada_mxn` with a
+  "not the budget" nota, attendance `tasa` excludes `no_determinable` sessions, and suplentes are
+  listed. Numbers grow with each batch; the categoría/votación/colonia/monto aggregates stay thin
+  until the `resumir_forzar` backfill lifts the older 23 summaries to `esquema 2`.
 - **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
-  with the honesty caveats rendered inline, not buried.
+  with the honesty caveats rendered inline, not buried. **Scope: build the 15 `ya` indicators
+  first** (see the dictionary below), then extend once L5 lands.
+- **L5 — Tier A+ extraction *(new — added 2026-07-24)*.** The one extraction pass that unlocks the
+  11 `1 paso` indicators. Adds **per-punto** fields to `summarize_colima.py` — `empresas`,
+  `votos_en_contra`, `abstenciones`, `comision`+`autor`, `reglamentos`, `obras_detalle` — plus a
+  **per-acta** `tipo_sesion` (header parse, no LLM) and an **aplazados** cross-link in
+  `build_analytics.py`. Votes/abstentions map to the roster with the same OCR-tolerant logic as
+  `asistencia_colima.py`. Then extend L3 (aggregator) + L4 (dashboard). Everything is already in the
+  OCR text (dissent 15/25, comisión 23/25, empresas 13/25) — this is structuring, not new data.
+
+**The indicator dictionary is the source of truth** for all of the above: `data/indicadores.json`
+(machine-readable) + `docs/indicadores.md` (spec). 26 indicators — 15 `ya`, 11 `1 paso` — each with
+its definition, source field, computation, audience lean, and honesty caveat. The *externo* tier
+(party voting blocs, geocoded map, unmentioned colonias, semantic search) is out of scope for now.
+Scope was set from the *El espacio de análisis* product note.
+
+**Next steps (Phase 3):** (a) **backfill Tier A** (`procesar.yml` → `resumir_forzar: true`,
+`lote ≥ 25`) so the `ya` money/category indicators aren't thin; (b) **L4** over the `ya` indicators;
+(c) **L5** one-pass extraction → extend L3/L4 for the `1 paso` indicators.
 
 **Prereq / ordering:** L1 should land *before* the Phase 2 batch finishes (extract-once).
-L2–L4 can follow. Do **not** generalize across administrations' data models yet — Colima term
+L2–L5 can follow. Do **not** generalize across administrations' data models yet — Colima term
 2024-2027 first, same as everywhere else.
 
 ---
@@ -221,6 +245,7 @@ L2–L4 can follow. Do **not** generalize across administrations' data models ye
 | `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
 | `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |
 | `processor/README.md` | **How Phase 2 runs** — the OCR + summary stages, deps, provider-swap, honesty rules |
+| `docs/indicadores.md` + `data/indicadores.json` | **Phase 3 indicator dictionary** — the 26 `ya`/`1 paso` analyses, each with source, computation, audience, caveat. Source of truth for L4/L5 |
 | `docs/x1-terminos-legal.md` | T&C findings, risk, and options — **read before launching** |
 | `docs/diseno.md` | How the Umbral brand system was applied, and deliberate deviations |
 | `data/SOURCE.md` | Dataset provenance, caveats, licensing position |

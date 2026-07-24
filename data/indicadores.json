@@ -1,0 +1,296 @@
+{
+  "termino": "2024-2027",
+  "municipio": "Colima",
+  "version": 1,
+  "generado": "2026-07-24",
+  "descripcion": "Diccionario de indicadores de la Fase 3 (The Lens). Enumera los análisis aprobados para construir: los de nivel 'ya' (calculables con lo ya extraído) y los de '1_paso' (un pase de extracción más sobre texto que ya está en el OCR). Los de nivel 'externo' (P6, G2, G3, T4 en la nota de producto) quedan fuera de este alcance. Es la fuente de verdad para el agregador (L3), el tablero (L4) y la extracción Tier A+ (L5).",
+  "niveles_listo": {
+    "ya": "Se calcula con los campos ya extraídos (data/summaries esquema 2, data/asistencia, data/actas).",
+    "1_paso": "Requiere un campo nuevo de extracción sobre el OCR existente —está en el texto, falta estructurarlo— o un cruce entre sesiones."
+  },
+  "audiencias": {
+    "servicio": "Hace ver al cabildo activo/moderno; el ayuntamiento lo adopta sin fricción.",
+    "transparencia": "Hechos públicos con encuadre cívico; sirve a ambos lados.",
+    "rendicion": "El filo de rendición de cuentas; el público se inclina, el ayuntamiento resiste."
+  },
+  "regla_honestidad": "Nunca rellenar un vacío de la fuente por inferencia. Los agregados declaran su cobertura; los montos son 'lo declarado', no 'el total'; el sentido/voto ilegible se marca no_determinable; los suplentes se listan, no se funden en el roster.",
+  "campos_nuevos_L5": {
+    "descripcion": "Campos que habilitan los indicadores '1_paso'. Los de punto se suman al prompt de summarize_colima.py; tipo_sesion se parsea del encabezado del acta; el enlace de aplazados es un cruce en el agregador.",
+    "por_punto": {
+      "empresas": "Lista de personas morales nombradas (S.A. de C.V., S. de R.L., etc.). Habilita M5.",
+      "votos_en_contra": "Regidores que votaron en contra (ids del roster). Habilita P2, D5.",
+      "abstenciones": "Regidores que se abstuvieron (ids del roster). Habilita P3.",
+      "comision": "Comisión que dictamina el punto; 'autor' el regidor que lo presenta. Habilita P4, I1.",
+      "reglamentos": "Reglamentos tocados y la acción (reforma/creación/derogación). Habilita I4.",
+      "obras_detalle": "Filas de la tabla de obras {obra, colonia, monto}. Habilita M3 y enriquece M6."
+    },
+    "por_acta": {
+      "tipo_sesion": "ordinaria | extraordinaria | solemne, del encabezado del acta. Habilita I3."
+    },
+    "cruce": {
+      "aplazados": "Enlaza un asunto aplazado con su reaparición en sesiones posteriores. Habilita D6."
+    }
+  },
+  "indicadores": [
+    {
+      "id": "M1", "nombre": "Inversión declarada en el tiempo", "lente": "dinero",
+      "pregunta": "¿Cuánto dinero público se puso sobre la mesa, mes a mes?",
+      "definicion": "Suma de los montos que las actas declaran de forma explícita, agrupada por período (mes/trimestre).",
+      "fuente": ["data/summaries/*.json → puntos[].montos[].valor_mxn", "data/actas.json → fecha"],
+      "calculo": "sum(valor_mxn) por bucket temporal, sobre puntos con sentido != tramite.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "No es el presupuesto ni el gasto del municipio: sólo lo nombrado en los puntos analizados."
+    },
+    {
+      "id": "M2", "nombre": "Gasto por categoría", "lente": "dinero",
+      "pregunta": "¿En qué se concentra el dinero: obra pública, licencias, finanzas?",
+      "definicion": "Monto declarado agrupado por la categoría del asunto.",
+      "fuente": ["puntos[].montos[].valor_mxn", "puntos[].categoria"],
+      "calculo": "sum(valor_mxn) group by categoria.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia"],
+      "salvedad": "Mismo caveat de 'declarado, no total' que M1."
+    },
+    {
+      "id": "M3", "nombre": "Inversión por colonia", "lente": "dinero",
+      "pregunta": "¿Qué barrios reciben obra —y cuánto dinero— y cuáles no?",
+      "definicion": "Monto e intervenciones atribuidas a cada colonia mencionada.",
+      "fuente": ["puntos[].obras_detalle[] {obra, colonia, monto}"],
+      "calculo": "sum(monto) y conteo group by colonia normalizada.",
+      "listo": "1_paso", "requiere": "obras_detalle (filas de la tabla de obras con su colonia y monto)",
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "Colonias son menciones no exhaustivas; un punto puede nombrar calles sin colonia."
+    },
+    {
+      "id": "M4", "nombre": "Mayores decisiones económicas", "lente": "dinero",
+      "pregunta": "¿Cuáles fueron los acuerdos de más dinero del término?",
+      "definicion": "Ranking de los montos declarados de mayor valor, con su acta y punto.",
+      "fuente": ["puntos[].montos[]"],
+      "calculo": "top-N por valor_mxn, con referencia a acta/punto.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "Ordena por lo declarado explícitamente; montos sin cifra normalizable no entran al ranking."
+    },
+    {
+      "id": "M5", "nombre": "Contrapartes externas", "lente": "dinero",
+      "pregunta": "¿Qué empresas firman convenios y contratos con el municipio?",
+      "definicion": "Personas morales nombradas como contraparte en convenios, obras o fraccionamientos, y su recurrencia.",
+      "fuente": ["puntos[].empresas[]"],
+      "calculo": "conteo y monto asociado por empresa, a lo largo del término.",
+      "listo": "1_paso", "requiere": "empresas (S.A. de C.V./S. de R.L. en 13/25 actas: CNEEG, DELAMO…)",
+      "audiencia": ["rendicion"],
+      "salvedad": "Se nombra a la contraparte tal como aparece; no se afirma favoritismo, sólo se registra la recurrencia."
+    },
+    {
+      "id": "M6", "nombre": "Cartera de obra pública", "lente": "dinero",
+      "pregunta": "¿Cuántas obras, de qué tipo, en qué calles?",
+      "definicion": "Inventario de obras públicas por tipo (pavimentación, rehabilitación, drenaje…).",
+      "fuente": ["puntos[].obras[]", "puntos[].categoria == obra_publica"],
+      "calculo": "conteo de obras y clasificación por palabra clave del texto de la obra.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "El texto de la obra viene recortado a ~80 caracteres; obras_detalle (L5) lo completa."
+    },
+    {
+      "id": "D1", "nombre": "Ritmo de decisiones", "lente": "decisiones",
+      "pregunta": "¿Cuántos asuntos resuelve el cabildo por sesión y por mes?",
+      "definicion": "Conteo de puntos sustantivos (con decisión, no de trámite) por sesión y período.",
+      "fuente": ["puntos[].sentido"],
+      "calculo": "count(sentido != tramite) por acta y por bucket temporal.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "Sólo sobre actas procesadas; la cobertura se declara junto al indicador."
+    },
+    {
+      "id": "D2", "nombre": "Mezcla de asuntos", "lente": "decisiones",
+      "pregunta": "¿De qué se ocupa el cabildo en el fondo?",
+      "definicion": "Reparto de los puntos sustantivos por categoría.",
+      "fuente": ["puntos[].categoria"],
+      "calculo": "distribución de categoria sobre puntos sustantivos.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "categoria sólo existe en resúmenes esquema 2; la base se declara."
+    },
+    {
+      "id": "D3", "nombre": "Aprobado vs. aplazado", "lente": "decisiones",
+      "pregunta": "¿Con qué frecuencia el cabildo pospone, rechaza o retira un asunto?",
+      "definicion": "Distribución del sentido de los puntos sustantivos.",
+      "fuente": ["puntos[].sentido"],
+      "calculo": "distribución de sentido (aprobado/aplazado/rechazado/retirado/no_determinable).",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia"],
+      "salvedad": "no_determinable no es 'sin decisión': es 'no legible en el OCR'."
+    },
+    {
+      "id": "D4", "nombre": "Consenso vs. disenso", "lente": "decisiones",
+      "pregunta": "¿El cabildo vota unido o dividido —y cambia con el tiempo?",
+      "definicion": "Proporción de votaciones unánimes vs. por mayoría, y su tendencia temporal.",
+      "fuente": ["puntos[].votacion", "data/actas.json → fecha"],
+      "calculo": "distribución de votacion y serie temporal de % mayoría.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "La forma de votación (unánime/mayoría) es distinta del resultado (sentido)."
+    },
+    {
+      "id": "D5", "nombre": "Qué se disputa más", "lente": "decisiones",
+      "pregunta": "¿Qué tipo de asuntos divide al cabildo?",
+      "definicion": "Cruce del disenso (magnitud de votos en contra) por categoría del asunto.",
+      "fuente": ["puntos[].categoria", "puntos[].votos_en_contra[]"],
+      "calculo": "tasa de disenso y nº de votos en contra group by categoria.",
+      "listo": "1_paso", "requiere": "votos_en_contra (existe una versión básica 'ya' usando sólo votacion=mayoria)",
+      "audiencia": ["rendicion"],
+      "salvedad": "La versión rica necesita quién y cuántos votaron en contra, no sólo el binario mayoría."
+    },
+    {
+      "id": "D6", "nombre": "Seguimiento de aplazados", "lente": "decisiones",
+      "pregunta": "¿Qué se pospone y cuándo —o si— regresa?",
+      "definicion": "Trazado de un asunto aplazado hasta su reaparición en sesiones posteriores.",
+      "fuente": ["puntos[].sentido == aplazado", "texto del órden del día entre sesiones"],
+      "calculo": "enlace heurístico del texto del asunto a través de actas sucesivas.",
+      "listo": "1_paso", "requiere": "cruce de aplazados en el agregador",
+      "audiencia": ["transparencia"],
+      "salvedad": "El enlace es heurístico; se marca la confianza y no se afirma continuidad dudosa."
+    },
+    {
+      "id": "P1", "nombre": "Asistencia por regidor", "lente": "personas",
+      "pregunta": "¿Quién se presenta —presencial, remoto, con falta justificada?",
+      "definicion": "Estados de asistencia por integrante y su tasa de asistencia.",
+      "fuente": ["data/asistencia/*.json → estados", "resumen"],
+      "calculo": "conteo por estado; tasa = (presente+remoto) / (determinables), excluyendo no_determinable.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "La tasa excluye las sesiones no_determinable; un mal escaneo no cuenta ni como presencia ni como falta."
+    },
+    {
+      "id": "P5", "nombre": "Suplencias", "lente": "personas",
+      "pregunta": "¿Quién sustituye a quién, y cuántas veces?",
+      "definicion": "Nombres del pase de lista que no corresponden a ningún integrante del roster (suplentes).",
+      "fuente": ["data/asistencia/*.json → no_reconocidos"],
+      "calculo": "listado de no_reconocidos por acta, con fecha.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia"],
+      "salvedad": "Se reporta el nombre tal cual; no se infiere a qué titular sustituye."
+    },
+    {
+      "id": "P2", "nombre": "Registro de voto y disidencia", "lente": "personas",
+      "pregunta": "¿Quién vota en contra, con qué frecuencia y en qué asuntos?",
+      "definicion": "Registro por regidor de sus votos en contra a lo largo del término.",
+      "fuente": ["puntos[].votos_en_contra[]"],
+      "calculo": "conteo de votos en contra por regidor, cruzable con categoría y monto.",
+      "listo": "1_paso", "requiere": "votos_en_contra (el acta los nombra: 'votos en contra de las Regidoras…')",
+      "audiencia": ["rendicion"],
+      "salvedad": "Sólo cuando el acta nombra explícitamente a los disidentes; si no, el punto no aporta al registro."
+    },
+    {
+      "id": "P3", "nombre": "Abstenciones", "lente": "personas",
+      "pregunta": "¿Quién se abstiene y ante qué?",
+      "definicion": "Registro por regidor de sus abstenciones.",
+      "fuente": ["puntos[].abstenciones[]"],
+      "calculo": "conteo de abstenciones por regidor.",
+      "listo": "1_paso", "requiere": "abstenciones (el acta las declara; aparecen en ~11/25 actas)",
+      "audiencia": ["rendicion"],
+      "salvedad": "Sólo abstenciones nombradas explícitamente en el acta."
+    },
+    {
+      "id": "P4", "nombre": "Autoría y patrocinio", "lente": "personas",
+      "pregunta": "¿Quién hace el trabajo: quién presenta más dictámenes?",
+      "definicion": "Dictámenes presentados por cada regidor/comisión.",
+      "fuente": ["puntos[].comision", "puntos[].autor"],
+      "calculo": "conteo de puntos por comision y por autor.",
+      "listo": "1_paso", "requiere": "comision + autor (el acta dice 'la Regidora X, Presidenta de la Comisión Y, dio lectura al dictamen')",
+      "audiencia": ["transparencia"],
+      "salvedad": "Presentar un dictamen es autoría formal, no necesariamente la del trabajo técnico."
+    },
+    {
+      "id": "I1", "nombre": "Actividad por comisión", "lente": "institucion",
+      "pregunta": "¿Qué comisiones producen más trabajo —Hacienda, Obras, Gobernación?",
+      "definicion": "Volumen de dictámenes/puntos atribuidos a cada comisión.",
+      "fuente": ["puntos[].comision"],
+      "calculo": "conteo de puntos group by comision.",
+      "listo": "1_paso", "requiere": "comision (437 menciones de 'Comisión de' en el lote)",
+      "audiencia": ["transparencia"],
+      "salvedad": "Un punto puede involucrar más de una comisión; se registra la que dictamina."
+    },
+    {
+      "id": "I2", "nombre": "Instrumentos de gobierno", "lente": "institucion",
+      "pregunta": "¿Predominan dictámenes, convenios, reglamentos o nombramientos?",
+      "definicion": "Reparto de los asuntos por tipo de instrumento.",
+      "fuente": ["puntos[].categoria"],
+      "calculo": "distribución aproximada por categoria (convenio, reglamento_normativo, nombramiento…).",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "categoria aproxima el instrumento; la distinción fina (dictamen vs acuerdo) es refinable en L5."
+    },
+    {
+      "id": "I3", "nombre": "Cadencia de sesiones", "lente": "institucion",
+      "pregunta": "¿Cada cuánto sesiona? ¿Ordinaria, extraordinaria o solemne?",
+      "definicion": "Frecuencia y tipo de sesión a lo largo del término.",
+      "fuente": ["data/actas.json → fecha", "campo nuevo tipo_sesion"],
+      "calculo": "conteo por tipo_sesion y cadencia entre fechas.",
+      "listo": "1_paso", "requiere": "tipo_sesion del encabezado del acta (21/25 del lote fueron extraordinarias)",
+      "audiencia": ["servicio", "transparencia"],
+      "salvedad": "El tipo se lee del encabezado del acta, no se infiere del contenido."
+    },
+    {
+      "id": "I4", "nombre": "Trabajo normativo", "lente": "institucion",
+      "pregunta": "¿Qué reglamentos se reforman o se crean?",
+      "definicion": "Reglamentos tocados y la acción normativa (reforma, creación, derogación).",
+      "fuente": ["puntos[].reglamentos[] {nombre, accion}"],
+      "calculo": "conteo por reglamento y por tipo de acción.",
+      "listo": "1_paso", "requiere": "reglamentos (aparecen en 24/25 actas)",
+      "audiencia": ["transparencia"],
+      "salvedad": "Sólo reglamentos nombrados explícitamente en el punto."
+    },
+    {
+      "id": "I5", "nombre": "Duración de sesiones", "lente": "institucion",
+      "pregunta": "¿Cuánto dura una sesión y cuántos recesos tiene?",
+      "definicion": "Duración estimada y recesos a partir de las marcas horarias del acta.",
+      "fuente": ["data/ocr/*.json → texto_completo (marcas 'X horas con Y minutos', 'receso')"],
+      "calculo": "diferencia entre marca de inicio y de clausura; conteo de recesos.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia"],
+      "salvedad": "Dato escaso: sólo ~5/25 actas registran horas; se muestra sólo donde existe."
+    },
+    {
+      "id": "G1", "nombre": "Atención por colonia", "lente": "geografia",
+      "pregunta": "¿Dónde ha puesto su atención el cabildo —y con cuánto dinero?",
+      "definicion": "Ranking de colonias por menciones e inversión asociada.",
+      "fuente": ["puntos[].colonias[]", "puntos[].obras_detalle[]"],
+      "calculo": "conteo de menciones e importe por colonia normalizada.",
+      "listo": "1_paso", "requiere": "normalización a un padrón de colonias (el ranking básico por menciones ya es 'ya')",
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "El mapa geográfico (G2) queda fuera de alcance; esto es un ranking, no un mapa."
+    },
+    {
+      "id": "T1", "nombre": "Cobertura del procesamiento", "lente": "confianza",
+      "pregunta": "¿Cuánto del término está procesado y con qué profundidad?",
+      "definicion": "Actas del término con OCR, resumen, Tier A y asistencia.",
+      "fuente": ["site/analytics-2024-2027.json → cobertura"],
+      "calculo": "conteos de cobertura ya calculados por el agregador.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia"],
+      "salvedad": "Se muestra en cada sección para que ninguna cifra insinúe el término completo."
+    },
+    {
+      "id": "T2", "nombre": "Legibilidad de los documentos", "lente": "confianza",
+      "pregunta": "¿Qué tan legibles son los propios registros públicos?",
+      "definicion": "Proporción de puntos cuyo sentido/voto no es determinable por ruido de OCR.",
+      "fuente": ["puntos[].sentido == no_determinable", "puntos[].votacion == no_determinable"],
+      "calculo": "% de no_determinable por acta y por término.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["transparencia", "rendicion"],
+      "salvedad": "Mide la calidad documental del ayuntamiento, no la del proyecto; se enmarca así."
+    },
+    {
+      "id": "T3", "nombre": "Enlaces muertos y actas faltantes", "lente": "confianza",
+      "pregunta": "¿Qué documentos ha dejado caer la propia fuente?",
+      "definicion": "PDFs enlazados que devuelven error y huecos de numeración en el histórico.",
+      "fuente": ["data/actas.json → pdf_url (verificación periódica)"],
+      "calculo": "chequeo HTTP de enlaces + detección de saltos de numeración.",
+      "listo": "ya", "requiere": null,
+      "audiencia": ["rendicion"],
+      "salvedad": "El link rot es de la fuente, no del proyecto; los huecos quedan visibles, no se rellenan."
+    }
+  ]
+}

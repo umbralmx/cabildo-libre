@@ -6,6 +6,51 @@
 
 ---
 
+## 2026-07-24 — Diccionario de indicadores + alcance del análisis
+
+**Decisión de alcance.** Tras la nota de producto *El espacio de análisis* (~30 análisis posibles
+sobre el corpus), se aprobó **avanzar con los niveles `ya` y `1 paso`** y dejar fuera los de nivel
+*externo* (bloques de voto por partido, mapa geocodificado, colonias sin mención, búsqueda
+semántica).
+
+**Diccionario como fuente de verdad.** `data/indicadores.json` (máquina-legible) + `docs/indicadores.md`
+(espec) enumeran **26 indicadores** —15 `ya`, 11 `1 paso`— agrupados por lente (dinero, decisiones,
+personas, institución, geografía, confianza). Cada uno con pregunta, definición, fuente, cálculo,
+audiencia y salvedad de honestidad. Es contra esto que se construyen el tablero (L4) y la extracción
+pendiente (L5), no contra la memoria de una conversación.
+
+**Corrección de un sub-alcance previo.** Antes marqué la "participación" como demasiado ruidosa para
+ser honesta. El grep del corpus lo desmintió: las actas **nombran** a los disidentes ("votos en
+contra de las Regidoras…", 15/25), a las comisiones que dictaminan (23/25) y a las empresas
+contraparte (13/25). Todo eso está en el texto OCR; sólo falta estructurarlo — de ahí la épica **L5**.
+
+**Backlog.** Se reencuadró L4 (primero los 15 `ya`) y se añadió L5 (extracción Tier A+ de un paso:
+`empresas`, `votos_en_contra`, `abstenciones`, `comision`+`autor`, `reglamentos`, `obras_detalle`
+por punto; `tipo_sesion` por acta; enlace de aplazados en el agregador). Próximos pasos: backfill
+Tier A → L4 sobre los `ya` → L5 → extender L3/L4 para los `1 paso`.
+
+---
+
+## 2026-07-23 — L3: agregador de analítica por administración
+
+**Hecho.** `processor/build_analytics.py` compila `site/analytics-2024-2027.json` a partir de
+`data/summaries/` y `data/asistencia/`, integrado a `procesar.yml`. Secciones: cobertura,
+decisiones (por sentido / categoría / votación), montos declarados, colonias y asistencia por
+integrante (con suplencias y una fila por sesión).
+
+**La honestidad va en la estructura, porque los agregados esconden sus propios huecos.**
+Cada sección declara su base: el término tiene 74 actas, hay 25 con resumen y sólo **2** con
+campos Tier A (categoría/votación/colonias/montos) hasta que corra el backfill `resumir_forzar`.
+Los montos son `suma_declarada_mxn` con la nota de que **no** es el presupuesto del municipio,
+sólo lo que las actas nombran. La tasa de asistencia excluye las sesiones `no_determinable`
+(un mal escaneo no cuenta ni como presencia ni como falta): p. ej. Elia Moreno queda 18/23 =
+0.783, sin castigarla por el acta 52 donde tuvo suplente. Los suplentes se listan, no se funden.
+
+**Pendiente.** L4: la sección de gráficas en el sitio (dataviz + marca Umbral) con estas
+salvedades a la vista, no enterradas. Y el backfill para engordar los agregados Tier A.
+
+---
+
 ## 2026-07-23 — Cotejo contra PDF + detección de suplentes (no_reconocidos)
 
 **Primera corrida real de DeepSeek.** Con la llave ya cargada, se corrió `procesar.yml`
