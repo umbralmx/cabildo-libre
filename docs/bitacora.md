@@ -6,6 +6,31 @@
 
 ---
 
+## 2026-07-24 — Diccionario de indicadores + alcance del análisis
+
+**Decisión de alcance.** Tras la nota de producto *El espacio de análisis* (~30 análisis posibles
+sobre el corpus), se aprobó **avanzar con los niveles `ya` y `1 paso`** y dejar fuera los de nivel
+*externo* (bloques de voto por partido, mapa geocodificado, colonias sin mención, búsqueda
+semántica).
+
+**Diccionario como fuente de verdad.** `data/indicadores.json` (máquina-legible) + `docs/indicadores.md`
+(espec) enumeran **26 indicadores** —15 `ya`, 11 `1 paso`— agrupados por lente (dinero, decisiones,
+personas, institución, geografía, confianza). Cada uno con pregunta, definición, fuente, cálculo,
+audiencia y salvedad de honestidad. Es contra esto que se construyen el tablero (L4) y la extracción
+pendiente (L5), no contra la memoria de una conversación.
+
+**Corrección de un sub-alcance previo.** Antes marqué la "participación" como demasiado ruidosa para
+ser honesta. El grep del corpus lo desmintió: las actas **nombran** a los disidentes ("votos en
+contra de las Regidoras…", 15/25), a las comisiones que dictaminan (23/25) y a las empresas
+contraparte (13/25). Todo eso está en el texto OCR; sólo falta estructurarlo — de ahí la épica **L5**.
+
+**Backlog.** Se reencuadró L4 (primero los 15 `ya`) y se añadió L5 (extracción Tier A+ de un paso:
+`empresas`, `votos_en_contra`, `abstenciones`, `comision`+`autor`, `reglamentos`, `obras_detalle`
+por punto; `tipo_sesion` por acta; enlace de aplazados en el agregador). Próximos pasos: backfill
+Tier A → L4 sobre los `ya` → L5 → extender L3/L4 para los `1 paso`.
+
+---
+
 ## 2026-07-23 — L3: agregador de analítica por administración
 
 **Hecho.** `processor/build_analytics.py` compila `site/analytics-2024-2027.json` a partir de
