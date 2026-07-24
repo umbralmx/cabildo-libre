@@ -41,6 +41,8 @@ import sys
 import urllib.request
 from pathlib import Path
 
+from limpieza import limpiar
+
 ROOT = Path(__file__).resolve().parent.parent
 ACTAS_JSON = ROOT / "data" / "actas.json"
 OCR_DIR = ROOT / "data" / "ocr"
@@ -220,7 +222,9 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
 
 
 def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
-    messages = build_messages(acta, ocr["texto_completo"])
+    # Feed the model the cleaned text: less structural noise fits more real
+    # content under OCR_TEXT_CAP and sharpens extraction. Raw stays as evidence.
+    messages = build_messages(acta, limpiar(ocr["texto_completo"]))
     if dry_run:
         print(messages[1]["content"][:1500])
         return None

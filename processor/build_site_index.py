@@ -22,6 +22,8 @@ import datetime
 import json
 from pathlib import Path
 
+from limpieza import limpiar
+
 ROOT = Path(__file__).resolve().parent.parent
 OCR_DIR = ROOT / "data" / "ocr"
 SUMMARY_DIR = ROOT / "data" / "summaries"
@@ -45,10 +47,13 @@ def build_summaries() -> dict:
 
 
 def build_fulltext() -> dict:
+    # Serve the *cleaned* text (masthead/separator junk stripped, paragraphs
+    # reflowed) so search snippets read well. The raw OCR stays in data/ocr as
+    # evidence; cleaning is deterministic, never a model rewrite.
     textos = {}
     for f in sorted(OCR_DIR.glob("*.json")):
         d = json.loads(f.read_text(encoding="utf-8"))
-        textos[d["id"]] = d["texto_completo"]
+        textos[d["id"]] = limpiar(d["texto_completo"])
     return {
         "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         "motor": "tesseract-spa",

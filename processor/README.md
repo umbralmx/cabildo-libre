@@ -71,3 +71,11 @@ se quiere calidad sobre imágenes en vez de texto OCR) funciona ajustando estas 
   no rellenar vacíos por inferencia.
 - Cada resumen registra el `modelo` y la `fuente_texto` que lo produjeron, para poder
   auditarlo y regenerarlo.
+- **Capa de limpieza (`limpieza.py`), determinista.** Antes de mostrar el OCR en la
+  búsqueda o de mandarlo al modelo se pasa por `limpiar()`: quita el membrete que se cuela
+  en los saltos de página, corridas de guiones/iguales y refluye párrafos. **No corrige ni
+  reescribe palabras** —un OCR mal leído se queda como está; reescribirlo sería inventar
+  registro público. El texto crudo se conserva intacto en `data/ocr/` como evidencia; la
+  limpieza se aplica al leer, no re-procesa.
+- **Pendiente (pase enriquecido):** marcar como `[ilegible]` los tramos de baja confianza
+  del propio Tesseract (requiere re-OCR capturando confianza) y subir DPI/preprocesado.

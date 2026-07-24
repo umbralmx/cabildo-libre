@@ -6,6 +6,29 @@
 
 ---
 
+## 2026-07-24 — Limpieza determinista del OCR (búsqueda + entrada al modelo)
+
+**Hecho.** `processor/limpieza.py`: `limpiar()` quita la basura estructural del OCR crudo
+—el membrete que se cuela en los saltos de página («ACTA DE CABILDO / DE COLIMA /
+Administración 2024-2027»), corridas de guiones e iguales («----====--», «= = ="), bordes de
+símbolos— y refluye párrafos. Integrada en `build_site_index.py` (los fragmentos de búsqueda
+que ve el lector) y en `summarize_colima.py` (entrada al modelo: menos ruido, más contenido
+real bajo el tope de 45k). Se regeneró `site/fulltext.json` (ahora arranca en «ACTA NUM. 1.-",
+sin membrete).
+
+**La línea que no se cruza.** La limpieza es **determinista**: no adivina ni reescribe
+palabras. Un OCR mal leído («Orden del Diari» por «Día») se queda como está —corregirlo con un
+modelo sería inventar registro público, justo lo que la regla del proyecto prohíbe—. El texto
+crudo se conserva intacto en `data/ocr/` como evidencia; la limpieza se aplica al leer.
+
+**Decisión de ruta (con el usuario).** Se descartó la idea de que un LLM «limpie» el OCR a
+prosa fluida (fabricaría). El nivel elegido: **gratis + honesto**. Pendiente para el pase
+enriquecido: marcar `[ilegible]` los tramos de baja confianza del propio Tesseract (necesita
+re-OCR capturando confianza) y subir DPI/preprocesado; y reformular los resúmenes a
+**fichas de decisión** (cuánto, a quién, y si hubo disenso) — converge con la épica L5.
+
+---
+
 ## 2026-07-24 — Diccionario de indicadores + alcance del análisis
 
 **Decisión de alcance.** Tras la nota de producto *El espacio de análisis* (~30 análisis posibles
