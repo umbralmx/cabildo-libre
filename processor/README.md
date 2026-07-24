@@ -18,10 +18,12 @@ PDF escaneado ──▶ ocr_colima.py ──▶ data/ocr/<id>.json ──▶ sum
 1. **`ocr_colima.py` — OCR (gratis).** Rasteriza cada página (PyMuPDF, 200 DPI) y la
    pasa por Tesseract `spa`. Es la única forma de sacar texto: las actas son escaneos
    sin capa de texto (`docs/a3-spike.md`). No se puede saltar con un modelo de texto.
-2. **`summarize_colima.py` — resúmenes (DeepSeek).** Lee el texto OCR y, por cada punto
-   del órden del día, pide un resumen llano y el `sentido` del acuerdo. La llamada al
-   modelo está aislada en `call_llm()`: cambiar de proveedor (o subir a un modelo de
-   visión) es editar esa función, no el pipeline.
+2. **`summarize_colima.py` — resúmenes (DeepSeek).** Lee el texto OCR (limpio) y, por cada
+   punto, produce una **ficha de decisión** (`esquema 3`): resumen-takeaway, `sentido`,
+   `categoria`, `votacion`, `colonias`, `obras`, `montos`, `beneficiario` (a quién),
+   `votos_en_contra` / `abstenciones` (regidores, mapeados al roster con `roster_match.py`),
+   `comision` y `autor`. La llamada al modelo está aislada en `call_llm()`: cambiar de
+   proveedor (o subir a un modelo de visión) es editar esa función, no el pipeline.
 
 ## Dependencias
 

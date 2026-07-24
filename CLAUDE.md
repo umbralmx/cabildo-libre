@@ -185,12 +185,14 @@ scoped to what the acta actually states.
   with the honesty caveats rendered inline, not buried. **Scope: build the 15 `ya` indicators
   first** (see the dictionary below), then extend once L5 lands.
 - **L5 — Tier A+ extraction *(new — added 2026-07-24)*.** The one extraction pass that unlocks the
-  11 `1 paso` indicators. Adds **per-punto** fields to `summarize_colima.py` — `empresas`,
-  `votos_en_contra`, `abstenciones`, `comision`+`autor`, `reglamentos`, `obras_detalle` — plus a
-  **per-acta** `tipo_sesion` (header parse, no LLM) and an **aplazados** cross-link in
-  `build_analytics.py`. Votes/abstentions map to the roster with the same OCR-tolerant logic as
-  `asistencia_colima.py`. Then extend L3 (aggregator) + L4 (dashboard). Everything is already in the
-  OCR text (dissent 15/25, comisión 23/25, empresas 13/25) — this is structuring, not new data.
+  11 `1 paso` indicators. **Decision-record core ✅ (2026-07-24):** `summarize_colima.py` now emits
+  a *ficha de decisión* per punto (`esquema 3`) — `beneficiario {nombre, tipo}` (to whom),
+  `votos_en_contra` and `abstenciones` as `[{nombre, id}]` **named and mapped to the roster** via
+  the shared `roster_match.py` (unmatched → `id: null`, never force-fit), `comision` + `autor`, and
+  the prose `resumen` reframed as a takeaway. Also cleaned OCR now feeds the model (`limpieza.py`).
+  **Pending L5:** per-punto `reglamentos` + `obras_detalle`; per-acta `tipo_sesion` (header parse,
+  no LLM); `aplazados` cross-link in `build_analytics.py`; then extend L3 (aggregator) + L4
+  (dashboard) for these. Everything is already in the OCR text — this is structuring, not new data.
 
 **The indicator dictionary is the source of truth** for all of the above: `data/indicadores.json`
 (machine-readable) + `docs/indicadores.md` (spec). 26 indicators — 15 `ya`, 11 `1 paso` — each with

@@ -6,6 +6,29 @@
 
 ---
 
+## 2026-07-24 — L5: ficha de decisión con disidentes por nombre
+
+**Hecho.** `summarize_colima.py` deja de dar un resumen genérico y produce una **ficha de
+decisión** por punto (`esquema 3`): además de sentido/categoría/votación/colonias/obras/montos,
+ahora extrae **`beneficiario` {nombre, tipo}** (a quién se dirige el recurso o el acto),
+**`votos_en_contra`** y **`abstenciones`** como `[{nombre, id}]`, y **`comision`** + **`autor`**.
+El `resumen` se reformuló a un takeaway concreto (qué, a quién, con cuánto).
+
+**Disidentes por nombre, con honestidad.** El acta nombra a quién votó en contra; el modelo lo
+devuelve como texto y `roster_match.py` lo mapea a un id del roster con la misma lógica tolerante
+a OCR de la asistencia. Un nombre que no casa con nadie —un suplente, una errata— queda con
+`id: null` y su nombre textual: **no se le atribuye el voto a un titular**. Probado con
+"Fulano Inexistente" → `id: null`; Azucena/Diana → sus ids.
+
+**Módulo compartido.** Se extrajo el emparejamiento de nombres a `roster_match.py`
+(`build_index` + `emparejar`), reutilizable por el resumidor y, más adelante, por la asistencia.
+
+**Pendiente de L5.** `reglamentos` y `obras_detalle` por punto; `tipo_sesion` por acta (parseo de
+encabezado, sin LLM); enlace de `aplazados` en el agregador; y extender L3/L4 para consumir estos
+campos. Luego, el pase enriquecido (re-OCR con `[ilegible]`/DPI + re-resumen) que los puebla.
+
+---
+
 ## 2026-07-24 — Limpieza determinista del OCR (búsqueda + entrada al modelo)
 
 **Hecho.** `processor/limpieza.py`: `limpiar()` quita la basura estructural del OCR crudo

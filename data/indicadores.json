@@ -17,12 +17,12 @@
   "campos_nuevos_L5": {
     "descripcion": "Campos que habilitan los indicadores '1_paso'. Los de punto se suman al prompt de summarize_colima.py; tipo_sesion se parsea del encabezado del acta; el enlace de aplazados es un cruce en el agregador.",
     "por_punto": {
-      "empresas": "Lista de personas morales nombradas (S.A. de C.V., S. de R.L., etc.). Habilita M5.",
-      "votos_en_contra": "Regidores que votaron en contra (ids del roster). Habilita P2, D5.",
-      "abstenciones": "Regidores que se abstuvieron (ids del roster). Habilita P3.",
-      "comision": "Comisión que dictamina el punto; 'autor' el regidor que lo presenta. Habilita P4, I1.",
-      "reglamentos": "Reglamentos tocados y la acción (reforma/creación/derogación). Habilita I4.",
-      "obras_detalle": "Filas de la tabla de obras {obra, colonia, monto}. Habilita M3 y enriquece M6."
+      "beneficiario": "HECHO (esquema 3): {nombre, tipo} a quién se dirige el recurso/acto (empresa/persona/dependencia/fraccionamiento/ciudadania/otro). Habilita M5.",
+      "votos_en_contra": "HECHO (esquema 3): [{nombre, id}] regidores que votaron en contra, mapeados al roster. Habilita P2, D5.",
+      "abstenciones": "HECHO (esquema 3): [{nombre, id}] regidores que se abstuvieron. Habilita P3.",
+      "comision": "HECHO (esquema 3): comisión que dictamina; 'autor' {nombre, id} el regidor que lo presenta. Habilita P4, I1.",
+      "reglamentos": "PENDIENTE: reglamentos tocados y la acción (reforma/creación/derogación). Habilita I4.",
+      "obras_detalle": "PENDIENTE: filas de la tabla de obras {obra, colonia, monto}. Habilita M3 y enriquece M6."
     },
     "por_acta": {
       "tipo_sesion": "ordinaria | extraordinaria | solemne, del encabezado del acta. Habilita I3."
@@ -75,10 +75,10 @@
     {
       "id": "M5", "nombre": "Contrapartes externas", "lente": "dinero",
       "pregunta": "¿Qué empresas firman convenios y contratos con el municipio?",
-      "definicion": "Personas morales nombradas como contraparte en convenios, obras o fraccionamientos, y su recurrencia.",
-      "fuente": ["puntos[].empresas[]"],
-      "calculo": "conteo y monto asociado por empresa, a lo largo del término.",
-      "listo": "1_paso", "requiere": "empresas (S.A. de C.V./S. de R.L. en 13/25 actas: CNEEG, DELAMO…)",
+      "definicion": "Contrapartes nombradas (empresas, personas, dependencias) en convenios, obras o fraccionamientos, y su recurrencia.",
+      "fuente": ["puntos[].beneficiario {nombre, tipo}"],
+      "calculo": "conteo y monto asociado por beneficiario (tipo=empresa para contrapartes privadas).",
+      "listo": "1_paso", "requiere": "beneficiario — HECHO en esquema 3; falta el pase enriquecido que lo pueble",
       "audiencia": ["rendicion"],
       "salvedad": "Se nombra a la contraparte tal como aparece; no se afirma favoritismo, sólo se registra la recurrencia."
     },

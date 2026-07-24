@@ -124,17 +124,20 @@ dentro de `data/indicadores.json`. **Todo ya está en el texto OCR; falta estruc
 
 ### Por punto (se suman al prompt de `summarize_colima.py`)
 
-| Campo | Habilita | De dónde sale (frecuencia observada) |
-|-------|----------|--------------------------------------|
-| `empresas` | M5 | Personas morales (S.A. de C.V., S. de R.L.) — 13/25 actas |
-| `votos_en_contra` | P2, D5 | *"votos en contra de las Regidoras…"* — 15/25 actas |
-| `abstenciones` | P3 | Abstenciones nombradas — 11/25 actas |
-| `comision` + `autor` | P4, I1 | *"la Regidora X, Presidenta de la Comisión Y, dio lectura…"* — 23/25 actas |
-| `reglamentos` (`{nombre, accion}`) | I4 | Reglamentos tocados — 24/25 actas |
-| `obras_detalle` (`{obra, colonia, monto}`) | M3, M6+ | Filas de la tabla de obras |
+La ficha de decisión (esquema 3) ya extrae los primeros cuatro; faltan los dos últimos.
 
-Los votos y abstenciones se emparejan al roster (`data/regidores-2024-2027.json`) con la misma
-lógica tolerante a OCR de `asistencia_colima.py`.
+| Campo | Estado | Habilita | De dónde sale (frecuencia observada) |
+|-------|--------|----------|--------------------------------------|
+| `beneficiario` (`{nombre, tipo}`) | ✅ hecho | M5 | Contraparte del acto: empresa (S.A./S. de R.L., 13/25), persona, dependencia |
+| `votos_en_contra` (`[{nombre, id}]`) | ✅ hecho | P2, D5 | *"votos en contra de las Regidoras…"* — 15/25 actas |
+| `abstenciones` (`[{nombre, id}]`) | ✅ hecho | P3 | Abstenciones nombradas — 11/25 actas |
+| `comision` + `autor` (`{nombre, id}`) | ✅ hecho | P4, I1 | *"la Regidora X, Presidenta de la Comisión Y, dio lectura…"* — 23/25 |
+| `reglamentos` (`{nombre, accion}`) | ⬜ pendiente | I4 | Reglamentos tocados — 24/25 actas |
+| `obras_detalle` (`{obra, colonia, monto}`) | ⬜ pendiente | M3, M6+ | Filas de la tabla de obras |
+
+Los votos, abstenciones y autor se emparejan al roster (`data/regidores-2024-2027.json`) con
+`roster_match.py` — la misma lógica tolerante a OCR de `asistencia_colima.py`. Un nombre que no
+casa con nadie queda con `id: null` (un suplente o una errata), nunca se fuerza a un titular.
 
 ### Por acta (parseo del encabezado, sin LLM)
 
