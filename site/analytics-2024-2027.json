@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-25T05:51:28+00:00",
+ "generado": "2026-07-25T05:56:37+00:00",
  "cobertura": {
   "actas_en_termino": 74,
   "con_resumen": 25,
@@ -167,6 +167,627 @@
     "punto": 6
    }
   ]
+ },
+ "lectura": {
+  "chars_ocr": 3718049,
+  "chars_leidos": 3718049,
+  "proporcion": 1.0,
+  "actas_completas": 25,
+  "actas_con_dato": 25,
+  "actas_sin_dato": 0,
+  "ventanas_fallidas": 0,
+  "puntos_en_conflicto": [],
+  "nota": "Proporción del texto OCR de cada acta que llegó al modelo que redacta los resúmenes. Un acta se lee en ventanas solapadas; si una ventana falla, su parte se descuenta aquí en vez de darse por leída. `puntos_en_conflicto` son los puntos en que dos ventanas afirmaron resultados distintos: se resolvió por mayoría y se listan para poder verificarlos contra el PDF. Las actas resumidas antes de esta medición aparecen en `actas_sin_dato`: no se les supone cobertura."
+ },
+ "calendario": {
+  "sesiones": [
+   {
+    "acta": "2024-2027-1",
+    "no_acta": 1,
+    "fecha": "2024-10-16",
+    "n_puntos": 15,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/11/acta-n-1.pdf"
+   },
+   {
+    "acta": "2024-2027-2",
+    "no_acta": 2,
+    "fecha": "2024-10-25",
+    "n_puntos": 7,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-02.pdf"
+   },
+   {
+    "acta": "2024-2027-3",
+    "no_acta": 3,
+    "fecha": "2024-10-28",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-03.pdf"
+   },
+   {
+    "acta": "2024-2027-6-2",
+    "no_acta": 6,
+    "fecha": "2024-11-06",
+    "n_puntos": 13,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-04.pdf"
+   },
+   {
+    "acta": "2024-2027-5",
+    "no_acta": 5,
+    "fecha": "2024-11-15",
+    "n_puntos": 12,
+    "procesada": false,
+    "pdf_url": "https://colima.gob.mx/2025/ACTA%20NO.%2005.pdf"
+   },
+   {
+    "acta": "2024-2027-6",
+    "no_acta": 6,
+    "fecha": "2024-11-21",
+    "n_puntos": 8,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-06.pdf"
+   },
+   {
+    "acta": "2024-2027-7",
+    "no_acta": 7,
+    "fecha": "2024-11-28",
+    "n_puntos": 10,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-07.pdf"
+   },
+   {
+    "acta": "2024-2027-8",
+    "no_acta": 8,
+    "fecha": "2024-11-29",
+    "n_puntos": 5,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-08.pdf"
+   },
+   {
+    "acta": "2024-2027-9",
+    "no_acta": 9,
+    "fecha": "2024-12-02",
+    "n_puntos": 6,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-09.pdf"
+   },
+   {
+    "acta": "2024-2027-10",
+    "no_acta": 10,
+    "fecha": "2024-12-06",
+    "n_puntos": 9,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-10.pdf"
+   },
+   {
+    "acta": "2024-2027-11",
+    "no_acta": 11,
+    "fecha": "2024-12-13",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://colima.gob.mx/2025/actas/ACTA%20NO.%2011.pdf"
+   },
+   {
+    "acta": "2024-2027-12",
+    "no_acta": 12,
+    "fecha": "2024-12-17",
+    "n_puntos": 12,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-12.pdf"
+   },
+   {
+    "acta": "2024-2027-13",
+    "no_acta": 13,
+    "fecha": "2024-12-18",
+    "n_puntos": 7,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-13.pdf"
+   },
+   {
+    "acta": "2024-2027-14",
+    "no_acta": 14,
+    "fecha": "2024-12-23",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://colima.gob.mx/2025/actas/ACTA%20NO.%2014.pdf"
+   },
+   {
+    "acta": "2024-2027-15",
+    "no_acta": 15,
+    "fecha": "2025-01-03",
+    "n_puntos": 10,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-15.pdf"
+   },
+   {
+    "acta": "2024-2027-16",
+    "no_acta": 16,
+    "fecha": "2025-01-14",
+    "n_puntos": 13,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/02/acta-no-16.pdf"
+   },
+   {
+    "acta": "2024-2027-17",
+    "no_acta": 17,
+    "fecha": "2025-01-15",
+    "n_puntos": 10,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/02/acta-no-17_compressed.pdf"
+   },
+   {
+    "acta": "2024-2027-18",
+    "no_acta": 18,
+    "fecha": "2025-01-22",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/02/acta-no-18.pdf"
+   },
+   {
+    "acta": "2024-2027-19",
+    "no_acta": 19,
+    "fecha": "2025-01-29",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-19_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-20",
+    "no_acta": 20,
+    "fecha": "2025-02-05",
+    "n_puntos": 13,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-20_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-21",
+    "no_acta": 21,
+    "fecha": "2025-02-14",
+    "n_puntos": 17,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-21_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-22",
+    "no_acta": 22,
+    "fecha": "2025-02-17",
+    "n_puntos": 8,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-22_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-23",
+    "no_acta": 23,
+    "fecha": "2025-02-28",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/04/acta-no-23_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-24",
+    "no_acta": 24,
+    "fecha": "2025-03-07",
+    "n_puntos": 9,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/04/acta-no-24.pdf"
+   },
+   {
+    "acta": "2024-2027-25",
+    "no_acta": 25,
+    "fecha": "2025-03-14",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/05/acta-no-25_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-26",
+    "no_acta": 26,
+    "fecha": "2025-03-14",
+    "n_puntos": 16,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/05/acta-no-26.pdf"
+   },
+   {
+    "acta": "2024-2027-27",
+    "no_acta": 27,
+    "fecha": "2025-03-27",
+    "n_puntos": 12,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/05/acta-no-27_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-28",
+    "no_acta": 28,
+    "fecha": "2025-04-11",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-28_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-29",
+    "no_acta": 29,
+    "fecha": "2025-04-15",
+    "n_puntos": 8,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-29.pdf"
+   },
+   {
+    "acta": "2024-2027-30",
+    "no_acta": 30,
+    "fecha": "2025-04-17",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-30_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-31",
+    "no_acta": 31,
+    "fecha": "2025-04-29",
+    "n_puntos": 9,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/06/acta-no-31.pdf"
+   },
+   {
+    "acta": "2024-2027-32",
+    "no_acta": 32,
+    "fecha": "2025-05-07",
+    "n_puntos": 21,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-32_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-33",
+    "no_acta": 33,
+    "fecha": "2025-05-14",
+    "n_puntos": 6,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-33.pdf"
+   },
+   {
+    "acta": "2024-2027-34",
+    "no_acta": 34,
+    "fecha": "2025-05-15",
+    "n_puntos": 16,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-34_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-35",
+    "no_acta": 35,
+    "fecha": "2025-05-30",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/07/acta-no-35_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-36",
+    "no_acta": 36,
+    "fecha": "2025-06-14",
+    "n_puntos": 18,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-36_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-37",
+    "no_acta": 37,
+    "fecha": "2025-06-23",
+    "n_puntos": 14,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/09/acta-no-37_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-38",
+    "no_acta": 38,
+    "fecha": "2025-06-30",
+    "n_puntos": 20,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/09/acta-no-38_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-39",
+    "no_acta": 39,
+    "fecha": "2025-07-09",
+    "n_puntos": 11,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-39.pdf"
+   },
+   {
+    "acta": "2024-2027-40",
+    "no_acta": 40,
+    "fecha": "2025-07-14",
+    "n_puntos": 15,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-40_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-41",
+    "no_acta": 41,
+    "fecha": "2025-07-24",
+    "n_puntos": 15,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-41_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-42",
+    "no_acta": 42,
+    "fecha": "2025-07-30",
+    "n_puntos": 16,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-42_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-43",
+    "no_acta": 43,
+    "fecha": "2025-08-15",
+    "n_puntos": 15,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/11/acta-no-43_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-44",
+    "no_acta": 44,
+    "fecha": "2025-08-28",
+    "n_puntos": 18,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/11/acta-no-44.pdf"
+   },
+   {
+    "acta": "2024-2027-45",
+    "no_acta": 45,
+    "fecha": "2025-09-02",
+    "n_puntos": 10,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-45.pdf"
+   },
+   {
+    "acta": "2024-2027-46",
+    "no_acta": 46,
+    "fecha": "2025-09-12",
+    "n_puntos": 20,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/10/acta-no-46_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-47",
+    "no_acta": 47,
+    "fecha": "2025-10-03",
+    "n_puntos": 13,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/11/acta-no-47_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-48",
+    "no_acta": 48,
+    "fecha": "2025-10-14",
+    "n_puntos": 15,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/02/acta-no-48_compressed.pdf"
+   },
+   {
+    "acta": "2024-2027-49",
+    "no_acta": 49,
+    "fecha": "2025-10-23",
+    "n_puntos": 16,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/11/acta-no-49.pdf"
+   },
+   {
+    "acta": "2024-2027-50",
+    "no_acta": 50,
+    "fecha": "2025-10-30",
+    "n_puntos": 16,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/12/acta-no-50_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-51",
+    "no_acta": 51,
+    "fecha": "2025-11-13",
+    "n_puntos": 18,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-51_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-52",
+    "no_acta": 52,
+    "fecha": "2025-11-14",
+    "n_puntos": 6,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/12/acta-no-52.pdf"
+   },
+   {
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "fecha": "2025-11-21",
+    "n_puntos": 7,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/12/acta-no-53.pdf"
+   },
+   {
+    "acta": "2024-2027-54",
+    "no_acta": 54,
+    "fecha": "2025-11-27",
+    "n_puntos": 14,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/01/acta-no-54_opt-1.pdf"
+   },
+   {
+    "acta": "2024-2027-55",
+    "no_acta": 55,
+    "fecha": "2025-12-01",
+    "n_puntos": 6,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/02/acta-no-55.pdf"
+   },
+   {
+    "acta": "2024-2027-56",
+    "no_acta": 56,
+    "fecha": "2025-12-04",
+    "n_puntos": 9,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/02/acta-no-56_opt_compressed.pdf"
+   },
+   {
+    "acta": "2024-2027-57",
+    "no_acta": 57,
+    "fecha": "2025-12-05",
+    "n_puntos": 6,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/02/acta-no-57.pdf"
+   },
+   {
+    "acta": "2024-2027-58",
+    "no_acta": 58,
+    "fecha": "2025-12-11",
+    "n_puntos": 12,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/02/acta-no-58.pdf"
+   },
+   {
+    "acta": "2024-2027-59",
+    "no_acta": 59,
+    "fecha": "2025-12-15",
+    "n_puntos": 9,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-59_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-60",
+    "no_acta": 60,
+    "fecha": "2025-12-20",
+    "n_puntos": 12,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-60_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-61",
+    "no_acta": 61,
+    "fecha": "2025-12-31",
+    "n_puntos": 6,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-61.pdf"
+   },
+   {
+    "acta": "2024-2027-62",
+    "no_acta": 62,
+    "fecha": "2026-01-10",
+    "n_puntos": 7,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-62.pdf"
+   },
+   {
+    "acta": "2024-2027-63",
+    "no_acta": 63,
+    "fecha": "2026-01-13",
+    "n_puntos": 8,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/03/acta-no-63_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-64",
+    "no_acta": 64,
+    "fecha": "2026-01-15",
+    "n_puntos": 11,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/04/acta-no-64_opt_compressed.pdf"
+   },
+   {
+    "acta": "2024-2027-65",
+    "no_acta": 65,
+    "fecha": "2026-02-03",
+    "n_puntos": 9,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/04/acta-no-65.pdf"
+   },
+   {
+    "acta": "2024-2027-66",
+    "no_acta": 66,
+    "fecha": "2026-02-14",
+    "n_puntos": 10,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/04/acta-no-66_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-67",
+    "no_acta": 67,
+    "fecha": "2026-03-06",
+    "n_puntos": 13,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/04/acta-no-67_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-68",
+    "no_acta": 68,
+    "fecha": "2026-03-11",
+    "n_puntos": 12,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/05/acta-no-68_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-69",
+    "no_acta": 69,
+    "fecha": "2026-03-14",
+    "n_puntos": 10,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/05/acta-no-69_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-70",
+    "no_acta": 70,
+    "fecha": "2026-03-27",
+    "n_puntos": 15,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/05/acta-no-70_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-71",
+    "no_acta": 71,
+    "fecha": "2026-04-15",
+    "n_puntos": 15,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/06/acta-no-71_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-72",
+    "no_acta": 72,
+    "fecha": "2026-04-29",
+    "n_puntos": 14,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/06/acta-no-72_opt.pdf"
+   },
+   {
+    "acta": "2024-2027-73",
+    "no_acta": 73,
+    "fecha": "2026-04-29",
+    "n_puntos": 8,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/06/acta-no-73.pdf"
+   },
+   {
+    "acta": "2024-2027-74",
+    "no_acta": 74,
+    "fecha": "2026-05-13",
+    "n_puntos": 15,
+    "procesada": true,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/06/acta-no-74_opt.pdf"
+   }
+  ],
+  "nota": "Las 74 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+ },
+ "integridad": {
+  "actas_en_termino": 74,
+  "sin_agenda_publicada": [],
+  "sin_enlace_pdf": [],
+  "sin_fecha_publicada": [],
+  "huecos_de_numeracion": [
+   4
+  ],
+  "numeros_duplicados": [
+   6
+  ],
+  "nota": "Vacíos de la fuente, no imputados: sesiones cuyo órden del día no aparece en el índice, sin enlace al PDF o sin fecha, números de acta ausentes en el rango del término, y números que la fuente asigna a dos sesiones distintas. Se declaran tal como están: no se renumera ni se rellena nada."
  },
  "colonias": [
   {

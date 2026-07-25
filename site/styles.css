@@ -367,3 +367,169 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   details[open] > *:not(summary) { animation: fadein 0.15s ease-out; }
   @keyframes fadein { from { opacity: 0; } to { opacity: 1; } }
 }
+
+/* ════════════════════════════════════════════════════════════════════════════
+   Panel por administración (Fase 3 · L4) — site/panel.html
+
+   Chart marks deliberately carry NO colour encoding. Umbral's muted gray and
+   signal fail CVD separation as a categorical pair (ΔE 1.8 deutan, 8.5 normal —
+   measured with the dataviz validator), so every chart here is single-series:
+   identity comes from the row label plus the mono value, never from hue. The
+   whole page spends its signal budget on one element — the reading-depth meter
+   in §01 — because that figure is the condition for reading everything else.
+   ════════════════════════════════════════════════════════════════════════════ */
+
+.fig { margin: 32px 0 0; }
+.fig-title {
+  font-size: 22px; line-height: 1.25; max-width: 60ch;   /* 22–26px per brand */
+}
+.fig-sub {
+  margin-top: 8px; max-width: 65ch;
+  color: var(--u-muted); font-size: 15px;
+}
+.fig-body { margin-top: 24px; }
+.fig-src {
+  margin-top: 16px; padding-top: 8px;
+  border-top: var(--u-rule) solid var(--u-border);
+  font-size: 12px; color: var(--u-caption);
+}
+
+/* ── horizontal bars ── rounded data-end only, anchored to the baseline ── */
+.barras { display: flex; flex-direction: column; gap: 8px; }
+.barra-row {
+  display: grid; grid-template-columns: minmax(120px, 22ch) 1fr minmax(64px, auto);
+  align-items: center; gap: 16px;
+}
+.barra-lab { font-size: 14px; text-wrap: pretty; }
+.barra-track {
+  height: 18px;
+  border-left: 2px solid var(--u-baseline);   /* the baseline the bars sit on */
+  background: linear-gradient(var(--u-gridline), var(--u-gridline)) no-repeat;
+  background-size: 100% var(--u-rule); background-position: 0 50%;
+}
+.barra-fill {
+  height: 100%;
+  background: var(--u-ink);
+  border-radius: 0 2px 2px 0;                /* max 2px anywhere (brand §7) */
+  min-width: 2px;
+}
+.barra-val { font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ── columns over time ── horizontal gridlines only, no vertical rules ── */
+.cols { margin-top: 8px; }
+.cols-grid {
+  position: relative; height: 180px;
+  border-bottom: 2px solid var(--u-baseline);
+}
+.cols-gridline {
+  position: absolute; left: 0; right: 0; height: var(--u-rule);
+  background: var(--u-gridline);
+}
+.cols-ytick {
+  position: absolute; right: 100%; top: -0.6em; padding-right: 8px;
+  font-size: 12px; color: var(--u-caption);
+}
+.cols-plot {
+  position: absolute; inset: 0;
+  display: flex; align-items: flex-end; gap: 2px;      /* 2px surface gap */
+}
+.col { flex: 1 1 0; height: 100%; display: flex; align-items: flex-end; position: relative; }
+.col-fill {
+  width: 100%; background: var(--u-ink);
+  border-radius: 2px 2px 0 0; min-height: 2px;
+}
+.col-tick {
+  position: absolute; top: 100%; left: 0; right: 0; padding-top: 8px;
+  text-align: center; font-size: 11px; color: var(--u-caption);
+}
+.cols + * { margin-top: 32px; }
+
+/* ── the reading-depth meters — the page's one signal element ── */
+.medidores { display: flex; flex-direction: column; gap: 24px; }
+.medidor { display: grid; grid-template-columns: 1fr minmax(56px, auto); gap: 4px 16px; }
+.medidor-lab { font-size: 15px; }
+.medidor-track {
+  grid-column: 1; height: 12px; background: var(--u-gridline);
+  border-left: 2px solid var(--u-baseline);
+}
+.medidor-fill { height: 100%; min-width: 2px; border-radius: 0 2px 2px 0; }
+.medidor-fill.signal { background: var(--u-signal); }
+.medidor-val {
+  grid-row: 1 / 3; grid-column: 2; align-self: center;
+  font-family: var(--u-font-display); font-weight: var(--u-weight-display);
+  font-size: 28px; text-align: right; font-variant-numeric: tabular-nums;
+}
+.medidor-det { grid-column: 1; font-size: 13px; color: var(--u-caption); }
+
+/* ── inline caveats — the size of what they qualify, never a footnote ── */
+.nota {
+  margin-top: 16px; max-width: 65ch;
+  font-size: 14px; line-height: 1.55; color: var(--u-muted);
+  padding-left: 16px; border-left: var(--u-rule) solid var(--u-border);
+}
+.nota-alert { border-left-color: var(--u-alert); }
+.hallazgos { margin-top: 16px; max-width: 65ch; padding-left: 20px; }
+.hallazgos li { font-size: 15px; margin-top: 8px; color: var(--u-ink); }
+
+/* ── declared total ── */
+.total-declarado {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
+  gap: 8px 24px; margin-top: 24px; padding-top: 16px;
+  border-top: 2px solid var(--u-ink);
+}
+.total-lab { font-size: 14px; color: var(--u-muted); }
+.total-val {
+  font-family: var(--u-font-display); font-weight: var(--u-weight-display);
+  font-size: 28px; letter-spacing: var(--u-tracking-display);
+  font-variant-numeric: tabular-nums;
+}
+
+/* ── the table twin of every chart ── */
+.datos { margin-top: 24px; }
+.datos > summary {
+  cursor: pointer; font-size: 13px; color: var(--u-muted);
+  padding: 8px 0; list-style: none;
+}
+.datos > summary::-webkit-details-marker { display: none; }
+.datos > summary::before { content: "+ "; font-family: var(--u-font-mono); }
+.datos[open] > summary::before { content: "− "; }
+.datos > summary:hover { color: var(--u-signal); }
+.tabla { width: 100%; border-collapse: collapse; font-size: 14px; }
+.tabla th, .tabla td {
+  text-align: left; padding: 8px 16px 8px 0;
+  border-bottom: var(--u-rule) solid var(--u-border);
+}
+.tabla th {
+  font-family: var(--u-font-mono); font-size: 11px; letter-spacing: 0.04em;
+  text-transform: uppercase; color: var(--u-caption); font-weight: 500;
+  border-bottom-color: var(--u-ink);
+}
+.tabla .num { text-align: right; font-variant-numeric: tabular-nums; }
+
+/* ── colonia lookup ── */
+.col-buscador { margin-bottom: 24px; }
+.col-buscador input {
+  width: 100%; padding: 12px 16px;
+  font: 15px var(--u-font-body); color: var(--u-ink);
+  background: var(--u-panel);
+  border: var(--u-rule) solid var(--u-border); border-radius: 0;
+}
+.col-buscador input:focus-visible { border-color: var(--u-signal); }
+.colonia-list { list-style: none; padding: 0; }
+.col-mas { margin-top: 16px; }
+.colonia-item {
+  display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
+  padding: 10px 0; border-bottom: var(--u-rule) solid var(--u-border);
+}
+.colonia-nombre { font-size: 15px; }
+.colonia-n { font-size: 13px; color: var(--u-caption); white-space: nowrap; }
+.colonia-vacio { padding: 16px 0; font-size: 14px; color: var(--u-muted); }
+
+@media (max-width: 720px) {
+  .barra-row { grid-template-columns: 1fr auto; gap: 4px 12px; }
+  .barra-lab { grid-column: 1 / -1; }
+  .fig-title { font-size: 20px; }
+  .cols-grid { height: 140px; }
+  .cols-ytick { position: static; padding: 0; }
+  .tabla { display: block; overflow-x: auto; }
+}

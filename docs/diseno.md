@@ -108,6 +108,45 @@ Al integrar OCR y resúmenes al sitio se tomaron dos decisiones de marca:
   sobre texto OCR; pueden contener errores — verifica en el PDF». La honestidad es parte
   de la marca (voz civil-científica), no una nota al pie.
 
+## Fase 3 — el panel por administración (2026-07-25)
+
+`site/panel.html` es la sección de analítica (L4). Tres decisiones de criterio, con su razón:
+
+**1. Ninguna gráfica codifica nada por color.** Se comprobó con el validador de la skill
+`dataviz`: el gris `--u-muted` (#6E756F) y el `--u-signal` (#128273) tienen una separación
+de **ΔE 1.8 en visión deuteranope y 8.5 en visión normal** — muy por debajo del piso de 15.
+Como pareja categórica son indistinguibles, así que **no se usan como pareja**. Cada gráfica
+es de una sola serie, en `--u-ink`, y la identidad la cargan la etiqueta de la fila y el
+valor en mono. Es también lo que pide la marca (§6.3: etiquetar directo, sin caja de
+leyenda), pero aquí la razón es de accesibilidad, no de estilo.
+
+**2. El presupuesto de signal se gastó en un solo elemento de toda la página:** el medidor
+de *profundidad de lectura* en §01. Es la cifra de la que dependen todas las demás — el
+porcentaje del expediente que el modelo alcanzó a leer— y por eso es lo único resaltado.
+Las barras de datos, incluidas las de dinero y asistencia, van en tinta.
+
+**3. El panel se queda en modo laboratorio (light), no en instrumento (dark).** El manual
+asigna dark a *dashboards*, pero éste no es una pantalla de monitoreo: es una sección de un
+sitio público que se lee seguido del buscador. Cambiar de modo entre dos páginas del mismo
+sitio se leería como un error, no como una intención. Desviación deliberada, registrada aquí.
+
+Otras notas de implementación:
+
+- **Los títulos de las gráficas se generan a partir de los datos**, no se escriben a mano,
+  para que no puedan quedar desmentidos cuando la cobertura crezca. Son frases que enuncian
+  el hallazgo (marca §6.1), no rótulos de tema.
+- **Cada gráfica tiene su gemela en tabla** (`<details> → Ver los datos`), que es la ruta
+  accesible y también la verificable.
+- **Las cifras de dinero grandes se escriben completas** en los títulos, y las abreviadas
+  usan millones (`$1,078M`). Se descartó `MM`: para unos lectores es *millones* y para otros
+  *mil millones*, ambigüedad que una cifra de dinero público no puede permitirse.
+- **Las salvedades van al lado de lo que califican**, al tamaño del texto de cuerpo y con
+  regla lateral; las que advierten algo (ventanas fallidas, puntos en conflicto) usan
+  `--u-alert` en la regla. Ninguna es nota al pie.
+- **La lista de colonias no tiene scroll propio.** Un contenedor con scroll interno se come
+  el scroll de la página cuando el cursor cae encima; se muestra un tope de 12 con botón para
+  ver las 57.
+
 ## Lista de verificación previa al lanzamiento
 
 - [x] Modo correcto para el medio (laboratorio/light para sitio web)

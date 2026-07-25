@@ -109,6 +109,38 @@ def build(termino: str) -> dict:
     summaries = sorted(p for p in SUMMARY_DIR.glob("*.json") if p.stem in term_ids)
     asistencias = sorted(p for p in ASIST_DIR.glob("*.json") if p.stem in term_ids)
 
+    # --- reading depth (N1) ---------------------------------------------------
+    # The dashboard already says how many actas it read; this says how much of
+    # each one. Summaries written before the windowing fix carry no `lectura`, and
+    # that is reported as unknown rather than guessed from the old cap.
+    chars_ocr = chars_leidos = 0
+    actas_completas = lectura_sin_dato = ventanas_fallidas = 0
+    conflictos_puntos: list[dict] = []
+
+    # --- session calendar (I3) + integrity (T3) -------------------------------
+    # Built from actas.json, so it covers all 74 sessions of the term, not only
+    # the processed ones — the one part of the panel with full coverage.
+    procesadas = {p.stem for p in SUMMARY_DIR.glob("*.json")}
+    calendario, sin_agenda, sin_pdf, sin_fecha = [], [], [], []
+    for i in sorted(term_ids, key=lambda x: (actas[x].get("fecha") or "", x)):
+        a = actas[i]
+        n_items = len(a.get("agenda_items") or [])
+        calendario.append({
+            "acta": i, "no_acta": a.get("no_acta"), "fecha": a.get("fecha"),
+            "n_puntos": n_items, "procesada": i in procesadas, "pdf_url": a.get("pdf_url"),
+        })
+        if not n_items:
+            sin_agenda.append(a.get("no_acta"))
+        if not a.get("pdf_url"):
+            sin_pdf.append(a.get("no_acta"))
+        if not a.get("fecha"):
+            sin_fecha.append(a.get("no_acta"))
+    numeros = sorted(int(a["no_acta"]) for a in (actas[i] for i in term_ids) if a.get("no_acta"))
+    huecos = [n for n in range(numeros[0], numeros[-1] + 1) if n not in set(numeros)] if numeros else []
+    # The source numbers two different sessions the same, and skips one. Reported,
+    # never renumbered: the inconsistency is the ayuntamiento's record, not ours.
+    duplicados = sorted(n for n, k in Counter(numeros).items() if k > 1)
+
     # --- decisions (sentido for all; Tier A on esquema >= 2; ficha on >= 3) ----
     por_sentido: Counter[str] = Counter()
     por_categoria: Counter[str] = Counter()
@@ -140,6 +172,17 @@ def build(termino: str) -> dict:
         ficha = esquema >= 3
         n_tier_a += tier_a
         n_ficha += ficha
+
+        lec = d.get("lectura")
+        if isinstance(lec, dict) and lec.get("chars_ocr"):
+            chars_ocr += lec["chars_ocr"]
+            chars_leidos += min(lec.get("chars_leidos", 0), lec["chars_ocr"])
+            actas_completas += bool(lec.get("completa"))
+            ventanas_fallidas += lec.get("ventanas_fallidas", 0)
+        else:
+            lectura_sin_dato += 1
+        for n in d.get("puntos_en_conflicto") or []:
+            conflictos_puntos.append({"acta": d["id"], "no_acta": d.get("no_acta"), "punto": n})
         for pt in d["puntos"]:
             n_puntos += 1
             sent = pt.get("sentido", "no_determinable")
@@ -342,6 +385,45 @@ def build(termino: str) -> dict:
                      "publicada para que la diferencia sea auditable; los puntos afectados se listan "
                      "en `puntos_total_y_desglose`."),
             "mayores": mayores,
+        },
+        # N1 — how much of the expediente was actually read. The caveat the rest
+        # of the panel leans on: coverage in actas is not coverage in text.
+        "lectura": {
+            "chars_ocr": chars_ocr,
+            "chars_leidos": chars_leidos,
+            "proporcion": round(chars_leidos / chars_ocr, 4) if chars_ocr else None,
+            "actas_completas": actas_completas,
+            "actas_con_dato": len(summaries) - lectura_sin_dato,
+            "actas_sin_dato": lectura_sin_dato,
+            "ventanas_fallidas": ventanas_fallidas,
+            "puntos_en_conflicto": conflictos_puntos,
+            "nota": ("Proporción del texto OCR de cada acta que llegó al modelo que redacta "
+                     "los resúmenes. Un acta se lee en ventanas solapadas; si una ventana "
+                     "falla, su parte se descuenta aquí en vez de darse por leída. "
+                     "`puntos_en_conflicto` son los puntos en que dos ventanas afirmaron "
+                     "resultados distintos: se resolvió por mayoría y se listan para poder "
+                     "verificarlos contra el PDF. Las actas resumidas antes de esta medición "
+                     "aparecen en `actas_sin_dato`: no se les supone cobertura."),
+        },
+        # I3 + T3 — the only full-coverage part of the panel: it comes from the
+        # index (Fase 1), not from the OCR, so it describes all 74 sessions.
+        "calendario": {
+            "sesiones": calendario,
+            "nota": ("Las 74 sesiones del término según el índice oficial, procesadas o no. "
+                     "Esta sección no depende del OCR."),
+        },
+        "integridad": {
+            "actas_en_termino": len(term_ids),
+            "sin_agenda_publicada": sin_agenda,
+            "sin_enlace_pdf": sin_pdf,
+            "sin_fecha_publicada": sin_fecha,
+            "huecos_de_numeracion": huecos,
+            "numeros_duplicados": duplicados,
+            "nota": ("Vacíos de la fuente, no imputados: sesiones cuyo órden del día no "
+                     "aparece en el índice, sin enlace al PDF o sin fecha, números de acta "
+                     "ausentes en el rango del término, y números que la fuente asigna a dos "
+                     "sesiones distintas. Se declaran tal como están: no se renumera ni se "
+                     "rellena nada."),
         },
         "colonias": colonias,
         # --- L5 sections. Each states the base it saw, so a thin backfill reads
