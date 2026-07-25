@@ -18,6 +18,12 @@ database — reads `data/summaries/` + `data/asistencia/` and writes one JSON.
   * *Attendance rates exclude the illegible.* `no_determinable` sessions are out
     of the denominator, so a bad scan neither counts as present nor as absent.
   * *Suplentes are listed as found*, under `suplencias`, not merged into anyone.
+  * *The decision-record sections (`esquema >= 3`) count only their own base.*
+    Dissent, abstentions, authorship, comisiones and beneficiarios exist only on
+    L5 summaries, so each of those sections carries its own `cobertura` — an
+    older summary that never had the field is absent, not a zero. A regidor with
+    no recorded dissent means "no acta we read named them", never "they always
+    agreed"; the payload says so in `nota`.
 
 Usage:
     python3 processor/build_analytics.py                 # term 2024-2027

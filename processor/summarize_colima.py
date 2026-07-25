@@ -35,9 +35,13 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import http.client
 import json
 import os
+import random
 import sys
+import time
+import urllib.error
 import urllib.request
 from pathlib import Path
 
@@ -55,6 +59,12 @@ LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-v4-flash")
 LLM_API_KEY_ENV = os.environ.get("LLM_API_KEY_ENV", "DEEPSEEK_API_KEY")
 
 OCR_TEXT_CAP = 45000  # chars of acta text sent per request (keeps cost bounded)
+
+# A batch is dozens of long requests in a row, so a dropped or truncated response
+# is a matter of when, not if. Without retries one flaky read kills the whole run
+# (it did: a 25-acta pass died on the first acta with IncompleteRead).
+LLM_MAX_INTENTOS = 4
+LLM_BACKOFF_BASE = 6  # seconds, doubled per retry, plus jitter
 
 SISTEMA = (
     "Eres un asistente que explica, en español claro y sobrio, las decisiones de "
@@ -143,8 +153,20 @@ def build_messages(acta: dict, ocr_text: str) -> list[dict]:
     return [{"role": "system", "content": SISTEMA}, {"role": "user", "content": user}]
 
 
+def _es_transitorio(e: BaseException) -> bool:
+    """True for failures worth retrying: a dropped or truncated response, a
+    timeout, a rate limit, or a provider-side 5xx. An auth or bad-request error
+    is *not* transient — retrying it only burns the batch's time, so it raises."""
+    if isinstance(e, urllib.error.HTTPError):
+        return e.code == 429 or 500 <= e.code < 600
+    return isinstance(e, (http.client.HTTPException, urllib.error.URLError,
+                          TimeoutError, ConnectionError, json.JSONDecodeError))
+
+
 def call_llm(messages: list[dict]) -> str:
-    """The one provider-specific call. Returns the model's raw text response."""
+    """The one provider-specific call. Returns the model's raw text response.
+    Retries transient failures with exponential backoff; the caller sees either a
+    response or the final exception (never a silently empty summary)."""
     api_key = os.environ.get(LLM_API_KEY_ENV)
     if not api_key:
         sys.exit(f"ERROR: {LLM_API_KEY_ENV} not set — needed to call the summary model.")
@@ -155,14 +177,25 @@ def call_llm(messages: list[dict]) -> str:
         "temperature": 0.2,
         "response_format": {"type": "json_object"},
     }).encode("utf-8")
-    req = urllib.request.Request(
-        LLM_ENDPOINT, data=body, method="POST",
-        headers={"Content-Type": "application/json",
-                 "Authorization": f"Bearer {api_key}"},
-    )
-    with urllib.request.urlopen(req, timeout=180) as r:
-        data = json.loads(r.read().decode("utf-8"))
-    return data["choices"][0]["message"]["content"]
+
+    for intento in range(1, LLM_MAX_INTENTOS + 1):
+        req = urllib.request.Request(
+            LLM_ENDPOINT, data=body, method="POST",
+            headers={"Content-Type": "application/json",
+                     "Authorization": f"Bearer {api_key}"},
+        )
+        try:
+            with urllib.request.urlopen(req, timeout=180) as r:
+                data = json.loads(r.read().decode("utf-8"))
+            return data["choices"][0]["message"]["content"]
+        except Exception as e:  # noqa: BLE001 — re-raised below unless transient
+            if intento == LLM_MAX_INTENTOS or not _es_transitorio(e):
+                raise
+            espera = LLM_BACKOFF_BASE * 2 ** (intento - 1) + random.uniform(0, 3)
+            print(f"  · {type(e).__name__}: {e} — reintento "
+                  f"{intento}/{LLM_MAX_INTENTOS - 1} en {espera:.0f}s", flush=True)
+            time.sleep(espera)
+    raise AssertionError("unreachable")  # pragma: no cover
 
 
 def _clean_strings(raw: object, cap: int = 12, maxlen: int = 80) -> list[str]:
@@ -318,13 +351,17 @@ def main() -> None:
     print(f"OCR'd actas: {len(ocr_ids)} | summaries pending: {len(pending)} | model: {LLM_MODEL}")
 
     ok = 0
+    fallidas: list[str] = []
     for acta_id in pending:
         ocr = json.loads((OCR_DIR / f"{acta_id}.json").read_text(encoding="utf-8"))
-        print(f"[{acta_id}] {actas[acta_id]['fecha']} …")
+        print(f"[{acta_id}] {actas[acta_id]['fecha']} …", flush=True)
         try:
             result = summarize_acta(actas[acta_id], ocr, args.dry_run)
-        except (ValueError, KeyError, OSError) as e:
-            print(f"  ! {e}; skipping")
+        except (ValueError, KeyError, OSError, http.client.HTTPException) as e:
+            # One acta the provider won't answer must not abort the batch: keep
+            # its old summary (or none) and move on. Reported at the end.
+            print(f"  ! {type(e).__name__}: {e}; skipping")
+            fallidas.append(acta_id)
             continue
         if result is None:  # dry run
             continue
@@ -335,6 +372,10 @@ def main() -> None:
         ok += 1
 
     print(f"done: {ok} summarized this run")
+    if fallidas:
+        # Visible, not swallowed: these actas keep whatever summary they had, so a
+        # partial pass can't be mistaken for a complete one.
+        print(f"sin resumir ({len(fallidas)}): {', '.join(fallidas)}")
 
 
 if __name__ == "__main__":
