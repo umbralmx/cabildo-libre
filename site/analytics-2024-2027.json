@@ -1,43 +1,146 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-23T16:10:52+00:00",
+ "generado": "2026-07-25T02:34:43+00:00",
  "cobertura": {
   "actas_en_termino": 74,
   "con_resumen": 25,
-  "con_tier_a": 2,
+  "con_tier_a": 4,
   "con_asistencia": 25,
-  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 2 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 4 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 269,
-  "n_sustantivos": 159,
+  "n_sustantivos": 158,
   "por_sentido": {
-   "no_determinable": 96,
-   "aprobado": 52,
-   "aplazado": 11
+   "no_determinable": 93,
+   "aprobado": 55,
+   "aplazado": 10
   },
   "por_categoria": {
-   "tramite": 2,
-   "presupuesto_finanzas": 1,
-   "nombramiento": 1,
-   "convenio": 1
+   "nombramiento": 7,
+   "tramite": 5,
+   "convenio": 5,
+   "otro": 5,
+   "licencia": 2,
+   "patrimonio": 2,
+   "fraccionamiento": 1,
+   "presupuesto_finanzas": 1
   },
   "por_votacion": {
-   "unanime": 4,
+   "unanime": 17,
+   "no_determinable": 10,
    "mayoria": 1
   },
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 1,
-  "n_con_valor": 1,
-  "suma_declarada_mxn": 661792051.55,
+  "n_declarados": 22,
+  "n_con_valor": 22,
+  "suma_declarada_mxn": 1039287759.57,
   "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados.",
   "mayores": [
    {
-    "texto": "$661,792,051.55 (SEISCIENTOS SESENTA Y UN MILLONES SETECIENTOS NOVENTA Y DOS MIL CINCUENTA Y UN PESOS 55/100 M.N)",
+    "texto": "$661,792,051.55",
     "valor_mxn": 661792051.55,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$61,749,463.90",
+    "valor_mxn": 61749463.9,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$52,702,113.40",
+    "valor_mxn": 52702113.4,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$44,329,967.19",
+    "valor_mxn": 44329967.19,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$39,633,452.63",
+    "valor_mxn": 39633452.63,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$36,391,930.29",
+    "valor_mxn": 36391930.29,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$19,502,569.77",
+    "valor_mxn": 19502569.77,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$18,363,102.14",
+    "valor_mxn": 18363102.14,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$18,356,390.81",
+    "valor_mxn": 18356390.81,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$18,013,356.19",
+    "valor_mxn": 18013356.19,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$11,983,256.27",
+    "valor_mxn": 11983256.27,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$10,973,316.31",
+    "valor_mxn": 10973316.31,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$10,518,221.15",
+    "valor_mxn": 10518221.15,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$10,096,265.78",
+    "valor_mxn": 10096265.78,
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6
+   },
+   {
+    "texto": "$5,342,049.09",
+    "valor_mxn": 5342049.09,
     "acta": "2024-2027-53",
     "no_acta": 53,
     "punto": 6
@@ -46,11 +149,31 @@
  },
  "colonias": [
   {
+   "nombre": "ALLURE RESIDENCIAL",
+   "menciones": 1
+  },
+  {
+   "nombre": "Camino Real",
+   "menciones": 1
+  },
+  {
    "nombre": "Fatima",
    "menciones": 1
   },
   {
+   "nombre": "Ignacio Zaragoza",
+   "menciones": 1
+  },
+  {
    "nombre": "Miguel Hidalgo",
+   "menciones": 1
+  },
+  {
+   "nombre": "Placetas Estadio",
+   "menciones": 1
+  },
+  {
+   "nombre": "Py Milenio",
    "menciones": 1
   }
  ],

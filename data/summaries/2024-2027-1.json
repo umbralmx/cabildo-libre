@@ -3,100 +3,266 @@
  "no_acta": 1,
  "fecha": "2024-10-16",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:18:33+00:00",
- "resumen_sesion": "Primera sesión ordinaria del Cabildo de Colima para la instalación de la administración 2024-2027, donde se aprobaron nombramientos de funcionarios y se informó sobre la transmisión de mando.",
+ "generado": "2026-07-25T02:32:55+00:00",
+ "resumen_sesion": "Primera sesión del nuevo Ayuntamiento de Colima, donde se nombraron secretario, tesorero, oficial mayor, contralor, comisionado de seguridad y jueces cívicos, y se aplazó la designación de comisiones.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de presentes, constatando la asistencia de todos los integrantes del Cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se pasó lista de presentes, constatando la asistencia del Presidente Municipal, Síndica y regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró legalmente instalada la sesión al contar con quórum.",
-   "sentido": "tramite"
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día, el cual fue aprobado por unanimidad.",
-   "sentido": "tramite"
+   "resumen": "Se aprobó por unanimidad el orden del día propuesto.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del LAE. J. Francisco Anzar Herrera como Secretario del Ayuntamiento, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de J. Francisco Anzar Herrera como Secretario del Ayuntamiento y rindió protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "LAE. J. Francisco Anzar Herrera",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se dio lectura al acta de la sesión anterior, aprobada por unanimidad.",
-   "sentido": "tramite"
+   "resumen": "Se aprobó por unanimidad el acta de la sesión anterior.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de la Licda. Susana Romero Castrejón como Tesorera Municipal, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de Susana Romero Castrejón como Tesorera Municipal y rindió protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Licda. Susana Romero Castrejón",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del Lic. José Manuel Oviedo Guedea como Oficial Mayor, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de José Manuel Oviedo Guedea como Oficial Mayor y rindió protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Lic. José Manuel Oviedo Guedea",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de la Licda. Graciela Montserrat García Mendoza como Contralora Municipal, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de Graciela Montserrat García Mendoza como Contralora Municipal y rindió protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Licda. Graciela Montserrat García Mendoza",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento del Gral. Vicente Venustiano Guzmán Lucero como Comisionado de Seguridad y Justicia Cívica, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica y rindió protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Gral. Vicente Venustiano Guzmán Lucero",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se propuso y aprobó por unanimidad el nombramiento de cuatro Jueces Cívicos: Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca, rindiendo protesta.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el nombramiento de Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca como Jueces Cívicos y rindieron protesta.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "El Presidente solicitó la aprobación para presentar la designación de Comisiones del Cabildo en la próxima sesión, lo cual fue aprobado por unanimidad.",
-   "sentido": "aplazado"
+   "resumen": "Se aprobó por unanimidad aplazar la designación de las Comisiones del Cabildo para la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se informó al Cabildo sobre el informe detallado de acciones de la Comisión de Transmisión de Mando.",
-   "sentido": "tramite"
+   "resumen": "Se recibió el informe detallado de la Comisión Municipal para la Transmisión de Mando del Gobierno Municipal de Colima.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se informó que la entrega-recepción de la administración se llevaría a cabo al término de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se instruyó iniciar el proceso de Entrega-Recepción de la administración municipal al término de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 14,
    "numeral": "XIV",
    "resumen": "No hubo asuntos generales que tratar.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión a las 14:31 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

@@ -3,66 +3,97 @@
  "no_acta": 52,
  "fecha": "2025-11-14",
  "periodo": "2024-2027",
- "esquema": 2,
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-23T15:33:58+00:00",
- "resumen_sesion": "Se aplazó la aprobación del acta anterior y se aprobó la exención del impuesto predial de 32 predios del Parque Regional Griselda Álvarez.",
+ "generado": "2026-07-25T02:34:08+00:00",
+ "resumen_sesion": "Se aprobó exentar del impuesto predial a 32 predios del Parque Regional Griselda Álvarez, propiedad del Gobierno del Estado, y se aplazó la aprobación del acta anterior.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente, Síndica, regidores y regidoras.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día previsto.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó y aprobó por unanimidad presentar el Acta de Cabildo N° 51 en la próxima sesión.",
+   "resumen": "Se autorizó posponer la aprobación del Acta de Cabildo N° 51 para la próxima sesión.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó la exención total del impuesto predial de 32 predios del Gobierno del Estado, ubicados en el Parque Regional Metropolitano Griselda Álvarez.",
+   "resumen": "Se aprobó la exención total del impuesto predial para 32 bienes inmuebles propiedad del Gobierno del Estado, ubicados en el Parque Regional Griselda Álvarez.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Gobierno del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
   },
   {
    "n": 6,
@@ -73,7 +104,12 @@
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

@@ -3,71 +3,104 @@
  "no_acta": 53,
  "fecha": "2025-11-21",
  "periodo": "2024-2027",
- "esquema": 2,
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-23T15:35:00+00:00",
- "resumen_sesion": "Se nombró a la nueva tesorera municipal y se aprobó un convenio para gestionar recursos extraordinarios por 661 millones de pesos para obras de pavimentación y rehabilitación en diversas calles de Colima.",
+ "generado": "2026-07-25T02:34:41+00:00",
+ "resumen_sesion": "Se nombró a la nueva Tesorera Municipal y se aprobó un convenio con CNEEG para obras por 661.8 millones de pesos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró instalada la sesión por haber quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al orden del día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó autorización para presentar las actas de Cabildo 51 y 52 en la próxima sesión, lo cual fue aprobado por unanimidad.",
-   "sentido": "aplazado",
+   "resumen": "Se solicitó y aprobó presentar las actas 51 y 52 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se nombró a la Licda. María Teresa Pérez Ramírez como nueva Tesorera Municipal tras la renuncia de la C.P. Susana Romero Castrejón.",
+   "resumen": "Se aprobó el nombramiento de la Licda. María Teresa Pérez Ramírez como Tesorera Municipal.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Licda. María Teresa Pérez Ramírez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la firma del convenio con CNEEG S. DE R.L. DE C.V. para la gestión y ejecución de obras con recursos extraordinarios por un monto total de $661,792,051.55, incluyendo 24 obras de pavimentación y rehabilitación en calles de Colima, así como en las colonias Miguel Hidalgo y Fátima.",
+   "resumen": "Se aprobó la firma del convenio con CNEEG S. de R.L. de C.V. para obras por $661,792,051.55.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "mayoria",
@@ -76,36 +109,137 @@
     "Colonia Fatima"
    ],
    "obras": [
-    "Construcción de pavimentación asfáltica en Colima, en la calle José Francisco Vá",
-    "Construcción de pavimentación asfáltica en Colima, en la calle Lebrón de Quiñone",
-    "Construcción de pavimentación asfáltica en Colima, en la calle Ricardo B. Nuñez,",
-    "Construcción de pavimentación asfáltica en Colima, en la calle Prof. Juan Silva ",
-    "Construcción de pavimentación asfáltica en Colima, en la calle Malva, tramo entr",
-    "Construcción de pavimentación asfáltica en Colima, en la calle Gral. Doroteo Ara",
-    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Gonzalo de Sandov",
-    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Javier Mina, entr",
-    "Rehabilitación de pavimentación asfáltica en Colima, en la calle Cuauhtémoc, ent",
-    "Rehabilitación de pavimentación asfáltica en Colima, en la Av. Anastasio Brizuel",
-    "Rehabilitación de pavimentación en Colima, Colonia Miguel Hidalgo, Calzada La Ar",
-    "Rehabilitación de pavimentación en Colima, Colonia Fátima, tramo entre calle Bal"
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE JOSÉ FRANCISCO VÁ",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE LEBRÓN DE QUIÑONE",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE RICARDO B. NUÑEZ,",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE PROF. JUAN SILVA ",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE MALVA, TRAMO ENTR",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE GRAL. DOROTEO ARA",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. GONZALO DE SANDOV",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. JAVIER MINA, ENTR",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE CUAUHTÉMOC, ENT",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. ANASTASIO BRIZUEL",
+    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA, COLONIA MIGUEL HIDALGO, CALZADA LA AR",
+    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA, COLONIA FATIMA, TRAMO ENTRE CALLE BAL"
    ],
    "montos": [
     {
-     "texto": "$661,792,051.55 (SEISCIENTOS SESENTA Y UN MILLONES SETECIENTOS NOVENTA Y DOS MIL CINCUENTA Y UN PESOS 55/100 M.N)",
+     "texto": "$661,792,051.55",
      "valor_mxn": 661792051.55
+    },
+    {
+     "texto": "$3,075,152.00",
+     "valor_mxn": 3075152.0
+    },
+    {
+     "texto": "$5,342,049.09",
+     "valor_mxn": 5342049.09
+    },
+    {
+     "texto": "$10,096,265.78",
+     "valor_mxn": 10096265.78
+    },
+    {
+     "texto": "$4,505,400.86",
+     "valor_mxn": 4505400.86
+    },
+    {
+     "texto": "$18,356,390.81",
+     "valor_mxn": 18356390.81
+    },
+    {
+     "texto": "$11,983,256.27",
+     "valor_mxn": 11983256.27
+    },
+    {
+     "texto": "$61,749,463.90",
+     "valor_mxn": 61749463.9
+    },
+    {
+     "texto": "$18,013,356.19",
+     "valor_mxn": 18013356.19
+    },
+    {
+     "texto": "$10,518,221.15",
+     "valor_mxn": 10518221.15
+    },
+    {
+     "texto": "$10,973,316.31",
+     "valor_mxn": 10973316.31
+    },
+    {
+     "texto": "$3,340,156.26",
+     "valor_mxn": 3340156.26
+    },
+    {
+     "texto": "$3,408,319.98",
+     "valor_mxn": 3408319.98
+    },
+    {
+     "texto": "$5,210,424.00",
+     "valor_mxn": 5210424.0
+    },
+    {
+     "texto": "$52,702,113.40",
+     "valor_mxn": 52702113.4
+    },
+    {
+     "texto": "$19,502,569.77",
+     "valor_mxn": 19502569.77
+    },
+    {
+     "texto": "$36,391,930.29",
+     "valor_mxn": 36391930.29
+    },
+    {
+     "texto": "$39,633,452.63",
+     "valor_mxn": 39633452.63
+    },
+    {
+     "texto": "$44,329,967.19",
+     "valor_mxn": 44329967.19
+    },
+    {
+     "texto": "$18,363,102.14",
+     "valor_mxn": 18363102.14
     }
-   ]
+   ],
+   "beneficiario": {
+    "nombre": "CNEEG S. DE R.L. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriel Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
-   "montos": []
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }
