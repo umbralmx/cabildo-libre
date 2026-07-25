@@ -1,13 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-25T04:12:29+00:00",
+ "generado": "2026-07-25T04:48:57+00:00",
  "cobertura": {
   "actas_en_termino": 74,
   "con_resumen": 25,
   "con_tier_a": 25,
+  "con_ficha_decision": 25,
   "con_asistencia": 25,
-  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 25 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen, 25 tienen los campos analíticos (categoría, votación, colonias, montos) y 25 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 269,
@@ -39,8 +40,19 @@
  "montos": {
   "n_declarados": 52,
   "n_con_valor": 52,
-  "suma_declarada_mxn": 2643699982.08,
-  "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados.",
+  "suma_bruta_mxn": 2643699982.08,
+  "suma_declarada_mxn": 2261758804.16,
+  "puntos_total_y_desglose": [
+   {
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "punto": 6,
+    "total_mxn": 661792051.55,
+    "n_componentes": 19,
+    "suma_componentes_mxn": 381941177.92
+   }
+  ],
+  "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados. Un punto suele declarar el total de un paquete de obra Y el desglose obra por obra: sumar ambos contaría los mismos pesos dos veces, así que cuando un monto iguala o supera a todos los demás del punto juntos (y el punto lista cinco o más) se toma sólo ese total. `suma_declarada_mxn` aplica esa regla y es la cifra a mostrar; `suma_bruta_mxn` es la suma sin corregir, publicada para que la diferencia sea auditable; los puntos afectados se listan en `puntos_total_y_desglose`.",
   "mayores": [
    {
     "texto": "$1'077,523,004.00, (Mil setenta y siete millones quinientos veintitrés mil cuatro pesos 00/100 m.n)",
@@ -379,6 +391,868 @@
    "menciones": 1
   }
  ],
+ "registro_voto": {
+  "base_actas": 25,
+  "base_puntos": 158,
+  "por_integrante": [
+   {
+    "id": "azucena-lopez-legorreta",
+    "nombre": "Azucena López Legorreta",
+    "cargo": "regidora",
+    "votos_en_contra": 6,
+    "abstenciones": 5,
+    "dictamenes_presentados": 1
+   },
+   {
+    "id": "diana-gabriela-vizcaino-aguirre",
+    "nombre": "Diana Gabriela Vizcaíno Aguirre",
+    "cargo": "regidora",
+    "votos_en_contra": 5,
+    "abstenciones": 3,
+    "dictamenes_presentados": 0
+   },
+   {
+    "id": "alondra-isabel-lopez-alonso",
+    "nombre": "Alondra Isabel López Alonso",
+    "cargo": "regidora",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 4
+   },
+   {
+    "id": "ana-isabel-flores-viera",
+    "nombre": "Ana Isabel Flores Viera",
+    "cargo": "regidora",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 1
+   },
+   {
+    "id": "claudia-janeth-farias-lopez",
+    "nombre": "Claudia Janeth Farías López",
+    "cargo": "regidora",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 2
+   },
+   {
+    "id": "edgar-osiris-alcaraz-saucedo",
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "cargo": "regidor",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 2
+   },
+   {
+    "id": "elia-margarita-moreno-gonzalez",
+    "nombre": "Elia Margarita Moreno González",
+    "cargo": "regidora",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 1
+   },
+   {
+    "id": "emilio-rosario-aldorica-pulido",
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "cargo": "regidor",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 0
+   },
+   {
+    "id": "federico-rangel-lozano",
+    "nombre": "Federico Rangel Lozano",
+    "cargo": "regidor",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 6
+   },
+   {
+    "id": "francisco-javier-bravo-gallardo",
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "cargo": "regidor",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 7
+   },
+   {
+    "id": "itzel-sarahi-rios-de-la-mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "cargo": "sindica",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 16
+   },
+   {
+    "id": "juan-carlos-gomez-diaz",
+    "nombre": "Juan Carlos Gómez Díaz",
+    "cargo": "regidor",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 6
+   },
+   {
+    "id": "riult-rivera-gutierrez",
+    "nombre": "Riult Rivera Gutiérrez",
+    "cargo": "presidente_municipal",
+    "votos_en_contra": 0,
+    "abstenciones": 0,
+    "dictamenes_presentados": 13
+   }
+  ],
+  "eventos": [
+   {
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "fecha": "2025-11-21",
+    "punto": 5,
+    "categoria": "nombramiento",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó el nombramiento de la Licda. María Teresa Pérez Ramírez como Tesorera Municipal.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-53",
+    "no_acta": 53,
+    "fecha": "2025-11-21",
+    "punto": 6,
+    "categoria": "convenio",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó el convenio con CNEEG S. DE R.L. DE C.V. para gestionar recursos extraordinarios y ejecutar las obras de pavimentación y alumbrado listadas, por un total de $661,792,051.55.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriel Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-54",
+    "no_acta": 54,
+    "fecha": "2025-11-27",
+    "punto": 5,
+    "categoria": "presupuesto_finanzas",
+    "votacion": "unanime",
+    "resumen": "Se autorizó a Tesorería a realizar ampliaciones presupuestarias por $51,338,068.18 para basificaciones y sindicalizaciones de trabajadores.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-55",
+    "no_acta": 55,
+    "fecha": "2025-12-01",
+    "punto": 4,
+    "categoria": "tramite",
+    "votacion": "mayoria",
+    "resumen": "Se autorizó presentar las Actas de Cabildo 51 y 54 en la próxima sesión.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-57",
+    "no_acta": 57,
+    "fecha": "2025-12-05",
+    "punto": 4,
+    "categoria": "tramite",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó el Acta 51 por unanimidad y el Acta 54 por mayoría, con votos en contra de dos regidoras.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-57",
+    "no_acta": 57,
+    "fecha": "2025-12-05",
+    "punto": 5,
+    "categoria": "reglamento_normativo",
+    "votacion": "unanime",
+    "resumen": "Se aprobó por unanimidad reformar los artículos 136 y 142 del Reglamento Ambiental, con dos abstenciones.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-57",
+    "no_acta": 57,
+    "fecha": "2025-12-05",
+    "punto": 6,
+    "categoria": "tramite",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría el Punto de Acuerdo para el Primer Informe de Gobierno, rechazándose una modificación propuesta.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-60",
+    "no_acta": 60,
+    "fecha": "2025-12-20",
+    "punto": 5,
+    "categoria": "obra_publica",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó el cuarto listado de obras del POA 2025 y el cierre de planeación presupuestal, con inversión de $1,404,041.41.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-61",
+    "no_acta": 61,
+    "fecha": "2025-12-31",
+    "punto": 5,
+    "categoria": "otro",
+    "votacion": "no_determinable",
+    "resumen": "Se discutió el dictamen para autorizar el festival Colima Resplandece 2025, con declaración de recinto ferial y cobro de derechos. La votación no se especifica en el acta.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-71",
+    "no_acta": 71,
+    "fecha": "2026-04-15",
+    "punto": 4,
+    "categoria": "tramite",
+    "votacion": "unanime",
+    "resumen": "Se aprobaron por unanimidad las actas 68, 69 y 70, con abstenciones de dos regidoras.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-72",
+    "no_acta": 72,
+    "fecha": "2026-04-29",
+    "punto": 5,
+    "categoria": "presupuesto_finanzas",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al H. Congreso del Estado la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   }
+  ],
+  "nombres_sin_mapear": [],
+  "nota": "Sólo cuenta lo que el acta nombra explícitamente: un cero no significa que la persona siempre votó a favor, sino que ninguna de las 25 actas con ficha de decisión la nombró votando en contra o absteniéndose. Los nombres que no corresponden a ningún integrante del cabildo (suplentes, o nombres que el OCR deformó) se listan aparte en nombres_sin_mapear, sin asignarlos a nadie."
+ },
+ "disenso_por_categoria": {
+  "base_puntos": 158,
+  "filas": [
+   {
+    "categoria": "obra_publica",
+    "puntos": 2,
+    "mayoria": 1,
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 1,
+    "con_abstenciones": 0,
+    "tasa_disenso": 0.5
+   },
+   {
+    "categoria": "tramite",
+    "puntos": 35,
+    "mayoria": 4,
+    "con_votos_en_contra": 3,
+    "votos_en_contra": 6,
+    "con_abstenciones": 1,
+    "tasa_disenso": 0.086
+   },
+   {
+    "categoria": "convenio",
+    "puntos": 15,
+    "mayoria": 1,
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 2,
+    "con_abstenciones": 0,
+    "tasa_disenso": 0.067
+   },
+   {
+    "categoria": "presupuesto_finanzas",
+    "puntos": 23,
+    "mayoria": 1,
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 2,
+    "con_abstenciones": 1,
+    "tasa_disenso": 0.043
+   },
+   {
+    "categoria": "licencia",
+    "puntos": 22,
+    "mayoria": 0,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 0,
+    "tasa_disenso": 0.0
+   },
+   {
+    "categoria": "fraccionamiento",
+    "puntos": 18,
+    "mayoria": 0,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 0,
+    "tasa_disenso": 0.0
+   },
+   {
+    "categoria": "otro",
+    "puntos": 15,
+    "mayoria": 0,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 1,
+    "tasa_disenso": 0.0
+   },
+   {
+    "categoria": "reglamento_normativo",
+    "puntos": 10,
+    "mayoria": 0,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 1,
+    "tasa_disenso": 0.0
+   },
+   {
+    "categoria": "nombramiento",
+    "puntos": 9,
+    "mayoria": 1,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 1,
+    "tasa_disenso": 0.0
+   },
+   {
+    "categoria": "patrimonio",
+    "puntos": 9,
+    "mayoria": 0,
+    "con_votos_en_contra": 0,
+    "votos_en_contra": 0,
+    "con_abstenciones": 0,
+    "tasa_disenso": 0.0
+   }
+  ],
+  "nota": "tasa_disenso = puntos con votos en contra nombrados / puntos de esa categoría con ficha de decisión. Un dictamen aprobado por mayoría cuya acta no nombra a los disidentes cuenta en 'mayoria' pero no en 'con_votos_en_contra'."
+ },
+ "beneficiarios": {
+  "base_puntos": 158,
+  "filas": [
+   {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia",
+    "menciones": 3,
+    "actas": 3,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia",
+    "menciones": 2,
+    "actas": 2,
+    "monto_declarado_mxn": 63444622.57,
+    "puntos_con_monto": 2
+   },
+   {
+    "nombre": "Gobierno del Estado de Colima",
+    "tipo": "dependencia",
+    "menciones": 2,
+    "actas": 2,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "CNEEG S. DE R.L. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 661792051.55,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "COMITE EJECUTIVO DEL SINDICATO NACIONAL DE TRABAJADORES DE LA EDUCACIÓN SECCIÓN 39 COLIMA",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 4907321.42,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "Tiendas Soriana S.A. de C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 800.0,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "ARDICA CONSTRUCCIÓN S.A. DE C.V. y DESARROLLA Y EDIFICA COLIMA S.A. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Aspirantes a policías municipales",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Autotransportes del Sur de Jalisco S.A. de C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Bebiendo, S.A. de C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "CARSOL CHEVROLET COLIMA",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "CONAGUA",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Cadena Comercial OXXO S.A. de C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Centro Estatal para la Prevención y Atención a la Violencia Familiar (CEPAVI)",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Ciudadanía del Municipio de Colima",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Comunidad de Lo de Villa",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Contribuyentes del Municipio de Colima",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "FERROMEX",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Federico Lucatero Ramírez",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Fraccionamiento Granjas y Campestres Del Chanal",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Fundación Humanista de Ayuda a Discapacitados FHADI",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "GRUPO GAMUVE, S.A. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Gral. Vicente Venustiano Guzmán Lucero",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Griselda Gómez Álvarez y Francisco Javier Vega Gómez",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Grupo Amor de México",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Instituto Superior de Educación Normal del Estado de Colima",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Instituto de Formación, Capacitación y Profesionalización Policial del Estado de Colima",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "LAE. J. Francisco Anzar Herrera",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "LOMAS DE SAN GERMÁN II",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez, Arturo Díaz Menchaca",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Lic. José Manuel Oviedo Guedea",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Licda. Graciela Montserrat García Mendoza",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Licda. María Teresa Pérez Ramírez",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Licda. Susana Romero Castrejón",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "M.C. Arq. Fernando Olmedo Buenrostro",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Madres trabajadoras de base, confianza y supernumerarias del H. Ayuntamiento de Colima",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Mtro. Juan Ignacio Ávalos Orozco",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Municipio de San Luis Potosí",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Mónica Cecilia Rivera González",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "RESIDENCIAL SAN JAVIER",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Sistema para el Desarrollo Integral de la Familia en el Municipio de Colima (DIF)",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Universidad José Martí",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "VIVO FIT GYM",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   }
+  ],
+  "nota": "Contrapartes tal como el acta las nombra. monto_declarado_mxn suma los montos declarados en los puntos donde aparece la contraparte —con la misma regla anti-doble-conteo que la sección de montos—: es lo que el acta dice, no un contrato verificado ni un pago ejercido. La recurrencia se registra; no implica irregularidad."
+ },
+ "comisiones": {
+  "base_puntos": 158,
+  "filas": [
+   {
+    "nombre": "Comisión de Hacienda Municipal",
+    "puntos": 11
+   },
+   {
+    "nombre": "Comisión de Comercio, Mercados y Restaurantes",
+    "puntos": 6
+   },
+   {
+    "nombre": "Comisión de Desarrollo Urbano y Vivienda",
+    "puntos": 5
+   },
+   {
+    "nombre": "Comisión de Educación, Cultura y Recreación",
+    "puntos": 4
+   },
+   {
+    "nombre": "Comisión de Comercios, Mercados y Restaurantes",
+    "puntos": 3
+   },
+   {
+    "nombre": "Comisión de Gobernación y Reglamentos",
+    "puntos": 3
+   },
+   {
+    "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+    "puntos": 2
+   },
+   {
+    "nombre": "Comisión de Gobernación y Reglamentos y Comisión de Educación, Cultura y Recreación",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones conjuntas de Gobernación y Reglamentos, y Comercios, Mercados y Restaurantes",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos, y Protección al Medio Ambiente y Desarrollo Sustentable",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos, y Hacienda Municipal",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones de Gobernación y Reglamentos; Hacienda Municipal; y Educación, Cultura y Recreación",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisión de Gobernación y Reglamentos y Hacienda Municipal",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisión de Patrimonio Municipal",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisión de Gobernación y Reglamentos y de Seguridad Pública, Tránsito y Movilidad",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones de Educación, Cultura y Recreación, Hacienda Municipal, Comercio, Mercados y Restaurantes, Patrimonio Municipal y Turismo, Fomento Económico y Empresarial",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisión de Salud Pública, Familia y Grupos Vulnerables",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones Conjuntas de Desarrollo Urbano y Vivienda, De Seguridad Pública, Tránsito y Movilidad, De Planeación, Obras y Servicios Públicos, De Patrimonio Municipal y De Hacienda Municipal",
+    "puntos": 1
+   }
+  ],
+  "nota": "Comisión que dictamina el punto, tal como aparece. Un punto puede involucrar a más de una comisión; se registra la que dictamina, y los nombres no están normalizados entre actas."
+ },
  "asistencia": {
   "sesiones_consideradas": 25,
   "por_integrante": [
