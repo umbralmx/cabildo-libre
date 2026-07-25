@@ -139,6 +139,7 @@ Dos decisiones alteran cómo se *muestra* el texto, nunca el dato almacenado:
 | Enlaces PDF rotos en el servidor del ayuntamiento | Parte de 2013–2014 (rutas `portal2014`) | Se enlazan igual: la liga rota es del ayuntamiento y ocultarla sería borrar evidencia |
 | Numeración saltada en la fuente | Al menos acta 76/2017 (VI→VIII) | Se respeta el salto tal cual |
 | Contenido íntegro de las actas | 100% de los PDF | Fuera de alcance en Fase 1; requiere OCR |
+| Estabilidad de los resúmenes entre corridas | ~1% de los puntos, en ambas direcciones | El modelo no es determinista; regenerar mueve las cifras. Medido y declarado en §10.1 |
 
 Ninguno se rellena por interpolación ni se descarta en silencio.
 
@@ -160,6 +161,12 @@ para comparar corridas y notar si la fuente cambió de forma.
 sólo si cambió y publica el sitio. Cada JSON lleva un campo `generado` con la marca de
 tiempo de la corrida, que el sitio muestra como «Última actualización de los datos».
 
+`procesar.yml` (los lotes de Fase 2, sábados) **publica al terminar su propio lote**, con un
+job `publicar` propio. No delega en `actualizar.yml`: el lote commitea con el `GITHUB_TOKEN`
+y GitHub a propósito no dispara workflows con esos push, y el gatillo `workflow_run` que se
+intentó para despertarlo nunca recibió el evento (probado el 2026-07-25). Ambos despliegues
+comparten el grupo de concurrencia `pages`, así que hacen cola en vez de pisarse.
+
 ## 9. Procedencia y licencias
 
 Ver `data/SOURCE.md` y, importante, **`docs/x1-terminos-legal.md`**: los Términos y
@@ -177,7 +184,9 @@ código vive en `processor/` y corre por lotes en GitHub Actions (`procesar.yml`
 en el request. Detalle operativo en `processor/README.md`; la decisión de motores y su
 costo en `docs/phase2-ocr-spike.md`.
 
-Dos etapas, cada una idempotente y cacheada:
+Dos etapas, cada una cacheada: lo ya procesado se salta, así que reintentar un lote es
+seguro y barato. Cacheada no es lo mismo que idempotente —volver a *generar* un resumen no
+devuelve exactamente el anterior; ver §10.1.
 
 1. **OCR — `ocr_colima.py` (Tesseract `spa`, gratis).** Los PDF son escaneos sin capa de
    texto (`a3-spike.md`), así que se rasteriza cada página a 200 DPI y se pasa por
@@ -197,12 +206,54 @@ declara con claridad el resultado de un punto, queda `no_determinable`. La valid
 descarta cualquier punto que el modelo devuelva y que no exista en el órden del día.
 Cada resumen registra el `modelo` y la `fuente_texto` que lo produjeron.
 
-**Límite conocido:** el paso de resúmenes envía hasta 45,000 caracteres de texto por
-acta (para acotar costo), así que en actas muy largas —sobre todo las de anexos
-tabulares extensos— el desenlace de puntos que caen en páginas tardías puede quedar
-fuera. Es un ajuste pendiente, no un vacío que se rellene por inferencia.
+**El acta se lee completa, por ventanas.** Durante un tiempo el paso de resúmenes enviaba
+sólo los primeros 45,000 caracteres de cada acta, y eso truncaba 17 de 25: el desenlace de
+un punto se asienta al final del punto, así que los que caían en páginas tardías quedaban
+`no_determinable` no porque el acta callara, sino porque nadie había leído esa parte. Nunca
+fue un problema de costo —leer el término entero cuesta menos de un dólar—, sino que un acta
+de medio millón de caracteres no cabe en una llamada. Desde el 2026-07-25 cada acta se lee
+en **ventanas solapadas** (45 K, solape 3 K) y las fichas se fusionan punto por punto, con
+una regla explícita: **un resultado asentado le gana a uno no leído.** La ventana que no vio
+la votación devuelve `no_determinable` y eso no puede pisar a la que sí la vio; `tramite`
+cede igual, para que una ventana que sólo vio un punto de pasada no lo degrade. Si dos
+ventanas afirman resultados distintos gana la mayoría —empate, la posterior— y el punto se
+reporta en `puntos_en_conflicto` en vez de resolverse en silencio. Las listas se unen con
+dedup; nada se promedia. Si una ventana muere tras los reintentos se omite ella sola y su
+hueco **se resta de la cobertura** en lugar de disimularse.
 
 **Contrapartida del proveedor elegido:** DeepSeek es sólo texto, por lo que resume sobre
 el OCR ruidoso, más flojo justo en nombres de colonias y fraccionamientos —lo que la
 gente busca. Se documenta como decisión consciente (`phase2-ocr-spike.md`) y es
 reversible: subir a visión es cambiar tres variables de entorno.
+
+### 10.1 Regenerar un resumen no reproduce el anterior
+
+El caché hace que reintentar un lote sea seguro, pero **forzar la regeneración (`--force`) no
+devuelve el mismo resultado**: el modelo no es determinista y sobre el mismo texto puede leer
+un punto de otra manera. Medido el 2026-07-25 sobre las mismas 35 actas, con el mismo código
+y el mismo esquema, la deriva fue de alrededor del 1 % y en las dos direcciones:
+
+| | antes | después |
+|---|---:|---:|
+| Puntos detectados | 424 | 425 |
+| `sentido: no_determinable` | 3 | **8** |
+| Puntos con beneficiario | 128 | 134 |
+| Categoría `tramite` | 215 | 210 |
+| Eventos de disenso nombrados | 59 | 59 |
+
+Dos consecuencias que conviene tener presentes al leer el panel:
+
+- **Las cifras publicadas se mueven cuando se refresca el corpus**, aunque no entren actas
+  nuevas ni cambie el código. No son un conteo estable del acta; son la lectura de un modelo,
+  y se declaran como tal.
+- **`no_determinable` puede subir**, no sólo bajar. En esa corrida pasó de 3 a 8. Es la
+  dirección incómoda —el pipeline reconoció menos resultados que antes— y por eso se registra
+  aquí en vez de dejar que parezca que la cobertura sólo mejora.
+
+La lista `puntos_en_conflicto` también cambia entre corridas: en esa misma pasada desapareció
+el conflicto del acta 51 (punto 18, que la regla de precedencia ya resuelve) y apareció uno
+nuevo en el acta 48 (punto 7). Esa lista es justamente la cola de revisión manual contra el
+PDF, no un defecto a ocultar.
+
+Por eso el `--force` no se usa de rutina: sólo cuando cambia el esquema de extracción o una
+regla de fusión, y el cambio vale la deriva.
