@@ -1,0 +1,501 @@
+{
+ "id": "2024-2027-51",
+ "no_acta": 51,
+ "fecha": "2025-11-13",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T10:01:47+00:00",
+ "lectura": {
+  "chars_ocr": 478968,
+  "chars_leidos": 478968,
+  "ventanas": 12,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [
+  18
+ ],
+ "resumen_sesion": "Se aprobó el orden del día modificado, las actas 48 y 50, y las adecuaciones presupuestales del POA 2025 para obras FAISM, con votos en contra de dos regidoras; se inició discusión de adecuaciones de octubre.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se verificó la asistencia de los integrantes del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad la modificación al orden del día propuesta por la Síndica y la incorporación del punto de Convenio de Hermanamiento.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura y se aprobaron por unanimidad las actas de cabildo 48 y 50.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza adecuaciones presupuestales al POA 2025 para obras FAISM, con voto en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "PISCILA",
+    "EL DIEZMO",
+    "EL PORVENIR",
+    "BOSQUES DEL SUR",
+    "PRADOS DEL SUR (VALLE REAL)",
+    "MIGUEL HIDALGO",
+    "REAL VISTA HERMOSA",
+    "RESIDENCIAL LOMAS VERDES",
+    "LOS VIVEROS",
+    "EL PERIODISTA",
+    "FRANCISCO I. MADERO",
+    "CENTRO",
+    "Colonia El Tivoli",
+    "Colonia Diamantes"
+   ],
+   "obras": [
+    "CONSTRUCCION DE LINEA DE CONDUCCIÓN DE RED DRENAJE SANITARIO EN COLIMA, LOCALIDA",
+    "REHABILITACION DE DRENAJE SANITARIO EN LA CALLE FRANSISCO RAMIRO DE LA CALLE GEN",
+    "REHABILITACION DE RED DE AGUA POTABLE EN LA CALLE FRANCISCO RAMIREZ VILLAREAL, T",
+    "CONSTRUCCIÓN DE PAVIMENTACION DE CARRRIL DE CONCRETO HIDRÁULICO, EN LA CALLE FRA",
+    "REHABILITACIÓN DE ALUMBRADO PUBLICO EN COLIMA, BLVD CAMINO REAL, TRAMO MARCELINO",
+    "REHABILITACIÓN DE ALUMBRADO PÚBLICO EN COLIMA, COL BOSQUES DEL SUR.",
+    "REHABILITACIÓN DE ALUMBRADO PÚBLICO EN COLIMA, COL. PRADOS DEL SUR (VALLE REAL).",
+    "REHABILITACION DE ESPACIO MULTIDEPORTIVO, EN COLIMA, COL. MIGUEL HIDALGO, UBICAD",
+    "CONSTRUCCION DE ESPACIO MULTIDEPORTIVO, EN COLIMA, COL. REAL VISTA HERMOSA, COLI",
+    "CONSTRUCCION DE PAVIMENTO DE CONCRETO HIDRÁULICO EN COLIMA, COL. RESIDENCIAL LOM",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFALTICA EN COLIMA, LIMITE ENTRE LAS COLONIAS: LO",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, COL FRANCISCO 1. MADERO, AV"
+   ],
+   "montos": [
+    {
+     "texto": "OBRAS Y ACCIONES CON RECURSOS FAISM $ 27,469,704.94",
+     "valor_mxn": 27469704.94
+    },
+    {
+     "texto": "INCIDENCIA DIRECTA $ 4'632,390.35",
+     "valor_mxn": 4632390.35
+    },
+    {
+     "texto": "INCIDENCIA COMPLEMENTARIA $ 20'801,102.53",
+     "valor_mxn": 20801102.53
+    },
+    {
+     "texto": "OBRA INCIDENCIA COMPLEMENTARIA PRODIM $ 1'409,680.06",
+     "valor_mxn": 1409680.06
+    },
+    {
+     "texto": "ACCIONES GASTOS INDIRECTOS FAISM $ 561,688.00",
+     "valor_mxn": 561688.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó dar de baja la licencia B-001169 de Ma. Elvira Ramírez Morfin, ubicada en Colonia San José Norte.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia San José Norte"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$34'522,664.91 (Treinta y cuatro millones quinientos veintidós mil seiscientos sesenta y cuatro pesos 91/100 M.N.)",
+     "valor_mxn": 34522664.91
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizaron dos licencias: 'SKY PADEL' en Colonia Colinas de Santa Fe y 'AGUACHILES VACA' en Colonia Jardines de la Estancia.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Colinas de Santa Fe",
+    "Colonia Jardines de la Estancia"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó dar de baja la licencia B-002029 de María del Carmen Pérez García, ubicada en Colonia Prados del Sur.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Prados del Sur"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "María del Carmen Pérez García",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó la expedición de una licencia comercial para venta de bebidas alcohólicas a Marcia Gisela Peña Pinto, para el establecimiento 'Abarrotes El Primo' en Av. Oyamel No. 808-A, Colonia Prados del Sur.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Prados del Sur",
+    "Prados del Sur"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Marcia Gisela Peña Pinto",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Lectura, discusión y aprobación del dictamen que autoriza adecuaciones presupuestales para obras del POA 2025; no se determina el resultado de la votación en este fragmento.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó por mayoría autorizar las adecuaciones presupuestales de octubre de 2025, por montos que totalizan 34,522,664.91 y 5,069,514.97 pesos, realizadas por la Tesorería Municipal.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "34,522,664.91",
+     "valor_mxn": 34522664.91
+    },
+    {
+     "texto": "5,069,514.97",
+     "valor_mxn": 5069514.97
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima la Cuenta Pública del mes de octubre de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó la suscripción de convenios de colaboración con diversas instituciones privadas (INTEGRARTIS, Diagnóstico Médico por Imagen, Farma-Oncología, BODESA, Banco Diocesano de Alimentos, Grupo Isima, y Florencio Amezcua Quiroz) para otorgar beneficios a trabajadores municipales.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó el Reglamento de la Comisión Fílmica del Municipio de Colima, que crea un órgano técnico-administrativo para fomentar y facilitar actividades audiovisuales en el municipio.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de GOBERNACIÓN Y REGLAMENTOS",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se aprobó la integración del Consejo Editorial para el libro conmemorativo de los 500 años de la Villa de San Sebastián.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se aprobó la suscripción de convenios de colaboración con personas físicas o morales para el mejoramiento, conservación y embellecimiento de áreas verdes del municipio.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 17,
+   "numeral": "XVII",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa 9 del fraccionamiento MERIT RESIDENCIAL, ubicado al norte de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "MERIT RESIDENCIAL"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$9,690,831.14 (NUEVE MILLONES SEISCIENTOS NOVENTA MIL OCHOCIENTOS TREINTA Y UN PESOS 14/100 M.N.)",
+     "valor_mxn": 9690831.14
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ernestina Amezcua García, Siwa de Khattab Constructora S.A. de C.V. y Tamer Adel Aly Abou Taleb Khattab",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 18,
+   "numeral": "XVIII",
+   "resumen": "Se aprobó la celebración del Convenio de Hermanamiento entre el municipio de Colima y el municipio de Cihuatlán, Jalisco.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [
+    "Gregorio Torre Quintero"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "60.110 millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "10 millones de pesos",
+     "valor_mxn": 10000000
+    },
+    {
+     "texto": "150 millones de pesos",
+     "valor_mxn": 150000000
+    },
+    {
+     "texto": "10 billones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "20 billones de pesos",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Municipio de Cihuatlán, Jalisco",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación; y Turismo, Fomento Económico y Empresarial",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  }
+ ]
+}

@@ -1,0 +1,425 @@
+{
+ "id": "2024-2027-42",
+ "no_acta": 42,
+ "fecha": "2025-07-30",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:32:43+00:00",
+ "lectura": {
+  "chars_ocr": 191953,
+  "chars_leidos": 191953,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "En esta sesión se aprobó la instalación de cuatro tianguis de pulgas y el cambio de domicilio de una licencia de bebidas alcohólicas, y se difirió la aprobación de actas anteriores.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los integrantes del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó presentar las actas de cabildo 39, 40 y 41 en la próxima sesión, aprobado por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la instalación y regularización de cuatro tianguis de pulgas en las colonias Mirador de la Cumbre I, La Albarrada, Mirador de la Cumbre II y Nuevo Milenio, con horarios y días específicos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Mirador de la Cumbre I",
+    "La Albarrada",
+    "Mirador de la Cumbre II",
+    "Nuevo Milenio"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó el cambio de domicilio de la licencia para la tienda 'Abarrotes Brisa' (titular Rafael Brizuela Olivo) de Niños Héroes S/N a Niños Héroes No. 11-A, Lo de Villa, Colima.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Lo de Villa"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Rafael Brizuela Olivo",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Por unanimidad, se aprobó dar de baja 23 licencias para venta de bebidas alcohólicas por no haber presentado solicitud de refrendo.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Real Vista Hermosa II",
+    "Fátima",
+    "El Tivoli",
+    "Jardines Vista Hermosa",
+    "Francisco Zaragoza Vázquez",
+    "Residencial Esmeralda",
+    "Gregorio Torres Quintero",
+    "Real Vista Hermosa I",
+    "De las Fuentes",
+    "Los Jazmines",
+    "La Capacha",
+    "Residencial Santa Gertrudis"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por mayoría autorizar la remisión al Congreso del Estado del Informe de Avance de la Gestión Financiera del primer semestre de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la realización del Primer Festival Cultural Griselda Álvarez Ponce de León, Colima 2025.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$100,000.00 (Cien mil pesos 00/100 m.n.)",
+     "valor_mxn": 100000
+    },
+    {
+     "texto": "$5,000.00 (Cinco mil pesos 00/100 m.n.)",
+     "valor_mxn": 5000
+    },
+    {
+     "texto": "$25,000.00 (Veinticinco mil pesos 00/100 m.n.)",
+     "valor_mxn": 25000
+    },
+    {
+     "texto": "$10,000.00 (Diez mil pesos 00/100 m.n.)",
+     "valor_mxn": 10000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Educación, Cultura y Recreación y Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la Convocatoria para la creación del Consejo Municipal para la Conmemoración del Centenario del Movimiento Cristero.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se autorizó modificar la enunciación de dos obras autorizadas por COPLADEMUN: pavimentación en Ignacio Allende y alumbrado en Las Guásimas.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Ignacio Allende",
+    "Las Guásimas"
+   ],
+   "obras": [
+    "Construcción de Pavimentación en Colima, Localidad Ignacio Allende tramo Carrete",
+    "Ampliación de Alumbrado Público en Colima en Cancha Techada de Usos Multiples en"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprueba el cambio de densidad de baja a media en los predios con claves 02-99-90-054-610-000 y 02-99-90-063-239-003, promovido por Elvia Estela Fuentes Gómez, Alejandro y Diego Ernesto Cárdenas Fuentes, para un desarrollo habitacional de densidad media.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Victoria",
+    "Residencial Tabachines",
+    "Primavera Hills",
+    "Jardines de la Hacienda",
+    "Residencial Esmeralda Norte",
+    "Catania Residencial",
+    "San Ángel",
+    "Pedregal Residencial",
+    "Jardines del Pedregal",
+    "Granjas y Campestres El Chanal",
+    "Los Tabachines",
+    "Santa Gertrudis"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$24,638.50",
+     "valor_mxn": 24638.5
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Elvia Estela Fuentes Gómez, Alejandro y Diego Ernesto Cárdenas Fuentes",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó la primera modificación al Programa Parcial de Urbanización 'Rivera del Jazmín II', promovida por Adalberto Torres López y/o Delamo Grupo Constructor, para ajustar la lotificación y usos del suelo en el fraccionamiento.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Real del Jazmín",
+    "Rivera del Jazmín",
+    "Rivera del Jazmín II",
+    "Villas de los Pinos"
+   ],
+   "obras": [
+    "Av. Francisco Ramírez Villareal",
+    "calle Crisantemo",
+    "Av. Del Jazmín"
+   ],
+   "montos": [
+    {
+     "texto": "$22,260.30",
+     "valor_mxn": 22260.3
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Adalberto Torres López y/o Delamo Grupo Constructor S.A. de C.V.",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se autorizó a la C. Samandhi Estrada Núñez como perito traductor del Ayuntamiento en idioma español-inglés, sin impacto presupuestal.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Samandhi Estrada Núñez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "El dictamen de reforma al Reglamento del Gobierno Municipal fue regresado a la Comisión de Gobernación y Reglamentos para complementación y atención de observaciones.",
+   "sentido": "aplazado",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se declaró clausurada la sesión a las 16:04 horas del 30 de julio de 2025.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

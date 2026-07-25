@@ -1,0 +1,497 @@
+{
+ "id": "2024-2027-43",
+ "no_acta": 43,
+ "fecha": "2025-08-15",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:37:05+00:00",
+ "lectura": {
+  "chars_ocr": 301860,
+  "chars_leidos": 301860,
+  "ventanas": 8,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se instaló la sesión y se aprobaron actas; se presentó dictamen de adecuaciones presupuestales por $23,605,381.50 sin resolución en este fragmento.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al haber quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad la modificación al orden del día para incluir un dictamen de ampliaciones presupuestales.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 41 y 42.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal a realizar adecuaciones presupuestales del mes de julio, con un total de 4,653,443.09 pesos, con los votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [
+    "Obras diversas",
+    "Alumbrado público",
+    "Material eléctrico para alumbrado público"
+   ],
+   "montos": [
+    {
+     "texto": "$23,605,381.50 (Veintitrés millones seiscientos cinco mil trescientos ochenta y un pesos con 50/100 m.n.)",
+     "valor_mxn": 23605381.5
+    },
+    {
+     "texto": "163,376.08",
+     "valor_mxn": 163376.08
+    },
+    {
+     "texto": "2,410.00",
+     "valor_mxn": 2410.0
+    },
+    {
+     "texto": "27.00",
+     "valor_mxn": 27.0
+    },
+    {
+     "texto": "723,892.55",
+     "valor_mxn": 723892.55
+    },
+    {
+     "texto": "51,310.00",
+     "valor_mxn": 51310.0
+    },
+    {
+     "texto": "70,203.00",
+     "valor_mxn": 70203.0
+    },
+    {
+     "texto": "40,000.00",
+     "valor_mxn": 40000.0
+    },
+    {
+     "texto": "26,182.19",
+     "valor_mxn": 26182.19
+    },
+    {
+     "texto": "80,057.31",
+     "valor_mxn": 80057.31
+    },
+    {
+     "texto": "26,500.00",
+     "valor_mxn": 26500.0
+    },
+    {
+     "texto": "18,328.00",
+     "valor_mxn": 18328.0
+    },
+    {
+     "texto": "250,000.03",
+     "valor_mxn": 250000.03
+    },
+    {
+     "texto": "96,000.00",
+     "valor_mxn": 96000.0
+    },
+    {
+     "texto": "87,067.59",
+     "valor_mxn": 87067.59
+    },
+    {
+     "texto": "168,053.11",
+     "valor_mxn": 168053.11
+    },
+    {
+     "texto": "80,985.52",
+     "valor_mxn": 80985.52
+    },
+    {
+     "texto": "96,811.77",
+     "valor_mxn": 96811.77
+    },
+    {
+     "texto": "2,150,692.83",
+     "valor_mxn": 2150692.83
+    },
+    {
+     "texto": "12,000.00",
+     "valor_mxn": 12000.0
+    },
+    {
+     "texto": "2,200.00",
+     "valor_mxn": 2200.0
+    },
+    {
+     "texto": "$4,653,443.09",
+     "valor_mxn": 4653443.09
+    },
+    {
+     "texto": "4,653,443.09",
+     "valor_mxn": 4653443.09
+    },
+    {
+     "texto": "$12'070,000.00",
+     "valor_mxn": 12070000
+    },
+    {
+     "texto": "$620,000.00",
+     "valor_mxn": 620000
+    },
+    {
+     "texto": "$1,060,000.00",
+     "valor_mxn": 1060000
+    },
+    {
+     "texto": "$1,630,000.00",
+     "valor_mxn": 1630000
+    },
+    {
+     "texto": "$250,000.00",
+     "valor_mxn": 250000
+    },
+    {
+     "texto": "$460,000.00",
+     "valor_mxn": 460000
+    },
+    {
+     "texto": "$2,600,000.00",
+     "valor_mxn": 2600000
+    },
+    {
+     "texto": "$500,000.00",
+     "valor_mxn": 500000
+    },
+    {
+     "texto": "$4,000,000.00",
+     "valor_mxn": 4000000
+    },
+    {
+     "texto": "$950,000.00",
+     "valor_mxn": 950000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al Congreso del Estado la Cuenta Pública del mes de julio de 2025, con los votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la expedición de cuatro licencias comerciales para venta de bebidas alcohólicas y un cambio de domicilio, en locales ubicados en el Centro, Colonia Cuauhtémoc y Mirador de la Cumbre II.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "Cuauhtémoc",
+    "Mirador de la Cumbre II"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": null
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad la autorización de cinco traspasos de locales en los mercados Gral. Francisco Villa, José Juárez Martínez y Gral. Álvaro Obregón.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": null
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la Universidad ITECCE, S.C. para ofrecer servicios educativos y programas de formación dual a trabajadores municipales.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad ITECCE S.C.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la empresa GQB Consulting L.L.C. para implementar acciones en innovación, calidad gubernamental y mejora de la gestión pública.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "GQB Consulting L.L.C.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó declarar recinto ferial para la Expo Col 2025, autorizar cobros de derechos y aprovechamientos, y realizar el Primer Certamen Nacional de Huapango con premiación de $60,000.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$3,500.53",
+     "valor_mxn": 3500.53
+    },
+    {
+     "texto": "$60,000.00",
+     "valor_mxn": 60000.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ciudadanía de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisiones de Educación, Cultura y Recreación, Hacienda Municipal, Comercios, Mercados y Restaurantes, Turismo, Fomento Económico y Empresarial, y Patrimonio Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la municipalización de las Etapas 10 y 11 del Fraccionamiento Bosque de la Cantera, con una fianza de $270,433.37 para garantizar obras.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Bosque de la Cantera"
+   ],
+   "obras": [
+    "Paseo de la Cantera (tramo)",
+    "Tercer Anillo Periférico (lateral)",
+    "Av. Ignacio Sandoval"
+   ],
+   "montos": [
+    {
+     "texto": "$270,433.37",
+     "valor_mxn": 270433.37
+    }
+   ],
+   "beneficiario": {
+    "nombre": "LEGA DESARROLLOS, S.A. DE C.V. Y/O ING. EDUARDO ANTONIO BRUN SOLÓRZANO",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se autorizó la convocatoria para la elección de la Reina y/o Embajadora del Municipio de Colima 2025, con estímulos de $10,000.00 del Cabildo y $20,000.00 del Municipio.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$10,000.00",
+     "valor_mxn": 10000
+    },
+    {
+     "texto": "$20,000.00",
+     "valor_mxn": 20000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "En Asuntos Generales se presentaron informes y posicionamientos, y se aprobó por unanimidad realizar una ceremonia por el 168 aniversario luctuoso del General Manuel Álvarez.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se declaró clausurada la sesión ordinaria de cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

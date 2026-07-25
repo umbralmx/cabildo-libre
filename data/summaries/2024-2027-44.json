@@ -1,0 +1,379 @@
+{
+ "id": "2024-2027-44",
+ "no_acta": 44,
+ "fecha": "2025-08-28",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:39:12+00:00",
+ "lectura": {
+  "chars_ocr": 112627,
+  "chars_leidos": 112627,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "El Cabildo aprobó tres convenios educativos, la baja de tres licencias de alcohol y la expedición de tres nuevas, además de trámites de actas.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día y se aprobó.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron las Actas 39 y 40 por unanimidad, y se autorizó presentar el Acta 43 en próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con el CECATI Número 145 para capacitación de trabajadores.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CECATI Número 145",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Síndica Municipal, Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con el CBTIS Número 157 para prácticas profesionales y servicio social.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CBTIS Número 157",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación y Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Regidor Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó un convenio específico con la Universidad de Colima para la presentación del musical 'El Indio Alonso'.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Educación, Cultura y Recreación y Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Regidor Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó dar de baja la licencia B-000824 para venta de bebidas alcohólicas, a nombre de Emilia Solano Ramos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Unidad Habitacional Reforma, Colima"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Emilia Solano Ramos",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó dar de baja las licencias B-000771 y B-000599 para venta de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Col. San Rafael, Colima",
+    "Col. Antorchista, Colima"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se autorizó la expedición de tres licencias para venta de bebidas alcohólicas a Carlos Alberto Mesina Araujo (Súper La Central), Norma Araceli Preciado Avalos (Abarrotes Celi) y Jessica María Pérez García (Abarrotes Jesy), en las colonias Santa Amalia, De los Trabajadores y Puerta de Ánzar.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Santa Amalia",
+    "De los Trabajadores",
+    "Puerta de Ánzar"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Carlos Alberto Mesina Araujo, Norma Araceli Preciado Avalos, Jessica María Pérez García",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Síndica Municipal, Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la incorporación municipal de las etapas 2 y 3 del fraccionamiento Comercial Francisco I. Madero, promovido por Jorge Ríos Valencia, ubicado al oriente de Colima, con una superficie vendible de 5,396.26 m².",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$110,650.88",
+     "valor_mxn": 110650.88
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Jorge Ríos Valencia",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se presentó y discutió el dictamen que reforma el Reglamento para la Atención, Inclusión y Desarrollo Integral de las Personas con Discapacidad, incluyendo modificaciones al glosario y al título del Instituto, pero no se determinó el resultado de la votación en este fragmento.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Tepames",
+    "Piscila"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Personas con discapacidad del municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se nombró a Rodolfo Corona Rebolledo como Comisario Municipal de El Chanal, tras aceptarse la renuncia de Yessenia Chávez Méndez.",
+   "sentido": "no_determinable",
+   "categoria": "nombramiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "El Chanal"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "C. Rodolfo Corona Rebolledo",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se aprobó declarar la Terraza La Parota como Recinto Oficial para la Sesión Solemne del Cabildo Joven 2025.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto de la Juventud para el Municipio de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación, y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se aceptó la donación de un camión de bomberos con valor de $750,000 de Redwood City, California para el servicio de bomberos municipal.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$750,000.00 (Setecientos cincuenta mil pesos 00/100 M.N.)",
+     "valor_mxn": 750000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos; y Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 17,
+   "numeral": "XVII",
+   "resumen": "Se trataron asuntos generales: felicitaciones a adultos mayores e invitaciones a visitar el instituto de discapacidad.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 18,
+   "numeral": "XVIII",
+   "resumen": "Se clausuró la sesión a las 17:18 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

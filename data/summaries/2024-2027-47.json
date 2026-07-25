@@ -1,0 +1,405 @@
+{
+ "id": "2024-2027-47",
+ "no_acta": 47,
+ "fecha": "2025-10-03",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:47:06+00:00",
+ "lectura": {
+  "chars_ocr": 107207,
+  "chars_leidos": 107207,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó cambiar el nombre de Casa Caracol a Edificio Rosa y un convenio de Cuenta Maestra con la CFE, y se modificó el orden del día.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó el Orden del Día con la modificación de incluir el dictamen de cambio de nombre y retirar el noveno punto.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron las Actas de Cabildo N° 44 y 46 por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó modificar el nombre del centro Casa Caracol a Centro Integral de Educación y Atención para las Mujeres “Edificio Rosa” y reformar artículos del Reglamento Interior del DIF.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Lic. Emilio Rosario Aldorica Pulido",
+     "id": "emilio-rosario-aldorica-pulido"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizaron tres licencias de apertura para establecimientos con venta de alcohol: Depósito Isely en Col. Oriental, Depósito San José en Col. San José Sur, y Wingman San Fernando en Col. Morelos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "La Oriental",
+    "San José Sur",
+    "Morelos"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CFE, Suministrador de Servicios Básicos",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó declarar Recinto Ferial el Jardín Libertad para la Feria del Mezcal y su Cultura los días 17, 18 y 19 de octubre de 2025, autorizando el cobro de derechos por uso de vía pública y venta de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$152.73",
+     "valor_mxn": 152.73
+    },
+    {
+     "texto": "$1,301.11",
+     "valor_mxn": 1301.11
+    },
+    {
+     "texto": "$841.76",
+     "valor_mxn": 841.76
+    },
+    {
+     "texto": "$1,244.54",
+     "valor_mxn": 1244.54
+    },
+    {
+     "texto": "$3,540.14",
+     "valor_mxn": 3540.14
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó la ejecución del segundo listado de obras del POA 2025, que incluye la ampliación del panteón de Tepames y el desazolve del Arroyo Pereyra en las colonias Prados del Sur y Rinconada del Pereyra.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Tepames",
+    "Prados del Sur",
+    "Rinconada del Pereyra"
+   ],
+   "obras": [
+    "Ampliación al panteón municipal de la localidad de Tepames, del municipio de Col",
+    "Desazolve y conformación de taludes del Arroyo Pereyra en Colima, tramo calle Ba"
+   ],
+   "montos": [
+    {
+     "texto": "$2,913,662.71 (dos millones novecientos trece mil seiscientos sesenta y dos pesos 71/100 M.N.)",
+     "valor_mxn": 2913662.71
+    },
+    {
+     "texto": "$2,600,000.00 (dos millones seiscientos mil pesos 00/100 M.N.)",
+     "valor_mxn": 2600000.0
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó el tercer listado de obras del POA 2025, con 12 obras del FAIS por $17,110,426.83 y 2 obras del PRODIM por $1,409,680.06, total $18,520,106.89.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Piscila",
+    "El Diezmo",
+    "El Porvenir",
+    "Bosques del Sur",
+    "Prados del Sur (Valle Real)",
+    "Miguel Hidalgo",
+    "Real Vista Hermosa",
+    "Residencial Lomas Verdes",
+    "Los Viveros",
+    "El Periodista",
+    "Francisco I. Madero",
+    "Centro"
+   ],
+   "obras": [
+    "CONSTRUCCION DE LINEA DE CONDUCCIÓN DE RED DRENAJE SANITARIO EN COLIMA, LOCALIDA",
+    "REHABILITACION DE DRENAJE SANITARIO EN LA CALLE FRANCISCO RAMIREZ VILLAREAL, TRA",
+    "REHABILITACION DE RED DE AGUA POTABLE EN LA CALLE FRANCISCO RAMIREZ VILLAREAL, T",
+    "CONSTRUCCIÓN DE PAVIMENTACION DE CARRRIL DE CONCRETO HIDRAULICO, EN LA CALLE FRA",
+    "REHABILITACIÓN DE ALUMBRADO PUBLICO EN COLIMA, BLVD CAMINO REAL, TRAMO MARCELINO",
+    "REHABILITACIÓN DE ALUMBRADO PÚBLICO EN COLIMA, COLONIA BOSQUES DEL SUR",
+    "REHABILITACIÓN DE ALUMBRADO PÚBLICO EN COLIMA, COL. PRADOS DEL SUR (VALLE REAL)",
+    "REHABILITACION DE ESPACIO MULTIDEPORTIVO, EN COLIMA, COL. MIGUEL HIDALGO, UBICAD",
+    "CONSTRUCCION DE ESPACIO MULTIDEPORTIVO, EN COLIMA,COL. REAL VISTA HERMOSA, COLIM",
+    "CONSTRUCCION DE PAVIMENTO DE CONCRETO HIDRÁULICO EN COLIMA, COL. RESIDENCIAL LOM",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFALTICA EN COLIMA, LIMITE ENTRE LAS COLONIAS: LO",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, COL FRANCISCO I. MADERO, AV"
+   ],
+   "montos": [
+    {
+     "texto": "$17,110,426.83",
+     "valor_mxn": 17110426.83
+    },
+    {
+     "texto": "$1,409,680.06",
+     "valor_mxn": 1409680.06
+    },
+    {
+     "texto": "$18,520,106.89",
+     "valor_mxn": 18520106.89
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Lic. Emilio Rosario Aldorica Pulido",
+     "id": "emilio-rosario-aldorica-pulido"
+    },
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó otorgar subsidios retroactivos a Cruz Roja Mexicana ($240,000), H. Cuerpo de Bomberos Voluntarios de Colima ($500,000) y Casas del Estudiante de Colima 'Graciano Sánchez' A.C. ($200,000), con cargo a la partida de Ayudas Sociales, hasta por $940,000.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$240,000.00",
+     "valor_mxn": 240000
+    },
+    {
+     "texto": "$500,000.00",
+     "valor_mxn": 500000
+    },
+    {
+     "texto": "$200,000.00",
+     "valor_mxn": 200000
+    },
+    {
+     "texto": "$940,000.00",
+     "valor_mxn": 940000
+    },
+    {
+     "texto": "$20,000.00",
+     "valor_mxn": 20000.0
+    },
+    {
+     "texto": "$41,666.67",
+     "valor_mxn": 41666.67
+    },
+    {
+     "texto": "$16,666.67",
+     "valor_mxn": 16666.67
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Cruz Roja Mexicana, H. Cuerpo de Bomberos Voluntarios de Colima, Casas del Estudiante de Colima 'Graciano Sánchez' A.C.",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Salud Pública, Familia y Grupos Vulnerables, Hacienda Municipal, y de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias para octubre, noviembre y diciembre de 2025.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se discutieron varios asuntos: propuesta del 'Premio Lucio Uribe' para arquitectos, comentarios sobre Tlatelolco y Casa Caracol, y un exhorto sobre servicios públicos.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Colonia Las Amarillas"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se declaró clausurada la sesión a las 13:29 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

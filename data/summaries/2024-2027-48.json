@@ -1,0 +1,345 @@
+{
+ "id": "2024-2027-48",
+ "no_acta": 48,
+ "fecha": "2025-10-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:51:38+00:00",
+ "lectura": {
+  "chars_ocr": 382875,
+  "chars_leidos": 382875,
+  "ventanas": 10,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó el orden del día modificado, se autorizó presentar el acta 47 en próxima sesión y se leyó dictamen de adecuaciones presupuestales por $24.5 millones, sin resolución.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día modificado, retirando el dictamen de ampliaciones presupuestarias y agregando el punto de acuerdo sobre el jardín Torres Quintero.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó por unanimidad presentar el Acta de Cabildo N° 47 en la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias del mes de septiembre de 2025 por un total de $3,692,843.57.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$24'531,860.37 (Veinticuatro millones quinientos treinta y un mil ochocientos sesenta pesos 37/100 m.n.)",
+     "valor_mxn": 24531860.37
+    },
+    {
+     "texto": "707.20",
+     "valor_mxn": 707.2
+    },
+    {
+     "texto": "847.26",
+     "valor_mxn": 847.26
+    },
+    {
+     "texto": "1,073,509.90",
+     "valor_mxn": 1073509.9
+    },
+    {
+     "texto": "1,319,323.63",
+     "valor_mxn": 1319323.63
+    },
+    {
+     "texto": "3,692,843.57",
+     "valor_mxn": 3692843.57
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de septiembre de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Elia Margarita Moreno González",
+    "id": "elia-margarita-moreno-gonzalez"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó la expedición de tres licencias comerciales para venta y consumo de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "Fraccionamiento Balcón de Abajo",
+    "Colonia Camino Real"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la incorporación municipal directa de tres predios del fraccionamiento Girasoles al norte de la ciudad.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "GIRASOLES"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CC. SONIA MARIANA VÁZQUEZ ABAROA e IGNACIO LEONEL CÁRDENAS MACÍAS",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa 6 del Desarrollo Comercial La Palma, ubicado al nororiente de Colima, promovido por Miguel Ángel Flores Vizcaíno y otros.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "LA PALMA"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$ 2, 427,317.69 (DOS MILLONES CUATROCIENTOS VEINTISIETE MIL TRESCIENTOS DIECISIETE PESOS 69/100 M.N.)",
+     "valor_mxn": 2427317.69
+    }
+   ],
+   "beneficiario": {
+    "nombre": "LIC. MIGUEL ÁNGEL FLORES VIZCAÍNO, como apoderado legal de la C. MARÍA GUADALUPE VIZCAÍNO GALINDO (por su propio derecho",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la renovación del comodato del inmueble en calle Prof. Francisco Hernández Espinoza No. 1265, Colonia Oriental, a favor del Grupo de Apoyo Amanecer I.A.P.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Oriental"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "GRUPO DE APOYO AMANECER I.A.P.",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó el Reglamento para el Funcionamiento del Consejo de Paz y Justicia Cívica del Municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Aprobada la licencia temporal de la Regidora Elia Margarita Moreno González, toma de protesta de la suplente Nancy Susana Martínez Briceño y asignación de comisiones de esta última.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Nancy Susana Martínez Briceño",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "J. Francisco Anzar Herrera",
+    "id": null
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó por unanimidad la adición del artículo 317 BIS al Reglamento del Gobierno Municipal de Colima para capacitar en protección civil a las autoridades auxiliares; se turnó a comisión una propuesta para eliminar el nivel salarial 16 del tabulador municipal.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Protección Civil",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "El Presidente Municipal declaró clausurada la sesión a las 12:33 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

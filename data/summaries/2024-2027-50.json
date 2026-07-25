@@ -1,0 +1,465 @@
+{
+ "id": "2024-2027-50",
+ "no_acta": 50,
+ "fecha": "2025-10-30",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T09:55:34+00:00",
+ "lectura": {
+  "chars_ocr": 267931,
+  "chars_leidos": 267931,
+  "ventanas": 7,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron actas 47 y 49, cobros para Feria de Todos los Santos 2025 y recinto ferial en Panteón; se discutió urbanización Balmoral Residencial sin votación.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registraron los presentes.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión formalmente.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las Actas 47 y 49; el Acta 48 quedó pendiente para próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza a la Dirección de Inspección y Licencias realizar cobros temporales por venta de bebidas alcohólicas en la Feria de Todos los Santos Colima 2025.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Comercio, Mercados y Restaurantes; Hacienda Municipal; y Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó declarar Recinto Ferial el Panteón Municipal para el Festival de Día de Muertos los días 1 y 2 de noviembre de 2025, con tarifas de cobro específicas.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$16.97",
+     "valor_mxn": 16.97
+    },
+    {
+     "texto": "$1,131.40",
+     "valor_mxn": 1131.4
+    },
+    {
+     "texto": "$280.58",
+     "valor_mxn": 280.58
+    },
+    {
+     "texto": "$735.41",
+     "valor_mxn": 735.41
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercio, Mercados y Restaurantes; y Patrimonio Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización del Fraccionamiento Balmoral Residencial, promovido por MICA CONSTRUCTORA, S.A. de C.V. y Héctor Alejandro Michel Carrillo, para urbanizar 140 lotes habitacionales y mixtos, con áreas de cesión y vialidades.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Balmoral Residencial",
+    "Pedregal Residencial",
+    "La Capacha",
+    "Merit Residencial",
+    "La Herradura",
+    "Residencial San Agustín",
+    "Jardines del Pedregal",
+    "Paseo de los Sauces",
+    "Lomas del Valle",
+    "Residencial Victoria Norte",
+    "Residencial Victoria",
+    "Catania Residencial"
+   ],
+   "obras": [
+    "Pasos peatonales y rampas para discapacitados",
+    "Ciclovías en prolongación Av. Constitución",
+    "Jardines filtrantes en lotes EV",
+    "Reforestación de vías y espacios públicos",
+    "Bomba sumergible para pozo La Capacha"
+   ],
+   "montos": [
+    {
+     "texto": "$127,948.46",
+     "valor_mxn": 127948.46
+    }
+   ],
+   "beneficiario": {
+    "nombre": "MICA CONSTRUCTORA, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización Valle del Carmen, promovido por JADE GRUPO INMOBILIARIO S.A DE C.V., para desarrollar 192 lotes en la zona.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "mayoria",
+   "colonias": [
+    "Valle del Carmen",
+    "La Castellana",
+    "Francisco Zaragoza",
+    "El Tívoli",
+    "Bosques del Sur"
+   ],
+   "obras": [
+    "Rehabilitación del pozo Patios del ferrocarril",
+    "Construcción de subcolector sanitario de 10 pulgadas",
+    "Consolidación de Arteria Colectora AC-21 (Av. Belisario Domínguez)",
+    "Consolidación de Calle de Distribución CD-16 (calle 5 de Febrero)",
+    "Parque de barrio"
+   ],
+   "montos": [
+    {
+     "texto": "$46,898.80",
+     "valor_mxn": 46898.8
+    }
+   ],
+   "beneficiario": {
+    "nombre": "JADE GRUPO INMOBILIARIO S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la incorporación municipal de la etapa única del desarrollo CIRCUITOS MEXICANOS, ubicado al nororiente de la ciudad de Colima, promovido por GRUPO YAZAKI, S.A. DE C.V. y/o C. ESPERANZA AGUILAR VILLASEÑOR.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "CIRCUITOS MEXICANOS"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$ 2,838.61 (DOS MIL OCHOCIENTOS TREINTA Y OCHO PESOS 61/100 M.N.)",
+     "valor_mxn": 2838.61
+    }
+   ],
+   "beneficiario": {
+    "nombre": "GRUPO YAZAKI, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la iniciativa para otorgar incentivos fiscales a los contribuyentes del municipio de Colima, incluyendo condonación de recargos y multas del impuesto predial y multas viales, para su remisión al Congreso del Estado.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "contribuyentes del municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la suscripción de convenios de colaboración entre el Municipio de Colima y diversas instituciones educativas (INETEP, Instituto ICEP, Escuela de Música Staccato, Colegio Rafaela Suárez, Colegio Gandhi) para fomentar actividades académicas, culturales y becas para trabajadores.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se autorizó la expedición de dos licencias comerciales para venta de bebidas alcohólicas: una tienda 'ABARROTES DEL SOL' en la colonia Francisco Villa III y 'ABARROTES ALEXIS' en la colonia Jardines del Sol.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Villa III",
+    "Jardines del Sol",
+    "Colonia Francisco Villa III",
+    "Colonia Jardines del Sol"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Verónica Raquel Muñoz Ramírez y María de los Ángeles Cruz",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se autorizó la ejecución de cinco obras del POA 2025, una impermeabilización de edificios municipales y diversas acciones con FAISMUN y PRODIM.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "El Chanal",
+    "Residencial Victoria",
+    "Residencial Esmeralda"
+   ],
+   "obras": [
+    "REHABILITACIÓN DE RED DE AGUA POTABLE EN COLIMA, LOCALIDAD EL CHANAL, CALLE ANIC",
+    "REHABILITACIÓN DE RED DE DRENAJE SANITARIO EN COLIMA, LOCALIDAD EL CHANAL, CALLE",
+    "CONSTRUCCIÓN DE PAVIMENTACION DE PIEDRA AHOGADA EN CONCRETO HIDRÁULICO EN COLIMA",
+    "CONSTRUCCION DE RED DE ALUMBRADO PUBLICO EN COLIMA, COL RESIDENCIAL VICTORIA EN ",
+    "REHABILITACIÓN DE JARDIN LINEAL EN COLIMA, COL RESIDENCIAL ESMERALDA 7 NORTE, AV",
+    "Rehabilitación de impermeabilización en área de azotea en edificio de la Preside",
+    "REPARACIÓN DE 3 VEHÍCULOS DE LA DIRECCIÓN GENERAL DE OBRAS PÚBLICAS",
+    "SERVICIO DE ARRENDAMIENTO DE TRES VEHICULOS",
+    "LA ADQUISICION DE EQUIPO DE COMPUTO"
+   ],
+   "montos": [
+    {
+     "texto": "$471,058.14",
+     "valor_mxn": 471058.14
+    },
+    {
+     "texto": "$693,570.59",
+     "valor_mxn": 693570.59
+    },
+    {
+     "texto": "$4,562,043.48",
+     "valor_mxn": 4562043.48
+    },
+    {
+     "texto": "$1,557,842.12",
+     "valor_mxn": 1557842.12
+    },
+    {
+     "texto": "$1,038,551.72",
+     "valor_mxn": 1038551.72
+    },
+    {
+     "texto": "$774,179.36",
+     "valor_mxn": 774179.36
+    },
+    {
+     "texto": "$200,000.00",
+     "valor_mxn": 200000.0
+    },
+    {
+     "texto": "$361,688.00",
+     "valor_mxn": 361688.0
+    },
+    {
+     "texto": "$64,844.00",
+     "valor_mxn": 64844.0
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos y Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó por mayoría el Anteproyecto de Tablas de Valores Unitarios de Terreno y Construcción para el ejercicio fiscal 2026, con dos votos en contra.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado la Iniciativa de Ley de Ingresos del Municipio de Colima para el ejercicio fiscal 2026, con el voto en contra de la Regidora Azucena López Legorreta.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,077,523,004.00",
+     "valor_mxn": 1077523004
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 14:15 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
