@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:24:27+00:00",
+ "generado": "2026-07-25T15:41:20+00:00",
  "lectura": {
   "chars_ocr": 22202,
   "chars_leidos": 22202,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la leyenda oficial 2026 y se declaró Recinto Ferial el Jardín Principal de Lo de Villa para las fiestas del Señor de la Expiración.",
+ "resumen_sesion": "Se autorizó la leyenda oficial para 2026 y se declaró Recinto Ferial el Jardín Principal de Lo de Villa para las fiestas del Señor de la Expiración.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las Actas de Cabildo 60 y 61 en la próxima sesión.",
+   "resumen": "Se aprobó por unanimidad posponer la presentación de las Actas de Cabildo 60 y 61 para la próxima sesión.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -79,12 +79,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la leyenda oficial para 2026: '2026, Año del 170 Aniversario de la creación del Estado de Colima'.",
+   "resumen": "Se aprobó por unanimidad la leyenda oficial para toda la documentación municipal en 2026: '2026, Año del 170 Aniversario de la creación del Estado de Colima'.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -103,7 +106,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial el Jardín Principal de Lo de Villa y calles colindantes para las Fiestas del Señor de la Expiración 2026, del 10 al 20 de enero.",
+   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial el Jardín Principal de la comunidad de Lo de Villa y calles colindantes para las Fiestas en Honor al Señor de la Expiración del 10 al 20 de enero de 2026, autorizando cobros conforme a la Ley de Hacienda y la suscripción de contratos.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -114,23 +117,14 @@
     "Jardín Principal de la Comunidad de Lo de Villa",
     "calles colindantes"
    ],
-   "montos": [
-    {
-     "texto": "0 a 30 UMA vigentes",
-     "valor_mxn": null
-    },
-    {
-     "texto": "0.15 UMA por día por metro lineal",
-     "valor_mxn": null
-    }
-   ],
+   "montos": [],
    "beneficiario": {
-    "nombre": "Junta Municipal de Lo de Villa",
-    "tipo": "dependencia"
+    "nombre": "Comunidad de Lo de Villa",
+    "tipo": "fraccionamiento"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Patrimonio Municipal; y Turismo, Fomento Económico y Empresarial",
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercio, Mercados y Restaurantes; Patrimonio Municipal; y Turismo, Fomento Económico y Empresarial",
    "autor": {
     "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -139,7 +133,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:40:38+00:00",
+ "generado": "2026-07-25T15:58:00+00:00",
  "lectura": {
   "chars_ocr": 250966,
   "chars_leidos": 250966,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se inició la sesión con lista de asistencia y quórum; se aplazó la aprobación del acta anterior y se dio lectura al dictamen de adecuaciones presupuestales por $35,875,299.80, sin que se determine su resultado en este fragmento.",
+ "resumen_sesion": "Se realizaron trámites iniciales y se presentó un dictamen de adecuaciones presupuestarias por $35.9 millones, sin registrarse su votación en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los integrantes del cabildo.",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de 11 regidores y 2 faltas justificadas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Al contar con quórum legal, se declaró formalmente instalada la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para esta sesión.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 68 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 68 en la próxima sesión, aplazando su aprobación.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría el dictamen que autoriza las adecuaciones presupuestarias solicitadas por la Tesorería Municipal para febrero 2026, con un total de 71 movimientos por $35,875,299.80 en recursos propios y 16 movimientos por $16,873,238.33 del fondo FORTAMUN.",
+   "resumen": "Se autorizaron las adecuaciones presupuestarias de febrero de 2026, con transferencias entre partidas por $35,875,299.80 en recursos no etiquetados y $16,873,238.33 en FORTAMUN, aprobado por mayoría.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -92,15 +92,15 @@
    "obras": [],
    "montos": [
     {
-     "texto": "35'875,299.80 (Treinta y cinco millones ochocientos setenta y cinco mil doscientos noventa y nueve pesos 30/100 M.N.)",
+     "texto": "$35'875,299.80 (Treinta y cinco millones ochocientos setenta y cinco mil doscientos noventa y nueve pesos 30/100 M.N.)",
      "valor_mxn": 35875299.8
     },
     {
-     "texto": "35,875,299.80",
+     "texto": "$35,875,299.80",
      "valor_mxn": 35875299.8
     },
     {
-     "texto": "16,873,238.33",
+     "texto": "$16,873,238.33",
      "valor_mxn": 16873238.33
     }
    ],
@@ -117,14 +117,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de febrero 2026.",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima la Cuenta Pública mensual de febrero de 2026, con el voto en contra de la Regidora Azucena López Legorreta.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -148,17 +148,14 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó la municipalización de las etapas 1 y 2 del Fraccionamiento Residencial San Javier, con la abstención de la Regidora Azucena López Legorreta.",
+   "resumen": "Se aprobó por unanimidad la municipalización de las Etapas 1 y 2 del Fraccionamiento Residencial San Javier, con la abstención de la Regidora Azucena López Legorreta.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
     "RESIDENCIAL SAN JAVIER"
    ],
-   "obras": [
-    "Circuito San Javier",
-    "Paseo Valle Dorado"
-   ],
+   "obras": [],
    "montos": [
     {
      "texto": "$ 197,750.59 (CIENTO NOVENTA Y SIETE MIL SETECIENTOS CINCUENTA PESOS 59/100 M.N.)",
@@ -166,8 +163,8 @@
     }
    ],
    "beneficiario": {
-    "nombre": "DR. FRANCISCO JAVIER GUTIÉRREZ GRAJEDA",
-    "tipo": "persona"
+    "nombre": "Residencial San Javier",
+    "tipo": "fraccionamiento"
    },
    "votos_en_contra": [],
    "abstenciones": [
@@ -185,7 +182,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para el predio rústico con clave catastral 02-99-93-101-172-000, promovido por Francisco Vaquero Díaz, Andrés Vaquero Díaz, Marcela Vaquero Pinto, Karla Edith Vaquero Orozco y José Alberto Reyes Ochoa, con la abstención de la Regidora Azucena López Legorreta.",
+   "resumen": "Se aprueba el Estudio de Impacto Territorial y Urbano para el predio rústico con clave catastral 02-99-93-101-172-000, promovido por Francisco Vaquero Díaz, Andrés Vaquero Díaz, Marcela Vaquero Pinto, Karla Edith Vaquero Orozco y José Alberto Reyes Ochoa.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -198,7 +195,7 @@
     }
    ],
    "beneficiario": {
-    "nombre": "FRANCISCO VAQUERO DÍAZ, ANDRÉS VAQUERO DÍAZ, MARCELA VAQUERO PINTO, KARLA EDITH VAQUERO OROZCO y JOSÉ ALBERTO REYES OCHO",
+    "nombre": "CC. Francisco Vaquero Díaz, Andrés Vaquero Díaz, Marcela Vaquero Pinto, Karla Edith Vaquero Orozco y José Alberto Reyes ",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -217,7 +214,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó el Reglamento para el Reconocimiento al Mérito Ciudadano del Municipio de Colima, presentado por la Comisión de Gobernación y Reglamentos.",
+   "resumen": "Se aprueba el Reglamento para el Reconocimiento al Mérito Ciudadano del Municipio de Colima, propuesto por el Regidor Emilio Rosario Aldorica Pulido.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -236,7 +233,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se declaró clausurada la sesión a las 13:50 horas.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

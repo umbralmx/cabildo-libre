@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:15:59+00:00",
+ "generado": "2026-07-25T15:33:03+00:00",
  "lectura": {
   "chars_ocr": 22870,
   "chars_leidos": 22870,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Aprobaron la fe de erratas al programa urbano para corregir un predio del Parque Griselda Álvarez y aplazaron la aprobación de actas previas.",
+ "resumen_sesion": "Se aprobó una fe de erratas al programa de ordenamiento territorial para un predio del Parque Griselda Álvarez y se aplazó la aprobación de actas de cabildo.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia para verificar la presencia de los miembros del Cabildo.",
+   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto.",
+   "resumen": "Se dio lectura al orden del día de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aplazó la aprobación de las Actas de Cabildo 51 y 54 para la próxima sesión, con votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por mayoría presentar las actas 51 y 54 en la próxima sesión, con votos en contra de dos regidoras.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "mayoria",
    "colonias": [],
@@ -93,7 +93,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la fe de erratas al Programa Municipal de Ordenamiento Territorial y Desarrollo Urbano de Colima para el predio 02-01-03-085-031-000, corrigiendo su zonificación de espacio verde a equipamiento institucional, en beneficio del proyecto del CRIT.",
+   "resumen": "Se aprobó por unanimidad la fe de erratas al programa municipal de ordenamiento territorial para corregir la zonificación del predio 02-01-03-085-031-000, cambiándola de espacios verdes a equipamiento institucional, en beneficio del Gobierno del Estado de Colima.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -107,15 +107,12 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
-   "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
+   "autor": null
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Agotado el orden del día, se declaró clausurada la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

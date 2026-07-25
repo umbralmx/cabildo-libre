@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:13:04+00:00",
+ "generado": "2026-07-25T15:29:53+00:00",
  "lectura": {
   "chars_ocr": 27571,
   "chars_leidos": 27571,
@@ -15,7 +15,7 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se exentó del impuesto predial a 32 inmuebles del Gobierno del Estado en el Parque Regional Griselda Álvarez y se aplazó la aprobación del acta anterior.",
+ "resumen_sesion": "Se aprobó eximir del impuesto predial a 32 predios del Gobierno del Estado en el Parque Regional Griselda Álvarez, para apoyar el proyecto del CRIT.",
  "puntos": [
   {
    "n": 1,
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró quórum legal e instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 51 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aplazó la aprobación del Acta de Cabildo N° 51 para la próxima sesión, aprobado por unanimidad.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,9 +84,9 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad exentar del impuesto predial a 32 inmuebles del Gobierno del Estado de Colima ubicados en el Parque Regional Metropolitano Griselda Álvarez, por ser bienes de dominio público, beneficiando al proyecto del CRIT.",
+   "resumen": "Se autorizó la exención total del impuesto predial de 32 inmuebles del Gobierno del Estado de Colima en el Parque Regional Griselda Álvarez, aprobado por unanimidad.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -106,7 +106,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

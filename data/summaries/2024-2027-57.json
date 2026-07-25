@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:17:48+00:00",
+ "generado": "2026-07-25T15:34:33+00:00",
  "lectura": {
   "chars_ocr": 35794,
   "chars_leidos": 35794,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la reforma al Reglamento Ambiental (artículos 136 y 142), se aprobaron las disposiciones para el Primer Informe Anual, y se discutieron actas anteriores con votaciones divididas.",
+ "resumen_sesion": "Se aprobaron las actas 51 y 54, la reforma al Reglamento Ambiental y las disposiciones para el Primer Informe Anual.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia, constatando la presencia de la mayoría de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el Acta 51 por unanimidad y el Acta 54 por mayoría, con los votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "resumen": "Se aprobó el Acta 51 por unanimidad y el Acta 54 por mayoría, con votos en contra de las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "mayoria",
@@ -78,11 +78,11 @@
    "beneficiario": null,
    "votos_en_contra": [
     {
-     "nombre": "C. Azucena López Legorreta",
+     "nombre": "Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
@@ -93,7 +93,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la reforma a los artículos 136 y 142 del Reglamento Ambiental para el Desarrollo Sustentable del municipio de Colima, con las abstenciones de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "resumen": "Se aprobó por unanimidad la reforma a los artículos 136 y 142 del Reglamento Ambiental, con abstenciones de las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -104,15 +104,15 @@
    "votos_en_contra": [],
    "abstenciones": [
     {
-     "nombre": "C. Azucena López Legorreta",
+     "nombre": "Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
-   "comision": "Comisión de Protección al Medio Ambiente y Desarrollo Sustentable",
+   "comision": "Comisiones de Gobernación y Reglamentos, y Protección al Medio Ambiente y Desarrollo Sustentable",
    "autor": {
     "nombre": "Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
@@ -121,9 +121,9 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría el Punto de Acuerdo que establece las disposiciones generales para el Primer Informe Anual de la Gestión Administrativa del Gobierno Municipal, fijando la sesión solemne para el 11 de diciembre de 2025 y un tiempo de intervención de 3 minutos por fracción. Se rechazó la propuesta de ampliar a 5 minutos y cambiar el orden de participación.",
+   "resumen": "Se aprobó por mayoría el Punto de Acuerdo para el Primer Informe Anual, con votos en contra de las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
-   "categoria": "tramite",
+   "categoria": "otro",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
@@ -131,11 +131,11 @@
    "beneficiario": null,
    "votos_en_contra": [
     {
-     "nombre": "C. Azucena López Legorreta",
+     "nombre": "Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],

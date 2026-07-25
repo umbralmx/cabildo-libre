@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:31:21+00:00",
+ "generado": "2026-07-25T15:48:26+00:00",
  "lectura": {
   "chars_ocr": 45127,
   "chars_leidos": 45127,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron el traspaso de seis locales en mercados, la declaración de recinto ferial para el Festival Zona Colima Capital, y un convenio de transporte escolar para la zona rural.",
+ "resumen_sesion": "Se aprobaron actas, traspasos de locales en mercados, declaratoria de recinto ferial para el Festival Zona Colima Capital y un convenio de transporte escolar rural.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los munícipes.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al Orden del Día, mismo que fue aprobado sin discusión.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 60, 61, 62, 63 y 64.",
+   "resumen": "Se aprobaron por unanimidad las Actas de Cabildo números 60, 61, 62, 63 y 64.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,9 +84,9 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó por unanimidad el traspaso de seis locales en los Mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón.",
+   "resumen": "Se autorizaron seis traspasos de locales en los Mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -103,19 +103,17 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial diversos puntos de la ciudad para el Festival Zona Colima Capital del 6 al 24 de febrero de 2026, autorizando el cobro de derechos.",
+   "resumen": "Se aprobó declarar recinto ferial diversos puntos de la ciudad para el Festival Zona Colima Capital del 6 al 24 de febrero de 2026.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "reglamento_normativo",
    "votacion": "unanime",
-   "colonias": [
-    "San Francisco de Almoloyan"
-   ],
+   "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "EDUCACIÓN, CULTURA Y RECREACIÓN; HACIENDA MUNICIPAL; COMERCIOS, MERCADOS Y RESTAURANTES; PATRIMONIO MUNICIPAL; TURISMO, FOMENTO ECONOMICO Y EMPRESARIAL",
+   "comision": "Comisiones de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Patrimonio Municipal; Turismo, Fomento Económico y Empresarial",
    "autor": {
     "nombre": "C. Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
@@ -124,15 +122,15 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó por unanimidad la suscripción del Convenio de Colaboración con el C. Federico Lucatero Ramírez para el transporte escolar de estudiantes de zonas rurales.",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la suscripción del Convenio de Colaboración con Federico Lucatero Ramírez para cubrir el transporte escolar de la zona rural.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
    "colonias": [
+    "Astillero de Arriba",
     "El Bordo",
     "Trapichillos",
     "La Media Luna",
-    "Astillero de Arriba",
     "Astillero de Abajo",
     "La Loma",
     "Ignacio Allende"
@@ -145,7 +143,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Gobernación y Reglamentos y Hacienda Municipal",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
     "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -154,7 +152,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentaron asuntos generales: reconocimiento al Festival del Tamal y entrega del Informe Trimestral de Actividades de munícipes.",
+   "resumen": "Se trataron asuntos generales: reconocimiento al Festival del Tamal y entrega de informes trimestrales de actividades de regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -170,7 +168,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "El Presidente Municipal declaró clausurada la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

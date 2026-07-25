@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:09:10+00:00",
+ "generado": "2026-07-25T14:56:14+00:00",
  "lectura": {
   "chars_ocr": 8778,
   "chars_leidos": 8778,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "En la primera sesión del nuevo ayuntamiento se aprobaron los nombramientos de secretario, tesorera, oficial mayor, contralora y comisionado de seguridad, se aplazó la designación de comisiones y se recibió el informe de transición.",
+ "resumen_sesion": "Sesión de instalación del Ayuntamiento: se aprobaron nombramientos de funcionarios y se postergó designación de comisiones.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se verificó la presencia de los integrantes del cabildo.",
+   "resumen": "Se registró la asistencia de los integrantes del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró formalmente instalada la sesión con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +52,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día y fue aprobado por unanimidad.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó por unanimidad el orden del día.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -63,12 +63,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el nombramiento del LAE. J. Francisco Anzar Herrera como Secretario del Ayuntamiento.",
+   "resumen": "Se nombró a J. Francisco Anzar Herrera como Secretario del Ayuntamiento.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -90,8 +93,8 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se dio lectura al acta de la sesión anterior y fue aprobada por unanimidad.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó por unanimidad el acta de la sesión anterior.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -101,12 +104,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "LAE. J. Francisco Anzar Herrera",
+    "id": null
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad el nombramiento de la Licda. Susana Romero Castrejón como Tesorera Municipal.",
+   "resumen": "Se nombró a Susana Romero Castrejón como Tesorera Municipal.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -128,7 +134,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad el nombramiento del Lic. José Manuel Oviedo Guedea como Oficial Mayor.",
+   "resumen": "Se nombró a José Manuel Oviedo Guedea como Oficial Mayor.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -150,7 +156,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad el nombramiento de la Licda. Graciela Montserrat García Mendoza como Contralora Municipal.",
+   "resumen": "Se nombró a Graciela Montserrat García Mendoza como Contralora Municipal.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -172,7 +178,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó por unanimidad el nombramiento del Gral. Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica.",
+   "resumen": "Se nombró a Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -194,7 +200,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca como Jueces Cívicos.",
+   "resumen": "Se nombró a Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca como Jueces Cívicos.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -202,7 +208,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez, Arturo Díaz Menchaca",
+    "nombre": "Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -216,8 +222,8 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó por unanimidad aplazar la designación de comisiones del cabildo para la próxima sesión.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó posponer la designación de comisiones a una próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
@@ -235,7 +241,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se informó que se presentó el informe detallado de las acciones de la Comisión Municipal para la Transmisión de Mando.",
+   "resumen": "Se informó sobre la entrega del informe de la Comisión de Transmisión de Mando.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -254,7 +260,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se indicó que la entrega-recepción de la administración se realizaría al término de la sesión con participación de Contraloría y OSAFIG.",
+   "resumen": "Se instruyó iniciar el proceso de entrega-recepción de la administración municipal al término de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -273,7 +279,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "No hubo asuntos que tratar en el punto de Asuntos Generales.",
+   "resumen": "No hubo asuntos generales que tratar.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -289,7 +295,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Agotado el orden del día, se declaró clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

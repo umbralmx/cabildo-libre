@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:42:58+00:00",
+ "generado": "2026-07-25T16:00:05+00:00",
  "lectura": {
   "chars_ocr": 134293,
   "chars_leidos": 134293,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó arrendar tres inmuebles en Los Tepames y Centro, el programa de salud municipal, compensación a 11 trabajadores, y se postergaron las actas 68 y 69.",
+ "resumen_sesion": "Se aprobaron arrendamientos para biblioteca y oficinas, un programa de salud, compensación a trabajadores y bajas de licencias, además de trámites previos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrando la presencia de 9 regidores y la síndica, con dos faltas justificadas.",
+   "resumen": "Se tomó lista de asistencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las Actas de Cabildo 68 y 69 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aprobó por unanimidad presentar las actas 68 y 69 en la próxima sesión.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -79,18 +79,21 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó por unanimidad la suscripción de tres contratos de arrendamiento para inmuebles utilizados como Biblioteca Pública Municipal “Marina Larios Arreola”, “Financiera para el Bienestar” en Los Tepames, y oficinas en calle Manuel Álvarez 44, colonia Centro, Colima, con montos mensuales de $4,482.91, $4,452.00 y $32,869.14.",
+   "resumen": "Se autorizó celebrar tres contratos de arrendamiento para la Biblioteca Pública Municipal 'Marina Larios Arreola', la Financiera para el Bienestar en Los Tepames, y oficinas en calle Manuel Álvarez 44, Colonia Centro.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [
     "Los Tepames",
-    "Colonia Centro"
+    "Centro"
    ],
    "obras": [],
    "montos": [
@@ -119,7 +122,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad el Programa de Trabajo Municipal de Salud Pública del Municipio de Colima, en el marco del Programa Federal de Municipios Promotores de Salud.",
+   "resumen": "Se aprobó el Programa de Trabajo Municipal de Salud Pública para la certificación de Colima como Municipio Promotor de la Salud.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -138,15 +141,15 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó por unanimidad la celebración de contratos de compensación por desgaste de uso de vehículo particular en favor de 11 trabajadores del H. Ayuntamiento de Colima, con un apoyo quincenal de $409.24 y 50 litros de gasolina mensuales.",
+   "resumen": "Se autorizó celebrar contratos de compensación por desgaste de uso de vehículo particular con 11 trabajadores del Ayuntamiento de Colima.",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
+   "categoria": "convenio",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [
     {
-     "texto": "$409.24 (cuatrocientos nueve pesos 24/100 M.N.) quincenal",
+     "texto": "$409.24 (cuatrocientos nueve pesos 24/100 M.N.)",
      "valor_mxn": 409.24
     }
    ],
@@ -165,18 +168,21 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó dar de baja las licencias de venta de alcohol números B-000630, B-002784 y B-002664, por cese de operación.",
+   "resumen": "Se aprobó dar de baja las licencias de bebidas alcohólicas B-000630, B-002784 y B-002664.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
     "Centro",
     "Las Américas",
-    "Parque Industrial"
+    "Parque Industrial, Lo de Villa"
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Elisa Arias Alcaraz, German Briceño Nápoles, Gustavo Ramírez Torres",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -188,7 +194,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se autorizó la expedición de cuatro licencias de venta de alcohol y un cambio de propietario, para establecimientos como Applebees y Aquí es Colima.",
+   "resumen": "Se autorizó la expedición de cuatro licencias para venta de alcohol y un cambio de propietario de la licencia B-002684.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -201,7 +207,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "CORPORATIVO 999 S.A. DE C.V., ALAN JESÚS RAMOS GÓMEZ, ALFONSO PRECIADO CHAVARRIA, CARMEN MERCEDES MORENO LLERENAS, MIGUE",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -213,12 +222,12 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la municipalización de la etapa única del fraccionamiento La Castellana, al sur de la ciudad.",
+   "resumen": "Se aprobó la municipalización de la Etapa Única del Fraccionamiento La Castellana.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "La Castellana"
+    "LA CASTELLANA"
    ],
    "obras": [
     "5 de Febrero",
@@ -233,7 +242,7 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Braulio Nahum Bravo Bañuelos y/o Jade Grupo Inmobiliario S.A. de C.V.",
+    "nombre": "BRAULIO NAHUM BRAVO BAÑUELOS Y/O JADE GRUPO INMOBILIARIO S.A. DE C.V.",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
@@ -247,34 +256,34 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 4 del fraccionamiento Puerta Real, con fianzas por $1,613,000.00 y $145,500.00 para garantizar obras de urbanización.",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 4 del Fraccionamiento Puerta Real, con fianzas por $1,613,000 y $145,500 para garantizar obras de urbanización.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Puerta Real"
+    "PUERTA REAL"
    ],
    "obras": [
-    "Av. Ley del Municipio Libre",
-    "Calle Alemania",
-    "Calle Suiza",
-    "Calle Holanda",
-    "Calle Española",
-    "Calle Italia",
-    "Calle Francia",
-    "Calle Crisantemo"
+    "AV. LEY DEL MUNICIPIO LIBRE",
+    "CALLE ALEMANIA",
+    "CALLE SUIZA",
+    "CALLE HOLANDA",
+    "CALLE ESPAÑOLA",
+    "CALLE ITALIA",
+    "CALLE FRANCIA",
+    "CALLE CRISANTEMO"
    ],
    "montos": [
     {
      "texto": "$1,613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
-     "valor_mxn": 1613000.0
+     "valor_mxn": 1613000
     },
     {
      "texto": "$145,500.00 (CIENTO CUARENTA Y CINCO MIL QUINIENTOS PESOS 00/100 M.N.)",
-     "valor_mxn": 145500.0
+     "valor_mxn": 145500
     },
     {
-     "texto": "$ 1, 613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
+     "texto": "$ 1,613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
      "valor_mxn": 1613000
     },
     {
@@ -282,7 +291,10 @@
      "valor_mxn": 145500
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "ABEL ALVARADO REBOLLEDO, J. JESÚS GONZÁLEZ HERNÁNDEZ, ERNESTO ALONSO GONZÁLEZ HERNÁNDEZ, JULIÁN CARBAJAL VEGA Y LIC. CAR",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
@@ -294,9 +306,9 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano del lote 02-01-04-080-004-000 en la colonia Jardines de la Corregidora, promovido por el Instituto Colimense de Ciencias Forenses, con un pago de $37,905.73.",
+   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para el lote 02-01-04-080-004-000 en Jardines de la Corregidora, promovido por el Instituto Colimense de Ciencias Forenses, con pago de $37,905.73.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [
     "JARDINES DE LA CORREGIDORA"
@@ -309,12 +321,12 @@
     }
    ],
    "beneficiario": {
-    "nombre": "INSTITUTO COLIMENSE DE CIENCIAS FORENSES",
+    "nombre": "INSTITUTO COLIMENSE DE CIENCIAS FORENSES, A.C. Y/O LUIS ROBERTO RODRÍGUEZ MONTELÓN",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
     "nombre": "Edgar Osiris Alcará Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
@@ -323,17 +335,20 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó por unanimidad declarar el mes de mayo de cada año como el Mes de las y los Maestros en el Municipio de Colima, e instituir la Presea al Mérito Magisterial Prof. Gregorio Torres Quintero, a entregarse en junio de 2026.",
+   "resumen": "Se aprueba declarar el mes de mayo como el Mes de las y los Maestros en el Municipio de Colima, instituir la Presea al Mérito Magisterial Prof. Gregorio Torres Quintero y realizar una ceremonia el 25 de mayo de 2026.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Maestros del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "COMISIÓN DE EDUCACIÓN, CULTURA Y RECREACIÓN",
+   "comision": "Comisión de Educación, Cultura y Recreación",
    "autor": {
     "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -342,7 +357,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se presentó el calendario trimestral de Sesiones Ordinarias de Cabildo para abril a junio de 2026, sin someterse a votación.",
+   "resumen": "Se presenta el calendario trimestral de sesiones ordinarias para los meses de abril a junio de 2026.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -358,7 +373,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se declara clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

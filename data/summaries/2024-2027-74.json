@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:51:27+00:00",
+ "generado": "2026-07-25T16:09:54+00:00",
  "lectura": {
   "chars_ocr": 234736,
   "chars_leidos": 234736,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron actas previas y se presentó un dictamen de transferencias presupuestarias por $27.5 millones, sin resolverse en este fragmento.",
+ "resumen_sesion": "Se aprobaron las actas de cabildo 71, 72 y 73 y se dio lectura al dictamen de adecuaciones presupuestales de abril de 2026.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia registrando la presencia de los miembros del Cabildo.",
+   "resumen": "Se registró la asistencia de los miembros del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +52,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día y una regidora hizo una observación sobre la hora de inicio.",
-   "sentido": "tramite",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "no_determinable",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 71, 72 y 73.",
+   "resumen": "Se aprobaron por unanimidad las Actas de Cabildo números 71, 72 y 73.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias del mes de abril de 2026, incluyendo 89 movimientos por un total de $30,961,075.69.",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar adecuaciones presupuestarias del mes de abril de 2026, con un monto consolidado de $30'961,075.69.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -98,14 +98,6 @@
     {
      "texto": "$30'961,075.69",
      "valor_mxn": 30961075.69
-    },
-    {
-     "texto": "$27,569,322.77",
-     "valor_mxn": 27569322.77
-    },
-    {
-     "texto": "$3,391,752.92",
-     "valor_mxn": 3391752.92
     }
    ],
    "beneficiario": {
@@ -132,17 +124,14 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de abril de 2026.",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al Congreso del Estado la Cuenta Pública del mes de abril de 2026.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "H. Congreso del Estado de Colima",
-    "tipo": "dependencia"
-   },
+   "beneficiario": null,
    "votos_en_contra": [
     {
      "nombre": "C. Azucena López Legorreta",
@@ -163,7 +152,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó suscribir un Convenio de Colaboración entre el Municipio de Colima y la Fundación Humanista de Ayuda a Discapacitados (FHADI) para beneficiar a personas adultas con discapacidad motriz.",
+   "resumen": "Se aprobó por unanimidad suscribir un convenio de colaboración con la Fundación Humanista de Ayuda a Discapacitados (FHADI).",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -171,12 +160,12 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Fundación Humanista de Ayuda a Discapacitados (FHADI)",
+    "nombre": "Fundación Humanista de Ayuda a Discapacitados",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -185,7 +174,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó la Incorporación Municipal Directa del predio intraurbano con clave catastral 02-01-06-165-010-000 del Fraccionamiento 'GIRASOLES', propiedad de Rosaura Pimentel Pimentel.",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal directa del predio intraurbano clave 02-01-06-165-010-000 del fraccionamiento Girasoles, a favor de la propietaria Rosaura Pimentel Pimentel.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -209,7 +198,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se autorizó la apertura de una tienda de abarrotes con venta de cerveza 'ABARROTES CHABELITA' en Av. Colima 498, Colonia Oriental, y el cambio de domicilio de la tienda 'DOS HERMANOS' de Cuatro S/N a Parota Oriente S/N en Las Guásimas.",
+   "resumen": "Se autorizó la expedición de una licencia de apertura para la tienda 'Abarrotes Chabelita' en la Colonia Oriental y el cambio de domicilio de la tienda 'Dos Hermanos' dentro de Las Guásimas.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -219,7 +208,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "ISMELDA CASTELLANOS GUIZAR y SONIA VALDIVIA MONTANO",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -231,7 +223,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó brindar seguridad social (IMSS) y una beca mensual igual al sueldo de un policía de nuevo ingreso a los aspirantes a policías en formación, y la apertura de 13 plazas de policía.",
+   "resumen": "Se aprobó otorgar seguridad social (IMSS) y una beca mensual equiparable al sueldo de un policía a los aspirantes durante su formación inicial, así como la apertura de 13 plazas de policía.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -239,12 +231,12 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "aspirantes a policías municipales",
+    "nombre": "Aspirantes a policías municipales",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Seguridad Pública, Tránsito y Movilidad y Hacienda Municipal",
+   "comision": "Comisiones Conjuntas de Seguridad Pública, Tránsito y Movilidad y de Hacienda Municipal",
    "autor": {
     "nombre": "Edgar Osiris Alcaraz Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
@@ -253,7 +245,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Municipio de Colima y 'VIVO FIT GYM' para otorgar beneficios y descuentos a trabajadores municipales.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con el establecimiento 'VIVO FIT GYM' para otorgar descuentos en servicios de acondicionamiento físico a los trabajadores municipales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -266,7 +258,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Gobernación y Reglamentos y Juventud y Deporte",
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -275,13 +267,25 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó por unanimidad el dictamen que autoriza otorgar un bono a las madres trabajadoras del Ayuntamiento de Colima para el ejercicio fiscal 2026.",
+   "resumen": "Se aprobó el dictamen que autoriza otorgar el Bono a las Madres trabajadoras del Ayuntamiento de Colima para equipararlo al convenio laboral.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [
+    {
+     "texto": "$2,077.20 (dos mil setenta y siete pesos 20/100 M.N.)",
+     "valor_mxn": 2077.2
+    },
+    {
+     "texto": "$733,947.75 (setecientos treinta y tres mil novecientos cuarenta y siete pesos 75/100 M.N.)",
+     "valor_mxn": 733947.75
+    },
+    {
+     "texto": "$224,923.70",
+     "valor_mxn": 224923.7
+    },
     {
      "texto": "$2,012.85",
      "valor_mxn": 2012.85
@@ -295,17 +299,49 @@
      "valor_mxn": 1861.0
     },
     {
-     "texto": "$224,923.70",
-     "valor_mxn": 224923.7
+     "texto": "$171,092.25",
+     "valor_mxn": 171092.25
+    },
+    {
+     "texto": "$18,566.17",
+     "valor_mxn": 18566.17
+    },
+    {
+     "texto": "$56,127.76",
+     "valor_mxn": 56127.76
+    },
+    {
+     "texto": "$369,743.38",
+     "valor_mxn": 369743.38
+    },
+    {
+     "texto": "$171,212.00",
+     "valor_mxn": 171212.0
+    },
+    {
+     "texto": "$786,741.56",
+     "valor_mxn": 786741.56
+    },
+    {
+     "texto": "$157,589.48",
+     "valor_mxn": 157589.48
+    },
+    {
+     "texto": "$192,472.57",
+     "valor_mxn": 192472.57
+    },
+    {
+     "texto": "$177,932.16",
+     "valor_mxn": 177932.16
     }
    ],
    "beneficiario": {
-    "nombre": "madres trabajadoras de base, confianza y supernumerarias del H. Ayuntamiento de Colima",
+    "nombre": "Madres trabajadoras del H. Ayuntamiento de Colima",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Gobernación y Reglamentos y Hacienda Municipal",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -314,7 +350,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó por unanimidad la iniciativa de incentivos fiscales para contribuyentes del Municipio de Colima, que será remitida al Congreso del Estado.",
+   "resumen": "Se aprobó el Punto de Acuerdo para remitir al Congreso del Estado la iniciativa de incentivos fiscales para contribuyentes del Municipio de Colima, incluyendo condonaciones en predial, multas viales, refrendos y panteones.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -322,7 +358,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Contribuyentes del Municipio de Colima",
+    "nombre": "contribuyentes del Municipio de Colima",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
@@ -333,8 +369,8 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales sobre programas sociales, salud y solicitudes de información.",
-   "sentido": "tramite",
+   "resumen": "Se trataron asuntos generales sin votación: logros del Punto Violeta, programa de mejora a viviendas, patrullaje nocturno, problemática del gusano barrenador, solicitudes de información de la Regidora Azucena López, y otros.",
+   "sentido": "no_determinable",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],

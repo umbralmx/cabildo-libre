@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:48:24+00:00",
+ "generado": "2026-07-25T16:07:01+00:00",
  "lectura": {
   "chars_ocr": 116402,
   "chars_leidos": 116402,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "En la sesión se aprobó la Cuenta Pública 2025 por mayoría, se autorizó el convenio México Imparable por unanimidad y se presentó el programa parcial de urbanización sin resolución determinable.",
+ "resumen_sesion": "Se aprobó la cuenta pública 2025 (con dos votos en contra) y un convenio para un centro comunitario en Villas del Bosque; se dio lectura a un proyecto de urbanización sin resolución.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los miembros del Cabildo.",
+   "resumen": "Se pasó lista de asistencia, verificando la presencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día previsto para la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 71 en la próxima sesión.",
+   "resumen": "Se autorizó presentar el Acta de Cabildo número 71 en la próxima sesión, posponiendo su aprobación.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -79,15 +79,12 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Mtro. Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
-   }
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025, con votos en contra de las regidoras López Legorreta y Vizcaíno Aguirre.",
+   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025, con dos votos en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -111,14 +108,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad suscribir el convenio de colaboración con las secretarías federales para la construcción y equipamiento del Centro Comunitario México Imparable en la colonia Villas del Bosque.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la Secretaría de Seguridad y Protección Ciudadana y la Secretaría de Infraestructura, Comunicaciones y Transportes para la construcción y equipamiento del Centro Comunitario México Imparable en la colonia Villas del Bosque.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -126,32 +123,35 @@
     "Villas del Bosque"
    ],
    "obras": [
-    "Construcción y equipamiento del Centro Comunitario 'México Imparable'"
+    "construcción y equipamiento del centro comunitario México Imparable"
    ],
    "montos": [],
-   "beneficiario": {
-    "nombre": "Secretaría de Seguridad y Protección Ciudadana y Secretaría de Infraestructura, Comunicación y Transportes",
-    "tipo": "dependencia"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Desarrollo Urbano y Vivienda, Seguridad Pública, Tránsito y Movilidad, Planeación, Obras y Servicios Públicos, Patrimonio Municipal y Hacienda Municipal",
+   "comision": "Comisiones Conjuntas de Desarrollo Urbano y Vivienda, de Seguridad Pública, Tránsito y Movilidad, de Planeación, Obras y Servicios Públicos, de Patrimonio Municipal y de Hacienda Municipal",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó el Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, promovido por Grupo Gamuve, S.A. de C.V., para desarrollar 53 lotes en 30,000 m².",
+   "resumen": "Se aprueba el Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, promovido por Grupo Gamuve, con un pago de $63,276.37.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "NATIVA RESIDENCIAL"
+    "Fraccionamiento Nativa Residencial",
+    "Hacienda Real",
+    "Terralta"
    ],
-   "obras": [],
+   "obras": [
+    "calle Hacienda Real",
+    "Paseo de la Madrid Hurtado",
+    "avenida Miguel de Cervantes"
+   ],
    "montos": [
     {
      "texto": "$63,276.37",
@@ -166,14 +166,14 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó dar de baja cinco licencias para venta de bebidas alcohólicas de los titulares Elisa Arias Alcaraz, Germán Briceño Nápoles, Gustavo Ramírez Torres, Genoveva Chávez Medina y Directo de la Costa S.A. de C.V.",
+   "resumen": "Se aprueba la baja de cinco licencias comerciales para venta de alcohol a nombre de Elisa Arias Alcaraz, Germán Briceño Nápoles, Gustavo Ramírez Torres, Genoveva Chávez Medina y Directo de la Costa S.A. de C.V.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -191,14 +191,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "LIC. JUAN CARLOS GÓMEZ DÍAZ",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la expedición de cuatro licencias comerciales para venta de bebidas alcohólicas: Cervecería de la Costa (Directo de la Costa S.A. de C.V.), Abarrotes Evita (J. Jesús Barajas Deniz), El Tapatío (Martha Leticia Aguilar Montes) y Boca Salada (Alejandro Javier Silva García).",
+   "resumen": "Se autoriza la expedición de cuatro licencias comerciales para venta de alcohol a Directo de la Costa S.A. de C.V., J. Jesús Barajas Deniz, Martha Leticia Aguilar Montes y Alejandro Javier Silva García.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -215,14 +215,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "LIC. JUAN CARLOS GÓMEZ DÍAZ",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se autorizó dar de baja 7 licencias para venta de bebidas alcohólicas cuyos titulares ya no operan.",
+   "resumen": "Se autorizó dar de baja siete licencias para venta de bebidas alcohólicas en distintas colonias, por ya no funcionar los establecimientos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -233,7 +233,8 @@
     "Residencial Esmeralda",
     "Residencial Santa Bárbara",
     "Centro",
-    "Piscila"
+    "Piscila",
+    "Gómez Lomas Vista Hermosa"
    ],
    "obras": [],
    "montos": [],
@@ -242,14 +243,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "DRA. ITZEL SARAHÍ RÍOS DE LA MORA",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se autorizó la expedición de 4 licencias comerciales para venta de bebidas alcohólicas: Paraíso Drinks, La Encantada, Estación Colimita y Abarrotes Carlos.",
+   "resumen": "Se autorizó la expedición de cuatro nuevas licencias comerciales para venta de bebidas alcohólicas en cuatro establecimientos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -264,9 +265,9 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
@@ -281,8 +282,28 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$ 75'130,244.41",
+     "texto": "$ 51591650 069",
      "valor_mxn": null
+    },
+    {
+     "texto": "$ 147008373 196",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$ 33'382,844.57 4443",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$ 3942728737 5248",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$ 33411224 044",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$ 75'130,244.41",
+     "valor_mxn": 75130244.41
     }
    ],
    "beneficiario": null,
@@ -290,14 +311,14 @@
    "abstenciones": [],
    "comision": "Comisión de Planeación, Obras y Servicios Públicos",
    "autor": {
-    "nombre": "Itzel Sarahí de la Mora",
+    "nombre": "Dra. Itzel Sarahí de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se autorizó suscribir un convenio de colaboración con Financiera para el Bienestar (FINABIEN) para promover servicios financieros e inclusión.",
+   "resumen": "Se autorizó suscribir un convenio de colaboración con el organismo FINABIEN para fomentar la inclusión financiera y servicios de remesas.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -305,21 +326,21 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Financiera para el Bienestar (FINABIEN)",
+    "nombre": "Organismo Descentralizado Financiera para el Bienestar (FINABIEN)",
     "tipo": "dependencia"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se declaró clausurada la sesión a las 14:01 horas.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

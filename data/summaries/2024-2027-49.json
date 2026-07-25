@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T09:52:19+00:00",
+ "generado": "2026-07-25T15:20:33+00:00",
  "lectura": {
   "chars_ocr": 7145,
   "chars_leidos": 7145,
@@ -15,7 +15,7 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Sesión solemne para la entrega de la Presea Profr. Jorge Castell Guerrero a 11 docentes, con honores y mensajes.",
+ "resumen_sesion": "Sesión Solemne para la entrega de la Presea al Mérito Docente 'Profr. Jorge Castell 2025' a 11 docentes, con informes y mensajes.",
  "puntos": [
   {
    "n": 1,
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad posponer la lectura y aprobación de las Actas 47 y 48 para la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aprobó presentar las Actas 47 y 48 en próxima sesión.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se integró la Comisión de Cortesía para recibir a los invitados especiales.",
+   "resumen": "Se integró la Comisión de Cortesía para recibir a los invitados.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -116,7 +116,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se realizaron los Honores a la Bandera y se entonó el Himno Nacional.",
+   "resumen": "Se realizaron Honores a la Bandera y entonación del Himno Nacional.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -148,7 +148,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó y dio la bienvenida a los invitados especiales.",
+   "resumen": "Se dio bienvenida a los invitados especiales.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -180,7 +180,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "El Regidor Federico Rangel Lozano dio un mensaje sobre la labor docente y el premio.",
+   "resumen": "El Regidor Federico Rangel Lozano, presidente de la Comisión, ofreció un mensaje sobre los docentes.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -191,23 +191,20 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Educación, Cultura y Recreación",
-   "autor": {
-    "nombre": "Federico Rangel Lozano",
-    "id": "federico-rangel-lozano"
-   }
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se hizo entrega de la Presea Profr. Jorge Castell 2025 a 11 docentes.",
-   "sentido": "tramite",
-   "categoria": "tramite",
+   "resumen": "Se entregó la Presea 'Profr. Jorge Castell 2025' a 11 docentes galardonados.",
+   "sentido": "aprobado",
+   "categoria": "otro",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Docentes galardonados (11)",
+    "nombre": "Docentes galardonados",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
@@ -218,7 +215,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "La Mtra. Yesenia Figueroa Pinzón, ganadora de la presea, habló en nombre de los docentes.",
+   "resumen": "La Mtra. Yesenia Figueroa Pinzón, ganadora de la presea, habló en nombre de los homenajeados.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -234,7 +231,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "El Mtro. Riult Rivera Gutiérrez dirigió un mensaje a los docentes.",
+   "resumen": "El Presidente Municipal, Mtro. Riult Rivera, ofreció un mensaje.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -250,8 +247,8 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se dio el mensaje de la Gobernadora o su representante.",
-   "sentido": "tramite",
+   "resumen": "No se registró información en el acta sobre este punto.",
+   "sentido": "no_determinable",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -266,7 +263,7 @@
   {
    "n": 16,
    "numeral": "XVI",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

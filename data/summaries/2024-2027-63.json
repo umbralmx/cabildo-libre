@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:25:53+00:00",
+ "generado": "2026-07-25T15:43:22+00:00",
  "lectura": {
   "chars_ocr": 145625,
   "chars_leidos": 145625,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la reforma al Reglamento del Gobierno Municipal creando la Dirección General de Educación; se presentó el Presupuesto de Egresos 2026; se aplazaron actas.",
+ "resumen_sesion": "Se aplazó la aprobación de actas, se reformó el reglamento municipal creando una dirección de educación, y se presentó el presupuesto 2026 por $1,077,523,004.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, constatando la presencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó por unanimidad presentar las actas 60, 61 y 62 en la próxima sesión, aplazando su aprobación.",
+   "resumen": "Se aplazó la aprobación de las Actas 60, 61 y 62 para la próxima sesión.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad reformar, adicionar y derogar diversos artículos del Reglamento del Gobierno Municipal de Colima, creando la Dirección General de Educación, Cultura y Recreación.",
+   "resumen": "Se aprobó reformar, adicionar y derogar diversos artículos del Reglamento del Gobierno Municipal de Colima, creando la Dirección General de Educación, Cultura y Recreación.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -94,17 +94,33 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, Hacienda Municipal y de Educación, Cultura y Recreación",
-   "autor": null
+   "comision": "Comisiones de Gobernación y Reglamentos, Hacienda Municipal y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2026 por un monto total de $1,077,523,004.00, por mayoría de votos, con dos votos en contra.",
+   "resumen": "Se aprobó el Proyecto de Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2026 por un monto total de $1,077,523,004.00.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
-   "colonias": [],
+   "colonias": [
+    "Acatitán",
+    "Asitillero de Abajo",
+    "Astillero de Arriba",
+    "Cardona",
+    "El Alpuyequito",
+    "El Amarradero",
+    "El Bordo",
+    "El Chanal",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "La Estancia"
+   ],
    "obras": [],
    "montos": [
     {
@@ -112,31 +128,47 @@
      "valor_mxn": 1077523004
     },
     {
+     "texto": "$500,460,000.00 (quinientos millones cuatrocientos sesenta mil pesos 00/100 m.n.)",
+     "valor_mxn": 500460000
+    },
+    {
+     "texto": "1,077'523,004.00",
+     "valor_mxn": 1077523004.0
+    },
+    {
+     "texto": "$7,825,000.00",
+     "valor_mxn": 7825000.0
+    },
+    {
+     "texto": "$13,282,973.44",
+     "valor_mxn": 13282973.44
+    },
+    {
+     "texto": "$55'000,000.00",
+     "valor_mxn": 55000000.0
+    },
+    {
+     "texto": "$59'000,000.00",
+     "valor_mxn": 59000000.0
+    },
+    {
+     "texto": "$1,000,000.00",
+     "valor_mxn": 1000000.0
+    },
+    {
+     "texto": "$1,654,250.00",
+     "valor_mxn": 1654250.0
+    },
+    {
      "texto": "$1'077,523,004.00",
      "valor_mxn": 1077523004
     },
     {
-     "texto": "$500,460,000.00",
-     "valor_mxn": 500460000
-    },
-    {
-     "texto": "$55'000,000.00",
-     "valor_mxn": 55000000
-    },
-    {
-     "texto": "$59'000,000.00",
-     "valor_mxn": 59000000
-    },
-    {
-     "texto": "$1,000,000.00",
-     "valor_mxn": 1000000
-    },
-    {
-     "texto": "$81,565,141.00",
+     "texto": "81,565,141.00",
      "valor_mxn": 81565141
     },
     {
-     "texto": "$160,358,932.00",
+     "texto": "160,358,932.00",
      "valor_mxn": 160358932
     }
    ],
@@ -153,12 +185,15 @@
    ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
-   "autor": null
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la expedición de una licencia comercial para funcionamiento de un horno crematorio con nombre comercial 'Crematorio y Sala de Despedida La Paz', ubicado en Av. Ley del Municipio Libre No. 1867, Colonia Puerta Real, a nombre de Julio Cesar Ramos Navarro, por unanimidad.",
+   "resumen": "Se autorizó la expedición de una licencia comercial para funcionamiento de un horno crematorio con nombre comercial \"Crematorio y Sala de Despedida La Paz\", ubicado en Av. Ley del Municipio Libre No. 1867, Colonia Puerta Real, a nombre de Julio Cesar Ramos Navarro.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -168,7 +203,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Julio Cesar Ramos Navarro",
+    "nombre": "JULIO CESAR RAMOS NAVARRO",
     "tipo": "persona"
    },
    "votos_en_contra": [],

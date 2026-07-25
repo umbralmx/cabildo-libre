@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T09:44:33+00:00",
+ "generado": "2026-07-25T15:14:30+00:00",
  "lectura": {
   "chars_ocr": 432637,
   "chars_leidos": 432637,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se instaló la sesión, se modificó el orden del día, se aprobaron actas anteriores y se inició la discusión de adecuaciones presupuestarias por $17.5 millones.",
+ "resumen_sesion": "Se instaló la sesión, se modificó el orden del día para incluir una donación, se aprobaron actas anteriores y se inició la discusión de las adecuaciones presupuestales por 17.5 millones de pesos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente, Síndica, y varios regidores, con una falta justificada.",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia del Presidente, Síndica y once regidores, con una falta justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al haber quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad la modificación al orden del día, que incluyó reformular el punto VII y agregar un dictamen de donación de motocicletas.",
+   "resumen": "Se modificó el orden del día: se cambió la redacción del punto VII (financiamiento) y se agregó un punto XIX para aceptar la donación de dos motocicletas. Aprobado por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas 43 y 45, y se autorizó presentar el acta 44 en la próxima sesión.",
+   "resumen": "Se dispensó la lectura de las actas 43 y 45, se aprobaron ambas, y se autorizó presentar el acta 44 en la próxima sesión. Todo aprobado por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizaron adecuaciones presupuestarias solicitadas por la Tesorería para el mes de agosto de 2025.",
+   "resumen": "Se aprobaron las adecuaciones presupuestarias solicitadas por la Tesorería Municipal correspondientes a agosto de 2025, por un total de $5,483,327.37.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -96,44 +96,69 @@
      "valor_mxn": 17583274.1
     },
     {
-     "texto": "35,874.24",
-     "valor_mxn": 35874.24
-    },
-    {
-     "texto": "33,138.28",
-     "valor_mxn": 33138.28
-    },
-    {
-     "texto": "2,666,769.58",
-     "valor_mxn": 2666769.58
-    },
-    {
-     "texto": "1,315,201.83",
-     "valor_mxn": 1315201.83
-    },
-    {
-     "texto": "660,763.12",
-     "valor_mxn": 660763.12
-    },
-    {
-     "texto": "2,630,522.29",
-     "valor_mxn": 2630522.29
-    },
-    {
-     "texto": "17,583,274.10",
-     "valor_mxn": 17583274.1
-    },
-    {
      "texto": "5,483,327.37",
-     "valor_mxn": 5483327.37
-    },
-    {
-     "texto": "$5,483,327.37",
      "valor_mxn": 5483327.37
     }
    ],
    "beneficiario": {
     "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó remitir al Congreso del Estado los resultados de la Cuenta Pública del mes de agosto de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó al Municipio de Colima a contratar un crédito simple con BANOBRAS por hasta 32.5 millones de pesos, con garantía del FAISMUN, para obra pública. Fue aprobado por mayoría, con el voto en contra de la Regidora Azucena López Legorreta.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$32,500,000.00 (Treinta y dos millones quinientos mil pesos 00/100 m.n.)",
+     "valor_mxn": 32500000
+    },
+    {
+     "texto": "treinta y dos millones quinientos mil pesos",
+     "valor_mxn": 32500000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Municipio de Colima",
     "tipo": "dependencia"
    },
    "votos_en_contra": [
@@ -150,66 +175,9 @@
    }
   },
   {
-   "n": 6,
-   "numeral": "VI",
-   "resumen": "Se autorizó remitir al H. Congreso del Estado los resultados de la Cuenta Pública del mes de agosto de 2025.",
-   "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
-   "votacion": "mayoria",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [
-    {
-     "nombre": "C. Azucena López Legorreta",
-     "id": "azucena-lopez-legorreta"
-    }
-   ],
-   "abstenciones": [],
-   "comision": "Comisión de Hacienda Municipal",
-   "autor": {
-    "nombre": "Alondra Isabel López Alonso",
-    "id": "alondra-isabel-lopez-alonso"
-   }
-  },
-  {
-   "n": 7,
-   "numeral": "VII",
-   "resumen": "Se autorizó al Municipio de Colima a contratar uno o varios financiamientos por hasta 32,500,000 pesos, con tasa fija, para adelanto de recursos del FAISMUN, aprobado por mayoría.",
-   "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
-   "votacion": "mayoria",
-   "colonias": [],
-   "obras": [],
-   "montos": [
-    {
-     "texto": "$32,500,000.00",
-     "valor_mxn": 32500000
-    },
-    {
-     "texto": "treinta y dos millones quinientos mil pesos",
-     "valor_mxn": 32500000
-    }
-   ],
-   "beneficiario": null,
-   "votos_en_contra": [
-    {
-     "nombre": "C. Azucena López Legorreta",
-     "id": "azucena-lopez-legorreta"
-    }
-   ],
-   "abstenciones": [],
-   "comision": "Comisión de Hacienda Municipal",
-   "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
-  },
-  {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó celebrar un convenio de colaboración con la Comisión Federal de Electricidad para la recaudación del Derecho de Alumbrado Público (DAP).",
+   "resumen": "Se autorizó al Ayuntamiento de Colima celebrar un convenio de colaboración con la Comisión Federal de Electricidad para la recaudación del Derecho de Alumbrado Público.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -224,14 +192,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Alondra Isabel López Alonso",
+    "nombre": "Licda. Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó suscribir un convenio de colaboración con Donadores Compulsivos I.A.P. para implementar un programa comunitario de medidas reeducativas en el Juzgado Cívico Municipal.",
+   "resumen": "Se autorizó la suscripción de un convenio de colaboración con Donadores Compulsivos I.A.P. para implementar un programa comunitario de sanciones con medidas reeducativas al servicio comunitario.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -240,7 +208,7 @@
    "montos": [],
    "beneficiario": {
     "nombre": "Donadores Compulsivos I.A.P.",
-    "tipo": "otro"
+    "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -253,7 +221,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó suscribir un convenio de colaboración con APAC Colima Centro Integral de Rehabilitación I.A.P. para implementar un programa comunitario de medidas reeducativas en el Juzgado Cívico Municipal.",
+   "resumen": "Se autorizó la suscripción de un convenio de colaboración con APAC Colima Centro Integral de Rehabilitación I.A.P. para implementar un programa comunitario similar.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -262,7 +230,7 @@
    "montos": [],
    "beneficiario": {
     "nombre": "APAC Colima Centro Integral de Rehabilitación I.A.P.",
-    "tipo": "otro"
+    "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -275,7 +243,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se autorizó la expedición de seis licencias comerciales para establecimientos con venta y consumo de bebidas alcohólicas en las colonias Centro, Vista Hermosa, Gregorio Torres Quintero, Rincón del Colibrí, Infonavit La Estancia y Morelos.",
+   "resumen": "Se autorizó la expedición de seis licencias comerciales con venta de bebidas alcohólicas: Abarrotes Don Chano, Cremería y Abarrotes Lega, Abarrotes Mariel, Frutería Colibrí, Modelorama Solidaridad y Restaurante Cronos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -301,7 +269,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó la realización de la Expo Col 2025 los días 26, 27 y 28 de septiembre, declarando recinto ferial en el centro histórico y autorizando cobros de derechos y aprovechamientos.",
+   "resumen": "Se aprobó la realización de la Expo Col 2025 los días 26, 27 y 28 de septiembre, declarando recinto ferial varios espacios del centro histórico y autorizando cobros de derechos.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -332,7 +300,7 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Turismo, Fomento Económico y Empresarial; y Patrimonio Municipal",
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Turismo, Fomento Económico y Empresarial; y Patrimonio Municipal",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -341,25 +309,25 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó la convocatoria para otorgar la Presea al Mérito Docente 'Profr. Jorge Castell Guerrero 2025', con un estímulo económico de seis mil pesos por docente.",
+   "resumen": "Se aprobó la convocatoria para la Presea al Mérito Docente 'Profr. Jorge Castell Guerrero 2025', que premia a diez docentes con seis mil pesos cada uno.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [
     {
-     "texto": "seis mil pesos",
+     "texto": "la cantidad de seis mil pesos",
      "valor_mxn": 6000
     }
    ],
    "beneficiario": {
-    "nombre": "docentes del Municipio de Colima",
+    "nombre": "Docentes del Municipio de Colima",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación y Hacienda Municipal",
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
    "autor": {
     "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -368,7 +336,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se autorizó la obra de ampliación del panteón municipal de Tepames (primera etapa) con una inversión de $2,600,000.00.",
+   "resumen": "Se autorizó la ampliación del Panteón Municipal de Tepames, primera etapa, con una inversión de $2,600,000.00.",
    "sentido": "aprobado",
    "categoria": "obra_publica",
    "votacion": "unanime",
@@ -380,37 +348,37 @@
    ],
    "montos": [
     {
-     "texto": "$2,600,000.00 (Dos millones seiscientos mil pesos 00/100 M.N.)",
+     "texto": "2,600,000.00",
      "valor_mxn": 2600000
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Localidad de Tepames",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Planeación, Obras y Servicios Públicos",
    "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización 'PASEO MONARCA', promovido por Aida Horta Quiroz, con 47 lotes habitacionales y áreas de cesión.",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización 'Paseo Monarca', promovido por Aida Horta Quiroz, con 47 lotes habitacionales y áreas de cesión.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Lo de Villa",
-    "Colonia Ejidal"
+    "Colonia Ejidal",
+    "Lo de Villa"
    ],
-   "obras": [],
-   "montos": [
-    {
-     "texto": "$25,909.50",
-     "valor_mxn": 25909.5
-    }
+   "obras": [
+    "PASEO MONARCA"
    ],
+   "montos": [],
    "beneficiario": {
     "nombre": "Aida Horta Quiroz",
     "tipo": "persona"
@@ -419,21 +387,25 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 16,
    "numeral": "XVI",
-   "resumen": "Se aprobó el Programa Parcial de Urbanización Sendero Siboney, promovido por Jaime Antonio Giovannini García.",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización “SENDERO SIBONEY” promovido por el Arq. Jaime Antonio Giovannini García.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "El Chanal"
+    "El Chanal",
+    "Villa de Álvarez",
+    "SENDERO SIBONEY"
    ],
-   "obras": [],
+   "obras": [
+    "SENDERO SIBONEY"
+   ],
    "montos": [
     {
      "texto": "$36,149.36",
@@ -441,7 +413,7 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Arq. Jaime Antonio Giovannini García",
+    "nombre": "Jaime Antonio Giovannini García",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -455,11 +427,13 @@
   {
    "n": 17,
    "numeral": "XVII",
-   "resumen": "Se aprobó la fe de erratas al Programa Parcial de Urbanización La Benjamina, corrigiendo el nombre del uso y los porcentajes de áreas.",
+   "resumen": "Se aprobó la fe de erratas al Programa Parcial de Urbanización “LA BENJAMINA” para corregir el nombre del uso de suelo y los porcentajes de áreas, promovido por Emilia Navarrete Díaz.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "LA BENJAMINA"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": {
@@ -477,12 +451,18 @@
   {
    "n": 18,
    "numeral": "XVIII",
-   "resumen": "Se aprobó la Incorporación Municipal Anticipada de la Etapa 2 del Fraccionamiento Rivera del Jazmín II, promovido por DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 2 del Fraccionamiento “RIVERA DEL JAZMÍN II”, promovido por DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "RIVERA DEL JAZMÍN II"
+   ],
+   "obras": [
+    "PRIVADA ADALBERTO TORRES",
+    "PRIVADA RAMONA MESINA",
+    "AV. FRANCISCO RAMIREZ VILLAREAL"
+   ],
    "montos": [
     {
      "texto": "$430,400.00 (CUATROCIENTOS TREINTA MIL. CUATROCIENTOS PESOS 00/100 M.N.)",
@@ -508,12 +488,27 @@
   {
    "n": 19,
    "numeral": "XIX",
-   "resumen": "Se trataron asuntos generales: reporte de actividades de salud, presentación de un punto de acuerdo sobre incentivos fiscales por obras del Puente Arco Norte, y comentarios del Presidente Municipal.",
+   "resumen": "Se trataron asuntos generales: informe de actividades de la Comisión de Salud, presentación de un punto de acuerdo sobre incentivos fiscales por obras del Puente Arco Norte (turnado a comisión), y comentarios del Presidente Municipal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "Prados del Sur",
+    "Francisco Villa",
+    "Ignacio Allende",
+    "La Estancia",
+    "Piscila",
+    "Tepames"
+   ],
+   "obras": [
+    "Pavimentación de la carretera en km 110 de Ignacio Allende",
+    "Alcantarillado pluvial en La Estancia",
+    "Instalación de colector boca de tormenta",
+    "Rehabilitación de red de alcantarillado",
+    "Colocación de muro de contención en Arroyo Pereyra (colonia Prados del Sur)",
+    "Construcción de protección marginal",
+    "Colocación de muro de contención en Arroyo El Tecolote (colonia Francisco Villa)"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],

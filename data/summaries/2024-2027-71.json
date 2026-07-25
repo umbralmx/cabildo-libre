@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:46:09+00:00",
+ "generado": "2026-07-25T16:05:08+00:00",
  "lectura": {
   "chars_ocr": 299995,
   "chars_leidos": 299995,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron las actas de sesiones anteriores y se dio lectura al dictamen de adecuaciones presupuestarias por más de 76 millones de pesos.",
+ "resumen_sesion": "Se aprobaron actas de cabildo; se presentó dictamen de adecuaciones presupuestales, sin votación en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los integrantes del Cabildo.",
+   "resumen": "Se pasó lista de asistencia, declarándose la presencia de 11 miembros.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión, pese a una observación sobre la hora de inicio.",
+   "resumen": "Se declaró quórum legal e instalada la sesión, a pesar de la observación de la regidora Azucena López Legorreta sobre la hora de inicio.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de Cabildo números 68, 69 y 70, con las abstenciones de dos regidoras.",
+   "resumen": "Se aprobaron por unanimidad las actas 68, 69 y 70, con las abstenciones de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -83,7 +83,7 @@
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Licda. Diana Gabriela Vizcaíno",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
@@ -93,7 +93,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría la autorización para que la Tesorería realice las adecuaciones presupuestarias de marzo 2026, con votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias correspondientes a marzo de 2026, aprobado por mayoría con votos en contra de dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -103,10 +103,6 @@
     {
      "texto": "$76'015,699.30 (Setenta y seis millones quince mil seiscientos noventa y nueve pesos 30/100 M.N.)",
      "valor_mxn": 76015699.3
-    },
-    {
-     "texto": "9,895,293.46",
-     "valor_mxn": 9895293.46
     }
    ],
    "beneficiario": {
@@ -126,14 +122,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría la remisión de la Cuenta Pública de marzo 2026 al Congreso del Estado, con votos en contra de las mismas regidoras.",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de marzo de 2026, por mayoría con dos votos en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -157,38 +153,36 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Alondra Isabel López Alonso",
+    "nombre": "Licda. Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad la inscripción con letras doradas de los nombres de personas ilustres en el Auditorio General Manuel Álvarez, con un gasto de hasta 100,000 pesos.",
+   "resumen": "Se aprobó por unanimidad declarar el Auditorio General Manuel Álvarez como recinto para inscribir en letras doradas los nombres de personas ilustres del municipio, y se estableció el procedimiento correspondiente.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [
-    {
-     "texto": "cien mil pesos",
-     "valor_mxn": 100000
-    }
-   ],
-   "beneficiario": null,
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Personas Ilustres del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Educación, Cultura y Recreación y de Patrimonio Municipal",
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación y de Patrimonio Municipal",
    "autor": {
-    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó aceptar el avalúo de los predios 02-99-90-043-328-000 y 02-99-92-039-003-000, fijando un valor de $2,631.00/m², y se autorizó a la propietaria Rosa Elena Rodríguez Pérez pagar $2,338,893.23 por el área de cesión.",
+   "resumen": "Se aprobó aceptar el avalúo de los predios 02-99-90-043-328-000 y 02-99-92-039-003-000, con valor unitario de $2,631.00/m², fijando un total a pagar por cesión de $2,338,893.23.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
@@ -196,22 +190,23 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$2,338,893.23",
+     "texto": "$2,338,893.23 (Dos Millones Trescientos Treinta Y Ocho Mil Ochocientos Noventa y Tres Pesos 23/100 M.N.)",
      "valor_mxn": 2338893.23
     },
     {
      "texto": "$2,631.00 (Dos mil seiscientos treinta y un Pesos 00/100 M.N.)",
-     "valor_mxn": 2631
+     "valor_mxn": 2631.0
     },
     {
-     "texto": "$2,338,893.23 (Dos Millones Trescientos Treinta Y Ocho Mil Ochocientos Noventa y Tres Pesos 23/100 M.N.)",
+     "texto": "$2,631.00",
+     "valor_mxn": 2631.0
+    },
+    {
+     "texto": "$2,338,893.23",
      "valor_mxn": 2338893.23
     }
    ],
-   "beneficiario": {
-    "nombre": "Rosa Elena Rodríguez Pérez",
-    "tipo": "persona"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [
     {
@@ -219,37 +214,41 @@
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriela Vizcaíno Aguilar",
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Claudia Janeth Farías López",
+    "nombre": "Licda. Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la Incorporación Municipal Anticipada de la Etapa Única del Fraccionamiento Carsol Chevrolet Colima, promovido por Luis Miguel Solana Esposito, con fianzas por $429,539.56 y $1,347,745.41.",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la etapa única del fraccionamiento CARSOL CHEVROLET COLIMA, ubicado al norte de la ciudad, con 2 lotes y fianzas por $429,539.56 y $1,347,745.41.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "CARSOL CHEVROLET COLIMA"
+   ],
+   "obras": [
+    "AVENIDA TECNOLÓGICO"
+   ],
    "montos": [
     {
-     "texto": "$ 429,539.56 (CUATROCIENTOS VEINTINUEVE MIL QUINIENTOS TREINTA Y NUEVE PESOS 56/100 M.N.)",
+     "texto": "$429,539.56",
      "valor_mxn": 429539.56
     },
     {
-     "texto": "$ 1,347,745.41 (UN MILLÓN TRESCIENTOS CUARENTA Y SIETE MIL SETECIENTOS CUARENTA Y CINCO PESOS 41/100 M.N.)",
+     "texto": "$1,347,745.41",
      "valor_mxn": 1347745.41
     }
    ],
    "beneficiario": {
-    "nombre": "Luis Miguel Solana Esposito",
+    "nombre": "C. LUIS MIGUEL SOLANA ESPOSITO",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -261,19 +260,19 @@
    ],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la Incorporación Municipal Anticipada de las Etapas 2 a 7 del Fraccionamiento Lomas de San Germán II, promovido por Germán Bayardo Aguilar, con fianzas por $781,984.02 y $3,119,941.22.",
+   "resumen": "Se aprobó la incorporación municipal anticipada de las etapas 2 a 7 del fraccionamiento LOMAS DE SAN GERMÁN II, con 188 lotes y fianzas por $781,984.02 y $3,119,941.22.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Lomas de San Germán II"
+    "LOMAS DE SAN GERMÁN II"
    ],
    "obras": [
     "AV. LICEO DE VARONES",
@@ -286,30 +285,30 @@
    ],
    "montos": [
     {
-     "texto": "$ 781,984.02 (SETECIENTOS OCHENTA Y UN MIL NOVECIENTOS OCHENTA Y CUATRO PESOS 02/100 M.N.)",
+     "texto": "$781,984.02",
      "valor_mxn": 781984.02
     },
     {
-     "texto": "$ 3,119,941.22 (TRES MILLONES CIENTO DIECINUEVE MIL NOVECIENTOS CUARENTA Y UN PESOS 22/100 M.N.)",
+     "texto": "$3,119,941.22",
      "valor_mxn": 3119941.22
     }
    ],
    "beneficiario": {
-    "nombre": "Germán Bayardo Aguilar",
+    "nombre": "SR. GERMÁN BAYARDO AGUILAR",
     "tipo": "persona"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Claudia Janeth Farías López",
+    "nombre": "Licda. Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para los lotes 02-04-66-024-005-000 y 02-04-66-024-006-000 en el Fraccionamiento Granjas y Campestres del Chanal, promovido por Brenda Guadalupe Romaña Russi y Ana María Casillas Alcalá, para un aprovechamiento mixto comercial y habitacional.",
+   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para los lotes 02-04-66-024-005-000 y 02-04-66-024-006-000 en el Fraccionamiento Granjas y Campestres del Chanal, promovido por Brenda Guadalupe Romaña Russi y Ana María Casillas Alcalá, para un aprovechamiento mixto.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -324,23 +323,23 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Brenda Guadalupe Romaña Russi y Ana María Casillas Alcalá",
+    "nombre": "BRENDA GUADALUPE ROMAÑA RUSSI Y ANA MARÍA CASILLAS ALCALÁ",
     "tipo": "persona"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó por unanimidad declarar el Patio Central de la Presidencia Municipal como Recinto Oficial para la Sesión Extraordinaria de Cabildo del 29 de abril de 2026, donde se realizará el Cabildo Infantil.",
+   "resumen": "Se aprobó declarar el Patio Central de la Presidencia Municipal como recinto oficial para la Sesión Extraordinaria de Cabildo Infantil 2026 el 24 de abril de 2026 a las 17:00 horas.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [
     "Colonia Centro"
@@ -352,14 +351,14 @@
    "abstenciones": [],
    "comision": null,
    "autor": {
-    "nombre": "Mtro. Federico Rangel Lozano",
-    "id": "federico-rangel-lozano"
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó por unanimidad el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico del Municipio de Colima, tomándole la protesta de ley.",
+   "resumen": "Se aprobó el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico del Municipio de Colima, y se le tomó protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -381,12 +380,14 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales: entrega de informes trimestrales de regidores, comentarios sobre la reparación de la estatua El Arriero y una intervención sobre la legalidad de la sesión.",
+   "resumen": "Se dieron a conocer informes trimestrales de actividades, se informó sobre la reparación de la estatua El Arriero, y se registró una queja de la Regidora Azucena López sobre la legalidad de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "reparación de la estatua El Arriero"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
@@ -397,7 +398,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión a las 11:16 horas del 15 de abril de 2026.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T09:39:39+00:00",
+ "generado": "2026-07-25T15:09:07+00:00",
  "lectura": {
   "chars_ocr": 4525,
   "chars_leidos": 4525,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Sesión solemne para la realización del Cabildo Joven 2025, con entrega de reconocimientos y mensaje del presidente municipal.",
+ "resumen_sesion": "Sesión Solemne para la instalación y reconocimiento del Cabildo Joven 2025, con trámites protocolarios y aprobación de diferir actas.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrando la presencia de los integrantes del Cabildo.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente, Síndica y regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Por unanimidad se aprobó presentar las actas 43 y 44 en la próxima sesión.",
+   "resumen": "Se aprobó por unanimidad presentar las Actas de Cabildo N° 43 y 44 en la próxima sesión, difiriendo su aprobación.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -79,12 +79,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se designaron las comisiones de cortesía para la sesión.",
+   "resumen": "Se designaron las comisiones de cortesía.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -100,7 +103,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se decretó un receso para dar paso al desarrollo del Cabildo Joven 2025.",
+   "resumen": "Se decretó un receso para el desarrollo del Cabildo Joven.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -116,7 +119,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se desarrolló la sesión del Cabildo Joven 2025 a cargo del Instituto de la Juventud.",
+   "resumen": "El Instituto de la Juventud desarrolló la sesión del Cabildo Joven 2025.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -132,7 +135,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se reanudó la sesión solemne del Cabildo.",
+   "resumen": "Se reanudó la sesión solemne después del receso.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -155,10 +158,7 @@
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "Cabildo Joven 2025",
-    "tipo": "ciudadania"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
@@ -167,7 +167,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "El Presidente Municipal, Mtro. Riult Rivera Gutiérrez, dirigió un mensaje a los presentes.",
+   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:48:45+00:00",
+ "generado": "2026-07-25T16:07:27+00:00",
  "lectura": {
   "chars_ocr": 4590,
   "chars_leidos": 4590,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "La sesión se enfocó en la instalación y reconocimiento del Cabildo Infantil 2026, con trámites administrativos previos.",
+ "resumen_sesion": "Sesión extraordinaria para instalar el Cabildo Infantil 2026, con entrega de reconocimientos a los niños integrantes.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
+   "resumen": "Se tomó lista de asistencia, registrando presencia del Presidente Municipal, Síndica y la mayoría de regidores, con dos faltas justificadas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las actas 71 y 72 en la próxima sesión, aplazando su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "Se autorizó por unanimidad presentar las actas 71 y 72 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -79,15 +79,12 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Mtro. Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
-   }
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se decretó un receso para realizar la sesión del Cabildo Infantil 2026.",
+   "resumen": "Se decretó un receso para dar inicio a la Sesión Extraordinaria del Cabildo Infantil 2026.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -103,7 +100,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se reanudó la sesión extraordinaria.",
+   "resumen": "Se reanudó la sesión a las 19:02 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -119,7 +116,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se entregaron reconocimientos a los integrantes del Cabildo Infantil 2026.",
+   "resumen": "Se entregaron reconocimientos a los 14 integrantes del Cabildo Infantil listados en el acta.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -135,7 +132,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes.",
+   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes y declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:33:36+00:00",
+ "generado": "2026-07-25T15:50:30+00:00",
  "lectura": {
   "chars_ocr": 176126,
   "chars_leidos": 176126,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se declaró instalada la sesión, se aprobó el acta anterior y se dio lectura al dictamen de adecuaciones presupuestales por $30.3 millones.",
+ "resumen_sesion": "Sesión extraordinaria con asistencia; se aprobó el acta anterior y se leyó un dictamen de adecuaciones presupuestarias por 30.3 millones de pesos, sin voto registrado.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Lista de asistencia de los regidores presentes.",
+   "resumen": "Lista de asistencia de regidores y síndico; se constató la presencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Lectura del Orden del Día por el Secretario del Ayuntamiento.",
+   "resumen": "Lectura del Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el Acta de Cabildo número 65, previa dispensa de su lectura.",
+   "resumen": "Aprobación por unanimidad del Acta de Cabildo N° 65.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el dictamen que autoriza a la Tesorería Municipal a realizar adecuaciones presupuestales de enero de 2026, con ampliaciones y reducciones por un total de 30,358,101.65 y 1,506,496.30 pesos.",
+   "resumen": "Se autorizó a la Tesorería Municipal a realizar adecuaciones presupuestales de enero 2026, por montos que incluyen 1'506,496.30 y 30,358,101.65 pesos. Aprobado por mayoría, con dos votos en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -96,52 +96,12 @@
      "valor_mxn": 30358101.65
     },
     {
-     "texto": "292,531.03",
-     "valor_mxn": 292531.03
-    },
-    {
-     "texto": "2,309.06",
-     "valor_mxn": 2309.06
-    },
-    {
-     "texto": "10,766.06",
-     "valor_mxn": 10766.06
-    },
-    {
-     "texto": "147,226.10",
-     "valor_mxn": 147226.1
-    },
-    {
-     "texto": "109,541.77",
-     "valor_mxn": 109541.77
-    },
-    {
-     "texto": "33,196.92",
-     "valor_mxn": 33196.92
-    },
-    {
-     "texto": "239,267.82",
-     "valor_mxn": 239267.82
-    },
-    {
-     "texto": "1,439,193.58",
-     "valor_mxn": 1439193.58
-    },
-    {
-     "texto": "357,000.00",
-     "valor_mxn": 357000.0
-    },
-    {
-     "texto": "378,173.94",
-     "valor_mxn": 378173.94
+     "texto": "1'506,496.30",
+     "valor_mxn": 1506496.3
     },
     {
      "texto": "30,358,101.65",
      "valor_mxn": 30358101.65
-    },
-    {
-     "texto": "1,506,496.30",
-     "valor_mxn": 1506496.3
     }
    ],
    "beneficiario": {
@@ -161,14 +121,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Alondra Isabel López Alonso",
+    "nombre": "Regidora Licda. Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de enero de 2026.",
+   "resumen": "Se autorizó remitir al H. Congreso del Estado de Colima la Cuenta Pública Mensual de enero 2026. Aprobado por mayoría, con dos votos en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -199,16 +159,16 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento Los Volcanes etapas 3 y 4, mediante un convenio entre el Ayuntamiento y la empresa Urbanizadora y Vivienda Plainco, S.A. de C.V., requiriendo una fianza por un año.",
+   "resumen": "Se aprueba la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento Los Volcanes etapas 3 y 4, mediante convenio con el urbanizador, quien deberá presentar fianza.",
    "sentido": "aprobado",
-   "categoria": "fraccionamiento",
+   "categoria": "obra_publica",
    "votacion": "unanime",
    "colonias": [
-    "Los Volcanes"
+    "Fraccionamiento “LOS VOLCANES” ETAPAS 3 Y 4",
+    "LOS VOLCANES ETAPAS 3 Y 4"
    ],
    "obras": [
-    "Infraestructura de Alumbrado Público",
-    "Infraestructura de Alumbrado Público del Fraccionamiento Los Volcanes Etapas 3 y"
+    "Infraestructura de Alumbrado Público"
    ],
    "montos": [],
    "beneficiario": {
@@ -226,12 +186,12 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó dar de baja seis licencias para venta de bebidas alcohólicas, de los titulares y domicilios listados, por cese de operaciones.",
+   "resumen": "Se aprueba dar de baja seis licencias comerciales para venta de bebidas alcohólicas cuyos establecimientos ya no funcionan.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Oriental",
+    "Col. Oriental",
     "Residencial Victoria",
     "Jardines de la Hacienda",
     "El Moralete",
@@ -244,14 +204,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó corregir el giro de la licencia número 1431 de 'Autoservicio' a 'Depósito de Cerveza, Vinos y Licores', para el establecimiento 'PUNTO FIESTA' de Super Kiosko S.A. de C.V., ubicado en Blvd. Chávez Carrillo No. 516, Col. Placetas Estadio.",
+   "resumen": "Se autoriza corregir el giro comercial de la solicitud 1431 de Autoservicio a Depósito de Cerveza, Vinos y Licores para el establecimiento Punto Fiesta en Placetas Estadio.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -268,14 +228,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se autorizó el cambio de giro de la tienda 'ABARROTES VEGA', ubicada en Mariano de la Madrid No. 1399, colonia La Guadalupe, de 'Tienda de abarrotes con venta de cerveza' a 'Tienda de abarrotes con venta de cerveza, vinos y licores', a favor de Gabriela Aida Castellanos Sánchez.",
+   "resumen": "Se autorizó un cambio de giro de tienda de abarrotes con venta de cerveza a tienda de abarrotes con venta de cerveza, vinos y licores, a nombre de Gabriela Aida Castellanos Sánchez, en Mariano de la Madrid 1399, colonia La Guadalupe.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -292,7 +252,7 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   }

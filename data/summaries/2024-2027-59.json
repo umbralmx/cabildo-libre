@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T05:21:57+00:00",
+ "generado": "2026-07-25T15:38:35+00:00",
  "lectura": {
   "chars_ocr": 440412,
   "chars_leidos": 440412,
@@ -15,12 +15,12 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "La sesión inició con lista de asistencia, quórum y aprobación de trámites. Se presentó el dictamen de adecuaciones presupuestarias por $49.3 millones.",
+ "resumen_sesion": "Sesión Extraordinaria con lista de asistencia, declaración de quórum, lectura de orden del día, y lectura del dictamen de adecuaciones presupuestales por $49,334,692.05.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente y 12 regidores, con una regidora vía remota y una falta justificada.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +52,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
-   "sentido": "tramite",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "no_determinable",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -68,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las actas de Cabildo 56, 57 y 58 en la próxima sesión.",
+   "resumen": "Se aprobó por unanimidad presentar las Actas 56, 57 y 58 en la próxima sesión.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -79,12 +79,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría el dictamen que autoriza las adecuaciones presupuestarias solicitadas por la Tesorería Municipal para noviembre de 2025, por montos totales de $5,069,514.97 y $3,545,544.80.",
+   "resumen": "Se aprobó por mayoría realizar las adecuaciones presupuestales solicitadas por la Tesorería Municipal para noviembre de 2025, por montos de $5,069,514.97 y $3,545,544.80.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -96,6 +99,26 @@
      "valor_mxn": 49334692.05
     },
     {
+     "texto": "4,000,000.00",
+     "valor_mxn": 4000000.0
+    },
+    {
+     "texto": "300,000.00",
+     "valor_mxn": 300000.0
+    },
+    {
+     "texto": "1,000,000.00",
+     "valor_mxn": 1000000.0
+    },
+    {
+     "texto": "2,700,000.00",
+     "valor_mxn": 2700000.0
+    },
+    {
+     "texto": "5,799,832.32",
+     "valor_mxn": 5799832.32
+    },
+    {
      "texto": "351,497.41",
      "valor_mxn": 351497.41
     },
@@ -104,12 +127,12 @@
      "valor_mxn": 90252.3
     },
     {
-     "texto": "5,159.74",
-     "valor_mxn": 5159.74
-    },
-    {
      "texto": "215,252.05",
      "valor_mxn": 215252.05
+    },
+    {
+     "texto": "34.00",
+     "valor_mxn": 34.0
     },
     {
      "texto": "800,467.87",
@@ -120,27 +143,23 @@
      "valor_mxn": 2600000.0
     },
     {
-     "texto": "34.00",
-     "valor_mxn": 34.0
+     "texto": "5,159.74",
+     "valor_mxn": 5159.74
     },
     {
-     "texto": "1,568,611.55",
-     "valor_mxn": 1568611.55
+     "texto": "1,551,142.30",
+     "valor_mxn": 1551142.3
     },
     {
-     "texto": "1,705,523.51",
-     "valor_mxn": 1705523.51
+     "texto": "458,040.03",
+     "valor_mxn": 458040.03
     },
     {
-     "texto": "614,074.60",
-     "valor_mxn": 614074.6
+     "texto": "90,898.39",
+     "valor_mxn": 90898.39
     },
     {
-     "texto": "5'069,514.97 (Cinco millones sesenta y nueve mil quinientos catorce pesos 97/100 m.n.)",
-     "valor_mxn": 5069514.97
-    },
-    {
-     "texto": "$5,069,514.97",
+     "texto": "5,069,514.97",
      "valor_mxn": 5069514.97
     },
     {
@@ -172,7 +191,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de noviembre de 2025.",
+   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado los resultados de la Cuenta Pública del mes de noviembre de 2025.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -203,7 +222,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad dar de baja la licencia B-002619 para venta de bebidas alcohólicas de José Pimentel Nava, en Colonia Puerta del Sol.",
+   "resumen": "Se aprobó por unanimidad dar de baja la licencia B-002619 para venta de bebidas alcohólicas, del titular José Pimentel Nava, ubicada en Av. Constitución 2136, Col. Puerta del Sol.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -213,8 +232,8 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "José Pimentel Nava",
-    "tipo": "persona"
+    "nombre": "Licencia B-002619",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -227,7 +246,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad la expedición de tres licencias comerciales para venta de alcohol y un cambio de giro, en diversas colonias.",
+   "resumen": "Se aprobó por unanimidad la expedición de tres licencias comerciales para venta de bebidas alcohólicas y un cambio de giro, en las colonias Placetas Estadio, Centro, Gregorio Torres Quintero y Esmeralda.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -251,7 +270,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se trataron asuntos generales sin votación: comentarios sobre ruido de motocicletas y felicitaciones al Presidente.",
+   "resumen": "En asuntos generales se realizaron comentarios sobre el reglamento de ruido de motocicletas y felicitaciones al Presidente Municipal, sin resoluciones formales.",
    "sentido": "tramite",
    "categoria": "reglamento_normativo",
    "votacion": "no_determinable",
