@@ -42,6 +42,7 @@ import urllib.request
 from pathlib import Path
 
 from limpieza import limpiar
+from roster_match import build_index, emparejar
 
 ROOT = Path(__file__).resolve().parent.parent
 ACTAS_JSON = ROOT / "data" / "actas.json"
@@ -74,9 +75,10 @@ INSTRUCCION = (
     "los asuntos de fondo que se decidieron, no el trámite. Nombra lo concreto "
     "(colonias, obras, licencias, montos) si aparece. No inventes; si la sesión sólo "
     "tuvo trámites o el texto no alcanza, dilo con sobriedad.\n\n"
-    "Luego, para cada punto del órden del día, redacta estos campos:\n"
-    "- resumen: una o dos frases en lenguaje llano sobre qué se puso a consideración. "
-    "Nombra colonias, fraccionamientos o calles si el acta los menciona.\n"
+    "Luego, para cada punto del órden del día, redacta una FICHA DE DECISIÓN con estos "
+    "campos:\n"
+    "- resumen: la decisión en una o dos frases llanas y concretas — QUÉ se resolvió, A "
+    "QUIÉN beneficia y CON CUÁNTO dinero si aplica. Nada de relleno genérico.\n"
     "- sentido: uno de exactamente estos valores, según lo que el acta declare: "
     "'aprobado', 'rechazado', 'aplazado', 'retirado', 'tramite' (puntos de mero "
     "procedimiento: lista de asistencia, quórum, lectura del órden, clausura), o "
@@ -96,10 +98,24 @@ INSTRUCCION = (
     "en pesos, o null si no puedes normalizarlo con certeza>}. NUNCA inventes, estimes ni "
     "sumes cifras; NO incluyas montos de otros puntos; si el punto no declara dinero, "
     "devuelve lista vacía.\n"
+    "- beneficiario: a quién se dirige el recurso o el acto (la contraparte de un convenio, "
+    "la empresa de una obra, la persona nombrada, la dependencia). Objeto "
+    "{\"nombre\": <tal como aparece>, \"tipo\": <UNO de 'empresa','persona','dependencia',"
+    "'fraccionamiento','ciudadania','otro'>}, o null si el punto no lo declara.\n"
+    "- votos_en_contra: lista de NOMBRES de regidores que el acta diga que votaron en contra "
+    "(p. ej. 'votos en contra de las Regidoras…'), tal como los nombra. Vacía si fue unánime "
+    "o si el acta no lo dice. No infieras quién.\n"
+    "- abstenciones: lista de NOMBRES de regidores que se abstuvieron, según el acta. Vacía "
+    "si no las hay o no se declaran.\n"
+    "- comision: la comisión que dictamina o presenta el punto (p. ej. 'Comisión de "
+    "Hacienda'), tal como aparece, o null.\n"
+    "- autor: NOMBRE del regidor que presenta o da lectura al dictamen, o null si no se dice.\n"
     "Responde SOLO con JSON válido, sin texto alrededor, con esta forma:\n"
     '{"resumen_sesion": "...", "puntos": [{"n": <entero>, "resumen": "...", '
     '"sentido": "...", "categoria": "...", "votacion": "...", "colonias": [], '
-    '"obras": [], "montos": [{"texto": "...", "valor_mxn": null}]}]}'
+    '"obras": [], "montos": [{"texto": "...", "valor_mxn": null}], '
+    '"beneficiario": {"nombre": "...", "tipo": "..."}, "votos_en_contra": [], '
+    '"abstenciones": [], "comision": null, "autor": null}]}'
 )
 
 SENTIDOS = {"aprobado", "rechazado", "aplazado", "retirado", "tramite", "no_determinable"}
@@ -108,7 +124,10 @@ CATEGORIAS = {
     "nombramiento", "convenio", "reglamento_normativo", "patrimonio", "tramite", "otro",
 }
 VOTACIONES = {"unanime", "mayoria", "no_determinable"}
-ESQUEMA = 2  # bumped when the per-punto shape changes; lets the aggregator tell tiers apart
+BENEFICIARIO_TIPOS = {"empresa", "persona", "dependencia", "fraccionamiento", "ciudadania", "otro"}
+ESQUEMA = 3  # bumped when the per-punto shape changes; lets the aggregator tell tiers apart
+
+_ROSTER = build_index()  # for mapping dissenter/abstainer/author names to roster ids
 
 
 def build_messages(acta: dict, ocr_text: str) -> list[dict]:
@@ -188,6 +207,33 @@ def _clean_montos(raw: object, cap: int = 20) -> list[dict]:
     return out
 
 
+def _clean_beneficiario(raw: object) -> dict | None:
+    """A {nombre, tipo} object, or None. Never invented: only kept when the model
+    gave a name."""
+    if not isinstance(raw, dict):
+        return None
+    nombre = (raw.get("nombre") or "").strip()
+    if not nombre:
+        return None
+    tipo = raw.get("tipo")
+    return {"nombre": nombre[:120], "tipo": tipo if tipo in BENEFICIARIO_TIPOS else "otro"}
+
+
+def _clean_personas(raw: object, cap: int = 13) -> list[dict]:
+    """Model-named regidores → [{nombre, id}] mapped to the roster. An unmatched
+    name keeps id None (a suplente or an OCR-garbled name), never forced onto a
+    roster slot — same honesty rule as the attendance extractor."""
+    out: list[dict] = []
+    seen: set[str] = set()
+    for s in _clean_strings(raw, cap=cap, maxlen=80):
+        key = s.lower()
+        if key in seen:
+            continue
+        seen.add(key)
+        out.append({"nombre": s, "id": emparejar(s, _ROSTER)})
+    return out
+
+
 def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
     """Validate the model output against the agenda; drop anything malformed.
     Returns (resumen_sesion, puntos)."""
@@ -207,6 +253,8 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
         sentido = row.get("sentido")
         categoria = row.get("categoria")
         votacion = row.get("votacion")
+        comision = (row.get("comision") or "").strip() if isinstance(row.get("comision"), str) else None
+        autor_nombre = (row.get("autor") or "").strip() if isinstance(row.get("autor"), str) else ""
         out.append({
             "n": n,
             "numeral": by_n[n].get("numeral"),
@@ -217,6 +265,12 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
             "colonias": _clean_strings(row.get("colonias")),
             "obras": _clean_strings(row.get("obras")),
             "montos": _clean_montos(row.get("montos")),
+            "beneficiario": _clean_beneficiario(row.get("beneficiario")),
+            "votos_en_contra": _clean_personas(row.get("votos_en_contra")),
+            "abstenciones": _clean_personas(row.get("abstenciones")),
+            "comision": comision or None,
+            "autor": ({"nombre": autor_nombre[:120], "id": emparejar(autor_nombre, _ROSTER)}
+                      if autor_nombre else None),
         })
     return resumen_sesion, out
 
