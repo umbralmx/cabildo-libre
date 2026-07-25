@@ -181,9 +181,15 @@ scoped to what the acta actually states.
   "not the budget" nota, attendance `tasa` excludes `no_determinable` sessions, and suplentes are
   listed. Numbers grow with each batch; the categoría/votación/colonia/monto aggregates stay thin
   until the `resumir_forzar` backfill lifts the older 23 summaries to `esquema 2`.
-- **L4 — Analytics section** on the site: client-side charts (dataviz + Umbral brand),
-  with the honesty caveats rendered inline, not buried. **Scope: build the 15 `ya` indicators
-  first** (see the dictionary below), then extend once L5 lands.
+- **L4 — Analytics section** on the site ✅ *(2026-07-25)*: `site/panel.html` + `panel.js`,
+  linked from the buscador. Eight sections over the indicators that survived the review —
+  cobertura+profundidad (T1+N1), cadencia (I3), mezcla de asuntos (D2, absorbs I2), dinero
+  declarado (M4), asistencia (P1) + suplencias (P5), colonias as a lookup list (G1+N2),
+  integridad (T3). **No chart encodes anything by colour** — `--u-muted` and `--u-signal`
+  separate by only ΔE 1.8 in deuteranopia, so every chart is single-series and the whole
+  signal budget goes to the reading-depth meter; chart titles are generated from the data so
+  they cannot go stale; every chart has a table twin with a PDF link. Design calls in
+  `docs/diseno.md`. **Pending:** the indicators the windowing fix just unblocked (below).
 - **L5 — Tier A+ extraction *(new — added 2026-07-24)*.** The one extraction pass that unlocks the
   11 `1 paso` indicators. **Decision-record core ✅ (2026-07-24):** `summarize_colima.py` now emits
   a *ficha de decisión* per punto (`esquema 3`) — `beneficiario {nombre, tipo}` (to whom),
@@ -233,7 +239,14 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 **Ready for the agent:**
 4. Once the secret exists: trigger `procesar.yml` (workflow_dispatch) to OCR + summarize a first batch of the term; verify output quality on real DeepSeek summaries (this is the one thing not yet proven end-to-end — no key was available at build time).
 5. **Site integration for Phase 2** ✅ *(done 2026-07-20)*: summaries render under each agenda item (timeline + results) with a `sentido` label and an AI/OCR disclaimer; lazy full-content search over `data/ocr/` with honest coverage; `processor/build_site_index.py` compiles `site/summaries.json` + `site/fulltext.json` (wired into `procesar.yml`). Section-number brand flourish added. Verified by a headless render smoke-test — **not yet a visual pass** (browser tool was down); eyeball the live page.
-6. ~~Watch the OCR text cap~~ — **confirmed as the pipeline's dominant defect (2026-07-25).** The 45K cap truncates **17 of 25 actas** and only **25% of the term's OCR text reaches the model**. All 91 puntos with `sentido: no_determinable` come from truncated actas; the 8 actas that fit whole have **zero**. It is not model quality or an acta that stays silent — the outcome is recorded at the end of each punto, past the window. Reading all 74 actas whole costs **under $1**; the blocker is that a 595K-char acta doesn't fit one call, so the fix is **windowing + per-punto merge**, not a bigger cap. This gates D1/D3/D4/D6/M1/M2 — see `docs/indicadores-revision.md` §1.
+6. ~~Watch the OCR text cap~~ — **found, fixed and verified (2026-07-25).** Diagnosis: The 45K cap truncates **17 of 25 actas** and only **25% of the term's OCR text reaches the model**. All 91 puntos with `sentido: no_determinable` come from truncated actas; the 8 actas that fit whole have **zero**. It is not model quality or an acta that stays silent — the outcome is recorded at the end of each punto, past the window. Reading all 74 actas whole costs **under $1**; the blocker is that a 595K-char acta doesn't fit one call, so the fix is **windowing + per-punto merge**, not a bigger cap. This gates D1/D3/D4/D6/M1/M2 — see `docs/indicadores-revision.md` §1. **Fixed the same day** — `summarize_colima.py` now reads each acta in
+   overlapping 45K windows and merges the per-punto records (`fusionar_puntos`), governed by
+   *a stated outcome beats an unread one*. **Result on the 25 actas: `no_determinable` went
+   from 91/158 (58%) to 0/150 (0%); reading depth 25% → 100%; 25/25 actas read whole; 101
+   windows, 0 failed, 0 conflicts; cost ~$0.19.** Every extracted field roughly tripled —
+   comisión 28%→75%, autor 37%→83%, montos con cifra 52→129, colonias 57→100, contrapartes
+   45→66, eventos de disenso 11→37. **This unblocks D1, D3, D4, D5, D6, M1, M2, N3, N4** —
+   the indicators the review deferred; they are now buildable and not yet on the panel.
 
 ---
 
