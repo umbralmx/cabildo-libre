@@ -373,15 +373,32 @@ def _union(listas: list[list], clave) -> list:
     return out
 
 
+# Merge precedence per field: values earlier in the tuple are *weaker* and lose to
+# any later one. A window that only caught a punto in passing — in the agenda
+# reading or the closing recap — tends to call it procedural; a window that read the
+# discussion calls it what it was. So `tramite` yields to a stated outcome exactly
+# as `no_determinable` does. (Acta 51 punto 18 was demoted this way: a Convenio de
+# Hermanamiento approved by the cabildo, filed as mere procedure.)
+DEBILES = {
+    "sentido": ("no_determinable", "tramite"),
+    "votacion": ("no_determinable",),
+    "categoria": ("otro", "tramite"),
+}
+
+
 def fusionar_puntos(parciales: list[list[dict]]) -> tuple[list[dict], list[int]]:
     """Merge the per-punto records that each window produced.
 
-    The governing rule: **a stated outcome beats an unread one.** A window that
-    never saw a punto's vote reports `no_determinable`; that must not overwrite a
-    window that did see it. Where two windows both state an outcome and disagree,
-    the majority reading wins (ties → the later window, since the vote is recorded
-    at the end of the discussion) and the punto is reported as contested rather
-    than silently resolved. Lists are unioned; nothing is averaged or invented.
+    The governing rule: **a stated outcome beats a weaker reading.** A window that
+    never saw a punto's vote reports `no_determinable`, and one that only glimpsed
+    it reports `tramite`; neither may overwrite a window that read the decision
+    (see `DEBILES`). Where two windows both state a real outcome and disagree, the
+    majority wins (ties → the later window, since the vote is recorded at the end
+    of the discussion) and the punto is reported as contested rather than silently
+    resolved. A weak-vs-strong disagreement is *not* contested — the precedence
+    settles it by rule, so `puntos_en_conflicto` stays what it should be: the puntos
+    where two windows each read a decision and read it differently, which are the
+    ones worth checking against the PDF. Lists are unioned; nothing is averaged.
 
     Returns (puntos, numeros_en_conflicto)."""
     por_n: dict[int, list[dict]] = {}
@@ -395,12 +412,16 @@ def fusionar_puntos(parciales: list[list[dict]]) -> tuple[list[dict], list[int]]
         base = dict(versiones[-1])
         base.pop("_ventana", None)
 
-        for campo, indeterminado in (("sentido", "no_determinable"),
-                                     ("votacion", "no_determinable"),
-                                     ("categoria", "otro")):
-            dichos = [v for v in versiones if v.get(campo) not in (None, indeterminado)]
+        for campo, debiles in DEBILES.items():
+            # Strongest tier that any window actually reported wins the field.
+            for nivel in range(len(debiles), -1, -1):
+                excluidos = set(debiles[:nivel])
+                dichos = [v for v in versiones
+                          if v.get(campo) is not None and v[campo] not in excluidos]
+                if dichos:
+                    break
             if not dichos:
-                base[campo] = indeterminado
+                base[campo] = debiles[0]
                 continue
             conteo = Counter(v[campo] for v in dichos)
             top = conteo.most_common(1)[0][1]

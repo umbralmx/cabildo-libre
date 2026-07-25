@@ -5,6 +5,13 @@ on:
     - cron: "0 14 * * 1,4" # lunes y jueves 8:00 Colima
   push:
     branches: [main]
+  # Cuando `procesar.yml` termina un lote, commitea con el GITHUB_TOKEN — y GitHub
+  # a propósito NO dispara workflows con los push hechos con ese token. Sin este
+  # gatillo, las actas recién procesadas se quedaban en el repo sin llegar al sitio
+  # hasta el siguiente lunes o jueves. Se publica, no se re-scrapea.
+  workflow_run:
+    workflows: ["Procesar actas (Fase 2 — OCR + resúmenes)"]
+    types: [completed]
   workflow_dispatch:
 
 permissions:
@@ -18,8 +25,9 @@ concurrency:
 
 jobs:
   actualizar:
-    # En push solo se publica; el re-scrapeo corre programado o manual.
-    if: github.event_name != 'push'
+    # El re-scrapeo corre programado o a mano. En push y al terminar un lote de
+    # procesamiento sólo se publica: los datos ya están en el repo.
+    if: ${{ github.event_name == 'schedule' || github.event_name == 'workflow_dispatch' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -35,7 +43,12 @@ jobs:
 
   publicar:
     needs: actualizar
-    if: ${{ always() && needs.actualizar.result != 'failure' }}
+    # No republicar si el lote que nos despertó falló a medias.
+    if: >-
+      ${{ always()
+          && needs.actualizar.result != 'failure'
+          && (github.event_name != 'workflow_run'
+              || github.event.workflow_run.conclusion == 'success') }}
     runs-on: ubuntu-latest
     environment:
       name: github-pages
