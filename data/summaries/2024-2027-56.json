@@ -3,64 +3,172 @@
  "no_acta": 56,
  "fecha": "2025-12-04",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T16:03:51+00:00",
- "resumen_sesion": "Se aprobó una licencia de venta de alcohol y un cambio de domicilio para un restaurante, se dieron de baja tres licencias de alcohol, y se presentaron reformas a reglamentos comerciales y de alcohol.",
+ "generado": "2026-07-25T04:00:56+00:00",
+ "resumen_sesion": "Se aprobaron una licencia y un cambio de domicilio para venta de alcohol, se dieron de baja tres licencias, y se reformaron reglamentos comerciales y de alcohol.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se verificó quórum legal y se declaró instalada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al Orden del Día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el Acta N° 55 y se aplazó la lectura de las Actas 51 y 54 para la próxima sesión.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó el acta 55 y se autorizó presentar las actas 51 y 54 en la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó la expedición de una licencia comercial (cambio de domicilio para restaurante 'Poca Sushi' y apertura de autoservicio 'Súper Kiosko') para venta de alcohol.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizaron una licencia de apertura para autoservicio 'Súper Kiosko' y un cambio de domicilio para restaurante 'Poca Sushi' con venta de alcohol.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Esmeralda Norte",
+    "Real Vista Hermosa",
+    "San Bernardo"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó dar de baja tres licencias para venta de bebidas alcohólicas de establecimientos en Colima.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizó dar de baja tres licencias de venta de alcohol por cese de operaciones.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Las Américas",
+    "Puerta Paraíso",
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó dictamen para reformar el Reglamento para el funcionamiento de establecimientos comerciales, industriales y de servicio.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la resolución del dictamen de reformas al reglamento de establecimientos comerciales.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos, y Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para reformar el Reglamento para la venta y consumo de bebidas alcohólicas.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la resolución del dictamen de reformas al reglamento de venta de alcohol.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se declaró clausurada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

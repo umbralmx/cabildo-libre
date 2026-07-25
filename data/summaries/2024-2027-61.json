@@ -3,46 +3,115 @@
  "no_acta": 61,
  "fecha": "2025-12-31",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T16:05:22+00:00",
- "resumen_sesion": "Se aprobó el festival 'Colima Resplandece 2025' con declaratoria de recinto ferial, autorización de cobros y permisos, y se aprobaron las actas de cabildo 59 y 60.",
+ "generado": "2026-07-25T04:04:04+00:00",
+ "resumen_sesion": "Se aprobó el acta 59, se aplazó el acta 60 y se discutió el festival Colima Resplandece 2025, pero el resultado de la votación no se determinó en el acta.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Lista de asistencia de regidores, síndica y presidente municipal.",
-   "sentido": "tramite"
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Declaración de quórum legal e instalación formal de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Lectura del orden del día por el Secretario del Ayuntamiento.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Aprobación del acta 59 por unanimidad y autorización para presentar el acta 60 en la próxima sesión.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó el Acta 59 por unanimidad y se aplazó la aprobación del Acta 60 para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Lectura y discusión del dictamen que autoriza el festival 'Colima Resplandece 2025', declarando recinto ferial, autorizando cobros y firma de contratos. Se presentaron posicionamientos a favor y una abstención.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el dictamen para autorizar el festival Colima Resplandece 2025, con declaración de recinto ferial y cobro de derechos. La votación no se especifica en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Clausura de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

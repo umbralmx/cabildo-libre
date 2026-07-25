@@ -3,100 +3,293 @@
  "no_acta": 70,
  "fecha": "2026-03-27",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:21:31+00:00",
- "resumen_sesion": "Se aprobaron arrendamientos en Los Tepames y Centro, programa de salud, compensaciones a 11 trabajadores, y se aplazó aprobación de actas.",
+ "generado": "2026-07-25T04:10:22+00:00",
+ "resumen_sesion": "Se aprobaron arrendamientos de inmuebles públicos, el programa de salud municipal, compensaciones a trabajadores, bajas de licencias de alcohol, y se trataron temas de fraccionamientos y una presea magisterial.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Lista de asistencia de los miembros del Cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se tomó lista de asistencia de los regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Declaración de quórum legal e instalación de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Lectura del Orden del Día de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Solicitud de autorización para presentar las Actas de Cabildo N° 68 y 69 en la próxima sesión, aprobada por unanimidad.",
-   "sentido": "aplazado"
+   "resumen": "Se aprobó presentar las actas de cabildo 68 y 69 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Autorización para celebrar contratos de arrendamiento de inmuebles para Biblioteca Pública Municipal en Los Tepames y oficinas en calle Manuel Álvarez, Colonia Centro.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizaron tres contratos de arrendamiento para la biblioteca Marina Larios Arreola, la Financiera para el Bienestar (en Los Tepames) y una finca en la calle Manuel Álvarez 44, colonia Centro, para oficinas municipales.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Los Tepames",
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$4,482.91 (cuatro mil cuatrocientos ochenta y dos pesos 91/100 M.N.)",
+     "valor_mxn": 4482.91
+    },
+    {
+     "texto": "$4,452.00 (cuatro mil cuatrocientos cincuenta y dos pesos 00/100 M.N.)",
+     "valor_mxn": 4452.0
+    },
+    {
+     "texto": "$32,869.14 (treinta y dos mil ochocientos sesenta y nueve pesos 14/100 M.N.)",
+     "valor_mxn": 32869.14
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Aprobación del Programa de Trabajo Municipal de Salud Pública para certificar a Colima como Municipio Promotor de la Salud.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó el Programa de Trabajo Municipal de Salud Pública para certificar a Colima como Municipio Promotor de la Salud.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Autorización de contratos de compensación por desgaste de uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizó la celebración de contratos de compensación por uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$409.24 (cuatrocientos nueve pesos 24/100 M.N.) quincenal",
+     "valor_mxn": 409.24
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Dictamen para dar de baja tres licencias de venta de bebidas alcohólicas (B-000630, B-002784, B-002664).",
-   "sentido": "no_determinable"
+   "resumen": "Se autorizó dar de baja tres licencias para venta de bebidas alcohólicas: B-000630, B-002784 y B-002664.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Dictamen para expedir cuatro licencias comerciales para venta de alcohol y un cambio de propietario.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió la expedición de cuatro licencias comerciales para venta de alcohol y un cambio de propietario, pero el acta no contiene el resultado.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Dictamen para autorizar la municipalización de la Etapa Única del Fraccionamiento LA CASTELLANA.",
-   "sentido": "no_determinable"
+   "resumen": "Se consideró la municipalización del fraccionamiento La Castellana, pero se desconoce el resultado.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "LA CASTELLANA"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Dictamen para autorizar la incorporación municipal anticipada de la Etapa 4 del Fraccionamiento PUERTA REAL.",
-   "sentido": "no_determinable"
+   "resumen": "Se trató la incorporación municipal anticipada de la etapa 4 del fraccionamiento Puerta Real, resultado no determinado.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "PUERTA REAL"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Dictamen para aprobar el Estudio de Impacto Territorial y Urbano de un lote en Jardines de la Corregidora.",
-   "sentido": "no_determinable"
+   "resumen": "Se analizó el estudio de impacto territorial para un lote en Jardines de la Corregidora, sin resolución conocida.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [
+    "JARDINES DE LA CORREGIDORA"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Dictamen para instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de los maestros.",
-   "sentido": "no_determinable"
+   "resumen": "Se propuso instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de los maestros, pero el acta no indica el resultado.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Presentación del calendario trimestral de sesiones ordinarias de abril a junio.",
-   "sentido": "tramite"
+   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias de abril a junio de 2026.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Clausura de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

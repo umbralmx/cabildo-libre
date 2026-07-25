@@ -3,70 +3,193 @@
  "no_acta": 69,
  "fecha": "2026-03-14",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:21:14+00:00",
- "resumen_sesion": "Sesión en la que se aplazó el acta anterior y se trataron adecuaciones presupuestales, cuenta pública, municipalización del fraccionamiento Residencial San Javier, estudio de impacto territorial y un reglamento de mérito ciudadano.",
+ "generado": "2026-07-25T04:09:24+00:00",
+ "resumen_sesion": "Se aprobó diferir el acta 68; los demás puntos (presupuesto, cuenta pública, municipalización, estudio de impacto, reglamento) no tienen resultado determinable en el acta.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los integrantes del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
    "resumen": "Se declaró quórum legal y se instaló la sesión.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se leyó el orden del día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar el acta de la sesión anterior en la próxima sesión.",
-   "sentido": "aplazado"
+   "resumen": "Se aprobó por unanimidad presentar el acta de la sesión 68 en la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó dictamen para autorizar adecuaciones presupuestales de la Tesorería Municipal por febrero de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar si se aprobaron las adecuaciones presupuestales de febrero 2026.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$35'875,299.80",
+     "valor_mxn": 35875299.8
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de febrero de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar si se aprobó remitir la Cuenta Pública de febrero 2026 al Congreso del Estado.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó dictamen para autorizar la municipalización del Fraccionamiento Residencial San Javier.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar si se aprobó la municipalización del fraccionamiento Residencial San Javier.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "RESIDENCIAL SAN JAVIER"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "RESIDENCIAL SAN JAVIER",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para autorizar el Estudio de Impacto Territorial y Urbano de un predio rústico con clave catastral 02-99-93-101-172-000.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar si se aprobó el estudio de impacto territorial y urbano para un predio rústico.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para aprobar el Reglamento para el Reconocimiento al Mérito Ciudadano del Municipio de Colima.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar si se aprobó el Reglamento para el Reconocimiento al Mérito Ciudadano.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ciudadanía del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
    "resumen": "Se clausuró la sesión.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

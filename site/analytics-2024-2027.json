@@ -1,51 +1,74 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-25T02:34:43+00:00",
+ "generado": "2026-07-25T04:12:29+00:00",
  "cobertura": {
   "actas_en_termino": 74,
   "con_resumen": 25,
-  "con_tier_a": 4,
+  "con_tier_a": 25,
   "con_asistencia": 25,
-  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 4 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 25 de 74 actas del término tienen resumen y 25 tienen los campos analíticos (categoría, votación, colonias, montos). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 269,
   "n_sustantivos": 158,
   "por_sentido": {
-   "no_determinable": 93,
-   "aprobado": 55,
+   "no_determinable": 91,
+   "aprobado": 57,
    "aplazado": 10
   },
   "por_categoria": {
-   "nombramiento": 7,
-   "tramite": 5,
-   "convenio": 5,
-   "otro": 5,
-   "licencia": 2,
-   "patrimonio": 2,
-   "fraccionamiento": 1,
-   "presupuesto_finanzas": 1
+   "tramite": 35,
+   "presupuesto_finanzas": 23,
+   "licencia": 22,
+   "fraccionamiento": 18,
+   "convenio": 15,
+   "otro": 15,
+   "reglamento_normativo": 10,
+   "nombramiento": 9,
+   "patrimonio": 9,
+   "obra_publica": 2
   },
   "por_votacion": {
-   "unanime": 17,
-   "no_determinable": 10,
-   "mayoria": 1
+   "no_determinable": 91,
+   "unanime": 59,
+   "mayoria": 8
   },
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 22,
-  "n_con_valor": 22,
-  "suma_declarada_mxn": 1039287759.57,
+  "n_declarados": 52,
+  "n_con_valor": 52,
+  "suma_declarada_mxn": 2643699982.08,
   "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados.",
   "mayores": [
+   {
+    "texto": "$1'077,523,004.00, (Mil setenta y siete millones quinientos veintitrés mil cuatro pesos 00/100 m.n)",
+    "valor_mxn": 1077523004,
+    "acta": "2024-2027-63",
+    "no_acta": 63,
+    "punto": 6
+   },
    {
     "texto": "$661,792,051.55",
     "valor_mxn": 661792051.55,
     "acta": "2024-2027-53",
     "no_acta": 53,
     "punto": 6
+   },
+   {
+    "texto": "$101,517,849.00",
+    "valor_mxn": 101517849,
+    "acta": "2024-2027-64",
+    "no_acta": 64,
+    "punto": 6
+   },
+   {
+    "texto": "$76'015,699.30 (Setenta y seis millones quince mil seiscientos noventa y nueve pesos 30/100 M.N.)",
+    "valor_mxn": 76015699.3,
+    "acta": "2024-2027-71",
+    "no_acta": 71,
+    "punto": 5
    },
    {
     "texto": "$61,749,463.90",
@@ -55,11 +78,32 @@
     "punto": 6
    },
    {
+    "texto": "$55,000,000.00",
+    "valor_mxn": 55000000,
+    "acta": "2024-2027-54",
+    "no_acta": 54,
+    "punto": 7
+   },
+   {
     "texto": "$52,702,113.40",
     "valor_mxn": 52702113.4,
     "acta": "2024-2027-53",
     "no_acta": 53,
     "punto": 6
+   },
+   {
+    "texto": "$51,338,068.18",
+    "valor_mxn": 51338068.18,
+    "acta": "2024-2027-54",
+    "no_acta": 54,
+    "punto": 5
+   },
+   {
+    "texto": "$49,334,692.05 (Cuarenta y nueve millones trescientos treinta y cuatro mil seiscientos noventa y dos pesos 05/100 M.N.)",
+    "valor_mxn": 49334692.05,
+    "acta": "2024-2027-59",
+    "no_acta": 59,
+    "punto": 5
    },
    {
     "texto": "$44,329,967.19",
@@ -83,73 +127,63 @@
     "punto": 6
    },
    {
-    "texto": "$19,502,569.77",
-    "valor_mxn": 19502569.77,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
+    "texto": "$35'875,299.80",
+    "valor_mxn": 35875299.8,
+    "acta": "2024-2027-69",
+    "no_acta": 69,
+    "punto": 5
+   },
+   {
+    "texto": "$32,500,000.00",
+    "valor_mxn": 32500000,
+    "acta": "2024-2027-54",
+    "no_acta": 54,
     "punto": 6
    },
    {
-    "texto": "$18,363,102.14",
-    "valor_mxn": 18363102.14,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$18,356,390.81",
-    "valor_mxn": 18356390.81,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$18,013,356.19",
-    "valor_mxn": 18013356.19,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$11,983,256.27",
-    "valor_mxn": 11983256.27,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$10,973,316.31",
-    "valor_mxn": 10973316.31,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$10,518,221.15",
-    "valor_mxn": 10518221.15,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$10,096,265.78",
-    "valor_mxn": 10096265.78,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
-   },
-   {
-    "texto": "$5,342,049.09",
-    "valor_mxn": 5342049.09,
-    "acta": "2024-2027-53",
-    "no_acta": 53,
-    "punto": 6
+    "texto": "$30,358,101.65 (Treinta millones trescientos cincuenta y ocho mil ciento un pesos 65/100 M.N.)",
+    "valor_mxn": 30358101.65,
+    "acta": "2024-2027-66",
+    "no_acta": 66,
+    "punto": 5
    }
   ]
  },
  "colonias": [
   {
+   "nombre": "Centro",
+   "menciones": 5
+  },
+  {
+   "nombre": "Astillero de Arriba",
+   "menciones": 2
+  },
+  {
+   "nombre": "El Moralete",
+   "menciones": 2
+  },
+  {
+   "nombre": "Guadalajarita",
+   "menciones": 2
+  },
+  {
+   "nombre": "Ignacio Zaragoza",
+   "menciones": 2
+  },
+  {
+   "nombre": "Parque Industrial",
+   "menciones": 2
+  },
+  {
    "nombre": "ALLURE RESIDENCIAL",
+   "menciones": 1
+  },
+  {
+   "nombre": "Astilleros de Abajo",
+   "menciones": 1
+  },
+  {
+   "nombre": "COLOMIA PLACETAS",
    "menciones": 1
   },
   {
@@ -157,11 +191,99 @@
    "menciones": 1
   },
   {
+   "nombre": "EL MIRADOR DE COLIMA",
+   "menciones": 1
+  },
+  {
+   "nombre": "El Bordo",
+   "menciones": 1
+  },
+  {
+   "nombre": "El Porvenir",
+   "menciones": 1
+  },
+  {
+   "nombre": "El Tivoli",
+   "menciones": 1
+  },
+  {
+   "nombre": "Esmeralda Norte",
+   "menciones": 1
+  },
+  {
    "nombre": "Fatima",
    "menciones": 1
   },
   {
-   "nombre": "Ignacio Zaragoza",
+   "nombre": "GIRASOLES",
+   "menciones": 1
+  },
+  {
+   "nombre": "Granjas y Campestres del Chanal",
+   "menciones": 1
+  },
+  {
+   "nombre": "Ignacio Allende",
+   "menciones": 1
+  },
+  {
+   "nombre": "Infonavit",
+   "menciones": 1
+  },
+  {
+   "nombre": "JARDINES DE LA CORREGIDORA",
+   "menciones": 1
+  },
+  {
+   "nombre": "Jardines de las Lomas",
+   "menciones": 1
+  },
+  {
+   "nombre": "LA CASTELLANA",
+   "menciones": 1
+  },
+  {
+   "nombre": "LOS VOLCANES",
+   "menciones": 1
+  },
+  {
+   "nombre": "La Albarrada",
+   "menciones": 1
+  },
+  {
+   "nombre": "La Estancia",
+   "menciones": 1
+  },
+  {
+   "nombre": "La Guadalupe",
+   "menciones": 1
+  },
+  {
+   "nombre": "La Loma",
+   "menciones": 1
+  },
+  {
+   "nombre": "La Media Luna",
+   "menciones": 1
+  },
+  {
+   "nombre": "Las Américas",
+   "menciones": 1
+  },
+  {
+   "nombre": "Lo de Villa",
+   "menciones": 1
+  },
+  {
+   "nombre": "Los Tepames",
+   "menciones": 1
+  },
+  {
+   "nombre": "Los Ángeles",
+   "menciones": 1
+  },
+  {
+   "nombre": "Lázaro Cárdenas",
    "menciones": 1
   },
   {
@@ -169,11 +291,91 @@
    "menciones": 1
   },
   {
+   "nombre": "Nuevo Milenio",
+   "menciones": 1
+  },
+  {
+   "nombre": "Nuevo Milenio III",
+   "menciones": 1
+  },
+  {
+   "nombre": "PROF. GREGOMO TORRES QUINTERO",
+   "menciones": 1
+  },
+  {
+   "nombre": "PUERTA REAL",
+   "menciones": 1
+  },
+  {
    "nombre": "Placetas Estadio",
    "menciones": 1
   },
   {
-   "nombre": "Py Milenio",
+   "nombre": "Prados del Sur",
+   "menciones": 1
+  },
+  {
+   "nombre": "Primavera Hills",
+   "menciones": 1
+  },
+  {
+   "nombre": "Puerta Paraíso",
+   "menciones": 1
+  },
+  {
+   "nombre": "Puerta del Sol",
+   "menciones": 1
+  },
+  {
+   "nombre": "RESIDENCIAL SAN JAVIER",
+   "menciones": 1
+  },
+  {
+   "nombre": "RIVERA DEL JAZMÍN II",
+   "menciones": 1
+  },
+  {
+   "nombre": "RIVERAS DEL VOLCÁN",
+   "menciones": 1
+  },
+  {
+   "nombre": "Real Vista Hermosa",
+   "menciones": 1
+  },
+  {
+   "nombre": "Residencial Esmeralda",
+   "menciones": 1
+  },
+  {
+   "nombre": "Rinconada San Pablo",
+   "menciones": 1
+  },
+  {
+   "nombre": "SECCIÓN 39 SNTE",
+   "menciones": 1
+  },
+  {
+   "nombre": "San Bernardo",
+   "menciones": 1
+  },
+  {
+   "nombre": "San Francisco de Almoloyan",
+   "menciones": 1
+  },
+  {
+   "nombre": "San José Sur",
+   "menciones": 1
+  },
+  {
+   "nombre": "Trapichillos",
+   "menciones": 1
+  },
+  {
+   "nombre": "Villa San Sebastián",
+   "menciones": 1
+  },
+  {
+   "nombre": "Villas del Bosque",
    "menciones": 1
   }
  ],

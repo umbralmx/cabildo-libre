@@ -3,46 +3,125 @@
  "no_acta": 55,
  "fecha": "2025-12-01",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T16:03:31+00:00",
- "resumen_sesion": "Se aprobó una fe de erratas al Programa de Ordenamiento Territorial para corregir la zonificación de un predio en el Parque Metropolitano Griselda Álvarez, y se aplazó la aprobación de las actas 51 y 54.",
+ "generado": "2026-07-25T04:00:23+00:00",
+ "resumen_sesion": "Se autorizó aplazar la aprobación de las actas 51 y 54, y se aprobó la fe de erratas al Programa de Ordenamiento Territorial para corregir la zonificación de un predio.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó y aprobó por mayoría diferir la lectura y aprobación de las actas 51 y 54 para la próxima sesión.",
-   "sentido": "aplazado"
+   "resumen": "Se autorizó presentar las Actas de Cabildo 51 y 54 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó, discutió y aprobó por unanimidad la fe de erratas al Programa Municipal de Ordenamiento Territorial y Desarrollo Urbano para el predio clave 02-01-03-085-031-000.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó la fe de erratas al Programa Municipal de Ordenamiento Territorial para corregir la zonificación del predio 02-01-03-085-031-000 de Espacios Verdes a Equipamiento Institucional.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Gobierno del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se declaró clausurada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

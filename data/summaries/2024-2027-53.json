@@ -6,8 +6,8 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T02:34:41+00:00",
- "resumen_sesion": "Se nombró a la nueva Tesorera Municipal y se aprobó un convenio con CNEEG para obras por 661.8 millones de pesos.",
+ "generado": "2026-07-25T03:59:16+00:00",
+ "resumen_sesion": "Se nombró a María Teresa Pérez Ramírez como Tesorera Municipal y se aprobó un convenio con CNEEG por $661,792,051.55 para obras de pavimentación y alumbrado.",
  "puntos": [
   {
    "n": 1,
@@ -28,7 +28,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró instalada la sesión por haber quórum legal.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +60,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó y aprobó presentar las actas 51 y 52 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aplazó la aprobación de las actas 51 y 52 para la próxima sesión.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -79,7 +79,7 @@
    "resumen": "Se aprobó el nombramiento de la Licda. María Teresa Pérez Ramírez como Tesorera Municipal.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
-   "votacion": "unanime",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -100,27 +100,27 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la firma del convenio con CNEEG S. de R.L. de C.V. para obras por $661,792,051.55.",
+   "resumen": "Se aprobó el convenio con CNEEG S. DE R.L. DE C.V. para gestionar recursos extraordinarios y ejecutar las obras de pavimentación y alumbrado listadas, por un total de $661,792,051.55.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "mayoria",
    "colonias": [
-    "Colonia Miguel Hidalgo",
-    "Colonia Fatima"
+    "Miguel Hidalgo",
+    "Fatima"
    ],
    "obras": [
-    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE JOSÉ FRANCISCO VÁ",
-    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE LEBRÓN DE QUIÑONE",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN COLIMA LA CALLE JOSÉ FRANC",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN COLIMA LA CALLE LEBRÓN DE ",
     "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE RICARDO B. NUÑEZ,",
     "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE PROF. JUAN SILVA ",
     "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE MALVA, TRAMO ENTR",
     "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE GRAL. DOROTEO ARA",
     "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. GONZALO DE SANDOV",
     "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. JAVIER MINA, ENTR",
-    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA CALLE CUAUHTÉMOC, ENT",
+    "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA,EN LA CALLE CUAUHTÉMOC, ENTR",
     "REHABILITACIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN LA AV. ANASTASIO BRIZUEL",
-    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA, COLONIA MIGUEL HIDALGO, CALZADA LA AR",
-    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA, COLONIA FATIMA, TRAMO ENTRE CALLE BAL"
+    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA,COLONIA MIGUEL HIDALGO ,CALZADA LA ARM",
+    "REHABILITACIÓN DE PAVIMENTACION EN COLIMA,COLONIA FATIMA, TRAMO ENTRE CALLE BALV"
    ],
    "montos": [
     {
@@ -128,8 +128,8 @@
      "valor_mxn": 661792051.55
     },
     {
-     "texto": "$3,075,152.00",
-     "valor_mxn": 3075152.0
+     "texto": "$3,075,182.52",
+     "valor_mxn": 3075182.52
     },
     {
      "texto": "$5,342,049.09",
@@ -176,10 +176,6 @@
      "valor_mxn": 3408319.98
     },
     {
-     "texto": "$5,210,424.00",
-     "valor_mxn": 5210424.0
-    },
-    {
      "texto": "$52,702,113.40",
      "valor_mxn": 52702113.4
     },
@@ -202,6 +198,10 @@
     {
      "texto": "$18,363,102.14",
      "valor_mxn": 18363102.14
+    },
+    {
+     "texto": "$9,656,663.38",
+     "valor_mxn": 9656663.38
     }
    ],
    "beneficiario": {
@@ -221,7 +221,7 @@
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },

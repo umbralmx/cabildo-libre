@@ -6,13 +6,13 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T02:32:55+00:00",
- "resumen_sesion": "Primera sesión del nuevo Ayuntamiento de Colima, donde se nombraron secretario, tesorero, oficial mayor, contralor, comisionado de seguridad y jueces cívicos, y se aplazó la designación de comisiones.",
+ "generado": "2026-07-25T03:57:02+00:00",
+ "resumen_sesion": "Sesión de instalación del Ayuntamiento de Colima; se aprobaron nombramientos de Secretario, Tesorera, Oficial Mayor, Contralora, Comisionado de Seguridad y Jueces Cívicos, y se difirió la designación de comisiones.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de presentes, constatando la asistencia del Presidente Municipal, Síndica y regidores.",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de todos los integrantes del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +28,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Se declaró legalmente instalada la sesión al contar con quórum.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +44,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día propuesto.",
+   "resumen": "Se dio lectura y se aprobó por unanimidad el Orden del Día.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -60,7 +60,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el nombramiento de J. Francisco Anzar Herrera como Secretario del Ayuntamiento y rindió protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento del LAE. J. Francisco Anzar Herrera como Secretario del Ayuntamiento y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -74,12 +74,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad el acta de la sesión anterior.",
+   "resumen": "Se dio lectura y se aprobó por unanimidad el Acta de la sesión anterior.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -95,7 +98,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Susana Romero Castrejón como Tesorera Municipal y rindió protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento de la Licda. Susana Romero Castrejón como Tesorera Municipal y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -109,12 +112,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad el nombramiento de José Manuel Oviedo Guedea como Oficial Mayor y rindió protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento del Lic. José Manuel Oviedo Guedea como Oficial Mayor y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -128,12 +134,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Graciela Montserrat García Mendoza como Contralora Municipal y rindió protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento de la Licda. Graciela Montserrat García Mendoza como Contralora Municipal y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -147,12 +156,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica y rindió protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento del Gral. Vicente Venustiano Guzmán Lucero como Comisionado Municipal de Seguridad y Justicia Cívica y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -166,29 +178,38 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca como Jueces Cívicos y rindieron protesta.",
+   "resumen": "Se aprobó por unanimidad el nombramiento de cuatro Jueces Cívicos: Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez y Arturo Díaz Menchaca; rindieron protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Laura Patricia Montes Camacho, Cassandra Rincón Vega, Oswy René Delgado Rodríguez, Arturo Díaz Menchaca",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó por unanimidad aplazar la designación de las Comisiones del Cabildo para la próxima sesión.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad la solicitud del Presidente Municipal para presentar la designación de comisiones en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -198,12 +219,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se recibió el informe detallado de la Comisión Municipal para la Transmisión de Mando del Gobierno Municipal de Colima.",
+   "resumen": "Se informó al Cabildo sobre la entrega del informe detallado de la Comisión Municipal para la Transmisión de Mando.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -219,7 +243,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se instruyó iniciar el proceso de Entrega-Recepción de la administración municipal al término de la sesión.",
+   "resumen": "Se informó que la entrega-recepción de la administración se realizaría al término de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -235,7 +259,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "No hubo asuntos generales que tratar.",
+   "resumen": "No se presentaron asuntos generales.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -251,7 +275,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se clausuró la sesión a las 14:31 horas.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

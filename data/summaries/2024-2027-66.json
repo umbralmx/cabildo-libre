@@ -3,70 +3,183 @@
  "no_acta": 66,
  "fecha": "2026-02-14",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:20:07+00:00",
- "resumen_sesion": "Se aprobó el acta anterior y se presentaron dictámenes presupuestales, de cuenta pública, alumbrado en Los Volcanes y licencias; los resultados de las votaciones no son determinables.",
+ "generado": "2026-07-25T04:07:04+00:00",
+ "resumen_sesion": "Se aprobó el acta anterior y se discutieron adecuaciones presupuestarias, cuenta pública, recepción de alumbrado en Los Volcanes y licencias, aunque el acta no permite confirmar las votaciones.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
-   "sentido": "tramite"
+   "resumen": "Declaración de quórum e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al orden del día.",
-   "sentido": "tramite"
+   "resumen": "Lectura del Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura del acta anterior y se aprobó por unanimidad.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por unanimidad el Acta de Cabildo N° 65.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó el dictamen que autoriza transferencias presupuestarias compensadas por $30,358,101.65 del mes de enero de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para autorizar adecuaciones presupuestarias de enero de 2026 por $30,358,101.65. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$30,358,101.65 (Treinta millones trescientos cincuenta y ocho mil ciento un pesos 65/100 M.N.)",
+     "valor_mxn": 30358101.65
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó el dictamen para remitir los resultados de la Cuenta Pública del mes de enero de 2026 al Congreso del Estado.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para remitir los resultados de la Cuenta Pública de enero de 2026 al Congreso del Estado. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para autorizar la entrega-recepción de la infraestructura de alumbrado público del Fraccionamiento Los Volcanes, etapas 3 y 4.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento Los Volcanes etapas 3 y 4. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "obra_publica",
+   "votacion": "no_determinable",
+   "colonias": [
+    "LOS VOLCANES"
+   ],
+   "obras": [
+    "Infraestructura de alumbrado público"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen para dar de baja seis licencias comerciales.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para dar de baja seis licencias comerciales. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó el dictamen para corregir el giro comercial de la solicitud de licencia número 1431.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para corregir el giro comercial de la solicitud de licencia número 1431. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen para autorizar un cambio de giro comercial para la venta y/o consumo de bebidas alcohólicas.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para autorizar un cambio de giro comercial para venta y/o consumo de bebidas alcohólicas. No se pudo determinar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

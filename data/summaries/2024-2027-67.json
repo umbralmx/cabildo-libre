@@ -3,88 +3,267 @@
  "no_acta": 67,
  "fecha": "2026-03-06",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:20:17+00:00",
- "resumen_sesion": "Se aprobaron comodatos de 22 inmuebles al DIF municipal, convenio con CRREAD, dos licencias de alcohol, estudio urbano, y otros puntos; los puntos 9 a 13 no se determinaron por falta de información.",
+ "generado": "2026-07-25T04:08:02+00:00",
+ "resumen_sesion": "Se aprobaron comodatos al DIF, un convenio con CRREAD A.C., dos licencias de alcohol, y se trataron estudios urbanos y programas parciales, sin determinarse el resultado de algunos puntos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Lista de asistencia de los miembros del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se realizó el pase de lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Declaración de quórum legal e instalación de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Lectura del orden del día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Lectura y aprobación del acta de cabildo número 66.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó el Acta de Cabildo número 66 por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Dictamen que autoriza comodato de 22 bienes inmuebles al DIF Municipal y del estacionamiento del Auditorio Miguel de la Madrid para posible subarrendamiento.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó la ratificación del comodato de 22 inmuebles y el estacionamiento del Auditorio Miguel de la Madrid al DIF Municipal Colima, permitiendo su subarrendamiento.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Jardines de las Lomas",
+    "El Tivoli",
+    "La Estancia",
+    "Infonavit",
+    "El Porvenir",
+    "Centro",
+    "Astillero de Arriba",
+    "Ignacio Zaragoza",
+    "La Albarrada",
+    "Lázaro Cárdenas",
+    "Los Ángeles",
+    "San José Sur"
+   ],
+   "obras": [
+    "Estacionamiento del Auditorio Miguel de la Madrid Hurtado"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Sistema para el Desarrollo Integral de la Familia en el Municipio de Colima (DIF)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Dictamen que autoriza convenio de colaboración con el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración con el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C. (CRREAD) para brindar asistencia social.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C.",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Seguridad Pública, Tránsito y Movilidad",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Dictamen que autoriza expedición de una licencia comercial con venta de bebidas alcohólicas y un cambio de propietario.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizó la expedición de una licencia de apertura para el salón de fiestas 'Acuarela Glu Glu' y un cambio de propietario de la licencia 'Chamorros Ponce' a Griselda Gómez Álvarez.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Parque Industrial",
+    "Rinconada San Pablo"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Griselda Gómez Álvarez y Francisco Javier Vega Gómez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Dictamen que aprueba el Estudio de Impacto Territorial y Urbano del predio con clave catastral 02-04-66-023-019-000.",
-   "sentido": "aprobado"
+   "resumen": "Se presentó el dictamen del Estudio de Impacto Territorial y Urbano del predio clave catastral 02-04-66-023-019-000, pero el acta no especifica si fue aprobado.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Granjas y Campestres del Chanal"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Dictamen que aprueba el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN'.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN' sin que el acta indique su aprobación.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "RIVERAS DEL VOLCÁN"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Dictamen que autoriza la Incorporación Municipal Anticipada de las Etapas 1, 2, 6, 7 y 8 del Fraccionamiento Primavera Hills.",
-   "sentido": "no_determinable"
+   "resumen": "Se consideró la Incorporación Municipal Anticipada de las Etapas 1,2,6,7,8 del Fraccionamiento Primavera Hills, pero no se determinó su resultado.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Primavera Hills"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Dictamen que aprueba la suscripción de Convenio de Colaboración con la empresa Bebiendo, S.A. de C.V.",
-   "sentido": "no_determinable"
+   "resumen": "Se trató la suscripción de un convenio de colaboración con la empresa Bebiendo, S.A. de C.V., sin determinarse su aprobación.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Bebiendo, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Aprobación o reprobación de la Minuta con proyecto de Decreto en materia de Igualdad Sustantiva.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió la Minuta de reforma constitucional en materia de igualdad sustantiva, sin que el acta indique su aprobación o rechazo.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Clausura de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

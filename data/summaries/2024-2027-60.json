@@ -3,82 +3,257 @@
  "no_acta": 60,
  "fecha": "2025-12-20",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T16:05:11+00:00",
- "resumen_sesion": "Se aprobó el cuarto listado de obras del POA 2025 y la Fe de Erratas de Rivera del Jazmín II; otros puntos quedaron sin resultado claro en el acta.",
+ "generado": "2026-07-25T04:03:36+00:00",
+ "resumen_sesion": "Se aprobó el cuarto listado de obras del POA 2025 (con inversión de $1,404,041.41), la fe de erratas de Rivera del Jazmín II y la incorporación del fraccionamiento Sección 39 SNTE; otros puntos quedaron sin registro de votación.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se registró la asistencia de los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
    "resumen": "Se declaró quórum legal y se instaló la sesión.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día de la sesión.",
-   "sentido": "no_determinable"
+   "resumen": "Se dio lectura al Orden del Día; no se especifica votación.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron las Actas de Cabildo 56 y 58 por unanimidad, el acta 57 por mayoría, y se autorizó presentar el acta 59 en próxima sesión.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobaron las Actas 56 y 58 por unanimidad, el Acta 57 por mayoría, y se autorizó presentar el Acta 59 en próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el dictamen que autoriza la publicación del cuarto listado de obras del POA 2025 y el cierre presupuestal en SIFAIS, con inversión de $1,404,041.41 del FAISMUN.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó el cuarto listado de obras del POA 2025 y el cierre de planeación presupuestal, con inversión de $1,404,041.41.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "mayoria",
+   "colonias": [
+    "COLOMIA PLACETAS",
+    "COLONIA PROF. GREGOMO TORRES QUINTERO"
+   ],
+   "obras": [
+    "REHABILITACIÓN DE RED DE ALCANTARILLADO PLUVIAL Y BOCA DE TORMENTA",
+    "REHABILITACIÓN DE CANCHA GUSTAVO ALBERTO VÁZQUEZ MONTES"
+   ],
+   "montos": [
+    {
+     "texto": "$1,404,041.41",
+     "valor_mxn": 1404041.41
+    },
+    {
+     "texto": "$101,701.14",
+     "valor_mxn": 101701.14
+    },
+    {
+     "texto": "$1,302,340.27",
+     "valor_mxn": 1302340.27
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos, y Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la Fe de Erratas de la Primera Modificación al Programa Parcial de Urbanización 'Rivera del Jazmín II'.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó la Fe de Erratas de la Primera Modificación al Programa Parcial de Urbanización 'RIVERA DEL JAZMÍN II'.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "RIVERA DEL JAZMÍN II"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se puso a consideración el dictamen para la Incorporación Municipal Anticipada de la Etapa Única del Fraccionamiento 'Sección 39 SNTE'.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó el dictamen de incorporación municipal anticipada del fraccionamiento 'SECCIÓN 39 SNTE'; no se especifica el resultado de la votación en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "SECCIÓN 39 SNTE"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$4'438,604.99",
+     "valor_mxn": 4438604.99
+    },
+    {
+     "texto": "$468,716.43",
+     "valor_mxn": 468716.43
+    }
+   ],
+   "beneficiario": {
+    "nombre": "COMITE EJECUTIVO DEL SINDICATO NACIONAL DE TRABAJADORES DE LA EDUCACIÓN SECCIÓN 39 COLIMA",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se puso a consideración el dictamen para aceptar el avalúo del predio clave catastral 02-99-90-039-857-000.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó el dictamen para aceptar un avalúo; no hay información sobre la votación.",
+   "sentido": "no_determinable",
+   "categoria": "patrimonio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se puso a consideración el dictamen para la Incorporación Municipal Anticipada de las etapas 6, 7 y 8 del Fraccionamiento 'El Mirador de Colima'.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó el dictamen de incorporación municipal anticipada de etapas del fraccionamiento 'EL MIRADOR DE COLIMA'; sin resultado.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "EL MIRADOR DE COLIMA"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se puso a consideración el dictamen para reformar diversas disposiciones del Reglamento de Zonificación.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó el dictamen para reformar el Reglamento de Zonificación; sin resultado.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias para enero, febrero y marzo de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias; sin resultado.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se clausuró la sesión.",
-   "sentido": "no_determinable"
+   "resumen": "Clausura de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

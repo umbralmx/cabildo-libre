@@ -3,94 +3,260 @@
  "no_acta": 72,
  "fecha": "2026-04-29",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:21:59+00:00",
- "resumen_sesion": "Se aprobó la Cuenta Pública 2025 y el convenio para el centro comunitario México Imparable; se difirió el acta previa; varios dictámenes quedaron sin resolución por corte del acta.",
+ "generado": "2026-07-25T04:11:34+00:00",
+ "resumen_sesion": "Se aprobó la Cuenta Pública 2025 por mayoría, se autorizó el convenio México Imparable por unanimidad, se aplazó el acta anterior y no se determinaron los demás puntos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los integrantes del Cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó y aprobó presentar el acta de la sesión 71 en la próxima sesión, por lo que no se aprobó en esta.",
-   "sentido": "aplazado"
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 71 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del ejercicio 2025.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al H. Congreso del Estado la Cuenta Pública Anual Consolidada del Ejercicio Fiscal 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó suscribir convenio con la SSPC y SICT para la construcción y equipamiento del centro comunitario México Imparable en la colonia Villas del Bosque.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizó por unanimidad suscribir el Convenio de Colaboración con la SSPC y la SICT para la construcción y equipamiento del Centro Comunitario México Imparable.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "Villas del Bosque"
+   ],
+   "obras": [
+    "CENTRO COMUNITARIO “MEXICO IMPARABLE”"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Desarrollo Urbano y Vivienda, De Seguridad Pública, Tránsito y Movilidad, De Planeación, Obras y Servicios Públicos, De Patrimonio Municipal y De Hacienda Municipal",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen del Programa Parcial de Urbanización del Fraccionamiento Nativa Residencial, pero el acta no registra la votación.",
-   "sentido": "no_determinable"
+   "resumen": "Se dio lectura al dictamen que autoriza el Programa Parcial de Urbanización Fraccionamiento Nativa Residencial, pero no se determinó el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "GRUPO GAMUVE, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para dar de baja cinco licencias comerciales de venta de alcohol, sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de baja de cinco licencias comerciales para venta de alcohol.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para expedir cuatro licencias comerciales de venta de alcohol, sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de expedición de cuatro licencias comerciales para venta de alcohol.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para dar de baja siete licencias comerciales de venta de alcohol, sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de baja de siete licencias comerciales para venta de alcohol.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó dictamen para expedir cuatro nuevas licencias comerciales de venta de alcohol (Memorándum 175), sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de expedición de cuatro nuevas licencias comerciales para venta de alcohol solicitadas con Memorándum No. 175.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se presentó dictamen para autorizar el cierre fiscal de obras 2025, sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de Cierre Fiscal de Obras 2025.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se presentó dictamen para suscribir convenio con FINABIEN, sin registrarse resultado.",
-   "sentido": "no_determinable"
+   "resumen": "No se pudo determinar la decisión sobre el dictamen de convenio con FINABIEN.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 14,
    "numeral": "XIV",
    "resumen": "Se clausuró la sesión.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

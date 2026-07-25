@@ -3,100 +3,283 @@
  "no_acta": 71,
  "fecha": "2026-04-15",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:21:47+00:00",
- "resumen_sesion": "Se aprobaron actas previas y se discutieron temas de presupuesto, fraccionamientos y nombramientos, sin que consten los resultados de la mayoría de las votaciones en el acta.",
+ "generado": "2026-07-25T04:10:56+00:00",
+ "resumen_sesion": "Se aprobaron las actas de cabildo 68, 69 y 70; se discutieron adecuaciones presupuestales por $76 millones, cuyo resultado no se registró; otros puntos quedaron sin resolución documentada.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se verificó la lista de asistencia de los miembros del cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal, aunque una regidora impugnó la hora de inicio.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 68, 69 y 70, con dos abstenciones.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobaron por unanimidad las actas 68, 69 y 70, con abstenciones de dos regidoras.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó el dictamen para autorizar adecuaciones presupuestales solicitadas por la Tesorería Municipal de marzo de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "Se dio lectura al dictamen de adecuaciones presupuestarias por $76,015,699.30; se desconoce si se aprobó.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$76'015,699.30 (Setenta y seis millones quince mil seiscientos noventa y nueve pesos 30/100 M.N.)",
+     "valor_mxn": 76015699.3
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó el dictamen para remitir al Congreso del Estado los resultados de la Cuenta Pública de marzo de 2026.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el dictamen para remitir la Cuenta Pública de marzo 2026 al Congreso; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para inscribir con letras doradas nombres de mujeres y hombres ilustres en el Auditorio General Manuel Álvarez.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el dictamen para inscribir nombres en letras doradas; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen para aceptar el avalúo de dos predios ubicados al sur de la ciudad, con claves catastrales 02-99-90-043-328-000 y 02-99-92-039-003-000.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el dictamen para aceptar un avalúo de predios al sur de la ciudad; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "patrimonio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "M.C. Arq. Fernando Olmedo Buenrostro",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó el dictamen para autorizar la incorporación municipal anticipada de la etapa única del fraccionamiento CARSOL CHEVROLET COLIMA.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió la incorporación municipal anticipada del fraccionamiento CARSOL CHEVROLET COLIMA; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CARSOL CHEVROLET COLIMA",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen para autorizar la incorporación municipal anticipada de las etapas 2 a la 7 del fraccionamiento LOMAS DE SAN GERMÁN II.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió la incorporación municipal anticipada de las etapas 2 a 7 del fraccionamiento LOMAS DE SAN GERMÁN II; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "LOMAS DE SAN GERMÁN II",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó el dictamen para aprobar el estudio de impacto territorial y urbano de los lotes urbanos 02-04-66-024-005-000 y 02-04-66-024-006-000 del fraccionamiento Granjas y Campestres Del Chanal.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió el estudio de impacto territorial de lotes en el fraccionamiento Granjas y Campestres Del Chanal; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Fraccionamiento Granjas y Campestres Del Chanal",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se propuso declarar el Patio Central de la Presidencia Municipal como recinto oficial para la sesión extraordinaria del Cabildo Infantil 2026 el 29 de abril.",
-   "sentido": "no_determinable"
+   "resumen": "Se discutió declarar el Patio Central como Recinto Oficial para el Cabildo Infantil 2026; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se propuso el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico del Municipio de Colima.",
-   "sentido": "no_determinable"
+   "resumen": "Se propuso el nombramiento del Mtro. Juan Ignacio Ávalos Orozco como Juez Cívico; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "nombramiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mtro. Juan Ignacio Ávalos Orozco",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales no especificados en el acta.",
-   "sentido": "no_determinable"
+   "resumen": "Se trataron asuntos generales; no se registró resolución.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se dio por clausurada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

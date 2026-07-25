@@ -3,94 +3,286 @@
  "no_acta": 54,
  "fecha": "2025-11-27",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T16:03:20+00:00",
- "resumen_sesion": "Se aprobó la ampliación presupuestaria para basificaciones y sindicalizaciones; otros puntos sobre financiamientos y convenios quedaron sin resolución en el acta.",
+ "generado": "2026-07-25T03:59:59+00:00",
+ "resumen_sesion": "La sesión aprobó las actas 52 y 53, y el dictamen de ampliaciones presupuestarias; los demás puntos no registran votación en el acta.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
    "resumen": "Se pasó lista de asistencia.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se consideró la aprobación de las actas 51, 52 y 53; se aprobaron las actas 52 y 53, pero el acta 51 quedó pendiente.",
-   "sentido": "no_determinable"
+   "resumen": "Se aprobaron las Actas 52 y 53; el Acta 51 quedó pendiente para próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el dictamen que autoriza ampliaciones presupuestarias para cubrir basificaciones y sindicalizaciones de trabajadores municipales.",
-   "sentido": "aprobado"
+   "resumen": "Se autorizó a Tesorería a realizar ampliaciones presupuestarias por $51,338,068.18 para basificaciones y sindicalizaciones de trabajadores.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$9,893,515.67",
+     "valor_mxn": 9893515.67
+    },
+    {
+     "texto": "$22,564,270.47",
+     "valor_mxn": 22564270.47
+    },
+    {
+     "texto": "$18,880,282.04",
+     "valor_mxn": 18880282.04
+    },
+    {
+     "texto": "$51,338,068.18",
+     "valor_mxn": 51338068.18
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se discutió un punto de acuerdo para contratar un financiamiento de hasta 32.5 millones de pesos, pero no se registró el resultado de la votación.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó Punto de Acuerdo para contratar financiamiento hasta por $32,500,000.00; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$32,500,000.00",
+     "valor_mxn": 32500000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se discutió un dictamen para contratar un financiamiento a corto plazo por 55 millones de pesos, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para contratar financiamiento a corto plazo por $55,000,000.00; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$55,000,000.00",
+     "valor_mxn": 55000000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se discutió un dictamen para celebrar convenio con el Instituto de Formación Policial para evaluaciones de ascenso, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para celebrar Convenio de Colaboración con el Instituto de Formación Policial; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto de Formación, Capacitación y Profesionalización Policial del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se discutió un dictamen para celebrar convenio con el CEPAVI, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para celebrar Convenio de Colaboración con CEPAVI; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Centro Estatal para la Prevención y Atención a la Violencia Familiar (CEPAVI)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se discutió un dictamen para convenio de hermanamiento con San Luis Potosí, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para celebrar Convenio de Hermanamiento con San Luis Potosí; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Municipio de San Luis Potosí",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se discutió un dictamen sobre estudio de impacto territorial para modificar zonificación de dos parcelas, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para aprobar Estudio de Impacto Territorial y Urbano en parcela 27 Z-1 P1/3; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se discutió un dictamen sobre incentivos fiscales del programa Vivienda para el Bienestar, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para otorgar incentivos fiscales del Programa VIVIENDA PARA EL BIENESTAR; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se discutió un dictamen para desafectar, desincorporar y enajenar un bien inmueble para el programa Vivienda para el Bienestar, sin resultado conocido.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para desafectar, desincorporar y enajenar inmueble para VIVIENDA PARA EL BIENESTAR; no se registra votación.",
+   "sentido": "no_determinable",
+   "categoria": "patrimonio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 14,
    "numeral": "XIV",
    "resumen": "Se clausuró la sesión.",
-   "sentido": "tramite"
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

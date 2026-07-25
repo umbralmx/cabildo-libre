@@ -6,13 +6,13 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T02:33:48+00:00",
- "resumen_sesion": "Se aprobaron dos licencias de alcohol, baja de licencia, convenios con Autotransportes del Sur, Soriana e ISENCO; varios puntos sin resolución por falta de acta.",
+ "generado": "2026-07-25T03:57:58+00:00",
+ "resumen_sesion": "Se aprobaron dos licencias de alcohol, baja de licencia y convenios con Autotransportes del Sur y Soriana; acta 36 aprobada, acta 37 aplazada; varios puntos sin resolución clara.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se declaró quórum.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia de los integrantes del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +28,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,8 +44,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó por unanimidad el orden del día de la sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -60,10 +60,10 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el acta 36, quedó pendiente el acta 37.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó el acta 36 por unanimidad, quedando pendiente el acta 37 para próxima sesión.",
+   "sentido": "no_determinable",
    "categoria": "tramite",
-   "votacion": "unanime",
+   "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -76,13 +76,13 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó expedir dos licencias de venta de alcohol: Mini Súper Camino Real y Abarrotes Los 3 Hermanos.",
+   "resumen": "Se aprobó por unanimidad la expedición de dos licencias comerciales para venta de cerveza: Mini Súper Camino Real y Abarrotes Los 3 Hermanos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
     "Camino Real",
-    "Py Milenio"
+    "Nuevo Milenio"
    ],
    "obras": [],
    "montos": [],
@@ -98,7 +98,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó dar de baja la licencia de venta de alcohol de OXXO en Placetas Estadio.",
+   "resumen": "Se aprobó por unanimidad la baja de la licencia de venta de alcohol de OXXO en Placetas Estadio.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -122,7 +122,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó convenio con Autotransportes del Sur de Jalisco para transporte estudiantil con tarifa preferencial.",
+   "resumen": "Se aprobó por unanimidad suscribir convenio con Autotransportes del Sur de Jalisco para transporte estudiantil con tarifa preferencial.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -144,7 +144,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó convenio con Tiendas Soriana para membresías preferenciales a trabajadores municipales.",
+   "resumen": "Se aprobó por unanimidad suscribir convenio con Tiendas Soriana para membresías preferenciales para trabajadores municipales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -152,12 +152,12 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$250.00",
-     "valor_mxn": 250.0
+     "texto": "$250.00 (Doscientos cincuenta pesos 00/100 m.n.)",
+     "valor_mxn": 250
     },
     {
-     "texto": "$550.00",
-     "valor_mxn": 550.0
+     "texto": "$550.00 (Quinientos cincuenta pesos 00/100 m.n.)",
+     "valor_mxn": 550
     }
    ],
    "beneficiario": {
@@ -175,7 +175,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se propuso convenio con el ISENCO para servicio social; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para convenio con el Instituto Superior de Educación Normal del Estado de Colima para servicio social estudiantil; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "convenio",
    "votacion": "no_determinable",
@@ -197,7 +197,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se propuso convenio con la Universidad José Martí; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para convenio con Universidad José Martí; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "convenio",
    "votacion": "no_determinable",
@@ -216,7 +216,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se propuso aceptar donación de 24 bombas dosificadoras de CONAGUA; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para aceptar donación de 24 bombas dosificadoras de CONAGUA; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "patrimonio",
    "votacion": "no_determinable",
@@ -235,7 +235,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se propuso desincorporar predio en colonia Ignacio Zaragoza y escriturar a Mónica Cecilia Rivera González; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para desincorporar predio en colonia Ignacio Zaragoza y escriturarlo a Mónica Cecilia Rivera González; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "patrimonio",
    "votacion": "no_determinable",
@@ -256,7 +256,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se propuso nombrar 'Sala de Jueces Cívicos' al auditorio del Centro de Justicia Cívica; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para nombrar 'Sala de Jueces Cívicos' al auditorio Sala 2 del Centro de Justicia Cívica; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -272,7 +272,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se propuso convocatoria para preseas Dr. Mario de la Madrid Andrade y Dra. Jessica Cristina Romero Michel; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para convocatoria de preseas Dr. Mario de la Madrid Andrade y Dra. Jessica Cristina Romero Michel; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -288,7 +288,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se propuso programa parcial de urbanización del fraccionamiento ALLURE RESIDENCIAL; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para programa parcial de urbanización del fraccionamiento Allure Residencial; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "fraccionamiento",
    "votacion": "no_determinable",
@@ -309,9 +309,9 @@
   {
    "n": 16,
    "numeral": "XVI",
-   "resumen": "Se propuso modificación de zonificación de predio a Equipamiento Especial; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para modificar zonificación de predio de Comercial a Equipamiento Especial; no se registró resultado de votación.",
    "sentido": "no_determinable",
-   "categoria": "otro",
+   "categoria": "reglamento_normativo",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
@@ -325,7 +325,7 @@
   {
    "n": 17,
    "numeral": "XVII",
-   "resumen": "Se propuso solicitar a FERROMEX medidas para corredor de seguridad; no se conoce el resultado.",
+   "resumen": "Se presentó dictamen para solicitar a FERROMEX medidas para crear corredor de seguridad; no se registró resultado de votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -344,7 +344,7 @@
   {
    "n": 18,
    "numeral": "XVIII",
-   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias.",
+   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias para julio-septiembre 2025.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -360,9 +360,9 @@
   {
    "n": 19,
    "numeral": "XIX",
-   "resumen": "Asuntos generales; no se conoce el contenido.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
+   "resumen": "Se trataron asuntos generales.",
+   "sentido": "tramite",
+   "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],

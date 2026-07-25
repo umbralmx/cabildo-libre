@@ -3,64 +3,177 @@
  "no_acta": 65,
  "fecha": "2026-02-03",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:19:40+00:00",
- "resumen_sesion": "Se aprobaron traspasos de locales en mercados, la declaración de recinto ferial para el Festival Zona Colima Capital, y un convenio de transporte escolar rural.",
+ "generado": "2026-07-25T04:06:22+00:00",
+ "resumen_sesion": "Se aprobó el traspaso de seis locales en mercados, la declaración de recinto ferial para el Festival Zona Colima Capital y un convenio de transporte escolar rural.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
-   "sentido": "tramite"
+   "resumen": "Lista de asistencia de los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instalación de la sesión.",
-   "sentido": "tramite"
+   "resumen": "Declaración de quórum legal e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
-   "sentido": "tramite"
+   "resumen": "Lectura y aprobación del Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron las actas de cabildo números 60, 61, 62, 63 y 64.",
-   "sentido": "aprobado"
+   "resumen": "Aprobación de las Actas de Cabildo N° 60, 61, 62, 63 y 64.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó el traspaso de seis locales en los mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón.",
-   "sentido": "aprobado"
+   "resumen": "Se autoriza el traspaso de seis locales en los Mercados Gral. Francisco Villa, José Juárez Martínez, Constitución y Gral. Álvaro Obregón.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se declaró recinto ferial en varios puntos de la ciudad para el Festival Zona Colima Capital del 6 al 24 de febrero de 2026.",
-   "sentido": "aprobado"
+   "resumen": "Se declara Recinto Ferial diversos puntos de la ciudad de Colima para el Festival Zona Colima Capital del 06 al 24 de febrero de 2026.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [
+    "San Francisco de Almoloyan"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Licda. Elia Margarita Moreno González",
+    "id": "elia-margarita-moreno-gonzalez"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la suscripción de un convenio de colaboración con el C. Federico Lucatero Ramírez para transporte escolar en zona rural.",
-   "sentido": "aprobado"
+   "resumen": "Se autoriza la suscripción del Convenio de Colaboración con el C. Federico Lucatero Ramírez para transporte escolar de la zona rural.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "El Bordo",
+    "Trapichillos",
+    "La Media Luna",
+    "Astillero de Arriba",
+    "Astilleros de Abajo",
+    "La Loma",
+    "Ignacio Allende"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Federico Lucatero Ramírez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se trataron asuntos generales: reconocimiento al Festival del Tamal y entrega de informes trimestrales.",
-   "sentido": "tramite"
+   "resumen": "Asuntos Generales: reconocimiento del Festival del Tamal y entrega de Informe Trimestral de Actividades.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se clausuró la sesión.",
-   "sentido": "tramite"
+   "resumen": "Clausura de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }

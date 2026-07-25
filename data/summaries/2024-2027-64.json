@@ -3,76 +3,216 @@
  "no_acta": 64,
  "fecha": "2026-01-15",
  "periodo": "2024-2027",
+ "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-21T15:19:30+00:00",
- "resumen_sesion": "Se aprobó la ampliación al presupuesto 2025 (FORTAMUN y fiscales) y se aplazó la aprobación de las actas 60-63.",
+ "generado": "2026-07-25T04:05:37+00:00",
+ "resumen_sesion": "Se aprobó la ampliación al presupuesto 2025 y se aplazó la aprobación de actas; lo demás no se pudo determinar.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
-   "sentido": "tramite"
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
-   "sentido": "tramite"
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se solicitó y aprobó por unanimidad aplazar la aprobación de las actas 60, 61, 62 y 63 para la próxima sesión.",
-   "sentido": "aplazado"
+   "resumen": "Se aprobó presentar las Actas 60 a 63 en la próxima sesión, aplazando su aprobación.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la ampliación al presupuesto de ingresos y egresos 2025 por $3,419,765.36, con recursos FORTAMUN y fiscales.",
-   "sentido": "aprobado"
+   "resumen": "Se aprobó la ampliación al presupuesto de ingresos y egresos 2025 con recursos FORTAMUN y fiscales, por un total de $3,419,765.36.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$391,890.55",
+     "valor_mxn": 391890.55
+    },
+    {
+     "texto": "$ 3'419,765.36",
+     "valor_mxn": 3419765.36
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se puso a consideración el dictamen que autoriza adecuaciones presupuestales de diciembre 2025 por $101,517,849.00, pero el acta no registra el resultado de la votación.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para adecuaciones presupuestales de diciembre 2025, sin que se determinara su resolución en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$101,517,849.00",
+     "valor_mxn": 101517849
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se puso a consideración el dictamen para remitir al Congreso la Cuenta Pública de diciembre 2025, pero el acta no registra el resultado.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para remitir la Cuenta Pública de diciembre 2025 al Congreso, sin resolución determinable en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se puso a consideración el dictamen para expedir tres licencias comerciales de bebidas alcohólicas, pero el acta no registra el resultado.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para expedir tres licencias comerciales con venta de alcohol, sin resolución determinable en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se puso a consideración el dictamen para dar de baja cinco licencias comerciales, pero el acta no registra el resultado.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para dar de baja cinco licencias comerciales, sin resolución determinable en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se puso a consideración el dictamen para la incorporación municipal del desarrollo Instituto Adonai, al norte de la ciudad, pero el acta no registra el resultado.",
-   "sentido": "no_determinable"
+   "resumen": "Se presentó dictamen para la incorporación municipal del desarrollo 'INSTITUTO ADONAI', sin resolución determinable en el acta.",
+   "sentido": "no_determinable",
+   "categoria": "fraccionamiento",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Grupo Amor de México",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se declaró clausurada la sesión.",
-   "sentido": "tramite"
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
   }
  ]
 }
