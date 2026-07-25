@@ -1,0 +1,386 @@
+{
+ "id": "2024-2027-37",
+ "no_acta": 37,
+ "fecha": "2025-06-23",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T17:02:42+00:00",
+ "lectura": {
+  "chars_ocr": 116447,
+  "chars_leidos": 116447,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó ampliación presupuestal de $11 millones y modificación de nombres de dos obras; se discutió fideicomiso con Bansi.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de la mayoría de los miembros.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar el acta de cabildo número 36 en la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la ampliación presupuestal de $11 millones, con $2.9 millones para desazolve del Arroyo Pereyra, $6.9 millones para relleno sanitario y $1.18 millones para laudos, con una abstención.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "Prados del Sur",
+    "Rinconada del Pereyra"
+   ],
+   "obras": [
+    "Desazolve y conformación de taludes del Arroyo Pereyra"
+   ],
+   "montos": [
+    {
+     "texto": "$5,600,000.00 (CINCO MILLONES SEISCIENTOS MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 5600000
+    },
+    {
+     "texto": "$5,400,000.00 (CINCO MILLONES CUATROCIENTOS MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 5400000
+    },
+    {
+     "texto": "$11,000,000.00 (ONCE MILLONES DE PESOS 00/100 M.N.)",
+     "valor_mxn": 11000000
+    },
+    {
+     "texto": "$2,913,662.71 (DOS MILLONES NOVECIENTOS TRECE MIL SEISCIENTOS SESENTA Y DOS PESOS 71/100 M.N.)",
+     "valor_mxn": 2913362.71
+    },
+    {
+     "texto": "$1,186,337.29 (UN MILLON CIENTO OCHENTA Y SEIS MIL TRESCIENTOS TREINTA Y SIETE PESOS 29/100 M.N.)",
+     "valor_mxn": 1186337.29
+    },
+    {
+     "texto": "$6,900,000.00 (SEIS MILLONES NOVECIENTOS MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 6900000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Regidora Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad modificar la enunciación de dos obras de muros de contención en las colonias Francisco Villa y Prados del Sur.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Villa",
+    "Prados del Sur"
+   ],
+   "obras": [
+    "Rehabilitación de muro de contención en Colima, colonia Francisco Villa, cauce d",
+    "Construcción de muro de contención en Colima, colonia Prados del Sur, cauce del "
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por mayoría el Punto de Acuerdo que autoriza la transferencia de $75,000 al Fideicomiso para la Innovación y Calidad Gubernamental del Municipio de Colima, con los votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$60,000.00",
+     "valor_mxn": 60000
+    },
+    {
+     "texto": "$25,000.00",
+     "valor_mxn": 25000
+    },
+    {
+     "texto": "$15,000.00",
+     "valor_mxn": 15000
+    },
+    {
+     "texto": "$75,000.00",
+     "valor_mxn": 75000
+    },
+    {
+     "texto": "$75,000.00 (setenta y cinco mil pesos)",
+     "valor_mxn": 75000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Bansi, S.A., Institución de Banca Múltiple",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Innovación y Mejora Regulatoria",
+   "autor": {
+    "nombre": "Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza suscribir un convenio de colaboración entre el Municipio de Colima y las empresas Consorcio Ferretero del Pacífico y Grupo Ferretero “El Caminante” para ofrecer precios especiales en productos de mejoramiento de vivienda a familias vulnerables.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Consorcio Ferretero del Pacífico S.A. de C.V. y Grupo Ferretero el Caminante",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la renovación del Convenio de Afiliación entre FONACOT y el Municipio de Colima, para que los trabajadores municipales accedan a créditos.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto del Fondo Nacional para el Consumo de los Trabajadores (FONACOT)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza suscribir un Convenio de Cuenta Maestra entre el Municipio de Colima y la CFE, para centralizar el pago del servicio eléctrico.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Comisión Federal de Electricidad (CFE)",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza suscribir un convenio de colaboración con la Coalición Mexicana LGBTTTI+ para promover la igualdad de género y los derechos humanos.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Coalición Mexicana LGBTTTI+ en el Estado de Colima",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y Comisión para la Igualdad de Género",
+   "autor": {
+    "nombre": "C. Elia Margarita Moreno González",
+    "id": "elia-margarita-moreno-gonzalez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó renombrar la Plaza Libertador como Plaza de las y los Poetas, tras discusión y unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "colonia Centro"
+   ],
+   "obras": [
+    "Instalación de 12 placas metálicas con fragmentos poéticos en bancas",
+    "Instalación de placa principal 'Plaza de los Poetas' en luminaria"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación y Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó el Programa de Construcción y Ampliación de una nueva sección del Panteón de la Localidad de Los Tepames, con 303 lotes y 150 nichos, y una proyección de ingresos de $17,366,424.30.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Los Tepames"
+   ],
+   "obras": [
+    "Programa de Construcción y Ampliación de Nueva Sección del Panteón de la Localid"
+   ],
+   "montos": [
+    {
+     "texto": "17'366,424.30",
+     "valor_mxn": 17366424.3
+    },
+    {
+     "texto": "$45,256",
+     "valor_mxn": 45256
+    },
+    {
+     "texto": "$15,839.60",
+     "valor_mxn": 15839.6
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Localidad de Los Tepames",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Patrimonio, Hacienda Municipal y Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "Regidor Mtro. Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se declaró clausurada la sesión por el Presidente Municipal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Presidente Municipal, Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  }
+ ]
+}

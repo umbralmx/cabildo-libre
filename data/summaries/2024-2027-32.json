@@ -1,0 +1,545 @@
+{
+ "id": "2024-2027-32",
+ "no_acta": 32,
+ "fecha": "2025-05-07",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T16:51:48+00:00",
+ "lectura": {
+  "chars_ocr": 211146,
+  "chars_leidos": 211146,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron licencias de alcohol y bajas, se aprobaron actas 28-29 y se aplazaron 30-31, y se retiraron dos reglamentos.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia, registrándose la presencia de la mayoría de los integrantes del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día y se aprobó retirar los puntos relativos a dos reglamentos, quedando modificado el orden.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas 28 y 29, y se aprobó aplazar la presentación de las actas 30 y 31 para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó una licencia comercial para el restaurante 'Negrony' y un cambio de propietario para la tienda 'Abarrotes Don Chava', ambos con venta de alcohol.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Jardines Vista Hermosa",
+    "Villas San Sebastián"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizaron dos licencias comerciales: una tienda de abarrotes 'Abarrotes Los Volcanes' y el restaurante 'Coordenada 9', para venta de alcohol.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Villa III",
+    "Residencial Esmeralda Norte"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la baja definitiva de tres licencias de tiendas de abarrotes con venta de cerveza, cuyos titulares solicitaron el cierre.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Las Américas",
+    "Lázaro Cárdenas",
+    "Francisco Villa III"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la baja definitiva de dos licencias de venta de alcohol: una tienda en La Albarrada y un restaurante en Residencial Esmeralda.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "La Albarrada",
+    "Residencial Esmeralda",
+    "Colonia La Albarrada",
+    "Colonia Residencial Esmeralda"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Josefina Reyes Mora y Ximena Kiralina Barajas Mejía",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la municipalización de la Etapa 2-B del fraccionamiento Puerta del Valle, al sur de la ciudad, con una fianza de $841,996.24.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Puerta del Valle"
+   ],
+   "obras": [
+    "CALLE ARCO DE BUENOS AIRES",
+    "CALLE ARCO DE BARÁ",
+    "AV. ARCO DE CONSTANTINO",
+    "CALLE PRIV. ARCO DE BRUSELAS",
+    "CALLE PROFR. SILVERIO CAMPERO",
+    "CALLE ROSENDO R. RIVERA",
+    "CALLE PUERTA DE QUEBEC"
+   ],
+   "montos": [
+    {
+     "texto": "$841,996.24 (OCHOCIENTOS CUARENTA Y UN MIL NOVECIENTOS NOVENTA Y SEIS PESOS 24/100 M.N.)",
+     "valor_mxn": 841996.24
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Desarrolladora San Ricardo S.A. de C.V. y otros",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 3-B de Puerta del Valle, con fianzas por $1,466,649.79 y $4,773,248.11.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Puerta del Valle"
+   ],
+   "obras": [
+    "ARCO DE BRUSELAS",
+    "ARCO DE SAN LUIS",
+    "AV. ARCO DE CONSTANTINO",
+    "PRIVADA ARCO DE BRUSELAS",
+    "PRIVADA ARCO DE SAN LUIS",
+    "PROFR. SILVERIO CAMPERO",
+    "ROSENDO R. RIVERA",
+    "PUERTA DE QUEBEC"
+   ],
+   "montos": [
+    {
+     "texto": "$1,466,649.79 (UN MILLÓN CUATROCIENTOS SESENTA Y SEIS MIL SEISCIENTOS CUARENTA Y NUEVE PESOS 74/100 M.N.)",
+     "valor_mxn": 1466649.79
+    },
+    {
+     "texto": "$4,773,248.11 (CUATRO MILLONES SETECIENTOS SETENTA Y TRES MIL DOSCIENTOS CUARENTA Y OCHO PESOS 11/100 M.N.)",
+     "valor_mxn": 4773248.11
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Desarrolladora San Ricardo S.A. de C.V. y otros",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 1 y 5 lotes de la Etapa 2 del fraccionamiento San Bernardo, al sur de Colima, para 42 lotes.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "San Bernardo"
+   ],
+   "obras": [
+    "AV. FRANCISCO JAVIER MINA",
+    "C. FRAY PEDRO DE GANTE",
+    "C. SAN FELIPE DE JESÚS"
+   ],
+   "montos": [
+    {
+     "texto": "$1,072,608.63",
+     "valor_mxn": 1072608.63
+    },
+    {
+     "texto": "$33,073.06",
+     "valor_mxn": 33073.06
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Enriqueta Espinosa Castell, Servicios Inmobiliarios Resto S.A. de C.V., Carlos Alfredo Castañeda Briceño y Banco Inmobil",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la modificación del Programa Parcial de Urbanización 'Instituto de Educación Infantil', cambiando la zonificación de dos lotes a Corredor Urbano Mixto Intensidad Media, y subdividiendo un lote en cuatro.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Paseo de la Cantera"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$28,058.72",
+     "valor_mxn": 28058.72
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ma. Idalia González Pimentel como apoderada legal de Andrea, Jessica y Jesús Silverio Cavazos González; y Daniel Fernand",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó la municipalización de la Etapa Única del Fraccionamiento Hacienda Real, ubicado al norte de la ciudad, para que reciba servicios públicos municipales.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "HACIENDA REAL"
+   ],
+   "obras": [
+    "Calle Arenisca",
+    "Calle Travertino",
+    "Calle Caliza",
+    "Calle Mármol",
+    "Calle Laja",
+    "Calle Cantera",
+    "Calle Recinto",
+    "Calle Granito",
+    "Av. Miguel de Cervantes",
+    "Calle Octavio Colmenares",
+    "J. Jesús Ponce",
+    "Calle Hacienda Real"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "SALVADOR REYES MAGAÑA, JCL CONSTRUCCIONES S.A. DE C.V. Y/O JOSÉ CARBAJAL LARIOS",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó la suscripción de un Convenio de Hermanamiento entre el Municipio de Aguascalientes, Aguascalientes, y el Municipio de Colima, Colima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Municipio de Aguascalientes, Aguascalientes",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se aprobó la suscripción de un Convenio de Hermanamiento entre el Municipio de Pihuamo, Jalisco, y el Municipio de Colima, Colima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Municipio de Pihuamo, Jalisco",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobierno Interno",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se aprobó la suscripción de un Convenio de Colaboración entre el Municipio de Colima y la Universidad UNIVER Colima, para promover educación y capacitación.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad UNIVER Colima",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 17,
+   "numeral": "XVII",
+   "resumen": "Se retiró del orden del día el dictamen sobre el Reglamento Interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad.",
+   "sentido": "retirado",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 18,
+   "numeral": "XVIII",
+   "resumen": "Se retiró del orden del día el dictamen sobre el Reglamento del Instituto Municipal para la Paz Intrafamiliar.",
+   "sentido": "retirado",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 19,
+   "numeral": "XIX",
+   "resumen": "Se aprobó el Programa de Regularización de Títulos y Ordenamiento de Espacios del Panteón Municipal de Colima, con costos de 75 UMAS por regularización y 2 UMAS por duplicados.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "75 UMAS",
+     "valor_mxn": null
+    },
+    {
+     "texto": "2 UMAS",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Poseedores de títulos del Panteón Municipal",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Patrimonio Municipal y Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 20,
+   "numeral": "XX",
+   "resumen": "Se aprobó otorgar el bono del Día de la Madre a trabajadoras de base, confianza, supernumerario y policía municipal, con montos de $2,012.85, $2,077.21, $1,935.44, $1,861.00 y $1,935.44 respectivamente.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$2,012.85",
+     "valor_mxn": 2012.85
+    },
+    {
+     "texto": "$2,077.21",
+     "valor_mxn": 2077.21
+    },
+    {
+     "texto": "$1,935.44",
+     "valor_mxn": 1935.44
+    },
+    {
+     "texto": "$1,861.00",
+     "valor_mxn": 1861.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Madres trabajadoras de base, confianza y supernumerario del H. Ayuntamiento de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 21,
+   "numeral": "XXI",
+   "resumen": "Se declaró clausurada la sesión después de agotar el orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

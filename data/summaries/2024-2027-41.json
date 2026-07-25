@@ -1,0 +1,283 @@
+{
+ "id": "2024-2027-41",
+ "no_acta": 41,
+ "fecha": "2025-07-24",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T17:09:10+00:00",
+ "lectura": {
+  "chars_ocr": 99557,
+  "chars_leidos": 99557,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó una licencia de bebidas alcohólicas, se retiró el informe financiero, se aplazaron actas, y se leyó dictamen de baja de 91 comerciantes.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de regidores y la ausencia justificada de una regidora.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura y se aprobó el Orden del Día con la modificación de retirar el séptimo punto.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó presentar las Actas de Cabildo 39 y 40 en la próxima sesión, aplazando su aprobación.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la expedición de una licencia de apertura para la tienda de abarrotes 'MINI SÚPER SELECTO DE COLIMA' con venta de cerveza, ubicada en Blvd. Paseo de los Doctores 525, Colonia Prados del Sur, a nombre de Erick Servín Sánchez.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Prados del Sur"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "ERICK SERVÍN SÁNCHEZ",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó dar de baja en el sistema EMPRESS 91 perfiles de comerciantes temporales erróneamente registrados como fijos.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [
+    "COLIMA CENTRO",
+    "ELPEDREGAL",
+    "MAGISTERIAL",
+    "RESIDENCIAL ESMERALDA",
+    "RIVERA DEL JAZMIN",
+    "SARDINES DEL SAL",
+    "VILLA DE ALVAREZ",
+    "BUROCRATAS",
+    "LAS PALMAS",
+    "SIN NOMBRE",
+    "ORIENTAL",
+    "LAZARO CARDENAS"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisiones conjuntas de Hacienda Municipal y Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se retiró del Orden del Día el dictamen sobre el Informe de Avance de la Gestión Financiera del primer semestre de 2025.",
+   "sentido": "retirado",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se presentó la iniciativa con proyecto de decreto para otorgar incentivos fiscales a contribuyentes del Municipio de Colima; no se determinó su aprobación en este fragmento.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "contribuyentes del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización 'Residencial Santa Cristina', promovido por Mauricio Ortiz Espinoza, que incluye obras como rehabilitación del pozo El Zarco y construcción de un subcolector.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "La Capacha",
+    "Paseo de los Sauces",
+    "Merit Residencial",
+    "Residencial San Agustín",
+    "La Herradura",
+    "Pedregal Residencial",
+    "Jardines del Pedregal",
+    "Vista La Capacha",
+    "Real La Floresta",
+    "Punto Rioja",
+    "Residencial Santa Cristina"
+   ],
+   "obras": [
+    "Rehabilitación y equipamiento del pozo profundo El Zarco I",
+    "Construcción de subcolector de 14 pulgadas",
+    "Consolidación de vialidades",
+    "Rehabilitación y equipamiento del pozo profundo denominado el Zarco l",
+    "Construcción de un subcolector de 14” y entronque al colector existente sobre la"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mauricio Ortiz Espinoza",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se reprobó por mayoría la Minuta con Proyecto de Decreto de reforma constitucional en materia de acceso a la información y protección de datos personales.",
+   "sentido": "rechazado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se trataron asuntos generales: entrega de informes, posicionamientos de regidores y conmemoración histórica.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

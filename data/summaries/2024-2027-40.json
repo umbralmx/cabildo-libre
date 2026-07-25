@@ -1,0 +1,515 @@
+{
+ "id": "2024-2027-40",
+ "no_acta": 40,
+ "fecha": "2025-07-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T17:07:19+00:00",
+ "lectura": {
+  "chars_ocr": 353452,
+  "chars_leidos": 353452,
+  "ventanas": 9,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron 11 traspasos en mercados y una reforma reglamentaria; quedó pendiente la aprobación de adecuaciones presupuestales.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó el Orden del Día por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron las Actas 37 y 38; quedó pendiente el acta 39.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizaron 4 traspasos de locales en los Mercados Gral. Manuel Álvarez y Constitución.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizaron 3 traspasos de locales en el Mercado Gral. Álvaro Obregón.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizaron 4 traspasos de locales en el Mercado Gral. Álvaro Obregón.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó reformar el Reglamento para el Funcionamiento de Establecimientos Comerciales, Industriales y de Servicio.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Gobernación y Reglamentos y Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó a la Tesorería Municipal a realizar las adecuaciones presupuestarias de junio de 2025, por montos totales de $24,746,896.43 (recursos propios) y $11,939,032.40 (FORTAMUN).",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$24,746,896.43",
+     "valor_mxn": 24746896.43
+    },
+    {
+     "texto": "$24,746,896.43 (Veinticuatro millones setecientos cuarenta y seis mil ochocientos noventa y seis pesos con 43/100 M.N.)",
+     "valor_mxn": 24746896.43
+    },
+    {
+     "texto": "15,807.92",
+     "valor_mxn": 15807.92
+    },
+    {
+     "texto": "171,436.51",
+     "valor_mxn": 171436.51
+    },
+    {
+     "texto": "672,800.00",
+     "valor_mxn": 672800.0
+    },
+    {
+     "texto": "2,500.00",
+     "valor_mxn": 2500.0
+    },
+    {
+     "texto": "53,674.22",
+     "valor_mxn": 53674.22
+    },
+    {
+     "texto": "42,497.59",
+     "valor_mxn": 42497.59
+    },
+    {
+     "texto": "45,000.00",
+     "valor_mxn": 45000.0
+    },
+    {
+     "texto": "22,000.00",
+     "valor_mxn": 22000.0
+    },
+    {
+     "texto": "2,711,153.32",
+     "valor_mxn": 2711153.32
+    },
+    {
+     "texto": "685,303.23",
+     "valor_mxn": 685303.23
+    },
+    {
+     "texto": "486,540.00",
+     "valor_mxn": 486540.0
+    },
+    {
+     "texto": "178,534.28",
+     "valor_mxn": 178534.28
+    },
+    {
+     "texto": "32,177.69",
+     "valor_mxn": 32177.69
+    },
+    {
+     "texto": "114,178.90",
+     "valor_mxn": 114178.9
+    },
+    {
+     "texto": "1,053.38",
+     "valor_mxn": 1053.38
+    },
+    {
+     "texto": "33,467.92",
+     "valor_mxn": 33467.92
+    },
+    {
+     "texto": "139,064.00",
+     "valor_mxn": 139064.0
+    },
+    {
+     "texto": "6,270.29",
+     "valor_mxn": 6270.29
+    },
+    {
+     "texto": "525.16",
+     "valor_mxn": 525.16
+    },
+    {
+     "texto": "3,456.65",
+     "valor_mxn": 3456.65
+    },
+    {
+     "texto": "10,548.94",
+     "valor_mxn": null
+    },
+    {
+     "texto": "6,941.56",
+     "valor_mxn": null
+    },
+    {
+     "texto": "464,506.42",
+     "valor_mxn": null
+    },
+    {
+     "texto": "300,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "8,333.32",
+     "valor_mxn": null
+    },
+    {
+     "texto": "29,999.99",
+     "valor_mxn": null
+    },
+    {
+     "texto": "75,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,474.96",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,200,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,100,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "638.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,178,655.60",
+     "valor_mxn": null
+    },
+    {
+     "texto": "7,376.45",
+     "valor_mxn": null
+    },
+    {
+     "texto": "131,681.78",
+     "valor_mxn": null
+    },
+    {
+     "texto": "2,036,935.88",
+     "valor_mxn": null
+    },
+    {
+     "texto": "493,726.67",
+     "valor_mxn": null
+    },
+    {
+     "texto": "2,474,126.68",
+     "valor_mxn": null
+    },
+    {
+     "texto": "712,213.70",
+     "valor_mxn": null
+    },
+    {
+     "texto": "3,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "499,500.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "24,746,896.43",
+     "valor_mxn": 24746896.43
+    },
+    {
+     "texto": "11,939,032.40",
+     "valor_mxn": 11939032.4
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al Congreso del Estado los resultados de la Cuenta Pública de junio de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se dio lectura al dictamen que reforma el Reglamento del Instituto de la Juventud para incluir lenguaje incluyente; no se determinó el resultado de la votación en este fragmento.",
+   "sentido": "no_determinable",
+   "categoria": "reglamento_normativo",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó suscribir un convenio con el Grupo Educativo Colimense Alaro, S.C. para ofrecer opciones educativas accesibles a personas con enfermedades crónico-degenerativas y al público en general, con descuentos en inscripción y colegiatura.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Grupo Educativo Colimense Alaro, S.C.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Derechos Humanos y Participación Ciudadana",
+   "autor": {
+    "nombre": "Diana Gabriela Vizcaíno Aguirre",
+    "id": "diana-gabriela-vizcaino-aguirre"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal de las etapas 1, 3, 4, 5 y 6 del fraccionamiento Residencial Ethereum by Real Vista Hermosa, promovido por ARDICA CONSTRUCCIONES, S.A. DE C.V., con una fianza de $5,528,622.65 para garantizar las obras de urbanización.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "RESIDENCIAL ETHEREUM BY REAL VISTA HERMOSA"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$5,528,622.65 (CINCO MILLONES QUINIENTOS VEINTIOCHO MIL SESISCIENTOS VEINTIDOS PESOS 65/100 M.N.)",
+     "valor_mxn": 5528622.65
+    }
+   ],
+   "beneficiario": {
+    "nombre": "ARDICA CONSTRUCCIONES, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización 'TOSCANA', promovido por Lic. José Alberto Reyes Ochoa, para una fracción de la parcela 43 Z-2 P1/1 del Ejido El Diezmo, municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "TOSCANA",
+    "Ejido El Diezmo"
+   ],
+   "obras": [
+    "Vialidad Principal VP-2",
+    "Calle de Distribución CD-6"
+   ],
+   "montos": [
+    {
+     "texto": "$96,509.56",
+     "valor_mxn": 96509.56
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Servicios Inmobiliarios RESTO, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

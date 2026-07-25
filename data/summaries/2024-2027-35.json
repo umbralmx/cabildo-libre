@@ -1,0 +1,399 @@
+{
+ "id": "2024-2027-35",
+ "no_acta": 35,
+ "fecha": "2025-05-30",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T16:57:09+00:00",
+ "lectura": {
+  "chars_ocr": 122775,
+  "chars_leidos": 122775,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron licencias de venta de alcohol, dos convenios de colaboración y se presentó dictamen de adecuaciones presupuestales sin votación.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el Orden del Día.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las Actas 32, 33 y 34.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la expedición de tres licencias de venta de alcohol para establecimientos en Centro, Jardines Vista Hermosa y Lázaro Cárdenas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "Jardines Vista Hermosa",
+    "Lázaro Cárdenas"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad la expedición de cuatro licencias de venta de alcohol para establecimientos en El Roble, Centro, San Rafael y La Albarrada.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "El Roble",
+    "Centro",
+    "San Rafael",
+    "La Albarrada"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la suscripción de un convenio de colaboración con el Municipio de Tepatitlán de Morelos.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Municipio de Tepatitlán de Morelos",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad la suscripción de un convenio de colaboración con el Instituto Universitario de Bellas Artes y la asociación Almas Mexicanas.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto Universitario de Bellas Artes",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la autorización para que la Tesorería Municipal realice adecuaciones presupuestarias por $46,221,767.70 del FAISMUN para ejecutar 15 obras públicas en varias colonias, como rehabilitación de muros, alcantarillado, pavimentación y alumbrado.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Villa",
+    "Prados del Sur",
+    "Colonia Francisco Villa",
+    "Colonia Prados del Sur",
+    "Colonia La Estancia",
+    "Localidad de Piscila",
+    "Colonia Residencial Lomas Verdes",
+    "Colonia Jardines de la Estancia",
+    "Colonia Ignacio Zaragoza",
+    "Localidad de Las Guásimas",
+    "Colonia Esmeralda Norte",
+    "Colonia Costeño",
+    "Localidad Los Asmoles",
+    "Colonia El Yaqui"
+   ],
+   "obras": [
+    "Rehabilitación de muro de contención en colonia Francisco Villa, cauce del arroy",
+    "Construcción de muro de contención en colonia Prados del Sur, cauce del arroyo P",
+    "Construcción de alcantarillado pluvial, colector y boca de tormenta (incompleto)",
+    "Rehabilitación de muro de contención en colonia Francisco Villa",
+    "Construcción de muro de contención en colonia Prados del Sur",
+    "Construcción de alcantarillado pluvial en colonia La Estancia",
+    "Construcción de red de drenaje sanitario en Piscila",
+    "Rehabilitación de red de alcantarillado pluvial en colonia Prados del Sur",
+    "Construcción de red de alcantarillado pluvial en Residencial Lomas Verdes",
+    "Construcción de red de alcantarillado pluvial en Jardines de la Estancia",
+    "Construcción de alumbrado público en cancha de colonia Ignacio Zaragoza",
+    "Ampliación de alumbrado público en cancha techada de Las Guásimas",
+    "Rehabilitación de parque público en colonia Esmeralda Norte",
+    "Rehabilitación de pavimentación en colonia Costeño",
+    "Construcción de pavimentación en localidad Los Asmoles"
+   ],
+   "montos": [
+    {
+     "texto": "$ 2234/455.20",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$2,234,455.20",
+     "valor_mxn": 2234455.2
+    },
+    {
+     "texto": "$11,329,385.72",
+     "valor_mxn": 11329385.72
+    },
+    {
+     "texto": "$5,557,710.30",
+     "valor_mxn": 5557710.3
+    },
+    {
+     "texto": "$2,390,589.50",
+     "valor_mxn": 2390589.5
+    },
+    {
+     "texto": "$5,296,215.49",
+     "valor_mxn": 5296215.49
+    },
+    {
+     "texto": "$981,763.15",
+     "valor_mxn": 981763.15
+    },
+    {
+     "texto": "$134,031.12",
+     "valor_mxn": 134031.12
+    },
+    {
+     "texto": "$117,136.87",
+     "valor_mxn": 117136.87
+    },
+    {
+     "texto": "$1,437,350.64",
+     "valor_mxn": 1437350.64
+    },
+    {
+     "texto": "$555,808.57",
+     "valor_mxn": 555808.57
+    },
+    {
+     "texto": "$5,137,863.59",
+     "valor_mxn": 5137863.59
+    },
+    {
+     "texto": "$550,094.28",
+     "valor_mxn": 550094.28
+    },
+    {
+     "texto": "$1,783,195.70",
+     "valor_mxn": 1783195.7
+    },
+    {
+     "texto": "$10,009,883.03",
+     "valor_mxn": 10009883.03
+    },
+    {
+     "texto": "$46,221,767.70",
+     "valor_mxn": 46221767.7
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la modificación al Programa Municipal de Ordenamiento Territorial y Desarrollo Urbano para cambiar la clasificación de áreas y zonificación de las fracciones de la parcela 27 Z-1 P1/3, pasando de reserva a largo y mediano plazo a corto plazo, y de densidad baja a media.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Localidad de La Capacha",
+    "Residencial Jardines Victoria",
+    "Residencial Valle Verde",
+    "Fraccionamiento Punta Norte"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$20,356.88",
+     "valor_mxn": 20356.88
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ezequiel Franco Castellanos y/o Raúl Venegas Ochoa",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó que el campo de fútbol de la localidad de Loma de Juárez lleve el nombre de 'Campo Deportivo Consuelo de la Rosa'.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Loma de Juárez"
+   ],
+   "obras": [
+    "Campo Deportivo Consuelo de la Rosa"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de EDUCACIÓN, CULTURA Y RECREACIÓN y DESARROLLO URBANO Y VIVIENDA",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la minuta con proyecto de decreto para reformar el artículo 97 y adicionar un párrafo al artículo 12 de la Constitución del Estado de Colima en materia de Lengua de Señas Mexicana.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se presentaron asuntos generales, incluyendo condolencias por el asesinato de una trabajadora municipal y anuncios de brigadas de salud y ecobrigadas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [
+    "colonia Tívoli"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

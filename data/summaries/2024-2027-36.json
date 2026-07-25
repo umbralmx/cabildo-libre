@@ -1,0 +1,431 @@
+{
+ "id": "2024-2027-36",
+ "no_acta": 36,
+ "fecha": "2025-06-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T17:00:28+00:00",
+ "lectura": {
+  "chars_ocr": 265867,
+  "chars_leidos": 265867,
+  "ventanas": 7,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron el orden del día modificado, el acta anterior, un convenio educativo, iluminación por independencia colombiana y un bono para padres trabajadores; se inició trámite para nombrar una sala.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se registró la asistencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró legalmente instalada la sesión al contar con quórum.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día modificado, retirando los puntos originales VI y X a solicitud de la Síndica y un regidor.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura y se aprobó por unanimidad el acta de cabildo número 35.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad suscribir un convenio de colaboración con la Universidad Vizcaya de las Américas para fortalecer la cooperación educativa y otorgar becas a trabajadores municipales.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Centro de Estudios Universitarios Vizcaya de las Américas",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad iluminar espacios públicos municipales con los colores de la bandera de Colombia del 18 al 20 de julio.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Consulado de Colombia",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad otorgar un bono de $1,037.99 a los padres trabajadores de base, confianza y supernumerarios del Ayuntamiento por el Día del Padre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,037.99 (Mil treinta y siete pesos 99/100 m.n.)",
+     "valor_mxn": 1037.99
+    }
+   ],
+   "beneficiario": {
+    "nombre": "padres trabajadores de base, confianza y supernumerarios del H. Ayuntamiento de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se dio lectura al dictamen para asignar el nombre 'Mtra. Rocío Valdovinos Anguiano' a la Sala 1 del Centro de Justicia Cívica Municipal; no se registró el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "patrimonio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mtra. Rocío Valdovinos Anguiano",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó por unanimidad nombrar el Auditorio Sala 1 del Centro de Justicia Cívica Municipal como 'Auditorio Mtra. María del Rosío Valdovinos Anguiano' en reconocimiento a su trayectoria.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mtra. María del Rosío Valdovinos Anguiano",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó por unanimidad la municipalización de las Etapas 1, 2 y 5 del Fraccionamiento 'HACIENDA EL BALCÓN', incluyendo calles y una fianza de $667,724.53.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "HACIENDA EL BALCÓN"
+   ],
+   "obras": [
+    "Calle del Molino",
+    "Calle Balcones",
+    "Calle Pioneros",
+    "Hacienda Real"
+   ],
+   "montos": [
+    {
+     "texto": "$667,724.53",
+     "valor_mxn": 667724.53
+    }
+   ],
+   "beneficiario": {
+    "nombre": "INMOBILIARIA JYZAO S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se autorizó a la Tesorería Municipal a realizar las adecuaciones presupuestarias del mes de mayo de 2025, con transferencias por más de 28 millones de pesos y 2.4 millones de pesos del FORTAMUN, aprobado por mayoría con dos votos en contra.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$28,861,199.34",
+     "valor_mxn": 28861199.34
+    },
+    {
+     "texto": "1,639.67",
+     "valor_mxn": 1639.67
+    },
+    {
+     "texto": "2,624.01",
+     "valor_mxn": 2624.01
+    },
+    {
+     "texto": "266,433.19",
+     "valor_mxn": 266433.19
+    },
+    {
+     "texto": "11,837.80",
+     "valor_mxn": 11837.8
+    },
+    {
+     "texto": "1,276.00",
+     "valor_mxn": 1276.0
+    },
+    {
+     "texto": "28,861,199.34",
+     "valor_mxn": 28861199.34
+    },
+    {
+     "texto": "2,416,977.80",
+     "valor_mxn": 2416977.8
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Iztel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública de mayo de 2025, con dos votos en contra.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se autorizaron seis aperturas de establecimientos con venta de alcohol: ABARROTES NICOLE, EL REY MARISQUERÍA DE BARRIO, TEQUILA VELOCITY, GREEN HOUSE, AUTO CARNES BALLESTEROS y MI RANCHITO.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Diamantes II",
+    "Colonia Santa Amalia",
+    "Colonia Lomas de Circunvalación",
+    "Colonia Gardens La Hermitha",
+    "Localidad El Chanal",
+    "Colonia La Armonía",
+    "Colonia Residencial Esmeralda Norte"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se autorizó una apertura de tienda de abarrotes con venta de cerveza (ABARROTES EUS) y un cambio de domicilio de un depósito de venta de alcohol (COLIPISTO).",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Lomas de Santa Elena",
+    "Colonia La Virgencita",
+    "Colonia Josefa Ortiz de Domínguez"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se presentó dictamen para autorizar tres aperturas de establecimientos con venta de alcohol (LAS KETRANZAS, ABARROTES HERMANOS VÁZQUEZ, ABARROTES ARJIM), pero no se registró el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Lomas de Vista Hermosa",
+    "Colonia Mirador de la Cumbre II",
+    "Colonia Placetas"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 17,
+   "numeral": "XVII",
+   "resumen": "Se presentaron varios asuntos generales: la colecta para el Teletón en Colima, el reconocimiento de edificios municipales como espacios libres de humo de tabaco, la información sobre el Padrón de Deudores Alimentarios Morosos, la Alianza Colima por la Seguridad y Armonía, y comentarios del Presidente Municipal sobre discapacidad, violencia contra la mujer y otros temas. No se tomó ninguna decisión.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 18,
+   "numeral": "XVIII",
+   "resumen": "El Presidente Municipal declaró clausurada la sesión a las 12:45 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,280 @@
+{
+ "id": "2024-2027-39",
+ "no_acta": 39,
+ "fecha": "2025-07-09",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-25T17:04:03+00:00",
+ "lectura": {
+  "chars_ocr": 90567,
+  "chars_leidos": 90567,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron dos dictámenes de licencias con alcohol, se nombró la Sala 2 como 'Sala de Juezas y Jueces Cívicos', y se pospuso la aprobación de actas anteriores.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia con 11 regidores presentes y uno remoto, y una ausencia justificada.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión por contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar las Actas 37 y 38 en la próxima sesión, posponiendo su aprobación.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la expedición de dos licencias comerciales con alcohol: una apertura de OXXO PLACETAS y un cambio de domicilio de OXXO RINCÓN DEL COLIBRÍ, a favor de CADENA COMERCIAL OXXO S.A DE C.V.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Placetas",
+    "Colonia Jardines de Vista Hermosa",
+    "Colonia Rinconada del Colibrí"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CADENA COMERCIAL OXXO S.A DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza la expedición de tres licencias comerciales con alcohol: para 'LAS TERRAZAS' de Gloria Méndez Ruelas, 'LA REGIONAL' de Ángel Gregorio Soto Monroy, e 'IKAL' de María Lilian Valencia Alcalá.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Nuevo Paraíso",
+    "Centro",
+    "Colonia Ikal"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad el dictamen para nombrar 'Sala de Juezas y Jueces Cívicos' a la Sala 2 del Centro de Justicia Cívica Municipal, en reconocimiento a las y los jueces cívicos.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, y para la Igualdad de Género",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la incorporación municipal de las etapas 3, 6, 9 y 10 del Fraccionamiento Paseo de los Sauces, con una superficie de 2,315.88 m² y una fianza de $982,973.93 para garantizar obras de urbanización.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "PASEO DE LOS SAUCES"
+   ],
+   "obras": [
+    "AV. KARIM ASSAM",
+    "AV. DE LAS PIRÁMIDES"
+   ],
+   "montos": [
+    {
+     "texto": "$982,973.93 (NOVECIENTOS OCHENTA Y DOS MIL NOVECIENTOS SETENTA Y TRES PESOS 93/100 M.N.)",
+     "valor_mxn": 982973.93
+    }
+   ],
+   "beneficiario": {
+    "nombre": "ADALVERTO SPINDOLA SÁNCHEZ, MA. DEL ROSARIO MENDOZA CUEVAS, MAURICIO ORTÍZ ESPINOZA Y/O BOREAS DE COLIMA S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa Única del Fraccionamiento Residencial Victoria Norte, con 6 lotes y superficie de 1,891.84 m², y una fianza de $75,867.73.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Victoria Norte"
+   ],
+   "obras": [
+    "MONTE TIBETANO",
+    "MONTAÑAS DE CRIMEA"
+   ],
+   "montos": [
+    {
+     "texto": "$ 1,369,541.50 pesos (Un Millón Trescientos Sesenta y Nueve Mil Quinientos Cuarenta y Un pesos 50/100 M.N.)",
+     "valor_mxn": 1369541.5
+    },
+    {
+     "texto": "$ 75,867.73 (SETENTA Y CINCO MIL OCHOCIENTOS SESENTA Y SIETE PESOS 73/100 M.N.)",
+     "valor_mxn": 75867.73
+    }
+   ],
+   "beneficiario": {
+    "nombre": "SALVADOR LLENERAS MONTES DE OCA, RAFAEL VANEGAS CAMPA, PABLO CESAR RODRÍGUEZ REYNAGA, RAFAEL AMADOR BADILLO, BELÉN LIZET",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó el dictamen que autoriza el contrato de comodato de predios para áreas verdes en beneficio de los vecinos de los Fraccionamientos Los Olivos y Puerta del Sol.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "Los Olivos",
+    "Puerta del Sol"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "COMITÉ VECINAL DE LOS FRACCIONAMIENTOS LOS OLIVOS Y PUERTA DEL SOL, representado por la C. Alma Leticia Castellanos Ocar",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "El Presidente Municipal declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
