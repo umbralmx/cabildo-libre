@@ -233,7 +233,7 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 **Ready for the agent:**
 4. Once the secret exists: trigger `procesar.yml` (workflow_dispatch) to OCR + summarize a first batch of the term; verify output quality on real DeepSeek summaries (this is the one thing not yet proven end-to-end — no key was available at build time).
 5. **Site integration for Phase 2** ✅ *(done 2026-07-20)*: summaries render under each agenda item (timeline + results) with a `sentido` label and an AI/OCR disclaimer; lazy full-content search over `data/ocr/` with honest coverage; `processor/build_site_index.py` compiles `site/summaries.json` + `site/fulltext.json` (wired into `procesar.yml`). Section-number brand flourish added. Verified by a headless render smoke-test — **not yet a visual pass** (browser tool was down); eyeball the live page.
-6. Watch the OCR text cap: `summarize_colima.py` sends the first 45K chars/acta — fine for most, but very large actas (e.g. acta 74, 108pp) get truncated. Revisit if outcomes on late pages get missed.
+6. ~~Watch the OCR text cap~~ — **confirmed as the pipeline's dominant defect (2026-07-25).** The 45K cap truncates **17 of 25 actas** and only **25% of the term's OCR text reaches the model**. All 91 puntos with `sentido: no_determinable` come from truncated actas; the 8 actas that fit whole have **zero**. It is not model quality or an acta that stays silent — the outcome is recorded at the end of each punto, past the window. Reading all 74 actas whole costs **under $1**; the blocker is that a 595K-char acta doesn't fit one call, so the fix is **windowing + per-punto merge**, not a bigger cap. This gates D1/D3/D4/D6/M1/M2 — see `docs/indicadores-revision.md` §1.
 
 ---
 
@@ -248,6 +248,7 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 | `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |
 | `processor/README.md` | **How Phase 2 runs** — the OCR + summary stages, deps, provider-swap, honesty rules |
 | `docs/indicadores.md` + `data/indicadores.json` | **Phase 3 indicator dictionary** — the 26 `ya`/`1 paso` analyses, each with source, computation, audience, caveat. Source of truth for L4/L5 |
+| `docs/indicadores-revision.md` | **Critical review of those 26 against the real data (2026-07-25)** — which hold up, which mislead, 6 new ones. Read before building L4 |
 | `docs/x1-terminos-legal.md` | T&C findings, risk, and options — **read before launching** |
 | `docs/diseno.md` | How the Umbral brand system was applied, and deliberate deviations |
 | `data/SOURCE.md` | Dataset provenance, caveats, licensing position |
