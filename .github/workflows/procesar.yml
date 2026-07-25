@@ -20,6 +20,10 @@ on:
         description: "Re-generar resúmenes ya existentes (para actualizar el esquema Tier A)"
         type: boolean
         default: false
+      solo_resumenes:
+        description: "Saltar el OCR y sólo re-resumir lo ya OCR'd (para el pase enriquecido)"
+        type: boolean
+        default: false
   schedule:
     - cron: "0 7 * * 6" # sábados 1:00 Colima, fuera de horas pico
 
@@ -50,6 +54,7 @@ jobs:
           pip install -r processor/requirements.txt
 
       - name: OCR (gratis, un lote)
+        if: ${{ github.event.inputs.solo_resumenes != 'true' }}
         run: |
           python3 processor/ocr_colima.py \
             --periodo "${{ github.event.inputs.periodo || '2024-2027' }}" \
