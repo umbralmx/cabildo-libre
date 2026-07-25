@@ -22,6 +22,17 @@ the sense of the vote isn't legible, it must return `no_determinable`. That
 keeps the project's rule — *never fill a gap in the source by inference* — intact
 even though a summarizer is involved.
 
+**Long actas are read in overlapping windows, not truncated.** Sending only the
+first 45K chars silently discarded three quarters of the term: the outcome of a
+punto is recorded at the *end* of its discussion, so truncation produced
+`no_determinable` on 68 % of the puntos of the actas it cut, and on 0 % of the
+actas that fit whole (`docs/indicadores-revision.md` §1). An acta is now split
+into overlapping windows, each summarized, and the per-punto records merged by
+`fusionar_puntos()` — which prefers a *stated* outcome over an unread one and
+unions the structured lists, never averaging or inventing. Each summary records
+how much of its text was actually read (`lectura`), so coverage is auditable
+rather than assumed.
+
 Requires DEEPSEEK_API_KEY in the environment (a GitHub Actions secret in CI).
 
 Usage:
@@ -43,6 +54,7 @@ import sys
 import time
 import urllib.error
 import urllib.request
+from collections import Counter
 from pathlib import Path
 
 from limpieza import limpiar
@@ -58,7 +70,12 @@ LLM_ENDPOINT = os.environ.get("LLM_ENDPOINT", "https://api.deepseek.com/chat/com
 LLM_MODEL = os.environ.get("LLM_MODEL", "deepseek-v4-flash")
 LLM_API_KEY_ENV = os.environ.get("LLM_API_KEY_ENV", "DEEPSEEK_API_KEY")
 
-OCR_TEXT_CAP = 45000  # chars of acta text sent per request (keeps cost bounded)
+# One window's worth of acta text per request. This is a *context* limit, not a
+# cost limit: at $0.14/1M input tokens the whole term costs under a dollar, so
+# nothing is dropped — long actas are split across windows instead.
+VENTANA_CHARS = 45000
+SOLAPE_CHARS = 3000    # overlap, so a punto straddling a boundary is read whole
+MAX_VENTANAS = 24      # ~1M chars; beyond this the acta is flagged, not silently cut
 
 # A batch is dozens of long requests in a row, so a dropped or truncated response
 # is a matter of when, not if. Without retries one flaky read kills the whole run
@@ -140,15 +157,43 @@ ESQUEMA = 3  # bumped when the per-punto shape changes; lets the aggregator tell
 _ROSTER = build_index()  # for mapping dissenter/abstainer/author names to roster ids
 
 
-def build_messages(acta: dict, ocr_text: str) -> list[dict]:
+def ventanas(texto: str) -> list[str]:
+    """Split an acta into overlapping windows. The overlap matters: a punto whose
+    discussion straddles a boundary would otherwise lose its outcome, which is the
+    exact failure the truncation caused."""
+    if len(texto) <= VENTANA_CHARS:
+        return [texto]
+    paso = VENTANA_CHARS - SOLAPE_CHARS
+    trozos = [texto[i:i + VENTANA_CHARS] for i in range(0, len(texto), paso)]
+    trozos = [t for t in trozos if t.strip()]
+    return trozos[:MAX_VENTANAS]
+
+
+def build_messages(acta: dict, ocr_text: str, ventana: tuple[int, int] = (1, 1)) -> list[dict]:
+    i, n = ventana
     agenda = "\n".join(
         f"{it['n']}. ({it.get('numeral') or '·'}) {it['texto']}"
         for it in acta["agenda_items"]
     )
+    if n > 1:
+        # The model must not guess at puntos it cannot see. Silence about a punto
+        # is information (another window covers it); a fabricated outcome is not.
+        contexto = (
+            f"\n\nIMPORTANTE: este es el FRAGMENTO {i} de {n} del acta; el texto viene "
+            "cortado al principio y al final. Reporta ÚNICAMENTE los puntos del órden "
+            "del día de los que este fragmento hable. Omite por completo los puntos que "
+            "no aparezcan aquí: otro fragmento los cubre. No deduzcas el resultado de un "
+            "punto cuya votación no esté en este fragmento; para esos, si los incluyes, "
+            "usa 'no_determinable'."
+        )
+        cabecera = f"=== TEXTO OCR DEL ACTA — FRAGMENTO {i} de {n} ==="
+    else:
+        contexto = ""
+        cabecera = "=== TEXTO OCR DEL ACTA ==="
     user = (
-        f"{INSTRUCCION}\n\n"
+        f"{INSTRUCCION}{contexto}\n\n"
         f"=== ÓRDEN DEL DÍA (acta {acta['no_acta']}, {acta['fecha']}) ===\n{agenda}\n\n"
-        f"=== TEXTO OCR DEL ACTA (puede estar truncado) ===\n{ocr_text[:OCR_TEXT_CAP]}"
+        f"{cabecera}\n{ocr_text}"
     )
     return [{"role": "system", "content": SISTEMA}, {"role": "user", "content": user}]
 
@@ -272,9 +317,15 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
     Returns (resumen_sesion, puntos)."""
     try:
         payload = json.loads(raw)
-        rows = payload["puntos"]
-    except (json.JSONDecodeError, KeyError, TypeError):
+    except json.JSONDecodeError:
+        raise ValueError("model did not return valid JSON")
+    if not isinstance(payload, dict):
         raise ValueError("model did not return the expected JSON shape")
+    # A window that covers none of the agenda legitimately returns no puntos —
+    # that is silence about what it couldn't see, not a malformed answer.
+    rows = payload.get("puntos") or []
+    if not isinstance(rows, list):
+        raise ValueError("model returned a non-list 'puntos'")
 
     resumen_sesion = (payload.get("resumen_sesion") or "").strip()
     by_n = {it["n"]: it for it in acta["agenda_items"]}
@@ -308,15 +359,116 @@ def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
     return resumen_sesion, out
 
 
+def _union(listas: list[list], clave) -> list:
+    """Concatenate lists from several windows, dropping repeats. The overlap makes
+    duplicates the norm, so dedup is required — but nothing is ever *merged*: two
+    different amounts stay two amounts."""
+    out, vistos = [], set()
+    for lista in listas:
+        for item in lista or []:
+            k = clave(item)
+            if k not in vistos:
+                vistos.add(k)
+                out.append(item)
+    return out
+
+
+def fusionar_puntos(parciales: list[list[dict]]) -> tuple[list[dict], list[int]]:
+    """Merge the per-punto records that each window produced.
+
+    The governing rule: **a stated outcome beats an unread one.** A window that
+    never saw a punto's vote reports `no_determinable`; that must not overwrite a
+    window that did see it. Where two windows both state an outcome and disagree,
+    the majority reading wins (ties → the later window, since the vote is recorded
+    at the end of the discussion) and the punto is reported as contested rather
+    than silently resolved. Lists are unioned; nothing is averaged or invented.
+
+    Returns (puntos, numeros_en_conflicto)."""
+    por_n: dict[int, list[dict]] = {}
+    for i, puntos in enumerate(parciales):
+        for pt in puntos:
+            por_n.setdefault(pt["n"], []).append({**pt, "_ventana": i})
+
+    fusionados, conflictos = [], []
+    for n in sorted(por_n):
+        versiones = por_n[n]
+        base = dict(versiones[-1])
+        base.pop("_ventana", None)
+
+        for campo, indeterminado in (("sentido", "no_determinable"),
+                                     ("votacion", "no_determinable"),
+                                     ("categoria", "otro")):
+            dichos = [v for v in versiones if v.get(campo) not in (None, indeterminado)]
+            if not dichos:
+                base[campo] = indeterminado
+                continue
+            conteo = Counter(v[campo] for v in dichos)
+            top = conteo.most_common(1)[0][1]
+            empatados = [c for c, k in conteo.items() if k == top]
+            # tie → the reading from the latest window that stated it
+            base[campo] = next(v[campo] for v in reversed(dichos) if v[campo] in empatados)
+            if campo == "sentido" and len(conteo) > 1:
+                conflictos.append(n)
+
+        # The window that read the outcome read the substance: prefer its prose.
+        con_sentido = [v for v in versiones if v.get("sentido") not in (None, "no_determinable")]
+        candidatos = [v.get("resumen", "") for v in (con_sentido or versiones)]
+        base["resumen"] = max(candidatos, key=len, default="")
+
+        base["colonias"] = _union([v.get("colonias") for v in versiones], lambda s: s.lower())
+        base["obras"] = _union([v.get("obras") for v in versiones], lambda s: s.lower())
+        base["montos"] = _union([v.get("montos") for v in versiones],
+                                lambda m: (m.get("texto", "").lower(), m.get("valor_mxn")))
+        for campo in ("votos_en_contra", "abstenciones"):
+            base[campo] = _union([v.get(campo) for v in versiones],
+                                 lambda p: (p.get("id") or p.get("nombre", "").lower()))
+        for campo in ("beneficiario", "comision", "autor"):
+            base[campo] = next((v[campo] for v in versiones if v.get(campo)), None)
+
+        fusionados.append(base)
+    return fusionados, sorted(set(conflictos))
+
+
 def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
     # Feed the model the cleaned text: less structural noise fits more real
-    # content under OCR_TEXT_CAP and sharpens extraction. Raw stays as evidence.
-    messages = build_messages(acta, limpiar(ocr["texto_completo"]))
+    # content per window and sharpens extraction. Raw stays as evidence.
+    texto = limpiar(ocr["texto_completo"])
+    trozos = ventanas(texto)
+    n = len(trozos)
+
     if dry_run:
-        print(messages[1]["content"][:1500])
+        print(f"[{acta['id']}] {len(texto):,} chars → {n} ventana(s)")
+        print(build_messages(acta, trozos[0], (1, n))[1]["content"][:1500])
         return None
-    raw = call_llm(messages)
-    resumen_sesion, puntos = parse_summary(raw, acta)
+
+    parciales: list[list[dict]] = []
+    resumen_sesion = ""
+    fallidas = 0
+    for i, trozo in enumerate(trozos, 1):
+        if n > 1:
+            print(f"  · ventana {i}/{n} ({len(trozo):,} chars)", flush=True)
+        try:
+            raw = call_llm(build_messages(acta, trozo, (i, n)))
+            rs, puntos = parse_summary(raw, acta)
+        except (ValueError, KeyError, OSError, http.client.HTTPException) as e:
+            # Losing one window of fourteen must not cost the whole acta. The gap
+            # is subtracted from the coverage figure instead of being papered over.
+            print(f"  ! ventana {i}/{n}: {type(e).__name__}: {e}; se omite", flush=True)
+            fallidas += 1
+            continue
+        parciales.append(puntos)
+        if not resumen_sesion:
+            resumen_sesion = rs  # the session's framing lives in the first window
+    if fallidas == n:
+        raise ValueError(f"ninguna de las {n} ventanas pudo resumirse")
+
+    puntos, conflictos = fusionar_puntos(parciales)
+    if not puntos:
+        raise ValueError("el modelo no devolvió ningún punto del órden del día")
+    # Overlap means the windows double-count characters; what matters is whether
+    # the whole acta was seen — true unless MAX_VENTANAS cut it or a window failed.
+    paso = VENTANA_CHARS - SOLAPE_CHARS
+    cubierto = min(len(texto), VENTANA_CHARS + (n - 1) * paso) - fallidas * paso
     return {
         "id": acta["id"],
         "no_acta": acta["no_acta"],
@@ -326,6 +478,16 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         "modelo": LLM_MODEL,
         "fuente_texto": ocr["motor"],
         "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
+        # Coverage of the source text, so the dashboard can state how much of the
+        # expediente was actually read instead of implying it was all of it.
+        "lectura": {
+            "chars_ocr": len(texto),
+            "chars_leidos": max(cubierto, 0),
+            "ventanas": n,
+            "ventanas_fallidas": fallidas,
+            "completa": fallidas == 0 and cubierto >= len(texto),
+        },
+        "puntos_en_conflicto": conflictos,
         "resumen_sesion": resumen_sesion,
         "puntos": puntos,
     }
