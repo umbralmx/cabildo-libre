@@ -83,3 +83,35 @@ jobs:
           git add data/ocr data/summaries data/asistencia site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
           git push
+
+  # El lote commitea con el GITHUB_TOKEN, y GitHub a propósito no dispara workflows
+  # con esos push. Se intentó despertar a `actualizar.yml` con un gatillo
+  # `workflow_run`: no llega el evento —probado dos veces el 2026-07-25, con el
+  # archivo ya asentado en main y los nombres idénticos— así que el lote publica
+  # por su cuenta. Son tres pasos y no dependen de que GitHub entregue un evento.
+  publicar:
+    needs: procesar
+    if: ${{ success() }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+    # Mismo grupo que `actualizar.yml`: dos despliegues a Pages hacen cola, no se pisan.
+    concurrency:
+      group: pages
+      cancel-in-progress: false
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      # `main`, no el SHA que arrancó el job: lo que se publica es el commit del lote.
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - id: deployment
+        uses: actions/deploy-pages@v4
