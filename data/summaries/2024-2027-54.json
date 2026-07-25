@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T03:59:59+00:00",
- "resumen_sesion": "La sesión aprobó las actas 52 y 53, y el dictamen de ampliaciones presupuestarias; los demás puntos no registran votación en el acta.",
+ "generado": "2026-07-25T05:15:43+00:00",
+ "lectura": {
+  "chars_ocr": 191045,
+  "chars_leidos": 191045,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron ampliaciones presupuestarias por $51.3 millones para basificaciones y sindicalizaciones de trabajadores municipales.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de regidores y la síndica.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron las Actas 52 y 53; el Acta 51 quedó pendiente para próxima sesión.",
+   "resumen": "Se aprobaron las Actas 52 y 53 por unanimidad; el Acta 51 quedó pendiente.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -76,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó a Tesorería a realizar ampliaciones presupuestarias por $51,338,068.18 para basificaciones y sindicalizaciones de trabajadores.",
+   "resumen": "Se aprobó por unanimidad la autorización a la Tesorería para realizar ampliaciones presupuestarias por el cambio de nómina SUPERNUMERARIO-BASE, con dos abstenciones.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -100,7 +108,10 @@
      "valor_mxn": 51338068.18
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Trabajadores del Ayuntamiento de Colima",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [
     {
@@ -121,22 +132,31 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó Punto de Acuerdo para contratar financiamiento hasta por $32,500,000.00; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad la contratación de un financiamiento a tasa fija hasta por $32,500,000.00, con dos abstenciones.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [
     {
      "texto": "$32,500,000.00",
-     "valor_mxn": 32500000
+     "valor_mxn": 32500000.0
     }
    ],
    "beneficiario": null,
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -145,10 +165,10 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó dictamen para contratar financiamiento a corto plazo por $55,000,000.00; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad la contratación de un financiamiento a corto plazo por $55,000,000.00, con dos abstenciones.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [
@@ -159,17 +179,29 @@
    ],
    "beneficiario": null,
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para celebrar Convenio de Colaboración con el Instituto de Formación Policial; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó celebrar un convenio con el Instituto de Formación, Capacitación y Profesionalización Policial del Estado de Colima para que realice las evaluaciones de ascenso a policía segundo y tercero.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -179,16 +211,19 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Seguridad Pública, Tránsito y Movilidad",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para celebrar Convenio de Colaboración con CEPAVI; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó celebrar un convenio de colaboración con el Centro Estatal para la Prevención y Atención a la Violencia Familiar (CEPAVI) para la atención a víctimas y tratamiento a generadores de violencia.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -198,80 +233,110 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para celebrar Convenio de Hermanamiento con San Luis Potosí; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó celebrar un convenio de hermanamiento entre el Municipio de Colima y el Municipio de San Luis Potosí, San Luis Potosí.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Municipio de San Luis Potosí",
+    "nombre": "Municipio de San Luis Potosí, San Luis Potosí",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones conjuntas de Turismo, Fomento Económico y Empresarial; y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó dictamen para aprobar Estudio de Impacto Territorial y Urbano en parcela 27 Z-1 P1/3; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para modificar la clasificación de áreas y zonificación de las fracciones de la Parcela 27 Z-1 P1/3, promovido por Ezequiel Franco Castellanos y Raúl Venegas Ochoa.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Jardines Victoria",
+    "Residencial Valle Verde",
+    "Fraccionamiento Punta Norte"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "EZEQUIEL FRANCO CASTELLANOS y RAÚL VENEGAS OCHOA",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se presentó dictamen para otorgar incentivos fiscales del Programa VIVIENDA PARA EL BIENESTAR; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la Iniciativa con Proyecto de Decreto que propone otorgar un 50% de descuento en diversos derechos municipales para desarrolladores del Programa de Vivienda para el Bienestar.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Contribuyentes del programa Vivienda para el Bienestar",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se presentó dictamen para desafectar, desincorporar y enajenar inmueble para VIVIENDA PARA EL BIENESTAR; no se registra votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó desafectar, desincorporar y enajenar tres inmuebles municipales (claves catastrales 02-01-02-234-001-000, 02-01-03-469-029-000 y una vialidad sin nombre) para destinarlos al Programa de Vivienda para el Bienestar, mediante donación a CONAVI o venta directa.",
+   "sentido": "aprobado",
    "categoria": "patrimonio",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Villa de Álvarez"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Comisión Nacional de Vivienda (CONAVI)",
+    "tipo": "dependencia"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

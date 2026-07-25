@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:12:27+00:00",
- "resumen_sesion": "Se aprobaron actas anteriores y se dio lectura a dictámenes sobre presupuesto, cuenta pública, convenios, licencias, bonos e incentivos fiscales, sin que conste su votación.",
+ "generado": "2026-07-25T05:51:27+00:00",
+ "lectura": {
+  "chars_ocr": 234736,
+  "chars_leidos": 234736,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron actas previas y se presentó un dictamen de transferencias presupuestarias por $27.5 millones, sin resolverse en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del Cabildo.",
+   "resumen": "Se pasó lista de asistencia registrando la presencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día y se registró una queja sobre el retraso en el inicio.",
+   "resumen": "Se dio lectura al Orden del Día y una regidora hizo una observación sobre la hora de inicio.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura y se aprobaron por unanimidad las Actas de Cabildo 71, 72 y 73.",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 71, 72 y 73.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -76,23 +84,44 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se presentó el dictamen que autoriza transferencias presupuestarias por $27,569,322.77, pero no se registró la votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias del mes de abril de 2026, incluyendo 89 movimientos por un total de $30,961,075.69.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [
     {
-     "texto": "$27,569,322.77 (Veintisiete millones quinientos sesenta y nueve mil trescientos veintidós pesos 77/100 M.N.)",
+     "texto": "$27\"569,322.77",
      "valor_mxn": 27569322.77
+    },
+    {
+     "texto": "$30'961,075.69",
+     "valor_mxn": 30961075.69
+    },
+    {
+     "texto": "$27,569,322.77",
+     "valor_mxn": 27569322.77
+    },
+    {
+     "texto": "$3,391,752.92",
+     "valor_mxn": 3391752.92
     }
    ],
    "beneficiario": {
     "nombre": "Tesorería Municipal",
     "tipo": "dependencia"
    },
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
@@ -103,10 +132,10 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó el dictamen para remitir la Cuenta Pública de abril de 2026 al Congreso del Estado, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de abril de 2026.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -114,90 +143,120 @@
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia"
    },
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen para suscribir un convenio con la Fundación Humanista de Ayuda a Discapacitados FHADI, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó suscribir un Convenio de Colaboración entre el Municipio de Colima y la Fundación Humanista de Ayuda a Discapacitados (FHADI) para beneficiar a personas adultas con discapacidad motriz.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Fundación Humanista de Ayuda a Discapacitados FHADI",
+    "nombre": "Fundación Humanista de Ayuda a Discapacitados (FHADI)",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen para la incorporación municipal del predio intraurbano en el Fraccionamiento GIRASOLES, sin registro de votación.",
-   "sentido": "no_determinable",
-   "categoria": "patrimonio",
-   "votacion": "no_determinable",
+   "resumen": "Se aprobó la Incorporación Municipal Directa del predio intraurbano con clave catastral 02-01-06-165-010-000 del Fraccionamiento 'GIRASOLES', propiedad de Rosaura Pimentel Pimentel.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
    "colonias": [
     "GIRASOLES"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "C. Rosaura Pimentel Pimentel",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó la apertura de una tienda de abarrotes con venta de cerveza 'ABARROTES CHABELITA' en Av. Colima 498, Colonia Oriental, y el cambio de domicilio de la tienda 'DOS HERMANOS' de Cuatro S/N a Parota Oriente S/N en Las Guásimas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Oriental",
+    "Las Guásimas"
    ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 9,
-   "numeral": "IX",
-   "resumen": "Se presentó el dictamen para expedir una licencia comercial con venta de alcohol y un cambio de domicilio, sin registro de votación.",
-   "sentido": "no_determinable",
-   "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen para brindar seguridad social y equiparar becas a aspirantes a policías, y abrir 13 plazas, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó brindar seguridad social (IMSS) y una beca mensual igual al sueldo de un policía de nuevo ingreso a los aspirantes a policías en formación, y la apertura de 13 plazas de policía.",
+   "sentido": "aprobado",
    "categoria": "nombramiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Aspirantes a policías municipales",
+    "nombre": "aspirantes a policías municipales",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Seguridad Pública, Tránsito y Movilidad y Hacienda Municipal",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó el dictamen para suscribir un convenio con VIVO FIT GYM, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Municipio de Colima y 'VIVO FIT GYM' para otorgar beneficios y descuentos a trabajadores municipales.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -207,35 +266,58 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Gobernación y Reglamentos y Juventud y Deporte",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se presentó el dictamen para otorgar un bono a madres trabajadoras del Ayuntamiento, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza otorgar un bono a las madres trabajadoras del Ayuntamiento de Colima para el ejercicio fiscal 2026.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "$2,012.85",
+     "valor_mxn": 2012.85
+    },
+    {
+     "texto": "$1,935.44",
+     "valor_mxn": 1935.44
+    },
+    {
+     "texto": "$1,861.00",
+     "valor_mxn": 1861.0
+    },
+    {
+     "texto": "$224,923.70",
+     "valor_mxn": 224923.7
+    }
+   ],
    "beneficiario": {
-    "nombre": "Madres trabajadoras de base, confianza y supernumerarias del H. Ayuntamiento de Colima",
+    "nombre": "madres trabajadoras de base, confianza y supernumerarias del H. Ayuntamiento de Colima",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Gobernación y Reglamentos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se presentó la iniciativa para otorgar incentivos fiscales a contribuyentes del municipio, sin registro de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad la iniciativa de incentivos fiscales para contribuyentes del Municipio de Colima, que será remitida al Congreso del Estado.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -251,7 +333,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales no especificados.",
+   "resumen": "Se trataron asuntos generales sobre programas sociales, salud y solicitudes de información.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -267,7 +349,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

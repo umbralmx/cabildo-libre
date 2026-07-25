@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:00:23+00:00",
- "resumen_sesion": "Se autorizó aplazar la aprobación de las actas 51 y 54, y se aprobó la fe de erratas al Programa de Ordenamiento Territorial para corregir la zonificación de un predio.",
+ "generado": "2026-07-25T05:15:59+00:00",
+ "lectura": {
+  "chars_ocr": 22870,
+  "chars_leidos": 22870,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Aprobaron la fe de erratas al programa urbano para corregir un predio del Parque Griselda Álvarez y aplazaron la aprobación de actas previas.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia.",
+   "resumen": "Se tomó lista de asistencia para verificar la presencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó presentar las Actas de Cabildo 51 y 54 en la próxima sesión.",
+   "resumen": "Se aplazó la aprobación de las Actas de Cabildo 51 y 54 para la próxima sesión, con votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "mayoria",
@@ -80,15 +88,12 @@
    ],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Mtro. Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
-   }
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó la fe de erratas al Programa Municipal de Ordenamiento Territorial para corregir la zonificación del predio 02-01-03-085-031-000 de Espacios Verdes a Equipamiento Institucional.",
+   "resumen": "Se aprobó por unanimidad la fe de erratas al Programa Municipal de Ordenamiento Territorial y Desarrollo Urbano de Colima para el predio 02-01-03-085-031-000, corrigiendo su zonificación de espacio verde a equipamiento institucional, en beneficio del proyecto del CRIT.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -110,7 +115,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Agotado el orden del día, se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T03:57:58+00:00",
- "resumen_sesion": "Se aprobaron dos licencias de alcohol, baja de licencia y convenios con Autotransportes del Sur y Soriana; acta 36 aprobada, acta 37 aplazada; varios puntos sin resolución clara.",
+ "generado": "2026-07-25T05:12:51+00:00",
+ "lectura": {
+  "chars_ocr": 231171,
+  "chars_leidos": 231171,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron trámites iniciales, dos licencias de alcohol, una baja, y convenios con Autotransportes del Sur y Soriana; se leyó dictamen de convenio con ISENCO.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrándose la presencia de los integrantes del cabildo.",
+   "resumen": "Se tomó lista de asistencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día de la sesión.",
+   "resumen": "Se aprobó por unanimidad el orden del día.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -60,10 +68,10 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el acta 36 por unanimidad, quedando pendiente el acta 37 para próxima sesión.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el acta 36 y quedó pendiente el acta 37 para próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -76,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la expedición de dos licencias comerciales para venta de cerveza: Mini Súper Camino Real y Abarrotes Los 3 Hermanos.",
+   "resumen": "Se autorizaron dos licencias para venta de cerveza en tiendas de abarrotes en las colonias Camino Real y Nuevo Milenio.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -98,7 +106,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad la baja de la licencia de venta de alcohol de OXXO en Placetas Estadio.",
+   "resumen": "Se aprobó dar de baja la licencia de venta de alcohol de OXXO en la colonia Placetas Estadio.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -107,10 +115,7 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "Cadena Comercial OXXO S.A. de C.V.",
-    "tipo": "empresa"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -122,7 +127,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad suscribir convenio con Autotransportes del Sur de Jalisco para transporte estudiantil con tarifa preferencial.",
+   "resumen": "Se aprobó el convenio con Autotransportes del Sur de Jalisco para transporte estudiantil con 50% de descuento.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -144,7 +149,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad suscribir convenio con Tiendas Soriana para membresías preferenciales para trabajadores municipales.",
+   "resumen": "Se aprobó el convenio con Tiendas Soriana para membresías a $250 para trabajadores municipales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -175,10 +180,10 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para convenio con el Instituto Superior de Educación Normal del Estado de Colima para servicio social estudiantil; no se registró resultado de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Ayuntamiento de Colima y el Instituto Superior de Educación Normal del Estado de Colima para realizar servicio social de estudiantes.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -188,7 +193,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y Comisión de Educación, Cultura y Recreación",
+   "comision": "Gobernación y Reglamentos y Educación, Cultura y Recreación",
    "autor": {
     "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -197,29 +202,32 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para convenio con Universidad José Martí; no se registró resultado de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Ayuntamiento de Colima y la Universidad José Martí para implementar proyectos académicos y sociales.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
     "nombre": "Universidad José Martí",
-    "tipo": "dependencia"
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos, y Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó dictamen para aceptar donación de 24 bombas dosificadoras de CONAGUA; no se registró resultado de votación.",
-   "sentido": "no_determinable",
-   "categoria": "patrimonio",
-   "votacion": "no_determinable",
+   "resumen": "Se autorizó la suscripción del Contrato de Fideicomiso Público Revocable de Administración e Inversión con Bansi para el Fideicomiso de Innovación y Calidad Gubernamental del Municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -228,17 +236,29 @@
     "tipo": "dependencia"
    },
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se presentó dictamen para desincorporar predio en colonia Ignacio Zaragoza y escriturarlo a Mónica Cecilia Rivera González; no se registró resultado de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la desincorporación del patrimonio municipal del predio con clave catastral 02-01-52-006-012-000 en la colonia Ignacio Zaragoza y su escrituración a favor de Mónica Cecilia Rivera González.",
+   "sentido": "aprobado",
    "categoria": "patrimonio",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [
     "Ignacio Zaragoza"
    ],
@@ -248,69 +268,28 @@
     "nombre": "Mónica Cecilia Rivera González",
     "tipo": "persona"
    },
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se presentó dictamen para nombrar 'Sala de Jueces Cívicos' al auditorio Sala 2 del Centro de Justicia Cívica; no se registró resultado de votación.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 14,
-   "numeral": "XIV",
-   "resumen": "Se presentó dictamen para convocatoria de preseas Dr. Mario de la Madrid Andrade y Dra. Jessica Cristina Romero Michel; no se registró resultado de votación.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 15,
-   "numeral": "XV",
-   "resumen": "Se presentó dictamen para programa parcial de urbanización del fraccionamiento Allure Residencial; no se registró resultado de votación.",
-   "sentido": "no_determinable",
-   "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
-   "colonias": [
-    "ALLURE RESIDENCIAL"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": {
-    "nombre": "ARDICA CONSTRUCCIÓN S.A. DE C.V. y DESARROLLA Y EDIFICA COLIMA S.A. DE C.V.",
-    "tipo": "empresa"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 16,
-   "numeral": "XVI",
-   "resumen": "Se presentó dictamen para modificar zonificación de predio de Comercial a Equipamiento Especial; no se registró resultado de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se devolvió a las comisiones de Gobernación y Reglamentos e Igualdad de Género el dictamen que propone nombrar 'Sala de Jueces y Juezas Cívicas' al auditorio 'Sala 2' del Centro de Justicia Cívica Municipal, para su estudio con perspectiva de género.",
+   "sentido": "aplazado",
    "categoria": "reglamento_normativo",
    "votacion": "no_determinable",
    "colonias": [],
@@ -319,17 +298,123 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó la convocatoria para otorgar las preseas 'Dr. Mario de la Madrid Andrade' y 'Dra. Jessica Cristina Romero Michel' en el marco del Día de la Abogacía.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización 'ALLURE RESIDENCIAL', promovido por ARDICA CONSTRUCCIONES, S.A. DE C.V. y DESARROLLA Y EDIFICA COLIMA, S.A. DE C.V., para un predio al noreste de la ciudad de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "ALLURE RESIDENCIAL",
+    "Margaritas",
+    "La Antorcha",
+    "El Diezmo"
+   ],
+   "obras": [
+    "rehabilitación y equipamiento del pozo el Cuajiote",
+    "construcción de un colector de 12 pulgadas"
+   ],
+   "montos": [
+    {
+     "texto": "$ 156,210.14",
+     "valor_mxn": 156210.14
+    }
+   ],
+   "beneficiario": {
+    "nombre": "ARDICA CONSTRUCCIÓN S.A. DE C.V. y DESARROLLA Y EDIFICA COLIMA S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Se aprobó la modificación de zonificación del predio clave catastral 02-01-08-195-018-000, de Comercial y de Servicios Regional a Equipamiento Especial, para instalar una gasolinera, promovido por los copropietarios Rafael Gutiérrez Villalobos, Luis Rafael Gutiérrez Rodríguez, Rosa Anaid Gutiérrez Rodríguez y Karla Janette Gutiérrez Rodríguez.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [
+    "De Los Trabajadores"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$29,020.41",
+     "valor_mxn": 29020.41
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Rafael Gutiérrez Villalobos, Luís Rafael Gutiérrez Rodríguez, Rosa Anaid Gutiérrez Rodríguez, Karla Janette Gutiérrez Ro",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 17,
    "numeral": "XVII",
-   "resumen": "Se presentó dictamen para solicitar a FERROMEX medidas para crear corredor de seguridad; no se registró resultado de votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó solicitar a la empresa Ferromex la instalación de medidas de seguridad (plumas, señalética) a lo largo de la vía del tren en la zona urbana de Colima para prevenir accidentes.",
+   "sentido": "aprobado",
    "categoria": "otro",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Lo de Villa",
+    "Prados del Sur",
+    "Gregorio Torres Quintero",
+    "La Albarrada",
+    "Patios del Ferrocarril",
+    "Francisco Villa",
+    "Milenio",
+    "Mirador de la Cumbre",
+    "La Estancia",
+    "Cardona"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": {
@@ -338,13 +423,16 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Metropolitano y Comisión de Seguridad Pública, Tránsito y Movilidad",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 18,
    "numeral": "XVIII",
-   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias para julio-septiembre 2025.",
+   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias para julio, agosto y septiembre de 2025.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -355,17 +443,25 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "J. Francisco Anzar Herrera",
+    "id": null
+   }
   },
   {
    "n": 19,
    "numeral": "XIX",
-   "resumen": "Se trataron asuntos generales.",
+   "resumen": "Se presentaron diversos asuntos: avances en la colonia FORAS, instalación de cámaras y obra del Puente Arco Norte, pronunciamiento sobre la Ley Silla, resultados en el Panteón de Tepames y reconocimientos.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "FORAS",
+    "Los Tepames"
+   ],
+   "obras": [
+    "Puente Arco Norte"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
@@ -376,7 +472,7 @@
   {
    "n": 20,
    "numeral": "XX",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

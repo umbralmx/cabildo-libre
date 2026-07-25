@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T03:59:16+00:00",
- "resumen_sesion": "Se nombró a María Teresa Pérez Ramírez como Tesorera Municipal y se aprobó un convenio con CNEEG por $661,792,051.55 para obras de pavimentación y alumbrado.",
+ "generado": "2026-07-25T05:13:57+00:00",
+ "lectura": {
+  "chars_ocr": 33340,
+  "chars_leidos": 33340,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se nombró a la Licda. María Teresa Pérez Ramírez como Tesorera Municipal y se autorizó un convenio con CNEEG para obras por $661,792,051.55.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "Se dio lectura al Orden del Día previsto para la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aplazó la aprobación de las actas 51 y 52 para la próxima sesión.",
+   "resumen": "Se aplazó la lectura y aprobación de las Actas de Cabildo 51 y 52 para la próxima sesión.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -71,15 +79,18 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el nombramiento de la Licda. María Teresa Pérez Ramírez como Tesorera Municipal.",
+   "resumen": "Se designó a la Licda. María Teresa Pérez Ramírez como Tesorera Municipal, tras la renuncia de la C.P. Susana Romero Castrejón.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
-   "votacion": "mayoria",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -95,18 +106,21 @@
     }
    ],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el convenio con CNEEG S. DE R.L. DE C.V. para gestionar recursos extraordinarios y ejecutar las obras de pavimentación y alumbrado listadas, por un total de $661,792,051.55.",
+   "resumen": "Se autorizó la firma del convenio con CNEEG S. de R.L. de C.V. para la gestión y ejecución de obras con recursos extraordinarios por $661,792,051.55, y se aprobó la lista de obras de pavimentación y alumbrado.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "mayoria",
    "colonias": [
-    "Miguel Hidalgo",
-    "Fatima"
+    "MIGUEL HIDALGO",
+    "FATIMA"
    ],
    "obras": [
     "CONSTRUCCIÓN DE PAVIMENTACIÓN ASFÁLTICA EN COLIMA, EN COLIMA LA CALLE JOSÉ FRANC",
@@ -128,8 +142,8 @@
      "valor_mxn": 661792051.55
     },
     {
-     "texto": "$3,075,182.52",
-     "valor_mxn": 3075182.52
+     "texto": "$53,075,132.73",
+     "valor_mxn": 53075132.73
     },
     {
      "texto": "$5,342,049.09",
@@ -214,21 +228,21 @@
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Licda. Diana Gabriel Vizcaíno Aguirre",
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

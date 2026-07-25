@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:02:32+00:00",
- "resumen_sesion": "Se aprobaron adecuaciones presupuestales por $49.3 millones, se aplazó la aprobación de actas anteriores y se dio trámite a lista de asistencia, quórum y orden del día.",
+ "generado": "2026-07-25T05:21:57+00:00",
+ "lectura": {
+  "chars_ocr": 440412,
+  "chars_leidos": 440412,
+  "ventanas": 11,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "La sesión inició con lista de asistencia, quórum y aprobación de trámites. Se presentó el dictamen de adecuaciones presupuestarias por $49.3 millones.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Lista de asistencia y declaración de presencia de regidores.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente y 12 regidores, con una regidora vía remota y una falta justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Declaración de quórum legal e instalación de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,8 +52,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Lectura del orden del día; no se especifica si fue aprobado.",
-   "sentido": "no_determinable",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las actas 56, 57 y 58 en la próxima sesión, aplazando su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar las actas de Cabildo 56, 57 y 58 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -76,20 +84,84 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Dictamen de la Comisión de Hacienda para autorizar adecuaciones presupuestales por $49,334,692.05; no se determina si fue aprobado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza las adecuaciones presupuestarias solicitadas por la Tesorería Municipal para noviembre de 2025, por montos totales de $5,069,514.97 y $3,545,544.80.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [
     {
-     "texto": "$49,334,692.05 (Cuarenta y nueve millones trescientos treinta y cuatro mil seiscientos noventa y dos pesos 05/100 M.N.)",
+     "texto": "$49,334,692.05 (Cuarenta y nueve millones trescientos treinta y cuatro mil seiscientos noventa y dos pesos 05/100 ML.N.)",
      "valor_mxn": 49334692.05
+    },
+    {
+     "texto": "351,497.41",
+     "valor_mxn": 351497.41
+    },
+    {
+     "texto": "90,252.30",
+     "valor_mxn": 90252.3
+    },
+    {
+     "texto": "5,159.74",
+     "valor_mxn": 5159.74
+    },
+    {
+     "texto": "215,252.05",
+     "valor_mxn": 215252.05
+    },
+    {
+     "texto": "800,467.87",
+     "valor_mxn": 800467.87
+    },
+    {
+     "texto": "2,600,000.00",
+     "valor_mxn": 2600000.0
+    },
+    {
+     "texto": "34.00",
+     "valor_mxn": 34.0
+    },
+    {
+     "texto": "1,568,611.55",
+     "valor_mxn": 1568611.55
+    },
+    {
+     "texto": "1,705,523.51",
+     "valor_mxn": 1705523.51
+    },
+    {
+     "texto": "614,074.60",
+     "valor_mxn": 614074.6
+    },
+    {
+     "texto": "5'069,514.97 (Cinco millones sesenta y nueve mil quinientos catorce pesos 97/100 m.n.)",
+     "valor_mxn": 5069514.97
+    },
+    {
+     "texto": "$5,069,514.97",
+     "valor_mxn": 5069514.97
+    },
+    {
+     "texto": "$3,545,544.80",
+     "valor_mxn": 3545544.8
     }
    ],
-   "beneficiario": null,
-   "votos_en_contra": [],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
@@ -100,57 +172,88 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "No se pudo determinar la decisión por falta de información en el acta.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de noviembre de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "No se pudo determinar la decisión sobre la baja de licencia B-002619.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad dar de baja la licencia B-002619 para venta de bebidas alcohólicas de José Pimentel Nava, en Colonia Puerta del Sol.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Puerta del Sol"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "José Pimentel Nava",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "No se pudo determinar la decisión sobre la expedición de tres licencias comerciales y cambio de giro.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad la expedición de tres licencias comerciales para venta de alcohol y un cambio de giro, en diversas colonias.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Placetas Estadio",
+    "Centro",
+    "Gregorio Torres Quintero",
+    "Esmeralda"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Asuntos generales y clausura de la sesión.",
+   "resumen": "Se trataron asuntos generales sin votación: comentarios sobre ruido de motocicletas y felicitaciones al Presidente.",
    "sentido": "tramite",
-   "categoria": "tramite",
+   "categoria": "reglamento_normativo",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],

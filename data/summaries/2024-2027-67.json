@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:08:02+00:00",
- "resumen_sesion": "Se aprobaron comodatos al DIF, un convenio con CRREAD A.C., dos licencias de alcohol, y se trataron estudios urbanos y programas parciales, sin determinarse el resultado de algunos puntos.",
+ "generado": "2026-07-25T05:35:41+00:00",
+ "lectura": {
+  "chars_ocr": 144748,
+  "chars_leidos": 144748,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron comodatos al DIF, un convenio con asociación contra adicciones, licencias de alcohol y un estudio de impacto urbano; se aprobó el acta anterior.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se realizó el pase de lista de asistencia.",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de integrantes del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el Acta de Cabildo número 66 por unanimidad.",
+   "resumen": "Se dispensó la lectura del Acta 66 y fue aprobada por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -76,27 +84,25 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó la ratificación del comodato de 22 inmuebles y el estacionamiento del Auditorio Miguel de la Madrid al DIF Municipal Colima, permitiendo su subarrendamiento.",
+   "resumen": "Se aprobó la ratificación del comodato de 22 inmuebles y el estacionamiento del Auditorio Miguel de la Madrid a favor del DIF Municipal Colima, con posibilidad de subarrendamiento.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [
     "Jardines de las Lomas",
-    "El Tivoli",
-    "La Estancia",
-    "Infonavit",
-    "El Porvenir",
-    "Centro",
-    "Astillero de Arriba",
-    "Ignacio Zaragoza",
-    "La Albarrada",
-    "Lázaro Cárdenas",
-    "Los Ángeles",
-    "San José Sur"
+    "Colonia el Tivoli",
+    "Colonia La Estancia",
+    "Colonia Infonavit",
+    "Colonia el Porvenir",
+    "Colonia Centro",
+    "Comunidad Astillero de Arriba",
+    "Colonia Ignacio Zaragoza",
+    "Colonia la Albarrada",
+    "Colonia Lázaro Cárdenas",
+    "Colonia Los Ángeles",
+    "Colonia San José Sur"
    ],
-   "obras": [
-    "Estacionamiento del Auditorio Miguel de la Madrid Hurtado"
-   ],
+   "obras": [],
    "montos": [],
    "beneficiario": {
     "nombre": "Sistema para el Desarrollo Integral de la Familia en el Municipio de Colima (DIF)",
@@ -113,7 +119,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración con el Centro de Recuperación y Rehabilitación para Enfermos de Alcoholismo y Drogadicción Michoacán A.C. (CRREAD) para brindar asistencia social.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la asociación CRREAd para atender a personas con alcoholismo y drogadicción, canalizadas por el Juzgado Cívico y la Policía Municipal.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -126,7 +132,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y de Seguridad Pública, Tránsito y Movilidad",
+   "comision": "Comisión de Gobernación y Reglamentos y Comisión de Seguridad Pública, Tránsito y Movilidad",
    "autor": {
     "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -135,18 +141,19 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la expedición de una licencia de apertura para el salón de fiestas 'Acuarela Glu Glu' y un cambio de propietario de la licencia 'Chamorros Ponce' a Griselda Gómez Álvarez.",
+   "resumen": "Se autorizó la expedición de una licencia comercial para Salón para Fiestas 'Acuarela Glu Glu' en la Colonia Rinconada San Pablo, solicitada por Francisco Javier Vega Gómez, aprobada por unanimidad.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
     "Parque Industrial",
-    "Rinconada San Pablo"
+    "Rinconada San Pablo",
+    "Colonia Rinconada San Pablo"
    ],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Griselda Gómez Álvarez y Francisco Javier Vega Gómez",
+    "nombre": "Francisco Javier Vega Gómez",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -160,18 +167,33 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen del Estudio de Impacto Territorial y Urbano del predio clave catastral 02-04-66-023-019-000, pero el acta no especifica si fue aprobado.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
+   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano para el predio 02-04-66-023-019-000 en Granjas y Campestres del Chanal, promovido por Alan Alai Hernández Cortés, con una abstención.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
    "colonias": [
-    "Granjas y Campestres del Chanal"
+    "Granjas y Campestres del Chanal",
+    "El Chanal",
+    "Residencial Romanza"
    ],
    "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "montos": [
+    {
+     "texto": "$22,782.77",
+     "valor_mxn": 22782.77
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Alan Alai Hernández Cortés",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
-   "abstenciones": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
     "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
@@ -181,47 +203,100 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se discutió el Programa Parcial de Urbanización 'RIVERAS DEL VOLCÁN' sin que el acta indique su aprobación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización Riveras del Volcán, promovido por Rossana Georgina del Toro Carrillo y Brianda Ivette del Toro Carrillo, que incluye obras de urbanización como pavimentación, redes de agua, drenaje y áreas verdes.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "RIVERAS DEL VOLCÁN"
+    "Riveras del Volcán",
+    "Ejido El Diezmo",
+    "Fraccionamiento Laureles",
+    "Diamantes",
+    "Sección 39 SNTE",
+    "Puerta Real",
+    "Francisco I. Madero",
+    "Laureles"
    ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "obras": [
+    "Avenida Griselda Álvarez",
+    "Avenida Del Jazmín",
+    "Avenida Coral",
+    "Calles Locales CL Intensidad B y C",
+    "Puente sobre el Arroyo El Jazmín",
+    "Red de agua potable",
+    "Alcantarillado sanitario",
+    "Drenaje pluvial",
+    "Red de electrificación y alumbrado público",
+    "Infraestructura de telecomunicaciones",
+    "Banquetas, guarniciones y rampas de accesibilidad",
+    "Señalética"
+   ],
+   "montos": [
+    {
+     "texto": "$50,916.40",
+     "valor_mxn": 50916.4
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Rossana Georgina del Toro Carrillo y Brianda Ivette del Toro Carrillo",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se consideró la Incorporación Municipal Anticipada de las Etapas 1,2,6,7,8 del Fraccionamiento Primavera Hills, pero no se determinó su resultado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba la incorporación municipal anticipada de las etapas 2, 7 y 8 y la modificación de las etapas 1 y 6 del Fraccionamiento Primavera Hills, con fianzas por $353,110.13 y $103,882.00 para garantizar obras.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "Primavera Hills"
+    "Fraccionamiento Primavera Hills"
    ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "obras": [
+    "Paseo Miguel de la Madrid",
+    "Martha Salazar Rojo",
+    "Paseo Río Danubio",
+    "Av. Constitución"
+   ],
+   "montos": [
+    {
+     "texto": "$ 353,110.13 (Trescientos cincuenta y tres mil ciento diez pesos 13/100 M.N.)",
+     "valor_mxn": 353110.13
+    },
+    {
+     "texto": "$ 103,882.00 (Ciento tres mil ochocientos ochenta y dos pesos 00/100 M.N.)",
+     "valor_mxn": 103882.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Rebeca Alexandra Herrera Díaz y otros promoventes",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se trató la suscripción de un convenio de colaboración con la empresa Bebiendo, S.A. de C.V., sin determinarse su aprobación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba la suscripción de un convenio de colaboración con la empresa Bebiendo, S.A. de C.V. para que use el Centro Deportivo Francisco Brun Ramos en la colonia El Moralete, con fines deportivos y sociales.",
+   "sentido": "aprobado",
    "categoria": "convenio",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "El Moralete"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": {
@@ -230,16 +305,19 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones de Patrimonio Municipal y Juventud y Deporte",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se discutió la Minuta de reforma constitucional en materia de igualdad sustantiva, sin que el acta indique su aprobación o rechazo.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
+   "resumen": "Se aprueba por unanimidad la Minuta con proyecto de Decreto que reforma la Constitución del Estado en materia de igualdad sustantiva.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -252,7 +330,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión a las 13:50 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

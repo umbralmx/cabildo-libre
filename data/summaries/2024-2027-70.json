@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:10:22+00:00",
- "resumen_sesion": "Se aprobaron arrendamientos de inmuebles públicos, el programa de salud municipal, compensaciones a trabajadores, bajas de licencias de alcohol, y se trataron temas de fraccionamientos y una presea magisterial.",
+ "generado": "2026-07-25T05:42:58+00:00",
+ "lectura": {
+  "chars_ocr": 134293,
+  "chars_leidos": 134293,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó arrendar tres inmuebles en Los Tepames y Centro, el programa de salud municipal, compensación a 11 trabajadores, y se postergaron las actas 68 y 69.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia de los regidores.",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de 9 regidores y la síndica, con dos faltas justificadas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó presentar las actas de cabildo 68 y 69 en la próxima sesión.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar las Actas de Cabildo 68 y 69 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -71,21 +79,18 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
-   }
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizaron tres contratos de arrendamiento para la biblioteca Marina Larios Arreola, la Financiera para el Bienestar (en Los Tepames) y una finca en la calle Manuel Álvarez 44, colonia Centro, para oficinas municipales.",
+   "resumen": "Se autorizó por unanimidad la suscripción de tres contratos de arrendamiento para inmuebles utilizados como Biblioteca Pública Municipal “Marina Larios Arreola”, “Financiera para el Bienestar” en Los Tepames, y oficinas en calle Manuel Álvarez 44, colonia Centro, Colima, con montos mensuales de $4,482.91, $4,452.00 y $32,869.14.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [
     "Los Tepames",
-    "Centro"
+    "Colonia Centro"
    ],
    "obras": [],
    "montos": [
@@ -107,16 +112,16 @@
    "abstenciones": [],
    "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el Programa de Trabajo Municipal de Salud Pública para certificar a Colima como Municipio Promotor de la Salud.",
+   "resumen": "Se aprobó por unanimidad el Programa de Trabajo Municipal de Salud Pública del Municipio de Colima, en el marco del Programa Federal de Municipios Promotores de Salud.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -126,14 +131,14 @@
    "abstenciones": [],
    "comision": "Comisión de Salud Pública, Familia y Grupos Vulnerables",
    "autor": {
-    "nombre": "Ana Isabel Flores Viera",
+    "nombre": "Profra. Ana Isabel Flores Viera",
     "id": "ana-isabel-flores-viera"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la celebración de contratos de compensación por uso de vehículo particular para 11 trabajadores del Ayuntamiento.",
+   "resumen": "Se autorizó por unanimidad la celebración de contratos de compensación por desgaste de uso de vehículo particular en favor de 11 trabajadores del H. Ayuntamiento de Colima, con un apoyo quincenal de $409.24 y 50 litros de gasolina mensuales.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -145,23 +150,55 @@
      "valor_mxn": 409.24
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "11 trabajadores del H. Ayuntamiento de Colima",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se autorizó dar de baja tres licencias para venta de bebidas alcohólicas: B-000630, B-002784 y B-002664.",
+   "resumen": "Se aprobó dar de baja las licencias de venta de alcohol números B-000630, B-002784 y B-002664, por cese de operación.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "Centro",
+    "Las Américas",
+    "Parque Industrial"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó la expedición de cuatro licencias de venta de alcohol y un cambio de propietario, para establecimientos como Applebees y Aquí es Colima.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Gregorio Torres Quintero",
+    "Sin Nombre",
+    "Centro",
+    "Juana de Asbaje",
+    "Infonavit Camino Real"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
@@ -174,95 +211,138 @@
    }
   },
   {
-   "n": 9,
-   "numeral": "IX",
-   "resumen": "Se discutió la expedición de cuatro licencias comerciales para venta de alcohol y un cambio de propietario, pero el acta no contiene el resultado.",
-   "sentido": "no_determinable",
-   "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se consideró la municipalización del fraccionamiento La Castellana, pero se desconoce el resultado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la municipalización de la etapa única del fraccionamiento La Castellana, al sur de la ciudad.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "LA CASTELLANA"
+    "La Castellana"
    ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "obras": [
+    "5 de Febrero",
+    "Reina de Castilla",
+    "Calle La Rioja",
+    "Calle Belisario Domínguez"
+   ],
+   "montos": [
+    {
+     "texto": "$370,329.99 (TRESCIENTOS SETENTA MIL TRESCIENTOS VEINTINUEVE PESOS 99/100 M.N.)",
+     "valor_mxn": 370329.99
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Braulio Nahum Bravo Bañuelos y/o Jade Grupo Inmobiliario S.A. de C.V.",
+    "tipo": "empresa"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se trató la incorporación municipal anticipada de la etapa 4 del fraccionamiento Puerta Real, resultado no determinado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 4 del fraccionamiento Puerta Real, con fianzas por $1,613,000.00 y $145,500.00 para garantizar obras de urbanización.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "PUERTA REAL"
+    "Puerta Real"
    ],
-   "obras": [],
-   "montos": [],
+   "obras": [
+    "Av. Ley del Municipio Libre",
+    "Calle Alemania",
+    "Calle Suiza",
+    "Calle Holanda",
+    "Calle Española",
+    "Calle Italia",
+    "Calle Francia",
+    "Calle Crisantemo"
+   ],
+   "montos": [
+    {
+     "texto": "$1,613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 1613000.0
+    },
+    {
+     "texto": "$145,500.00 (CIENTO CUARENTA Y CINCO MIL QUINIENTOS PESOS 00/100 M.N.)",
+     "valor_mxn": 145500.0
+    },
+    {
+     "texto": "$ 1, 613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 1613000
+    },
+    {
+     "texto": "$ 145,500.00 (CIENTO CUARENTA Y CINCO MIL QUINIENTOS PESOS 00/100 M.N.)",
+     "valor_mxn": 145500
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se analizó el estudio de impacto territorial para un lote en Jardines de la Corregidora, sin resolución conocida.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el Estudio de Impacto Territorial y Urbano del lote 02-01-04-080-004-000 en la colonia Jardines de la Corregidora, promovido por el Instituto Colimense de Ciencias Forenses, con un pago de $37,905.73.",
+   "sentido": "aprobado",
    "categoria": "otro",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "JARDINES DE LA CORREGIDORA"
    ],
    "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "montos": [
+    {
+     "texto": "$37,905.73",
+     "valor_mxn": 37905.73
+    }
+   ],
+   "beneficiario": {
+    "nombre": "INSTITUTO COLIMENSE DE CIENCIAS FORENSES",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
+   "autor": {
+    "nombre": "Edgar Osiris Alcará Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se propuso instituir la Presea al Mérito Magisterial Profr. Gregorio Torres Quintero y declarar mayo como mes de los maestros, pero el acta no indica el resultado.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
+   "resumen": "Se aprobó por unanimidad declarar el mes de mayo de cada año como el Mes de las y los Maestros en el Municipio de Colima, e instituir la Presea al Mérito Magisterial Prof. Gregorio Torres Quintero, a entregarse en junio de 2026.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "COMISIÓN DE EDUCACIÓN, CULTURA Y RECREACIÓN",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se presentó el calendario trimestral de sesiones ordinarias de abril a junio de 2026.",
+   "resumen": "Se presentó el calendario trimestral de Sesiones Ordinarias de Cabildo para abril a junio de 2026, sin someterse a votación.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -278,7 +358,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

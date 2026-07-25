@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:05:37+00:00",
- "resumen_sesion": "Se aprobó la ampliación al presupuesto 2025 y se aplazó la aprobación de actas; lo demás no se pudo determinar.",
+ "generado": "2026-07-25T05:30:21+00:00",
+ "lectura": {
+  "chars_ocr": 553010,
+  "chars_leidos": 553010,
+  "ventanas": 14,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó una ampliación presupuestal por $3,419,765.36 y se dieron trámites administrativos iniciales.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia.",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia de varios regidores y la falta justificada de dos.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instaló la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó presentar las Actas 60 a 63 en la próxima sesión, aplazando su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar las actas de Cabildo 60, 61, 62 y 63 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -71,15 +79,12 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Mtro. Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
-   }
+   "autor": null
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó la ampliación al presupuesto de ingresos y egresos 2025 con recursos FORTAMUN y fiscales, por un total de $3,419,765.36.",
+   "resumen": "Se aprobó por unanimidad la ampliación al presupuesto de ingresos y egresos por $3,419,765.36, con recursos FORTAMUN y fiscales.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -87,12 +92,12 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$391,890.55",
-     "valor_mxn": 391890.55
-    },
-    {
      "texto": "$ 3'419,765.36",
      "valor_mxn": 3419765.36
+    },
+    {
+     "texto": "$ 391,890.55",
+     "valor_mxn": 391890.55
     }
    ],
    "beneficiario": null,
@@ -107,20 +112,40 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se presentó dictamen para adecuaciones presupuestales de diciembre 2025, sin que se determinara su resolución en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la realización de adecuaciones presupuestarias de diciembre 2025, con ampliaciones y reducciones por más de 100 millones de pesos en partidas de participaciones y 12.2 millones en FORTAMUN.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [
     {
      "texto": "$101,517,849.00",
      "valor_mxn": 101517849
+    },
+    {
+     "texto": "101,517,849.00",
+     "valor_mxn": 101517849.0
+    },
+    {
+     "texto": "104,545,723.81",
+     "valor_mxn": 104545723.81
+    },
+    {
+     "texto": "12,283,793.22",
+     "valor_mxn": 12283793.22
     }
    ],
-   "beneficiario": null,
-   "votos_en_contra": [],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
@@ -131,10 +156,10 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó dictamen para remitir la Cuenta Pública de diciembre 2025 al Congreso, sin resolución determinable en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima la Cuenta Pública del mes de diciembre de 2025.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -142,66 +167,97 @@
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia"
    },
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Regidora Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó dictamen para expedir tres licencias comerciales con venta de alcohol, sin resolución determinable en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó la expedición de tres licencias de venta de alcohol: una tienda en El Chanal, un restaurante en Vista Hermosa y una tienda en el Centro.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Conocida",
+    "Colonia Real vista Hermosa",
+    "Colonia Centro"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó dictamen para dar de baja cinco licencias comerciales, sin resolución determinable en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó la baja definitiva de cinco licencias de venta de alcohol de diversos establecimientos.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Centro"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahi Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó dictamen para la incorporación municipal del desarrollo 'INSTITUTO ADONAI', sin resolución determinable en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba la incorporación municipal de la Etapa Única del desarrollo 'INSTITUTO ADONAI', ubicado al norte de Colima, promovido por Grupo Amor de México, con una fianza de $186,283.19.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
-   "obras": [],
-   "montos": [],
+   "obras": [
+    "MERCEDES ZAMORA",
+    "ALICANTE"
+   ],
+   "montos": [
+    {
+     "texto": "$ 186,283.19 (CIENTO OCHENTA Y SEIS MIL DOSCIENTOS OCHENTA TRES PESOS 19/100 M.N.)",
+     "valor_mxn": 186283.19
+    }
+   ],
    "beneficiario": {
-    "nombre": "Grupo Amor de México",
+    "nombre": "GRUPO AMOR DE MEXICO",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Regidora Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Punto de procedimiento: clausura de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

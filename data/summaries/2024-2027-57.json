@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:01:18+00:00",
- "resumen_sesion": "Se aprobaron actas de cabildo, se reformó el reglamento ambiental (artículos 136 y 142) y se aprobaron disposiciones para el Primer Informe de Gobierno.",
+ "generado": "2026-07-25T05:17:48+00:00",
+ "lectura": {
+  "chars_ocr": 35794,
+  "chars_leidos": 35794,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la reforma al Reglamento Ambiental (artículos 136 y 142), se aprobaron las disposiciones para el Primer Informe Anual, y se discutieron actas anteriores con votaciones divididas.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, constatando la presencia de regidores.",
+   "resumen": "Se tomó lista de asistencia, constatando la presencia de la mayoría de los miembros del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el Acta 51 por unanimidad y el Acta 54 por mayoría, con votos en contra de dos regidoras.",
+   "resumen": "Se aprobó el Acta 51 por unanimidad y el Acta 54 por mayoría, con los votos en contra de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "mayoria",
@@ -85,7 +93,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad reformar los artículos 136 y 142 del Reglamento Ambiental, con dos abstenciones.",
+   "resumen": "Se aprobó por unanimidad la reforma a los artículos 136 y 142 del Reglamento Ambiental para el Desarrollo Sustentable del municipio de Colima, con las abstenciones de las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -104,16 +112,16 @@
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
-   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, y Protección al Medio Ambiente y Desarrollo Sustentable",
+   "comision": "Comisión de Protección al Medio Ambiente y Desarrollo Sustentable",
    "autor": {
-    "nombre": "Licda. Alondra Isabel López Alonso",
+    "nombre": "Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría el Punto de Acuerdo para el Primer Informe de Gobierno, rechazándose una modificación propuesta.",
+   "resumen": "Se aprobó por mayoría el Punto de Acuerdo que establece las disposiciones generales para el Primer Informe Anual de la Gestión Administrativa del Gobierno Municipal, fijando la sesión solemne para el 11 de diciembre de 2025 y un tiempo de intervención de 3 minutos por fracción. Se rechazó la propuesta de ampliar a 5 minutos y cambiar el orden de participación.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "mayoria",
@@ -134,8 +142,8 @@
    "abstenciones": [],
    "comision": null,
    "autor": {
-    "nombre": "Mtro. Riult Rivera Gutiérrez",
-    "id": "riult-rivera-gutierrez"
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
    }
   }
  ]

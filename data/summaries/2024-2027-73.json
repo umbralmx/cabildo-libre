@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:11:54+00:00",
- "resumen_sesion": "La sesión extraordinaria incluyó la instalación del Cabildo Infantil y entrega de reconocimientos; se autorizó presentar las actas 71 y 72 en otra sesión.",
+ "generado": "2026-07-25T05:48:45+00:00",
+ "lectura": {
+  "chars_ocr": 4590,
+  "chars_leidos": 4590,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "La sesión se enfocó en la instalación y reconocimiento del Cabildo Infantil 2026, con trámites administrativos previos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
+   "resumen": "Se tomó lista de asistencia de los miembros del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó por unanimidad presentar las Actas de Cabildo N° 71 y 72 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aprobó por unanimidad presentar las actas 71 y 72 en la próxima sesión, aplazando su aprobación.",
+   "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -79,7 +87,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se decretó un receso para la instalación y desarrollo de la Sesión Extraordinaria del Cabildo Infantil 2026, a cargo del DIF Municipal.",
+   "resumen": "Se decretó un receso para realizar la sesión del Cabildo Infantil 2026.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -95,7 +103,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se reanudó la sesión.",
+   "resumen": "Se reanudó la sesión extraordinaria.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -111,7 +119,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se entregaron reconocimientos a los integrantes del Cabildo Infantil.",
+   "resumen": "Se entregaron reconocimientos a los integrantes del Cabildo Infantil 2026.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -127,7 +135,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "El Presidente Municipal dirigió un mensaje.",
+   "resumen": "El Presidente Municipal dirigió un mensaje a los presentes.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

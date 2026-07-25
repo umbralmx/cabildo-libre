@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:00:56+00:00",
- "resumen_sesion": "Se aprobaron una licencia y un cambio de domicilio para venta de alcohol, se dieron de baja tres licencias, y se reformaron reglamentos comerciales y de alcohol.",
+ "generado": "2026-07-25T05:17:19+00:00",
+ "lectura": {
+  "chars_ocr": 146861,
+  "chars_leidos": 146861,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron dos licencias de alcohol y tres bajas, y se discutieron reformas a reglamentos comerciales.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia.",
+   "resumen": "Se tomó lista de asistencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día.",
+   "resumen": "Se dio lectura al Orden del Día de la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el acta 55 y se autorizó presentar las actas 51 y 54 en la próxima sesión.",
-   "sentido": "aprobado",
+   "resumen": "Se aprobó el acta 55 y se aplazaron las actas 51 y 54 para próxima sesión.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -76,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizaron una licencia de apertura para autoservicio 'Súper Kiosko' y un cambio de domicilio para restaurante 'Poca Sushi' con venta de alcohol.",
+   "resumen": "Se autorizó la expedición de una licencia de apertura para autoservicio 'Súper Kiosko' y el cambio de domicilio del restaurante 'Poca Sushi' para venta de bebidas alcohólicas.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -99,7 +107,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó dar de baja tres licencias de venta de alcohol por cese de operaciones.",
+   "resumen": "Se autorizó dar de baja tres licencias de venta de bebidas alcohólicas de los establecimientos 'Carnicería la Europea', 'Restaurante C' y tienda de abarrotes.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -122,8 +130,8 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "No se pudo determinar la resolución del dictamen de reformas al reglamento de establecimientos comerciales.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó reformar el Reglamento para el Funcionamiento de Establecimientos Comerciales, Industriales y de Servicio del municipio de Colima, actualizando la clasificación de giros (bajo impacto, impacto colindante, impacto sectorial) y los horarios de operación.",
+   "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "no_determinable",
    "colonias": [],
@@ -141,23 +149,26 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "No se pudo determinar la resolución del dictamen de reformas al reglamento de venta de alcohol.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad el dictamen que reforma diversas disposiciones del Reglamento para la Venta y Consumo de Bebidas Alcohólicas, incluyendo la incorporación de los giros de cervecería y bodega de abarrotes con venta de cerveza, vinos y licores.",
+   "sentido": "aprobado",
    "categoria": "reglamento_normativo",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos, y Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "El Presidente Municipal declaró clausurada la sesión a las 17:04 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

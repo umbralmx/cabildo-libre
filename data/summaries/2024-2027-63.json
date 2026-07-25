@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:04:59+00:00",
- "resumen_sesion": "Se aprobó una reforma al Reglamento del Gobierno Municipal de Colima, se aplazó la aprobación de actas previas, y se consideraron el presupuesto 2026 y una licencia para horno crematorio sin resolución determinada.",
+ "generado": "2026-07-25T05:25:53+00:00",
+ "lectura": {
+  "chars_ocr": 145625,
+  "chars_leidos": 145625,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la reforma al Reglamento del Gobierno Municipal creando la Dirección General de Educación; se presentó el Presupuesto de Egresos 2026; se aplazaron actas.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se verificó la asistencia de los miembros del Cabildo.",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de los miembros del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día.",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,7 +68,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aplazó la aprobación de las actas de Cabildo números 60, 61 y 62 para la próxima sesión.",
+   "resumen": "Se autorizó por unanimidad presentar las actas 60, 61 y 62 en la próxima sesión, aplazando su aprobación.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -76,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad reformar, adicionar y derogar diversos artículos del Reglamento del Gobierno Municipal de Colima, incluyendo la creación de la Dirección General de Educación, Cultura y Recreación.",
+   "resumen": "Se aprobó por unanimidad reformar, adicionar y derogar diversos artículos del Reglamento del Gobierno Municipal de Colima, creando la Dirección General de Educación, Cultura y Recreación.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -86,56 +94,95 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Gobernación y Reglamentos; Hacienda Municipal; y Educación, Cultura y Recreación",
-   "autor": {
-    "nombre": "Mtro. Federico Rangel Lozano",
-    "id": "federico-rangel-lozano"
-   }
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, Hacienda Municipal y de Educación, Cultura y Recreación",
+   "autor": null
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se dio lectura al dictamen del Proyecto de Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2026, sin que el acta registre la votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2026 por un monto total de $1,077,523,004.00, por mayoría de votos, con dos votos en contra.",
+   "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [
     {
-     "texto": "$1'077,523,004.00, (Mil setenta y siete millones quinientos veintitrés mil cuatro pesos 00/100 m.n)",
+     "texto": "$1'077,523,004.00 (Mil setenta y siete millones quinientos veintitrés mil cuatro pesos 00/100 m.n)",
      "valor_mxn": 1077523004
+    },
+    {
+     "texto": "$1'077,523,004.00",
+     "valor_mxn": 1077523004
+    },
+    {
+     "texto": "$500,460,000.00",
+     "valor_mxn": 500460000
+    },
+    {
+     "texto": "$55'000,000.00",
+     "valor_mxn": 55000000
+    },
+    {
+     "texto": "$59'000,000.00",
+     "valor_mxn": 59000000
+    },
+    {
+     "texto": "$1,000,000.00",
+     "valor_mxn": 1000000
+    },
+    {
+     "texto": "$81,565,141.00",
+     "valor_mxn": 81565141
+    },
+    {
+     "texto": "$160,358,932.00",
+     "valor_mxn": 160358932
     }
    ],
    "beneficiario": null,
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaino Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
-   "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se programó la discusión de una licencia comercial para el funcionamiento de un horno crematorio, pero el acta no contiene información sobre la resolución.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó la expedición de una licencia comercial para funcionamiento de un horno crematorio con nombre comercial 'Crematorio y Sala de Despedida La Paz', ubicado en Av. Ley del Municipio Libre No. 1867, Colonia Puerta Real, a nombre de Julio Cesar Ramos Navarro, por unanimidad.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Puerta Real"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Julio Cesar Ramos Navarro",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión a las 19:52 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

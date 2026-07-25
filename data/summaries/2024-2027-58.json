@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:02:00+00:00",
- "resumen_sesion": "Sesión solemne para el Primer Informe de Gobierno; se aprobó diferir actas previas y se escucharon posicionamientos.",
+ "generado": "2026-07-25T05:18:28+00:00",
+ "lectura": {
+  "chars_ocr": 38484,
+  "chars_leidos": 38484,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Sesión solemne para la presentación del Primer Informe de Gobierno; se aprobó presentar las Actas 56 y 57 en la próxima sesión.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Ayuntamiento.",
+   "resumen": "Se tomó lista de asistencia de los miembros del Ayuntamiento.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad presentar las Actas 56 y 57 en la próxima sesión, difiriendo su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar las Actas 56 y 57 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -76,7 +84,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se declaró un receso para recibir a los invitados especiales.",
+   "resumen": "Se declaró un receso para conformar la comisión de cortesía.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -92,7 +100,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se realizaron Honores a la Bandera.",
+   "resumen": "Se realizaron los Honores a la Bandera.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -140,7 +148,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Intervinieron las fracciones partidistas para fijar su posicionamiento.",
+   "resumen": "Se dio intervención a un miembro de cada fracción partidista para fijar su posicionamiento.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -156,7 +164,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se entregó el Primer Informe Anual de Gestión y se escuchó el mensaje del Presidente Municipal.",
+   "resumen": "Se entregó el Primer Informe Anual y el presidente municipal dirigió un mensaje.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -172,7 +180,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "El representante de la Gobernadora del Estado dirigió un mensaje.",
+   "resumen": "Intervino el representante de la Gobernadora del Estado.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -188,7 +196,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se clausuró la sesión.",
+   "resumen": "Se declaró clausurada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

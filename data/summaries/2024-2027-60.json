@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:03:36+00:00",
- "resumen_sesion": "Se aprobó el cuarto listado de obras del POA 2025 (con inversión de $1,404,041.41), la fe de erratas de Rivera del Jazmín II y la incorporación del fraccionamiento Sección 39 SNTE; otros puntos quedaron sin registro de votación.",
+ "generado": "2026-07-25T05:23:23+00:00",
+ "lectura": {
+  "chars_ocr": 165250,
+  "chars_leidos": 165250,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó el cuarto listado de obras del POA 2025 y la fe de erratas de Rivera del Jazmín II; se presentó dictamen de incorporación de Sección 39 SNTE sin votarse.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los miembros del Cabildo.",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de 11 regidores presenciales y vía remota, y una falta justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,8 +52,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día; no se especifica votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se dio lectura al Orden del Día, el cual fue aprobado tácitamente al continuar la sesión.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -60,10 +68,10 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron las Actas 56 y 58 por unanimidad, el Acta 57 por mayoría, y se autorizó presentar el Acta 59 en próxima sesión.",
+   "resumen": "Se aprobaron las actas 56 y 58 por unanimidad y el acta 57 por mayoría; se autorizó presentar el acta 59 en próxima sesión.",
    "sentido": "aprobado",
    "categoria": "tramite",
-   "votacion": "mayoria",
+   "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -76,30 +84,22 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el cuarto listado de obras del POA 2025 y el cierre de planeación presupuestal, con inversión de $1,404,041.41.",
+   "resumen": "Se aprobó la publicación del cuarto listado de obras del POA 2025, con dos obras: rehabilitación de drenaje pluvial en Colonia Placetas y rehabilitación de cancha en Colonia Prof. Gregorio Torres Quintero, por un monto de $1,404,041.41.",
    "sentido": "aprobado",
    "categoria": "obra_publica",
    "votacion": "mayoria",
    "colonias": [
-    "COLOMIA PLACETAS",
-    "COLONIA PROF. GREGOMO TORRES QUINTERO"
+    "COLONIA PLACETAS",
+    "COLONIA PROF. GREGORIO TORRES QUINTERO"
    ],
    "obras": [
-    "REHABILITACIÓN DE RED DE ALCANTARILLADO PLUVIAL Y BOCA DE TORMENTA",
-    "REHABILITACIÓN DE CANCHA GUSTAVO ALBERTO VÁZQUEZ MONTES"
+    "REHABILITACIÓN DE RED DE ALCANTARILLADO PLUVIAL Y BOCA DE TORMENTA EN COLIMA, CO",
+    "REHABILITACIÓN DE CANCHA GUSTAVO ALBERTO VÁZQUEZ MONTES UBICADA ENLA COLONIA PRO"
    ],
    "montos": [
     {
      "texto": "$1,404,041.41",
      "valor_mxn": 1404041.41
-    },
-    {
-     "texto": "$101,701.14",
-     "valor_mxn": 101701.14
-    },
-    {
-     "texto": "$1,302,340.27",
-     "valor_mxn": 1302340.27
     }
    ],
    "beneficiario": null,
@@ -110,16 +110,16 @@
     }
    ],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos, y Hacienda Municipal",
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la Fe de Erratas de la Primera Modificación al Programa Parcial de Urbanización 'RIVERA DEL JAZMÍN II'.",
+   "resumen": "Se aprobó por unanimidad la fe de erratas de la Primera Modificación al Programa Parcial de Urbanización 'Rivera del Jazmín II', promovida por DELAMO GRUPO CONSTRUCTOR.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -136,29 +136,44 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se presentó el dictamen de incorporación municipal anticipada del fraccionamiento 'SECCIÓN 39 SNTE'; no se especifica el resultado de la votación en el acta.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba la incorporación municipal anticipada de la etapa única del fraccionamiento Sección 39 SNTE, con fianzas por $4,438,604.99 y $468,716.43 para garantizar obras de urbanización.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "SECCIÓN 39 SNTE"
    ],
-   "obras": [],
+   "obras": [
+    "CALLE EUROPA",
+    "CALLE NACIONES UNIDAS",
+    "AV. SAN MIGUEL DE LA MORA",
+    "CALLE SAN PETERSBURGO",
+    "CALLE SAMARA",
+    "AVENIDA CORAL",
+    "CALLE KAZÁN",
+    "CALLE NAIROBI",
+    "CALLE CURITIBA",
+    "AVENIDA MAESTRA GRISELDA ÁLVAREZ PONCE DE LEÓN"
+   ],
    "montos": [
     {
-     "texto": "$4'438,604.99",
+     "texto": "$4,438,604.99",
      "valor_mxn": 4438604.99
     },
     {
      "texto": "$468,716.43",
      "valor_mxn": 468716.43
+    },
+    {
+     "texto": "$4'438,604.99",
+     "valor_mxn": 4438604.99
     }
    ],
    "beneficiario": {
@@ -169,65 +184,117 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se presentó el dictamen para aceptar un avalúo; no hay información sobre la votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba aceptar el avalúo del predio 02-99-90-039-857-000, para que la empresa Inmobiliaria Mavasal pague $3,549,741.44 por concepto de área de cesión del proyecto Almacén para Venta y Distribución de Botanas y Golosinas.",
+   "sentido": "aprobado",
    "categoria": "patrimonio",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "montos": [
+    {
+     "texto": "$3,549,741.44",
+     "valor_mxn": 3549741.44
+    },
+    {
+     "texto": "$1,904.00",
+     "valor_mxn": 1904.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "INMOBILIARIA MAVASAL, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se presentó el dictamen de incorporación municipal anticipada de etapas del fraccionamiento 'EL MIRADOR DE COLIMA'; sin resultado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprueba la incorporación municipal anticipada de las etapas 6, 7 y 8 del fraccionamiento El Mirador de Colima, con fianzas por $1,994,790.33 y $3,763,199.69.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "EL MIRADOR DE COLIMA"
    ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "obras": [
+    "FISICOS",
+    "ABOGADOS",
+    "PROL. AV. LEONARDO BRAVO"
+   ],
+   "montos": [
+    {
+     "texto": "$1'994,790.33",
+     "valor_mxn": 1994790.33
+    },
+    {
+     "texto": "$ 3763,199.69",
+     "valor_mxn": 3763199.69
+    }
+   ],
+   "beneficiario": {
+    "nombre": "MORALES ARMENTA CONSTRUCCIONES, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen para reformar el Reglamento de Zonificación; sin resultado.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la reforma a diversas disposiciones del Reglamento de Zonificación del Municipio de Colima, con la abstención de la Regidora Azucena López Legorreta.",
+   "sentido": "aprobado",
    "categoria": "reglamento_normativo",
-   "votacion": "no_determinable",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "abstenciones": [
+    {
+     "nombre": "Licda. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias; sin resultado.",
-   "sentido": "no_determinable",
+   "resumen": "Se presentó el Calendario Trimestral de Sesiones Ordinarias de Cabildo para enero, febrero y marzo de 2026.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
    "colonias": [],
@@ -242,7 +309,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Clausura de la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T04:08:47+00:00",
- "resumen_sesion": "Se aprobó el festival Sabora Fest 2026, la baja de seis licencias, la expedición de ocho nuevas, la incorporación anticipada de San Bernardo Etapa 2, el programa parcial de Savanna Hábitat, un nuevo reglamento deportivo y la modificación del programa de Margaritas.",
+ "generado": "2026-07-25T05:37:58+00:00",
+ "lectura": {
+  "chars_ocr": 199599,
+  "chars_leidos": 199599,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó el acta anterior, la declaratoria de recinto ferial para el SABORA FEST 2026, la baja de seis licencias y se presentó el dictamen para ocho nuevas licencias de alcohol sin votación en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia de los miembros del Cabildo.",
+   "resumen": "Se verificó la asistencia de los miembros del Cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la instalación legal de la sesión por contar con quórum.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día modificado para incluir el punto del fraccionamiento Margaritas.",
+   "resumen": "Se aprobó por unanimidad la modificación del Orden del Día para incluir el dictamen sobre el fraccionamiento Margaritas.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -55,12 +63,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el acta de cabildo número 67.",
+   "resumen": "Se aprobó por unanimidad el Acta de Cabildo número 67.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -76,12 +87,22 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad declarar recinto ferial para el Sabora Fest 2026 en el Jardín Libertad, Jardín Torres Quintero y calles aledañas, con cobro de derechos estimado en $26,574.24.",
+   "resumen": "Se aprobó por unanimidad declarar recinto ferial diversos espacios públicos para el festival SABORA FEST 2026, autorizando cobros de derechos y la suscripción de convenios.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "Jardín Libertad",
+    "calle Reforma",
+    "16 de Septiembre",
+    "Santos Degollado",
+    "Francisco I. Madero",
+    "Jardín Torres Quintero",
+    "Medellín",
+    "Miguel Hidalgo",
+    "Gabino Barreda"
+   ],
    "montos": [
     {
      "texto": "$211.16",
@@ -94,6 +115,10 @@
     {
      "texto": "$10,154.35",
      "valor_mxn": 10154.35
+    },
+    {
+     "texto": "$10,154.25",
+     "valor_mxn": 10154.25
     },
     {
      "texto": "$290.93",
@@ -111,16 +136,16 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación, Hacienda Municipal, Comercio, Mercados y Restaurantes, Patrimonio Municipal y Turismo, Fomento Económico y Empresarial",
+   "comision": "Comisión de Educación, Cultura y Recreación",
    "autor": {
-    "nombre": "Federico Rangel Lozano",
+    "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad dar de baja seis licencias comerciales de establecimientos que ya no funcionan.",
+   "resumen": "Se aprobó por unanimidad dar de baja seis licencias comerciales por cese de operaciones.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -139,25 +164,27 @@
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se discutió el dictamen para expedir ocho licencias de venta de bebidas alcohólicas, pero el acta no especifica el resultado de la votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó la expedición de ocho licencias comerciales para venta y/o consumo de bebidas alcohólicas en establecimientos de diversas colonias de Colima.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "Parque Industrial",
+    "Parque Industrial, Lo de Villa",
     "La Guadalupe",
     "Centro",
     "Residencial Esmeralda",
     "Puerta del Sol",
     "El Moralete",
-    "Guadalajarita"
+    "Guadalajarita",
+    "Parque Industrial",
+    "Contro"
    ],
    "obras": [],
    "montos": [],
@@ -166,78 +193,148 @@
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "No se pudo determinar la resolución sobre la incorporación municipal anticipada del fraccionamiento San Bernardo Etapa 2.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 2 del Fraccionamiento San Bernardo, al sur de la ciudad de Colima.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
+   "votacion": "unanime",
+   "colonias": [
+    "San Bernardo"
+   ],
+   "obras": [
+    "Av. Francisco Javier Mina",
+    "Av. Anastacio Brizuela",
+    "C. Fray Pedro de Gante",
+    "C. San Felipe de Jesús"
+   ],
+   "montos": [
+    {
+     "texto": "$1,072,608.63 (UN MILLON SETENTA Y DOS MIL SEISCIENTOS OCHO PESOS 63/100 M.N.)",
+     "valor_mxn": 1072608.63
+    },
+    {
+     "texto": "$ 36,165.86 (TREINTA Y SEIS MIL CIENTO SESENTA Y CINCO PESOS 86/100 M.N.)",
+     "valor_mxn": 36165.86
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "No se pudo determinar la resolución sobre el programa parcial de urbanización del fraccionamiento Savanna Hábitat Residencial.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización del fraccionamiento Savanna Hábitat Residencial, promovido por Grupo Desarrollador Colinas del Rey, con obras de consolidación vial y cesión de áreas para equipamiento.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "votacion": "unanime",
+   "colonias": [
+    "Savanna Hábitat Residencial",
+    "Margaritas"
+   ],
+   "obras": [
+    "Consolidación del 50% de la VP-27 (Av. Miguel de Cervantes y Saavedra)",
+    "Consolidación del 50% de la AC-23 (Av. José G. Alcaraz)",
+    "Construcción de pasos peatonales y rampas para discapacitados",
+    "Reforestación de vías y espacios públicos"
+   ],
+   "montos": [
+    {
+     "texto": "$5214,359.39",
+     "valor_mxn": 5214359.39
+    }
+   ],
+   "beneficiario": {
+    "nombre": "GRUPO DESARROLLADOR COLINAS DEL REY, S. DE R.L. DE C.V.",
+    "tipo": "empresa"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "No se pudo determinar la resolución sobre el reglamento de la Dirección de Fomento Deportivo.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad el Reglamento de la Dirección de Fomento Deportivo, que regula el uso y administración de los espacios deportivos del municipio de Colima.",
+   "sentido": "aprobado",
    "categoria": "reglamento_normativo",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "2.5 UMAS",
+     "valor_mxn": null
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisiones de Gobernación y Reglamentos, y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "No se pudo determinar la resolución sobre la modificación al programa parcial de urbanización del fraccionamiento Margaritas.",
-   "sentido": "no_determinable",
-   "categoria": "fraccionamiento",
+   "resumen": "Se presentaron informes sobre actividades de salud, vivienda, trabajo infantil, y se turnó un exhorto sobre trabajo infantil a comisiones.",
+   "sentido": "tramite",
+   "categoria": "tramite",
    "votacion": "no_determinable",
-   "colonias": [],
+   "colonias": [
+    "MARGARITAS",
+    "DIAMANTES",
+    "MARGARITAS II",
+    "Rancho de Villa",
+    "Astillero de Abajo",
+    "Astillero de Arriba",
+    "Acatitán",
+    "Piscila",
+    "Los Tepames",
+    "El Bordo",
+    "Puerta de Anzar",
+    "Estapilla"
+   ],
    "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "montos": [
+    {
+     "texto": "$34, 321.61",
+     "valor_mxn": 34321.61
+    }
+   ],
+   "beneficiario": {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
+    "tipo": "empresa"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se abrió el punto de asuntos generales sin que se registren acuerdos.",
+   "resumen": "Se declaró clausurada la sesión ordinaria de cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

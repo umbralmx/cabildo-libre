@@ -6,13 +6,21 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T03:58:13+00:00",
- "resumen_sesion": "Se aprobó la exención del impuesto predial para 32 inmuebles del Gobierno del Estado de Colima, en el Parque Regional Griselda Álvarez, a fin de facilitar el proyecto del CRIT.",
+ "generado": "2026-07-25T05:13:04+00:00",
+ "lectura": {
+  "chars_ocr": 27571,
+  "chars_leidos": 27571,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se exentó del impuesto predial a 32 inmuebles del Gobierno del Estado en el Parque Regional Griselda Álvarez y se aplazó la aprobación del acta anterior.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, declarando presentes a los munícipes.",
+   "resumen": "Se tomó lista de asistencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -28,7 +36,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -44,7 +52,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Secretario dio lectura al orden del día.",
+   "resumen": "Se dio lectura al Orden del Día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -60,8 +68,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad posponer la lectura y aprobación del acta 51 para la próxima sesión.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 51 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -76,9 +84,9 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad exentar del impuesto predial a 32 inmuebles del Gobierno del Estado de Colima, ubicados en el Parque Regional Griselda Álvarez, por ser bienes de dominio público.",
+   "resumen": "Se aprobó por unanimidad exentar del impuesto predial a 32 inmuebles del Gobierno del Estado de Colima ubicados en el Parque Regional Metropolitano Griselda Álvarez, por ser bienes de dominio público, beneficiando al proyecto del CRIT.",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
+   "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -91,14 +99,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Azucena López Legorreta",
+    "nombre": "C. Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se clausuró la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
