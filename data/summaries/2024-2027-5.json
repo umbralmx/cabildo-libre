@@ -1,0 +1,286 @@
+{
+ "id": "2024-2027-5",
+ "no_acta": 5,
+ "fecha": "2024-11-15",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:10:40+00:00",
+ "lectura": {
+  "chars_ocr": 247874,
+  "chars_leidos": 247874,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó una licencia para restaurante 'La Parilla de Poncho' y la baja de la licencia B-002477, y se presentaron adecuaciones presupuestarias sin votación.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia de 11 regidores y la falta justificada de una regidora.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo número 3 y 4.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó la expedición de una licencia para el restaurante 'La Parilla de Poncho' con venta de cerveza, ubicado en Av. Venustiano Carranza 1711, Colonia Residencial Esmeralda.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Residencial Esmeralda"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "LA PARRILLA DE PONCHO",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó la baja definitiva de la licencia B-002477 para tienda de abarrotes con venta de alcohol, ubicada en Calz. Del Campesino 150, Colonia el Moralete, a nombre de Ma. Estela Gutiérrez Cobián.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia el Moralete"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ma. Estela Gutiérrez Cobián",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza a la Tesorería Municipal a realizar las adecuaciones presupuestarias solicitadas mediante Oficio TMC/1783/2024.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$4,911,018.56 (CUATRO MILLONES NOVECIENTOS ONCE MIL DIECIOCHO PESOS 56/100 M.N.)",
+     "valor_mxn": 4911018.56
+    },
+    {
+     "texto": "4,911,018.56",
+     "valor_mxn": 4911018.56
+    },
+    {
+     "texto": "148,671.83",
+     "valor_mxn": 148671.83
+    },
+    {
+     "texto": "9,706,479.83",
+     "valor_mxn": 9706479.83
+    },
+    {
+     "texto": "$3,848,659.52",
+     "valor_mxn": 3848659.52
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Regidora C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de octubre de 2024.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se sometió a consideración el dictamen que aprueba la Ley de Ingresos del Municipio de Colima para el Ejercicio Fiscal 2025, con un total estimado de $1,009,960,065.66, incluyendo un financiamiento de $55,000,000.00.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,009, 960,065.66",
+     "valor_mxn": 1009960065.66
+    },
+    {
+     "texto": "$ 55, 000,000.00",
+     "valor_mxn": 55000000.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó dejar sin efecto el punto QUINTO del orden del día del Acta de Cabildo No. 110, de fecha 29 de mayo de 2024, que reformaba el Acuerdo de Creación del Instituto de Planeación para el Municipio de Colima y su Reglamento Interior.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bfayo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó modificar la convocatoria para elección de autoridades auxiliares, eliminando el requisito de secundaria terminada y ampliando el plazo de registro para las comunidades de Cardona y Loma de Juárez.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Cardona",
+    "Loma de Juárez"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

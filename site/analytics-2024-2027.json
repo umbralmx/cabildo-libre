@@ -1,49 +1,49 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-26T16:52:15+00:00",
+ "generado": "2026-07-26T17:13:27+00:00",
  "cobertura": {
   "actas_en_termino": 74,
-  "con_resumen": 65,
-  "con_tier_a": 65,
-  "con_ficha_decision": 65,
-  "con_asistencia": 65,
-  "nota": "Análisis parcial: 65 de 74 actas del término tienen resumen, 65 tienen los campos analíticos (categoría, votación, colonias, montos) y 65 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "con_resumen": 74,
+  "con_tier_a": 74,
+  "con_ficha_decision": 74,
+  "con_asistencia": 74,
+  "nota": "Análisis parcial: 74 de 74 actas del término tienen resumen, 74 tienen los campos analíticos (categoría, votación, colonias, montos) y 74 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
-  "n_puntos": 790,
-  "n_sustantivos": 497,
+  "n_puntos": 871,
+  "n_sustantivos": 545,
   "por_sentido": {
-   "aprobado": 451,
-   "aplazado": 21,
-   "no_determinable": 17,
+   "aprobado": 492,
+   "aplazado": 23,
+   "no_determinable": 22,
    "retirado": 5,
    "rechazado": 3
   },
   "por_categoria": {
-   "tramite": 90,
-   "presupuesto_finanzas": 75,
-   "licencia": 75,
+   "tramite": 103,
+   "licencia": 82,
+   "presupuesto_finanzas": 80,
    "convenio": 68,
    "fraccionamiento": 63,
-   "reglamento_normativo": 49,
-   "otro": 30,
+   "reglamento_normativo": 58,
+   "otro": 32,
+   "nombramiento": 26,
    "patrimonio": 20,
-   "nombramiento": 14,
    "obra_publica": 13
   },
   "por_votacion": {
-   "unanime": 404,
-   "mayoria": 61,
-   "no_determinable": 32
+   "unanime": 440,
+   "mayoria": 65,
+   "no_determinable": 40
   },
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 532,
-  "n_con_valor": 467,
-  "suma_bruta_mxn": 15635659574.91,
-  "suma_declarada_mxn": 12030000814.05,
+  "n_declarados": 545,
+  "n_con_valor": 480,
+  "suma_bruta_mxn": 16766694363.51,
+  "suma_declarada_mxn": 13161035602.65,
   "puntos_total_y_desglose": [
    {
     "acta": "2024-2027-17",
@@ -154,6 +154,13 @@
     "punto": 5
    },
    {
+    "texto": "$1,009, 960,065.66",
+    "valor_mxn": 1009960065.66,
+    "acta": "2024-2027-5",
+    "no_acta": 5,
+    "punto": 9
+   },
+   {
     "texto": "$661,792,051.55",
     "valor_mxn": 661792051.55,
     "acta": "2024-2027-53",
@@ -201,22 +208,15 @@
     "acta": "2024-2027-64",
     "no_acta": 64,
     "punto": 6
-   },
-   {
-    "texto": "81,565,141.00",
-    "valor_mxn": 81565141,
-    "acta": "2024-2027-63",
-    "no_acta": 63,
-    "punto": 6
    }
   ]
  },
  "lectura": {
-  "chars_ocr": 9964962,
-  "chars_leidos": 9964962,
+  "chars_ocr": 10535392,
+  "chars_leidos": 10535392,
   "proporcion": 1.0,
-  "actas_completas": 65,
-  "actas_con_dato": 65,
+  "actas_completas": 74,
+  "actas_con_dato": 74,
   "actas_sin_dato": 0,
   "ventanas_fallidas": 0,
   "puntos_en_conflicto": [
@@ -243,7 +243,7 @@
     "no_acta": 2,
     "fecha": "2024-10-25",
     "n_puntos": 7,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-02.pdf"
    },
    {
@@ -251,7 +251,7 @@
     "no_acta": 3,
     "fecha": "2024-10-28",
     "n_puntos": 11,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-03.pdf"
    },
    {
@@ -259,7 +259,7 @@
     "no_acta": 4,
     "fecha": "2024-11-06",
     "n_puntos": 13,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-04.pdf"
    },
    {
@@ -267,7 +267,7 @@
     "no_acta": 5,
     "fecha": "2024-11-15",
     "n_puntos": 12,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://colima.gob.mx/2025/ACTA%20NO.%2005.pdf"
    },
    {
@@ -275,7 +275,7 @@
     "no_acta": 6,
     "fecha": "2024-11-21",
     "n_puntos": 8,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-06.pdf"
    },
    {
@@ -283,7 +283,7 @@
     "no_acta": 7,
     "fecha": "2024-11-28",
     "n_puntos": 10,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-07.pdf"
    },
    {
@@ -291,7 +291,7 @@
     "no_acta": 8,
     "fecha": "2024-11-29",
     "n_puntos": 5,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-08.pdf"
    },
    {
@@ -299,7 +299,7 @@
     "no_acta": 9,
     "fecha": "2024-12-02",
     "n_puntos": 6,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-09.pdf"
    },
    {
@@ -307,7 +307,7 @@
     "no_acta": 10,
     "fecha": "2024-12-06",
     "n_puntos": 9,
-    "procesada": false,
+    "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2025/01/acta-no-10.pdf"
    },
    {
@@ -837,30 +837,54 @@
  "colonias": [
   {
    "nombre": "Centro",
-   "menciones": 33
+   "menciones": 34
+  },
+  {
+   "nombre": "El Chanal",
+   "menciones": 14
+  },
+  {
+   "nombre": "La Estancia",
+   "menciones": 14
   },
   {
    "nombre": "Prados del Sur",
    "menciones": 12
   },
   {
+   "nombre": "Cardona",
+   "menciones": 10
+  },
+  {
+   "nombre": "Ignacio Allende",
+   "menciones": 10
+  },
+  {
+   "nombre": "La Capacha",
+   "menciones": 10
+  },
+  {
+   "nombre": "Lo de Villa",
+   "menciones": 10
+  },
+  {
    "nombre": "Francisco Villa",
    "menciones": 9
   },
   {
-   "nombre": "La Estancia",
+   "nombre": "Residencial Esmeralda",
    "menciones": 9
   },
   {
-   "nombre": "El Chanal",
+   "nombre": "Astillero de Arriba",
    "menciones": 8
   },
   {
-   "nombre": "Lo de Villa",
+   "nombre": "El Moralete",
    "menciones": 8
   },
   {
-   "nombre": "Residencial Esmeralda",
+   "nombre": "Piscila",
    "menciones": 8
   },
   {
@@ -868,19 +892,27 @@
    "menciones": 7
   },
   {
-   "nombre": "El Moralete",
-   "menciones": 7
-  },
-  {
    "nombre": "La Albarrada",
    "menciones": 7
   },
   {
-   "nombre": "Gregorio Torres Quintero",
+   "nombre": "Acatitán",
    "menciones": 6
   },
   {
-   "nombre": "Piscila",
+   "nombre": "El Alpuyequito",
+   "menciones": 6
+  },
+  {
+   "nombre": "El Amarradero",
+   "menciones": 6
+  },
+  {
+   "nombre": "Estapilla",
+   "menciones": 6
+  },
+  {
+   "nombre": "Gregorio Torres Quintero",
    "menciones": 6
   },
   {
@@ -892,7 +924,11 @@
    "menciones": 6
   },
   {
-   "nombre": "Cardona",
+   "nombre": "Astillero de Abajo",
+   "menciones": 5
+  },
+  {
+   "nombre": "El Bordo",
    "menciones": 5
   },
   {
@@ -916,10 +952,6 @@
    "menciones": 5
   },
   {
-   "nombre": "La Capacha",
-   "menciones": 5
-  },
-  {
    "nombre": "Las Américas",
    "menciones": 5
   },
@@ -936,19 +968,15 @@
    "menciones": 5
   },
   {
-   "nombre": "Astillero de Arriba",
-   "menciones": 4
-  },
-  {
    "nombre": "Diamantes",
    "menciones": 4
   },
   {
-   "nombre": "Esmeralda Norte",
+   "nombre": "EL DIEZMO",
    "menciones": 4
   },
   {
-   "nombre": "Ignacio Allende",
+   "nombre": "Esmeralda Norte",
    "menciones": 4
   },
   {
@@ -961,6 +989,10 @@
   },
   {
    "nombre": "La Guadalupe",
+   "menciones": 4
+  },
+  {
+   "nombre": "Los Tepames",
    "menciones": 4
   },
   {
@@ -984,6 +1016,10 @@
    "menciones": 4
   },
   {
+   "nombre": "Tepames",
+   "menciones": 4
+  },
+  {
    "nombre": "Bosque de la Cantera",
    "menciones": 3
   },
@@ -997,14 +1033,6 @@
   },
   {
    "nombre": "De Los Trabajadores",
-   "menciones": 3
-  },
-  {
-   "nombre": "El Bordo",
-   "menciones": 3
-  },
-  {
-   "nombre": "El Diezmo",
    "menciones": 3
   },
   {
@@ -1024,11 +1052,23 @@
    "menciones": 3
   },
   {
+   "nombre": "Las Guásimas",
+   "menciones": 3
+  },
+  {
+   "nombre": "Loma de Juárez",
+   "menciones": 3
+  },
+  {
    "nombre": "Lomas de Circunvalación",
    "menciones": 3
   },
   {
-   "nombre": "Los Tepames",
+   "nombre": "Los Asmoles",
+   "menciones": 3
+  },
+  {
+   "nombre": "Los Ortices",
    "menciones": 3
   },
   {
@@ -1088,20 +1128,12 @@
    "menciones": 3
   },
   {
-   "nombre": "Tepames",
+   "nombre": "Tinajas",
    "menciones": 3
   },
   {
    "nombre": "Villa de Álvarez",
    "menciones": 3
-  },
-  {
-   "nombre": "Acatitán",
-   "menciones": 2
-  },
-  {
-   "nombre": "Astillero de Abajo",
-   "menciones": 2
   },
   {
    "nombre": "Camino Real",
@@ -1116,14 +1148,6 @@
    "menciones": 2
   },
   {
-   "nombre": "El Alpuyequito",
-   "menciones": 2
-  },
-  {
-   "nombre": "El Amarradero",
-   "menciones": 2
-  },
-  {
    "nombre": "El Paraíso",
    "menciones": 2
   },
@@ -1133,10 +1157,6 @@
   },
   {
    "nombre": "El Yaqui",
-   "menciones": 2
-  },
-  {
-   "nombre": "Estapilla",
    "menciones": 2
   },
   {
@@ -1172,6 +1192,10 @@
    "menciones": 2
   },
   {
+   "nombre": "LAS GOLONDRINAS",
+   "menciones": 2
+  },
+  {
    "nombre": "LOS ÁNGELES",
    "menciones": 2
   },
@@ -1188,11 +1212,11 @@
    "menciones": 2
   },
   {
-   "nombre": "La Virgencita",
+   "nombre": "La Media Luna",
    "menciones": 2
   },
   {
-   "nombre": "Las Guásimas",
+   "nombre": "La Virgencita",
    "menciones": 2
   },
   {
@@ -1245,6 +1269,10 @@
   },
   {
    "nombre": "Prados del Sur (Valle Real)",
+   "menciones": 2
+  },
+  {
+   "nombre": "Puerta de Ánzar",
    "menciones": 2
   },
   {
@@ -1341,6 +1369,10 @@
   },
   {
    "nombre": "CARSOL CHEVROLET COLIMA",
+   "menciones": 1
+  },
+  {
+   "nombre": "CHANAL",
    "menciones": 1
   },
   {
@@ -1528,11 +1560,11 @@
    "menciones": 1
   },
   {
-   "nombre": "La Media Luna",
+   "nombre": "La Oriental",
    "menciones": 1
   },
   {
-   "nombre": "La Oriental",
+   "nombre": "Las Tunas",
    "menciones": 1
   },
   {
@@ -1556,11 +1588,11 @@
    "menciones": 1
   },
   {
-   "nombre": "Loma de Ignacio Allende",
+   "nombre": "Loma de Fátima",
    "menciones": 1
   },
   {
-   "nombre": "Loma de Juárez",
+   "nombre": "Loma de Ignacio Allende",
    "menciones": 1
   },
   {
@@ -1589,10 +1621,6 @@
   },
   {
    "nombre": "Los Olivos",
-   "menciones": 1
-  },
-  {
-   "nombre": "Los Ortices",
    "menciones": 1
   },
   {
@@ -1645,10 +1673,6 @@
   },
   {
    "nombre": "Puerta Paraíso",
-   "menciones": 1
-  },
-  {
-   "nombre": "Puerta de Ánzar",
    "menciones": 1
   },
   {
@@ -1740,11 +1764,15 @@
    "menciones": 1
   },
   {
-   "nombre": "Tinajas",
+   "nombre": "Ticuicitán",
    "menciones": 1
   },
   {
    "nombre": "Trapichillos",
+   "menciones": 1
+  },
+  {
+   "nombre": "Trapichillos Poblado",
    "menciones": 1
   },
   {
@@ -1780,6 +1808,10 @@
    "menciones": 1
   },
   {
+   "nombre": "Xóchitl",
+   "menciones": 1
+  },
+  {
    "nombre": "Zona de tolerancia",
    "menciones": 1
   },
@@ -1789,23 +1821,23 @@
   }
  ],
  "registro_voto": {
-  "base_actas": 65,
-  "base_puntos": 497,
+  "base_actas": 74,
+  "base_puntos": 545,
   "por_integrante": [
    {
     "id": "azucena-lopez-legorreta",
     "nombre": "Azucena López Legorreta",
     "cargo": "regidora",
-    "votos_en_contra": 56,
-    "abstenciones": 27,
-    "dictamenes_presentados": 14
+    "votos_en_contra": 60,
+    "abstenciones": 29,
+    "dictamenes_presentados": 19
    },
    {
     "id": "diana-gabriela-vizcaino-aguirre",
     "nombre": "Diana Gabriela Vizcaíno Aguirre",
     "cargo": "regidora",
-    "votos_en_contra": 36,
-    "abstenciones": 17,
+    "votos_en_contra": 38,
+    "abstenciones": 18,
     "dictamenes_presentados": 2
    },
    {
@@ -1814,7 +1846,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 2,
-    "dictamenes_presentados": 6
+    "dictamenes_presentados": 8
    },
    {
     "id": "alondra-isabel-lopez-alonso",
@@ -1846,7 +1878,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 15
+    "dictamenes_presentados": 18
    },
    {
     "id": "elia-margarita-moreno-gonzalez",
@@ -1870,7 +1902,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 51
+    "dictamenes_presentados": 56
    },
    {
     "id": "itzel-sarahi-rios-de-la-mora",
@@ -1878,7 +1910,7 @@
     "cargo": "sindica",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 110
+    "dictamenes_presentados": 114
    },
    {
     "id": "juan-carlos-gomez-diaz",
@@ -1886,7 +1918,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 49
+    "dictamenes_presentados": 52
    },
    {
     "id": "riult-rivera-gutierrez",
@@ -1894,10 +1926,119 @@
     "cargo": "presidente_municipal",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 24
+    "dictamenes_presentados": 27
    }
   ],
   "eventos": [
+   {
+    "acta": "2024-2027-3",
+    "no_acta": 3,
+    "fecha": "2024-10-28",
+    "punto": 8,
+    "categoria": "reglamento_normativo",
+    "votacion": "unanime",
+    "resumen": "Se aprobó el proyecto de Tablas de Valores Unitarios de Terreno y Construcción para el ejercicio fiscal 2025.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-6",
+    "no_acta": 6,
+    "fecha": "2024-11-21",
+    "punto": 5,
+    "categoria": "nombramiento",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría la designación de funcionarios para mesas receptoras de votos en la elección de autoridades auxiliares 2024-2027, en diversas comunidades.",
+    "votos_en_contra": [
+     {
+      "nombre": "Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-6",
+    "no_acta": 6,
+    "fecha": "2024-11-21",
+    "punto": 6,
+    "categoria": "licencia",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó el Punto de Acuerdo para realizar el Festival Gastronómico Colima Sabe Bien, Coca Cola Food Fest, declarar recinto ferial y autorizar cobros de derechos y aprovechamientos los días 21 al 24 de noviembre de 2024.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ],
+    "abstenciones": [
+     {
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-6",
+    "no_acta": 6,
+    "fecha": "2024-11-21",
+    "punto": 7,
+    "categoria": "nombramiento",
+    "votacion": "unanime",
+    "resumen": "Se aprobó por unanimidad el nombramiento de la Arq. Dulce Jazmín Valencia Ramírez como consejera titular y del Arq. Juan Antonio Calderón Mafud como consejero suplente del Consejo Municipal de Participación Social para la Planeación y Vocal de la Junta de Gobierno del IPCO, periodo 2024-2027.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-9",
+    "no_acta": 9,
+    "fecha": "2024-12-02",
+    "punto": 5,
+    "categoria": "otro",
+    "votacion": "mayoria",
+    "resumen": "Se declaró la validez de la elección de autoridades auxiliares y se declararon electos a los candidatos únicos y ganadores de las comunidades donde hubo elección, con votos en contra de dos regidoras.",
+    "votos_en_contra": [
+     {
+      "nombre": "Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     },
+     {
+      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ],
+    "abstenciones": []
+   },
+   {
+    "acta": "2024-2027-10",
+    "no_acta": 10,
+    "fecha": "2024-12-06",
+    "punto": 5,
+    "categoria": "reglamento_normativo",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría la reforma al artículo 227 del Reglamento del Gobierno Municipal de Colima, facultando al Director de Catastro para suscribir transmisiones patrimoniales en ausencia del Tesorero.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ],
+    "abstenciones": []
+   },
    {
     "acta": "2024-2027-17",
     "no_acta": 17,
@@ -3492,21 +3633,25 @@
    {
     "nombre": "LAE. J. Francisco Anzar Herrera",
     "menciones": 1
+   },
+   {
+    "nombre": "J. Francisco Anzar Herrera",
+    "menciones": 1
    }
   ],
-  "nota": "Sólo cuenta lo que el acta nombra explícitamente: un cero no significa que la persona siempre votó a favor, sino que ninguna de las 65 actas con ficha de decisión la nombró votando en contra o absteniéndose. Los nombres que no corresponden a ningún integrante del cabildo (suplentes, o nombres que el OCR deformó) se listan aparte en nombres_sin_mapear, sin asignarlos a nadie."
+  "nota": "Sólo cuenta lo que el acta nombra explícitamente: un cero no significa que la persona siempre votó a favor, sino que ninguna de las 74 actas con ficha de decisión la nombró votando en contra o absteniéndose. Los nombres que no corresponden a ningún integrante del cabildo (suplentes, o nombres que el OCR deformó) se listan aparte en nombres_sin_mapear, sin asignarlos a nadie."
  },
  "disenso_por_categoria": {
-  "base_puntos": 497,
+  "base_puntos": 545,
   "filas": [
    {
     "categoria": "presupuesto_finanzas",
-    "puntos": 75,
+    "puntos": 80,
     "mayoria": 43,
     "con_votos_en_contra": 43,
     "votos_en_contra": 68,
     "con_abstenciones": 8,
-    "tasa_disenso": 0.573
+    "tasa_disenso": 0.537
    },
    {
     "categoria": "obra_publica",
@@ -3519,12 +3664,21 @@
    },
    {
     "categoria": "reglamento_normativo",
-    "puntos": 49,
-    "mayoria": 6,
-    "con_votos_en_contra": 5,
-    "votos_en_contra": 7,
+    "puntos": 58,
+    "mayoria": 7,
+    "con_votos_en_contra": 6,
+    "votos_en_contra": 8,
+    "con_abstenciones": 5,
+    "tasa_disenso": 0.103
+   },
+   {
+    "categoria": "otro",
+    "puntos": 32,
+    "mayoria": 2,
+    "con_votos_en_contra": 2,
+    "votos_en_contra": 4,
     "con_abstenciones": 4,
-    "tasa_disenso": 0.102
+    "tasa_disenso": 0.062
    },
    {
     "categoria": "patrimonio",
@@ -3536,22 +3690,22 @@
     "tasa_disenso": 0.05
    },
    {
+    "categoria": "nombramiento",
+    "puntos": 26,
+    "mayoria": 2,
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 2,
+    "con_abstenciones": 3,
+    "tasa_disenso": 0.038
+   },
+   {
     "categoria": "tramite",
-    "puntos": 90,
+    "puntos": 103,
     "mayoria": 4,
     "con_votos_en_contra": 3,
     "votos_en_contra": 5,
     "con_abstenciones": 1,
-    "tasa_disenso": 0.033
-   },
-   {
-    "categoria": "otro",
-    "puntos": 30,
-    "mayoria": 1,
-    "con_votos_en_contra": 1,
-    "votos_en_contra": 2,
-    "con_abstenciones": 4,
-    "tasa_disenso": 0.033
+    "tasa_disenso": 0.029
    },
    {
     "categoria": "convenio",
@@ -3564,12 +3718,12 @@
    },
    {
     "categoria": "licencia",
-    "puntos": 75,
-    "mayoria": 0,
-    "con_votos_en_contra": 1,
-    "votos_en_contra": 2,
-    "con_abstenciones": 3,
-    "tasa_disenso": 0.013
+    "puntos": 82,
+    "mayoria": 1,
+    "con_votos_en_contra": 2,
+    "votos_en_contra": 3,
+    "con_abstenciones": 4,
+    "tasa_disenso": 0.024
    },
    {
     "categoria": "fraccionamiento",
@@ -3579,37 +3733,36 @@
     "votos_en_contra": 0,
     "con_abstenciones": 5,
     "tasa_disenso": 0.0
-   },
-   {
-    "categoria": "nombramiento",
-    "puntos": 14,
-    "mayoria": 1,
-    "con_votos_en_contra": 0,
-    "votos_en_contra": 0,
-    "con_abstenciones": 2,
-    "tasa_disenso": 0.0
    }
   ],
   "nota": "tasa_disenso = puntos con votos en contra nombrados / puntos de esa categoría con ficha de decisión. Un dictamen aprobado por mayoría cuya acta no nombra a los disidentes cuenta en 'mayoria' pero no en 'con_votos_en_contra'."
  },
  "beneficiarios": {
-  "base_puntos": 497,
+  "base_puntos": 545,
   "filas": [
    {
     "nombre": "Tesorería Municipal",
     "tipo": "dependencia",
-    "menciones": 14,
-    "actas": 13,
-    "monto_declarado_mxn": 793333796.83,
-    "puntos_con_monto": 14
+    "menciones": 15,
+    "actas": 14,
+    "monto_declarado_mxn": 816859645.13,
+    "puntos_con_monto": 15
    },
    {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia",
-    "menciones": 11,
-    "actas": 11,
-    "monto_declarado_mxn": 1077523004.0,
-    "puntos_con_monto": 1
+    "menciones": 13,
+    "actas": 12,
+    "monto_declarado_mxn": 2142483069.66,
+    "puntos_con_monto": 2
+   },
+   {
+    "nombre": "contribuyentes del Municipio de Colima",
+    "tipo": "ciudadania",
+    "menciones": 5,
+    "actas": 4,
+    "monto_declarado_mxn": 7548874.64,
+    "puntos_con_monto": 2
    },
    {
     "nombre": "Municipio de Colima",
@@ -3638,14 +3791,6 @@
    {
     "nombre": "Universidad de Colima",
     "tipo": "dependencia",
-    "menciones": 3,
-    "actas": 3,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "contribuyentes del Municipio de Colima",
-    "tipo": "ciudadania",
     "menciones": 3,
     "actas": 3,
     "monto_declarado_mxn": null,
@@ -4268,6 +4413,22 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Angélica María Apolinar Ramírez",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Archivo Histórico del Municipio de Colima y Instituto de Planeación para el Municipio de Colima (IPCO)",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Archivo Histórico del Municipio de Colima, Instituto de la Juventud, Instituto de las Mujeres, Instituto de Planeación,",
     "tipo": "dependencia",
     "menciones": 1,
@@ -4277,6 +4438,22 @@
    },
    {
     "nombre": "Aspirantes a policías municipales",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Autoridades Auxiliares Electas",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Autoridades Auxiliares electas 2024-2027",
     "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
@@ -4342,6 +4519,14 @@
    {
     "nombre": "CFE, Suministrador de Servicios Básicos",
     "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "CIAPACOV",
+    "tipo": "dependencia",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4692,6 +4877,14 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Héctor Hugo Chávez Mariscal",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "INETEP, Instituto ICEP, Escuela de Música Staccato, Colegio Rafaela Suárez, Colegio Gandhi",
     "tipo": "otro",
     "menciones": 1,
@@ -4812,6 +5005,14 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Joel Corona Cernas",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Josefina Reyes Mora y Ximena Kiralina Barajas Mejía",
     "tipo": "persona",
     "menciones": 1,
@@ -4830,6 +5031,14 @@
    {
     "nombre": "Junta de Asistencia Privada del Estado de Colima",
     "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "LA PARRILLA DE PONCHO",
+    "tipo": "empresa",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4894,6 +5103,14 @@
    {
     "nombre": "Licencia B-002619",
     "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Ma. Estela Gutiérrez Cobián",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4965,6 +5182,14 @@
    },
    {
     "nombre": "Mtra. Rocío Valdovinos Anguiano",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Mtro. Christian Velasco Milanés",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5228,6 +5453,14 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "VANESSA VELÁZQUEZ VENEGAS",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "VERÓNICA RAQUEL MUÑOZ RAMÍREZ y MARÍA DE LOS ÁNGELES CRUZ",
     "tipo": "persona",
     "menciones": 1,
@@ -5238,6 +5471,14 @@
    {
     "nombre": "VIVO FIT GYM",
     "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Víctor Jesús Ramos Ruiz",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5279,7 +5520,7 @@
   "nota": "Contrapartes tal como el acta las nombra. monto_declarado_mxn suma los montos declarados en los puntos donde aparece la contraparte —con la misma regla anti-doble-conteo que la sección de montos—: es lo que el acta dice, no un contrato verificado ni un pago ejercido. La recurrencia se registra; no implica irregularidad."
  },
  "comisiones": {
-  "base_puntos": 497,
+  "base_puntos": 545,
   "filas": [
    {
     "nombre": "Comisión de Desarrollo Urbano y Vivienda",
@@ -5287,23 +5528,23 @@
    },
    {
     "nombre": "Comisión de Hacienda Municipal",
-    "puntos": 59
-   },
-   {
-    "nombre": "Comisión de Comercios, Mercados y Restaurantes",
-    "puntos": 41
+    "puntos": 64
    },
    {
     "nombre": "Comisión de Gobernación y Reglamentos",
-    "puntos": 40
+    "puntos": 46
+   },
+   {
+    "nombre": "Comisión de Comercios, Mercados y Restaurantes",
+    "puntos": 46
    },
    {
     "nombre": "Comisión de Comercio, Mercados y Restaurantes",
-    "puntos": 30
+    "puntos": 31
    },
    {
     "nombre": "Comisión de Planeación, Obras y Servicios Públicos",
-    "puntos": 10
+    "puntos": 11
    },
    {
     "nombre": "Comisión de Educación, Cultura y Recreación",
@@ -5320,6 +5561,10 @@
    {
     "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
     "puntos": 6
+   },
+   {
+    "nombre": "Comisión de Desarrollo Social y Rural",
+    "puntos": 5
    },
    {
     "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
@@ -5350,10 +5595,6 @@
     "puntos": 2
    },
    {
-    "nombre": "Comisión de Desarrollo Social y Rural",
-    "puntos": 2
-   },
-   {
     "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación, y de Juventud y Deporte",
     "puntos": 2
    },
@@ -5363,6 +5604,10 @@
    },
    {
     "nombre": "Comisiones Conjuntas de Seguridad Pública, Tránsito y Movilidad y de Hacienda Municipal",
+    "puntos": 2
+   },
+   {
+    "nombre": "Comisión de Desarrollo Metropolitano",
     "puntos": 2
    },
    {
@@ -5605,176 +5850,176 @@
   "nota": "Comisión que dictamina el punto, tal como aparece. Un punto puede involucrar a más de una comisión; se registra la que dictamina, y los nombres no están normalizados entre actas."
  },
  "asistencia": {
-  "sesiones_consideradas": 65,
+  "sesiones_consideradas": 74,
   "por_integrante": [
    {
     "id": "riult-rivera-gutierrez",
     "nombre": "Riult Rivera Gutiérrez",
     "cargo": "presidente_municipal",
-    "sesiones": 65,
-    "presente": 65,
+    "sesiones": 74,
+    "presente": 74,
     "remoto": 0,
     "falta_justificada": 0,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 65,
+    "asistio": 74,
     "tasa_asistencia": 1.0
    },
    {
     "id": "itzel-sarahi-rios-de-la-mora",
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "cargo": "sindica",
-    "sesiones": 65,
-    "presente": 58,
+    "sesiones": 74,
+    "presente": 67,
     "remoto": 4,
     "falta_justificada": 3,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 62,
-    "tasa_asistencia": 0.954
+    "asistio": 71,
+    "tasa_asistencia": 0.959
    },
    {
     "id": "edgar-osiris-alcaraz-saucedo",
     "nombre": "Edgar Osiris Alcaraz Saucedo",
     "cargo": "regidor",
-    "sesiones": 65,
-    "presente": 64,
+    "sesiones": 74,
+    "presente": 73,
     "remoto": 0,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 64,
-    "tasa_asistencia": 0.985
+    "asistio": 73,
+    "tasa_asistencia": 0.986
    },
    {
     "id": "alondra-isabel-lopez-alonso",
     "nombre": "Alondra Isabel López Alonso",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 64,
+    "sesiones": 74,
+    "presente": 73,
     "remoto": 1,
     "falta_justificada": 0,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 65,
+    "asistio": 74,
     "tasa_asistencia": 1.0
    },
    {
     "id": "francisco-javier-bravo-gallardo",
     "nombre": "Francisco Javier Bravo Gallardo",
     "cargo": "regidor",
-    "sesiones": 65,
-    "presente": 62,
+    "sesiones": 74,
+    "presente": 71,
     "remoto": 2,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 64,
-    "tasa_asistencia": 0.985
+    "asistio": 73,
+    "tasa_asistencia": 0.986
    },
    {
     "id": "claudia-janeth-farias-lopez",
     "nombre": "Claudia Janeth Farías López",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 61,
+    "sesiones": 74,
+    "presente": 70,
     "remoto": 3,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 64,
-    "tasa_asistencia": 0.985
+    "asistio": 73,
+    "tasa_asistencia": 0.986
    },
    {
     "id": "emilio-rosario-aldorica-pulido",
     "nombre": "Emilio Rosario Aldorica Pulido",
     "cargo": "regidor",
-    "sesiones": 65,
-    "presente": 58,
+    "sesiones": 74,
+    "presente": 67,
     "remoto": 4,
     "falta_justificada": 3,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 62,
-    "tasa_asistencia": 0.954
+    "asistio": 71,
+    "tasa_asistencia": 0.959
    },
    {
     "id": "ana-isabel-flores-viera",
     "nombre": "Ana Isabel Flores Viera",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 58,
+    "sesiones": 74,
+    "presente": 67,
     "remoto": 0,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 6,
-    "asistio": 58,
-    "tasa_asistencia": 0.983
+    "asistio": 67,
+    "tasa_asistencia": 0.985
    },
    {
     "id": "azucena-lopez-legorreta",
     "nombre": "Azucena López Legorreta",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 50,
-    "remoto": 13,
+    "sesiones": 74,
+    "presente": 55,
+    "remoto": 16,
     "falta_justificada": 1,
     "ausente": 1,
-    "no_determinable": 0,
-    "asistio": 63,
-    "tasa_asistencia": 0.969
+    "no_determinable": 1,
+    "asistio": 71,
+    "tasa_asistencia": 0.973
    },
    {
     "id": "diana-gabriela-vizcaino-aguirre",
     "nombre": "Diana Gabriela Vizcaíno Aguirre",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 47,
+    "sesiones": 74,
+    "presente": 56,
     "remoto": 8,
     "falta_justificada": 10,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 55,
-    "tasa_asistencia": 0.846
+    "asistio": 64,
+    "tasa_asistencia": 0.865
    },
    {
     "id": "juan-carlos-gomez-diaz",
     "nombre": "Juan Carlos Gómez Díaz",
     "cargo": "regidor",
-    "sesiones": 65,
-    "presente": 64,
+    "sesiones": 74,
+    "presente": 73,
     "remoto": 0,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 0,
-    "asistio": 64,
-    "tasa_asistencia": 0.985
+    "asistio": 73,
+    "tasa_asistencia": 0.986
    },
    {
     "id": "elia-margarita-moreno-gonzalez",
     "nombre": "Elia Margarita Moreno González",
     "cargo": "regidora",
-    "sesiones": 65,
-    "presente": 32,
-    "remoto": 14,
-    "falta_justificada": 14,
+    "sesiones": 74,
+    "presente": 35,
+    "remoto": 16,
+    "falta_justificada": 18,
     "ausente": 0,
     "no_determinable": 5,
-    "asistio": 46,
-    "tasa_asistencia": 0.767
+    "asistio": 51,
+    "tasa_asistencia": 0.739
    },
    {
     "id": "federico-rangel-lozano",
     "nombre": "Federico Rangel Lozano",
     "cargo": "regidor",
-    "sesiones": 65,
-    "presente": 62,
+    "sesiones": 74,
+    "presente": 71,
     "remoto": 1,
     "falta_justificada": 1,
     "ausente": 0,
     "no_determinable": 1,
-    "asistio": 63,
-    "tasa_asistencia": 0.984
+    "asistio": 72,
+    "tasa_asistencia": 0.986
    }
   ],
   "suplencias": [
@@ -5803,6 +6048,12 @@
     "nombre": "Nancy Susana Martínez Briceño"
    },
    {
+    "acta": "2024-2027-5",
+    "no_acta": 5,
+    "fecha": "2024-11-15",
+    "nombre": "MAN AA ACTA DE CABILDO"
+   },
+   {
     "acta": "2024-2027-50",
     "no_acta": 50,
     "fecha": "2025-10-30",
@@ -5819,6 +6070,12 @@
     "no_acta": 52,
     "fecha": "2025-11-14",
     "nombre": "Nancy Susana Martínez Briceño"
+   },
+   {
+    "acta": "2024-2027-7",
+    "no_acta": 7,
+    "fecha": "2024-11-28",
+    "nombre": "Emilio YOR"
    }
   ],
   "sesiones": [
@@ -5829,6 +6086,105 @@
     "asistio": 13,
     "presente": 13,
     "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-2",
+    "no_acta": 2,
+    "fecha": "2024-10-25",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-3",
+    "no_acta": 3,
+    "fecha": "2024-10-28",
+    "asistio": 13,
+    "presente": 12,
+    "remoto": 1,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-4",
+    "no_acta": 4,
+    "fecha": "2024-11-06",
+    "asistio": 13,
+    "presente": 13,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-5",
+    "no_acta": 5,
+    "fecha": "2024-11-15",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-6",
+    "no_acta": 6,
+    "fecha": "2024-11-21",
+    "asistio": 13,
+    "presente": 13,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-7",
+    "no_acta": 7,
+    "fecha": "2024-11-28",
+    "asistio": 12,
+    "presente": 11,
+    "remoto": 1,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-8",
+    "no_acta": 8,
+    "fecha": "2024-11-29",
+    "asistio": 12,
+    "presente": 11,
+    "remoto": 1,
+    "falta_justificada": 1,
+    "ausente": 0,
+    "no_determinable": 0
+   },
+   {
+    "acta": "2024-2027-9",
+    "no_acta": 9,
+    "fecha": "2024-12-02",
+    "asistio": 12,
+    "presente": 12,
+    "remoto": 0,
+    "falta_justificada": 0,
+    "ausente": 0,
+    "no_determinable": 1
+   },
+   {
+    "acta": "2024-2027-10",
+    "no_acta": 10,
+    "fecha": "2024-12-06",
+    "asistio": 13,
+    "presente": 11,
+    "remoto": 2,
     "falta_justificada": 0,
     "ausente": 0,
     "no_determinable": 0

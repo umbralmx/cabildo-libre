@@ -1,0 +1,208 @@
+{
+ "id": "2024-2027-10",
+ "no_acta": 10,
+ "fecha": "2024-12-06",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:04:26+00:00",
+ "lectura": {
+  "chars_ocr": 53551,
+  "chars_leidos": 53551,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron reformas a los reglamentos de Gobierno Municipal y de Mejora Regulatoria, se retiró un punto sobre fideicomiso, y se tomaron protesta a autoridades auxiliares.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se verificó la presencia de los integrantes del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad la modificación al Orden del Día, retirando el quinto punto sobre el Fideicomiso.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura del Acta N° 9 y se aprobó por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría la reforma al artículo 227 del Reglamento del Gobierno Municipal de Colima, facultando al Director de Catastro para suscribir transmisiones patrimoniales en ausencia del Tesorero.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad la reforma a los artículos 14 y 15 del Reglamento de Mejora Regulatoria, otorgando derecho a voto a representantes empresariales, académicos y de la sociedad civil en el Consejo.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la reforma al Reglamento de Mejora Regulatoria para que las cámaras empresariales y sectores sociales tengan voz y voto en el Consejo.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Acatitán",
+    "Astillero de Abajo",
+    "Astillero de Arriba",
+    "Cardona",
+    "El Alpuyequito",
+    "El Amarradero",
+    "El Bordo",
+    "El Chanal",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "La Estancia"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Autoridades Auxiliares electas 2024-2027",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se tomó protesta y se entregaron nombramientos a las Autoridades Auxiliares electas para el período 2024-2027.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Acatitán",
+    "Astillero de Abajo",
+    "Astillero de Arriba",
+    "Cardona",
+    "El Alpuyequito",
+    "El Amarradero",
+    "El Bordo",
+    "El Chanal",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "La Estancia"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Autoridades Auxiliares Electas",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "El Presidente Municipal declaró clausurada la Sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

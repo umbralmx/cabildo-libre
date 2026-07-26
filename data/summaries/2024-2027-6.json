@@ -1,0 +1,195 @@
+{
+ "id": "2024-2027-6",
+ "no_acta": 6,
+ "fecha": "2024-11-21",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:11:45+00:00",
+ "lectura": {
+  "chars_ocr": 58608,
+  "chars_leidos": 58608,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se designaron funcionarios para mesas receptoras de votos de autoridades auxiliares (aprobado) y se discutió el Festival Gastronómico Colima Sabe Bien, sin votación registrada en este fragmento.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando presencia del Presidente, Síndica y regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día, no se registró votación sobre su aprobación.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 5 en la próxima sesión, posponiendo su lectura y aprobación.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría la designación de funcionarios para mesas receptoras de votos en la elección de autoridades auxiliares 2024-2027, en diversas comunidades.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "mayoria",
+   "colonias": [
+    "Acatitán",
+    "El Alpuyequito",
+    "El Amarradero",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "Lo de Villa",
+    "Las Guásimas",
+    "Las Tunas",
+    "Los Asmoles",
+    "Los Tepames",
+    "Piscila"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Social y Rural",
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el Punto de Acuerdo para realizar el Festival Gastronómico Colima Sabe Bien, Coca Cola Food Fest, declarar recinto ferial y autorizar cobros de derechos y aprovechamientos los días 21 al 24 de noviembre de 2024.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": null
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad el nombramiento de la Arq. Dulce Jazmín Valencia Ramírez como consejera titular y del Arq. Juan Antonio Calderón Mafud como consejero suplente del Consejo Municipal de Participación Social para la Planeación y Vocal de la Junta de Gobierno del IPCO, periodo 2024-2027.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad el nombramiento del Mtro. Christian Velasco Milanés como Oficial Mayor del H. Ayuntamiento, en sustitución del Lic. José Manuel Oviedo Guedea, y rindió protesta de ley.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mtro. Christian Velasco Milanés",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  }
+ ]
+}

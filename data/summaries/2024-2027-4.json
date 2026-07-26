@@ -1,0 +1,284 @@
+{
+ "id": "2024-2027-4",
+ "no_acta": 4,
+ "fecha": "2024-11-06",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:07:44+00:00",
+ "lectura": {
+  "chars_ocr": 65533,
+  "chars_leidos": 65533,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron la reforma al Reglamento de Tránsito, las tarifas para permisos de alcohol en la Feria de Todos los Santos, y se presentó la propuesta para la elección de autoridades auxiliares.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó el Acta de Cabildo N° 2 por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la reforma al Reglamento de Tránsito y Seguridad Vial, modificando los artículos 3, 6, 240 y 241.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobaron por unanimidad las tarifas para permisos temporales de bebidas alcohólicas en la Feria de Todos los Santos Colima 2024.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la Convocatoria para la Elección de Autoridades Auxiliares del Municipio de Colima, incluyendo las ubicaciones de las mesas receptoras en diversas localidades.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Acatitán",
+    "Astillero de Arriba",
+    "Cardona",
+    "El Alpuyequito",
+    "El Amarradero",
+    "El Chanal",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "La Estancia",
+    "Los Asmoles",
+    "Tinajas"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se designó a las regidoras Claudia Janeth Farías López y Diana Gabriela Vizcaíno Aguirre para la Junta de Gobierno del Archivo Histórico, y al regidor Francisco Javier Bravo Gallardo como Vicepresidente de la Junta de Gobierno del Instituto de Planeación para el Municipio de Colima (IPCO).",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Archivo Histórico del Municipio de Colima y Instituto de Planeación para el Municipio de Colima (IPCO)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Metropolitano",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se designó a los regidores Alondra Isabel López Alonso y Juan Carlos Gómez Díaz para formar parte del Consejo de Administración de la Comisión Intermunicipal de Agua Potable y Alcantarillado de los Municipios de Colima y Villa de Álvarez (CIAPACOV).",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CIAPACOV",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Metropolitano",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se designó y tomó protesta a Joel Corona Cernas como Comisario Municipal de la comunidad de El Chanal para lo que resta del periodo 2021-2024.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "El Chanal"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Joel Corona Cernas",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la renuncia de Héctor Hugo Chávez Mariscal al cargo de Comisario Municipal de Ignacio Allende.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Ignacio Allende"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Héctor Hugo Chávez Mariscal",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "J. Francisco Anzar Herrera",
+    "id": null
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se tomó protesta a Angélica María Apolinar Ramírez como Comisaria Municipal de Ignacio Allende, en sustitución del renunciante.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Ignacio Allende"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Angélica María Apolinar Ramírez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

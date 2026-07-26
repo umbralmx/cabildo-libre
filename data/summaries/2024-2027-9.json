@@ -1,0 +1,139 @@
+{
+ "id": "2024-2027-9",
+ "no_acta": 9,
+ "fecha": "2024-12-02",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:13:23+00:00",
+ "lectura": {
+  "chars_ocr": 26009,
+  "chars_leidos": 26009,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se validaron los resultados de la elección de autoridades auxiliares del municipio de Colima, celebrada el 1 de diciembre de 2024, declarando electos a los candidatos de diversas comunidades.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia registrando la presencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura y se aprobó por unanimidad el orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura y se aprobó por unanimidad el acta de cabildo número 8.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se declaró la validez de la elección de autoridades auxiliares y se declararon electos a los candidatos únicos y ganadores de las comunidades donde hubo elección, con votos en contra de dos regidoras.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "mayoria",
+   "colonias": [
+    "Los Ortices",
+    "Las Golondrinas",
+    "Trapichillos Poblado",
+    "Ticuicitán",
+    "Xóchitl",
+    "La Estancia",
+    "Astillero de Abajo",
+    "El Chanal",
+    "Astillero de Arriba",
+    "Loma de Fátima",
+    "La Media Luna",
+    "Puerta de Anzar"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se declaró clausurada la sesión al agotar el orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

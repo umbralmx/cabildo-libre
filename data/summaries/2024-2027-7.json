@@ -1,0 +1,206 @@
+{
+ "id": "2024-2027-7",
+ "no_acta": 7,
+ "fecha": "2024-11-28",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:12:58+00:00",
+ "lectura": {
+  "chars_ocr": 57936,
+  "chars_leidos": 57936,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la baja de una licencia de alcohol, el traspaso de dos locales, un crédito de 35 millones de pesos y reformas a un reglamento; además se desahogaron trámites.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de la mayoría de los miembros.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se modificó la denominación del punto VII y se aprobó el orden del día por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó el acta de cabildo número 5 por unanimidad; el acta 6 quedó pendiente.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó la baja de la licencia B-002753 para venta de alcohol, a petición del titular.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó el traspaso de dos locales en los mercados Francisco Ramírez Villareal y General Francisco Villa.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la contratación de un financiamiento a corto plazo por $35,000,000 para cubrir obligaciones laborales de trabajadores municipales.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$35,000,000.00 (treinta y cinco millones de pesos 00/100 m.n.)",
+     "valor_mxn": 35000000
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobaron por unanimidad reformas a los artículos 8, 11 y 24 del Reglamento para el Funcionamiento de Establecimientos Comerciales, para agilizar trámites de licencias SARE.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó por unanimidad el nombramiento de Vanessa Velázquez Venegas como Secretaria Ejecutiva de SIPINNA.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "VANESSA VELÁZQUEZ VENEGAS",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "No hubo asuntos generales que tratar.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

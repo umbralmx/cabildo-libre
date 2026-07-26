@@ -1,0 +1,263 @@
+{
+ "id": "2024-2027-3",
+ "no_acta": 3,
+ "fecha": "2024-10-28",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T17:06:11+00:00",
+ "lectura": {
+  "chars_ocr": 50837,
+  "chars_leidos": 50837,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la renuncia del Comisario de El Chanal, la ampliación del plazo para renovar licencias de bebidas alcohólicas, incentivos fiscales y las tablas de valores catastrales 2025.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia, registrando la presencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al haber quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se leyó y aprobó el orden del día, incluyendo modificaciones para agregar tres puntos y retirar otros.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó presentar el Acta de Cabildo N° 2 en la próxima sesión, quedando pendiente su aprobación.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la renuncia de Víctor Jesús Ramos Ruiz como Comisario Municipal de El Chanal.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [
+    "El Chanal"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Víctor Jesús Ramos Ruiz",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la iniciativa para ampliar el plazo de renovación de licencias comerciales con venta de bebidas alcohólicas hasta el 31 de diciembre de 2024.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$374,789.83 (trescientos setenta y cuatro mil setecientos ochenta y nueve pesos 83/100 MN.)",
+     "valor_mxn": 374789.83
+    },
+    {
+     "texto": "$349,125.17 (trescientos cuarenta y nueve mil ciento veinticinco pesos 17/100 m.n.)",
+     "valor_mxn": 349125.17
+    },
+    {
+     "texto": "$723,915.00 (setecientos veintitrés mil novecientos quince pesos 00/100 m.n.)",
+     "valor_mxn": 723915.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "contribuyentes del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la iniciativa de incentivos fiscales que condona recargos y multas por pago extemporáneo del impuesto predial y otros conceptos.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "TOTAL $5,597,288.66",
+     "valor_mxn": 5597288.66
+    },
+    {
+     "texto": "INCREMENTO 3% $503,755.98",
+     "valor_mxn": 503755.98
+    }
+   ],
+   "beneficiario": {
+    "nombre": "contribuyentes del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó el proyecto de Tablas de Valores Unitarios de Terreno y Construcción para el ejercicio fiscal 2025.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "EL DIEZMO",
+    "TEPAMES",
+    "CHANAL",
+    "LA CAPACHA",
+    "LO DE VILLA",
+    "LA ESTANCIA",
+    "CARDONA",
+    "PISCILA",
+    "LOMA DE JUAREZ",
+    "LAS GOLONDRINAS",
+    "LOS ASMOLES",
+    "LOS ORTICES"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": null,
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se trataron asuntos generales, incluyendo solicitudes de información y felicitaciones a la administración.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Regidores expresaron comentarios sobre auditorías, programas de salud, obras en comunidades y jardines, y modificación de comisiones, sin votación.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Tinajas"
+   ],
+   "obras": [
+    "Jardín Libertad",
+    "cementerio municipal",
+    "Panteón de los Gringos"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
