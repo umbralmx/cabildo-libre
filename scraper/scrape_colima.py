@@ -85,6 +85,31 @@ def parse_no_acta(raw: str) -> tuple[str, int | None]:
     return raw, int(m.group(1)) if m else None
 
 
+# El índice se equivoca en el número de alguna fila, y cuando pasa su propio enlace
+# lo desmiente: la fila del 6 de noviembre de 2024 se rotula «006» y apunta a
+# `acta-no-04.pdf`, mientras que la del 21 de noviembre —la otra que dice «006»—
+# apunta a `acta-no-06.pdf`. Corregir aquí no es inferir: el número correcto sale de
+# la fuente misma, del enlace que esa fila publica. Se hace una por una y con su
+# evidencia, no con una regla que reescriba las 636 filas en silencio, porque una
+# regla general también movería filas que nadie ha verificado (hoy hay otra, la del
+# 30/09/2016, que se reporta y no se toca).
+#
+# El rótulo original nunca se pierde: sigue en `no_acta_texto`, y el número que decía
+# el índice queda en `no_acta_indice`.
+CORRECCIONES_NO_ACTA: dict[tuple[str | None, str | None, int], int] = {
+    # (período, fecha ISO, número que dice el índice): número correcto
+    ("2024-2027", "2024-11-06", 6): 4,  # su propio enlace es acta-no-04.pdf
+}
+
+
+def numero_en_enlace(pdf_url: str | None) -> int | None:
+    """El número de acta que nombra el archivo del enlace, si lo nombra."""
+    if not pdf_url:
+        return None
+    m = re.search(r"acta[-_ ]?(?:no[-_ ]?)?0*(\d+)", pdf_url.rsplit("/", 1)[-1], re.I)
+    return int(m.group(1)) if m else None
+
+
 def parse_periodo(raw: str, fecha_iso: str | None) -> str | None:
     """Normalize '2021 - 2024' / '2018 -2021' -> '2021-2024'.
 
@@ -201,6 +226,13 @@ def parse_rows(html: str) -> list[dict]:
         pdf_m = re.search(r"href=['\"]([^'\"]+)['\"]", tds[4])
         pdf_url = pdf_m.group(1).strip() if pdf_m else None
 
+        # Se corrige antes del dedup y del id, para que el id salga con el número
+        # correcto y no haya que re-llavear nada aguas abajo.
+        no_acta_indice = no_acta
+        corregido = CORRECCIONES_NO_ACTA.get((periodo, fecha, no_acta))
+        if corregido is not None:
+            no_acta = corregido
+
         if fecha is None and fecha_texto:
             problems.append(f"row {idx}: unparseable date {fecha_texto!r}")
         if no_acta is None:
@@ -214,6 +246,7 @@ def parse_rows(html: str) -> list[dict]:
             "fecha_texto": fecha_texto or None,
             "no_acta": no_acta,
             "no_acta_texto": no_raw,
+            **({"no_acta_indice": no_acta_indice} if corregido is not None else {}),
             "periodo": periodo,
             "agenda_items": agenda_items,
             "pdf_url": pdf_url,
@@ -239,6 +272,21 @@ def parse_rows(html: str) -> list[dict]:
         deduped.append(best)
     deduped.sort(key=lambda r: r["orden_indice"])
     records = deduped
+
+    # Cuando el rótulo de una fila y su propio enlace no coinciden, uno de los dos
+    # está mal y sólo un humano puede decir cuál. Se reporta y no se toca nada; si
+    # se verifica, entra a CORRECCIONES_NO_ACTA. Va después del dedup porque las
+    # filas duplicadas de la fuente traen a veces un segundo enlace equivocado, y
+    # esas ya las descartó el paso anterior.
+    for rec in records:
+        if rec.get("no_acta_indice") is not None:
+            continue  # ya corregida y documentada
+        n_enlace = numero_en_enlace(rec["pdf_url"])
+        if n_enlace is not None and rec["no_acta"] is not None and n_enlace != rec["no_acta"]:
+            problems.append(
+                f"{rec['fecha']}: el índice dice acta {rec['no_acta']} pero su enlace "
+                f"es {rec['pdf_url'].rsplit('/', 1)[-1]} — sin verificar, no se corrige"
+            )
 
     # Stable, human-readable ids: periodo + acta number, disambiguated when the
     # same number appears twice within a período (it happens on the source page).

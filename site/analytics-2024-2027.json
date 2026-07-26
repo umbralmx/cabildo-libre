@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-07-26T01:41:33+00:00",
+ "generado": "2026-07-26T15:30:30+00:00",
  "cobertura": {
   "actas_en_termino": 74,
   "con_resumen": 55,
@@ -247,8 +247,8 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2024/12/acta-no-03.pdf"
    },
    {
-    "acta": "2024-2027-6-2",
-    "no_acta": 6,
+    "acta": "2024-2027-4",
+    "no_acta": 4,
     "fecha": "2024-11-06",
     "n_puntos": 13,
     "procesada": false,
@@ -822,12 +822,8 @@
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
-  "huecos_de_numeracion": [
-   4
-  ],
-  "numeros_duplicados": [
-   6
-  ],
+  "huecos_de_numeracion": [],
+  "numeros_duplicados": [],
   "nota": "Vacíos de la fuente, no imputados: sesiones cuyo órden del día no aparece en el índice, sin enlace al PDF o sin fecha, números de acta ausentes en el rango del término, y números que la fuente asigna a dos sesiones distintas. Se declaran tal como están: no se renumera ni se rellena nada."
  },
  "colonias": [

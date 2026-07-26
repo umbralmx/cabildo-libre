@@ -56,6 +56,29 @@ descartarla.
 Aparecen como `074`, `0070`, `051` y una vez como `Acta 0003`. Se extrae el entero para
 comparar y ordenar (`no_acta`) y se conserva la cadena original (`no_acta_texto`).
 
+**Cuando el rótulo y el enlace de la misma fila se contradicen.** El índice rotula la
+sesión del **6 de noviembre de 2024** como «006», pero el PDF que esa misma fila enlaza es
+`acta-no-04.pdf`; la sesión del **21 de noviembre** también dice «006» y enlaza
+`acta-no-06.pdf`. Es un solo error de dedo en la fuente que producía dos anomalías: al
+término le faltaba el acta 4 y el número 6 aparecía dos veces.
+
+Se corrige a `no_acta: 4`, y **no es una inferencia nuestra**: el número correcto sale de la
+fuente misma —del archivo que la fila publica—, no de deducir qué número «debería» tocar.
+El rótulo original se conserva en `no_acta_texto` (`"006"`) y el número que decía el índice
+queda en `no_acta_indice` (`6`), así que la contradicción sigue siendo auditable en el dato
+en vez de desaparecer. Con eso el término queda con la serie 1–74 completa y sin ids
+sintéticos (antes esa sesión era `2024-2027-6-2`).
+
+Las correcciones viven una por una en `CORRECCIONES_NO_ACTA`, en el scraper, con su
+evidencia al lado. **Deliberadamente no hay una regla general** que prefiera el enlace sobre
+el texto: movería filas que nadie ha verificado. Lo que sí es general es la *detección* — el
+scraper compara cada rótulo con su enlace y **reporta** los desacuerdos en el resumen de
+control sin tocarlos. Hoy queda uno así, sin verificar y por lo tanto sin corregir:
+
+```
+2016-09-30: el índice dice acta 52 pero su enlace es acta-0051.pdf — sin verificar, no se corrige
+```
+
 ### 3.3 Períodos
 Cinco administraciones escritas de formas inconsistentes: `2021 - 2024`, `2021-2024`,
 `2018 -2021`. Se normalizan a `AAAA-AAAA`. Una fila viene con el período vacío y se

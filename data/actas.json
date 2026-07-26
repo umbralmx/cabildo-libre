@@ -1,6 +1,6 @@
 {
  "fuente": "https://www.colima.gob.mx/portal2016/actas-de-cabildo/",
- "generado": "2026-07-25T16:16:22+00:00",
+ "generado": "2026-07-26T15:29:53+00:00",
  "actas": [
   {
    "id": "2024-2027-74",
@@ -5018,11 +5018,12 @@
    "orden_indice": 69
   },
   {
-   "id": "2024-2027-6-2",
+   "id": "2024-2027-4",
    "fecha": "2024-11-06",
    "fecha_texto": "6 noviembre, 2024",
-   "no_acta": 6,
+   "no_acta": 4,
    "no_acta_texto": "006",
+   "no_acta_indice": 6,
    "periodo": "2024-2027",
    "agenda_items": [
     {
