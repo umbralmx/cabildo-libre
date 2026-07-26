@@ -1,0 +1,287 @@
+{
+ "id": "2024-2027-14",
+ "no_acta": 14,
+ "fecha": "2024-12-23",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:43:15+00:00",
+ "lectura": {
+  "chars_ocr": 131655,
+  "chars_leidos": 131655,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la incorporación del fraccionamiento 'La Palma' y los trámites iniciales; se leyó el dictamen del proyecto 'Jardines de Santa Bárbara' sin resolución aún.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia del Presidente, Síndica y varios regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró legalmente instalada la sesión al contar con quórum.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día presentado.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 11, 12 y 13.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la Etapa 1 del fraccionamiento comercial 'La Palma', con 4 lotes y obras de urbanización por completar.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Desarrollo Comercial \"La Palma\"",
+    "Puerta del Camino Real"
+   ],
+   "obras": [
+    "Red de agua potable",
+    "Red de alcantarillado sanitario",
+    "Pavimento de concreto hidráulico",
+    "Banquetas",
+    "Guarniciones",
+    "Pasos peatonales",
+    "Muretes",
+    "Instalación eléctrica",
+    "Libramiento Ejército Mexicano"
+   ],
+   "montos": [
+    {
+     "texto": "$ 2,427,317.69 (DOS MILLONES CUATROCIENTOS VEINTISIETE MIL TRESCIENTOS DIECISIETE PESOS 69/100 M.N.)",
+     "valor_mxn": 2427317.69
+    },
+    {
+     "texto": "$ 227,849.93 (DOSCIENTOS VEINTISIETE MIL OCHOCIENTOS CUARENTA Y NUEVE PESOS 93/100 M.N.)",
+     "valor_mxn": 227849.93
+    }
+   ],
+   "beneficiario": {
+    "nombre": "LIC. MIGUEL ÁNGEL FLORES VIZCAÍNO (apoderado legal de C. MARÍA GUADALUPE VIZCAÍNO GALINDO, DANIEL ANTONIO MURAKAMI PARRA",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización Residencial 'Jardines de Santa Bárbara', con 54 lotes, para los propietarios y promotor José Antonio Balleza Patiño.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Jardines De Santa Bárbara",
+    "Real Santa Bárbara",
+    "Paseos de la Hacienda"
+   ],
+   "obras": [
+    "Calles locales (Obsidiana, Rubí, Jade)",
+    "Paseo de las Gardenias",
+    "Red de agua potable",
+    "Red de drenaje sanitario",
+    "Pasos peatonales y rampas",
+    "Válvula reguladora de presión",
+    "Obras de desalojo pluvial",
+    "Reforestación",
+    "Señalización"
+   ],
+   "montos": [
+    {
+     "texto": "$58,685.34 (cincuenta y ocho mil, seiscientos ochenta y cinco pesos 34/100 m.n.)",
+     "valor_mxn": 58685.34
+    }
+   ],
+   "beneficiario": {
+    "nombre": "C. JOSÉ ANTONIO BALLEZA PATIÑO (promovente) y CC. SUSANA ROCÍO PERALTA NEBREDA, ANA PAOLA PERALTA NEBREDA, BERTHA GONZÁL",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización de las Parcelas 30 Z-0 P1/3 y 35 Z-0 P1/3 del Ejido Los Ortices, para uso de Granjas y Huertos, con 5 lotes, a favor de los propietarios León Machuca González y Manuel Sánchez Aguilar.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Los Ortices"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$31,661.45 (treinta y un mil, seiscientos sesenta y un pesos 45/100 m.n.)",
+     "valor_mxn": 31661.45
+    }
+   ],
+   "beneficiario": {
+    "nombre": "León Machuca González y Manuel Sánchez Aguilar",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó la suscripción del Convenio con CFE para el suministro de energía eléctrica para alumbrado público, semáforos y otros servicios del municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$15,800,000.00 (QUINCE MILLONES OCHOCIENTOS MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 15800000.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Comisión Federal de Electricidad (CFE)",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprueba la realización del festival 'Colima Resplandece 2024' del 31 de diciembre 2024 al 1 de enero 2025, declarando recinto ferial el centro histórico y autorizando cobros y patrocinios.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Jardín Libertad",
+    "calle Reforma",
+    "Hidalgo",
+    "Degollado",
+    "Madero",
+    "Andador Constitución"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ciudadanía de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se presentó el calendario trimestral de sesiones y se abordaron solicitudes de transparencia sobre adquisiciones.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se declaró clausurada la sesión ordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

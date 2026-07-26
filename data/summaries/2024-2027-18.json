@@ -1,0 +1,224 @@
+{
+ "id": "2024-2027-18",
+ "no_acta": 18,
+ "fecha": "2025-01-22",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:47:51+00:00",
+ "lectura": {
+  "chars_ocr": 86859,
+  "chars_leidos": 86859,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron bajas de licencias de alcohol, los festivales Expo Raíces y Sabora Fest, y reformas al Reglamento de Cementerios.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, trámite de procedimiento.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal e instalada la sesión, trámite de procedimiento.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se leyó el Orden del Día, trámite de procedimiento.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad la postergación de la lectura de Actas de Cabildo 16 y 17 para próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad dar de baja cuatro licencias de venta de bebidas alcohólicas de tiendas de abarrotes y bodegas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "El Chanal",
+    "Colonia Diamantes",
+    "Colonia Gregorio Torres Quintero",
+    "Colonia Placetas Estadio"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial el Parque Hidalgo para el festival Expo Raíces del 24 al 26 de enero de 2025.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Patrimonio Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial el Jardín Libertad y Jardín Torres Quintero para el Sabora Fest del 20 al 23 de marzo de 2025.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Patrimonio Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad reformar la fracción IV del artículo 24 y el artículo 117, y adicionar el artículo 117 Bis al Reglamento de Cementerios del Municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con diversas dependencias federales y estatales para el Programa de Vivienda para el Bienestar, otorgando facilidades fiscales y administrativas.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó renombrar la Glorieta del DIF (Monumental) como Glorieta Maestra Griselda Álvarez Ponce de León, en reconocimiento a su legado.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Glorieta del DIF",
+    "Glorieta Monumental",
+    "Glorieta Maestra Griselda Álvarez Ponce de León"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

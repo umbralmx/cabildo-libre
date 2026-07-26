@@ -1,0 +1,253 @@
+{
+ "id": "2024-2027-16",
+ "no_acta": 16,
+ "fecha": "2025-01-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:44:57+00:00",
+ "lectura": {
+  "chars_ocr": 58861,
+  "chars_leidos": 58861,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la incorporación del fraccionamiento Paseo de los Sauces, la conformación del Consejo Local de Tutelas y el hermanamiento con Zapotlán el Grande; el convenio con UNIVA quedó sin resolución determinable.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de todos los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día, aunque no se especifica si fue aprobado formalmente.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad el Acta de Cabildo N° 15.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se entregaron reconocimientos a policías galardonados en las categorías Policía del Año, Mérito Social, Mérito Cívico y Mérito Extraordinario.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Policía Antonio Cruz Arias, Policía J. Jesús Solórzano Carrillo, Policía Saúl Gálvez Ruiz, Policía Tercero J. Jesús Cárd",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad la Incorporación Municipal de las Etapas 2, 4, 5, 7 y 8 del Fraccionamiento Paseo de los Sauces, ubicado al norte de la ciudad de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "PASEO DE LOS SAUCES"
+   ],
+   "obras": [
+    "AV. KARIM ASSAM",
+    "AV. DE LAS PIRÁMIDES"
+   ],
+   "montos": [
+    {
+     "texto": "$982,973.93 (NOVECIENTOS OCHENTA Y DOS MIL NOVECIENTOS SETENTA Y TRES PESOS 93/100 M.N.)",
+     "valor_mxn": 982973.93
+    }
+   ],
+   "beneficiario": {
+    "nombre": "MAURICIO ORTIZ ESPINOZA, ADALVERTO SPINDOLA SÁNCHEZ y MA. ROSARIO MENDOZA CUEVAS (promoventes)",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la conformación del Consejo Local de Tutelas del Municipio de Colima, designando a Federico Rangel Lozano como presidente y a Norma Fabiola Aguilar Zepeda y Lucero Anahí Rincón Torres como vocales.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Federico Rangel Lozano, Norma Fabiola Aguilar Zepeda, Lucero Anahí Rincón Torres",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "MTRO. RIULT RIVERA GUTIÉRREZ",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad la suscripción del convenio de hermanamiento entre el Municipio de Colima y el Municipio de Zapotlán el Grande, Jalisco.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Municipio de Zapotlán el Grande, Jalisco",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Turismo, Fomento Económico y Empresarial",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración con la Universidad del Valle de Atemajac (UNIVA) para que estudiantes realicen prácticas profesionales en el municipio.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad del Valle de Atemajac (UNIVA)",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó un convenio de colaboración con la Fiscalía General del Estado de Colima para estandarizar la recepción de denuncias y coordinar investigaciones.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Fiscalía General del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Seguridad Pública, Tránsito y Vialidad",
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó que la documentación oficial del municipio lleve la leyenda '2025, Año del Bicentenario de Manzanillo como Puerto de Cabotaje y Altura'.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": null
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se declaró clausurada la sesión a las 14:52 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

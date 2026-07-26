@@ -1,0 +1,273 @@
+{
+ "id": "2024-2027-17",
+ "no_acta": 17,
+ "fecha": "2025-01-15",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:47:00+00:00",
+ "lectura": {
+  "chars_ocr": 189202,
+  "chars_leidos": 189202,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó el orden del día con una modificación, se pospuso el acta anterior y se inició la discusión del presupuesto de egresos 2025.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente Municipal, Síndica y regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día, incluyendo la adición del punto VIII sobre la Modificación al Programa Parcial de Urbanización Central de Abasto Regional de Colima.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad posponer la presentación del Acta de Cabildo N° 16 para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2025 por un monto total de $1,009,960,065.66, con incrementos en servicios públicos, seguridad y desarrollo social.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [
+    "Acatitán",
+    "Astillero de Abajo",
+    "Astillero de Arriba",
+    "Cardona",
+    "El Alpuyequito",
+    "El Amarradero",
+    "El Bordo",
+    "El Chanal",
+    "Estapilla",
+    "Ignacio Allende",
+    "La Capacha",
+    "La Estancia"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$ 4,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
+     "valor_mxn": 4009960065.66
+    },
+    {
+     "texto": "$ 576,474,609.01 (quinientos setenta y seis millones cuatrocientos setenta y cuatro mil seiscientos nueve pesos 01/100 m",
+     "valor_mxn": 576474609.01
+    },
+    {
+     "texto": "$1,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
+     "valor_mxn": 1009960065.66
+    },
+    {
+     "texto": "1'009,960,065.66",
+     "valor_mxn": 1009960065.66
+    },
+    {
+     "texto": "1'000,000.00",
+     "valor_mxn": 1000000.0
+    },
+    {
+     "texto": "37,207,336.23",
+     "valor_mxn": 37207336.23
+    },
+    {
+     "texto": "1'500,000.00",
+     "valor_mxn": 1500000.0
+    },
+    {
+     "texto": "32,083,333.33",
+     "valor_mxn": 32083333.33
+    },
+    {
+     "texto": "8,350,000.00",
+     "valor_mxn": 8350000.0
+    },
+    {
+     "texto": "223,596,769.00",
+     "valor_mxn": 223596769.0
+    },
+    {
+     "texto": "76,074,112.00",
+     "valor_mxn": 76074112.0
+    },
+    {
+     "texto": "147,522,657.00",
+     "valor_mxn": 147522657.0
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad autorizar las adecuaciones presupuestales solicitadas por la Tesorera Municipal, por montos de $72,827,768.10 y $16,573,908.39.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$72,827,768.10 (Setenta y dos millones ochocientos veintisiete mil setecientos y ocho pesos 10/100 M.N.)",
+     "valor_mxn": 72827768.1
+    },
+    {
+     "texto": "$16,573,908.39 (Dieciséis millones quinientos setenta y tres mil novecientos ocho pesos 39/100 M.N.)",
+     "valor_mxn": 16573908.39
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de diciembre de 2024, con observaciones.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad la Modificación al Programa Parcial de Urbanización 'Central de Abasto Regional de Colima', proyecto que busca beneficiar a productores, comerciantes y consumidores locales mediante una central de abasto con inversión privada.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Rinconada San Pablo",
+    "Francisco Villa III",
+    "Los Volcanes",
+    "San Pablo",
+    "Francisco villa"
+   ],
+   "obras": [
+    "Central de Abasto Regional de Colima"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "TREND TPS, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se recibió el Informe Trimestral de Actividades de algunos munícipes y se aprobó por unanimidad un Punto de Acuerdo que autoriza a la Directora General de Servicios Públicos a celebrar contratos de recolección, traslado y depósito de residuos sólidos con el sector privado.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ana Patricia Escobosa Galindo",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

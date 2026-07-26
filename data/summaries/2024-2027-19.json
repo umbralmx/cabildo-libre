@@ -1,0 +1,330 @@
+{
+ "id": "2024-2027-19",
+ "no_acta": 19,
+ "fecha": "2025-01-29",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:49:59+00:00",
+ "lectura": {
+  "chars_ocr": 131542,
+  "chars_leidos": 131542,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron trámites de apertura, actas anteriores, cinco licencias de venta de alcohol, y se dio lectura al dictamen de alumbrado público de Punto Rioja.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se verificó la asistencia de los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la instalación legal de la sesión con quórum.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el Orden del Día.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas de Cabildo números 16, 17 y 18.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó por unanimidad la expedición de dos licencias de venta de alcohol: una bodega en Colonia Placetas Estadio y una tienda en Colonia Moctezuma.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Placetas Estadio",
+    "Moctezuma"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó por unanimidad la expedición de tres licencias de venta de alcohol en la Colonia Magisterial: dos restaurantes del mismo solicitante y otro.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Magisterial"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento 'PUNTO RIOJA' Etapa Única, ubicado al norte de la ciudad, mediante un convenio con el urbanizador.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "PUNTO RIOJA"
+   ],
+   "obras": [
+    "Entrega-Recepción de la Infraestructura de Alumbrado Público del Fraccionamiento",
+    "Entrega-Recepción de la Infraestructura de Alumbrado Público"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Lic. José Alberto Reyes Ochoa, Guadalupe Nevárez Valdez y Yaotzin Flores Peña",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento 'SAN AGUSTIN' Etapas 1, 2 y 3, ubicado al sur de la localidad de la Capacha, mediante un convenio con el urbanizador.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "SAN AGUSTIN",
+    "Capacha"
+   ],
+   "obras": [
+    "Entrega-Recepción de la Infraestructura de Alumbrado Público"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Lic. José Alberto Reyes Ochoa, Sergio Nava García",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó el convenio de colaboración con la Cámara Mexicana de la Industria de la Construcción (CMIC) para retener porcentajes de las estimaciones de obra pública.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "2 al millar",
+     "valor_mxn": null
+    },
+    {
+     "texto": "5 al millar",
+     "valor_mxn": null
+    },
+    {
+     "texto": "10 al millar",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Cámara Mexicana de la Industria de la Construcción (CMIC)",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó el convenio de colaboración con la Congregación Mariana Trinitaria para el programa de mejoramiento de vivienda.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Congregación Mariana Trinitaria",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Desarrollo Social y Rural y Hacienda Municipal",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó el convenio de colaboración con Financiera para el Bienestar para mantener servicios en Los Tepames.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "Los Tepames"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Financiera para el Bienestar",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó por unanimidad el dictamen que reforma los artículos 4 y 27 del Reglamento de Comités de Participación Ciudadana del Municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "LAS HACIENDAS",
+    "LOS VOLCANES",
+    "SAN CARLOS",
+    "BARRIO MERCADO OBREGON",
+    "BARRIO EL MANRIQUE",
+    "BARRIO LERDO DE TEJADA",
+    "BARRIO LA CHIRIPA",
+    "BARRIO LA GARITA",
+    "SAN PABLO",
+    "EL MORALETE ORIENTE",
+    "LOS ÁNGELES",
+    "SAN RAFAEL"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se presentaron asuntos generales, incluyendo el informe trimestral de la Regidora Azucena López Legorreta y el informe del Presidente Municipal sobre entregas de informes de regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

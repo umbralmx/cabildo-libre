@@ -1,0 +1,34 @@
+{
+ "id": "2024-2027-14",
+ "esquema": 2,
+ "generado": "2026-07-26T16:52:12+00:00",
+ "roster": "regidores-2024-2027",
+ "region_encontrada": true,
+ "resumen": {
+  "presente": 11,
+  "remoto": 0,
+  "falta_justificada": 1,
+  "ausente": 0,
+  "no_determinable": 1,
+  "asistio": 11,
+  "no_reconocidos": 1
+ },
+ "estados": {
+  "riult-rivera-gutierrez": "presente",
+  "itzel-sarahi-rios-de-la-mora": "presente",
+  "edgar-osiris-alcaraz-saucedo": "presente",
+  "alondra-isabel-lopez-alonso": "presente",
+  "francisco-javier-bravo-gallardo": "presente",
+  "claudia-janeth-farias-lopez": "presente",
+  "emilio-rosario-aldorica-pulido": "presente",
+  "ana-isabel-flores-viera": "no_determinable",
+  "azucena-lopez-legorreta": "presente",
+  "diana-gabriela-vizcaino-aguirre": "presente",
+  "juan-carlos-gomez-diaz": "presente",
+  "elia-margarita-moreno-gonzalez": "presente",
+  "federico-rangel-lozano": "falta_justificada"
+ },
+ "no_reconocidos": [
+  "Francisco Le Mo EE"
+ ]
+}

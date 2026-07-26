@@ -1,0 +1,209 @@
+{
+ "id": "2024-2027-15",
+ "no_acta": 15,
+ "fecha": "2025-01-03",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:44:05+00:00",
+ "lectura": {
+  "chars_ocr": 52276,
+  "chars_leidos": 52276,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron dos convenios de colaboración, se declaró recinto ferial en Lo de Villa, se aprobó el Plan Municipal de Desarrollo 2024-2027 y se aplazó la entrega de reconocimientos a policías.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros del cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura del acta 14 y se aprobó por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración con la Junta de Asistencia Privada del Estado de Colima para apoyar a instituciones de asistencia privada.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Junta de Asistencia Privada del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y Comisión de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración con la Institución de Asistencia Privada “Donadores Compulsivos” para fomentar la donación altruista de sangre.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Institución de Asistencia Privada “Donadores Compulsivos”",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y Comisión de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó declarar Recinto Ferial el Jardín Principal de la Comunidad de Lo de Villa para las fiestas del Señor de la Expiración del 4 al 14 de enero de 2025.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [
+    "Lo de Villa"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Comunidad de Lo de Villa",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó el Plan Municipal de Desarrollo del Municipio de Colima 2024-2027.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se decidió aplazar la entrega de reconocimientos a policías para una sesión posterior, a fin de que asistan con sus familias.",
+   "sentido": "aplazado",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [
+    "Unidad médica básica en la Dirección de Seguridad Pública"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Policías galardonados",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se declaró clausurada la sesión a las 10:10 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,211 @@
+{
+ "id": "2024-2027-13",
+ "no_acta": 13,
+ "fecha": "2024-12-18",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:41:18+00:00",
+ "lectura": {
+  "chars_ocr": 30698,
+  "chars_leidos": 30698,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se autorizó la Pista de Hielo 2024 y se aprobaron adecuaciones presupuestales para obras en colonias como Tinajas, Las Palmas, La Estancia y Cardona.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, constatando la presencia de la mayoría de los miembros.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la Sesión Extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad aplazar la presentación de las Actas de Cabildo N° 11 y 12 para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó por unanimidad la realización de la 'Pista de Hielo, Otro Colima por Ti' 2024 en el Auditorio Miguel de la Madrid, del 21 de diciembre de 2024 al 23 de enero de 2025.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad la autorización de adecuaciones presupuestales para atender modificaciones al POA 2024, incluyendo obras en Tinajas, Las Palmas, La Estancia y Esmeralda Norte.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "Tinajas",
+    "Las Palmas",
+    "La Estancia",
+    "Cardona",
+    "Esmeralda Norte"
+   ],
+   "obras": [
+    "Rehabilitación de drenaje sanitario en la localidad de Tinajas",
+    "Construcción de Infraestructura Pública para el Acceso y el Apoyo de las persona",
+    "Equipamiento de parque sustentable en la colonia Las Palmas",
+    "Construcción de guarniciones, banquetas y rampas en la localidad de La Estancia,",
+    "Construcción de infraestructura pública para el acceso de las personas con disca",
+    "Obras Diversas"
+   ],
+   "montos": [
+    {
+     "texto": "$550,284.88",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$51,936.85",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$279,797:",
+     "valor_mxn": null
+    },
+    {
+     "texto": "216,434.03",
+     "valor_mxn": null
+    },
+    {
+     "texto": "126,250.49",
+     "valor_mxn": null
+    },
+    {
+     "texto": "465,756.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "65,756.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "212,552.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "208,800.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "113,734.53",
+     "valor_mxn": null
+    },
+    {
+     "texto": "553,160.40",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$322,534.53",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,088,247.18",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,088,207.18",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se declaró clausurada la Sesión a las 10:11 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,342 @@
+{
+ "id": "2024-2027-12",
+ "no_acta": 12,
+ "fecha": "2024-12-17",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:40:33+00:00",
+ "lectura": {
+  "chars_ocr": 67324,
+  "chars_leidos": 67324,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron licencias de alcohol para apertura y cambio de domicilio, y se presentó dictamen de modificación del POA 2024, pendiente de resolución.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se tomó lista de asistencia.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar el acta de cabildo número 11 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó licencia de apertura para restaurante 'La Costumbre' en Av. Constitución 1600, Colonia Lomas Verdes, a favor de Marco Antonio Pérez Arias.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Lomas Verdes"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Marco Antonio Perez Arias",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó cambio de domicilio de licencia de tienda de abarrotes con venta de cerveza, de Niños Héroes S/N a Niños Héroes 11-A, Lo de Villa, a favor de Rafael Brizuela Olivo.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia sin nombre",
+    "Colonia Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Rafael Brizuela Olivo",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizaron seis licencias de apertura para venta de alcohol en diversos giros y colonias.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Infonavit La Estancia",
+    "Colonia Nuevo Paraíso",
+    "Colonia Sin Nombre",
+    "Colonia Centro",
+    "Colonia Real Vista Hermosa",
+    "Colonia La Guadalupe"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó la incorporación de nuevas obras al POA 2024 y la reducción de costos de cuatro obras, financiadas con FAISMUN.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "COLONIA ESMERALDA NORTE",
+    "COLONIA LAS PALMAS",
+    "LOCALIDAD TINAJAS",
+    "LOCALIDAD DE LA ESTANCIA"
+   ],
+   "obras": [
+    "CONSTRUCCIÓN DE INFRAESTRUCTURA PÚBLICA PARA EL ACCESO DE LAS PERSONAS CON DISCA",
+    "REHABILITACIÓN DE DRENAJE SANITARIO EN COLIMA LOCALIDAD TINAJAS",
+    "CONSTRUCCIÓN DE INFRAESTRUCTURA PÚBLICA PARA EL ACCESO Y EL APOYO DE LAS PERSONA",
+    "EQUIPAMIENTO DE PARQUE SUSTENTABLE EN LA COLONIA LAS PALMAS DE COLIMA",
+    "RAMPAS EN LA LOCALIDAD DE LA ESTANCIA, SALIDA A CARDONA, COLIMA",
+    "CONSTRUCCIÓN DE GUARNICIONES, BANQUETAS Y ...",
+    "ARRENDAMIENTO DE VEHÍCULOS PARA LA VERIFICACIÓN DE OBRA",
+    "CONTRATACIÓN DE SERVICIOS PROFESIONALES PARA LA SUPERVISIÓN Y SEGUIMIENTO DE LAS"
+   ],
+   "montos": [
+    {
+     "texto": "553,160.40",
+     "valor_mxn": null
+    },
+    {
+     "texto": "91,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "212,552.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "578,447.75",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,009,200.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "208,800.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "800,400.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "392,287.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "113,734.53",
+     "valor_mxn": null
+    },
+    {
+     "texto": "278,552.72",
+     "valor_mxn": null
+    },
+    {
+     "texto": "279,797.41",
+     "valor_mxn": null
+    },
+    {
+     "texto": "216,434.03",
+     "valor_mxn": null
+    },
+    {
+     "texto": "126,259.49",
+     "valor_mxn": null
+    },
+    {
+     "texto": "465,756.25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "2,745,647.65",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,088,247.18",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó la suscripción de un convenio de colaboración con el Instituto Ateneo de Colima para ofrecer becas y descuentos al personal municipal y sus familias.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto Ateneo de Colima",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se autorizó la suscripción de un convenio con CIAPACOV para que el Municipio asfalte las reparaciones que realice el organismo de agua.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Comisión Intermunicipal de Agua Potable y Alcantarillado de la zona conurbada de Colima y Villa de Álvarez (CIAPACOV)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se autorizó la suscripción de un convenio con la empresa Bebiendo S.A. de C.V. para recibir agua no potable gratuita para riego de áreas verdes, hasta 50 mil litros diarios.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "COLONIA EL MORALETE"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Bebiendo, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

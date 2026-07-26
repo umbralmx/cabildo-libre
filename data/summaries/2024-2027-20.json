@@ -1,0 +1,285 @@
+{
+ "id": "2024-2027-20",
+ "no_acta": 20,
+ "fecha": "2025-02-05",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T16:52:12+00:00",
+ "lectura": {
+  "chars_ocr": 175556,
+  "chars_leidos": 175556,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron 8 licencias de apertura y 2 cambios de giro para venta de alcohol, y se dio lectura a la modificación del fraccionamiento Primavera Hills.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se registró la asistencia de los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar las Actas de Cabildo 16 y 17 en la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó la expedición de 8 licencias de apertura y 2 cambios de giro para establecimientos con venta de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Piscila",
+    "Colonia Conocida",
+    "Colonia Los Girasoles II",
+    "Colonia Real Vista Hermosa",
+    "Colonia Mirador de la Cumbre II",
+    "Colonia El Porvenir",
+    "Colonia Bosques del Sur",
+    "Colonia Centro",
+    "Colonia Residencial Esmeralda"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la Tercera Modificación del Programa Parcial de Urbanización “Primavera Hills”, con cambios de zonificación y lotificación, y pago de $7,061,000.00 por déficit de área de cesión.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Primavera Hills"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$57,661.53",
+     "valor_mxn": 57661.53
+    },
+    {
+     "texto": "$7,061,000.00 (siete millones, sesenta y un mil pesos 00/100 M.N.)",
+     "valor_mxn": 7061000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Propietarios y Promotores CC. Rebeca Alexandra Herrera Díaz, José Antonio Salazar González como apoderado legal de Aleja",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad la creación del Instituto Municipal para la Paz Intrafamiliar, organismo descentralizado para prevenir la violencia intrafamiliar.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": null
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad la creación del Instituto para el Desarrollo, la Inclusión y Atención a la Discapacidad del Municipio de Colima, con su reglamento interior y órganos de gobierno.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Tepames",
+    "Piscila"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Personas con discapacidad del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "El dictamen de arrendamiento financiero de 5 camiones compactadores fue retirado para nuevo análisis por los munícipes.",
+   "sentido": "retirado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [
+    "5 camiones compactadores nuevos"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial para el festival Zona Colima Capital del 7 al 21 de febrero de 2025 en varias calles y jardines, con cobro de derechos.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó por unanimidad el nombramiento de Bruno Lamas Díaz, Addí Espinosa González, Andrea Alejandra Cervantes Nava y Mariana Lizette Pérez Ochoa como concejales del Consejo Directivo del Instituto de la Juventud.",
+   "sentido": "aprobado",
+   "categoria": "nombramiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Bruno Lamas Díaz, Addí Espinosa González, Andrea Alejandra Cervantes Nava, Mariana Lizette Pérez Ochoa",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Juventud y Deporte",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó por unanimidad la suscripción de un Convenio General de Colaboración entre el H. Ayuntamiento de Colima y la Universidad de Colima.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad de Colima",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se declaró clausurada la sesión a las 17:09 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
