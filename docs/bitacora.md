@@ -6,6 +6,61 @@
 
 ---
 
+## 2026-07-25 — El corte de 45K era el defecto dominante, y el panel
+
+**El hallazgo.** Al probar los 26 indicadores del diccionario contra los datos reales
+(`docs/indicadores-revision.md`) apareció algo que no era un problema de indicadores sino de
+tubería: **sólo el 25 % del texto OCR del término llegaba al modelo.** El tope de 45 000
+caracteres en `summarize_colima.py` truncaba **17 de 25 actas** —la 64 tiene 553 K
+caracteres, se leía el 8 %— y el resultado de un punto se asienta *al final* de su
+discusión, justo en lo que se tiraba. La evidencia era limpia: 91 de 134 puntos sin
+resultado en las actas truncadas, **0 de 24** en las ocho que cabían enteras.
+
+**Nunca fue un problema de dinero.** Leer las 74 actas completas cuesta menos de un dólar.
+Era que un acta de medio millón de caracteres no cabe en una llamada. La solución fue
+leerla en **ventanas solapadas** (45 K, solape 3 K) y fusionar las fichas punto por punto.
+
+**La regla que gobierna la fusión:** *un resultado asentado le gana a uno no leído.* La
+ventana que no vio la votación devuelve `no_determinable`, y eso no puede pisar a la que sí
+la vio. Si dos ventanas afirman resultados distintos gana la mayoría —empate, la posterior—
+y el punto se reporta en `puntos_en_conflicto` en vez de resolverse en silencio. Las listas
+se unen con dedup; nada se promedia. Si una ventana muere tras los reintentos se omite ella
+sola y su hueco **se resta de la cobertura** en lugar de disimularse.
+
+**El resultado, sobre las mismas 25 actas:**
+
+| | antes | después |
+|---|---:|---:|
+| Puntos sin resultado legible | 91/158 (58 %) | **0/150 (0 %)** |
+| Profundidad de lectura | 25 % | **100 %** |
+| Actas leídas completas | 8/25 | **25/25** |
+| Puntos con comisión · autor | 28 % · 37 % | **75 % · 83 %** |
+| Montos con cifra · colonias | 52 · 57 | **129 · 100** |
+| Eventos de disenso nombrados | 11 | **37** |
+
+101 ventanas, ninguna fallida, ningún conflicto, ~$0.19. De paso se le pusieron reintentos
+con backoff a `call_llm`: un lote anterior había muerto entero porque una sola respuesta de
+DeepSeek llegó cortada.
+
+**Un error de honestidad que ya estaba publicado.** El agregador sumaba el total de un
+paquete de obra **junto con** su desglose obra por obra: en el acta 53 eso convertía
+$661.8 M en $1,039 M. Ahora, cuando un monto iguala o supera a todos los demás del punto
+juntos y el punto lista cinco o más, se toma sólo ese total; se publican también la suma sin
+corregir y los puntos afectados, para que la corrección sea auditable y no un ajuste callado.
+
+**El panel (L4).** `site/panel.html`, enlazado desde el buscador, con las ocho secciones que
+los datos sostienen. Tres decisiones que valen registrarse (detalle en `docs/diseno.md`):
+ninguna gráfica codifica por color —el gris y el signal de la marca se separan apenas ΔE 1.8
+en deuteranopía, así que como pareja categórica no sirven—; los títulos se generan desde los
+datos para que no queden desmentidos al crecer la cobertura; y cada gráfica tiene su gemela
+en tabla con enlace al PDF, porque toda cifra tiene que poder verificarse contra el escaneo.
+
+**Dos hallazgos sobre la fuente**, ambos del índice y no del OCR: al término le falta el
+**acta 4**, y el **número 6 está asignado a dos sesiones distintas** (6 y 21 de noviembre de
+2024). Se reportan tal cual; no se renumera nada.
+
+---
+
 ## 2026-07-24 — L5: ficha de decisión con disidentes por nombre
 
 **Hecho.** `summarize_colima.py` deja de dar un resumen genérico y produce una **ficha de
@@ -325,61 +380,6 @@ Reglas completas en `docs/metodologia.md` §3.
 programado. Búsqueda y filtros corren en el navegador; sin backend.
 
 ---
-
----
-
-## 2026-07-25 — El corte de 45K era el defecto dominante, y el panel
-
-**El hallazgo.** Al probar los 26 indicadores del diccionario contra los datos reales
-(`docs/indicadores-revision.md`) apareció algo que no era un problema de indicadores sino de
-tubería: **sólo el 25 % del texto OCR del término llegaba al modelo.** El tope de 45 000
-caracteres en `summarize_colima.py` truncaba **17 de 25 actas** —la 64 tiene 553 K
-caracteres, se leía el 8 %— y el resultado de un punto se asienta *al final* de su
-discusión, justo en lo que se tiraba. La evidencia era limpia: 91 de 134 puntos sin
-resultado en las actas truncadas, **0 de 24** en las ocho que cabían enteras.
-
-**Nunca fue un problema de dinero.** Leer las 74 actas completas cuesta menos de un dólar.
-Era que un acta de medio millón de caracteres no cabe en una llamada. La solución fue
-leerla en **ventanas solapadas** (45 K, solape 3 K) y fusionar las fichas punto por punto.
-
-**La regla que gobierna la fusión:** *un resultado asentado le gana a uno no leído.* La
-ventana que no vio la votación devuelve `no_determinable`, y eso no puede pisar a la que sí
-la vio. Si dos ventanas afirman resultados distintos gana la mayoría —empate, la posterior—
-y el punto se reporta en `puntos_en_conflicto` en vez de resolverse en silencio. Las listas
-se unen con dedup; nada se promedia. Si una ventana muere tras los reintentos se omite ella
-sola y su hueco **se resta de la cobertura** en lugar de disimularse.
-
-**El resultado, sobre las mismas 25 actas:**
-
-| | antes | después |
-|---|---:|---:|
-| Puntos sin resultado legible | 91/158 (58 %) | **0/150 (0 %)** |
-| Profundidad de lectura | 25 % | **100 %** |
-| Actas leídas completas | 8/25 | **25/25** |
-| Puntos con comisión · autor | 28 % · 37 % | **75 % · 83 %** |
-| Montos con cifra · colonias | 52 · 57 | **129 · 100** |
-| Eventos de disenso nombrados | 11 | **37** |
-
-101 ventanas, ninguna fallida, ningún conflicto, ~$0.19. De paso se le pusieron reintentos
-con backoff a `call_llm`: un lote anterior había muerto entero porque una sola respuesta de
-DeepSeek llegó cortada.
-
-**Un error de honestidad que ya estaba publicado.** El agregador sumaba el total de un
-paquete de obra **junto con** su desglose obra por obra: en el acta 53 eso convertía
-$661.8 M en $1,039 M. Ahora, cuando un monto iguala o supera a todos los demás del punto
-juntos y el punto lista cinco o más, se toma sólo ese total; se publican también la suma sin
-corregir y los puntos afectados, para que la corrección sea auditable y no un ajuste callado.
-
-**El panel (L4).** `site/panel.html`, enlazado desde el buscador, con las ocho secciones que
-los datos sostienen. Tres decisiones que valen registrarse (detalle en `docs/diseno.md`):
-ninguna gráfica codifica por color —el gris y el signal de la marca se separan apenas ΔE 1.8
-en deuteranopía, así que como pareja categórica no sirven—; los títulos se generan desde los
-datos para que no queden desmentidos al crecer la cobertura; y cada gráfica tiene su gemela
-en tabla con enlace al PDF, porque toda cifra tiene que poder verificarse contra el escaneo.
-
-**Dos hallazgos sobre la fuente**, ambos del índice y no del OCR: al término le falta el
-**acta 4**, y el **número 6 está asignado a dos sesiones distintas** (6 y 21 de noviembre de
-2024). Se reportan tal cual; no se renumera nada.
 
 ## Próximos pasos (propuestos, en orden de prioridad)
 
