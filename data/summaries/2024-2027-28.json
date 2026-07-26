@@ -1,0 +1,414 @@
+{
+ "id": "2024-2027-28",
+ "no_acta": 28,
+ "fecha": "2025-04-11",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T01:37:31+00:00",
+ "lectura": {
+  "chars_ocr": 207194,
+  "chars_leidos": 207194,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Sesión para trámites iniciales, aplazar la aprobación del acta anterior y dar lectura a un dictamen de adecuaciones presupuestales.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los munícipes.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "El Presidente solicitó y se aprobó por unanimidad presentar el acta 27 en la próxima sesión, aplazando su aprobación.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se rechazó la autorización de adecuaciones presupuestarias solicitadas por la Tesorería Municipal para marzo, por inconsistencias en la documentación.",
+   "sentido": "rechazado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "40,000.00",
+     "valor_mxn": 40000.0
+    },
+    {
+     "texto": "700,000.00",
+     "valor_mxn": 700000.0
+    },
+    {
+     "texto": "1,700,000,00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "92,916.62",
+     "valor_mxn": 92916.62
+    },
+    {
+     "texto": "410,000.00",
+     "valor_mxn": 410000.0
+    },
+    {
+     "texto": "19,689.48",
+     "valor_mxn": 19689.48
+    },
+    {
+     "texto": "818.00",
+     "valor_mxn": 818.0
+    },
+    {
+     "texto": "48,810.74",
+     "valor_mxn": 48810.74
+    },
+    {
+     "texto": "129,948.00",
+     "valor_mxn": 129948.0
+    },
+    {
+     "texto": "3,881.30",
+     "valor_mxn": 3881.3
+    },
+    {
+     "texto": "106,000.00",
+     "valor_mxn": 106000.0
+    },
+    {
+     "texto": "726,762.31",
+     "valor_mxn": 726762.31
+    },
+    {
+     "texto": "39,910.49",
+     "valor_mxn": 39910.49
+    },
+    {
+     "texto": "359,033.28",
+     "valor_mxn": 359033.28
+    },
+    {
+     "texto": "223,253.19",
+     "valor_mxn": 223253.19
+    },
+    {
+     "texto": "891,134.99",
+     "valor_mxn": 891134.99
+    },
+    {
+     "texto": "1,049,735.89",
+     "valor_mxn": 1049735.89
+    },
+    {
+     "texto": "2,545,848.40",
+     "valor_mxn": 2545848.4
+    },
+    {
+     "texto": "447,208.48",
+     "valor_mxn": 447208.48
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se rechazó la remisión de la Cuenta Pública de marzo al Congreso del Estado por inconsistencias documentales.",
+   "sentido": "rechazado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizaron once contratos de compensación por desgaste de uso de vehículo particular para 11 trabajadores, con apoyo quincenal de $409.24 y gasolina mensual.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$409.24 (cuatrocientos nueve pesos 24/100 M.N.)",
+     "valor_mxn": 409.24
+    }
+   ],
+   "beneficiario": {
+    "nombre": "11 trabajadores",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la incorporación municipal de las etapas 10 y 11 del fraccionamiento Bosque de la Cantera, al norte de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Bosque de la Cantera"
+   ],
+   "obras": [
+    "PASEO DE LA CANTERA",
+    "AV. IGNACIO SANDOVAL"
+   ],
+   "montos": [
+    {
+     "texto": "$7,461,828.04 (SIETE MILLONES CUATROCIENTOS SESENTA Y UN MIL OCHOCIENTOS VEINTIOCHO PESOS 04/100 M.N.)",
+     "valor_mxn": 7461828.04
+    }
+   ],
+   "beneficiario": {
+    "nombre": "LEGA DESARROLLOS S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la incorporación municipal de la etapa 13 del proyecto Comercial Francisco I. Madero, al oriente de Colima.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Comercial Francisco I. Madero"
+   ],
+   "obras": [
+    "LIBRAMIENTO EJERCITO MEXICANO"
+   ],
+   "montos": [
+    {
+     "texto": "$110,650.88 (CIENTO DIEZ MIL SEISCIENTOS CINCUENTA PESOS 88/100 M.N.)",
+     "valor_mxn": 110650.88
+    }
+   ],
+   "beneficiario": {
+    "nombre": "OOMARK VIRGEN BALLESTEROS",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la fe de erratas a la Segunda Modificación del Programa Parcial de Urbanización Francisco Zaragoza Vázquez, corrigiendo el número de lote del jardín vecinal.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Zaragoza Vázquez"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la suscripción de un convenio específico de colaboración entre el Municipio de Colima y la Universidad de Colima para ofrecer asesoría conjunta a emprendedores.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos, de Comercios, Mercados y Restaurantes y de Turismo, Fomento Económico y Empresarial",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la actualización de la Tabla de Tarifas Máximas para Viáticos del Municipio de Colima, vigente desde 2022, para ajustarla a la inflación.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó convocar a Sesión Extraordinaria de Cabildo el 29 de abril de 2025 para la Instalación del Cabildo Infantil 2025, y entregar un estímulo económico a los 14 niños participantes.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Niñas, niños y adolescentes participantes del Cabildo Infantil 2025",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación, y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

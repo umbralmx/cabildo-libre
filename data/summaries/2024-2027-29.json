@@ -1,0 +1,337 @@
+{
+ "id": "2024-2027-29",
+ "no_acta": 29,
+ "fecha": "2025-04-15",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T01:39:02+00:00",
+ "lectura": {
+  "chars_ocr": 78255,
+  "chars_leidos": 78255,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "En sesión extraordinaria se aprobaron avalúos para Residencial Victoria Norte y la incorporación de Puerta Real etapa 3, y se discutió el cierre del POA 2024.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, verificando la presencia de los miembros del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad diferir la lectura y aprobación de las actas 27 y 28 para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobaron los avalúos de seis predios del fraccionamiento Residencial Victoria Norte para el pago del área de cesión, por un total de $1,369,541.50.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Victoria Norte"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$4,150.00 (Cuatro mil Ciento Cincuenta Pesos 00/100 M.N.)",
+     "valor_mxn": 4150.0
+    },
+    {
+     "texto": "$1,369,541.50 (Un Millón Trecientos Sesenta y Nueve Mil Quinientos Cuarenta y Un Pesos 50/100 M.N.)",
+     "valor_mxn": 1369541.5
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Promoventes del fraccionamiento Residencial Victoria Norte (Ampliación)",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 3 del fraccionamiento Puerta Real, con fianzas que garantizan obras por $1,613,000.00 y $567,500.00.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Puerta Real"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,613,000.00 (UN MILLÓN SEISCIENTOS TRECE MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 1613000.0
+    },
+    {
+     "texto": "$567,500.00 (QUINIENTOS SESENTA Y SIETE MIL QUINIENTOS PESOS 00/100 M.N.)",
+     "valor_mxn": 567500.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Promotores del fraccionamiento Puerta Real",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por mayoría el dictamen que presenta los resultados del cierre del Programa Operativo Anual 2024.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$73,643,864.00",
+     "valor_mxn": 73643864.0
+    },
+    {
+     "texto": "$20,602,528.29",
+     "valor_mxn": 20602528.29
+    },
+    {
+     "texto": "$553,160.40",
+     "valor_mxn": 553160.4
+    },
+    {
+     "texto": "$53,594,496.11",
+     "valor_mxn": 53594496.11
+    },
+    {
+     "texto": "$1,378,847.75",
+     "valor_mxn": 1378847.75
+    },
+    {
+     "texto": "$52,215,648.36",
+     "valor_mxn": 52215648.36
+    },
+    {
+     "texto": "$21,662,122.21",
+     "valor_mxn": 21662122.21
+    },
+    {
+     "texto": "$30,388,336.16",
+     "valor_mxn": 30388336.16
+    },
+    {
+     "texto": "$165,189.99",
+     "valor_mxn": 165189.99
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza el primer listado de 15 obras y el ejercicio parcial del POA 2025 con una inversión de $46,221,767.71.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "mayoria",
+   "colonias": [
+    "Colonia Francisco Villa",
+    "Colonia Prados del Sur",
+    "Colonia La Estancia",
+    "Localidad de Piscila",
+    "Colonia Residencial Lomas Verdes",
+    "Colonia Jardines de la Estancia",
+    "Colonia Ignacio Zaragoza",
+    "Localidad Las Guásimas",
+    "Colonia Residencial Esmeralda Norte",
+    "Colonia Costeño",
+    "Localidad Los Asmoles",
+    "Colonia El Yaqui"
+   ],
+   "obras": [
+    "REHABILITACIÓN DE MURO DE CONTENCIÓN EN COLIMA, COLONIA FRANCSCO VILLA, CAUCE DE",
+    "CONSTRUCCIÓN DE MURO DE CONTENCIÓN EN COLIMA, COLONIA PRADOS DEL SUR, CAUCE DEL ",
+    "CONSTRUCCIÓN DE ALCANTARILLADO PLUVIAL, COLECTOR Y BOCA DE TORMENTA EN COLIMA, C",
+    "CONSTRUCCIÓN DE RED DE DRENAJE SANITARIO, EN COLIMA, LOCALIDAD DE PISCILA, CALLE",
+    "REHABILITACIÓN DE RED DE ALCANTARILLADO PLUVIAL EN COLIMA, COLONIA PRADOS DEL SU",
+    "CONSTRUCCIÓN DE RED DE ALCANTARILLADO PLUVIAL Y BOCA DE TORMENTA EN COLIMA, COLO",
+    "CONSTRUCCIÓN DE RED DE ALCANTARILLADO PLUVIAL, COLECTOR Y BOCA DE TORMENTA EN CO",
+    "CONSTRUCCIÓN DE ALUMBRADO PÚBLICO EN COLIMA EN LA CANCHA DE USOS MÚLTIPLES DE LA",
+    "AMPLIACIÓN DE ALUMBRADO PÚBLICO EN COLIMA EN CANCHA TECHADA DE USOS MÚLTIPLES EN",
+    "REHABILITACIÓN DE PARQUE PÚBLICO EN COLIMA, COLONIA RESIDENCIAL ESMERALDA NORTE,",
+    "REHABILITACIÓN DE PAVIMENTACIÓN EN COLIMA, COLONIA COSTEÑO EN AVENIDA LICEO DE V",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN EN COLIMA LOCALIDAD LOS ASMOLES CALLE FRANCISCO VI"
+   ],
+   "montos": [
+    {
+     "texto": "$46,221,767.71",
+     "valor_mxn": 46221767.71
+    },
+    {
+     "texto": "$26,496,403.91",
+     "valor_mxn": 26496403.91
+    },
+    {
+     "texto": "$19,725,363.80",
+     "valor_mxn": 19725363.8
+    },
+    {
+     "texto": "$2,234,455.20",
+     "valor_mxn": 2234455.2
+    },
+    {
+     "texto": "$3,706,310.48",
+     "valor_mxn": 3706310.48
+    },
+    {
+     "texto": "$11,329,385.72",
+     "valor_mxn": 11329385.72
+    },
+    {
+     "texto": "$557,710.30",
+     "valor_mxn": 557710.3
+    },
+    {
+     "texto": "$2,390,563.56",
+     "valor_mxn": 2390563.56
+    },
+    {
+     "texto": "$5,296,215.49",
+     "valor_mxn": 5296215.49
+    },
+    {
+     "texto": "$981,763.15",
+     "valor_mxn": 981763.15
+    },
+    {
+     "texto": "$117,136.87",
+     "valor_mxn": 117136.87
+    },
+    {
+     "texto": "$1,437,350.54",
+     "valor_mxn": 1437350.54
+    },
+    {
+     "texto": "$555,808.57",
+     "valor_mxn": 555808.57
+    },
+    {
+     "texto": "$550,094.28",
+     "valor_mxn": 550094.28
+    },
+    {
+     "texto": "$1,783,195.70",
+     "valor_mxn": 1783195.7
+    },
+    {
+     "texto": "$10,009,883.03",
+     "valor_mxn": 10009883.03
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  }
+ ]
+}

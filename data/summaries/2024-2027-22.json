@@ -1,0 +1,274 @@
+{
+ "id": "2024-2027-22",
+ "no_acta": 22,
+ "fecha": "2025-02-17",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T01:27:14+00:00",
+ "lectura": {
+  "chars_ocr": 113422,
+  "chars_leidos": 113422,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se declaró quórum, se aplazó la aprobación del acta 21, y se dio lectura al dictamen de adecuaciones presupuestales de enero 2025.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registraron los presentes.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal e instalación de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad aplazar la lectura y aprobación del Acta de Cabildo N° 21 a la próxima sesión.",
+   "sentido": "aplazado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar adecuaciones presupuestales correspondientes a enero de 2025, con un total de 33,698,561.34 pesos.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "1,292,553.52",
+     "valor_mxn": 1292553.52
+    },
+    {
+     "texto": "72,564.61",
+     "valor_mxn": 72564.61
+    },
+    {
+     "texto": "465,447.38",
+     "valor_mxn": 465447.38
+    },
+    {
+     "texto": "40,000.00",
+     "valor_mxn": 40000.0
+    },
+    {
+     "texto": "1,281,983.08",
+     "valor_mxn": 1281983.08
+    },
+    {
+     "texto": "25,294.00",
+     "valor_mxn": 25294.0
+    },
+    {
+     "texto": "20,872.00",
+     "valor_mxn": 20872.0
+    },
+    {
+     "texto": "4,422.00",
+     "valor_mxn": 4422.0
+    },
+    {
+     "texto": "124,999.69",
+     "valor_mxn": 124999.69
+    },
+    {
+     "texto": "507,934.00",
+     "valor_mxn": 507934.0
+    },
+    {
+     "texto": "189,779.52",
+     "valor_mxn": 189779.52
+    },
+    {
+     "texto": "2,041,624.88",
+     "valor_mxn": 2041624.88
+    },
+    {
+     "texto": "1,665,821.60",
+     "valor_mxn": 1665821.6
+    },
+    {
+     "texto": "375,803.28",
+     "valor_mxn": 375803.28
+    },
+    {
+     "texto": "708,999.98",
+     "valor_mxn": 708999.98
+    },
+    {
+     "texto": "29,999.99",
+     "valor_mxn": 29999.99
+    },
+    {
+     "texto": "30,000.02",
+     "valor_mxn": 30000.02
+    },
+    {
+     "texto": "15,000.00",
+     "valor_mxn": 15000.0
+    },
+    {
+     "texto": "6,000.00",
+     "valor_mxn": 6000.0
+    },
+    {
+     "texto": "2,000.00",
+     "valor_mxn": 2000.0
+    },
+    {
+     "texto": "33,698,561.34",
+     "valor_mxn": 33698561.34
+    },
+    {
+     "texto": "324,945.24",
+     "valor_mxn": 324945.24
+    },
+    {
+     "texto": "70,579.67",
+     "valor_mxn": 70579.67
+    },
+    {
+     "texto": "37,334.14",
+     "valor_mxn": 37334.14
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorera Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorrera",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó remitir al Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de enero de 2025.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorrera",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se reformaron los artículos 66 y 67 del Reglamento de Limpia y Sanidad para agilizar la limpieza de lotes baldíos y fincas abandonadas, reduciendo plazos de notificación e inspección.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, y de Planeación, Obras y Servicios Públicos Municipales",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se clausuró la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,274 @@
+{
+ "id": "2024-2027-27",
+ "no_acta": 27,
+ "fecha": "2025-03-27",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T01:35:12+00:00",
+ "lectura": {
+  "chars_ocr": 235255,
+  "chars_leidos": 235255,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobó la recepción de alumbrado público del fraccionamiento San Ángel Residencial y se discutió el programa de urbanización CEDIS SURTIDORA, además de trámites.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia, registrando la presencia de 11 miembros y dos faltas justificadas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el Orden del Día de la sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 25 y 26.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento San Ángel Residencial, etapas 3, 4 y 5, a favor del municipio.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "San Ángel Residencial"
+   ],
+   "obras": [
+    "infraestructura de alumbrado público"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización \"CEDIS SURTIDORA\" para un predio de 50,000 m² al surponiente de Colima, promovido por Carmen Lorena Gudiño Ochoa, con un lote vendible de 40,401.49 m² para servicios a la industria y comercio, y áreas de cesión y vialidad.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Carmen Lorena Gudiño Ochoa",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó un proceso para regularizar la municipalización de fraccionamientos cuando el urbanizador haya desaparecido o fallecido, permitiendo al ayuntamiento asumir servicios públicos.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la incorporación municipal directa del predio con clave catastral 02-02-80-000-095-000, ubicado al norte de Colima, a favor de Eduardo Peña Torres y otros.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$664,382.25 (Seiscientos Sesenta Y Cuatro Mil Trescientos Ochenta y Dos Pesos 25/100 M.N.)",
+     "valor_mxn": 664382.25
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Eduardo Peña Torres y otros",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó la suscripción de tres contratos de arrendamiento de inmuebles para oficinas municipales y una biblioteca pública, con rentas mensuales de $4,060.00, $4,640.00 y $31,303.94, vigentes de enero a diciembre de 2025.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Tepames",
+    "colonia Centro",
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$4,060.00 (cuatro mil sesenta pesos 00/100 M.N.)",
+     "valor_mxn": 4060
+    },
+    {
+     "texto": "$4,640.00 (cuatro mil seiscientos cuarenta pesos 00/100 M.N.)",
+     "valor_mxn": 4640
+    },
+    {
+     "texto": "$31,303.94 (treinta y un mil trescientos tres pesos 94/100 M.N.)",
+     "valor_mxn": 31303.94
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó remitir al Congreso del Estado una iniciativa para ampliar hasta el 30 de junio de 2025 el plazo para la renovación de licencias de establecimientos comerciales y de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Contribuyentes dueños de establecimientos",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó un convenio con SEDATU para modernización registral y catastral; se presentó solicitud a Ferromex para corredor de seguridad (turnada a comisión) y se dio a conocer el calendario trimestral de sesiones.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Prados del Sur",
+    "Nuevo Milenio",
+    "Lo de Villa",
+    "La Estancia"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Secretaría de Desarrollo Agrario, Territorial y Urbano (SEDATU)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

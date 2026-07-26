@@ -1,0 +1,349 @@
+{
+ "id": "2024-2027-25",
+ "no_acta": 25,
+ "fecha": "2025-03-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-07-26T01:32:53+00:00",
+ "lectura": {
+  "chars_ocr": 181189,
+  "chars_leidos": 181189,
+  "ventanas": 5,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron el orden del día y actas previas, y se presentó sin resolver un dictamen de adecuaciones presupuestarias por $39,635,536.85.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se verificó la asistencia de los integrantes del Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se leyó y aprobó por unanimidad el Orden del Día.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó lectura y se aprobaron por unanimidad las Actas de Cabildo N° 23 y 24.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se autorizaron las adecuaciones presupuestarias del mes de febrero de 2025, con movimientos totales por $39,635,536.85 y $8,806,529.06, aprobado por mayoría con el voto en contra de la Regidora Azucena López Legorreta.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [
+    "MATERIAL Y ÚTILES DE OFICINA",
+    "ENERGÍA ELÉCTRICA DE ALUMBRADO PÚBLICO",
+    "CONSERVACIÓN Y MANTENIMIENTO MENOR DE EDIFICIOS",
+    "OTROS EQUIPOS",
+    "MATERIAL DE ASEO",
+    "OTROS SERVICIOS PROFESIONALES",
+    "OBRAS DIVERSAS",
+    "UNIDADES DEPORTIVAS, PARQUES Y JARDINES",
+    "INSTRUMENTAL COMPLEMENTARIO PARA EDIFICIOS",
+    "GASTOS POR CELEBRACIÓN DE ACTOS DE ORDEN CULTURAL",
+    "GASTOS POR CELEBRACIÓN DE ACTOS DE ORDEN SOCIAL",
+    "INSTALACIÓN Y MANTENIMIENTO DE ÁREAS VERDES"
+   ],
+   "montos": [
+    {
+     "texto": "$39,635,536.85 (Treinta y nueve millones seiscientos treinta y cinco mil quinientos treinta y seis pesos 85/100 M.N.)",
+     "valor_mxn": 39635536.85
+    },
+    {
+     "texto": "2,435.50",
+     "valor_mxn": 2435.5
+    },
+    {
+     "texto": "697.92",
+     "valor_mxn": 697.92
+    },
+    {
+     "texto": "4,219.12",
+     "valor_mxn": 4219.12
+    },
+    {
+     "texto": "4,155.35",
+     "valor_mxn": 4155.35
+    },
+    {
+     "texto": "4,464.29",
+     "valor_mxn": 4464.29
+    },
+    {
+     "texto": "2,174.66",
+     "valor_mxn": 2174.66
+    },
+    {
+     "texto": "60,424.00",
+     "valor_mxn": 60424.0
+    },
+    {
+     "texto": "1,181.84",
+     "valor_mxn": 1181.84
+    },
+    {
+     "texto": "1,377.75",
+     "valor_mxn": 1377.75
+    },
+    {
+     "texto": "4,194.95",
+     "valor_mxn": 4194.95
+    },
+    {
+     "texto": "2,443.61",
+     "valor_mxn": 2443.61
+    },
+    {
+     "texto": "100,000.00",
+     "valor_mxn": 100000.0
+    },
+    {
+     "texto": "762.00",
+     "valor_mxn": 762.0
+    },
+    {
+     "texto": "2,862.27",
+     "valor_mxn": 2862.27
+    },
+    {
+     "texto": "6,351.98",
+     "valor_mxn": 6351.98
+    },
+    {
+     "texto": "2,493.38",
+     "valor_mxn": 2493.38
+    },
+    {
+     "texto": "6,092.67",
+     "valor_mxn": 6092.67
+    },
+    {
+     "texto": "4,251.39",
+     "valor_mxn": 4251.39
+    },
+    {
+     "texto": "1,061.69",
+     "valor_mxn": 1061.69
+    },
+    {
+     "texto": "1,711.65",
+     "valor_mxn": 1711.65
+    },
+    {
+     "texto": "39,635,536.85",
+     "valor_mxn": 39635536.85
+    },
+    {
+     "texto": "8,806,529.06",
+     "valor_mxn": 8806529.06
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorera Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza remitir al H. Congreso del Estado de Colima la Cuenta Pública del mes de febrero de 2025, con el voto en contra de la Regidora Azucena López Legorreta.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autoriza la baja definitiva de tres licencias de venta de bebidas alcohólicas de los establecimientos señalados.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Patios del Ferrocarril",
+    "Residencial Santa Gertrudis",
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Elisa López Cárdenas, Alejandro Villa Sánchez, Maritza Santana Sandoval",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprueba suscribir un convenio de colaboración con el Instituto Estatal de Educación para Adultos para operar plazas comunitarias.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "El Paraíso",
+    "Fátima"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto Estatal de Educación para Adultos",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprueba la designación definitiva de las mujeres galardonadas con el Reconocimiento 'Mujer Colima 2025' y la realización de Sesión Solemne.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión para la Igualdad de Género",
+   "autor": {
+    "nombre": "Elia Margarita Moreno González",
+    "id": "elia-margarita-moreno-gonzalez"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó el dictamen que declara Recinto Ferial para el CARNAVAL DE COLIMA 2025 el 14 de marzo, autorizando cobros y suscripción de contratos; además, se informó la cancelación del Festival Colima Sabe Bien 2025 por luto nacional.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [
+    "Santa Bárbara"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se declaró clausurada la sesión a las 14:40 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
