@@ -1,0 +1,185 @@
+{
+ "id": "2024-2027-78",
+ "no_acta": 78,
+ "fecha": "2026-06-19",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-08-01T09:09:04+00:00",
+ "lectura": {
+  "chars_ocr": 44062,
+  "chars_leidos": 44062,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "El Cabildo aprobó la municipalización del Fraccionamiento Diamantes II y la incorporación anticipada de la Etapa 4-A de Puerta del Valle, y difirió las actas 76 y 77.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se registró la asistencia del presidente municipal, la síndica y los regidores presentes; se anotaron tres faltas justificadas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Por unanimidad se autorizó diferir a la próxima sesión la lectura y aprobación de las actas de cabildo 76 y 77.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad municipalizar la Etapa Única del Fraccionamiento Diamantes II, con 143 lotes y 31,051.11 m²; el desarrollador otorgó una fianza de $398,925.18 para garantizar las obras.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "DIAMANTES II",
+    "Romanza"
+   ],
+   "obras": [
+    "Av. Griselda Álvarez",
+    "Calle Ámbar",
+    "Calle Zirconia",
+    "Calle Granate",
+    "Av. Coral",
+    "Priv. Ámbar",
+    "Priv. Granate",
+    "Calle Espinela"
+   ],
+   "montos": [
+    {
+     "texto": "$398,925.18",
+     "valor_mxn": 398925.18
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Fraccionamiento DIAMANTES II",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la Etapa 4-A del Fraccionamiento Puerta del Valle, con 153 lotes y 28,147.90 m²; se recibieron fianzas por $1,836,976.62 y $5,427,088.43.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Puerta del Valle",
+    "La Floresta",
+    "La Santa Elena"
+   ],
+   "obras": [
+    "Arco de Jano",
+    "Arco de Barcelona",
+    "Arcos de Guadalajara",
+    "Arcos de Santa Catalina",
+    "Arco de la Defensa",
+    "Arco de Constantino"
+   ],
+   "montos": [
+    {
+     "texto": "$1'836,976.62",
+     "valor_mxn": 1836976.62
+    },
+    {
+     "texto": "$5'427,088.43",
+     "valor_mxn": 5427088.43
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Fraccionamiento Puerta del Valle",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se declaró clausurada la sesión a las 21:11 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,355 @@
+{
+ "id": "2024-2027-75",
+ "no_acta": 75,
+ "fecha": "2026-05-29",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-08-01T09:07:45+00:00",
+ "lectura": {
+  "chars_ocr": 117336,
+  "chars_leidos": 117336,
+  "ventanas": 3,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "Se aprobaron el bono del Día del Padre, la minuta de Bienestar, el avalúo del proyecto Comercial Francisco I. Madero y 31 bajas de licencias de alcohol.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de ediles, con la falta justificada del Regidor Francisco Javier Bravo Gallardo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día; el fragmento no muestra la votación.",
+   "sentido": "no_determinable",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura del Acta N° 74 y fue aprobada por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó otorgar el Bono del Día del Padre, por $1,037.99, a los trabajadores de base, confianza y supernumerarios del Ayuntamiento de Colima.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,037.99",
+     "valor_mxn": 1037.99
+    }
+   ],
+   "beneficiario": {
+    "nombre": "trabajadores de base, confianza y supernumerarios del H. Ayuntamiento de Colima",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad, en votación nominal, la Minuta con Proyecto de Decreto que reforma la Constitución del Estado de Colima en Materia de Bienestar.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó el avalúo para el pago del área de cesión del predio 02-01-09-141-023-000, del proyecto Comercial Francisco I. Madero, por un total de $1,307,026.56.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "COMERCIAL FRANCISCO I. MADERO"
+   ],
+   "montos": [
+    {
+     "texto": "$2,528.00",
+     "valor_mxn": 2528.0
+    },
+    {
+     "texto": "$1,307,026.56",
+     "valor_mxn": 1307026.56
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Verónica Ramos Sosa",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la baja definitiva de 31 licencias comerciales para la venta y consumo de bebidas alcohólicas.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Santa Bárbara"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizaron dos licencias comerciales para venta de bebidas alcohólicas: LOW SOCIAL CLUB en el Centro y RO COLIMOTE en Residencial Esmeralda.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "Residencial Esmeralda"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se autorizaron dos licencias comerciales: una tienda de abarrotes con venta de cerveza y una taquería con venta de cerveza, en la colonia Mirador de la Cumbre.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Mirador de la Cumbre"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "JUAN CARLOS GÓMEZ DÍAZ",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la incorporación municipal directa del predio con clave catastral 02-01-06-344-011-000 del fraccionamiento Girasoles, propiedad de Eduardo González Valencia.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "GIRASOLES"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "EDUARDO GONZÁLEZ VALENCIA",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "CLAUDIA JANETH FARÍAS LÓPEZ",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó el convenio con la Asociación Ganadera Local de Colima para ofrecer productos a bajo costo contra el gusano barrenador en comunidades del municipio.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "Estapilla"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "ASOCIACIÓN GANADERA LOCAL DE COLIMA",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "EMILIO ROSARIO ALDORICA PULIDO",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó el convenio de colaboración entre el municipio y PRONAES, S.A.P.I de C.V., para coordinar acciones de beneficio social.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "PRONAES, S.A.P.I de C.V",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "ITZEL SARAHÍ RÍOS DE LA MORA",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó emitir la convocatoria para integrar e instalar el Consejo contra la Discriminación en el Municipio de Colima y declarar el tercer sábado de junio de cada año como Día Municipal de la Diversidad Sexual.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Población del municipio de Colima, especialmente la comunidad LGBTTTIQ+",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos y de Derechos Humanos y Participación Ciudadana",
+   "autor": {
+    "nombre": "EDGAR OSIRIS ALCARAZ SAUCEDO",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "En asuntos generales se presentaron exhortos sobre el transporte escolar en Tepames y la rehabilitación de caminos saca-cosechas, un proyecto de biblioteca digital y varios informes; los exhortos fueron retirados por su promovente y el proyecto de biblioteca digital se turnó a comisión.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [
+    "Tepames"
+   ],
+   "obras": [
+    "Caminos saca-cosechas de comunidades rurales",
+    "Camino cerca del río en Tepames",
+    "Micrositio Especial de la Biblioteca Digital del Municipio de Colima"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 12:53 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
