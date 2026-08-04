@@ -25,7 +25,7 @@ body {
 }
 
 a { color: var(--u-ink); text-decoration-color: var(--u-baseline); text-underline-offset: 3px; }
-a:hover { color: var(--u-signal); text-decoration-color: var(--u-signal); }
+a:hover { color: var(--u-signal-text); text-decoration-color: var(--u-signal-text); }
 :focus-visible { outline: 2px solid var(--u-signal); outline-offset: 2px; }
 
 .mono { font-family: var(--u-font-mono); font-variant-numeric: tabular-nums; }
@@ -49,7 +49,7 @@ h1, h2, h3 {
   font-family: var(--u-font-display); font-weight: 500; font-size: 24px;
   letter-spacing: var(--u-tracking-display);
 }
-.wordmark .underscore { color: var(--u-signal); }   /* per logo spec */
+.wordmark .underscore { color: var(--u-signal-text); }   /* per logo spec */
 .site-header nav { display: flex; gap: 24px; font-size: 14px; }
 .site-header nav a { text-decoration: none; padding: 8px 0; }
 .site-header nav a:hover { box-shadow: inset 0 -2px 0 var(--u-signal); }
@@ -131,7 +131,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   border-radius: var(--u-radius);
   cursor: pointer;
 }
-.btn-secondary:hover { color: var(--u-signal); border-color: var(--u-signal); }
+.btn-secondary:hover { color: var(--u-signal-text); border-color: var(--u-signal); }
 
 /* ── results ── */
 .result-count { font-size: 12px; color: var(--u-caption); margin-bottom: 24px; }
@@ -151,10 +151,10 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
    (engineering §4: non-color encoding). */
 .result mark {
   background: transparent;
-  color: var(--u-signal);
+  color: var(--u-signal-text);
   font-weight: 600;
   text-decoration: underline;
-  text-decoration-color: var(--u-signal);
+  text-decoration-color: var(--u-signal-text);
   text-underline-offset: 3px;
 }
 .result .acta-link { font-size: 13px; margin-top: 16px; display: inline-block; }
@@ -169,23 +169,23 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   margin-top: 8px;
   color: var(--u-muted);
   font-size: 14px;
-  max-width: 68ch;
+  max-width: 65ch;
   text-wrap: pretty;
 }
 .result .resumen { margin-top: 12px; }
 .sentido {
   font-family: var(--u-font-mono);
-  font-size: 11px; letter-spacing: 0.04em; text-transform: uppercase;
+  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
   color: var(--u-caption);
   white-space: nowrap;
 }
 .sentido::before { content: "· "; }
-.sentido.sd-alert { color: var(--u-alert); }
+.sentido.sd-alert { color: var(--u-alert-text); }
 .sentido.sd-open { text-transform: none; letter-spacing: 0; font-style: italic; }
 .resumen-nota {
   margin: 8px 0 20px 160px;
   font-size: 12px; color: var(--u-caption); font-style: italic;
-  max-width: 68ch;
+  max-width: 65ch;
 }
 
 /* ── Phase 2: full-content search over OCR text ── */
@@ -202,12 +202,12 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   border-radius: var(--u-radius);
   cursor: pointer;
 }
-.ft-btn:hover { color: var(--u-signal); border-color: var(--u-signal); }
+.ft-btn:hover { color: var(--u-signal-text); border-color: var(--u-signal); }
 .ft-intro {
   font-size: 12px; color: var(--u-caption);
   padding-top: 16px; margin-bottom: 16px;
   border-top: 2px solid var(--u-ink);
-  max-width: 72ch; line-height: 1.5;
+  max-width: 65ch; line-height: 1.5;
 }
 .ft-result .meta { color: var(--u-caption); }
 .ft-snip { margin-top: 10px; padding-left: 12px; border-left: var(--u-rule) solid var(--u-border); }
@@ -225,7 +225,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .acta-detalle > summary:hover { color: var(--u-signal); text-decoration-color: var(--u-signal); }
 .acta-detalle-body { margin-top: 14px; }
 .detalle-brief {
-  font-size: 15px; color: var(--u-ink); max-width: 68ch;
+  font-size: 15px; color: var(--u-ink); max-width: 65ch;
   padding-left: 12px; border-left: 2px solid var(--u-baseline);
   margin-bottom: 16px; text-wrap: pretty;
 }
@@ -243,7 +243,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 }
 .detalle-nota {
   margin-top: 12px; font-size: 12px; color: var(--u-caption);
-  font-style: italic; max-width: 68ch;
+  font-style: italic; max-width: 65ch;
 }
 
 /* ── timeline ── table spec: 2px ink top rule, 1px row rules ── */
@@ -303,7 +303,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   padding: 8px 0;
   border-top: var(--u-rule) solid var(--u-border);
   font-size: 15px;
-  max-width: 72ch;
+  max-width: 65ch;
 }
 .agenda li:first-child { border-top: 0; }
 .agenda .num {
@@ -326,7 +326,9 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   font-family: var(--u-font-mono);
   font-weight: 400;
   font-size: 0.6em;
-  color: var(--u-signal);
+  /* was signal. The audit counted four signal elements on this page; the hero
+     accent is the one that keeps it (UMB-COL-004). */
+  color: var(--u-muted);
   margin-right: 12px;
   vertical-align: 0.15em;
   letter-spacing: 0;
@@ -440,7 +442,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 }
 .col-tick {
   position: absolute; top: 100%; left: 0; right: 0; padding-top: 8px;
-  text-align: center; font-size: 11px; color: var(--u-caption);
+  text-align: center; font-size: 12px; color: var(--u-caption);
 }
 .cols + * { margin-top: 32px; }
 
@@ -500,7 +502,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   border-bottom: var(--u-rule) solid var(--u-border);
 }
 .tabla th {
-  font-family: var(--u-font-mono); font-size: 11px; letter-spacing: 0.04em;
+  font-family: var(--u-font-mono); font-size: 12px; letter-spacing: 0.04em;
   text-transform: uppercase; color: var(--u-caption); font-weight: 500;
   border-bottom-color: var(--u-ink);
 }
