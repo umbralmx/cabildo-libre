@@ -2,12 +2,19 @@
 
 > Persistent project context for the coding agent. Read this before any task.
 > **Roles:** PM & ideation = Claude (chat). Development, testing, validation = Fable.
-> **Status (2026-07-20):** Phase 1 is **live** at https://umbralmx.github.io/cabildo-libre/
+> **Status (2026-08-08):** Phase 1 is **live** at https://umbralmx.github.io/cabildo-libre/
 > (public repo `umbralmx/cabildo-libre`, Pages on, scheduled refresh running). X1 (legal)
 > is still open — the site launched in attribution mode with the license claim softened.
-> **Phase 2 is underway**, scoped to the current term (2024-2027, 74 actas): a two-stage
-> processing pipeline in `processor/` — **Tesseract OCR** (free) + **DeepSeek summaries**
-> (text-only, ~$1/term). Engine spike and cost table in `docs/phase2-ocr-spike.md`.
+> **Phase 2 covers 76 of the term's 78 actas** — OCR'd, summarized and with attendance
+> (`esquema 3` throughout) — pipeline in `processor/`, **Tesseract OCR** (free) +
+> **DeepSeek summaries** (text-only, well under $1/term). 894 puntos, 561 of them substantive
+> decisions; `no_determinable` sits at **2.7%** (was 58% before the windowing fix) and one
+> single point is in `puntos_en_conflicto` (acta 48 punto 7, pending a manual PDF check).
+> **The term keeps growing and the automation keeps up on its own:** the scheduled scrape
+> picked up actas 75 and 78 and the 2026-08-08 batch processed them; the 2026-08-08 manual
+> re-scrape added **actas 76 and 77** (15 and 17 junio 2026), which are the two still pending.
+> Batches now publish themselves — see `docs/bitacora.md` 2026-07-26. The other four terms
+> (~560 actas) are untouched.
 
 ---
 

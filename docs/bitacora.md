@@ -6,6 +6,64 @@
 
 ---
 
+## 2026-07-26 — El término 2024-2027, completo: 74/74
+
+**Cerrado.** Las 74 actas del término están OCR'd, resumidas y con asistencia: `74/74 con
+resumen, 74 con Tier A, 74 con ficha, 74 con asistencia`. Se llegó en cuatro lotes desde 35,
+sin una sola ventana fallida. **871 puntos**, de los cuales **545 son decisiones sustantivas**;
+480 montos con cifra, 246 colonias mencionadas, 92 eventos de disenso o abstención, 81
+comisiones, 222 contrapartes. Sólo **2 nombres quedaron sin mapear** al roster, y así se
+declaran.
+
+**El indicador que importaba se sostuvo.** `no_determinable` quedó en **22 de 871 (2.5 %)**
+sobre el término entero. Venía de 2.3 % con 45 actas y 2.2 % con 65, mientras el corpus casi
+se duplicaba: la lectura por ventanas del 25 generaliza a actas que no había visto cuando se
+escribió, no estaba sobreajustada a las 25 de entonces. Para contexto, antes del arreglo era
+58 %.
+
+**Un solo conflicto en todo el término:** acta 48, punto 7 — dos ventanas que leyeron una
+decisión y la leyeron distinto. Es exactamente la cola de revisión manual contra el PDF que la
+lista debe producir; no se resolvió con un desempate silencioso.
+
+**Los lotes no llegaban al sitio, y el arreglo del 25 no servía.** `procesar.yml` commitea con
+el `GITHUB_TOKEN` y GitHub a propósito no dispara workflows con esos push. El gatillo
+`workflow_run` que se le había puesto a `actualizar.yml` **nunca recibe el evento**: comprobado
+dos veces, con el archivo asentado en main, los nombres idénticos byte por byte, ambos
+workflows activos y la API reportando cero corridas con ese evento. En vez de seguir peleando
+con la semántica, el lote **publica por su cuenta** (job `publicar` en `procesar.yml`, mismo
+grupo de concurrencia `pages` para que los despliegues hagan cola). Los cuatro lotes de hoy
+llegaron solos al sitio.
+
+**Un lote ya no se pierde por un push rechazado.** El paso de commit hacía `git push` a secas;
+basta con que algo entre a main durante la hora que dura un lote para que el push se rechace y
+se tire el trabajo ya pagado. Ahora rebasa y reintenta. **No fue teoría: en el lote 56–65 el
+push se rechazó de verdad** (`! [rejected] (fetch first)`), rebasó y entró al segundo intento.
+
+**La sesión del 6/11/2024 es el acta 4, no un segundo acta 6.** El índice la rotula «006» pero
+el PDF que ella misma enlaza es `acta-no-04.pdf`; la del 21 de noviembre —la otra que dice
+«006»— enlaza `acta-no-06.pdf`. Un error de dedo en la fuente que producía dos anomalías: al
+término le faltaba el acta 4 y el 6 estaba duplicado, con un id sintético (`2024-2027-6-2`) que
+es lo que llavea todo aguas abajo. **No es inferencia**: el número sale de la fuente misma. Se
+corrigió en el scraper —no a mano en el JSON, que se regenera en cada corrida— con el rótulo
+original conservado en `no_acta_texto` y el número del índice en `no_acta_indice`. Se hizo
+mientras el OCR aún no llegaba a las actas 4 ni 6, así que no costó reprocesar nada; un lote
+más y habría sido retrabajo. Deliberadamente **no** se puso una regla general que prefiera el
+enlace al texto —movería filas sin verificar—, pero sí una **detección** general: hoy reporta
+un caso pendiente, el 30/09/2016, que el índice llama 52 y su enlace 51.
+
+**Regenerar un resumen no reproduce el anterior**, y ya está escrito (`metodologia.md` §10.1).
+Forzar la regeneración de las mismas 35 actas, con el mismo código y esquema, movió ~1 % de los
+puntos en ambas direcciones — y `no_determinable` **subió** de 3 a 8. Es la dirección incómoda,
+y por eso se declara: las cifras publicadas se mueven al refrescar el corpus aunque no entre
+ninguna acta nueva. `--force` deja de ser rutina.
+
+**Pendientes que quedaron anotados y no se tocaron:** el paso de commit de `actualizar.yml`
+tiene el mismo `git push` a secas (su ventana es de segundos, no de una hora); cada corrida
+commitea el campo `generado` aunque no cambie nada de fondo; y el acta 48 punto 7 sigue sin
+cotejarse contra su PDF.
+
+---
+
 ## 2026-07-25 — El corte de 45K era el defecto dominante, y el panel
 
 **El hallazgo.** Al probar los 26 indicadores del diccionario contra los datos reales
