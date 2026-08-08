@@ -1,0 +1,196 @@
+{
+ "id": "2024-2027-77",
+ "no_acta": 77,
+ "fecha": "2026-06-17",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-08-08T18:43:41+00:00",
+ "lectura": {
+  "chars_ocr": 41291,
+  "chars_leidos": 41291,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "resumen_sesion": "El Cabildo aprobó municipalizar las etapas 1 y 2 de Residencial Romanza, declarar recinto oficial Diamantes II y otorgar 6,000 pesos a cada docente con la Presea al Mérito Docente.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró a las y los integrantes del Cabildo presentes.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Se declaró la existencia de quórum legal y la instalación formal de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo 76 en la próxima sesión; no se aprobó su contenido en esta sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la municipalización de las etapas 1 y 2 del Fraccionamiento Residencial Romanza; el urbanizador otorgó una fianza por $1,585,755.81 para garantizar obras y vicios ocultos.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Fraccionamiento RESIDENCIAL ROMANZA"
+   ],
+   "obras": [
+    "Municipalización de las Etapas 1 y 2 del Fraccionamiento RESIDENCIAL ROMANZA",
+    "Calle Alfred Nobel",
+    "Av. Quinta Romanza",
+    "Av. Benjamín Franklin",
+    "Calle Marie Curie",
+    "Calle Nicolás Copérnico",
+    "Calle Primavera del Roble",
+    "Calle Primavera del Ciprés"
+   ],
+   "montos": [
+    {
+     "texto": "$ 1,585,755.81 (UN Millón Quinientos Ochenta Y Cinco Mil Setecientos Cincuenta Y Cinco Pesos 81/100 M.N.)",
+     "valor_mxn": 1585755.81
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Fraccionamiento RESIDENCIAL ROMANZA",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por unanimidad declarar como recinto oficial, por única vez, el Fraccionamiento Diamantes II para la sesión extraordinaria del 19 de junio de 2026.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [
+    "Fraccionamiento Diamantes II"
+   ],
+   "obras": [
+    "Municipalización de la etapa única del Fraccionamiento Diamantes II"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó por unanimidad instituir un estímulo de $6,000.00 para cada docente galardonado con la Presea al Mérito Docente 'Prof. Gregorio Torres Quintero', con asignación anual de $60,000.00.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$6,000.00 (SEIS MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 6000
+    },
+    {
+     "texto": "$60,000.00 (SESENTA MIL PESOS 00/100 M.N.)",
+     "valor_mxn": 60000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "docentes galardonados con la Presea al Mérito Docente 'Prof. Gregorio Torres Quintero'",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Agotado el Orden del Día, se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
