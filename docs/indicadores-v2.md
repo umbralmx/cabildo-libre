@@ -71,23 +71,51 @@ revisarse, acotada a **quién habló**, sin intentar resumir qué dijo.
 
 ### 2.3 T2 no mide nuestra calidad: mide su cumplimiento
 
-Las leyes estatales de transparencia en México obligan al municipio a publicar tres cosas:
-**el acta de cabildo**, la **asistencia** de los integrantes y el **sentido del voto** de cada
-regidor. Nuestro pipeline extrae exactamente esas tres.
+**Verificado 2026-08-13 contra el texto de la ley**, no contra resúmenes de terceros. **Ley de
+Transparencia y Acceso a la Información Pública del Estado de Colima**, reforma publicada en el
+Periódico Oficial *El Estado de Colima* el **16 de agosto de 2025**, **artículo 34, numeral 1,
+fracción III** — obligaciones específicas de los Ayuntamientos, adicionales a las 47 fracciones
+comunes del artículo 30:
 
-Eso cambia el encuadre de T2. Hoy se presenta como «legibilidad de los documentos». En
-realidad es **una medición de cumplimiento**: cuando el sentido del voto no es determinable,
-no es que nuestro OCR falle — es que **el registro público no permite saber cómo votó el
-cabildo**, que es justo lo que la ley manda que se pueda saber. Es el indicador más fuerte del
-proyecto y está subvendido.
+> «Las **actas de sesiones de cabildo**, los **controles de asistencia** a las sesiones de
+> cabildo y el **sentido de votación** de las y los miembros del Cabildo sobre las iniciativas
+> o acuerdos discutidos»
 
-> ⚠️ **Verificar antes de publicar esta afirmación.** El artículo exacto y su vigencia deben
-> confirmarse contra la **Ley de Transparencia y Acceso a la Información Pública del Estado de
-> Colima** —no contra resúmenes de terceros— y contra la reforma federal de marzo de 2025, que
-> renumeró la LGTAIP. Hay además una obligación cercana en la normativa municipal: que el
-> miembro del cabildo manifieste el sentido de su voto y **razone el voto en contra**. Si eso
-> se sostiene, habilita un indicador nuevo: *¿cuántos votos en contra vienen razonados?*
-> Nada de esto entra al sitio sin cotejo directo del texto legal.
+Las tres cosas, en una sola fracción, y son **exactamente las tres que extrae nuestro
+pipeline**: `data/summaries` (el acta y sus acuerdos), `data/asistencia` (el pase de lista) y
+`sentido` + `votos_en_contra` + `abstenciones` (el sentido de votación).
+
+Eso reencuadra T2. Hoy se presenta como «legibilidad de los documentos». En realidad es **una
+medición de cumplimiento de una obligación legal nombrada**: cuando el sentido del voto no es
+determinable, no es que nuestro OCR falle — es que **el registro público no permite saber cómo
+votó el cabildo**, que es literalmente lo que el artículo 34.1.III manda que se pueda saber. Es
+el indicador más fuerte del proyecto y está subvendido.
+
+**Y hay una obligación vecina que nadie está mirando.** El mismo artículo 34, **fracción II**,
+obliga al Ayuntamiento a transmitir **las sesiones de cabildo en vivo** por su página oficial y
+a **almacenar ahí las videograbaciones** para consulta. Dos consecuencias, en este orden:
+
+1. **Es un indicador de cumplimiento comprobable** desde fuera, y muy legible para el público:
+   ¿existen las transmisiones? ¿siguen consultables? Encaja en la familia *Confianza*.
+2. **Si el video existe y es consultable, cambia el techo del proyecto.** Hoy dependemos de OCR
+   sobre PDF escaneado porque asumimos que el acta es la única fuente. Un archivo de video con
+   audio abre la puerta a transcripción —que es lo que hace citymeetings.nyc, nuestra
+   referencia— y a la dimensión de *participación ciudadana* que el ILTL nos marca vacía.
+
+**Comprobación parcial, 2026-08-13.** La página de actas
+(`colima.gob.mx/portal2016/actas-de-cabildo/`) **no enlaza video alguno**: es un repositorio de
+PDF y nada más. La fracción II pide que las videograbaciones queden almacenadas «en la misma»
+página oficial, así que esto es indicio, pero **no basta para afirmar incumplimiento**: el
+Ayuntamiento tiene canal de YouTube y las sesiones podrían estar ahí. **No se comprobó.** Hasta
+que alguien revise el canal sesión por sesión y lo contraste con las 78 fechas del término, esto
+se queda como pregunta abierta, no como hallazgo. Es la comprobación de mayor palanca que queda
+pendiente y no cuesta dinero, sólo tiempo.
+
+> ⚠️ Sigue **sin verificar** la otra afirmación que se manejó: que el reglamento municipal
+> obligue a cada munícipe a manifestar el sentido de su voto y a **razonar el voto en contra**.
+> Eso está en la normativa municipal (Reglamento del Gobierno Municipal / Ley del Municipio
+> Libre), no en la ley de transparencia, y no se ha cotejado. De sostenerse, habilita un
+> indicador nuevo: *¿cuántos votos en contra vienen razonados?* No entra al sitio sin cotejo.
 
 ---
 
