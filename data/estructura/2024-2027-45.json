@@ -1,0 +1,13 @@
+{
+  "id": "2024-2027-45",
+  "no_acta": 45,
+  "fecha": "2025-09-02",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "solemne",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 10,
+  "orden_del_dia_modificado": null
+}

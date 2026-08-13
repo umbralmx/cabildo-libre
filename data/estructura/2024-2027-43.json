@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-43",
+  "no_acta": 43,
+  "fecha": "2025-08-15",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 15,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "incorporacion",
+        "asunto": "el siguiente: o-o e Dictamen que autoriza realizar ampliaciones presupuestales solicitadas",
+        "punto_mencionado": null
+      }
+    ],
+    "n_retiros": 0,
+    "n_incorporaciones": 1,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

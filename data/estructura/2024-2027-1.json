@@ -1,0 +1,13 @@
+{
+  "id": "2024-2027-1",
+  "no_acta": 1,
+  "fecha": "2024-10-16",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 15,
+  "orden_del_dia_modificado": null
+}

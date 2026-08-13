@@ -1,0 +1,34 @@
+{
+  "id": "2024-2027-48",
+  "no_acta": 48,
+  "fecha": "2025-10-14",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 15,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": null,
+        "punto_mencionado": null
+      },
+      {
+        "tipo": "incorporacion",
+        "asunto": "Punto de Acuerdo que se declara al jardín Torres Quintero ubicado",
+        "punto_mencionado": null
+      }
+    ],
+    "n_retiros": 1,
+    "n_incorporaciones": 1,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": true,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-10",
+  "no_acta": 10,
+  "fecha": "2024-12-06",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "extraordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 9,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": "relativo Ai\" +. Punto de Acuerdo que aprueba el Reglamento que Crea el Fideicomiso para la Innovación y Calidad Gubernamental del Municipio de Colima",
+        "punto_mencionado": 5
+      }
+    ],
+    "n_retiros": 1,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": 5,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

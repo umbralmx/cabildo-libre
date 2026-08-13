@@ -6,6 +6,78 @@
 
 ---
 
+## 2026-08-13 — El acta 48 no tenía un voto mal leído: tenía dos asuntos en un registro
+
+**Tres decisiones del mantenedor, para no volver sobre ellas.** X1 legal: **adelante** — el sitio
+sigue en modo atribución y lo que queda es postura, no permiso. `DEEPSEEK_API_KEY`: **ya está** en
+los secretos del repo. Dominio: **`cabildo.umbral.org.mx`**, subdominio, para que `umbral.org.mx`
+quede libre para el sitio principal. Y la Fase 3 queda **en pausa** hasta revisar el diccionario
+de indicadores contra referencias externas.
+
+**El término está completo y llevaba tiempo estándolo.** `CLAUDE.md` decía «76 de 78 actas», y
+había 78 OCR, 78 resúmenes, actas 1 a 78 sin hueco, todas en `esquema 3`. **917 puntos**, 577
+sustantivos (no-`tramite`) y de ésos 552 con resultado determinable; `no_determinable` en 2.7 %.
+La cifra vieja venía de la entrada del 8 de agosto y nadie la volvió a mirar.
+
+**El conflicto del acta 48 no necesitaba el PDF.** Estaba anotado desde el 26 de julio como «dos
+ventanas que leyeron una decisión y la leyeron distinto», pendiente de cotejo manual. No era eso.
+El 14 de octubre de 2025 la Síndica **retiró** del órden del día el dictamen de ampliaciones
+SUPERNUMERARIO-BASE —el VII previo— y el Regidor Rangel **incorporó** otro asunto al final. El
+cabildo aprobó la modificación por unanimidad y **todo lo posterior recorrió un lugar**: el VII
+final son las tres licencias comerciales. El registro del punto 7 quedó con la prosa de un asunto
+y los datos del otro: `sentido: aprobado`, `votacion: unanime` y `comision: Comercios, Mercados y
+Restaurantes` son de las licencias, mientras el `resumen` habla del dictamen retirado. **La ficha
+se delataba sola** — categoría `presupuesto_finanzas` con comisión de comercios— y las colonias
+(Centro, Balcón de Abajo, Camino Real) son los tres domicilios de las licencias. Todo estaba en el
+OCR; el cotejo manual nunca hizo falta.
+
+**Y no era un caso: era una clase.** El órden del día que el resumidor entrega al modelo sale del
+índice del portal, que publica el órden **previo** a la sesión. Cuando la sesión lo mueve, el
+cuerpo del acta numera por el órden final y las ventanas discrepan: una obedece al índice, otra al
+acta. `fusionar_puntos` une por `n` y funde dos asuntos. **Pasa en 19 de las 78 actas.** El acta 48
+fue la única que gritó porque fue la única donde además discrepó el *sentido*; en las otras 18 el
+desfase es silencioso. Peor: el acta 48 retiró uno e incorporó otro, así que **el órden previo y el
+final miden lo mismo** y ningún conteo de longitud lo detecta.
+
+**Dos señales independientes, mismas 19 actas.** `processor/orden_del_dia.py` ancla en la fórmula
+de modificación («modificación al Orden del Día», «Orden del Día con la modificación», «con la
+modificación autorizada») y contrasta con algo que no comparte ningún supuesto: cada impresión del
+órden abre con «Lista de asistencia», así que el acta que lo modifica imprime la lista **tres**
+veces y la que no, dos. Coinciden exactamente, sin falsos positivos ni negativos. **No se ancló en
+«continuación»**, que era lo natural: el OCR la destruye una y otra vez —`CONtiINUACIÓN`,
+`continua CIÓN`, y en el acta 47 directamente `CONAN`.
+
+**Una petición de retiro puede perder.** En el acta 41 el cabildo aprobó retirar el Séptimo Punto
+pero **no** aprobó retirar el Sexto. Dar por hecho que toda petición prospera habría movido puntos
+que nunca se movieron, así que se transcribe la petición y, aparte, cómo se votó; el resultado sólo
+se clasifica cuando el acta lo dice (17 unánimes, 1 parcial, 1 sin determinar).
+
+**El arreglo va en el prompt, no en el JSON.** Misma doctrina que el acta 4/6 de julio: los
+resúmenes se regeneran, así que corregirlos a mano es tinta perdida. Ahora la regla de numeración
+es una sola para todas las ventanas —**manda el ordinal que el cuerpo del acta escribe**, no la
+posición en la lista del índice— y, cuando hay modificación, el prompt lo advierte. **Los 19
+resúmenes ya generados siguen mal**: repararlos es una corrida con `resumir_forzar`, ~$0.15, y es
+decisión de costo del mantenedor.
+
+**De paso, dos datos que no costaron nada.** `tipo_sesion` sale del encabezado en 76 de 78 actas;
+las otras dos las salva el bloque de firmas, que declara el tipo otra vez y va anclado al número de
+acta («las presentes firmas corresponden al Acta N° 54, de la Sesión Extraordinaria»). Con eso el
+término queda en **42 extraordinarias, 32 ordinarias, 4 solemnes**, sin un solo `no_determinable`,
+y sin adivinar: el acta 36 dice «Sesión **Grieco**» en el encabezado —OCR irrecuperable— y su firma
+dice Ordinaria.
+
+**Y un hallazgo que no buscábamos: cuatro actas se contradicen a sí mismas.** Las actas **2, 8, 40
+y 59** declaran un tipo de sesión en el encabezado y el contrario en las firmas, con OCR limpio en
+los dos lugares. No es ruido nuestro; es el registro público en desacuerdo consigo mismo, y el tipo
+de sesión no es cosmético (ordinaria y extraordinaria tienen reglas distintas de convocatoria y
+quórum). Se reporta, no se resuelve.
+
+**Pendiente que queda anotado:** el asunto retirado se transcribe en 12 de las 19 actas y el punto
+afectado se nombra por su ordinal en sólo 4; en el resto la petición existe pero el OCR no deja
+leer el detalle. Se declara así, en hueco, como todo lo demás.
+
+---
+
 ## 2026-07-26 — El término 2024-2027, completo: 74/74
 
 **Cerrado.** Las 74 actas del término están OCR'd, resumidas y con asistencia: `74/74 con

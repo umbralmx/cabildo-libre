@@ -1,0 +1,13 @@
+{
+  "id": "2024-2027-12",
+  "no_acta": 12,
+  "fecha": "2024-12-17",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "extraordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 12,
+  "orden_del_dia_modificado": null
+}

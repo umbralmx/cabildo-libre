@@ -2,19 +2,25 @@
 
 > Persistent project context for the coding agent. Read this before any task.
 > **Roles:** PM & ideation = Claude (chat). Development, testing, validation = Fable.
-> **Status (2026-08-08):** Phase 1 is **live** at https://umbralmx.github.io/cabildo-libre/
-> (public repo `umbralmx/cabildo-libre`, Pages on, scheduled refresh running). X1 (legal)
-> is still open — the site launched in attribution mode with the license claim softened.
-> **Phase 2 covers 76 of the term's 78 actas** — OCR'd, summarized and with attendance
+> **Status (2026-08-13):** Phase 1 is **live** at https://umbralmx.github.io/cabildo-libre/
+> (public repo `umbralmx/cabildo-libre`, Pages on, scheduled refresh running).
+> **X1 (legal) is decided: GO** — the maintainer cleared it on 2026-08-13; the site stays in
+> attribution mode and X1 is now about response posture, not permission.
+> **Phase 2 covers the whole term — 78 of 78 actas**, OCR'd, summarized and with attendance
 > (`esquema 3` throughout) — pipeline in `processor/`, **Tesseract OCR** (free) +
-> **DeepSeek summaries** (text-only, well under $1/term). 894 puntos, 561 of them substantive
-> decisions; `no_determinable` sits at **2.7%** (was 58% before the windowing fix) and one
-> single point is in `puntos_en_conflicto` (acta 48 punto 7, pending a manual PDF check).
-> **The term keeps growing and the automation keeps up on its own:** the scheduled scrape
-> picked up actas 75 and 78 and the 2026-08-08 batch processed them; the 2026-08-08 manual
-> re-scrape added **actas 76 and 77** (15 and 17 junio 2026), which are the two still pending.
-> Batches now publish themselves — see `docs/bitacora.md` 2026-07-26. The other four terms
+> **DeepSeek summaries** (text-only, well under $1/term). 917 puntos, 577 of them substantive
+> (non-`tramite`), 552 of those with a determinable outcome; `no_determinable` sits at **2.7%**
+> (was 58% before the windowing fix).
+> Batches publish themselves — see `docs/bitacora.md` 2026-07-26. The other four terms
 > (~560 actas) are untouched.
+>
+> **Open defect (2026-08-13): the agenda-renumbering bug.** 19 of the 78 actas modify their
+> órden del día in session. The scraped agenda is the *previous* one, so from the first change
+> the index numbering stops matching the acta body, and reading windows disagree about which
+> punto is which. `fusionar_puntos` then merges two different asuntos into one record — proven
+> on **acta 48 punto 7**, the term's single `puntos_en_conflicto`. Detected and fixed at source
+> (`processor/orden_del_dia.py` + prompt rule); **the 19 affected actas still need a re-run**
+> to repair their records. See `docs/bitacora.md` 2026-08-13.
 
 ---
 
@@ -81,7 +87,7 @@ SCRAPE ─▶ PROCESS ─▶ PUBLISH ─▶ SERVE
 |---|---|---|
 | **1** | The Index | Static site: **search bar + browsable session timeline** over agenda text. **Built and verified locally 2026-07-19/20; not yet public** (gated on X1 + X2). |
 | **2** | The Deepening *(in progress)* | **OCR the scanned PDFs** (Tesseract) + plain-language summaries with outcome per agenda item (DeepSeek). Scoped to term 2024-2027 first. Pipeline built in `processor/`; site integration (full-content search + summary display) pending. |
-| **3** | The Lens *(new — added 2026-07-23)* | **Per-administration analytics, in a separate section.** Structured, queryable fields extracted as a byproduct of the Phase 2 summary pass — categoría del asunto, sentido de la votación, colonias/obras mencionadas, montos *declarados explícitamente*, y **asistencia de regidores** (pase de lista) — aggregated per término into prebuilt static JSON, rendered as client-side charts under the Umbral brand. See the Phase 3 spec below. |
+| **3** | The Lens *(⏸ PAUSED 2026-08-13)* | **Per-administration analytics, in a separate section.** Structured, queryable fields extracted as a byproduct of the Phase 2 summary pass — categoría del asunto, sentido de la votación, colonias/obras mencionadas, montos *declarados explícitamente*, y **asistencia de regidores** (pase de lista) — aggregated per término into prebuilt static JSON, rendered as client-side charts under the Umbral brand. See the Phase 3 spec below. |
 | **4** | Scale | Multi-municipality abstraction (was the second half of the old Phase 3). Phase 3 generalization is a refactor, not a rewrite. |
 
 ---
@@ -114,12 +120,21 @@ Tasks are PM-level with acceptance criteria (`✓`). Implementation choices are 
 
 ### Cross-cutting — validate early
 
-- **X1 — Legal check.** ⚠️ **Reviewed 2026-07-20 → `docs/x1-terminos-legal.md`. Not a clean go.** The portal's T&C prohibit reproduction, distribution and public communication of its contents except for private use, research or study. There are serious counterarguments (official texts aren't copyrightable under LFDA art. 14; actas are transparency-obligated public information), but **this needs a human decision and ideally counsel.** Interim mitigation already applied: we no longer claim CC BY 4.0 over the source text, only over our own structuring work.
-- **X2 — Hosting identity.** Partially resolved: `umbralmx.github.io/cabildo-libre/` is the free path and needs no purchase. A memorable domain is still an open preference. *(You)*
+- **X1 — Legal check.** ✅ **Decided 2026-08-13: GO.** Reviewed in `docs/x1-terminos-legal.md`: the portal's T&C prohibit reproduction except for private use, research or study, but the counterarguments carried the decision (official texts aren't copyrightable under LFDA art. 14; actas are transparency-obligated public information — state transparency law requires the ayuntamiento to publish the acta, the attendance and each regidor's vote). The site stays in **attribution mode**: no CC BY 4.0 claim over the source text, only over our own structuring work. Remaining work is posture, not permission — a transparency request and/or an R3D / Artículo 19 consult if challenged.
+- **X2 — Hosting identity.** ✅ **Decided 2026-08-13: `cabildo.umbral.org.mx`.** A subdomain, so `umbral.org.mx` stays free for the main Umbral site. **Order matters: DNS first, `CNAME` file second** — committing `site/CNAME` before the DNS record resolves takes the live site down. Steps: (1) add a CNAME record `cabildo` → `umbralmx.github.io`; (2) set the custom domain in repo Settings → Pages; (3) commit `site/CNAME` containing `cabildo.umbral.org.mx`; (4) enable *Enforce HTTPS* once the certificate is issued.
 
 ---
 
-## Phase 3 spec — The Lens (per-administration analytics)
+## Phase 3 spec — The Lens (per-administration analytics) ⏸ PAUSED
+
+> **Paused 2026-08-13 by the maintainer.** Not cancelled and not blocked — L1–L4 are built and
+> the panel is live. The pause is deliberate: before adding more indicators we settle *what the
+> dictionary should be*, against outside benchmarks rather than our own invention. Two questions
+> drive it: (a) what else can be structured from OCR text we already hold, and (b) what standards
+> exist for evaluating a body like this. Both are answered in `docs/indicadores-v2.md`. **L5 and
+> any further panel work wait on that review.**
+
+
 
 > A **separate analytics section** ("Panel por administración") that turns the corpus into
 > a picture of a council term: what kinds of decisions it made, how it voted, where in the
@@ -225,7 +240,8 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 
 ## Open items & checkpoints
 
-- **X1 is now the real blocker** and it is not a formality. Cheap parallel moves: a formal transparency request to the Ayuntamiento, and a consult with R3D or Artículo 19 México. Options table in `docs/x1-terminos-legal.md` §5.
+- ~~**X1 is now the real blocker**~~ — **resolved 2026-08-13 (go).** Kept as a note: the cheap parallel moves are still worth doing as posture — a formal transparency request to the Ayuntamiento, and a consult with R3D or Artículo 19 México. Options table in `docs/x1-terminos-legal.md` §5.
+- **The acta can contradict itself, and now we can see it.** Actas **2, 8, 40 and 59** name one session type in their header and the opposite in their signature block, on clean OCR both times. The type is not cosmetic — ordinaria and extraordinaria carry different convocation and quorum rules. Reported, never silently resolved (`data/estructura/`).
 - **"Decision outcome" is a Phase 2 concept.** Phase 1 shows what was *on the agenda*; confirming *approved vs. tabled* depends on OCR + PDF parsing. The site states this limitation explicitly in its methodology section and in the empty-search state — keep it that way.
 - **Phase 2 needs a scoping decision before any code:** OCR engine (Tesseract `spa` on Actions = free/slow/medium quality on stamped, signed scans; vs. a vision model = one-time cost per acta, cached) and corpus scope (all 636 actas vs. current term's 74). Do a small OCR quality spike on 3 actas of different vintages before committing.
 - **Watch for source drift.** The scraper prints a control summary each run (records, items, empty agendas, problems). If those numbers move oddly after a scheduled run, the page's HTML likely changed.
@@ -238,12 +254,21 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 
 **Done since last update:** Phase 1 is public (`umbralmx/cabildo-libre`, Pages live). Repo metadata set. Font path bug fixed. Phase 2 pipeline built (`processor/`) and OCR proven on 3 current-term actas.
 
+**Settled 2026-08-13 — do not re-litigate these:** X1 legal = **go**; `DEEPSEEK_API_KEY` = **set**
+in repo secrets; X2 domain = **`cabildo.umbral.org.mx`**; Phase 3 = **paused** pending the
+dictionary review.
+
 **For the maintainer (human-only):**
-1. **Decide X1.** Read `docs/x1-terminos-legal.md`. The site is already public in attribution mode, so this is now about response posture, not gating — start a transparency request and/or an R3D / Artículo 19 consult.
-2. **Add the `DEEPSEEK_API_KEY` secret** to `umbralmx/cabildo-libre` (Settings → Secrets → Actions) so the Phase 2 `procesar.yml` workflow can run summaries. Without it, OCR still runs; summaries skip.
-3. **Confirm X2** — keep `umbralmx.github.io/cabildo-libre/` or buy a domain (add a `CNAME`).
+1. **Point the DNS** — CNAME `cabildo` → `umbralmx.github.io`, then set the custom domain in
+   Settings → Pages, *then* commit `site/CNAME`. In that order; the reverse takes the site down.
+2. **Approve the re-run of the 19 renumbered actas** (below). Costs roughly $0.15.
 
 **Ready for the agent:**
+0. **Re-run the 19 renumbered actas** — `procesar.yml` with `resumir_forzar: true`, restricted to
+   actas 3, 7, 10, 11, 17, 21, 23, 30, 32, 34, 36, 41, 43, 46, 47, 48, 51, 68, 76. The prompt now
+   carries the numbering rule, so the re-run repairs the records rather than reproducing them.
+   Note the bitácora's warning: `--force` moves ~1 % of puntos in both directions even with no
+   code change, so publish the before/after counts.
 4. Once the secret exists: trigger `procesar.yml` (workflow_dispatch) to OCR + summarize a first batch of the term; verify output quality on real DeepSeek summaries (this is the one thing not yet proven end-to-end — no key was available at build time).
 5. **Site integration for Phase 2** ✅ *(done 2026-07-20)*: summaries render under each agenda item (timeline + results) with a `sentido` label and an AI/OCR disclaimer; lazy full-content search over `data/ocr/` with honest coverage; `processor/build_site_index.py` compiles `site/summaries.json` + `site/fulltext.json` (wired into `procesar.yml`). Section-number brand flourish added. Verified by a headless render smoke-test — **not yet a visual pass** (browser tool was down); eyeball the live page.
 6. ~~Watch the OCR text cap~~ — **found, fixed and verified (2026-07-25).** Diagnosis: The 45K cap truncates **17 of 25 actas** and only **25% of the term's OCR text reaches the model**. All 91 puntos with `sentido: no_determinable` come from truncated actas; the 8 actas that fit whole have **zero**. It is not model quality or an acta that stays silent — the outcome is recorded at the end of each punto, past the window. Reading all 74 actas whole costs **under $1**; the blocker is that a 595K-char acta doesn't fit one call, so the fix is **windowing + per-punto merge**, not a bigger cap. This gates D1/D3/D4/D6/M1/M2 — see `docs/indicadores-revision.md` §1. **Fixed the same day** — `summarize_colima.py` now reads each acta in
@@ -267,6 +292,7 @@ L2–L5 can follow. Do **not** generalize across administrations' data models ye
 | `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
 | `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |
 | `processor/README.md` | **How Phase 2 runs** — the OCR + summary stages, deps, provider-swap, honesty rules |
+| `docs/indicadores-v2.md` | **The dictionary review (2026-08-13)** — Popolo/ILTL/IMCO benchmarks, the *Procedimiento* family, what else the OCR already holds. Read before resuming Phase 3 |
 | `docs/indicadores.md` + `data/indicadores.json` | **Phase 3 indicator dictionary** — the 26 `ya`/`1 paso` analyses, each with source, computation, audience, caveat. Source of truth for L4/L5 |
 | `docs/indicadores-revision.md` | **Critical review of those 26 against the real data (2026-07-25)** — which hold up, which mislead, 6 new ones. Read before building L4 |
 | `docs/x1-terminos-legal.md` | T&C findings, risk, and options — **read before launching** |

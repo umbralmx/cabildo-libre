@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-30",
+  "no_acta": 30,
+  "fecha": "2025-04-17",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 14,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": "el siguiente asunto: eo",
+        "punto_mencionado": null
+      }
+    ],
+    "n_retiros": 1,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

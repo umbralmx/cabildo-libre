@@ -1,0 +1,23 @@
+{
+  "id": "2024-2027-7",
+  "no_acta": 7,
+  "fecha": "2024-11-28",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 10,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [],
+    "n_retiros": 0,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

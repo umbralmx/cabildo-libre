@@ -58,6 +58,7 @@ from collections import Counter
 from pathlib import Path
 
 from limpieza import limpiar
+from orden_del_dia import modificacion
 from roster_match import build_index, emparejar
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -169,7 +170,9 @@ def ventanas(texto: str) -> list[str]:
     return trozos[:MAX_VENTANAS]
 
 
-def build_messages(acta: dict, ocr_text: str, ventana: tuple[int, int] = (1, 1)) -> list[dict]:
+def build_messages(
+    acta: dict, ocr_text: str, ventana: tuple[int, int] = (1, 1), modificado: dict | None = None
+) -> list[dict]:
     i, n = ventana
     agenda = "\n".join(
         f"{it['n']}. ({it.get('numeral') or '·'}) {it['texto']}"
@@ -190,9 +193,32 @@ def build_messages(acta: dict, ocr_text: str, ventana: tuple[int, int] = (1, 1))
     else:
         contexto = ""
         cabecera = "=== TEXTO OCR DEL ACTA ==="
+    # El órden del día de abajo viene del índice del portal: es el órden *previo*
+    # a la sesión. Cuando el cabildo retira o incorpora asuntos —19 de las 78
+    # actas del término— todo lo posterior recorre un lugar y esa numeración deja
+    # de valer para el cuerpo del acta. Si cada ventana elige por su cuenta a cuál
+    # numeración obedecer, `fusionar_puntos` une por `n` dos asuntos distintos:
+    # es lo que produjo el conflicto del acta 48 punto 7. La regla debe ser una
+    # sola y la misma en todas las ventanas: **manda el ordinal que el cuerpo del
+    # acta escribe** ("SÉPTIMO PUNTO" → n=7), porque es el único que todas las
+    # ventanas ven igual. Detección en `orden_del_dia.py`.
+    numeracion = (
+        "\n\nNUMERACIÓN — REGLA ÚNICA: el campo 'n' de cada punto debe salir del "
+        "ordinal que el CUERPO DEL ACTA escribe ('PRIMER PUNTO' → 1, 'SÉPTIMO PUNTO' "
+        "→ 7, 'DÉCIMO SEGUNDO PUNTO' → 12). El órden del día que te doy abajo es el "
+        "previo a la sesión y sirve sólo de referencia temática. NUNCA numeres por "
+        "esa lista si el acta usa otro ordinal: manda el acta."
+    )
+    if modificado:
+        numeracion += (
+            "\n\nATENCIÓN: en esta sesión el cabildo MODIFICÓ su órden del día "
+            "(retiró y/o incorporó asuntos) antes de aprobarlo, así que el órden de "
+            "abajo NO coincide con el del acta a partir del primer cambio. Guíate "
+            "por el ordinal del acta y por el asunto, no por la posición en la lista."
+        )
     user = (
-        f"{INSTRUCCION}{contexto}\n\n"
-        f"=== ÓRDEN DEL DÍA (acta {acta['no_acta']}, {acta['fecha']}) ===\n{agenda}\n\n"
+        f"{INSTRUCCION}{numeracion}{contexto}\n\n"
+        f"=== ÓRDEN DEL DÍA PREVIO (acta {acta['no_acta']}, {acta['fecha']}) ===\n{agenda}\n\n"
         f"{cabecera}\n{ocr_text}"
     )
     return [{"role": "system", "content": SISTEMA}, {"role": "user", "content": user}]
@@ -456,10 +482,15 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
     texto = limpiar(ocr["texto_completo"])
     trozos = ventanas(texto)
     n = len(trozos)
+    # Si la sesión movió su órden del día, la numeración del índice ya no vale y
+    # el prompt tiene que decirlo (ver `build_messages`). Es un parseo local, sin
+    # costo ni red.
+    modificado = modificacion(texto)
 
     if dry_run:
-        print(f"[{acta['id']}] {len(texto):,} chars → {n} ventana(s)")
-        print(build_messages(acta, trozos[0], (1, n))[1]["content"][:1500])
+        print(f"[{acta['id']}] {len(texto):,} chars → {n} ventana(s)"
+              f"{'  [órden del día modificado en sesión]' if modificado else ''}")
+        print(build_messages(acta, trozos[0], (1, n), modificado)[1]["content"][:1500])
         return None
 
     parciales: list[list[dict]] = []
@@ -469,7 +500,7 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         if n > 1:
             print(f"  · ventana {i}/{n} ({len(trozo):,} chars)", flush=True)
         try:
-            raw = call_llm(build_messages(acta, trozo, (i, n)))
+            raw = call_llm(build_messages(acta, trozo, (i, n), modificado))
             rs, puntos = parse_summary(raw, acta)
         except (ValueError, KeyError, OSError, http.client.HTTPException) as e:
             # Losing one window of fourteen must not cost the whole acta. The gap
@@ -509,6 +540,9 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
             "completa": fallidas == 0 and cubierto >= len(texto),
         },
         "puntos_en_conflicto": conflictos,
+        # Queda anotado en el propio resumen: un lector del JSON tiene que poder
+        # saber que la numeración del índice no rige aquí, sin ir a otro archivo.
+        "orden_del_dia_modificado": bool(modificado),
         "resumen_sesion": resumen_sesion,
         "puntos": puntos,
     }
@@ -517,6 +551,9 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--id", help="summarize a single acta by id")
+    ap.add_argument("--ids", help="comma-separated acta numbers or ids (e.g. '3,7,48')")
+    ap.add_argument("--solo-modificadas", action="store_true",
+                    help="only actas whose órden del día was modified in session")
     ap.add_argument("--limit", type=int, help="process at most N pending actas")
     ap.add_argument("--force", action="store_true", help="re-summarize even if cached")
     ap.add_argument("--dry-run", action="store_true", help="print the prompt, no API call")
@@ -526,6 +563,23 @@ def main() -> None:
     actas = {a["id"]: a for a in json.loads(ACTAS_JSON.read_text(encoding="utf-8"))["actas"]}
 
     ocr_ids = [args.id] if args.id else sorted(p.stem for p in OCR_DIR.glob("*.json"))
+
+    if args.ids:
+        # Acepta "48" o "2024-2027-48": el número es lo que uno tiene a la mano
+        # cuando lee la bitácora, y el id es lo que imprime el pipeline.
+        querido = {s.strip() for s in args.ids.split(",") if s.strip()}
+        ocr_ids = [i for i in ocr_ids if i in querido or i.rsplit("-", 1)[-1] in querido]
+
+    if args.solo_modificadas:
+        # La lista NO se escribe a mano: se deriva del propio OCR en cada corrida,
+        # así que no puede quedar desfasada cuando entren actas nuevas. Es el
+        # selector del arreglo de numeración (ver `orden_del_dia.py`).
+        ocr_ids = [
+            i for i in ocr_ids
+            if modificacion(limpiar(
+                json.loads((OCR_DIR / f"{i}.json").read_text(encoding="utf-8"))["texto_completo"]))
+        ]
+        print(f"órden del día modificado en sesión: {len(ocr_ids)} acta(s)")
     pending = [i for i in ocr_ids
                if i in actas and (args.force or not (SUMMARY_DIR / f"{i}.json").exists())]
     if args.limit:

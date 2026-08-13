@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-47",
+  "no_acta": 47,
+  "fecha": "2025-10-03",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 13,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": "el NOVENO PUNTO, hecha por la Regidora C. Azucena López Legorreta, misma que fue sometida a consideración del pleno, se votó de la siguiente manera: a favor la Regidora C",
+        "punto_mencionado": 9
+      }
+    ],
+    "n_retiros": 1,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "no_determinable",
+    "invisible_al_conteo": false,
+    "desde_punto": 9,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

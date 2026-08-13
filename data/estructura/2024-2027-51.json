@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-51",
+  "no_acta": 51,
+  "fecha": "2025-11-13",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 18,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "incorporacion",
+        "asunto": "Dictamen que aprueba celebrar el Convenio de Hermanamiento entr el Municipio de Colima, Colima y el Municipio de Cihuatlán, Jalisco",
+        "punto_mencionado": null
+      }
+    ],
+    "n_retiros": 0,
+    "n_incorporaciones": 1,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

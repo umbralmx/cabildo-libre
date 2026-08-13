@@ -1,0 +1,39 @@
+{
+  "id": "2024-2027-41",
+  "no_acta": 41,
+  "fecha": "2025-07-24",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "encabezado",
+    "concuerdan": true
+  },
+  "n_agenda_indice": 15,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": "Dictamen por el que se presenta el Informe de Avance de la Gestión Financiera, correspondiente al primer semestre del ejercicio fiscal 2025",
+        "punto_mencionado": null
+      },
+      {
+        "tipo": "retiro",
+        "asunto": "Dictamen por el que se autoriza dar de baja en el Sistema de Administración Gubernamental EMPRESS, 91 perfiles de comerciantes temporales erróneamente registrados como fijos",
+        "punto_mencionado": null
+      },
+      {
+        "tipo": "retiro",
+        "asunto": null,
+        "punto_mencionado": 7
+      }
+    ],
+    "n_retiros": 3,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "parcial",
+    "invisible_al_conteo": false,
+    "desde_punto": 7,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}

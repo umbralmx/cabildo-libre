@@ -24,6 +24,10 @@ on:
         description: "Saltar el OCR y sólo re-resumir lo ya OCR'd (para el pase enriquecido)"
         type: boolean
         default: false
+      solo_modificadas:
+        description: "Sólo las actas que modificaron su órden del día en sesión (arreglo de numeración)"
+        type: boolean
+        default: false
   schedule:
     - cron: "0 7 * * 6" # sábados 1:00 Colima, fuera de horas pico
 
@@ -65,7 +69,11 @@ jobs:
         run: |
           python3 processor/summarize_colima.py \
             --limit "${{ github.event.inputs.lote || '10' }}" \
-            ${{ github.event.inputs.resumir_forzar == 'true' && '--force' || '' }}
+            ${{ github.event.inputs.resumir_forzar == 'true' && '--force' || '' }} \
+            ${{ github.event.inputs.solo_modificadas == 'true' && '--solo-modificadas' || '' }}
+
+      - name: Estructura de sesión (tipo + órden del día, sin API)
+        run: python3 processor/orden_del_dia.py
 
       - name: Asistencia por sesión (pase de lista, sin API)
         run: python3 processor/asistencia_colima.py
@@ -80,7 +88,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ocr data/summaries data/asistencia site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
+          git add data/ocr data/summaries data/asistencia data/estructura site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
           # Un lote tarda una hora larga. Si algo más entró a main mientras tanto, un push
           # a secas se rechaza y el lote se pierde entero —una hora de OCR y de llamadas ya

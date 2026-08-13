@@ -1,0 +1,29 @@
+{
+  "id": "2024-2027-36",
+  "no_acta": 36,
+  "fecha": "2025-06-14",
+  "periodo": "2024-2027",
+  "tipo_sesion": {
+    "tipo": "ordinaria",
+    "fuente": "firma",
+    "concuerdan": null
+  },
+  "n_agenda_indice": 18,
+  "orden_del_dia_modificado": {
+    "modificado": true,
+    "peticiones": [
+      {
+        "tipo": "retiro",
+        "asunto": "el Punto de Acuerdo por el que se autoriza suscribir Contrato de Fideicomiso de Administración, entre el Municipio de Colima y Bansi, S.A., Institución de Banca Múltiple, a través de Fideicomiso para la Innovación y Calidad Gubernamental del Municipio de Colima. es Pos La modificación al Orden del Día, fue aprobada por unanimidad de votos, para quedar como se indica a continua CIÓN: oo”",
+        "punto_mencionado": null
+      }
+    ],
+    "n_retiros": 1,
+    "n_incorporaciones": 0,
+    "votacion_de_la_modificacion": "unanime",
+    "invisible_al_conteo": false,
+    "desde_punto": null,
+    "reimpresiones_del_orden": 3,
+    "revisar": false
+  }
+}
