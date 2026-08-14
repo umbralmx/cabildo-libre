@@ -64,6 +64,44 @@ una sola vez.
 Cualquier endpoint compatible con OpenAI (incluido un modelo de visión, si más adelante
 se quiere calidad sobre imágenes en vez de texto OCR) funciona ajustando estas tres.
 
+## La puerta: `verificar.py`
+
+Corre después de `build_analytics.py` y **antes de publicar**. Lee lo ya generado, no
+llama a ningún modelo y termina en segundos.
+
+```bash
+python3 processor/verificar.py                        # comprueba
+python3 processor/verificar.py --actualizar-linea-base # acepta cifras nuevas
+```
+
+Existe porque el proyecto declaraba bien su **procedencia** (cobertura, `no_determinable`,
+nombres sin mapear) y no comprobaba el **significado**. Tres cosas se publicaron por esa
+grieta: un monto de `$4,009,960,066` que el OCR del acta 17 nunca contuvo; 5 ventanas de
+lectura fallidas que bajaron la cobertura a 98.09 % sin que nadie mirara; y un salto de
+$13.2 a $17.1 mil millones en la suma declarada, sin umbral que lo detuviera.
+
+| Comprobación | Severidad | Qué caza |
+|---|---|---|
+| `montos_en_fuente` | ERROR | Una cifra cuyo dígito a dígito no aparece en el OCR de su acta — es inventada |
+| `lectura_completa` | ERROR | Actas resumidas con ventanas fallidas: texto que nadie leyó |
+| `sin_conflictos` | ERROR | Puntos donde dos ventanas declararon resultados distintos |
+| `cobertura_al_dia` | ERROR | El agregado quedó atrás de `actas.json` (el error de «74 sesiones») |
+| `linea_base` | ERROR | Una cifra publicada se movió más de 3 % sin que nadie lo confirmara |
+| `montos_no_aditivos` | AVISO | Un monto que iguala la suma de los demás — total+desglose que el guard de `build_analytics` no alcanza |
+| `concentracion_del_dinero` | AVISO | Una sola categoría domina la suma, así que la suma no mide lo que su rótulo dice |
+| `nombres_sin_mapear` | AVISO | Nombres que el acta cita y el roster no tiene — normalmente suplencias reales |
+
+**ERROR bloquea la publicación, no el lote.** En `procesar.yml` la verificación corre antes
+del commit (para que `data/linea-base.json` viaje en él) pero no detiene el job ahí: el lote
+ya está pagado y queda commiteado e inspeccionable. Un paso final falla el job, y como
+`publicar` depende de él, el sitio en vivo se queda con los datos anteriores.
+
+La **línea base** (`data/linea-base.json`) no exige reproducibilidad exacta —re-resumir
+mueve ~1 % de los puntos en ambas direcciones sin cambiar una línea de código— sino que
+nadie mueva una cifra publicada más de un 3 % en silencio. Aceptar un cambio es explícito,
+que es justo el momento en que alguien mira los números. No se ancla sobre una corrida con
+errores: se crea en la primera corrida limpia.
+
 ## Notas de calidad y honestidad
 
 - El texto OCR es **ruidoso** (numerales romanos mal leídos, nombres imperfectos). El

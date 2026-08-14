@@ -84,11 +84,21 @@ jobs:
       - name: Compilar analítica por administración (Fase 3)
         run: python3 processor/build_analytics.py
 
+      # Corre antes de commitear para que la línea base viaje en el mismo commit,
+      # pero NO detiene el job aquí: el lote ya está pagado y tiene que quedar en
+      # el repo aunque no se pueda publicar. El paso final es el que falla.
+      - name: Verificar lo generado
+        id: verificar
+        continue-on-error: true
+        run: |
+          python3 processor/verificar.py \
+            --termino "${{ github.event.inputs.periodo || '2024-2027' }}"
+
       - name: Commitear lo procesado
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ocr data/summaries data/asistencia data/estructura site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
+          git add data/ocr data/summaries data/asistencia data/estructura data/linea-base.json site/summaries.json site/fulltext.json site/analytics-*.json 2>/dev/null || true
           git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
           # Un lote tarda una hora larga. Si algo más entró a main mientras tanto, un push
           # a secas se rechaza y el lote se pierde entero —una hora de OCR y de llamadas ya
@@ -100,6 +110,16 @@ jobs:
             git pull --rebase origin main
           done
           git push
+
+      # La puerta. `publicar` depende de que este job termine bien, así que fallar
+      # aquí deja el lote commiteado y en el repo —inspeccionable, no perdido— y
+      # deja el sitio en vivo con los datos anteriores en vez de con los nuevos.
+      - name: Bloquear la publicación si la verificación falló
+        if: ${{ steps.verificar.outcome == 'failure' }}
+        run: |
+          echo "::error::La verificación encontró errores. El lote quedó commiteado" \
+               "pero no se publica. Revisa la salida del paso «Verificar lo generado»."
+          exit 1
 
   # El lote commitea con el GITHUB_TOKEN, y GitHub a propósito no dispara workflows
   # con esos push. Se intentó despertar a `actualizar.yml` con un gatillo

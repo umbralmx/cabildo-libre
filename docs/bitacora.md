@@ -6,6 +6,69 @@
 
 ---
 
+## 2026-08-14 — El sistema declaraba de dónde venía cada cifra, no si era cierta
+
+**El diagnóstico.** Se revisó el plan completo contra los tres objetivos de `CLAUDE.md`.
+El hallazgo no fue que faltara análisis: fue que la arquitectura de honestidad —buena, y
+mejor que la de casi cualquier proyecto de datos cívicos— vigila la **procedencia** y es
+ciega al **significado**. Cada sección declara su `cobertura`, `no_determinable` es un valor
+y no un cero silencioso, los nombres que no casan se reportan en vez de forzarse. Nada
+preguntaba nunca *si una cifra quiere decir lo que dice su etiqueta*.
+
+Los $17.1 mil millones del panel pasan **todas** las comprobaciones que el proyecto tenía:
+son la suma de cantidades enunciadas explícitamente, con su base declarada, con una nota
+que aclara que no es el presupuesto, y con el guard de doble conteo revelado en pantalla. Y
+suman ingreso ($937M) + gasto ($971M) + la diferencia entre ambos ($34M), que es el acta 17
+punto 7 leyendo un informe de cuenta pública. El 91.4 % del total sale de
+`presupuesto_finanzas`, que son en su mayoría informes, no dinero que el cabildo aprobó.
+
+El caso más claro: el acta 17 declaró durante semanas **$4,009,960,066**. El OCR contiene
+`1,009,960,065.66` seis veces y `4,009,960,066` **cero**. Una cifra inventada, con
+procedencia impecable. El re-resumen del 2026-08-14 la corrigió sola, y nadie se habría
+enterado de que existió.
+
+**Lo construido: `processor/verificar.py`.** Ocho comprobaciones, ninguna llama a un modelo,
+todas corren en segundos sobre lo ya generado. Cinco son ERROR y bloquean la publicación;
+tres son AVISO porque piden criterio, no corrección. Tabla completa en `processor/README.md`.
+
+**Lo que encontró en su primera corrida**, todo en vivo:
+
+- **2 de 785 montos** citan una cifra que su acta no contiene —acta 53 p6 (`$53,075,182.12`)
+  y acta 60 p5 (`$1,302,340.27`)—, y no aparecen ni tolerando los separadores rotos del
+  escáner. Son construidas.
+- **4 actas con ventanas fallidas** (34, 46, 51, 76 — 5 ventanas): texto que no se leyó.
+- **6 puntos** donde un monto iguala la suma de los demás. `_suma_punto` sólo actúa con
+  cinco montos o más, así que el caso de tres —el del acta 17— se le escapaba entero.
+- El **91.4 %** de concentración del dinero en una categoría.
+
+**La línea base es la pieza que faltaba el 2026-08-14.** El re-resumen movió la suma
+declarada de $13.2 a $17.1 mil millones (+29.4 %) y nada dijo nada. Ahora `data/linea-base.json`
+guarda 13 cifras publicadas y cualquier movimiento de más del **3 %** falla la corrida hasta
+que alguien lo confirme con `--actualizar-linea-base`. El umbral está calibrado sobre el
+ruido real: en la misma corrida `n_puntos` se movió −0.87 % y, correctamente, no se quejó.
+No se ancla sobre una corrida con errores; se creará en la primera limpia.
+
+**Dónde va la puerta.** En `procesar.yml` corre *antes* del commit —para que la línea base
+viaje en él— pero con `continue-on-error`: el lote ya está pagado y tiene que quedar en el
+repo. Un paso final falla el job, y como `publicar` depende de él, el sitio en vivo se queda
+con los datos anteriores en vez de estrenar números que nadie revisó.
+
+**Lo que esto reordena.** Desde el 2026-07-23 el trabajo fue casi todo Fase 3, que
+`CLAUDE.md` marca como *deferred*, mientras el objetivo 1 (la búsqueda, «la espina dorsal»)
+arrastra desde el 2026-07-20 su único defecto conocido —`fulltext.json`, 10.9 MB que se
+cargan enteros en la primera búsqueda— y el objetivo 2 (los resúmenes, «el diferenciador»)
+nunca se muestreó contra un PDF, pese a proponerse el 2026-07-20 *antes* de escalar. Fase 3
+sí encontró defectos reales (la ventana de 45K, el acta 48), pero es un detector caro:
+publica el error y después lo nota.
+
+**Siguiente, en orden:** (1) re-correr las 4 actas con ventanas fallidas; (2) decidir qué
+hace el panel con la suma de dinero —acotarla a categorías de aprobación o retirarla, que es
+decisión editorial; (3) el índice invertido de búsqueda (medido: 1.03 MB contra 10.9 MB, 10×,
+con la misma semántica); (4) el muestreo de resúmenes contra PDF; (5) y sólo entonces Fase 3,
+por R1/R2/T4/I3, que no cuestan nada porque `data/estructura/` ya los tiene.
+
+---
+
 ## 2026-08-13 — Una metodología pública, y dos cifras que se estaban contando mal
 
 **Qué se agregó.** `site/metodologia.html` + `metodologia.js`: la explicación del método para
