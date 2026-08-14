@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-08-14T01:00:12+00:00",
+ "generado": "2026-08-14T03:04:53+00:00",
  "cobertura": {
   "actas_en_termino": 78,
   "con_resumen": 78,
@@ -849,7 +849,7 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/07/acta-no-78.pdf"
    }
   ],
-  "nota": "Las 74 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 78 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
   "actas_en_termino": 78,
@@ -7381,5 +7381,16 @@
    }
   ],
   "nota": "La tasa de asistencia excluye las sesiones en que el OCR no permite leer el pase de lista (no_determinable), para no contarlas ni como presencia ni como falta."
+ },
+ "estructura": {
+  "por_tipo_sesion": {
+   "extraordinaria": 42,
+   "ordinaria": 32,
+   "solemne": 4
+  },
+  "orden_del_dia_modificado": 19,
+  "modificaciones_con_asunto_legible": 12,
+  "actas_que_se_contradicen": 4,
+  "nota": "El tipo de sesión y la modificación del órden del día se leen del texto del acta sin modelo de lenguaje. «Se contradicen» son las actas que declaran un tipo de sesión en el encabezado y otro en el bloque de firmas: la discrepancia se reporta, no se resuelve eligiendo un ganador."
  }
 }

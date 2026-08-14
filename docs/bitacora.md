@@ -6,6 +6,58 @@
 
 ---
 
+## 2026-08-13 — Una metodología pública, y dos cifras que se estaban contando mal
+
+**Qué se agregó.** `site/metodologia.html` + `metodologia.js`: la explicación del método para
+quien no va a abrir `docs/metodologia.md` —organizaciones, prensa, servidores públicos—. Ocho
+secciones: por qué el problema es de navegación y no de secreto, el recorrido de un acta en cinco
+etapas, la regla de honestidad, los tres problemas que costaron trabajo (escaneos sin texto, la
+ventana de 45K, la renumeración del órden del día), qué se puede medir y qué no, el fundamento en
+el artículo 34 de la Ley de Transparencia de Colima, los límites conocidos y la reproducibilidad.
+Enlazada desde el buscador y desde el panel; las secciones cortas de metodología que ya vivían en
+esas dos páginas se quedan donde estaban y ahora apuntan a la página larga.
+
+**Ninguna cifra de la página está escrita a mano.** Salen de `analytics-<termino>.json` y
+`actas.json` por una razón concreta: el panel estuvo publicando «74 sesiones» semanas después de
+que el término creciera a 78, porque el número estaba en prosa. Los marcadores del HTML traen un
+valor de respaldo para que la página se lea sin JavaScript, y el JS los sustituye si el dato carga.
+Para lo que faltaba se extendió `build_analytics.py` con una sección `estructura` que agrega lo que
+`orden_del_dia.py` ya leía del acta: tipo de sesión (42 extraordinarias, 32 ordinarias, 4 solemnes),
+19 actas que modifican su órden del día, 12 con el asunto legible, 4 que se contradicen a sí mismas.
+
+**El pase visual encontró dos defectos, y uno era de honestidad.** La página publicaba **2.7 %**
+de decisiones «sin resultado legible». La cifra correcta es **4.3 %**: `por_sentido` sólo clasifica
+los puntos **sustantivos** —un trámite no tiene resultado que leer—, así que su base son 577, no los
+917 puntos del órden del día. Dividir entre 917 mezclaba dos universos y rebajaba el número casi a
+la mitad. Importa más de lo que parece: la sección 06 apoya justamente en ese porcentaje el
+argumento de que lo que falla no es nuestro proceso sino el registro público que la ley obliga a
+llevar. Ahora la base se calcula como la suma de `por_sentido` —no puede desfasarse— y se declara
+en pantalla: «25 de 577 decisiones».
+
+**El segundo era de CSS y llevaba tiempo en vivo.** `.medidor-fill` nunca tuvo `background`: sólo
+`.medidor-fill.signal` lo definía. La barra sin tono salía **invisible**, así que en el panel el
+medidor «Actas procesadas» mostraba 100 % junto a una barra vacía desde que se publicó L4. Se pinta
+en `--u-ink`, que era la intención declarada en el comentario de `panel.js` y respeta el
+presupuesto de color: la señal se reserva para la profundidad de lectura.
+
+**Poda de prosa.** La primera versión leía como informe, no como página: se recortó cerca de un
+cuarto del texto sin quitar una sola afirmación. Frases más cortas, menos subordinadas, ninguna
+sección eliminada. Los datos y la estructura son los mismos.
+
+**Y el mecanismo se probó solo.** Al renderizar, la página dijo **640** PDF en el corpus donde el
+respaldo escrito a mano decía 636. No era un error: 636 era el conteo de cuando el término tenía
+74 actas, y ahora tiene 78. `actas.json` trae 640 filas con 640 `id` únicos, sin duplicados. Se
+corrigió el respaldo. **`CLAUDE.md` y `docs/metodologia.md` siguen diciendo 636** en ocho lugares
+entre los dos — misma clase de cifra vieja, y ahora está claro por qué nada en prosa debe llevar un
+número a mano.
+
+**Pendiente.** El texto de la página afirma que el término tiene 19 actas con el órden del día
+modificado y que sus registros están reparados; los 19 resúmenes **siguen sin re-generarse**. La
+página no miente —no afirma que estén corregidos— pero la corrida con `resumir_forzar` sigue siendo
+la deuda abierta, y hasta que ocurra el acta 48 sigue siendo el `punto_en_conflicto` del término.
+
+---
+
 ## 2026-08-13 — El acta 48 no tenía un voto mal leído: tenía dos asuntos en un registro
 
 **Tres decisiones del mantenedor, para no volver sobre ellas.** X1 legal: **adelante** — el sitio

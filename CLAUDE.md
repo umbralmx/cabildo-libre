@@ -288,6 +288,7 @@ dictionary review.
 |---|---|
 | `CLAUDE.md` *(this file)* | Project context, scope, backlog, status |
 | `docs/bitacora.md` | **Development log** — dated entries: what shipped, what was hard, next steps (Spanish) |
+| `site/metodologia.html` + `metodologia.js` | **The public-facing methodology page** — the method for a non-technical audience. Every figure reads from `analytics-<termino>.json`; never hardcode a number in it |
 | `docs/metodologia.md` | **How the data is produced** — pipeline, parsing rules, editorial decisions, known gaps, how to reproduce |
 | `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
 | `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |

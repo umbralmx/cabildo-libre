@@ -44,6 +44,7 @@ ROOT = Path(__file__).resolve().parent.parent
 ACTAS_JSON = ROOT / "data" / "actas.json"
 SUMMARY_DIR = ROOT / "data" / "summaries"
 ASIST_DIR = ROOT / "data" / "asistencia"
+ESTRUCTURA_DIR = ROOT / "data" / "estructura"
 ROSTER_JSON = ROOT / "data" / "regidores-2024-2027.json"
 SITE_DIR = ROOT / "site"
 
@@ -118,8 +119,8 @@ def build(termino: str) -> dict:
     conflictos_puntos: list[dict] = []
 
     # --- session calendar (I3) + integrity (T3) -------------------------------
-    # Built from actas.json, so it covers all 74 sessions of the term, not only
-    # the processed ones — the one part of the panel with full coverage.
+    # Built from actas.json, so it covers every session of the term, not only the
+    # processed ones — the one part of the panel with full coverage.
     procesadas = {p.stem for p in SUMMARY_DIR.glob("*.json")}
     calendario, sin_agenda, sin_pdf, sin_fecha = [], [], [], []
     for i in sorted(term_ids, key=lambda x: (actas[x].get("fecha") or "", x)):
@@ -409,7 +410,7 @@ def build(termino: str) -> dict:
         # index (Fase 1), not from the OCR, so it describes all 74 sessions.
         "calendario": {
             "sesiones": calendario,
-            "nota": ("Las 74 sesiones del término según el índice oficial, procesadas o no. "
+            "nota": (f"Las {len(term_ids)} sesiones del término según el índice oficial, procesadas o no. "
                      "Esta sección no depende del OCR."),
         },
         "integridad": {
@@ -474,6 +475,44 @@ def build(termino: str) -> dict:
             "nota": ("La tasa de asistencia excluye las sesiones en que el OCR no permite leer el "
                      "pase de lista (no_determinable), para no contarlas ni como presencia ni como falta."),
         },
+        "estructura": _estructura(term_ids),
+    }
+
+
+def _estructura(term_ids: set[str]) -> dict:
+    """Lo que `orden_del_dia.py` lee del propio acta, agregado.
+
+    No es todavía la familia *Procedimiento* del diccionario —eso es Fase 3 y está
+    en pausa—: son los tres conteos que la página de metodología necesita para no
+    quedarse desfasada. El panel llegó a decir «74 sesiones» semanas después de que
+    el término creciera a 78 porque la cifra estaba escrita a mano; cualquier cifra
+    que se publique en prosa tiene que salir de aquí.
+    """
+    tipos: Counter = Counter()
+    modificadas = contradictorias = 0
+    con_asunto = 0
+    for p in sorted(ESTRUCTURA_DIR.glob("*.json")):
+        if p.stem not in term_ids:
+            continue
+        d = load_json(p)
+        ses = d.get("tipo_sesion") or {}
+        tipos[ses.get("tipo", "no_determinable")] += 1
+        if ses.get("concuerdan") is False:
+            contradictorias += 1
+        mod = d.get("orden_del_dia_modificado")
+        if mod:
+            modificadas += 1
+            if any(x.get("asunto") for x in mod.get("peticiones", [])):
+                con_asunto += 1
+    return {
+        "por_tipo_sesion": dict(tipos.most_common()),
+        "orden_del_dia_modificado": modificadas,
+        "modificaciones_con_asunto_legible": con_asunto,
+        "actas_que_se_contradicen": contradictorias,
+        "nota": ("El tipo de sesión y la modificación del órden del día se leen del texto del "
+                 "acta sin modelo de lenguaje. «Se contradicen» son las actas que declaran un "
+                 "tipo de sesión en el encabezado y otro en el bloque de firmas: la discrepancia "
+                 "se reporta, no se resuelve eligiendo un ganador."),
     }
 
 

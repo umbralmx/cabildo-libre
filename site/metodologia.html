@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Metodología — Cabildo de Colima · umbral_</title>
+  <meta name="description" content="Cómo se construye Actas Abiertas: del PDF escaneado a la decisión consultable. El método, la regla de honestidad y los límites declarados.">
+  <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
+  <link rel="stylesheet" href="assets/fonts/fonts.css">
+  <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <a class="brand" href="./" aria-label="umbral_ — inicio">
+    <img src="assets/umbral-isotype-light.svg" alt="" width="24" height="24">
+    <span class="wordmark" aria-hidden="true">umbral<span class="underscore">_</span></span>
+  </a>
+  <nav aria-label="Secciones">
+    <a href="./">Buscador</a>
+    <a href="panel.html">Panel por administración</a>
+    <a href="#metodo">Método</a>
+    <a href="#limites">Límites</a>
+    <a href="https://github.com/umbralmx/cabildo-libre" rel="external">Código</a>
+  </nav>
+</header>
+
+<main>
+  <section class="hero">
+    <p class="kicker">Actas Abiertas · metodología pública</p>
+    <h1>Del PDF escaneado a la <span class="accent">decisión consultable</span></h1>
+    <p class="lede">Las actas de cabildo de Colima se publican como imágenes escaneadas, sin
+    texto seleccionable. Un proceso reproducible las convierte en decisiones que se pueden
+    buscar, contar y verificar contra el original. Aquí está cómo, y dónde están sus límites.</p>
+
+    <div class="statrow" id="statrow"></div>
+  </section>
+
+  <section id="problema" class="section">
+    <h2><span class="section-num">01</span>El problema no es el secreto: es la navegación</h2>
+    <p>El Ayuntamiento publica sus actas. No hay nada oculto. Pero son
+    <strong id="n-sesiones-corpus">640</strong> PDF sueltos desde 2012, sin buscador y sin
+    resúmenes: para saber qué contiene uno, hay que abrirlo.</p>
+    <p>Saber cuándo se aprobó la obra de tu colonia significa hojear decenas de documentos. El
+    dato es público y es <em>inutilizable</em>. Eso es lo que cerramos: no revelamos nada,
+    reordenamos lo que ya era de todos.</p>
+  </section>
+
+  <section id="metodo" class="section">
+    <h2><span class="section-num">02</span>El recorrido de un acta</h2>
+    <p>Cinco etapas automáticas. Cualquiera puede correrlas y obtener lo mismo.</p>
+
+    <div class="fig">
+      <table class="tabla">
+        <thead>
+          <tr><th>Etapa</th><th>Qué hace</th><th>Qué no hace</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. Índice</strong></td>
+            <td>Lee el listado oficial: fecha, número de acta, período, órden del día y enlace al PDF.</td>
+            <td>No corrige la fuente. Los huecos y enlaces rotos del ayuntamiento se quedan a la vista.</td>
+          </tr>
+          <tr>
+            <td><strong>2. OCR</strong></td>
+            <td>Convierte cada página escaneada en texto.</td>
+            <td>No corrige palabras mal leídas. Un nombre que el escáner arruinó se queda arruinado.</td>
+          </tr>
+          <tr>
+            <td><strong>3. Estructura</strong></td>
+            <td>Un modelo redacta el resumen de cada punto y extrae resultado, categoría, dinero, quién lo presentó y quién votó en contra.</td>
+            <td>No decide una votación que el acta no declara. Si no se lee, queda sin resultado legible.</td>
+          </tr>
+          <tr>
+            <td><strong>4. Verificación</strong></td>
+            <td>Contrasta cada dato contra una segunda señal independiente del documento.</td>
+            <td>No resuelve las discrepancias en silencio. Las reporta.</td>
+          </tr>
+          <tr>
+            <td><strong>5. Publicación</strong></td>
+            <td>Compila archivos estáticos. El buscador corre en su navegador.</td>
+            <td>No hay servidor, ni base de datos, ni registro de lo que usted busca.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="fig-src mono">Código y datos: github.com/umbralmx/cabildo-libre · CC BY 4.0</p>
+    </div>
+
+    <p class="nota">Procesar un término entero —<span id="n-actas-b">78</span> actas,
+    <span id="n-caracteres">11 millones</span> de caracteres— cuesta <strong>menos de un
+    dólar</strong> y corre sobre infraestructura gratuita. Es deliberado: un archivo público que
+    depende de un presupuesto muere cuando el presupuesto se acaba.</p>
+  </section>
+
+  <section id="regla" class="section">
+    <h2><span class="section-num">03</span>La regla que gobierna todo</h2>
+    <p class="lede">Nunca se rellena un vacío de la fuente por inferencia.</p>
+    <p>Es la única regla no negociable, y explica casi todo lo demás. Un archivo de rendición de
+    cuentas que adivina se vuelve una opinión con formato de dato. En la práctica:</p>
+    <ul class="hallazgos">
+      <li>Si el acta no declara cómo se votó un punto, queda <strong>sin resultado legible</strong>.
+      No se deduce del contexto.</li>
+      <li>Las cantidades son sólo las que el acta enuncia. Nunca una suma calculada y presentada
+      como si fuera el presupuesto del municipio.</li>
+      <li>Un nombre que no corresponde a ningún integrante se reporta tal cual, sin forzarlo al más
+      parecido. Así aparecieron las suplencias reales.</li>
+      <li>Las colonias son menciones. Que una no aparezca no significa que el cabildo la ignorara:
+      significa que no la nombró.</li>
+      <li>Los enlaces rotos y las sesiones faltantes del portal se quedan a la vista. Son de la
+      fuente, y taparlos sería hacerle un favor a quien los dejó caer.</li>
+    </ul>
+    <p class="nota">Por eso cada cifra declara <strong>sobre cuántas actas se calculó</strong>. Un
+    porcentaje sin su cobertura es una afirmación sin evidencia.</p>
+  </section>
+
+  <section id="problemas" class="section">
+    <h2><span class="section-num">04</span>Tres problemas que hubo que resolver</h2>
+    <p>Ninguno era previsible desde fuera. Se documentan porque cualquiera que intente esto en
+    otro municipio se los va a encontrar.</p>
+
+    <div class="fig">
+      <h3 class="fig-title">Las actas no son documentos: son fotografías de papel</h3>
+      <p class="fig-sub">Comprobado sobre una muestra de 2016 a 2026.</p>
+      <p>El plan suponía PDF con texto extraíble. Ninguno lo trae: todos son salida de escáner,
+      páginas de imagen sin una sola letra seleccionable. Eso obliga a pasar <strong>el 100 % de
+      las actas</strong> por OCR antes de leer una palabra, con el ruido que implica — numerales
+      mal leídos, nombres deformados, columnas entremezcladas.</p>
+      <p class="fig-src mono">Detalle: docs/a3-spike.md</p>
+    </div>
+
+    <div class="fig">
+      <h3 class="fig-title">Leíamos la primera página y creíamos leer el acta entera</h3>
+      <p class="fig-sub">El defecto más grave, y el más silencioso.</p>
+      <p>Un acta puede tener 400 000 caracteres. Se enviaban al modelo los primeros 45 000, sin
+      avisar de nada.</p>
+      <p>El síntoma engañaba: el <strong>58 %</strong> de las decisiones salía «sin resultado
+      legible» y parecía culpa del modelo. No lo era — el resultado de la votación se registra
+      <em>al final</em> de cada punto, justo en la parte que se estaba tirando.</p>
+      <p>La solución no fue leer más, sino leer <em>todo</em>: cada acta se recorre en ventanas
+      superpuestas y los registros se fusionan, con una regla — <strong>un resultado declarado le
+      gana a uno no leído</strong>. Si dos lecturas discrepan, el punto se marca para revisión en
+      vez de resolverse por desempate silencioso.</p>
+      <div class="fig-body" id="c-antes-despues"></div>
+      <p class="fig-src mono">Fuente: 78 actas del término 2024-2027 · umbral.mx · CC BY 4.0</p>
+    </div>
+
+    <div class="fig">
+      <h3 class="fig-title">Cuando el cabildo cambia su agenda a media sesión</h3>
+      <p class="fig-sub">Ocurre en <span id="n-modificadas">19</span> de las <span id="n-actas-c">78</span> actas del término.</p>
+      <p>El órden del día que publica el portal es el <em>previo</em> a la sesión. Si el cabildo
+      retira o incorpora asuntos, todo lo posterior recorre un lugar: el punto 7 publicado ya no
+      es el punto 7 del acta. Eso mezclaba dos asuntos distintos en un mismo registro.</p>
+      <p>La detección usa dos señales independientes entre sí —la fórmula con que el acta anuncia
+      la modificación, y las veces que reimprime su órden del día— y
+      <strong>coinciden exactamente</strong>. Cuando discrepen, el acta se marca para revisión.</p>
+      <p class="nota"><strong>Una petición de retiro puede perder.</strong> En una sesión el
+      cabildo aprobó retirar un punto y negó retirar otro. Por eso se registra la petición y,
+      por separado, cómo se votó.</p>
+    </div>
+  </section>
+
+  <section id="medimos" class="section">
+    <h2><span class="section-num">05</span>Qué se puede medir y qué no</h2>
+    <p>No todo lo interesante está en el acta. Separar una cosa de la otra es parte del método.</p>
+    <div class="fig">
+      <table class="tabla">
+        <thead><tr><th>Se mide</th><th>Porque el acta lo declara</th></tr></thead>
+        <tbody>
+          <tr><td>El resultado de cada punto</td><td>«fue aprobado por unanimidad de votos»</td></tr>
+          <tr><td>Quién asistió, quién faltó, quién se conectó a distancia</td><td>El pase de lista, al inicio de cada sesión</td></tr>
+          <tr><td>Quién votó en contra y quién se abstuvo</td><td>El acta los nombra: «con el voto en contra de la Regidora…»</td></tr>
+          <tr><td>Quién presentó el dictamen y por qué comisión</td><td>«la Regidora X, Presidenta de la Comisión Y, dio lectura…»</td></tr>
+          <tr><td>El dinero nombrado en cada punto</td><td>Las cifras que el propio dictamen enuncia</td></tr>
+          <tr><td>Quién es la contraparte del acuerdo</td><td>La empresa, persona o dependencia que el acta nombra</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="fig">
+      <table class="tabla">
+        <thead><tr><th>No se mide</th><th>Por qué</th></tr></thead>
+        <tbody>
+          <tr><td>Quién votó a favor</td><td>El acta nombra a los disidentes, no a la mayoría. Contar «a favor» por descarte sería inferencia.</td></tr>
+          <tr><td>El presupuesto real del municipio</td><td>Sólo tenemos lo que las actas nombran, que es una fracción y no una contabilidad.</td></tr>
+          <tr><td>Quién dijo qué en la discusión</td><td>El texto lo permitiría en parte, pero todavía no con precisión suficiente para publicarlo.</td></tr>
+          <tr><td>Dónde queda cada obra en el mapa</td><td>Tenemos menciones de colonias, no coordenadas. Un mapa daría una precisión que el dato no tiene.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section id="legal" class="section">
+    <h2><span class="section-num">06</span>Esto no es un favor del ayuntamiento</h2>
+    <p>La <strong>Ley de Transparencia y Acceso a la Información Pública del Estado de Colima</strong>
+    (art. 34, numeral 1, fracción III) obliga a los ayuntamientos a hacer públicas tres cosas:</p>
+    <blockquote class="nota">«Las <strong>actas de sesiones de cabildo</strong>, los <strong>controles
+    de asistencia</strong> a las sesiones de cabildo y el <strong>sentido de votación</strong> de
+    las y los miembros del Cabildo sobre las iniciativas o acuerdos discutidos.»</blockquote>
+    <p>Son exactamente las tres que extraemos. Por eso, cuando un punto queda <strong>sin
+    resultado legible</strong>, no falla nuestro proceso: falla la posibilidad de saber cómo votó
+    el cabildo — justo lo que la ley manda que se pueda saber. Ese número se publica destacado.</p>
+    <p class="nota nota-alert">Pregunta abierta, declarada como tal: la fracción II del mismo
+    artículo obliga además a transmitir las sesiones en vivo y conservar las videograbaciones en
+    la página oficial. La página de actas no enlaza ninguna. No afirmamos incumplimiento —
+    podrían estar en redes sociales del ayuntamiento, y no lo hemos comprobado.</p>
+  </section>
+
+  <section id="limites" class="section">
+    <h2><span class="section-num">07</span>Límites conocidos</h2>
+    <p>Se enumeran porque un archivo que no declara sus límites no es verificable.</p>
+    <ul class="hallazgos">
+      <li><strong>Los resúmenes los redacta un modelo sobre texto de OCR y pueden contener
+      errores.</strong> Cada uno enlaza al acta original. Ante cualquier diferencia, manda el
+      documento.</li>
+      <li><strong>Regenerar un resumen no reproduce exactamente el anterior.</strong> Volver a
+      procesar mueve cerca del 1 % de los puntos en ambas direcciones, así que las cifras se
+      mueven un poco al refrescar el archivo.</li>
+      <li><strong>El análisis profundo cubre sólo el término 2024-2027.</strong> El buscador de
+      órdenes del día llega a 2012; el texto completo y las decisiones estructuradas, no.</li>
+      <li><strong>Algunas actas se contradicen a sí mismas.</strong>
+      <span id="n-contradictorias">Cuatro</span> declaran un tipo de sesión al principio y el
+      contrario en las firmas. Se reporta la discrepancia; no se elige un ganador.</li>
+      <li><strong>Hay actas cuyo OCR no permite leer todo.</strong> Donde el escaneo derrota a la
+      máquina, el dato queda sin determinar en vez de completarse por contexto.</li>
+    </ul>
+  </section>
+
+  <section id="reproducible" class="section">
+    <h2><span class="section-num">08</span>Reproducible de principio a fin</h2>
+    <p>Todo el proceso es público: el código que lee, extrae, verifica y publica. No hay pasos
+    manuales ni correcciones a mano en los datos — cuando algo se corrige, se corrige en el
+    código, para que la corrección sobreviva al siguiente procesamiento.</p>
+    <p class="datalinks">
+      <a href="actas.json" download>Descargar JSON — sesiones con su órden del día</a>
+      <a href="actas.csv" download>Descargar CSV — un renglón por punto de agenda</a>
+      <a href="https://github.com/umbralmx/cabildo-libre" rel="external">Código fuente (MIT)</a>
+      <a href="https://github.com/umbralmx/cabildo-libre/blob/main/docs/metodologia.md" rel="external">Metodología técnica completa</a>
+    </p>
+    <p>El contenido de las actas es del Ayuntamiento de Colima. El trabajo de estructuración se
+    comparte bajo CC BY 4.0; el código, bajo MIT.</p>
+    <p class="snapshot mono" id="snapshot"></p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Fuente: Ayuntamiento de Colima, actas de cabildo · umbral.mx · estructura CC BY 4.0
+  · proyecto independiente, sin relación con el Ayuntamiento</p>
+</footer>
+
+<script src="metodologia.js"></script>
+</body>
+</html>
