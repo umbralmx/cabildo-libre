@@ -10,6 +10,14 @@ const MESES = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
    scaffolding every session repeats (roll call, quorum, reading the agenda,
    approving previous minutes, recess, closing). Used only for visual
    hierarchy — the full text is always rendered either way. */
+/* El término que la Fase 2 está procesando. El total de actas NO se escribe a
+   mano: se cuenta sobre los propios datos, porque «74 actas» siguió publicándose
+   semanas después de que el término creciera a 78. */
+const TERMINO_OCR = "2024-2027";
+function actasDelTermino(t) {
+  return state.actas.filter((a) => a.periodo === t).length;
+}
+
 const SUSTANTIVO = /dictamen|punto de acuerdo|iniciativa|convenio|reglamento|presupuesto|propuesta|autoriza|aprueba la|informe/i;
 const PROCEDIMIENTO = /^(lista de (asistencia|presentes)|declaraci[oó]n de qu[oó]rum|instalaci[oó]n legal|lectura (y aprobaci[oó]n[^.]*acta|del [oó]rden|del orden)|receso|clausura|asuntos generales)/i;
 
@@ -18,9 +26,13 @@ const $ = (sel) => document.querySelector(sel);
 const state = {
   actas: [], q: "", periodo: "", desde: "", hasta: "",
   summaries: {},      // acta id → { modelo, puntos: { n → {resumen, sentido} } }
-  fulltext: null,     // acta id → OCR text; loaded once, on first search
-  fulltextLoading: false,
+  ftIndex: null,      // { actas: [id…], tokens: { token → [índice de acta…] } }
+  ftKeys: null,       // los tokens del índice, ordenados, para el rango de prefijo
+  ftIndexPromise: null,
+  fulltext: {},       // acta id → texto OCR; se pide sólo si el índice lo señala
+  _ftPromesas: {},    // acta id → fetch en vuelo, para no pedirla dos veces
   _ftFolded: {},
+  _ftSeq: 0,          // corta el render de una búsqueda ya abandonada
 };
 
 /* Per-character accent/case folding that preserves string indices, so match
@@ -232,15 +244,87 @@ function renderResults() {
   renderFulltext(ms);
 }
 
-/* Full-content search over OCR text. Loaded lazily — the payload is large and
-   only grows as more actas are processed, so it isn't part of the initial page.
-   Honest about coverage: only the OCR'd actas are searchable here. */
-async function ensureFulltext() {
-  if (state.fulltext) return state.fulltext;
-  const r = await fetch("fulltext.json");
-  state.fulltext = (await r.json()).textos || {};
-  return state.fulltext;
+/* Full-content search over OCR text, in two lazy stages: a ~1 MB inverted index
+   on the first search, then only the actas that index says could match. The
+   corpus used to arrive as a single 10.9 MB file.
+
+   The index NARROWS; it never decides. It returns a superset of candidates —
+   prefix queries union every token sharing the prefix, and phrase queries can't
+   check adjacency from postings at all — and `fullTextMatches` below, unchanged,
+   is what actually decides. So the only possible regression is a false negative,
+   which requires a missing posting; `processor/verificar.py` proves the index
+   complete on every run. Honest about coverage: only OCR'd actas are here. */
+function ensureFtIndex() {
+  if (state.ftIndexPromise) return state.ftIndexPromise;
+  state.ftIndexPromise = fetch("fulltext-index.json")
+    .then((r) => r.json())
+    .then((idx) => {
+      state.ftIndex = idx;
+      // Object key order can't be trusted for the prefix scan: JS hoists
+      // integer-like keys ("2024") to the front, and the index is full of them.
+      // Sorting once here is what makes the binary search below valid.
+      state.ftKeys = Object.keys(idx.tokens || {}).sort();
+      return idx;
+    })
+    .catch((e) => { state.ftIndexPromise = null; throw e; });
+  return state.ftIndexPromise;
 }
+
+function ensureActaTexto(id) {
+  if (id in state.fulltext) return Promise.resolve(state.fulltext[id]);
+  if (state._ftPromesas[id]) return state._ftPromesas[id];
+  state._ftPromesas[id] = fetch(`fulltext/${encodeURIComponent(id)}.json`)
+    .then((r) => (r.ok ? r.json() : { texto: "" }))
+    .then((d) => (state.fulltext[id] = d.texto || ""))
+    .catch(() => (state.fulltext[id] = ""));
+  return state._ftPromesas[id];
+}
+
+/* First index token at or after `pre` — the start of its prefix range. */
+function lowerBound(keys, pre) {
+  let lo = 0, hi = keys.length;
+  while (lo < hi) {
+    const mid = (lo + hi) >> 1;
+    if (keys[mid] < pre) lo = mid + 1; else hi = mid;
+  }
+  return lo;
+}
+
+/* Actas that could contain `tok`, mirroring tokenSrc's rules: a token of ≤3
+   chars must appear as a whole word, a longer one matches any word starting with
+   it. Returns a Set of indices into ftIndex.actas. */
+function postingsDe(tok) {
+  const { tokens } = state.ftIndex;
+  if (tok.length <= 3) return new Set(tokens[tok] || []);
+  const out = new Set();
+  for (let i = lowerBound(state.ftKeys, tok); i < state.ftKeys.length; i++) {
+    const k = state.ftKeys[i];
+    if (!k.startsWith(tok)) break;
+    for (const a of tokens[k]) out.add(a);
+  }
+  return out;
+}
+
+/* Candidate actas for a query — deliberately a superset. Every query token must
+   appear somewhere in the acta, which is necessary for a match but not
+   sufficient. Returns acta ids. */
+function candidatosDe(qFolded) {
+  const q = qFolded.trim();
+  if (!q) return [];
+  const inner = "\"«“".includes(q[0])
+    ? q.replace(/^["«“]+/, "").replace(/["»”]+$/, "").trim()
+    : q;
+  const toks = inner.split(/\s+/).filter(Boolean);
+  if (!toks.length) return [];
+  let acc = null;
+  for (const t of toks) {
+    const s = postingsDe(t);
+    acc = acc === null ? s : new Set([...acc].filter((x) => s.has(x)));
+    if (!acc.size) return [];
+  }
+  return [...acc].map((i) => state.ftIndex.actas[i]);
+}
+
 function ftFolded(id) {
   return state._ftFolded[id] ?? (state._ftFolded[id] = fold(state.fulltext[id]));
 }
@@ -275,19 +359,21 @@ function fullTextMatches(id, ms) {
   return { count: positions.length, shown: snippets.length, snippets };
 }
 
-/* Full-text search runs automatically once the OCR payload is loaded. It loads
-   on the first search (not on page load, to keep the initial page light), then
-   stays live for subsequent queries. */
-async function loadFulltextThenRerender() {
-  if (state.fulltext || state.fulltextLoading) return;
-  state.fulltextLoading = true;
-  try { await ensureFulltext(); }
+/* Runs on the first search, not on page load, to keep the initial page light.
+   Fetches the index once, then only the candidate actas — a query that hits two
+   actas costs the index plus those two, not the whole corpus. */
+async function loadFulltextThenRerender(qFolded) {
+  const seq = ++state._ftSeq;
+  try { await ensureFtIndex(); }
   catch {
-    state.fulltextLoading = false;
-    $("#fulltext").innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
+    if (seq === state._ftSeq) {
+      $("#fulltext").innerHTML = `<p class="ft-intro mono">No se pudo cargar el índice de texto completo.</p>`;
+    }
     return;
   }
-  state.fulltextLoading = false;
+  if (seq !== state._ftSeq) return;            // el usuario siguió escribiendo
+  await Promise.all(candidatosDe(qFolded).map(ensureActaTexto));
+  if (seq !== state._ftSeq) return;
   const ms = buildMatchers(fold(state.q.trim()));
   if (ms.length) renderFulltext(ms);
 }
@@ -296,23 +382,34 @@ function renderFulltext(ms) {
   const el = $("#fulltext");
   el.hidden = false;
   const q = esc(state.q.trim());
-  if (!state.fulltext) {
-    el.innerHTML = `<p class="ft-intro mono">Buscando «${q}» en el texto completo de las actas escaneadas…</p>`;
-    loadFulltextThenRerender();
+  const qFolded = fold(state.q.trim());
+  const cargando = `<p class="ft-intro mono">Buscando «${q}» en el texto completo de las actas escaneadas…</p>`;
+  if (!state.ftIndex) {
+    el.innerHTML = cargando;
+    loadFulltextThenRerender(qFolded);
     return;
   }
+  // El índice acota; este regex decide. Toda candidata que llegue aquí ya tiene
+  // su texto en memoria — `loadFulltextThenRerender` las esperó.
+  const candidatos = candidatosDe(qFolded);
+  if (candidatos.some((id) => !(id in state.fulltext))) {
+    el.innerHTML = cargando;
+    loadFulltextThenRerender(qFolded);
+    return;
+  }
+  const cand = new Set(candidatos);
   const results = [];
   let totalOcc = 0;
   for (const acta of state.actas) {
-    if (!state.fulltext[acta.id]) continue;
+    if (!cand.has(acta.id) || !state.fulltext[acta.id]) continue;
     const m = fullTextMatches(acta.id, ms);
     if (!m) continue;
     totalOcc += m.count;
     results.push({ acta, ...m });
   }
-  const totalActas = Object.keys(state.fulltext).length;
+  const totalActas = state.ftIndex.actas.length;
   el.innerHTML = `
-    <p class="ft-intro mono">Texto completo · «${q}» — ${totalOcc} ${totalOcc === 1 ? "coincidencia" : "coincidencias"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de 74 actas del término 2024-2027; el resto se irá incorporando.</p>
+    <p class="ft-intro mono">Texto completo · «${q}» — ${totalOcc} ${totalOcc === 1 ? "coincidencia" : "coincidencias"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de ${actasDelTermino(TERMINO_OCR)} actas del término ${TERMINO_OCR}; el resto se irá incorporando.</p>
     <ol class="result-list">${results.map((r) => `
       <li class="result ft-result">
         <p class="meta mono"><span class="fecha">${fechaLarga(r.acta.fecha)}</span><span>Acta ${r.acta.no_acta ?? "s/n"}</span><span>${r.count} ${r.count === 1 ? "coincidencia" : "coincidencias"}${r.shown < r.count ? ` · se muestran ${r.shown}` : ""}</span></p>
@@ -412,11 +509,13 @@ async function onDetalleClick(e) {
   if (body.dataset.loaded) return;
   body.dataset.loaded = "1";
   body.innerHTML = `<p class="ft-intro mono">Cargando texto completo…</p>`;
-  try { await ensureFulltext(); } catch {
+  const id = det.dataset.id;
+  // Una sola acta, no el corpus: expandir un acta ya no arrastra a las otras 77.
+  try { await ensureActaTexto(id); } catch {
+    body.dataset.loaded = "";
     body.innerHTML = `<p class="ft-intro mono">No se pudo cargar el texto completo.</p>`;
     return;
   }
-  const id = det.dataset.id;
   const s = state.summaries[id];
   const texto = state.fulltext[id];
   const ms = buildMatchers(fold(state.q.trim()));

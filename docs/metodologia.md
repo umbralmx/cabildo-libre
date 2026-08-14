@@ -135,8 +135,39 @@ Ojo: **no toda coincidencia de fecha es un duplicado.** Hubo dos sesiones distin
   responde a la pregunta que motiva el proyecto («¿cuándo se aprobó lo de mi colonia?»).
 - **Tope de 400 resultados** para no colgar el render; se avisa en pantalla cuando se
   alcanza en vez de truncar en silencio.
-- Todo corre en memoria sobre ~7,000 puntos: no hace falta un índice invertido a esta
-  escala, y evitarlo mantiene el sitio sin dependencias.
+- **La búsqueda del órden del día** corre en memoria sobre ~7,000 puntos: a esa escala no
+  hace falta índice, y evitarlo mantiene el sitio sin dependencias.
+
+### 4.1 Búsqueda en el texto completo (Fase 2)
+
+Buscar dentro del OCR es otro problema de escala: son ~11 millones de caracteres. Se
+resuelve en dos etapas perezosas, ninguna con servidor.
+
+1. **`site/fulltext-index.json`** (~1.0 MB) — índice invertido `token → actas`. Se descarga
+   una sola vez, en la primera búsqueda de texto completo.
+2. **`site/fulltext/<id>.json`** — el texto de **una** acta. Se pide sólo para las actas que
+   el índice señala, y cada una se pide una sola vez por sesión.
+
+**El índice acota, no decide.** Devuelve un superconjunto de candidatas —una consulta por
+prefijo une los postings de todos los tokens que empiezan igual; una consulta de frase no
+puede comprobar adyacencia— y sobre cada candidata corre **el mismo regex de siempre**. Por
+eso los conteos, los fragmentos y el resaltado son idénticos a los del archivo monolítico
+que esto sustituyó.
+
+De ahí que el único fallo posible sea un **falso negativo**: un acta que coincide y que el
+índice no propuso, lo que exige que falte un posting. `processor/verificar.py`
+(`indice_completo`) vuelve a tokenizar cada acta en cada corrida y comprueba que todos sus
+tokens apunten de vuelta a ella; si falla, la publicación se bloquea.
+
+**Reproducirlo:** `python3 processor/build_site_index.py` regenera índice y textos desde
+`data/ocr/`. Es determinista: mismo OCR, mismo índice.
+
+**El costo que no baja.** Una frase entre comillas hecha de palabras comunes acota mal —
+`"voto de calidad"` propone 65 actas y el regex se queda con 4—. Se midió un índice de
+bigramas para arreglarlo (6.46 MB completo, 2.72 MB restringido a palabras comunes) y se
+descartó por tamaño. El monolito anterior descargaba 10.9 MB en la primera búsqueda *siempre*;
+aquí la primera búsqueda costó 1.46 MB medidos en el navegador, y sólo se acerca al tamaño
+del corpus cuando la respuesta de verdad es «casi todas las actas».
 
 ## 5. Decisiones editoriales de presentación (y por qué son honestas)
 

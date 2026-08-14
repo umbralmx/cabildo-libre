@@ -244,7 +244,76 @@ def concentracion_del_dinero(analytics: dict) -> list[Hallazgo]:
                      f"la categoría mayor ({cat}) aporta {cuota:.1%} del total")]
 
 
-# ── 7. Línea base: ¿algo se movió sin que nadie lo confirmara? ───────────────
+# ── 7. ¿El índice de búsqueda propone todas las actas que debería? ──────────
+
+def indice_completo() -> list[Hallazgo]:
+    """La invariante que sostiene que la búsqueda no cambió de resultados.
+
+    `site/fulltext-index.json` acota las candidatas y el regex de `app.js` decide,
+    así que una candidata de más es inofensiva —el regex la descarta— y el único
+    fallo posible es una **de menos**: un acta que coincide y que el índice no
+    propuso. Eso sólo ocurre si al índice le falta un posting.
+
+    Aquí se vuelve a tokenizar cada acta desde `data/ocr/` con el mismo `fold` y
+    la misma expresión que construyeron el índice, y se comprueba que cada token
+    apunte de vuelta a su acta. Si esto pasa, no hay falsos negativos posibles y
+    los resultados son idénticos a los del `fulltext.json` monolítico.
+
+    Se comprueba en Python y no con el JS real a propósito: el proyecto tiene que
+    seguir corriendo sin cadena de herramientas (`CLAUDE.md` — *boring, static, zero
+    ops*), y esta invariante es más fuerte que un puñado de consultas de ejemplo.
+    """
+    idx_p = SITE_DIR / "fulltext-index.json"
+    ft_dir = SITE_DIR / "fulltext"
+    if not idx_p.exists():
+        return [Hallazgo("indice_completo", "ERROR",
+                         "falta site/fulltext-index.json — corre build_site_index.py")]
+
+    from build_site_index import tokens_de  # mismo fold y misma tokenización
+
+    idx = _json(idx_p)
+    actas = idx.get("actas") or []
+    tokens = idx.get("tokens") or {}
+    posicion = {a: i for i, a in enumerate(actas)}
+
+    problemas: list[str] = []
+    ocr_ids = {p.stem for p in OCR_DIR.glob("*.json")}
+    if set(actas) != ocr_ids:
+        faltan = sorted(ocr_ids - set(actas))[:5]
+        sobran = sorted(set(actas) - ocr_ids)[:5]
+        problemas.append(f"el índice cubre {len(actas)} actas y hay {len(ocr_ids)} con OCR"
+                         + (f"; faltan {faltan}" if faltan else "")
+                         + (f"; sobran {sobran}" if sobran else ""))
+
+    sin_archivo = [a for a in actas if not (ft_dir / f"{a}.json").exists()]
+    if sin_archivo:
+        problemas.append(f"{len(sin_archivo)} acta(s) en el índice sin su archivo en "
+                         f"site/fulltext/: {sin_archivo[:5]}")
+
+    postings_faltantes = 0
+    for acta_id in actas:
+        f = ft_dir / f"{acta_id}.json"
+        if not f.exists():
+            continue
+        i = posicion[acta_id]
+        for tok in tokens_de(_json(f).get("texto", "")):
+            if i not in (tokens.get(tok) or ()):
+                postings_faltantes += 1
+                if postings_faltantes <= 5:
+                    problemas.append(f"acta {acta_id}: el token «{tok}» está en su texto y "
+                                     f"no en el índice")
+    if postings_faltantes > 5:
+        problemas.append(f"… y {postings_faltantes - 5} posting(s) más ausentes")
+
+    if problemas:
+        return [Hallazgo("indice_completo", "ERROR",
+                         "el índice de búsqueda no cubre todo su texto: hay consultas que "
+                         "perderían resultados en silencio", problemas)]
+    return [Hallazgo("indice_completo", "OK",
+                     f"{len(tokens):,} tokens sobre {len(actas)} actas, sin postings ausentes")]
+
+
+# ── 8. Línea base: ¿algo se movió sin que nadie lo confirmara? ───────────────
 
 def _cifras_vigiladas(a: dict) -> dict:
     dec = a.get("decisiones") or {}
@@ -361,6 +430,7 @@ def main() -> int:
     hallazgos += montos_no_aditivos()
     hallazgos += concentracion_del_dinero(analytics)
     hallazgos += nombres_sin_mapear(analytics)
+    hallazgos += indice_completo()
     # Al final y con el resultado de las demás: la línea base no debe anclarse
     # a un estado que ya falló.
     hallazgos += linea_base(analytics, args.actualizar_linea_base,

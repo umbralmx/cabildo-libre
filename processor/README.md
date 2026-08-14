@@ -87,6 +87,7 @@ $13.2 a $17.1 mil millones en la suma declarada, sin umbral que lo detuviera.
 | `sin_conflictos` | ERROR | Puntos donde dos ventanas declararon resultados distintos |
 | `cobertura_al_dia` | ERROR | El agregado quedó atrás de `actas.json` (el error de «74 sesiones») |
 | `linea_base` | ERROR | Una cifra publicada se movió más de 3 % sin que nadie lo confirmara |
+| `indice_completo` | ERROR | Al índice de búsqueda le falta un posting: habría consultas perdiendo resultados en silencio |
 | `montos_no_aditivos` | AVISO | Un monto que iguala la suma de los demás — total+desglose que el guard de `build_analytics` no alcanza |
 | `concentracion_del_dinero` | AVISO | Una sola categoría domina la suma, así que la suma no mide lo que su rótulo dice |
 | `nombres_sin_mapear` | AVISO | Nombres que el acta cita y el roster no tiene — normalmente suplencias reales |
