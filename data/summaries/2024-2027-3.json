@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T17:06:11+00:00",
+ "generado": "2026-08-13T23:11:17+00:00",
  "lectura": {
   "chars_ocr": 50837,
   "chars_leidos": 50837,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la renuncia del Comisario de El Chanal, la ampliación del plazo para renovar licencias de bebidas alcohólicas, incentivos fiscales y las tablas de valores catastrales 2025.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El Cabildo aprobó la renuncia del comisario de El Chanal, la ampliación del plazo de licencias de bebidas alcohólicas, incentivos fiscales y las tablas de valores para 2025.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia, registrando la presencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia y se confirmó la presencia del presidente municipal, la síndica y las y los regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al haber quórum legal.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión ordinaria.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se leyó y aprobó el orden del día, incluyendo modificaciones para agregar tres puntos y retirar otros.",
+   "resumen": "Se aprobó por unanimidad el orden del día modificado: se retiraron los puntos sobre mesas receptoras, órganos de OPD y CIAPACOV, y se agregaron los de licencias, incentivos fiscales y tablas de valores 2025.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,8 +69,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó presentar el Acta de Cabildo N° 2 en la próxima sesión, quedando pendiente su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "Se aprobó por unanimidad presentar el acta de cabildo número 2 en la próxima sesión, en lugar de leerla y aprobarla en esta.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -79,14 +80,17 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "C. Elia Margarita Moreno González",
+    "id": "elia-margarita-moreno-gonzalez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad la renuncia de Víctor Jesús Ramos Ruiz como Comisario Municipal de El Chanal.",
+   "resumen": "Se aprobó por unanimidad la renuncia de Víctor Jesús Ramos Ruiz al cargo de comisario municipal de El Chanal.",
    "sentido": "aprobado",
-   "categoria": "nombramiento",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [
     "El Chanal"
@@ -100,28 +104,34 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Profra. Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la iniciativa para ampliar el plazo de renovación de licencias comerciales con venta de bebidas alcohólicas hasta el 31 de diciembre de 2024.",
+   "resumen": "Se aprobó por unanimidad la iniciativa para ampliar hasta el 31 de diciembre de 2024 el plazo de renovación de licencias comerciales y de venta de bebidas alcohólicas, sin recargos ni multas.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "cementerio municipal",
+    "Jardín del Recuerdo"
+   ],
    "montos": [
     {
-     "texto": "$374,789.83 (trescientos setenta y cuatro mil setecientos ochenta y nueve pesos 83/100 MN.)",
+     "texto": "$374,789.83",
      "valor_mxn": 374789.83
     },
     {
-     "texto": "$349,125.17 (trescientos cuarenta y nueve mil ciento veinticinco pesos 17/100 m.n.)",
+     "texto": "$349,125.17",
      "valor_mxn": 349125.17
     },
     {
-     "texto": "$723,915.00 (setecientos veintitrés mil novecientos quince pesos 00/100 m.n.)",
+     "texto": "$723,915.00",
      "valor_mxn": 723915.0
     }
    ],
@@ -131,49 +141,101 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "comision": "Comisión de Comercio, Mercados y restaurantes",
    "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó la iniciativa de incentivos fiscales que condona recargos y multas por pago extemporáneo del impuesto predial y otros conceptos.",
+   "resumen": "Se aprobó por unanimidad la iniciativa para condonar el 100% de recargos y multas por pago extemporáneo de predial, limpieza de gavetas, recolección de residuos, refrendos y multas viales.",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
+   "categoria": "obra_publica",
    "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "Tinajas"
+   ],
+   "obras": [
+    "jardín Libertad"
+   ],
    "montos": [
     {
-     "texto": "TOTAL $5,597,288.66",
+     "texto": "13,161,654.00",
+     "valor_mxn": 13161654.0
+    },
+    {
+     "texto": "4,387,213.33",
+     "valor_mxn": 4387213.33
+    },
+    {
+     "texto": "$394,849.20",
+     "valor_mxn": 394849.2
+    },
+    {
+     "texto": "9,365,436.06",
+     "valor_mxn": 9365436.06
+    },
+    {
+     "texto": "1,040,604.01",
+     "valor_mxn": 1040604.01
+    },
+    {
+     "texto": "93,654.36",
+     "valor_mxn": 93654.36
+    },
+    {
+     "texto": "48,980.00",
+     "valor_mxn": 48980.0
+    },
+    {
+     "texto": "5,442.22",
+     "valor_mxn": 5442.22
+    },
+    {
+     "texto": "489.80",
+     "valor_mxn": 489.8
+    },
+    {
+     "texto": "1,476,261.92",
+     "valor_mxn": 1476261.92
+    },
+    {
+     "texto": "164,029.10",
+     "valor_mxn": 164029.1
+    },
+    {
+     "texto": "14,762.62",
+     "valor_mxn": 14762.62
+    },
+    {
+     "texto": "$5,597,288.66",
      "valor_mxn": 5597288.66
     },
     {
-     "texto": "INCREMENTO 3% $503,755.98",
+     "texto": "$503,755.98",
      "valor_mxn": 503755.98
     }
    ],
    "beneficiario": {
-    "nombre": "contribuyentes del Municipio de Colima",
+    "nombre": "personas contribuyentes y la ciudadanía del Municipio de Colima",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó el proyecto de Tablas de Valores Unitarios de Terreno y Construcción para el ejercicio fiscal 2025.",
+   "resumen": "El presidente municipal informó que la modificación a las comisiones de cabildo es un trámite solicitado por el Partido Movimiento Ciudadano, ya adecuado y sin necesidad de votación; se compartirá la nueva integración.",
    "sentido": "aprobado",
-   "categoria": "reglamento_normativo",
+   "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [
     "EL DIEZMO",
@@ -191,62 +253,27 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Partido Movimiento Ciudadano",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [
     {
-     "nombre": "Azucena López Legorreta",
+     "nombre": "C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     }
    ],
-   "comision": null,
+   "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
     "id": "edgar-osiris-alcaraz-saucedo"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se trataron asuntos generales, incluyendo solicitudes de información y felicitaciones a la administración.",
-   "sentido": "tramite",
-   "categoria": "tramite",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 10,
-   "numeral": "X",
-   "resumen": "Regidores expresaron comentarios sobre auditorías, programas de salud, obras en comunidades y jardines, y modificación de comisiones, sin votación.",
-   "sentido": "no_determinable",
-   "categoria": "otro",
-   "votacion": "no_determinable",
-   "colonias": [
-    "Tinajas"
-   ],
-   "obras": [
-    "Jardín Libertad",
-    "cementerio municipal",
-    "Panteón de los Gringos"
-   ],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 11,
-   "numeral": "XI",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "En asuntos generales, regidoras y regidores expresaron reconocimiento a la administración, una regidora solicitó información financiera y otra propuso brigadas de recuperación; no hubo votación.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

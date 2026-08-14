@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T16:47:00+00:00",
+ "generado": "2026-08-13T22:54:18+00:00",
  "lectura": {
   "chars_ocr": 189202,
   "chars_leidos": 189202,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó el orden del día con una modificación, se pospuso el acta anterior y se inició la discusión del presupuesto de egresos 2025.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El cabildo aprobó el orden del día incluyendo la Central de Abasto, difirió el acta 16 y leyó el presupuesto de egresos 2025, cuya votación no consta en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrándose la presencia del Presidente Municipal, Síndica y regidores.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de las y los integrantes del cabildo.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día, incluyendo la adición del punto VIII sobre la Modificación al Programa Parcial de Urbanización Central de Abasto Regional de Colima.",
+   "resumen": "Se aprobó por unanimidad el orden del día con la inclusión del dictamen sobre la modificación al Programa Parcial de Urbanización “Central de Abasto Regional de Colima”.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -52,7 +53,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad posponer la presentación del Acta de Cabildo N° 16 para la próxima sesión.",
+   "resumen": "Se autorizó por unanimidad presentar el Acta de Cabildo número 16 en la próxima sesión.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,7 +69,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2025 por un monto total de $1,009,960,065.66, con incrementos en servicios públicos, seguridad y desarrollo social.",
+   "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2025 por 1,009,960,065.66 pesos, beneficiando a los habitantes del municipio con recursos para servicios públicos, seguridad y programas sociales, con un voto en contra de la regidora Azucena López Legorreta.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -86,42 +87,86 @@
     "La Capacha",
     "La Estancia"
    ],
-   "obras": [],
+   "obras": [
+    "Colima Brilla",
+    "Jardín que Mereces",
+    "SEDECOS"
+   ],
    "montos": [
     {
-     "texto": "$ 4,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
-     "valor_mxn": 4009960065.66
+     "texto": "$-4-009.960,065.66",
+     "valor_mxn": null
     },
     {
-     "texto": "$ 576,474,609.01 (quinientos setenta y seis millones cuatrocientos setenta y cuatro mil seiscientos nueve pesos 01/100 m",
-     "valor_mxn": 576474609.01
+     "texto": "$ 576'474,609.01",
+     "valor_mxn": null
     },
     {
-     "texto": "$1,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
+     "texto": "$1,009,960,065.66",
      "valor_mxn": 1009960065.66
     },
     {
-     "texto": "1'009,960,065.66",
-     "valor_mxn": 1009960065.66
+     "texto": "$69,445,938.43",
+     "valor_mxn": 69445938.43
     },
     {
-     "texto": "1'000,000.00",
+     "texto": "$1,000,000.00",
      "valor_mxn": 1000000.0
     },
     {
-     "texto": "37,207,336.23",
+     "texto": "530,400,000.00",
+     "valor_mxn": 530400000.0
+    },
+    {
+     "texto": "121,800,000.00",
+     "valor_mxn": 121800000.0
+    },
+    {
+     "texto": "7,000,000.00",
+     "valor_mxn": 7000000.0
+    },
+    {
+     "texto": "69,445,938.43",
+     "valor_mxn": 69445938.43
+    },
+    {
+     "texto": "61,832,000.00",
+     "valor_mxn": 61832000.0
+    },
+    {
+     "texto": "7,613,938.44",
+     "valor_mxn": 7613938.44
+    },
+    {
+     "texto": "10,000.00",
+     "valor_mxn": 10000.0
+    },
+    {
+     "texto": "76,074,112.00",
+     "valor_mxn": 76074112.0
+    },
+    {
+     "texto": "1,009,960,065.66",
+     "valor_mxn": 1009960065.66
+    },
+    {
+     "texto": "$ 1,000,000.00",
+     "valor_mxn": 1000000.0
+    },
+    {
+     "texto": "$37,207,336.23",
      "valor_mxn": 37207336.23
     },
     {
-     "texto": "1'500,000.00",
+     "texto": "1,500,000.00",
      "valor_mxn": 1500000.0
     },
     {
-     "texto": "32,083,333.33",
+     "texto": "$ 32,083,333.33",
      "valor_mxn": 32083333.33
     },
     {
-     "texto": "8,350,000.00",
+     "texto": "$ 8,350,000.00",
      "valor_mxn": 8350000.0
     },
     {
@@ -129,32 +174,44 @@
      "valor_mxn": 223596769.0
     },
     {
-     "texto": "76,074,112.00",
-     "valor_mxn": 76074112.0
-    },
-    {
      "texto": "147,522,657.00",
      "valor_mxn": 147522657.0
+    },
+    {
+     "texto": "88,652,856.00",
+     "valor_mxn": 88652856.0
+    },
+    {
+     "texto": "22,619,801.00",
+     "valor_mxn": 22619801.0
+    },
+    {
+     "texto": "36,050,000.00",
+     "valor_mxn": 36050000.0
+    },
+    {
+     "texto": "200,000.00",
+     "valor_mxn": 200000.0
     }
    ],
    "beneficiario": null,
    "votos_en_contra": [
     {
-     "nombre": "C. Azucena López Legorreta",
+     "nombre": "Regidora C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     }
    ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad autorizar las adecuaciones presupuestales solicitadas por la Tesorera Municipal, por montos de $72,827,768.10 y $16,573,908.39.",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar adecuaciones compensadas al presupuesto de 2024 por $72,827,768.10 no etiquetado y $16,573,908.39 del FORTAMUN.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -162,11 +219,11 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$72,827,768.10 (Setenta y dos millones ochocientos veintisiete mil setecientos y ocho pesos 10/100 M.N.)",
+     "texto": "$72, 827,768.10",
      "valor_mxn": 72827768.1
     },
     {
-     "texto": "$16,573,908.39 (Dieciséis millones quinientos setenta y tres mil novecientos ocho pesos 39/100 M.N.)",
+     "texto": "$16, 573,908.39",
      "valor_mxn": 16573908.39
     }
    ],
@@ -178,20 +235,37 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Azucena López Legorreta",
+    "nombre": "C. Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública del mes de diciembre de 2024, con observaciones.",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado la Cuenta Pública de diciembre de 2024, con las observaciones de la Comisión de Hacienda.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "$937 millones de pesos",
+     "valor_mxn": 937000000
+    },
+    {
+     "texto": "971 millones",
+     "valor_mxn": 971000000
+    },
+    {
+     "texto": "más de 34 millones",
+     "valor_mxn": null
+    },
+    {
+     "texto": "34.1 millones",
+     "valor_mxn": 34100000
+    }
+   ],
    "beneficiario": {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia"
@@ -200,26 +274,25 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Azucena López Legorreta",
+    "nombre": "C. Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad la Modificación al Programa Parcial de Urbanización 'Central de Abasto Regional de Colima', proyecto que busca beneficiar a productores, comerciantes y consumidores locales mediante una central de abasto con inversión privada.",
+   "resumen": "Se aprobó por unanimidad el dictamen que modifica el Programa Parcial de Urbanización de la Central de Abasto Regional de Colima, proyecto con inversión privada que busca mejorar la comercialización de productos y beneficiar a productores, comerciantes y consumidores.",
    "sentido": "aprobado",
-   "categoria": "fraccionamiento",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [
     "Rinconada San Pablo",
     "Francisco Villa III",
-    "Los Volcanes",
-    "San Pablo",
-    "Francisco villa"
+    "Los Volcanes"
    ],
    "obras": [
-    "Central de Abasto Regional de Colima"
+    "Central de Abasto Regional de Colima",
+    "banco de alimentos"
    ],
    "montos": [],
    "beneficiario": {
@@ -237,7 +310,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se recibió el Informe Trimestral de Actividades de algunos munícipes y se aprobó por unanimidad un Punto de Acuerdo que autoriza a la Directora General de Servicios Públicos a celebrar contratos de recolección, traslado y depósito de residuos sólidos con el sector privado.",
+   "resumen": "En asuntos generales se informó de los informes trimestrales de regidores y se aprobó por unanimidad autorizar a Ana Patricia Escobosa Galindo, directora de Servicios Públicos, a suscribir contratos de recolección, traslado y depósito de residuos sólidos con el sector privado.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -245,18 +318,21 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Ana Patricia Escobosa Galindo",
-    "tipo": "persona"
+    "nombre": "sector privado",
+    "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 14:45 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

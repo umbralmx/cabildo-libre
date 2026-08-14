@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T01:41:29+00:00",
+ "generado": "2026-08-13T23:15:30+00:00",
  "lectura": {
   "chars_ocr": 109320,
   "chars_leidos": 109320,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la Cuenta Pública 2024 por mayoría, se autorizaron licencias de alcohol, se aprobó el acta 27 y se retiró el punto de reforma al reglamento.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El Cabildo aprobó remitir al Congreso la Cuenta Pública 2024, otorgó licencias de alcohol, retiró del orden la reforma al Reglamento y aprobó el acta 27; también se discutió una denuncia de violencia política.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrando la presencia de la mayoría de los integrantes del Cabildo.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente, la síndica y regidores, una de ellos de forma remota.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión ordinaria.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el Orden del Día con la modificación de retirar el punto sobre reforma al reglamento, propuesta por el regidor Francisco Javier Bravo Gallardo.",
+   "resumen": "Se aprobó por unanimidad retirar del orden del día el dictamen de reforma al Reglamento del Gobierno Municipal y se aprobó el orden del día modificado.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -63,16 +64,13 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
-    "id": "francisco-javier-bravo-gallardo"
-   }
+   "autor": null
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el Acta 27, con una declaración de violencia política de género por parte de la regidora Azucena López; las Actas 28 y 29 quedaron pendientes.",
-   "sentido": "tramite",
+   "resumen": "Se dispensó la lectura del acta 27 y, tras las intervenciones sobre una denuncia de violencia política de la regidora Azucena López Legorreta, el acta 27 se aprobó por unanimidad; las actas 28 y 29 quedaron pendientes para la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -87,59 +85,60 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría enviar al Congreso la Cuenta Pública Anual Consolidada 2024, con el voto en contra de la regidora Azucena López Legorreta.",
+   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del ejercicio fiscal 2024; la regidora Azucena López Legorreta votó en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
    "votos_en_contra": [
     {
-     "nombre": "Azucena López Legorreta",
+     "nombre": "C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     }
    ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó la expedición de dos licencias para venta de alcohol: restaurante bar ALEXAS CENTER en Jardines de las Lomas y restaurante TA CAPEADO en Residencial Los Olivos.",
+   "resumen": "Se aprobó por unanimidad expedir dos licencias para establecimientos con venta de bebidas alcohólicas y un cambio de giro: Salón Basilio, Abarrotes Cardona y Pizzería Napoli, en distintas colonias de Colima.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
+    "Cardona",
     "Colonia Francisco Villa",
-    "Colonia Sin Nombre",
-    "Colonia Real Vista Hermosa II",
-    "Jardines de las Lomas",
-    "Residencial Los Olivos"
+    "Colonia Real Vista Hermosa II"
    ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se dio lectura al dictamen para autorizar cuatro licencias de alcohol (Alexas, Ta Capeado, Colima Mío, Abarrotes Milenio), pero no se consigna el resultado de la votación en este fragmento.",
-   "sentido": "no_determinable",
+   "resumen": "Se autorizó la expedición de cuatro licencias de apertura para establecimientos con venta de bebidas alcohólicas: ALEXAS CENTER, TA CAPEADO, COLIMA MÍO y ABARROTES MILENIO, previo cumplimiento de requisitos y pago de derechos.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "Jardines de las Lomas",
     "Residencial Los Olivos",
@@ -148,29 +147,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
-    "id": "juan-carlos-gomez-diaz"
-   }
-  },
-  {
-   "n": 8,
-   "numeral": "VIII",
-   "resumen": "Se autorizó la expedición de dos licencias para venta de alcohol: restaurante bar GALLO PIZZERO en el Centro y tienda ABARROTES VEGA en La Guadalupe.",
-   "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "Centro",
-    "La Guadalupe"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "MIGUEL ÁNGEL CASTAÑEDA SOTO, FLOR ANAHÍ LÓPEZ GALINDO, EDGAR ADRIÁN CEBALLOS LÓPEZ, JUAN MANUEL GONZÁLEZ PAMPLONA",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -180,9 +160,34 @@
    }
   },
   {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó la expedición de dos licencias de apertura para establecimientos con venta de bebidas alcohólicas: GALLO PIZZERO y ABARROTES VEGA, previo cumplimiento de requisitos y pago de derechos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "La Guadalupe"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "RICARDO AYALA AYALA, GABRIELA AIDA CASTELLANOS SÁNCHEZ",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se autorizó la expedición de cinco licencias para venta de alcohol: ABARROTES NAVARRO en Las Américas, ABARROTES YAAM en Puerta del Valle, LA VALENTINA en el Centro, MARAYA COCINA DEL MAR en Colinas de Santa Fe, y ABARROTES LA SUPREMA en el Centro.",
+   "resumen": "Se autorizó la expedición de cinco licencias de apertura para establecimientos con venta de bebidas alcohólicas: ABARROTES NAVARRO, ABARROTES YAAM, LA VALENTINA, MARAYA COCINA DEL MAR y ABARROTES LA SUPREMA, previo cumplimiento de requisitos y pago de derechos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -194,19 +199,22 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "ANDRÉS MANUEL NAVARRO RÍOS, JESÚS ENRIQUE MARTÍNEZ AGUAYO, MARIBEL RUIZ RAMÍREZ, MARAYA COCINA DE MAR S DE RL DE CV, ELI",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobaron adecuaciones presupuestales al Ramo 33: reducción de $2,347,909 en FAISMUN e incremento de $2,243,490 en FORTAMUN para adquisición de vehículos.",
+   "resumen": "Se aprobaron las adecuaciones al Presupuesto de Ingresos y Egresos 2025 solicitadas por la Tesorería Municipal: baja de 2,347,909 pesos en FAISMUN y alta de 2,243,490 pesos en FORTAMUN para la partida de Automóviles y Equipo Terrestre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -218,7 +226,47 @@
      "valor_mxn": 2347909
     },
     {
-     "texto": "$2,243,490",
+     "texto": "$149,766,147.00",
+     "valor_mxn": 149766147
+    },
+    {
+     "texto": "$73,726,203.00",
+     "valor_mxn": 73726203
+    },
+    {
+     "texto": "223,596,769.00",
+     "valor_mxn": 223596769
+    },
+    {
+     "texto": "76,074,112.00",
+     "valor_mxn": 76074112
+    },
+    {
+     "texto": "73,726,202.74",
+     "valor_mxn": 73726202.74
+    },
+    {
+     "texto": "-2,347,909.26",
+     "valor_mxn": -2347909.26
+    },
+    {
+     "texto": "147,522,657.00",
+     "valor_mxn": 147522657
+    },
+    {
+     "texto": "2,243,490.00",
+     "valor_mxn": 2243490
+    },
+    {
+     "texto": "223,492,349,74",
+     "valor_mxn": null
+    },
+    {
+     "texto": "- $2,347,909.00",
+     "valor_mxn": -2347909
+    },
+    {
+     "texto": "$ 2'243,490.00",
      "valor_mxn": 2243490
     }
    ],
@@ -234,26 +282,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la suscripción de un convenio para que siete organismos descentralizados se adhieran al Comité de Ética de Servidores Públicos del Municipio.",
-   "sentido": "aprobado",
-   "categoria": "convenio",
-   "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos",
-   "autor": {
-    "nombre": "Lic. Francisco Javier Bravo Gallardo",
-    "id": "francisco-javier-bravo-gallardo"
-   }
-  },
-  {
-   "n": 12,
-   "numeral": "XII",
-   "resumen": "Se aprobó la suscripción de un convenio interinstitucional para que siete organismos públicos descentralizados se adhieran al Comité de Ética de los Servidores Públicos del Municipio de Colima.",
+   "resumen": "Se aprobó por unanimidad suscribir un convenio entre el Municipio de Colima y siete organismos públicos descentralizados para que se adhieran a la jurisdicción del Comité de Ética de los Servidores Públicos del Municipio de Colima.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -261,18 +290,21 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Archivo Histórico del Municipio de Colima, Instituto de la Juventud, Instituto de las Mujeres, Instituto de Planeación, ",
+    "nombre": "Archivo Histórico del Municipio de Colima, Instituto de la Juventud para el Municipio de Colima, Instituto de las Mujere",
     "tipo": "dependencia"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
-   "autor": null
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
-   "n": 13,
-   "numeral": "XIII",
-   "resumen": "Se aprobó un convenio de coordinación con Armería para prestar 3 camiones recolectores de basura en Cuyutlán durante Semana Santa, sin costo para Colima, y se recibió el informe trimestral de actividades de regidores.",
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "En Asuntos Generales se aprobó por mayoría el convenio con el Municipio de Armería para prestarle tres camiones recolectores de basura en Cuyutlán y El Paraíso durante Semana Santa, sin erogación para Colima, y se informó de la entrega de informes trimestrales de actividades.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "mayoria",
@@ -304,9 +336,9 @@
    }
   },
   {
-   "n": 14,
-   "numeral": "XIV",
-   "resumen": "Se clausuró la Sesión Ordinaria de Cabildo No. 30 a las 14:25 horas.",
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se declaró clausurada la sesión ordinaria al agotarse el orden del día, a las 14:25 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T16:51:48+00:00",
+ "generado": "2026-08-13T23:23:29+00:00",
  "lectura": {
   "chars_ocr": 211146,
   "chars_leidos": 211146,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron licencias de alcohol y bajas, se aprobaron actas 28-29 y se aplazaron 30-31, y se retiraron dos reglamentos.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El cabildo aprobó actas previas, retiró dos reglamentos del orden del día y autorizó aperturas, cambios y bajas de licencias de establecimientos con venta de alcohol.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia, registrándose la presencia de la mayoría de los integrantes del cabildo.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente, la síndica y varios regidores, con la falta justificada de la regidora Margarita Moreno González.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la existencia de quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,10 +53,10 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día y se aprobó retirar los puntos relativos a dos reglamentos, quedando modificado el orden.",
-   "sentido": "tramite",
+   "resumen": "Se dio lectura al orden del día y se aprobó por unanimidad retirar los dictámenes de dos reglamentos: el del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad y el del Instituto Municipal para la Paz Intrafamiliar.",
+   "sentido": "aprobado",
    "categoria": "tramite",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
@@ -63,12 +64,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas 28 y 29, y se aprobó aplazar la presentación de las actas 30 y 31 para la próxima sesión.",
+   "resumen": "Se dispensó la lectura de las actas 28 y 29, que fueron aprobadas por unanimidad; también se autorizó presentar las actas 30 y 31 en la próxima sesión.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +88,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó una licencia comercial para el restaurante 'Negrony' y un cambio de propietario para la tienda 'Abarrotes Don Chava', ambos con venta de alcohol.",
+   "resumen": "Se autorizó una licencia de apertura para el restaurante Negrony, en Jardines Vista Hermosa, y un cambio de propietario para la tienda Abarrotes Don Chava, en Villas San Sebastián.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -94,77 +98,8 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
-  },
-  {
-   "n": 6,
-   "numeral": "VI",
-   "resumen": "Se autorizaron dos licencias comerciales: una tienda de abarrotes 'Abarrotes Los Volcanes' y el restaurante 'Coordenada 9', para venta de alcohol.",
-   "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "Francisco Villa III",
-    "Residencial Esmeralda Norte"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
-    "id": "juan-carlos-gomez-diaz"
-   }
-  },
-  {
-   "n": 7,
-   "numeral": "VII",
-   "resumen": "Se aprobó la baja definitiva de tres licencias de tiendas de abarrotes con venta de cerveza, cuyos titulares solicitaron el cierre.",
-   "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "Las Américas",
-    "Lázaro Cárdenas",
-    "Francisco Villa III"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
-    "id": "juan-carlos-gomez-diaz"
-   }
-  },
-  {
-   "n": 8,
-   "numeral": "VIII",
-   "resumen": "Se aprobó la baja definitiva de dos licencias de venta de alcohol: una tienda en La Albarrada y un restaurante en Residencial Esmeralda.",
-   "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "La Albarrada",
-    "Residencial Esmeralda",
-    "Colonia La Albarrada",
-    "Colonia Residencial Esmeralda"
-   ],
-   "obras": [],
-   "montos": [],
    "beneficiario": {
-    "nombre": "Josefina Reyes Mora y Ximena Kiralina Barajas Mejía",
+    "nombre": "Gustavo Robledo Ramírez y Salvador Rivera Macías",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -176,14 +111,87 @@
    }
   },
   {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizaron dos licencias de apertura para la tienda Abarrotes Los Volcanes, en Francisco Villa III, y el restaurante Coordenada 9, en Residencial Esmeralda Norte.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Villa III",
+    "Residencial Esmeralda Norte"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "María del Consuelo Sepúlveda García y Ulises Mendivil Armenta",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó la baja definitiva de tres licencias de tiendas de abarrotes con venta de cerveza cuyos establecimientos ya no funcionan.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Las Américas",
+    "Lázaro Cárdenas",
+    "Francisco Villa III"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ma. Eva Maldonado Zúñiga, Sergio Alejandro Polanco Cabellos e Irma Chávez Benítez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se dio lectura al dictamen para la baja definitiva de dos licencias de establecimientos con venta de alcohol; el fragmento no permite conocer el resultado.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [
+    "La Albarrada",
+    "Residencial Esmeralda"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la municipalización de la Etapa 2-B del fraccionamiento Puerta del Valle, al sur de la ciudad, con una fianza de $841,996.24.",
+   "resumen": "Se autorizó la municipalización de la etapa 2-B del fraccionamiento Puerta del Valle, con 180 lotes y una superficie de 30,476.84 m², garantizada con una fianza de $841,996.24.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Puerta del Valle"
+    "PUERTA DEL VALLE"
    ],
    "obras": [
     "CALLE ARCO DE BUENOS AIRES",
@@ -196,17 +204,17 @@
    ],
    "montos": [
     {
-     "texto": "$841,996.24 (OCHOCIENTOS CUARENTA Y UN MIL NOVECIENTOS NOVENTA Y SEIS PESOS 24/100 M.N.)",
+     "texto": "$841,996.24",
      "valor_mxn": 841996.24
     }
    ],
    "beneficiario": {
-    "nombre": "Desarrolladora San Ricardo S.A. de C.V. y otros",
+    "nombre": "DESARROLLADORA SAN RICARDO S.A. DE C.V.",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
    "autor": {
     "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
@@ -215,12 +223,12 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 3-B de Puerta del Valle, con fianzas por $1,466,649.79 y $4,773,248.11.",
+   "resumen": "Se autorizó la incorporación municipal anticipada de la etapa 3-B del fraccionamiento Puerta del Valle, con 150 lotes y una superficie de 28,217.09 m², con fianzas por $1,466,649.79 y $4,773,248.11 para garantizar obras de urbanización.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Puerta del Valle"
+    "PUERTA DEL VALLE"
    ],
    "obras": [
     "ARCO DE BRUSELAS",
@@ -234,21 +242,21 @@
    ],
    "montos": [
     {
-     "texto": "$1,466,649.79 (UN MILLÓN CUATROCIENTOS SESENTA Y SEIS MIL SEISCIENTOS CUARENTA Y NUEVE PESOS 74/100 M.N.)",
+     "texto": "$ 1,466,649.79",
      "valor_mxn": 1466649.79
     },
     {
-     "texto": "$4,773,248.11 (CUATRO MILLONES SETECIENTOS SETENTA Y TRES MIL DOSCIENTOS CUARENTA Y OCHO PESOS 11/100 M.N.)",
+     "texto": "$ 4,773,248.11",
      "valor_mxn": 4773248.11
     }
    ],
    "beneficiario": {
-    "nombre": "Desarrolladora San Ricardo S.A. de C.V. y otros",
+    "nombre": "DESARROLLADORA SAN RICARDO S.A. DE C.V.",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -257,35 +265,38 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 1 y 5 lotes de la Etapa 2 del fraccionamiento San Bernardo, al sur de Colima, para 42 lotes.",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 1 y 5 lotes de la Etapa 2 del fraccionamiento San Bernardo, ubicado al sur de Colima, con 42 lotes y una superficie de 34,197.39 m²; el urbanizador otorga fianzas por $1,072,608.63 y $33,073.06.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "San Bernardo"
+    "SAN BERNARDO"
    ],
    "obras": [
-    "AV. FRANCISCO JAVIER MINA",
-    "C. FRAY PEDRO DE GANTE",
-    "C. SAN FELIPE DE JESÚS"
+    "redes de agua potable y alcantarillado",
+    "Obras de urbanización de las Etapas 1 y 2",
+    "Redes de agua potable, tomas domiciliarias, red de alcantarillado sanitario y de",
+    "Av. Francisco Javier Mina",
+    "C. Fray Pedro de Gante",
+    "C. San Felipe de Jesús"
    ],
    "montos": [
     {
-     "texto": "$1,072,608.63",
+     "texto": "$ 1,072,608.63",
      "valor_mxn": 1072608.63
     },
     {
-     "texto": "$33,073.06",
+     "texto": "$ 33,073.06",
      "valor_mxn": 33073.06
     }
    ],
    "beneficiario": {
-    "nombre": "Enriqueta Espinosa Castell, Servicios Inmobiliarios Resto S.A. de C.V., Carlos Alfredo Castañeda Briceño y Banco Inmobil",
-    "tipo": "empresa"
+    "nombre": "Promotores del Fraccionamiento SAN BERNARDO",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
    "autor": {
     "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
@@ -294,14 +305,17 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó la modificación del Programa Parcial de Urbanización 'Instituto de Educación Infantil', cambiando la zonificación de dos lotes a Corredor Urbano Mixto Intensidad Media, y subdividiendo un lote en cuatro.",
+   "resumen": "Se aprobó modificar el programa parcial de urbanización Instituto de Educación Infantil para cambiar la zonificación de dos predios en Paseo de la Cantera, de Equipamiento Institucional a Corredor Urbano Mixto Intensidad Media, y subdividir el lote 04 en cuatro fracciones.",
    "sentido": "aprobado",
-   "categoria": "reglamento_normativo",
+   "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
     "Paseo de la Cantera"
    ],
-   "obras": [],
+   "obras": [
+    "Av. Ignacio Sandoval",
+    "Modificación del Programa Parcial de Urbanización Instituto de Educación Infanti"
+   ],
    "montos": [
     {
      "texto": "$28,058.72",
@@ -309,8 +323,8 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Ma. Idalia González Pimentel como apoderada legal de Andrea, Jessica y Jesús Silverio Cavazos González; y Daniel Fernand",
-    "tipo": "persona"
+    "nombre": "Ma. Idalia González Pimentel (apoderada legal de Andrea, Jessica y Jesús Silverio Cavazos González) y Daniel Fernando Gu",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -323,7 +337,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó la municipalización de la Etapa Única del Fraccionamiento Hacienda Real, ubicado al norte de la ciudad, para que reciba servicios públicos municipales.",
+   "resumen": "Se aprobó la municipalización de la Etapa Única del Fraccionamiento Hacienda Real, al norte de la ciudad, con 282 lotes y una superficie de 127,700.96 m², lo que permitirá que el municipio preste servicios públicos a los vecinos.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -331,6 +345,9 @@
     "HACIENDA REAL"
    ],
    "obras": [
+    "Redes de agua potable, tomas domiciliarias, red de alcantarillado sanitario y de",
+    "Empedrados, banquetas y guarniciones",
+    "Infraestructura de alumbrado público",
     "Calle Arenisca",
     "Calle Travertino",
     "Calle Caliza",
@@ -346,21 +363,21 @@
    ],
    "montos": [],
    "beneficiario": {
-    "nombre": "SALVADOR REYES MAGAÑA, JCL CONSTRUCCIONES S.A. DE C.V. Y/O JOSÉ CARBAJAL LARIOS",
-    "tipo": "empresa"
+    "nombre": "Fraccionamiento HACIENDA REAL",
+    "tipo": "fraccionamiento"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se aprobó la suscripción de un Convenio de Hermanamiento entre el Municipio de Aguascalientes, Aguascalientes, y el Municipio de Colima, Colima.",
+   "resumen": "Se aprobó la suscripción del convenio de hermanamiento entre el Municipio de Colima y el Municipio de Aguascalientes para fortalecer la cooperación cultural, educativa, económica y social.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -382,7 +399,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se aprobó la suscripción de un Convenio de Hermanamiento entre el Municipio de Pihuamo, Jalisco, y el Municipio de Colima, Colima.",
+   "resumen": "Se aprobó la suscripción del convenio de hermanamiento entre el Municipio de Colima y el Municipio de Pihuamo, Jalisco, para compartir experiencias de gestión pública y fomentar el turismo.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -404,7 +421,7 @@
   {
    "n": 16,
    "numeral": "XVI",
-   "resumen": "Se aprobó la suscripción de un Convenio de Colaboración entre el Municipio de Colima y la Universidad UNIVER Colima, para promover educación y capacitación.",
+   "resumen": "Se aprobó la suscripción del convenio de colaboración entre el Municipio de Colima y la Universidad UNIVER Colima para otorgar becas de descuento a trabajadores municipales en estudios de media superior, superior y posgrado.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -426,39 +443,7 @@
   {
    "n": 17,
    "numeral": "XVII",
-   "resumen": "Se retiró del orden del día el dictamen sobre el Reglamento Interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad.",
-   "sentido": "retirado",
-   "categoria": "reglamento_normativo",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 18,
-   "numeral": "XVIII",
-   "resumen": "Se retiró del orden del día el dictamen sobre el Reglamento del Instituto Municipal para la Paz Intrafamiliar.",
-   "sentido": "retirado",
-   "categoria": "reglamento_normativo",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 19,
-   "numeral": "XIX",
-   "resumen": "Se aprobó el Programa de Regularización de Títulos y Ordenamiento de Espacios del Panteón Municipal de Colima, con costos de 75 UMAS por regularización y 2 UMAS por duplicados.",
+   "resumen": "Se aprobó el Programa de Regularización de Títulos y Ordenamiento de Espacios de Panteón, que permite regularizar títulos con costos de 75 UMAs por trámite de regularización y 2 UMAs por duplicado; se instruye expedir nuevos títulos y designar personal de apoyo.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
@@ -475,21 +460,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Poseedores de títulos del Panteón Municipal",
+    "nombre": "beneficiarios del programa",
     "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones conjuntas de Patrimonio Municipal y Hacienda Municipal",
+   "comision": "Comisiones de Patrimonio Municipal y Hacienda Municipal",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
-   "n": 20,
-   "numeral": "XX",
-   "resumen": "Se aprobó otorgar el bono del Día de la Madre a trabajadoras de base, confianza, supernumerario y policía municipal, con montos de $2,012.85, $2,077.21, $1,935.44, $1,861.00 y $1,935.44 respectivamente.",
+   "n": 18,
+   "numeral": "XVIII",
+   "resumen": "Se aprobó otorgar el Bono del Día de la Madre a las madres trabajadoras de base, confianza, supernumerarias y policía municipal del Ayuntamiento de Colima, con importes de 2,012.85, 2,077.21, 1,935.44, 1,861.00 y 1,935.44 pesos según el tipo de trabajadora.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -514,21 +499,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Madres trabajadoras de base, confianza y supernumerario del H. Ayuntamiento de Colima",
-    "tipo": "ciudadania"
+    "nombre": "madres trabajadoras de base, confianza y supernumerario del H. Ayuntamiento de Colima",
+    "tipo": "persona"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y de Hacienda Municipal",
+   "comision": "Gobernación y Reglamentos, y de Hacienda Municipal",
    "autor": {
     "nombre": "Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
-   "n": 21,
-   "numeral": "XXI",
-   "resumen": "Se declaró clausurada la sesión después de agotar el orden del día.",
+   "n": 19,
+   "numeral": "XIX",
+   "resumen": "El Presidente Municipal declaró clausurada la sesión a las 21:19, una vez agotado el orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

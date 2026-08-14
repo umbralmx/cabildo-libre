@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T16:38:57+00:00",
+ "generado": "2026-08-13T22:47:26+00:00",
  "lectura": {
   "chars_ocr": 241376,
   "chars_leidos": 241376,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se realizaron trámites iniciales y se presentó el dictamen de adecuaciones presupuestales por $14.9 millones.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "En la sesión se modificó el orden del día para incluir el reglamento del fideicomiso, se aprobó el acta 10 y se leyó el dictamen de adecuaciones presupuestales por $14,897,829.82.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los integrantes del Cabildo.",
+   "resumen": "Se pasó lista de asistencia; se registraron los presentes y la ausencia justificada de la regidora Ana Isabel Flores Viera.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró el quórum legal y se instaló la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +53,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se modificó y aprobó el Orden del Día por unanimidad, agregando el dictamen del Reglamento del Fideicomiso.",
-   "sentido": "aprobado",
+   "resumen": "Se dio lectura al orden del día y, a petición de la síndica, se agregó el dictamen del reglamento del fideicomiso; la modificación se aprobó por unanimidad.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -68,7 +69,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el Acta de Cabildo N° 10.",
+   "resumen": "Se dispensó la lectura del acta 10 y ésta fue aprobada por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +85,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias especificadas, con un total de $14,897,829.82 en recursos propios y $2,885,953.22 del FORTAMUN.",
+   "resumen": "Se autorizó a la Tesorería Municipal a realizar las adecuaciones presupuestarias solicitadas en el oficio S5.3.01.01/TM/1862/2024, por 14,897,829.82 pesos en recursos no etiquetados y 2,885,953.22 pesos de FORTAMUN.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -92,8 +93,88 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$14,897,829.82 (CATORCE MILLONES OCHOCIENTOS NOVENTA Y OCHO MIL OCHOCIENTOS VEINTINUEVE PESOS 82/100 M.N.)",
+     "texto": "$14, 897, 829.82",
      "valor_mxn": 14897829.82
+    },
+    {
+     "texto": "2,009.28",
+     "valor_mxn": 2009.28
+    },
+    {
+     "texto": "646.60",
+     "valor_mxn": 646.6
+    },
+    {
+     "texto": "2,461.44",
+     "valor_mxn": 2461.44
+    },
+    {
+     "texto": "224.00",
+     "valor_mxn": 224.0
+    },
+    {
+     "texto": "1,174.42",
+     "valor_mxn": 1174.42
+    },
+    {
+     "texto": "1,740.42",
+     "valor_mxn": 1740.42
+    },
+    {
+     "texto": "8,243.80",
+     "valor_mxn": 8243.8
+    },
+    {
+     "texto": "1,256.25",
+     "valor_mxn": 1256.25
+    },
+    {
+     "texto": "968.73",
+     "valor_mxn": 968.73
+    },
+    {
+     "texto": "2,210.88",
+     "valor_mxn": 2210.88
+    },
+    {
+     "texto": "1,383.99",
+     "valor_mxn": 1383.99
+    },
+    {
+     "texto": "1,082.06",
+     "valor_mxn": 1082.06
+    },
+    {
+     "texto": "638.27",
+     "valor_mxn": 638.27
+    },
+    {
+     "texto": "10,024.87",
+     "valor_mxn": 10024.87
+    },
+    {
+     "texto": "11,627.19",
+     "valor_mxn": 11627.19
+    },
+    {
+     "texto": "10,457.24",
+     "valor_mxn": 10457.24
+    },
+    {
+     "texto": "47,700.00",
+     "valor_mxn": 47700.0
+    },
+    {
+     "texto": "3,375.80",
+     "valor_mxn": 3375.8
+    },
+    {
+     "texto": "3,753.65",
+     "valor_mxn": 3753.65
+    },
+    {
+     "texto": "4,508.53",
+     "valor_mxn": 4508.53
     },
     {
      "texto": "259,169.72",
@@ -144,21 +225,24 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "C. Azucena López Legorreta",
+    "nombre": "Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública Mensual de noviembre de 2024, a cargo de la Tesorería Municipal.",
+   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública mensual de noviembre de 2024, con la responsabilidad de la Tesorería Municipal.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
@@ -170,7 +254,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó suscribir un Convenio General de Colaboración con el Gobierno del Estado de Colima para transversalizar la perspectiva de género y prevenir la violencia contra las mujeres.",
+   "resumen": "Se aprobó suscribir un convenio con el Gobierno del Estado de Colima para institucionalizar la perspectiva de género y prevenir la violencia contra mujeres, adolescentes y niñas.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -192,7 +276,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó suscribir un Convenio de Colaboración con la Fundación Lo Mejor de Colima A.C. para la administración y organización del Carnaval de Colima hasta 2027.",
+   "resumen": "Se aprobó un convenio con la Fundación Lo Mejor de Colima A.C. para que el municipio administre y organice el Carnaval de Colima hasta octubre de 2027, con dictamen previo de Hacienda antes de erogar recursos.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -201,11 +285,11 @@
    "montos": [],
    "beneficiario": {
     "nombre": "Fundación Lo Mejor de Colima A.C.",
-    "tipo": "empresa"
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y Educación, Cultura y Recreación",
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos, y Educación, Cultura y Recreación",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -214,7 +298,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó suscribir un Convenio de Colaboración con el Instituto para el Registro del Territorio del Estado de Colima (IRTEC) para coordinación en catastro y uso de drones.",
+   "resumen": "Se aprobó el convenio con el IRTEC para coordinar el catastro municipal, incluyendo vuelos de dron y actualización de información territorial.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -236,7 +320,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la fe de erratas para corregir el nombre de la empresa promovente en la modificación de zonificación del lote en el Fraccionamiento Colinas de Santa Fe.",
+   "resumen": "Se aprobó la fe de erratas a la modificación de zonificación del lote 02-01-13-020-030-000 del fraccionamiento Colinas de Santa Fe, para corregir el nombre de la empresa promovente de Operadora a Corporación de Tecnología Minera.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -246,8 +330,8 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Corporación de Tecnología Minera, S.A. de C.V.",
-    "tipo": "empresa"
+    "nombre": "Ing. Claudio Jacobo Arias Díaz",
+    "tipo": "persona"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -260,17 +344,24 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la realización del Festival Capital Navideña 2024 del 13 al 15 de diciembre, declarando recinto ferial en calles del centro de Colima y estableciendo cuotas de uso de vía pública.",
+   "resumen": "Se aprobó el festival Capital Navideña 2024 del 13 al 15 de diciembre, con declaratoria de recinto ferial en el Jardín Libertad y vialidades adyacentes, y autorización de cobros conforme a la Ley de Hacienda.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "Jardín Libertad",
+    "calle Reforma",
+    "16 de septiembre",
+    "Degollado",
+    "Madero",
+    "Andador Constitución"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; y Patrimonio Municipal",
    "autor": {
     "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -279,7 +370,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó por unanimidad el Reglamento que crea el Fideicomiso para la Innovación y Calidad Gubernamental del Municipio de Colima, con el objeto de financiar proyectos de innovación y mejora de la gestión pública.",
+   "resumen": "Se aprobó por unanimidad el Reglamento que crea el Fideicomiso para la Innovación y Calidad Gubernamental del Municipio de Colima, con aportaciones mensuales del Ayuntamiento hasta alcanzar el 3% de su presupuesto de egresos con recurso propio.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -298,7 +389,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó por unanimidad la Declaratoria de Tolerancia Cero ante la Violencia hacia las Mujeres y sus Hijas e Hijos, presentada por la Regidora Azucena López Legorreta.",
+   "resumen": "Se aprobó por unanimidad la Declaratoria de Tolerancia Cero ante la Violencia hacia las Mujeres y sus Hijas e Hijos, propuesta por la Regidora Azucena López Legorreta, para prevenir, atender, sancionar y erradicar la violencia.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -313,14 +404,14 @@
    "abstenciones": [],
    "comision": null,
    "autor": {
-    "nombre": "Azucena López Legorreta",
+    "nombre": "C. Azucena López Legorreta",
     "id": "azucena-lopez-legorreta"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 10:32 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

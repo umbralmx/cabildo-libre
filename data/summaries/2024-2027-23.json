@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T01:29:32+00:00",
+ "generado": "2026-08-13T23:05:58+00:00",
  "lectura": {
   "chars_ocr": 116239,
   "chars_leidos": 116239,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se modificó y aprobó el orden del día, actas anteriores, el festival Colima Sabe Bien 2025 en Santa Bárbara, y el programa Carsol Chevrolet por $29,020; se leyó dictamen de Ethereum sin resolución.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El cabildo modificó su orden del día, aprobó el festival Colima Sabe Bien 2025 y el programa parcial Carsol Chevrolet, y leyó el dictamen de Ethereum.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia con presencia de la mayoría de los miembros.",
+   "resumen": "Se tomó lista de asistencia; el presidente municipal, la síndica y los regidores manifestaron su presencia.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día, se retiró el punto de Cuenta Anual y se incluyó el convenio con Universidad Multitécnica, aprobándose por unanimidad.",
+   "resumen": "Se aprobó por unanimidad el orden del día modificado: se retiró la cuenta anual consolidada y se incorporó el convenio con la Universidad Multitécnica Profesional.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,7 +69,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura de las Actas 21 y 22 y se aprobaron por unanimidad.",
+   "resumen": "Se dispensó la lectura de las actas 21 y 22 y ambas fueron aprobadas por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,33 +85,46 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó declarar Recinto Ferial el Jardín de la Paz y calles contiguas en la colonia Santa Bárbara para el festival Colima Sabe Bien 2025, con las cuotas establecidas.",
+   "resumen": "Se aprobó por unanimidad declarar recinto ferial el Jardín de la Paz, en la colonia Santa Bárbara, para el festival Colima Sabe Bien 2025 del 14 al 16 de marzo, con los cobros autorizados.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [
     "Santa Bárbara"
    ],
-   "obras": [],
+   "obras": [
+    "Jardín de la Paz",
+    "Av. Venustiano Carranza",
+    "Av. De los Diamantes",
+    "Paseo de los Jazmines",
+    "calle Ruiseñor",
+    "calle Palma Areca"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
    "autor": {
-    "nombre": "Mtro. Federico Rangel Lozano",
+    "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó el Programa Parcial de Urbanización Carsol Chevrolet Colima, promovido por Luis Miguel Solana Esposito, ubicado en Av. Tecnológico y Amado Nervo, con una superficie total de 12,664.86 m² y un pago de $29,020.41.",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización CARSOL CHEVROLET COLIMA, en el cruce de Avenida Tecnológico y calle Amado Nervo; el urbanizador cubrirá el costo de publicación e inscripción.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "Fraccionamiento La Armonía"
+   ],
+   "obras": [
+    "Programa Parcial de Urbanización Carsol Chevrolet Colima",
+    "Avenida Tecnológico",
+    "calle Amado Nervo"
+   ],
    "montos": [
     {
      "texto": "$29,020.41",
@@ -118,27 +132,41 @@
     }
    ],
    "beneficiario": {
-    "nombre": "LUIS MIGUEL SOLANA ESPOSITO",
+    "nombre": "Luis Miguel Solana Esposito",
     "tipo": "persona"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización CARSOL CHEVROLET COLIMA, ubicado en el cruce de Avenida Tecnológico y calle Amado Nervo. El urbanizador cubrirá los costos de publicación e inscripción.",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la Etapa 2 del fraccionamiento Residencial Ethereum by Real Vista Hermosa, promovida por Ar dica Construcciones; se otorgan fianzas por $5,528,622.65 y $3,364,712.73 para garantizar las obras.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
+   "colonias": [
+    "Residencial Ethereum By Real Vista Hermosa"
+   ],
+   "obras": [
+    "JORGE LUIS BORGES",
+    "ETHEREUM STREET"
+   ],
+   "montos": [
+    {
+     "texto": "$5,528,622.65",
+     "valor_mxn": 5528622.65
+    },
+    {
+     "texto": "$3,364,712.73",
+     "valor_mxn": 3364712.73
+    }
+   ],
    "beneficiario": {
     "nombre": "ARDICA CONSTRUCCIONES, S",
     "tipo": "empresa"
@@ -147,68 +175,34 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad la Incorporación Municipal Anticipada de la Etapa 2 del Fraccionamiento Residencial ETHEREUM By Vista Hermosa, promovida por ARDICA CONSTRUCCIONES, S.A. DE C.V. y otros. Se garantizan obras con fianzas por $5,528,622.65 y $3,364,712.73.",
+   "resumen": "Se aprobó por unanimidad la convocatoria para elegir a los Comités de Participación Ciudadana del Municipio de Colima 2025-2027, con los representantes del Cabildo, lugares, fechas y horarios de las elecciones.",
    "sentido": "aprobado",
-   "categoria": "fraccionamiento",
-   "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
-   "montos": [
-    {
-     "texto": "$5,528,622.65 (CINCO MILLONES QUINIENTOS VEINTIOCHO MIL SEISCIENTOS VEINTIDOS PESOS 65/100 M.N.)",
-     "valor_mxn": 5528622.65
-    },
-    {
-     "texto": "$3,364,712.73 (TRES MILLONES TRESCIENTOS SESENTA Y CUATRO MIL SETECIENTOS DOCE PESOS 73/100 M.N.)",
-     "valor_mxn": 3364712.73
-    }
-   ],
-   "beneficiario": {
-    "nombre": "ARDICA CONSTRUCCIONES, S.A. DE C.V. Y/O ING. CLAUDIO JACOBO ARIAS DÍAZ",
-    "tipo": "empresa"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Desarrollo Urbano y Vivienda",
-   "autor": {
-    "nombre": "Claudia Janeth Farías López",
-    "id": "claudia-janeth-farias-lopez"
-   }
-  },
-  {
-   "n": 9,
-   "numeral": "IX",
-   "resumen": "Se aprobó la convocatoria para la elección de los comités de participación ciudadana del municipio de Colima para el periodo 2025-2027, así como los representantes del Cabildo y los lugares, fechas y horas de las elecciones.",
-   "sentido": "aprobado",
-   "categoria": "reglamento_normativo",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [
-    "BOSQUES DEL SUR",
-    "PLACETAS ESTADIO 1",
-    "VILLAS DE SAN SEBASTIÁN",
-    "RESIDENCIAL BURGOS",
-    "FÁTIMA",
-    "JARDINES DE LAS LOMAS",
-    "BOSQUES DEL SUR II",
-    "PRADOS DEL SUR ORIENTE",
-    "FRANCISCO VÁZQUEZ",
-    "BOSQUES DEL SUR III",
-    "RESIDENCIAL VALLE VERDE",
-    "LAGUNA LA MARÍA"
+    "LOS VIVEROS",
+    "ANDARES DEL JAZMÍN",
+    "ALBATERRA",
+    "JARDINES DE LA CORREGIDORA",
+    "REAL VISTA",
+    "LA GUADALUPE",
+    "BARRIO LA CONCORDIA",
+    "BARRIO LA CONCORDIA II",
+    "FRANCISCO VILLA",
+    "BURÓCRATAS",
+    "PUERTA PARAÍSO",
+    "GUADALAJARITA"
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "ciudadanía del Municipio de Colima",
-    "tipo": "ciudadania"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Derechos Humanos y Participación Ciudadana",
@@ -218,11 +212,33 @@
    }
   },
   {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó por unanimidad suscribir un convenio de colaboración con la Universidad Multitécnica Profesional para que sus estudiantes realicen servicio social y prácticas profesionales en el Ayuntamiento y para ofrecer becas de descuento a trabajadores y sus familias.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad Multitécnica Profesional",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentaron dos solicitudes ciudadanas para limpieza de jardines: una en la colonia La Albarrada y otra en Bosques del Sur.",
-   "sentido": "tramite",
-   "categoria": "tramite",
+   "resumen": "La regidora Azucena López Legorreta informó sobre solicitudes de limpieza y saneamiento de jardines en las colonias La Albarrada y Bosques del Sur, y entregó oficios al presidente municipal.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
    "votacion": "no_determinable",
    "colonias": [
     "La Albarrada",
@@ -242,7 +258,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "Se declaró clausurada la sesión al agotarse el orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

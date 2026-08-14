@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-08-08T18:43:45+00:00",
+ "generado": "2026-08-14T01:00:12+00:00",
  "cobertura": {
   "actas_en_termino": 78,
   "con_resumen": 78,
@@ -11,48 +11,40 @@
   "nota": "Análisis parcial: 78 de 78 actas del término tienen resumen, 78 tienen los campos analíticos (categoría, votación, colonias, montos) y 78 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
-  "n_puntos": 917,
-  "n_sustantivos": 577,
+  "n_puntos": 909,
+  "n_sustantivos": 576,
   "por_sentido": {
-   "aprobado": 519,
-   "no_determinable": 25,
-   "aplazado": 24,
-   "retirado": 6,
-   "rechazado": 3
+   "aprobado": 521,
+   "no_determinable": 28,
+   "aplazado": 22,
+   "rechazado": 3,
+   "retirado": 2
   },
   "por_categoria": {
-   "tramite": 111,
-   "licencia": 87,
-   "presupuesto_finanzas": 85,
+   "tramite": 107,
+   "presupuesto_finanzas": 84,
+   "licencia": 83,
    "convenio": 72,
    "fraccionamiento": 68,
-   "reglamento_normativo": 60,
-   "otro": 34,
-   "nombramiento": 26,
+   "reglamento_normativo": 52,
+   "otro": 50,
+   "nombramiento": 25,
    "patrimonio": 21,
-   "obra_publica": 13
+   "obra_publica": 14
   },
   "por_votacion": {
    "unanime": 465,
    "mayoria": 68,
-   "no_determinable": 44
+   "no_determinable": 43
   },
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 615,
-  "n_con_valor": 550,
-  "suma_bruta_mxn": 16846847397.85,
-  "suma_declarada_mxn": 13241188636.99,
+  "n_declarados": 868,
+  "n_con_valor": 782,
+  "suma_bruta_mxn": 17635159627.16,
+  "suma_declarada_mxn": 17136782864.45,
   "puntos_total_y_desglose": [
-   {
-    "acta": "2024-2027-17",
-    "no_acta": 17,
-    "punto": 5,
-    "total_mxn": 4009960065.66,
-    "n_componentes": 11,
-    "suma_componentes_mxn": 3123728947.89
-   },
    {
     "acta": "2024-2027-22",
     "no_acta": 22,
@@ -60,6 +52,22 @@
     "total_mxn": 33698561.34,
     "n_componentes": 23,
     "suma_componentes_mxn": 9333958.6
+   },
+   {
+    "acta": "2024-2027-34",
+    "no_acta": 34,
+    "punto": 5,
+    "total_mxn": 24893862.77,
+    "n_componentes": 16,
+    "suma_componentes_mxn": 9522622.17
+   },
+   {
+    "acta": "2024-2027-43",
+    "no_acta": 43,
+    "punto": 11,
+    "total_mxn": 60000.0,
+    "n_componentes": 6,
+    "suma_componentes_mxn": 7114.2
    },
    {
     "acta": "2024-2027-43",
@@ -70,20 +78,12 @@
     "suma_componentes_mxn": 12070000
    },
    {
-    "acta": "2024-2027-46",
-    "no_acta": 46,
-    "punto": 12,
-    "total_mxn": 3500.53,
-    "n_componentes": 4,
-    "suma_componentes_mxn": 3500.53
-   },
-   {
-    "acta": "2024-2027-47",
-    "no_acta": 47,
-    "punto": 7,
-    "total_mxn": 3540.14,
-    "n_componentes": 4,
-    "suma_componentes_mxn": 3540.14
+    "acta": "2024-2027-48",
+    "no_acta": 48,
+    "punto": 5,
+    "total_mxn": 24531860.37,
+    "n_componentes": 41,
+    "suma_componentes_mxn": 6924254.04
    },
    {
     "acta": "2024-2027-53",
@@ -104,13 +104,6 @@
   ],
   "nota": "Suma de los montos que las actas declaran de forma explícita; NO es el presupuesto del municipio ni el gasto total, sólo lo nombrado en los puntos analizados. Un punto suele declarar el total de un paquete de obra Y el desglose obra por obra: sumar ambos contaría los mismos pesos dos veces, así que cuando un monto iguala o supera a todos los demás del punto juntos (y el punto lista cinco o más) se toma sólo ese total. `suma_declarada_mxn` aplica esa regla y es la cifra a mostrar; `suma_bruta_mxn` es la suma sin corregir, publicada para que la diferencia sea auditable; los puntos afectados se listan en `puntos_total_y_desglose`.",
   "mayores": [
-   {
-    "texto": "$ 4,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
-    "valor_mxn": 4009960065.66,
-    "acta": "2024-2027-17",
-    "no_acta": 17,
-    "punto": 5
-   },
    {
     "texto": "$ 1,077,523,004.00",
     "valor_mxn": 1077523004.0,
@@ -140,14 +133,14 @@
     "punto": 6
    },
    {
-    "texto": "$1,009,960,065.66 (Mil nueve millones novecientos sesenta mil sesenta y cinco pesos 66/100 M.N.)",
+    "texto": "$1,009,960,065.66",
     "valor_mxn": 1009960065.66,
     "acta": "2024-2027-17",
     "no_acta": 17,
     "punto": 5
    },
    {
-    "texto": "1'009,960,065.66",
+    "texto": "1,009,960,065.66",
     "valor_mxn": 1009960065.66,
     "acta": "2024-2027-17",
     "no_acta": 17,
@@ -161,6 +154,20 @@
     "punto": 9
    },
    {
+    "texto": "971 millones",
+    "valor_mxn": 971000000,
+    "acta": "2024-2027-17",
+    "no_acta": 17,
+    "punto": 7
+   },
+   {
+    "texto": "$937 millones de pesos",
+    "valor_mxn": 937000000,
+    "acta": "2024-2027-17",
+    "no_acta": 17,
+    "punto": 7
+   },
+   {
     "texto": "$661,792,051.55",
     "valor_mxn": 661792051.55,
     "acta": "2024-2027-53",
@@ -168,8 +175,22 @@
     "punto": 6
    },
    {
-    "texto": "$ 576,474,609.01 (quinientos setenta y seis millones cuatrocientos setenta y cuatro mil seiscientos nueve pesos 01/100 m",
-    "valor_mxn": 576474609.01,
+    "texto": "$644 millones de pesos",
+    "valor_mxn": 644000000,
+    "acta": "2024-2027-34",
+    "no_acta": 34,
+    "punto": 6
+   },
+   {
+    "texto": "$560 millones de pesos",
+    "valor_mxn": 560000000,
+    "acta": "2024-2027-34",
+    "no_acta": 34,
+    "punto": 6
+   },
+   {
+    "texto": "530,400,000.00",
+    "valor_mxn": 530400000.0,
     "acta": "2024-2027-17",
     "no_acta": 17,
     "punto": 5
@@ -187,45 +208,18 @@
     "acta": "2024-2027-17",
     "no_acta": 17,
     "punto": 5
-   },
-   {
-    "texto": "160,358,932.00",
-    "valor_mxn": 160358932,
-    "acta": "2024-2027-63",
-    "no_acta": 63,
-    "punto": 6
-   },
-   {
-    "texto": "147,522,657.00",
-    "valor_mxn": 147522657.0,
-    "acta": "2024-2027-17",
-    "no_acta": 17,
-    "punto": 5
-   },
-   {
-    "texto": "$101,517,849.00",
-    "valor_mxn": 101517849.0,
-    "acta": "2024-2027-64",
-    "no_acta": 64,
-    "punto": 6
    }
   ]
  },
  "lectura": {
   "chars_ocr": 10982681,
-  "chars_leidos": 10982681,
-  "proporcion": 1.0,
-  "actas_completas": 78,
+  "chars_leidos": 10772681,
+  "proporcion": 0.9809,
+  "actas_completas": 74,
   "actas_con_dato": 78,
   "actas_sin_dato": 0,
-  "ventanas_fallidas": 0,
-  "puntos_en_conflicto": [
-   {
-    "acta": "2024-2027-48",
-    "no_acta": 48,
-    "punto": 7
-   }
-  ],
+  "ventanas_fallidas": 5,
+  "puntos_en_conflicto": [],
   "nota": "Proporción del texto OCR de cada acta que llegó al modelo que redacta los resúmenes. Un acta se lee en ventanas solapadas; si una ventana falla, su parte se descuenta aquí en vez de darse por leída. `puntos_en_conflicto` son los puntos en que dos ventanas afirmaron resultados distintos: se resolvió por mayoría y se listan para poder verificarlos contra el PDF. Las actas resumidas antes de esta medición aparecen en `actas_sin_dato`: no se les supone cobertura."
  },
  "calendario": {
@@ -869,38 +863,26 @@
  "colonias": [
   {
    "nombre": "Centro",
-   "menciones": 35
+   "menciones": 36
   },
   {
-   "nombre": "El Chanal",
+   "nombre": "Prados del Sur",
    "menciones": 14
   },
   {
    "nombre": "La Estancia",
-   "menciones": 14
+   "menciones": 13
   },
   {
-   "nombre": "Prados del Sur",
+   "nombre": "El Chanal",
+   "menciones": 12
+  },
+  {
+   "nombre": "Lo de Villa",
    "menciones": 12
   },
   {
    "nombre": "Cardona",
-   "menciones": 10
-  },
-  {
-   "nombre": "Ignacio Allende",
-   "menciones": 10
-  },
-  {
-   "nombre": "La Capacha",
-   "menciones": 10
-  },
-  {
-   "nombre": "Lo de Villa",
-   "menciones": 10
-  },
-  {
-   "nombre": "Residencial Esmeralda",
    "menciones": 10
   },
   {
@@ -912,19 +894,27 @@
    "menciones": 9
   },
   {
-   "nombre": "Astillero de Arriba",
-   "menciones": 8
+   "nombre": "Ignacio Allende",
+   "menciones": 9
+  },
+  {
+   "nombre": "La Capacha",
+   "menciones": 9
   },
   {
    "nombre": "Piscila",
-   "menciones": 8
+   "menciones": 9
   },
   {
-   "nombre": "Bosques del Sur",
+   "nombre": "Residencial Esmeralda",
+   "menciones": 9
+  },
+  {
+   "nombre": "Astillero de Arriba",
    "menciones": 7
   },
   {
-   "nombre": "Estapilla",
+   "nombre": "Bosques del Sur",
    "menciones": 7
   },
   {
@@ -932,15 +922,15 @@
    "menciones": 7
   },
   {
+   "nombre": "Real Vista Hermosa",
+   "menciones": 7
+  },
+  {
    "nombre": "Acatitán",
    "menciones": 6
   },
   {
-   "nombre": "El Alpuyequito",
-   "menciones": 6
-  },
-  {
-   "nombre": "El Amarradero",
+   "nombre": "Estapilla",
    "menciones": 6
   },
   {
@@ -948,23 +938,23 @@
    "menciones": 6
   },
   {
-   "nombre": "Real Vista Hermosa",
-   "menciones": 6
-  },
-  {
    "nombre": "Residencial Esmeralda Norte",
    "menciones": 6
   },
   {
-   "nombre": "Astillero de Abajo",
-   "menciones": 5
+   "nombre": "Tepames",
+   "menciones": 6
   },
   {
    "nombre": "Diamantes",
    "menciones": 5
   },
   {
-   "nombre": "El Bordo",
+   "nombre": "El Alpuyequito",
+   "menciones": 5
+  },
+  {
+   "nombre": "El Amarradero",
    "menciones": 5
   },
   {
@@ -972,15 +962,7 @@
    "menciones": 5
   },
   {
-   "nombre": "El Tívoli",
-   "menciones": 5
-  },
-  {
    "nombre": "Francisco Villa III",
-   "menciones": 5
-  },
-  {
-   "nombre": "Fátima",
    "menciones": 5
   },
   {
@@ -988,7 +970,15 @@
    "menciones": 5
   },
   {
+   "nombre": "La Guadalupe",
+   "menciones": 5
+  },
+  {
    "nombre": "Las Américas",
+   "menciones": 5
+  },
+  {
+   "nombre": "Mirador de la Cumbre II",
    "menciones": 5
   },
   {
@@ -1000,15 +990,19 @@
    "menciones": 5
   },
   {
-   "nombre": "Sin Nombre",
-   "menciones": 5
-  },
-  {
-   "nombre": "Tepames",
-   "menciones": 5
+   "nombre": "Astillero de Abajo",
+   "menciones": 4
   },
   {
    "nombre": "EL DIEZMO",
+   "menciones": 4
+  },
+  {
+   "nombre": "El Bordo",
+   "menciones": 4
+  },
+  {
+   "nombre": "El Tívoli",
    "menciones": 4
   },
   {
@@ -1016,15 +1010,15 @@
    "menciones": 4
   },
   {
+   "nombre": "Fátima",
+   "menciones": 4
+  },
+  {
    "nombre": "Ignacio Zaragoza",
    "menciones": 4
   },
   {
-   "nombre": "Jardines de las Lomas",
-   "menciones": 4
-  },
-  {
-   "nombre": "La Guadalupe",
+   "nombre": "Infonavit La Estancia",
    "menciones": 4
   },
   {
@@ -1033,14 +1027,6 @@
   },
   {
    "nombre": "Los Tepames",
-   "menciones": 4
-  },
-  {
-   "nombre": "Lázaro Cárdenas",
-   "menciones": 4
-  },
-  {
-   "nombre": "Mirador de la Cumbre II",
    "menciones": 4
   },
   {
@@ -1060,7 +1046,15 @@
    "menciones": 4
   },
   {
-   "nombre": "Bosque de la Cantera",
+   "nombre": "San Rafael",
+   "menciones": 4
+  },
+  {
+   "nombre": "BOSQUE DE LA CANTERA",
+   "menciones": 3
+  },
+  {
+   "nombre": "Camino Real",
    "menciones": 3
   },
   {
@@ -1080,11 +1074,27 @@
    "menciones": 3
   },
   {
+   "nombre": "Ejido El Diezmo",
+   "menciones": 3
+  },
+  {
    "nombre": "Francisco I. Madero",
    "menciones": 3
   },
   {
    "nombre": "GIRASOLES",
+   "menciones": 3
+  },
+  {
+   "nombre": "Guadalajarita",
+   "menciones": 3
+  },
+  {
+   "nombre": "Hacienda Real",
+   "menciones": 3
+  },
+  {
+   "nombre": "JARDINES DE LA CORREGIDORA",
    "menciones": 3
   },
   {
@@ -1096,7 +1106,19 @@
    "menciones": 3
   },
   {
+   "nombre": "Jardines del Sol",
+   "menciones": 3
+  },
+  {
    "nombre": "LAS PALMAS",
+   "menciones": 3
+  },
+  {
+   "nombre": "LOS VIVEROS",
+   "menciones": 3
+  },
+  {
+   "nombre": "La Armonía",
    "menciones": 3
   },
   {
@@ -1121,6 +1143,14 @@
   },
   {
    "nombre": "Los Ortices",
+   "menciones": 3
+  },
+  {
+   "nombre": "Lázaro Cárdenas",
+   "menciones": 3
+  },
+  {
+   "nombre": "MARGARITAS",
    "menciones": 3
   },
   {
@@ -1160,10 +1190,6 @@
    "menciones": 3
   },
   {
-   "nombre": "Residencial Romanza",
-   "menciones": 3
-  },
-  {
    "nombre": "Residencial Santa Bárbara",
    "menciones": 3
   },
@@ -1172,19 +1198,19 @@
    "menciones": 3
   },
   {
-   "nombre": "Residencial Valle Verde",
-   "menciones": 3
-  },
-  {
    "nombre": "Residencial Victoria",
    "menciones": 3
   },
   {
-   "nombre": "San Bernardo",
+   "nombre": "Romanza",
    "menciones": 3
   },
   {
-   "nombre": "San Rafael",
+   "nombre": "SAN BERNARDO",
+   "menciones": 3
+  },
+  {
+   "nombre": "Sin Nombre",
    "menciones": 3
   },
   {
@@ -1192,11 +1218,7 @@
    "menciones": 3
   },
   {
-   "nombre": "Villa de Álvarez",
-   "menciones": 3
-  },
-  {
-   "nombre": "Camino Real",
+   "nombre": "BURÓCRATAS",
    "menciones": 2
   },
   {
@@ -1204,7 +1226,15 @@
    "menciones": 2
   },
   {
-   "nombre": "Ejido El Diezmo",
+   "nombre": "Cuauhtémoc",
+   "menciones": 2
+  },
+  {
+   "nombre": "Desarrollo Comercial \"La Palma\"",
+   "menciones": 2
+  },
+  {
+   "nombre": "EL PEDREGAL",
    "menciones": 2
   },
   {
@@ -1228,23 +1258,15 @@
    "menciones": 2
   },
   {
-   "nombre": "Guadalajarita",
-   "menciones": 2
-  },
-  {
-   "nombre": "HACIENDA REAL",
-   "menciones": 2
-  },
-  {
-   "nombre": "Infonavit La Estancia",
-   "menciones": 2
-  },
-  {
-   "nombre": "Jardines del Sol",
+   "nombre": "Jardines de las Lomas",
    "menciones": 2
   },
   {
    "nombre": "Josefa Ortiz de Domínguez",
+   "menciones": 2
+  },
+  {
+   "nombre": "LA BENJAMINA",
    "menciones": 2
   },
   {
@@ -1253,10 +1275,6 @@
   },
   {
    "nombre": "LOS ÁNGELES",
-   "menciones": 2
-  },
-  {
-   "nombre": "La Armonía",
    "menciones": 2
   },
   {
@@ -1280,7 +1298,7 @@
    "menciones": 2
   },
   {
-   "nombre": "Los Viveros",
+   "nombre": "Los Jazmines",
    "menciones": 2
   },
   {
@@ -1288,11 +1306,11 @@
    "menciones": 2
   },
   {
-   "nombre": "Margaritas",
+   "nombre": "Mirador de la Cumbre",
    "menciones": 2
   },
   {
-   "nombre": "Mirador de la Cumbre",
+   "nombre": "Mirador de la Cumbre I",
    "menciones": 2
   },
   {
@@ -1304,11 +1322,11 @@
    "menciones": 2
   },
   {
-   "nombre": "PUNTO RIOJA",
+   "nombre": "PUERTA PARAÍSO",
    "menciones": 2
   },
   {
-   "nombre": "Parque Industrial, Lo de Villa",
+   "nombre": "PUNTO RIOJA",
    "menciones": 2
   },
   {
@@ -1344,11 +1362,23 @@
    "menciones": 2
   },
   {
-   "nombre": "Residencial Los Olivos",
+   "nombre": "Residencial Ethereum By Real Vista Hermosa",
+   "menciones": 2
+  },
+  {
+   "nombre": "Residencial Romanza",
    "menciones": 2
   },
   {
    "nombre": "Residencial San Agustín",
+   "menciones": 2
+  },
+  {
+   "nombre": "Residencial Santa Cristina",
+   "menciones": 2
+  },
+  {
+   "nombre": "Residencial Valle Verde",
    "menciones": 2
   },
   {
@@ -1364,19 +1394,11 @@
    "menciones": 2
   },
   {
-   "nombre": "Romanza",
-   "menciones": 2
-  },
-  {
    "nombre": "SECCIÓN 39 SNTE",
    "menciones": 2
   },
   {
    "nombre": "San José Sur",
-   "menciones": 2
-  },
-  {
-   "nombre": "San Pablo",
    "menciones": 2
   },
   {
@@ -1388,11 +1410,35 @@
    "menciones": 2
   },
   {
+   "nombre": "VILLA DE ÁLVAREZ",
+   "menciones": 2
+  },
+  {
+   "nombre": "ALBARRADA I",
+   "menciones": 1
+  },
+  {
+   "nombre": "ALBARRADA II",
+   "menciones": 1
+  },
+  {
+   "nombre": "ALBARRADA III",
+   "menciones": 1
+  },
+  {
+   "nombre": "ALBATERRA",
+   "menciones": 1
+  },
+  {
    "nombre": "ALLURE RESIDENCIAL",
    "menciones": 1
   },
   {
-   "nombre": "Andares del Jazmín IV",
+   "nombre": "ANDARES DEL JAZMÍN",
+   "menciones": 1
+  },
+  {
+   "nombre": "ANDARES DEL JAZMÍN IV",
    "menciones": 1
   },
   {
@@ -1401,18 +1447,6 @@
   },
   {
    "nombre": "Asitillero de Abajo",
-   "menciones": 1
-  },
-  {
-   "nombre": "BOSQUES DEL SUR II",
-   "menciones": 1
-  },
-  {
-   "nombre": "BOSQUES DEL SUR III",
-   "menciones": 1
-  },
-  {
-   "nombre": "BUROCRATAS",
    "menciones": 1
   },
   {
@@ -1444,6 +1478,10 @@
    "menciones": 1
   },
   {
+   "nombre": "Centro Histórico",
+   "menciones": 1
+  },
+  {
    "nombre": "Comercial Francisco I. Madero",
    "menciones": 1
   },
@@ -1452,23 +1490,11 @@
    "menciones": 1
   },
   {
-   "nombre": "Contro",
-   "menciones": 1
-  },
-  {
-   "nombre": "Cuauhtémoc",
-   "menciones": 1
-  },
-  {
    "nombre": "Cuyutlán",
    "menciones": 1
   },
   {
    "nombre": "De las Fuentes",
-   "menciones": 1
-  },
-  {
-   "nombre": "Desarrollo Comercial \"La Palma\"",
    "menciones": 1
   },
   {
@@ -1481,10 +1507,6 @@
   },
   {
    "nombre": "EL MORALETE ORIENTE",
-   "menciones": 1
-  },
-  {
-   "nombre": "ELPEDREGAL",
    "menciones": 1
   },
   {
@@ -1504,10 +1526,6 @@
    "menciones": 1
   },
   {
-   "nombre": "FRANCISCO VÁZQUEZ",
-   "menciones": 1
-  },
-  {
    "nombre": "Francisco Zaragoza",
    "menciones": 1
   },
@@ -1516,15 +1534,31 @@
    "menciones": 1
   },
   {
-   "nombre": "Gregorio Torre Quintero",
-   "menciones": 1
-  },
-  {
    "nombre": "Gómez Lomas Vista Hermosa",
    "menciones": 1
   },
   {
    "nombre": "HACIENDA EL BALCÓN",
+   "menciones": 1
+  },
+  {
+   "nombre": "INDECO ALBARRADA I",
+   "menciones": 1
+  },
+  {
+   "nombre": "INDECO ALBARRADA II",
+   "menciones": 1
+  },
+  {
+   "nombre": "INDECO ALBARRADA III",
+   "menciones": 1
+  },
+  {
+   "nombre": "INFONAVIT (LA ESTANCIA)",
+   "menciones": 1
+  },
+  {
+   "nombre": "INFONAVIT IMSS",
    "menciones": 1
   },
   {
@@ -1537,10 +1571,6 @@
   },
   {
    "nombre": "Infonavit Camino Real",
-   "menciones": 1
-  },
-  {
-   "nombre": "JARDINES DE LA CORREGIDORA",
    "menciones": 1
   },
   {
@@ -1560,19 +1590,19 @@
    "menciones": 1
   },
   {
-   "nombre": "LA BENJAMINA",
-   "menciones": 1
-  },
-  {
    "nombre": "LA CHIRIPA",
    "menciones": 1
   },
   {
-   "nombre": "LA GARITA",
+   "nombre": "LA CONCORDIA",
    "menciones": 1
   },
   {
-   "nombre": "LAGUNA LA MARÍA",
+   "nombre": "LA CONCORDIA II",
+   "menciones": 1
+  },
+  {
+   "nombre": "LA GARITA",
    "menciones": 1
   },
   {
@@ -1604,6 +1634,10 @@
    "menciones": 1
   },
   {
+   "nombre": "La Cantera",
+   "menciones": 1
+  },
+  {
    "nombre": "La Floresta",
    "menciones": 1
   },
@@ -1620,11 +1654,15 @@
    "menciones": 1
   },
   {
-   "nombre": "Laureles",
+   "nombre": "Las Amarillas",
    "menciones": 1
   },
   {
-   "nombre": "Localidad El Chanal",
+   "nombre": "Las Pérgolas",
+   "menciones": 1
+  },
+  {
+   "nombre": "Laureles",
    "menciones": 1
   },
   {
@@ -1668,10 +1706,6 @@
    "menciones": 1
   },
   {
-   "nombre": "Los Jazmines",
-   "menciones": 1
-  },
-  {
    "nombre": "Los Olivos",
    "menciones": 1
   },
@@ -1680,11 +1714,11 @@
    "menciones": 1
   },
   {
-   "nombre": "Milenio",
+   "nombre": "Margaritas II",
    "menciones": 1
   },
   {
-   "nombre": "Mirador de la Cumbre I",
+   "nombre": "Milenio",
    "menciones": 1
   },
   {
@@ -1700,15 +1734,11 @@
    "menciones": 1
   },
   {
-   "nombre": "PLACETAS ESTADIO 1",
-   "menciones": 1
-  },
-  {
-   "nombre": "PRADOS DEL SUR ORIENTE",
-   "menciones": 1
-  },
-  {
    "nombre": "PROF. GREGORIO TORRES QUINTERO",
+   "menciones": 1
+  },
+  {
+   "nombre": "Parque Industrial, Lo de Villa",
    "menciones": 1
   },
   {
@@ -1720,7 +1750,7 @@
    "menciones": 1
   },
   {
-   "nombre": "Puerta Paraíso",
+   "nombre": "Popular",
    "menciones": 1
   },
   {
@@ -1728,11 +1758,7 @@
    "menciones": 1
   },
   {
-   "nombre": "RESIDENCIAL BURGOS",
-   "menciones": 1
-  },
-  {
-   "nombre": "RESIDENCIAL ETHEREUM BY REAL VISTA HERMOSA",
+   "nombre": "REAL VISTA",
    "menciones": 1
   },
   {
@@ -1752,11 +1778,15 @@
    "menciones": 1
   },
   {
-   "nombre": "Residencial Santa Cristina",
+   "nombre": "Residencial Los Olivos",
    "menciones": 1
   },
   {
    "nombre": "Residencial Tabachines",
+   "menciones": 1
+  },
+  {
+   "nombre": "Revolución",
    "menciones": 1
   },
   {
@@ -1784,7 +1814,7 @@
    "menciones": 1
   },
   {
-   "nombre": "SARDINES DEL SAL",
+   "nombre": "SAN PABLO",
    "menciones": 1
   },
   {
@@ -1805,6 +1835,14 @@
   },
   {
    "nombre": "Santa Elena",
+   "menciones": 1
+  },
+  {
+   "nombre": "Sardines del Sol",
+   "menciones": 1
+  },
+  {
+   "nombre": "TORRES QUINTERO",
    "menciones": 1
   },
   {
@@ -1829,10 +1867,6 @@
   },
   {
    "nombre": "Unidad Habitacional Reforma",
-   "menciones": 1
-  },
-  {
-   "nombre": "VILLAS DE SAN SEBASTIÁN",
    "menciones": 1
   },
   {
@@ -1874,22 +1908,22 @@
  ],
  "registro_voto": {
   "base_actas": 78,
-  "base_puntos": 577,
+  "base_puntos": 576,
   "por_integrante": [
    {
     "id": "azucena-lopez-legorreta",
     "nombre": "Azucena López Legorreta",
     "cargo": "regidora",
-    "votos_en_contra": 63,
+    "votos_en_contra": 62,
     "abstenciones": 29,
-    "dictamenes_presentados": 19
+    "dictamenes_presentados": 21
    },
    {
     "id": "diana-gabriela-vizcaino-aguirre",
     "nombre": "Diana Gabriela Vizcaíno Aguirre",
     "cargo": "regidora",
     "votos_en_contra": 40,
-    "abstenciones": 19,
+    "abstenciones": 20,
     "dictamenes_presentados": 2
    },
    {
@@ -1897,7 +1931,7 @@
     "nombre": "Emilio Rosario Aldorica Pulido",
     "cargo": "regidor",
     "votos_en_contra": 0,
-    "abstenciones": 2,
+    "abstenciones": 3,
     "dictamenes_presentados": 9
    },
    {
@@ -1906,7 +1940,7 @@
     "cargo": "regidora",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 26
+    "dictamenes_presentados": 25
    },
    {
     "id": "ana-isabel-flores-viera",
@@ -1914,7 +1948,7 @@
     "cargo": "regidora",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 4
+    "dictamenes_presentados": 5
    },
    {
     "id": "claudia-janeth-farias-lopez",
@@ -1922,7 +1956,7 @@
     "cargo": "regidora",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 54
+    "dictamenes_presentados": 53
    },
    {
     "id": "edgar-osiris-alcaraz-saucedo",
@@ -1930,7 +1964,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 19
+    "dictamenes_presentados": 20
    },
    {
     "id": "elia-margarita-moreno-gonzalez",
@@ -1938,7 +1972,7 @@
     "cargo": "regidora",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 3
+    "dictamenes_presentados": 4
    },
    {
     "id": "federico-rangel-lozano",
@@ -1946,7 +1980,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 36
+    "dictamenes_presentados": 37
    },
    {
     "id": "francisco-javier-bravo-gallardo",
@@ -1954,7 +1988,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 60
+    "dictamenes_presentados": 62
    },
    {
     "id": "itzel-sarahi-rios-de-la-mora",
@@ -1962,7 +1996,7 @@
     "cargo": "sindica",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 120
+    "dictamenes_presentados": 123
    },
    {
     "id": "juan-carlos-gomez-diaz",
@@ -1970,7 +2004,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 57
+    "dictamenes_presentados": 59
    },
    {
     "id": "riult-rivera-gutierrez",
@@ -1978,7 +2012,7 @@
     "cargo": "presidente_municipal",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 29
+    "dictamenes_presentados": 30
    }
   ],
   "eventos": [
@@ -1987,13 +2021,13 @@
     "no_acta": 3,
     "fecha": "2024-10-28",
     "punto": 8,
-    "categoria": "reglamento_normativo",
+    "categoria": "presupuesto_finanzas",
     "votacion": "unanime",
-    "resumen": "Se aprobó el proyecto de Tablas de Valores Unitarios de Terreno y Construcción para el ejercicio fiscal 2025.",
+    "resumen": "El presidente municipal informó que la modificación a las comisiones de cabildo es un trámite solicitado por el Partido Movimiento Ciudadano, ya adecuado y sin necesidad de votación; se compartirá la nueva integración.",
     "votos_en_contra": [],
     "abstenciones": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      }
     ]
@@ -2082,7 +2116,7 @@
     "punto": 5,
     "categoria": "reglamento_normativo",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría la reforma al artículo 227 del Reglamento del Gobierno Municipal de Colima, facultando al Director de Catastro para suscribir transmisiones patrimoniales en ausencia del Tesorero.",
+    "resumen": "Se aprobó por mayoría reformar el artículo 227 del Reglamento del Gobierno Municipal para que el director o directora de Catastro pueda suscribir transmisiones patrimoniales en ausencia o por autorización del titular de Tesorería.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2098,10 +2132,10 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2025 por un monto total de $1,009,960,065.66, con incrementos en servicios públicos, seguridad y desarrollo social.",
+    "resumen": "Se aprobó el Presupuesto de Egresos del Municipio de Colima para el Ejercicio Fiscal 2025 por 1,009,960,065.66 pesos, beneficiando a los habitantes del municipio con recursos para servicios públicos, seguridad y programas sociales, con un voto en contra de la regidora Azucena López Legorreta.",
     "votos_en_contra": [
      {
-      "nombre": "C. Azucena López Legorreta",
+      "nombre": "Regidora C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      }
     ],
@@ -2260,10 +2294,10 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría enviar al Congreso la Cuenta Pública Anual Consolidada 2024, con el voto en contra de la regidora Azucena López Legorreta.",
+    "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública Anual Consolidada del ejercicio fiscal 2024; la regidora Azucena López Legorreta votó en contra.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      }
     ],
@@ -2273,10 +2307,10 @@
     "acta": "2024-2027-30",
     "no_acta": 30,
     "fecha": "2025-04-17",
-    "punto": 13,
+    "punto": 12,
     "categoria": "convenio",
     "votacion": "mayoria",
-    "resumen": "Se aprobó un convenio de coordinación con Armería para prestar 3 camiones recolectores de basura en Cuyutlán durante Semana Santa, sin costo para Colima, y se recibió el informe trimestral de actividades de regidores.",
+    "resumen": "En Asuntos Generales se aprobó por mayoría el convenio con el Municipio de Armería para prestarle tres camiones recolectores de basura en Cuyutlán y El Paraíso durante Semana Santa, sin erogación para Colima, y se informó de la entrega de informes trimestrales de actividades.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2296,7 +2330,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se autorizaron adecuaciones presupuestarias por un total de 24,893,862.77 pesos, solicitadas por la Tesorería Municipal, aprobadas por mayoría con dos votos en contra.",
+    "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias para abril de 2025, por un total de 24,893,862.77 pesos; votaron en contra dos regidoras.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2316,7 +2350,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se autorizó remitir al H. Congreso del Estado la Cuenta Pública del mes de abril de 2025, aprobada por mayoría con dos votos en contra.",
+    "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de abril de 2025; votaron en contra dos regidoras.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2336,23 +2370,7 @@
     "punto": 10,
     "categoria": "reglamento_normativo",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el Reglamento Interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima.",
-    "votos_en_contra": [
-     {
-      "nombre": "C. Azucena López Legorreta",
-      "id": "azucena-lopez-legorreta"
-     }
-    ],
-    "abstenciones": []
-   },
-   {
-    "acta": "2024-2027-34",
-    "no_acta": 34,
-    "fecha": "2025-05-15",
-    "punto": 11,
-    "categoria": "reglamento_normativo",
-    "votacion": "mayoria",
-    "resumen": "Se aprobó el Reglamento interior del Instituto Municipal para la Paz Intrafamiliar del Municipio de Colima.",
+    "resumen": "Se aprobó por mayoría el Reglamento Interior del Instituto Municipal para la Paz Intrafamiliar, con el voto en contra de una regidora.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2365,17 +2383,17 @@
     "acta": "2024-2027-36",
     "no_acta": 36,
     "fecha": "2025-06-14",
-    "punto": 12,
+    "punto": 10,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se autorizó a la Tesorería Municipal a realizar las adecuaciones presupuestarias del mes de mayo de 2025, con transferencias por más de 28 millones de pesos y 2.4 millones de pesos del FORTAMUN, aprobado por mayoría con dos votos en contra.",
+    "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias de mayo de 2025; votaron en contra Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ],
@@ -2385,10 +2403,10 @@
     "acta": "2024-2027-36",
     "no_acta": 36,
     "fecha": "2025-06-14",
-    "punto": 13,
+    "punto": 11,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública de mayo de 2025, con dos votos en contra.",
+    "resumen": "El cabildo aprobó, por mayoría, el dictamen que propone no autorizar la cuenta pública de mayo de 2025 y turnar el resultado al Congreso del Estado, al considerar injustificados los incrementos de gasto.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2605,7 +2623,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó dar de baja en el sistema EMPRESS 91 perfiles de comerciantes temporales erróneamente registrados como fijos.",
+    "resumen": "Se aprobó dar de baja en el sistema EMPRESS a 91 perfiles de comerciantes temporales que estaban erróneamente registrados como fijos; hubo un voto en contra y una abstención.",
     "votos_en_contra": [
      {
       "nombre": "Azucena López Legorreta",
@@ -2623,10 +2641,10 @@
     "acta": "2024-2027-41",
     "no_acta": 41,
     "fecha": "2025-07-24",
-    "punto": 13,
+    "punto": 12,
     "categoria": "reglamento_normativo",
     "votacion": "mayoria",
-    "resumen": "Se reprobó por mayoría la Minuta con Proyecto de Decreto de reforma constitucional en materia de acceso a la información y protección de datos personales.",
+    "resumen": "El Cabildo reprobó por mayoría la minuta con proyecto de decreto que reforma la Constitución del Estado en materia de acceso a la información y protección de datos personales; votaron en contra las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2718,7 +2736,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se autorizaron las adecuaciones presupuestarias solicitadas por la Tesorería Municipal para julio, por un total de 4,653,443.09 pesos.",
+    "resumen": "El Cabildo aprobó por mayoría las adecuaciones presupuestales de julio solicitadas por la Tesorería Municipal, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2738,7 +2756,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó la remisión al Congreso del Estado de la Cuenta Pública Municipal de julio de 2025.",
+    "resumen": "El Cabildo aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de julio de 2025, con el voto en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2758,7 +2776,7 @@
     "punto": 11,
     "categoria": "otro",
     "votacion": "unanime",
-    "resumen": "Se aprobó declarar recinto ferial para la Expo Col 2025 en varios espacios del centro histórico, autorizando cobros de derechos y aprovechamientos, así como la realización del Primer Certamen Nacional de Huapango con premiación de $60,000.",
+    "resumen": "Se aprobó declarar recinto ferial para la Expo Col 2025 los días 15, 16, 17, 22, 23 y 24 de agosto, autorizar cobros de derechos y aprovechamientos, y realizar el Primer Certamen Nacional de Huapango con 60,000 pesos en premios.",
     "votos_en_contra": [],
     "abstenciones": [
      {
@@ -2777,8 +2795,8 @@
     "fecha": "2025-08-15",
     "punto": 14,
     "categoria": "presupuesto_finanzas",
-    "votacion": "unanime",
-    "resumen": "Se autorizaron ampliaciones presupuestales por $12,070,000.00 para diversos proyectos y dependencias municipales.",
+    "votacion": "mayoria",
+    "resumen": "Aprobar las ampliaciones presupuestales al Presupuesto de Ingresos y Egresos 2025 solicitadas por la Tesorería Municipal, por un total de $12,070,000.00, con asignaciones a Protección Civil, institutos municipales, obras y alumbrado público. La votación fue aprobada con las abstenciones de dos regidoras.",
     "votos_en_contra": [],
     "abstenciones": [
      {
@@ -2814,7 +2832,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobaron las adecuaciones presupuestarias solicitadas por la Tesorería Municipal correspondientes a agosto de 2025, por un total de $5,483,327.37.",
+    "resumen": "Se aprobó que la Tesorería Municipal realice las adecuaciones presupuestarias del mes de agosto, incluyendo ampliaciones y transferencias, por un total de 5,483,327.37 pesos.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2830,7 +2848,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó remitir al Congreso del Estado los resultados de la Cuenta Pública del mes de agosto de 2025.",
+    "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de agosto de 2025.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2843,13 +2861,13 @@
     "acta": "2024-2027-46",
     "no_acta": 46,
     "fecha": "2025-09-12",
-    "punto": 7,
-    "categoria": "presupuesto_finanzas",
-    "votacion": "mayoria",
-    "resumen": "Se autorizó al Municipio de Colima a contratar un crédito simple con BANOBRAS por hasta 32.5 millones de pesos, con garantía del FAISMUN, para obra pública. Fue aprobado por mayoría, con el voto en contra de la Regidora Azucena López Legorreta.",
+    "punto": 12,
+    "categoria": "otro",
+    "votacion": "unanime",
+    "resumen": "Se aprobó reprogramar la Expo Col 2025 para el 26 al 28 de septiembre, declarar varios espacios públicos como recinto ferial y autorizar cobros por derechos y aprovechamientos.",
     "votos_en_contra": [
      {
-      "nombre": "C. Azucena López Legorreta",
+      "nombre": "Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      }
     ],
@@ -2862,23 +2880,7 @@
     "punto": 3,
     "categoria": "tramite",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el Orden del Día con la modificación de agregar el dictamen de cambio de nombre de Casa Caracol a Edificio Rosa, con un voto en contra de la Regidora Azucena López Legorreta.",
-    "votos_en_contra": [
-     {
-      "nombre": "C. Azucena López Legorreta",
-      "id": "azucena-lopez-legorreta"
-     }
-    ],
-    "abstenciones": []
-   },
-   {
-    "acta": "2024-2027-47",
-    "no_acta": 47,
-    "fecha": "2025-10-03",
-    "punto": 5,
-    "categoria": "reglamento_normativo",
-    "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría modificar el nombre del Centro de Asistencia, Resguardo y Atención (Casa Caracol) a Centro Integral de Educación y Atención para las Mujeres 'Edificio Rosa', y reformar los artículos 18 fracción VI, 25 y 26 del Reglamento Interior del DIF Municipal.",
+    "resumen": "Se modificó el orden del día para incorporar el dictamen de cambio de nombre de Casa Caracol a Edificio Rosa; el orden modificado fue aprobado por mayoría con el voto en contra de la Regidora Azucena López Legorreta.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2887,8 +2889,53 @@
     ],
     "abstenciones": [
      {
-      "nombre": "Lic. Emilio Rosario Aldorica Pulido",
+      "nombre": "Emilio Rosario Aldorica Pulido",
       "id": "emilio-rosario-aldorica-pulido"
+     },
+     {
+      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-47",
+    "no_acta": 47,
+    "fecha": "2025-10-03",
+    "punto": 5,
+    "categoria": "reglamento_normativo",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría renombrar el centro DIF Casa Caracol como Centro Integral de Educación y Atención para las Mujeres \"Edificio Rosa\" y reformar los artículos 18 fracción VI, 25 y 26 del Reglamento Interior del DIF.",
+    "votos_en_contra": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
+     }
+    ],
+    "abstenciones": [
+     {
+      "nombre": "Emilio Rosario Aldorica Pulido",
+      "id": "emilio-rosario-aldorica-pulido"
+     },
+     {
+      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "id": "diana-gabriela-vizcaino-aguirre"
+     }
+    ]
+   },
+   {
+    "acta": "2024-2027-47",
+    "no_acta": 47,
+    "fecha": "2025-10-03",
+    "punto": 8,
+    "categoria": "otro",
+    "votacion": "unanime",
+    "resumen": "Se declaró Recinto Ferial el Jardín Libertad y sus inmediaciones para el Festival del Mezcal y su Cultura los días 17, 18 y 19 de octubre de 2025, y se autorizaron cuotas de recuperación por uso de vía pública, venta de alcohol y otros derechos, con un total estimado de $3,540.14.",
+    "votos_en_contra": [],
+    "abstenciones": [
+     {
+      "nombre": "C. Azucena López Legorreta",
+      "id": "azucena-lopez-legorreta"
      },
      {
       "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
@@ -2900,42 +2947,22 @@
     "acta": "2024-2027-47",
     "no_acta": 47,
     "fecha": "2025-10-03",
-    "punto": 7,
-    "categoria": "licencia",
-    "votacion": "unanime",
-    "resumen": "Se declaró Recinto Ferial el Jardín Libertad para la Feria del Mezcal y su Cultura del 17 al 19 de octubre de 2025, autorizando el cobro de derechos por uso de vía pública y venta de alcohol.",
-    "votos_en_contra": [],
-    "abstenciones": [
-     {
-      "nombre": "Azucena López Legorreta",
-      "id": "azucena-lopez-legorreta"
-     },
-     {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
-      "id": "diana-gabriela-vizcaino-aguirre"
-     }
-    ]
-   },
-   {
-    "acta": "2024-2027-47",
-    "no_acta": 47,
-    "fecha": "2025-10-03",
-    "punto": 9,
+    "punto": 10,
     "categoria": "obra_publica",
     "votacion": "unanime",
-    "resumen": "Se autorizó el tercer listado de obras del POA 2025, con 12 obras por $17,110,426.83 del FAIS y 2 obras por $1,409,680.06 del PRODIM, totalizando $18,520,106.89.",
+    "resumen": "Se autorizó el tercer listado de obras del POA 2025: 12 obras con inversión de $17,110,426.83 del FAIS y 2 obras con $1,409,680.06 del PRODIM, en diversas colonias de Colima.",
     "votos_en_contra": [],
     "abstenciones": [
      {
-      "nombre": "Emilio Rosario Aldorica Pulido",
+      "nombre": "Lic. Emilio Rosario Aldorica Pulido",
       "id": "emilio-rosario-aldorica-pulido"
      },
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ]
@@ -2947,14 +2974,14 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría la realización de adecuaciones presupuestarias solicitadas por la Tesorería Municipal para septiembre de 2025, por un total de $3,692,843.57.",
+    "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias de septiembre de 2025, por un total de 3,692,843.57 pesos, con los votos en contra de dos regidoras.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ],
@@ -2967,14 +2994,14 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de septiembre de 2025.",
+    "resumen": "Se aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de septiembre de 2025, con los votos en contra de dos regidoras.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ],
@@ -3021,9 +3048,9 @@
     "no_acta": 51,
     "fecha": "2025-11-13",
     "punto": 5,
-    "categoria": "licencia",
-    "votacion": "unanime",
-    "resumen": "Se autorizó la expedición de dos licencias de venta de cerveza para 'Abarrotes Monse' en la colonia El Tivoli y 'Súper Diamantes' en la colonia Diamantes.",
+    "categoria": "presupuesto_finanzas",
+    "votacion": "mayoria",
+    "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestales del POA 2025 con recursos FAISMUN; votaron en contra Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3040,17 +3067,17 @@
     "acta": "2024-2027-51",
     "no_acta": 51,
     "fecha": "2025-11-13",
-    "punto": 11,
+    "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el dictamen que autoriza las adecuaciones presupuestales del mes de octubre, incluyendo transferencias por más de 34.5 millones de pesos, con el voto en contra de dos regidoras.",
+    "resumen": "Se aprobó la autorización para que la Tesorería Municipal realice las adecuaciones presupuestarias de octubre, con transferencias por 34,522,664.91 pesos y recalendarizaciones FORTAMUN por 5,069,514.97 pesos; votaron en contra dos regidoras.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ],
@@ -3060,17 +3087,17 @@
     "acta": "2024-2027-51",
     "no_acta": 51,
     "fecha": "2025-11-13",
-    "punto": 12,
+    "punto": 7,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el dictamen que autoriza remitir la Cuenta Pública del mes de octubre de 2025 al Congreso del Estado, con el voto en contra de dos regidoras.",
+    "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de octubre de 2025; dos regidoras votaron en contra.",
     "votos_en_contra": [
      {
-      "nombre": "Azucena López Legorreta",
+      "nombre": "C. Azucena López Legorreta",
       "id": "azucena-lopez-legorreta"
      },
      {
-      "nombre": "Diana Gabriela Vizcaíno Aguirre",
+      "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
       "id": "diana-gabriela-vizcaino-aguirre"
      }
     ],
@@ -3687,7 +3714,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el dictamen de la Comisión de Hacienda que autoriza a la Tesorería Municipal a realizar adecuaciones presupuestales de mayo de 2026, con ampliaciones y reducciones por 22,025,530.93 pesos; dos regidoras votaron en contra.",
+    "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal las adecuaciones presupuestarias de mayo de 2026, con redistribuciones por $22,025,530.93 y pólizas FORTAMUN por $2,617,944.04.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3707,7 +3734,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de mayo de 2026, con once votos a favor y dos en contra.",
+    "resumen": "Se aprobó por mayoría, con once votos a favor y dos en contra, el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de mayo de 2026.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3724,10 +3751,10 @@
     "acta": "2024-2027-76",
     "no_acta": 76,
     "fecha": "2026-06-15",
-    "punto": 8,
-    "categoria": "tramite",
+    "punto": 7,
+    "categoria": "fraccionamiento",
     "votacion": "mayoria",
-    "resumen": "Se aprobó declarar recinto oficial el Fraccionamiento Residencial Romanza para celebrar una sesión extraordinaria de Cabildo el 17 de junio de 2026, donde se tratará su municipalización.",
+    "resumen": "El cabildo aprobó por mayoría declarar recinto oficial, por única vez, el Fraccionamiento Residencial Romanza para una sesión extraordinaria el 17 de junio de 2026, con un voto en contra y una abstención.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3744,54 +3771,54 @@
   ],
   "nombres_sin_mapear": [
    {
-    "nombre": "LAE. J. Francisco Anzar Herrera",
-    "menciones": 1
+    "nombre": "J. Francisco Anzar Herrera",
+    "menciones": 2
    },
    {
-    "nombre": "J. Francisco Anzar Herrera",
+    "nombre": "LAE. J. Francisco Anzar Herrera",
     "menciones": 1
    }
   ],
   "nota": "Sólo cuenta lo que el acta nombra explícitamente: un cero no significa que la persona siempre votó a favor, sino que ninguna de las 78 actas con ficha de decisión la nombró votando en contra o absteniéndose. Los nombres que no corresponden a ningún integrante del cabildo (suplentes, o nombres que el OCR deformó) se listan aparte en nombres_sin_mapear, sin asignarlos a nadie."
  },
  "disenso_por_categoria": {
-  "base_puntos": 577,
+  "base_puntos": 576,
   "filas": [
    {
     "categoria": "presupuesto_finanzas",
-    "puntos": 85,
-    "mayoria": 45,
+    "puntos": 84,
+    "mayoria": 46,
     "con_votos_en_contra": 45,
-    "votos_en_contra": 72,
-    "con_abstenciones": 8,
-    "tasa_disenso": 0.529
+    "votos_en_contra": 73,
+    "con_abstenciones": 9,
+    "tasa_disenso": 0.536
    },
    {
     "categoria": "obra_publica",
-    "puntos": 13,
+    "puntos": 14,
     "mayoria": 2,
     "con_votos_en_contra": 2,
     "votos_en_contra": 2,
     "con_abstenciones": 2,
-    "tasa_disenso": 0.154
+    "tasa_disenso": 0.143
    },
    {
     "categoria": "reglamento_normativo",
-    "puntos": 60,
-    "mayoria": 7,
-    "con_votos_en_contra": 6,
-    "votos_en_contra": 8,
-    "con_abstenciones": 5,
-    "tasa_disenso": 0.1
+    "puntos": 52,
+    "mayoria": 6,
+    "con_votos_en_contra": 5,
+    "votos_en_contra": 7,
+    "con_abstenciones": 4,
+    "tasa_disenso": 0.096
    },
    {
     "categoria": "otro",
-    "puntos": 34,
+    "puntos": 50,
     "mayoria": 2,
-    "con_votos_en_contra": 2,
-    "votos_en_contra": 4,
-    "con_abstenciones": 4,
-    "tasa_disenso": 0.059
+    "con_votos_en_contra": 3,
+    "votos_en_contra": 5,
+    "con_abstenciones": 5,
+    "tasa_disenso": 0.06
    },
    {
     "categoria": "patrimonio",
@@ -3804,21 +3831,21 @@
    },
    {
     "categoria": "nombramiento",
-    "puntos": 26,
+    "puntos": 25,
     "mayoria": 2,
     "con_votos_en_contra": 1,
     "votos_en_contra": 2,
     "con_abstenciones": 3,
-    "tasa_disenso": 0.038
+    "tasa_disenso": 0.04
    },
    {
     "categoria": "tramite",
-    "puntos": 111,
-    "mayoria": 5,
-    "con_votos_en_contra": 4,
-    "votos_en_contra": 6,
+    "puntos": 107,
+    "mayoria": 4,
+    "con_votos_en_contra": 3,
+    "votos_en_contra": 5,
     "con_abstenciones": 2,
-    "tasa_disenso": 0.036
+    "tasa_disenso": 0.028
    },
    {
     "categoria": "convenio",
@@ -3830,75 +3857,67 @@
     "tasa_disenso": 0.028
    },
    {
-    "categoria": "licencia",
-    "puntos": 87,
-    "mayoria": 1,
-    "con_votos_en_contra": 2,
-    "votos_en_contra": 3,
-    "con_abstenciones": 4,
-    "tasa_disenso": 0.023
-   },
-   {
     "categoria": "fraccionamiento",
     "puntos": 68,
+    "mayoria": 2,
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 1,
+    "con_abstenciones": 6,
+    "tasa_disenso": 0.015
+   },
+   {
+    "categoria": "licencia",
+    "puntos": 83,
     "mayoria": 1,
-    "con_votos_en_contra": 0,
-    "votos_en_contra": 0,
-    "con_abstenciones": 5,
-    "tasa_disenso": 0.0
+    "con_votos_en_contra": 1,
+    "votos_en_contra": 1,
+    "con_abstenciones": 3,
+    "tasa_disenso": 0.012
    }
   ],
   "nota": "tasa_disenso = puntos con votos en contra nombrados / puntos de esa categoría con ficha de decisión. Un dictamen aprobado por mayoría cuya acta no nombra a los disidentes cuenta en 'mayoria' pero no en 'con_votos_en_contra'."
  },
  "beneficiarios": {
-  "base_puntos": 577,
+  "base_puntos": 576,
   "filas": [
-   {
-    "nombre": "Tesorería Municipal",
-    "tipo": "dependencia",
-    "menciones": 16,
-    "actas": 15,
-    "monto_declarado_mxn": 884822340.88,
-    "puntos_con_monto": 16
-   },
    {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia",
-    "menciones": 14,
-    "actas": 13,
-    "monto_declarado_mxn": 2142483069.66,
+    "menciones": 20,
+    "actas": 19,
+    "monto_declarado_mxn": 5651233069.66,
+    "puntos_con_monto": 4
+   },
+   {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia",
+    "menciones": 19,
+    "actas": 17,
+    "monto_declarado_mxn": 1097461161.24,
+    "puntos_con_monto": 19
+   },
+   {
+    "nombre": "Municipio de Colima",
+    "tipo": "dependencia",
+    "menciones": 5,
+    "actas": 5,
+    "monto_declarado_mxn": 100750000.0,
+    "puntos_con_monto": 4
+   },
+   {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 4,
+    "actas": 4,
+    "monto_declarado_mxn": 5847342.45,
     "puntos_con_monto": 2
    },
    {
     "nombre": "contribuyentes del Municipio de Colima",
     "tipo": "ciudadania",
-    "menciones": 5,
-    "actas": 4,
-    "monto_declarado_mxn": 7548874.64,
-    "puntos_con_monto": 2
-   },
-   {
-    "nombre": "Municipio de Colima",
-    "tipo": "dependencia",
     "menciones": 4,
     "actas": 4,
-    "monto_declarado_mxn": 98250000.0,
-    "puntos_con_monto": 3
-   },
-   {
-    "nombre": "Fraccionamiento Residencial Romanza",
-    "tipo": "fraccionamiento",
-    "menciones": 3,
-    "actas": 2,
-    "monto_declarado_mxn": 1585755.81,
-    "puntos_con_monto": 1
-   },
-   {
-    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
-    "tipo": "empresa",
-    "menciones": 3,
-    "actas": 3,
-    "monto_declarado_mxn": 838818.05,
+    "monto_declarado_mxn": 1447830.0,
     "puntos_con_monto": 1
    },
    {
@@ -3934,7 +3953,7 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Desarrolladora San Ricardo S.A. de C.V. y otros",
+    "nombre": "DESARROLLADORA SAN RICARDO S.A. DE C.V.",
     "tipo": "empresa",
     "menciones": 2,
     "actas": 1,
@@ -3942,15 +3961,23 @@
     "puntos_con_monto": 2
    },
    {
-    "nombre": "LEGA DESARROLLOS, S.A. DE C.V.",
-    "tipo": "empresa",
+    "nombre": "Fraccionamiento Residencial Romanza",
+    "tipo": "fraccionamiento",
     "menciones": 2,
     "actas": 2,
-    "monto_declarado_mxn": 1126070.66,
+    "monto_declarado_mxn": 1585755.81,
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Emilia Navarrete Díaz",
+    "nombre": "LEGA DESARROLLOS, S.A. DE C.V. Y/O ING. EDUARDO ANTONIO BRUN SOLÓRZANO",
+    "tipo": "empresa",
+    "menciones": 2,
+    "actas": 2,
+    "monto_declarado_mxn": 1396504.03,
+    "puntos_con_monto": 2
+   },
+   {
+    "nombre": "EMILIA NAVARRETE DÍAZ",
     "tipo": "persona",
     "menciones": 2,
     "actas": 2,
@@ -3998,19 +4025,11 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Ma. Elvira Ramírez Morfin",
-    "tipo": "persona",
+    "nombre": "personas contribuyentes y la ciudadanía del Municipio de Colima",
+    "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
-    "monto_declarado_mxn": 34522664.91,
-    "puntos_con_monto": 1
-   },
-   {
-    "nombre": "Tesorería Municipal del Municipio de Colima",
-    "tipo": "dependencia",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": 28224703.94,
+    "monto_declarado_mxn": 36254421.26,
     "puntos_con_monto": 1
    },
    {
@@ -4022,15 +4041,23 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "MERIT RESIDENCIAL",
-    "tipo": "fraccionamiento",
+    "nombre": "María del Carmen Pérez García",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 9946004.86,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "ERNESTINA AMEZCUA GARCÍA, SIWA DE KHATTAB CONSTRUCTORA S.A. DE C.V. y/o TAMER ADEL ALY ABOU TALEB KHATTAB",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 9690831.14,
     "puntos_con_monto": 1
    },
    {
-    "nombre": "ARDICA CONSTRUCCIONES, S.A. DE C.V. Y/O ING. CLAUDIO JACOBO ARIAS DÍAZ",
+    "nombre": "ARDICA CONSTRUCCIONES, S",
     "tipo": "empresa",
     "menciones": 1,
     "actas": 1,
@@ -4086,14 +4113,6 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "SOCIEDAD DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
-    "tipo": "empresa",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": 5008524.4,
-    "puntos_con_monto": 1
-   },
-   {
     "nombre": "COMITE EJECUTIVO DEL SINDICATO NACIONAL DE TRABAJADORES DE LA EDUCACIÓN SECCIÓN 39 COLIMA",
     "tipo": "otro",
     "menciones": 1,
@@ -4142,15 +4161,15 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Localidad de Tepames",
-    "tipo": "otro",
+    "nombre": "localidad de Tepames",
+    "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 2600000.0,
     "puntos_con_monto": 1
    },
    {
-    "nombre": "MIGUEL ÁNGEL FLORES VIZCAÍNO, como apoderado legal de la C. MARÍA GUADALUPE VIZCAÍNO GALINDO, DANIEL ANTONIO MURAKAMI PA",
+    "nombre": "LIC. MIGUEL ÁNGEL FLORES VIZCAÍNO, C. MARÍA GUADALUPE VIZCAÍNO GALINDO, DANIEL ANTONIO MURAKAMI PARRA, MARÍA DE LOS ÁNGE",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -4163,6 +4182,14 @@
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 2180500.0,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "Cruz Roja Mexicana, H. Cuerpo de Bomberos Voluntarios de Colima y Casas del Estudiante de Colima 'Graciano Sánchez' A.C.",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 1958333.34,
     "puntos_con_monto": 1
    },
    {
@@ -4198,8 +4225,16 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Enriqueta Espinosa Castell, Servicios Inmobiliarios Resto S.A. de C.V., Carlos Alfredo Castañeda Briceño y Banco Inmobil",
-    "tipo": "empresa",
+    "nombre": "SAN BERNARDO",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 1108774.49,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "Promotores del Fraccionamiento SAN BERNARDO",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 1105681.69,
@@ -4230,8 +4265,8 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "INMOBILIARIA JYZAO S.A. DE C.V.",
-    "tipo": "empresa",
+    "nombre": "HACIENDA EL BALCÓN",
+    "tipo": "fraccionamiento",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 667724.53,
@@ -4358,8 +4393,8 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Acuática Tiburones",
-    "tipo": "empresa",
+    "nombre": "alumnos y/o alumnas del Bachillerato CEDART \"Juan Rulfo\"",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 60000.0,
@@ -4406,6 +4441,14 @@
     "puntos_con_monto": 1
    },
    {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, SOCIEDAD ANONIMA DE CAPITAL VARIABLE",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 34321.61,
+    "puntos_con_monto": 1
+   },
+   {
     "nombre": "León Machuca González y Manuel Sánchez Aguilar",
     "tipo": "persona",
     "menciones": 1,
@@ -4422,7 +4465,7 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "LUIS MIGUEL SOLANA ESPOSITO",
+    "nombre": "Luis Miguel Solana Esposito",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -4438,11 +4481,27 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Ma. Idalia González Pimentel como apoderada legal de Andrea, Jessica y Jesús Silverio Cavazos González; y Daniel Fernand",
-    "tipo": "persona",
+    "nombre": "Ma. Idalia González Pimentel (apoderada legal de Andrea, Jessica y Jesús Silverio Cavazos González) y Daniel Fernando Gu",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 28058.72,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "población del municipio de Colima",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 26691.55,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "Aida Horta Quiroz",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 25909.5,
     "puntos_con_monto": 1
    },
    {
@@ -4478,6 +4537,14 @@
     "puntos_con_monto": 1
    },
    {
+    "nombre": "autoridades auxiliares del municipio",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 18758.97,
+    "puntos_con_monto": 1
+   },
+   {
     "nombre": "CC. Francisco Vaquero Díaz, Andrés Vaquero Díaz, Marcela Vaquero Pinto, Karla Edith Vaquero Orozco y José Alberto Reyes",
     "tipo": "persona",
     "menciones": 1,
@@ -4486,15 +4553,23 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Madres trabajadoras de base, confianza y supernumerario del H. Ayuntamiento de Colima",
-    "tipo": "ciudadania",
+    "nombre": "madres trabajadoras de base, confianza y supernumerario del H. Ayuntamiento de Colima",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 7886.5,
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Docentes del Municipio de Colima",
+    "nombre": "Emprendedores y empresarios locales",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 7114.2,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "docentes del Municipio de Colima",
     "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
@@ -4502,8 +4577,8 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "Alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
-    "tipo": "ciudadania",
+    "nombre": "Grupo Automotriz PYD (Agencia MG)",
+    "tipo": "empresa",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 5000.0,
@@ -4519,7 +4594,7 @@
    },
    {
     "nombre": "padres trabajadores de base, confianza y supernumerarios del H. Ayuntamiento de Colima",
-    "tipo": "ciudadania",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 1037.99,
@@ -4558,16 +4633,24 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "APAC Colima Centro Integral de Rehabilitación I.A.P.",
-    "tipo": "empresa",
+    "nombre": "H. Ayuntamiento de Colima",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": 1.0,
+    "puntos_con_monto": 1
+   },
+   {
+    "nombre": "ANDRÉS MANUEL NAVARRO RÍOS, JESÚS ENRIQUE MARTÍNEZ AGUAYO, MARIBEL RUIZ RAMÍREZ, MARAYA COCINA DE MAR S DE RL DE CV, ELI",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
     "puntos_con_monto": 0
    },
    {
-    "nombre": "ARDICA CONSTRUCCIONES, S",
-    "tipo": "empresa",
+    "nombre": "APAC Colima Centro Integral de Rehabilitación I.A.P.",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4582,16 +4665,8 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Aida Horta Quiroz",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Ana Patricia Escobosa Galindo",
-    "tipo": "persona",
+    "nombre": "Acuática Tiburones",
+    "tipo": "empresa",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4614,7 +4689,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Archivo Histórico del Municipio de Colima, Instituto de la Juventud, Instituto de las Mujeres, Instituto de Planeación,",
+    "nombre": "Archivo Histórico del Municipio de Colima, Instituto de la Juventud para el Municipio de Colima, Instituto de las Mujere",
     "tipo": "dependencia",
     "menciones": 1,
     "actas": 1,
@@ -4630,16 +4705,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Autoridades Auxiliares Electas",
-    "tipo": "persona",
+    "nombre": "Aspirantes a policías municipales en formación inicial",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Autoridades Auxiliares electas 2024-2027",
-    "tipo": "ciudadania",
+    "nombre": "Autoridades Auxiliares electas para el período 2024-2027",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4655,6 +4730,14 @@
    },
    {
     "nombre": "Bruno Lamas Díaz, Addí Espinosa González, Andrea Alejandra Cervantes Nava, Mariana Lizette Pérez Ochoa",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "C. MAURICIO ORTIZ ESPINOZA",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -4774,15 +4857,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Centro de Estudios Universitarios Vizcaya de las Américas",
-    "tipo": "otro",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Centro de Promoción Humana y de Cultura de Colima I.A.P. conocido como Hogar del Refugio",
+    "nombre": "Centro de Promoción Humana y de Cultura de Colima I.A.P.",
     "tipo": "otro",
     "menciones": 1,
     "actas": 1,
@@ -4846,14 +4921,6 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Consejo Editorial",
-    "tipo": "otro",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
     "nombre": "Consorcio Ferretero del Pacífico S.A. de C.V. y Grupo Ferretero el Caminante",
     "tipo": "empresa",
     "menciones": 1,
@@ -4878,16 +4945,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Corporación de Tecnología Minera, S.A. de C.V.",
-    "tipo": "empresa",
+    "nombre": "Cámara Mexicana de la Industria de la Construcción (CMIC)",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Cámara Mexicana de la Industria de la Construcción (CMIC)",
-    "tipo": "otro",
+    "nombre": "David Alonso Isidoro Coronel y Mariano Israel Rodríguez González",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4911,7 +4978,7 @@
    },
    {
     "nombre": "Donadores Compulsivos I.A.P.",
-    "tipo": "empresa",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -4998,6 +5065,14 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Fraccionamiento HACIENDA REAL",
+    "tipo": "fraccionamiento",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Francisco Javier Vega Gómez",
     "tipo": "persona",
     "menciones": 1,
@@ -5015,7 +5090,7 @@
    },
    {
     "nombre": "Fundación Lo Mejor de Colima A.C.",
-    "tipo": "empresa",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5038,7 +5113,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "GQB Consulting L.L.C.",
+    "nombre": "GQB CONSULTING L.L.C.",
     "tipo": "empresa",
     "menciones": 1,
     "actas": 1,
@@ -5062,8 +5137,24 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Gregory Anthony Vergara Gutiérrez, Jorge Armando Bayardo Aguilar y Balerio Muñiz Madrigal",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Grupo Educativo Colimense Alaro, S.C.",
     "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Gustavo Robledo Ramírez y Salvador Rivera Macías",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5087,6 +5178,14 @@
    },
    {
     "nombre": "ISMELDA CASTELLANOS GUIZAR y SONIA VALDIVIA MONTANO",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Ing. Claudio Jacobo Arias Díaz",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5143,7 +5242,7 @@
    },
    {
     "nombre": "Instituto Tecnológico de Colima",
-    "tipo": "dependencia",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5174,7 +5273,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima",
+    "nombre": "Instituto para el Registro del Territorio del Estado de Colima (IRTEC)",
     "tipo": "dependencia",
     "menciones": 1,
     "actas": 1,
@@ -5182,8 +5281,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Instituto para el Registro del Territorio del Estado de Colima (IRTEC)",
-    "tipo": "dependencia",
+    "nombre": "Irma Concepción López Cortés, Ángela Rodríguez Puente",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Israel Omar Saldívar Wood",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5199,14 +5306,6 @@
    },
    {
     "nombre": "Joel Corona Cernas",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Josefina Reyes Mora y Ximena Kiralina Barajas Mejía",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5302,7 +5401,47 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "MA ELENA SÁNCHEZ TRUJILLO y CRISTAL GUADALUPE RODRÍGUEZ VEGA",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "MARCIA GISELA PEÑA PINTO",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "MIGUEL ÁNGEL CASTAÑEDA SOTO, FLOR ANAHÍ LÓPEZ GALINDO, EDGAR ADRIÁN CEBALLOS LÓPEZ, JUAN MANUEL GONZÁLEZ PAMPLONA",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Ma. Elvira Ramírez Morfin",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Ma. Estela Gutiérrez Cobián",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Ma. Eva Maldonado Zúñiga, Sergio Alejandro Polanco Cabellos e Irma Chávez Benítez",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5318,7 +5457,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Marcia Gisela Peña Pinto",
+    "nombre": "Marco Antonio Perez Arias",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5326,7 +5465,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Marco Antonio Perez Arias",
+    "nombre": "María Esther Martínez Valdovinos, Nora Eréndira García Guardado, Josué Jub Aldama González, Erick Alberto Madrigal Lomel",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5342,7 +5481,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "María del Carmen Pérez García",
+    "nombre": "María del Consuelo Sepúlveda García y Ulises Mendivil Armenta",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5358,23 +5497,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Miguel Ángel Flores Vizcaíno (apoderado legal de María Guadalupe Vizcaíno Galindo, Daniel Antonio Murakami Parra, María",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Mtra. María del Rosío Valdovinos Anguiano",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Mtra. Rocío Valdovinos Anguiano",
+    "nombre": "Mtra. Rosío Valdovinos Anguiano",
     "tipo": "persona",
     "menciones": 1,
     "actas": 1,
@@ -5486,8 +5609,24 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Organismo Público Descentralizado del Sistema para el Desarrollo Integral de la Familia en el Municipio de Colima",
+    "tipo": "dependencia",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "PRONAES, S.A.P.I de C.V",
     "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Partido Movimiento Ciudadano",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5526,8 +5665,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Poseedores de títulos del Panteón Municipal",
-    "tipo": "ciudadania",
+    "nombre": "REYNALDO OCAMPO VALENCIA, ERNESTO JAVIER ALONSO LEPE",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "RICARDO AYALA AYALA, GABRIELA AIDA CASTELLANOS SÁNCHEZ",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5550,8 +5697,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "SALVADOR REYES MAGAÑA, JCL CONSTRUCCIONES S.A. DE C.V. Y/O JOSÉ CARBAJAL LARIOS",
-    "tipo": "empresa",
+    "nombre": "SANDRA ISABEL IÑIGUEZ MUÑOZ, LETICIA VAZQUEZ ABARCA y CUMBRE TIRAFUEGO S.A. DE C.V.",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "SONIA MARIANA VÁZQUEZ ABAROA e IGNACIO LEONEL CÁRDENAS MACÍAS",
+    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5598,8 +5753,8 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Sonia Mariana Vázquez Abaroa e Ignacio Leonel Cárdenas Macías",
-    "tipo": "persona",
+    "nombre": "TERRALTA PADEL S.A. DE C.V. y FERNANDO VACA RAMOS",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5646,8 +5801,24 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Universidad Multitécnica Profesional",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Universidad UNIVER Colima",
     "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "Universidad Vizcaya de las Américas Campus Colima",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5670,14 +5841,6 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "VANESSA VELÁZQUEZ VENEGAS",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
     "nombre": "VERÓNICA RAQUEL MUÑOZ RAMÍREZ y MARÍA DE LOS ÁNGELES CRUZ",
     "tipo": "persona",
     "menciones": 1,
@@ -5694,6 +5857,14 @@
     "puntos_con_monto": 0
    },
    {
+    "nombre": "Vanessa Velázquez Venegas",
+    "tipo": "persona",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
     "nombre": "Víctor Jesús Ramos Ruiz",
     "tipo": "persona",
     "menciones": 1,
@@ -5702,7 +5873,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "aspirantes a policías municipales en formación inicial",
+    "nombre": "beneficiarios del programa",
     "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
@@ -5710,16 +5881,16 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "ciudadanía del Municipio de Colima",
-    "tipo": "ciudadania",
+    "nombre": "diversas instituciones privadas que ofrecen beneficios a las y los trabajadores municipales",
+    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
     "puntos_con_monto": 0
    },
    {
-    "nombre": "instituciones privadas",
-    "tipo": "empresa",
+    "nombre": "nuevos emprendedores",
+    "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5732,16 +5903,40 @@
     "actas": 1,
     "monto_declarado_mxn": null,
     "puntos_con_monto": 0
+   },
+   {
+    "nombre": "sector privado",
+    "tipo": "empresa",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "sectores empresarial, académico y de la sociedad civil",
+    "tipo": "otro",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "usuarios o solicitantes de licencias SARE",
+    "tipo": "ciudadania",
+    "menciones": 1,
+    "actas": 1,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
    }
   ],
   "nota": "Contrapartes tal como el acta las nombra. monto_declarado_mxn suma los montos declarados en los puntos donde aparece la contraparte —con la misma regla anti-doble-conteo que la sección de montos—: es lo que el acta dice, no un contrato verificado ni un pago ejercido. La recurrencia se registra; no implica irregularidad."
  },
  "comisiones": {
-  "base_puntos": 577,
+  "base_puntos": 576,
   "filas": [
    {
     "nombre": "Comisión de Desarrollo Urbano y Vivienda",
-    "puntos": 78
+    "puntos": 75
    },
    {
     "nombre": "Comisión de Hacienda Municipal",
@@ -5749,11 +5944,11 @@
    },
    {
     "nombre": "Comisión de Comercios, Mercados y Restaurantes",
-    "puntos": 51
+    "puntos": 52
    },
    {
     "nombre": "Comisión de Gobernación y Reglamentos",
-    "puntos": 49
+    "puntos": 46
    },
    {
     "nombre": "Comisión de Comercio, Mercados y Restaurantes",
@@ -5761,19 +5956,19 @@
    },
    {
     "nombre": "Comisión de Planeación, Obras y Servicios Públicos",
-    "puntos": 11
-   },
-   {
-    "nombre": "Comisión de Educación, Cultura y Recreación",
-    "puntos": 10
-   },
-   {
-    "nombre": "Comisión de Patrimonio Municipal",
-    "puntos": 9
+    "puntos": 12
    },
    {
     "nombre": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
-    "puntos": 9
+    "puntos": 11
+   },
+   {
+    "nombre": "Comisión de Patrimonio Municipal",
+    "puntos": 10
+   },
+   {
+    "nombre": "Comisión de Educación, Cultura y Recreación",
+    "puntos": 8
    },
    {
     "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
@@ -5784,12 +5979,16 @@
     "puntos": 5
    },
    {
-    "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
+    "nombre": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
+    "puntos": 5
+   },
+   {
+    "nombre": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
     "puntos": 4
    },
    {
-    "nombre": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
-    "puntos": 4
+    "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercios, Mercados y Restaurantes; y de Patrimonio Municipal",
+    "puntos": 3
    },
    {
     "nombre": "Comisión de Innovación y Mejora Regulatoria",
@@ -5816,7 +6015,7 @@
     "puntos": 2
    },
    {
-    "nombre": "Comisión de Gobernación y Reglamentos y de Hacienda Municipal",
+    "nombre": "Comisiones de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
     "puntos": 2
    },
    {
@@ -5836,11 +6035,19 @@
     "puntos": 2
    },
    {
+    "nombre": "Comisión de Salud Pública, Familia y Grupos Vulnerables",
+    "puntos": 2
+   },
+   {
     "nombre": "Comisión de Gobernación y Reglamentos y de Desarrollo Social y Rural",
     "puntos": 2
    },
    {
-    "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos y Educación, Cultura y Recreación",
+    "nombre": "Comisiones Conjuntas de Gobernación y Reglamentos, y Educación, Cultura y Recreación",
+    "puntos": 1
+   },
+   {
+    "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; y Patrimonio Municipal",
     "puntos": 1
    },
    {
@@ -5888,7 +6095,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
+    "nombre": "Comisión de Comercio, Mercados y restaurantes",
     "puntos": 1
    },
    {
@@ -5896,15 +6103,19 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones conjuntas de Patrimonio Municipal y Hacienda Municipal",
+    "nombre": "Comisiones de Patrimonio Municipal y Hacienda Municipal",
+    "puntos": 1
+   },
+   {
+    "nombre": "Gobernación y Reglamentos, y de Hacienda Municipal",
+    "puntos": 1
+   },
+   {
+    "nombre": "COMISIÓN DE GOBERNACIÓN Y REGLAMENTOS",
     "puntos": 1
    },
    {
     "nombre": "Comisiones conjuntas de EDUCACIÓN, CULTURA Y RECREACIÓN y DESARROLLO URBANO Y VIVIENDA",
-    "puntos": 1
-   },
-   {
-    "nombre": "Comisión de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
     "puntos": 1
    },
    {
@@ -5948,11 +6159,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisión de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
-    "puntos": 1
-   },
-   {
-    "nombre": "Comisión de Educación, Cultura y Recreación, Hacienda Municipal, Comercios, Mercados y Restaurantes, Turismo, Fomento Económico y Empresarial, y Patrimonio Municipal",
+    "nombre": "Comisiones de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Turismo, Fomento Económico y Empresarial; Patrimonio Municipal",
     "puntos": 1
    },
    {
@@ -5968,7 +6175,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones de Salud Pública, Familia y Grupos Vulnerables; Hacienda Municipal; y de Desarrollo Social y Rural",
+    "nombre": "Comisiones de Turismo, Fomento Económico y Empresarial; Comercio, Mercados y Restaurantes; Patrimonio Municipal; Educación, Cultura y Recreación; y de Hacienda Municipal",
     "puntos": 1
    },
    {
@@ -5996,7 +6203,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones de Educación, Cultura y Recreación; y Turismo, Fomento Económico y Empresarial",
+    "nombre": "Comisiones conjuntas de Educación, Cultura y Recreación; y Turismo, Fomento Económico y Empresarial",
     "puntos": 1
    },
    {
@@ -6005,10 +6212,6 @@
    },
    {
     "nombre": "Comisiones conjuntas de TURISMO, FOMENTO ECONÓMICO Y EMPRESARIAL; y de EDUCACIÓN, CULTURA Y RECREACIÓN",
-    "puntos": 1
-   },
-   {
-    "nombre": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
     "puntos": 1
    },
    {
@@ -6048,7 +6251,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisión de Salud Pública, Familia y Grupos Vulnerables",
+    "nombre": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercio, Mercados y Restaurantes; de Patrimonio Municipal; y de Turismo, Fomento Económico y Empresarial",
     "puntos": 1
    },
    {
@@ -6076,7 +6279,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones de Educación, Cultura y Recreación, y Hacienda Municipal",
+    "nombre": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
     "puntos": 1
    }
   ],

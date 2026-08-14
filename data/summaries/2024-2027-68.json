@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T15:55:41+00:00",
+ "generado": "2026-08-14T00:51:26+00:00",
  "lectura": {
   "chars_ocr": 199599,
   "chars_leidos": 199599,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó recinto ferial para SABORA FEST y baja de seis licencias; se presentó dictamen de ocho licencias sin votación.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El Cabildo aprobó el Recinto Ferial para el Sabora Fest 2026 y la baja de seis licencias comerciales; además se leyó un dictamen sobre ocho licencias.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, constatando la presencia de la mayoría de los ediles.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del Presidente Municipal, la Síndica y los regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró la instalación legal de la Sesión por contar con quórum.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,11 +53,13 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura y se aprobó por unanimidad el Orden del Día, con modificación para incluir el dictamen del fraccionamiento Margaritas.",
-   "sentido": "tramite",
+   "resumen": "Se dio lectura al orden del día y se aprobó por unanimidad incluir el dictamen de modificación al programa parcial de urbanización del fraccionamiento Margaritas.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "MARGARITAS"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": null,
@@ -68,8 +71,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura y se aprobó por unanimidad el Acta de Cabildo N° 67.",
-   "sentido": "tramite",
+   "resumen": "Se dispensó la lectura del acta número 67 y se aprobó por unanimidad.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,13 +87,27 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad declarar Recinto Ferial los espacios públicos para el festival SABORA FEST 2026, del 19 al 22 de marzo, permitiendo cobro de derechos.",
+   "resumen": "Se aprobó declarar Jardín Libertad, Jardín Torres Quintero y vialidades adyacentes como Recinto Ferial para el Sabora Fest 2026, del 19 al 22 de marzo, con cobros autorizados.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "Jardín Libertad",
+    "calle Reforma",
+    "16 de Septiembre",
+    "Santos Degollado",
+    "Francisco I. Madero",
+    "Jardín Torres Quintero",
+    "Medellín",
+    "Miguel Hidalgo",
+    "Gabino Barreda"
+   ],
    "montos": [
+    {
+     "texto": "$117.31",
+     "valor_mxn": 117.31
+    },
     {
      "texto": "$211.16",
      "valor_mxn": 211.16
@@ -116,10 +133,13 @@
      "valor_mxn": 2346.2
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "población del municipio de Colima",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Educación, Cultura y Recreación",
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Hacienda Municipal; de Comercio, Mercados y Restaurantes; de Patrimonio Municipal; y de Turismo, Fomento Económico y Empresarial",
    "autor": {
     "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -128,7 +148,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad dar de baja seis licencias comerciales para venta de bebidas alcohólicas por cese de operaciones.",
+   "resumen": "Se aprobaron las bajas definitivas de seis licencias comerciales de establecimientos que ya no funcionan.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -154,20 +174,19 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad la expedición de 8 licencias comerciales para venta de bebidas alcohólicas en establecimientos como OXXO, Rustyk, Picaña 312, El Torreon Express, entre otros.",
+   "resumen": "Se aprobó por unanimidad expedir ocho licencias comerciales para venta y consumo de bebidas alcohólicas en establecimientos como OXXO, Rustyk, Picaña 312, entre otros.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Parque Industrial, Lo de Villa",
+    "Parque Industrial",
+    "Lo de Villa",
     "La Guadalupe",
     "Centro",
     "Residencial Esmeralda",
     "Puerta del Sol",
     "El Moralete",
-    "Guadalajarita",
-    "Parque Industrial",
-    "Contro"
+    "Guadalajarita"
    ],
    "obras": [],
    "montos": [],
@@ -183,7 +202,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la Etapa 2 del fraccionamiento San Bernardo, con 52 lotes y fianzas por $1,072,608.63 y $36,165.86.",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la etapa 2 del fraccionamiento San Bernardo, con 52 lotes; el urbanizador otorga fianzas por 1,072,608.63 y 36,165.86 pesos para garantizar obras de urbanización.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -198,15 +217,18 @@
    ],
    "montos": [
     {
-     "texto": "$1,072,608.63",
+     "texto": "$1, 072,608.63",
      "valor_mxn": 1072608.63
     },
     {
-     "texto": "$36,165.86",
+     "texto": "$ 36,165.86",
      "valor_mxn": 36165.86
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "SAN BERNARDO",
+    "tipo": "fraccionamiento"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
@@ -218,23 +240,28 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la modificación al Programa Parcial de Urbanización del Fraccionamiento MARGARITAS, promovida por DELAMO GRUPO CONSTRUCTOR, S.A. de C.V., para generar lotes habitacionales y mixtos, beneficiando a familias del programa Vivienda para el Bienestar.",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización del Fraccionamiento Savanna Hábitat Residencial, promovido por la empresa Grupo Desarrollador Colinas del Rey; el desarrollador deberá costear las obras de urbanización y ceder las áreas de equipamiento.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
     "SAVANNA HÁBITAT RESIDENCIAL",
-    "MARGARITAS"
+    "Hacienda Real",
+    "La Cantera",
+    "Las Pérgolas",
+    "Real Vista Hermosa"
    ],
    "obras": [
+    "Programa Parcial de Urbanización Savanna Hábitat Residencial",
+    "Tanque modular de agua con capacidad de 200 m³",
     "Av. Miguel de Cervantes y Saavedra",
     "Av. José G. Alcaraz",
-    "nodo vial NV-N-116",
-    "pasos peatonales y rampas para discapacitados"
+    "VP-27",
+    "AC-23"
    ],
    "montos": [
     {
-     "texto": "$5,214,359.39",
+     "texto": "$5214,359.39",
      "valor_mxn": 5214359.39
     }
    ],
@@ -253,13 +280,31 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó por unanimidad el nuevo Reglamento de la Dirección de Fomento Deportivo, del Uso, Funcionamiento y Administración de los Espacios Deportivos del Municipio de Colima, abrogando los anteriores.",
+   "resumen": "Se aprobó por unanimidad el Reglamento de la Dirección de Fomento Deportivo, que regula el uso, funcionamiento y administración de los espacios deportivos del Municipio de Colima y abroga los reglamentos anteriores.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "EL PEDREGAL",
+    "PRADOS DEL SUR",
+    "INDECO ALBARRADA I",
+    "INDECO ALBARRADA II",
+    "INDECO ALBARRADA III",
+    "INFONAVIT IMSS",
+    "INFONAVIT LA ESTANCIA",
+    "ALBARRADA I",
+    "ALBARRADA II",
+    "ALBARRADA III",
+    "MIRADOR DE LA CUMBRE I",
+    "MIRADOR DE LA CUMBRE II"
+   ],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "2.5 UMAS",
+     "valor_mxn": null
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
@@ -272,26 +317,24 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se presentaron informes de actividades y un exhorto sobre trabajo infantil, el cual fue turnado a comisiones.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó la modificación al programa parcial de urbanización del fraccionamiento Margaritas, promovida por Delamo Grupo Constructor, para habilitar lotes de vivienda plurifamiliar; beneficia a cientos de familias que tendrán su primera casa en el marco de Vivienda para el Bienestar.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
-    "Margaritas",
-    "Rancho de Villa",
-    "Astillero de Abajo",
-    "Astillero de Arriba",
-    "Acatitán",
-    "Piscila",
-    "Los Tepames",
-    "El Bordo",
-    "Puerta de Anzar",
-    "Estapilla"
+    "MARGARITAS",
+    "Diamantes",
+    "Margaritas II",
+    "Ejido el Diezmo"
    ],
-   "obras": [],
+   "obras": [
+    "Av. Gema",
+    "calles locales Lapislázuli y Turmalina",
+    "Vivienda del Bienestar"
+   ],
    "montos": [
     {
-     "texto": "$34,321.61",
+     "texto": "$34, 321.61",
      "valor_mxn": 34321.61
     }
    ],
@@ -301,7 +344,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "COMISIÓN DE DESARROLLO URBANO Y VIVIENDA",
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -310,12 +353,25 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se declaró clausurada la sesión.",
+   "resumen": "En asuntos generales, regidores informaron de programas de salud, luminarias y deportes; la Regidora Elia Margarita Moreno presentó un exhorto contra el trabajo infantil, que se turnó a comisiones.",
    "sentido": "tramite",
-   "categoria": "tramite",
+   "categoria": "otro",
    "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
+   "colonias": [
+    "Rancho de Villa",
+    "Astillero de Abajo",
+    "Astillero de Arriba",
+    "Acatitán",
+    "Piscila",
+    "Los Tepames",
+    "El Bordo",
+    "Puerta de Anzar",
+    "Estapilla",
+    "Gregorio Torres Quintero"
+   ],
+   "obras": [
+    "Parque La Piedra Lisa"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],

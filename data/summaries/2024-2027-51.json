@@ -6,21 +6,22 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T15:29:38+00:00",
+ "generado": "2026-08-14T00:42:06+00:00",
  "lectura": {
   "chars_ocr": 478968,
-  "chars_leidos": 478968,
+  "chars_leidos": 436968,
   "ventanas": 12,
-  "ventanas_fallidas": 0,
-  "completa": true
+  "ventanas_fallidas": 1,
+  "completa": false
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la modificación al orden del día, las actas 48 y 50, y se autorizaron las adecuaciones presupuestales del POA 2025; se presentó el dictamen de adecuaciones de octubre.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El cabildo modificó su orden del día, aprobó las actas 48 y 50 y autorizó por mayoría adecuaciones presupuestales del POA 2025; el dictamen de transferencias de octubre quedó en lectura.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se verificó la asistencia de los miembros del cabildo.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente municipal, la síndica y las y los regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión ordinaria.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad la modificación al orden del día, que incluyó cambiar el orden de los puntos V, VI y VII y agregar el convenio de hermanamiento con Cihuatlán.",
+   "resumen": "Se dio lectura al orden del día y se aprobó por unanimidad modificar el orden: los puntos X, XI y XII pasaron a V, VI y VII, y se incorporó el convenio de hermanamiento con Cihuatlán, Jalisco.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,7 +69,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 48 y 50.",
+   "resumen": "Se dispensó la lectura de las actas 48 y 50 y ambas fueron aprobadas por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,10 +85,10 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó la expedición de dos licencias de venta de cerveza para 'Abarrotes Monse' en la colonia El Tivoli y 'Súper Diamantes' en la colonia Diamantes.",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestales del POA 2025 con recursos FAISMUN; votaron en contra Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
    "colonias": [
     "PISCILA",
     "EL DIEZMO",
@@ -100,9 +101,7 @@
     "LOS VIVEROS",
     "EL PERIODISTA",
     "FRANCISCO I. MADERO",
-    "EL CHANAL",
-    "El Tivoli",
-    "Diamantes"
+    "CENTRO"
    ],
    "obras": [
     "CONSTRUCCION DE LINEA DE CONDUCCIÓN DE RED DRENAJE SANITARIO EN COLIMA, LOCALIDA",
@@ -128,15 +127,19 @@
      "valor_mxn": 825698.89
     },
     {
+     "texto": "$3,403,180.60",
+     "valor_mxn": 3403180.6
+    },
+    {
      "texto": "$ 490,949.51",
      "valor_mxn": 490949.51
     },
     {
-     "texto": "$ 1,184,054.71",
+     "texto": "$1,184,054.71",
      "valor_mxn": 1184054.71
     },
     {
-     "texto": "$ 360,992.29",
+     "texto": "$360,992.29",
      "valor_mxn": 360992.29
     },
     {
@@ -144,12 +147,24 @@
      "valor_mxn": 478131.56
     },
     {
-     "texto": "$ 1,073,784.38",
-     "valor_mxn": 1073784.38
+     "texto": "$1.073,78438",
+     "valor_mxn": null
     },
     {
-     "texto": "$ 3,403,180.60",
-     "valor_mxn": 3403180.6
+     "texto": "$2,143,561.78",
+     "valor_mxn": 2143561.78
+    },
+    {
+     "texto": "5304,740",
+     "valor_mxn": null
+    },
+    {
+     "texto": "$723,353.67",
+     "valor_mxn": 723353.67
+    },
+    {
+     "texto": "$ 686,326.39",
+     "valor_mxn": 686326.39
     },
     {
      "texto": "$ 18,520,106.89",
@@ -168,19 +183,26 @@
      "valor_mxn": 1038551.72
     },
     {
-     "texto": "$ 723,353.67",
-     "valor_mxn": 723353.67
+     "texto": "$ 361,688.00",
+     "valor_mxn": 361688.0
     },
     {
-     "texto": "$ 686,326.39",
-     "valor_mxn": 686326.39
+     "texto": "$ 64,844.00",
+     "valor_mxn": 64844.0
     },
     {
-     "texto": "$ 27,469,704.94",
+     "texto": "$ 8,949,598.05",
+     "valor_mxn": 8949598.05
+    },
+    {
+     "texto": "$ 27:469,704.94",
      "valor_mxn": 27469704.94
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
    "votos_en_contra": [
     {
      "nombre": "C. Azucena López Legorreta",
@@ -194,50 +216,93 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Claudia Janeth Farías López",
+    "nombre": "Licda. Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó dar de baja la licencia B-001169 para venta de cerveza en la colonia San José Norte, a nombre de Ma. Elvira Ramírez Morfin.",
+   "resumen": "Se aprobó la autorización para que la Tesorería Municipal realice las adecuaciones presupuestarias de octubre, con transferencias por 34,522,664.91 pesos y recalendarizaciones FORTAMUN por 5,069,514.97 pesos; votaron en contra dos regidoras.",
    "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "San José Norte"
-   ],
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
    "obras": [],
    "montos": [
     {
      "texto": "$34,522,664.91",
      "valor_mxn": 34522664.91
+    },
+    {
+     "texto": "34,522,664.91",
+     "valor_mxn": 34522664.91
+    },
+    {
+     "texto": "5,069,514.97",
+     "valor_mxn": 5069514.97
     }
    ],
    "beneficiario": {
-    "nombre": "Ma. Elvira Ramírez Morfin",
-    "tipo": "persona"
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
    },
-   "votos_en_contra": [],
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la expedición de dos licencias de venta de cerveza: un restaurante 'Sky Padel' en Colinas de Santa Fe y una marisquería 'Aguachiles Vaca' en Jardines de la Estancia.",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de octubre de 2025; dos regidoras votaron en contra.",
    "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "Colinas de Santa Fe",
-    "Jardines de la Estancia"
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
    ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se dio lectura al dictamen que autoriza la expedición de dos licencias comerciales para venta y consumo de bebidas alcohólicas, solicitadas con el memorándum 1156; el resultado de la votación no consta en este fragmento.",
+   "sentido": "no_determinable",
+   "categoria": "licencia",
+   "votacion": "no_determinable",
+   "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": null,
@@ -245,48 +310,24 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
-  },
-  {
-   "n": 8,
-   "numeral": "VIII",
-   "resumen": "Se autorizó dar de baja la licencia B-002029 para venta de cerveza en la colonia Prados del Sur, a nombre de María del Carmen Pérez García.",
-   "sentido": "aprobado",
-   "categoria": "licencia",
-   "votacion": "unanime",
-   "colonias": [
-    "Prados del Sur"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": {
-    "nombre": "María del Carmen Pérez García",
-    "tipo": "persona"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Comercios, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se autorizó la expedición de una licencia comercial para venta de cerveza a Marcia Gisela Peña Pinto en Av. Oyamel 808-A, Colonia Prados del Sur, aprobada por unanimidad.",
+   "resumen": "Se aprobó dar de baja la licencia B-001169 de la tienda de abarrotes de Ma. Elvira Ramírez Morfin, ubicada en Joaquín Amaro 1350, colonia San José Norte.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Prados del Sur"
+    "San José Norte"
    ],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Marcia Gisela Peña Pinto",
+    "nombre": "Ma. Elvira Ramírez Morfin",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -300,85 +341,213 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se presentó el dictamen de adecuaciones presupuestales para obras del POA 2025, según actas 47 y 50, pero no se especifica el resultado de la votación en este fragmento.",
-   "sentido": "no_determinable",
-   "categoria": "presupuesto_finanzas",
-   "votacion": "no_determinable",
-   "colonias": [],
+   "resumen": "Se autorizó la apertura de dos establecimientos con venta de cerveza: el restaurante 'Sky Padel' de TERRALTA PADEL S.A. de C.V. en Colinas de Santa Fe, y la marisquería 'Aguachiles Vaca' de Fernando Vaca Ramos en Jardines de la Estancia.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colinas de Santa Fe",
+    "Jardines de la Estancia"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "TERRALTA PADEL S.A. DE C.V. y FERNANDO VACA RAMOS",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó el dictamen que autoriza las adecuaciones presupuestales del mes de octubre, incluyendo transferencias por más de 34.5 millones de pesos, con el voto en contra de dos regidoras.",
+   "resumen": "Se aprobó dar de baja la licencia B-002029 de la tienda de abarrotes de María del Carmen Pérez García, en Av. Oyamel 808, colonia Prados del Sur.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "mayoria",
-   "colonias": [],
+   "votacion": "unanime",
+   "colonias": [
+    "Prados del Sur"
+   ],
    "obras": [],
    "montos": [
     {
-     "texto": "34,522,664.91",
-     "valor_mxn": 34522664.91
+     "texto": "1,625,724.69",
+     "valor_mxn": 1625724.69
     },
     {
-     "texto": "5,069,514.97",
-     "valor_mxn": 5069514.97
-    }
-   ],
-   "beneficiario": null,
-   "votos_en_contra": [
-    {
-     "nombre": "Azucena López Legorreta",
-     "id": "azucena-lopez-legorreta"
+     "texto": "42,918.61",
+     "valor_mxn": 42918.61
     },
     {
-     "nombre": "Diana Gabriela Vizcaíno Aguirre",
-     "id": "diana-gabriela-vizcaino-aguirre"
+     "texto": "497,981.64",
+     "valor_mxn": 497981.64
+    },
+    {
+     "texto": "27,098.13",
+     "valor_mxn": 27098.13
+    },
+    {
+     "texto": "5,178.52",
+     "valor_mxn": 5178.52
+    },
+    {
+     "texto": "10,046.98",
+     "valor_mxn": 10046.98
+    },
+    {
+     "texto": "10,045.98",
+     "valor_mxn": 10045.98
+    },
+    {
+     "texto": "640,139.49",
+     "valor_mxn": 640139.49
+    },
+    {
+     "texto": "640,139.41",
+     "valor_mxn": 640139.41
+    },
+    {
+     "texto": "3,677.42",
+     "valor_mxn": 3677.42
+    },
+    {
+     "texto": "2,562,906.48",
+     "valor_mxn": 2562906.48
+    },
+    {
+     "texto": "498,960.00 493,960.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "631,454.32",
+     "valor_mxn": 631454.32
+    },
+    {
+     "texto": "96,700.00",
+     "valor_mxn": 96700.0
+    },
+    {
+     "texto": "4,928.94",
+     "valor_mxn": 4928.94
+    },
+    {
+     "texto": "235,674.89",
+     "valor_mxn": 235674.89
+    },
+    {
+     "texto": "410,954.43",
+     "valor_mxn": 410954.43
+    },
+    {
+     "texto": "51,330.32",
+     "valor_mxn": 51330.32
+    },
+    {
+     "texto": "283,194.88 283,144.88",
+     "valor_mxn": null
+    },
+    {
+     "texto": "2,794.28",
+     "valor_mxn": 2794.28
+    },
+    {
+     "texto": "5,471.75",
+     "valor_mxn": 5471.75
+    },
+    {
+     "texto": "18,000.00 118,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "90,000.00",
+     "valor_mxn": 90000.0
+    },
+    {
+     "texto": "2,689.90 25",
+     "valor_mxn": null
+    },
+    {
+     "texto": "839.49",
+     "valor_mxn": 839.49
+    },
+    {
+     "texto": "5,492.42",
+     "valor_mxn": 5492.42
+    },
+    {
+     "texto": "2,946.51",
+     "valor_mxn": 2946.51
+    },
+    {
+     "texto": "58,000.00",
+     "valor_mxn": 58000.0
+    },
+    {
+     "texto": "10900.00 10,000.00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "1,637.76",
+     "valor_mxn": 1637.76
+    },
+    {
+     "texto": "7,100.00",
+     "valor_mxn": 7100.0
+    },
+    {
+     "texto": "1,038,878.94",
+     "valor_mxn": 1038878.94
+    },
+    {
+     "texto": "1,235,943.46",
+     "valor_mxn": 1235943.46
     }
    ],
+   "beneficiario": {
+    "nombre": "María del Carmen Pérez García",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Hacienda Municipal",
-   "autor": null
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó el dictamen que autoriza remitir la Cuenta Pública del mes de octubre de 2025 al Congreso del Estado, con el voto en contra de dos regidoras.",
+   "resumen": "Se autorizó la expedición de una licencia de apertura para venta de cerveza en 'Abarrotes El Primo', a nombre de Marcia Gisela Peña Pinto, en la colonia Prados del Sur.",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
-   "votacion": "mayoria",
-   "colonias": [],
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Prados del Sur"
+   ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [
-    {
-     "nombre": "Azucena López Legorreta",
-     "id": "azucena-lopez-legorreta"
-    },
-    {
-     "nombre": "Diana Gabriela Vizcaíno Aguirre",
-     "id": "diana-gabriela-vizcaino-aguirre"
-    }
-   ],
+   "beneficiario": {
+    "nombre": "MARCIA GISELA PEÑA PINTO",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Hacienda Municipal",
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó la suscripción de convenios de colaboración con diversas instituciones privadas para otorgar beneficios a los trabajadores municipales, por unanimidad.",
+   "resumen": "Se aprobaron convenios con INTEGRARTIS, Diagnóstico Médico por Imagen, Farma-Oncología, BODESA, Banco Diocesano de Alimentos, Grupo Isima y Florencio Amezcua Quiroz para beneficios de los trabajadores municipales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -386,8 +555,8 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "instituciones privadas",
-    "tipo": "empresa"
+    "nombre": "diversas instituciones privadas que ofrecen beneficios a las y los trabajadores municipales",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -400,7 +569,7 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se aprobó el Reglamento de la Comisión Fílmica del Municipio de Colima, por unanimidad.",
+   "resumen": "Se aprobó el Reglamento de la Comisión Fílmica del Municipio de Colima, que crea el órgano para planear y facilitar filmaciones, con un consejo consultivo y reglas para permisos y sanciones.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -419,17 +588,14 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se aprueba la integración del Consejo Editorial para el libro conmemorativo de los 500 años de la Fundación de la Villa de San Sebastián, presidido por el Presidente Municipal y con 14 integrantes.",
+   "resumen": "Se aprobó crear el Consejo Editorial para el proyecto del libro conmemorativo de los 500 años de la fundación de la Villa de San Sebastián de Colima, integrado por 14 personas.",
    "sentido": "aprobado",
-   "categoria": "reglamento_normativo",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "Consejo Editorial",
-    "tipo": "otro"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Educación, Cultura y Recreación",
@@ -441,7 +607,7 @@
   {
    "n": 16,
    "numeral": "XVI",
-   "resumen": "Se aprueba la suscripción de convenios de colaboración entre el Municipio y personas físicas o morales para el mantenimiento, conservación y embellecimiento de áreas verdes, a cambio de publicidad.",
+   "resumen": "Se aprobó que el municipio celebre convenios con personas físicas o morales para que adopten el mantenimiento, conservación y embellecimiento de camellones, glorietas, parques y áreas verdes a cambio de publicidad.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -463,7 +629,7 @@
   {
    "n": 17,
    "numeral": "XVII",
-   "resumen": "Se aprueba la Incorporación Municipal de la Etapa 9 del fraccionamiento MERIT RESIDENCIAL, ubicado al norte de Colima, con 17 lotes en Avenida de las Pirámides.",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa 9 del fraccionamiento Merit Residencial, al norte de Colima, con 17 lotes y 6,430.29 m², para lo cual se otorgó una fianza de $9,690,831.14.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -471,17 +637,19 @@
     "MERIT RESIDENCIAL"
    ],
    "obras": [
-    "Avenida de las Pirámides"
+    "AVENIDA DE LAS PIRÁMIDES",
+    "redes de Agua Potable y Alcantarillado",
+    "infraestructura de alumbrado público"
    ],
    "montos": [
     {
-     "texto": "$9,690,831.14 (NUEVE MILLONES SEISCIENTOS NOVENTA MIL OCHOCIENTOS TREINTA Y UN PESOS 14/100 M.N.)",
+     "texto": "$9,690,831.14",
      "valor_mxn": 9690831.14
     }
    ],
    "beneficiario": {
-    "nombre": "MERIT RESIDENCIAL",
-    "tipo": "fraccionamiento"
+    "nombre": "ERNESTINA AMEZCUA GARCÍA, SIWA DE KHATTAB CONSTRUCTORA S.A. DE C.V. y/o TAMER ADEL ALY ABOU TALEB KHATTAB",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -494,13 +662,11 @@
   {
    "n": 18,
    "numeral": "XVIII",
-   "resumen": "Se aprueba la celebración del Convenio de Hermanamiento entre el Municipio de Colima y el Municipio de Cihuatlán, Jalisco.",
+   "resumen": "Se aprobó celebrar el convenio de hermanamiento entre el municipio de Colima y el municipio de Cihuatlán, Jalisco, para impulsar la cooperación turística, económica, cultural, educativa y recreativa.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
-   "colonias": [
-    "Gregorio Torre Quintero"
-   ],
+   "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
@@ -509,7 +675,7 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación; y Turismo, Fomento Económico y Empresarial",
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación; y Turismo, Fomento Económico y Empresarial",
    "autor": {
     "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"

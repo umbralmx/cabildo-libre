@@ -6,21 +6,22 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-08-08T18:42:11+00:00",
+ "generado": "2026-08-14T01:00:03+00:00",
  "lectura": {
   "chars_ocr": 244600,
-  "chars_leidos": 244600,
+  "chars_leidos": 202600,
   "ventanas": 6,
-  "ventanas_fallidas": 0,
-  "completa": true
+  "ventanas_fallidas": 1,
+  "completa": false
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "El cabildo aprobó el acta previa, modificó el orden del día y conoció un dictamen de adecuaciones presupuestarias por 22 millones de pesos; también se retiró el cambio de nombre del auditorio.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "La sesión tuvo trámites y ajustes al orden del día; se aprobó el acta previa y se leyó el dictamen de adecuaciones presupuestarias por $22,025,530.93, sin votación en este fragmento.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se tomó lista de asistencia y se registró la presencia de los integrantes del cabildo.",
+   "resumen": "Se registró la asistencia del Presidente Municipal, la Síndica, las y los regidores, una de ellos vía remota.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Al contar con quórum legal, se declaró formalmente instalada la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +53,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad modificar el orden del día: se agregó un dictamen de convenio con el Grupo Automotriz PYD y se retiró el punto del cambio de nombre del auditorio.",
-   "sentido": "aprobado",
+   "resumen": "Se dio lectura al orden del día; el Regidor Francisco Javier Bravo Gallardo propuso incluir el convenio con Grupo Automotriz PYD y Federico Rangel Lozano pidió retirar el Séptimo Punto; la modificación fue aprobada por unanimidad.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -68,8 +69,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el acta de la sesión anterior, Acta de Cabildo N° 75.",
-   "sentido": "aprobado",
+   "resumen": "El Acta de Cabildo N° 75 fue aprobada por unanimidad.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,7 +85,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó el dictamen de la Comisión de Hacienda que autoriza a la Tesorería Municipal a realizar adecuaciones presupuestales de mayo de 2026, con ampliaciones y reducciones por 22,025,530.93 pesos; dos regidoras votaron en contra.",
+   "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal las adecuaciones presupuestarias de mayo de 2026, con redistribuciones por $22,025,530.93 y pólizas FORTAMUN por $2,617,944.04.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -92,7 +93,7 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$22\"025,530.93",
+     "texto": "$22,025,530.93",
      "valor_mxn": 22025530.93
     },
     {
@@ -129,22 +130,22 @@
     },
     {
      "texto": "4,973,528,24",
-     "valor_mxn": 4973528.24
+     "valor_mxn": null
     },
     {
      "texto": "60,000.00",
      "valor_mxn": 60000.0
     },
     {
-     "texto": "17,292.15",
-     "valor_mxn": 17292.15
+     "texto": "17,292,15",
+     "valor_mxn": null
     },
     {
      "texto": "2,227.38",
      "valor_mxn": 2227.38
     },
     {
-     "texto": "4,767,47",
+     "texto": "4,767.47",
      "valor_mxn": 4767.47
     },
     {
@@ -172,144 +173,8 @@
      "valor_mxn": 1047506.47
     },
     {
-     "texto": "6,286.66",
-     "valor_mxn": 6286.66
-    },
-    {
-     "texto": "1,711.04",
-     "valor_mxn": 1711.04
-    },
-    {
-     "texto": "2,046.66",
-     "valor_mxn": 2046.66
-    },
-    {
-     "texto": "5,236.38",
-     "valor_mxn": 5236.38
-    },
-    {
-     "texto": "4,150.71",
-     "valor_mxn": 4150.71
-    },
-    {
-     "texto": "2,040.59",
-     "valor_mxn": 2040.59
-    },
-    {
-     "texto": "1,061.27",
-     "valor_mxn": 1061.27
-    },
-    {
-     "texto": "3,661.08",
-     "valor_mxn": 3661.08
-    },
-    {
-     "texto": "589.18",
-     "valor_mxn": 589.18
-    },
-    {
-     "texto": "353.28",
-     "valor_mxn": 353.28
-    },
-    {
-     "texto": "1,870.00",
-     "valor_mxn": 1870.0
-    },
-    {
-     "texto": "860.39",
-     "valor_mxn": 860.39
-    },
-    {
-     "texto": "9,762.71",
-     "valor_mxn": 9762.71
-    },
-    {
-     "texto": "1,664.85",
-     "valor_mxn": 1664.85
-    },
-    {
-     "texto": "8,600.32",
-     "valor_mxn": 8600.32
-    },
-    {
-     "texto": "274,000.00",
-     "valor_mxn": 274000.0
-    },
-    {
-     "texto": "20,300.00",
-     "valor_mxn": 20300.0
-    },
-    {
-     "texto": "245,122.52",
-     "valor_mxn": 245122.52
-    },
-    {
-     "texto": "256,325.33",
-     "valor_mxn": 256325.33
-    },
-    {
-     "texto": "444,232.55",
-     "valor_mxn": 444232.55
-    },
-    {
-     "texto": "2,083,396.59",
-     "valor_mxn": 2083396.59
-    },
-    {
-     "texto": "875,658.69",
-     "valor_mxn": 875658.69
-    },
-    {
-     "texto": "679,320.09",
-     "valor_mxn": 679320.09
-    },
-    {
-     "texto": "679,320.00",
-     "valor_mxn": 679320.0
-    },
-    {
-     "texto": "71,941.38",
-     "valor_mxn": 71941.38
-    },
-    {
-     "texto": "2,372,726.00",
-     "valor_mxn": 2372726.0
-    },
-    {
-     "texto": "146,423.48",
-     "valor_mxn": 146423.48
-    },
-    {
-     "texto": "734,903.67",
-     "valor_mxn": 734903.67
-    },
-    {
-     "texto": "354,445.97",
-     "valor_mxn": 354445.97
-    },
-    {
-     "texto": "36,500.00",
-     "valor_mxn": 36500.0
-    },
-    {
-     "texto": "696,000.00",
-     "valor_mxn": 696000.0
-    },
-    {
-     "texto": "62,777.79",
-     "valor_mxn": 62777.79
-    },
-    {
-     "texto": "3,458.95",
-     "valor_mxn": 3458.95
-    },
-    {
-     "texto": "420,440.94",
-     "valor_mxn": 420440.94
-    },
-    {
-     "texto": "162,993.24",
-     "valor_mxn": 162993.24
+     "texto": "1,049.67",
+     "valor_mxn": 1049.67
     },
     {
      "texto": "22,025,530.93",
@@ -337,14 +202,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública mensual de mayo de 2026, con once votos a favor y dos en contra.",
+   "resumen": "Se aprobó por mayoría, con once votos a favor y dos en contra, el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de mayo de 2026.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -375,36 +240,13 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se retiró del orden del día, a petición del regidor Federico Rangel Lozano, el dictamen para renombrar el Auditorio Miguel de la Madrid Hurtado como Palacio de la Cultura de la Madrid.",
-   "sentido": "retirado",
-   "categoria": "patrimonio",
-   "votacion": "no_determinable",
-   "colonias": [
-    "Fraccionamiento Residencial Romanza"
-   ],
-   "obras": [],
-   "montos": [],
-   "beneficiario": {
-    "nombre": "Fraccionamiento Residencial Romanza",
-    "tipo": "fraccionamiento"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos",
-   "autor": {
-    "nombre": "Lic. Francisco Javier Bravo Gallardo",
-    "id": "francisco-javier-bravo-gallardo"
-   }
-  },
-  {
-   "n": 8,
-   "numeral": "VIII",
-   "resumen": "Se aprobó declarar recinto oficial el Fraccionamiento Residencial Romanza para celebrar una sesión extraordinaria de Cabildo el 17 de junio de 2026, donde se tratará su municipalización.",
+   "resumen": "El cabildo aprobó por mayoría declarar recinto oficial, por única vez, el Fraccionamiento Residencial Romanza para una sesión extraordinaria el 17 de junio de 2026, con un voto en contra y una abstención.",
    "sentido": "aprobado",
-   "categoria": "tramite",
+   "categoria": "fraccionamiento",
    "votacion": "mayoria",
    "colonias": [
-    "Fraccionamiento Residencial Romanza"
+    "Fraccionamiento Residencial Romanza",
+    "Fraccionamiento Romanza"
    ],
    "obras": [],
    "montos": [],
@@ -431,9 +273,9 @@
    }
   },
   {
-   "n": 9,
-   "numeral": "IX",
-   "resumen": "Se aprobaron por unanimidad dos licencias comerciales para venta de cerveza en las localidades de Las Tunas y Los Asmoles.",
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "El cabildo autorizó por unanimidad dos licencias de venta de cerveza en zona rural para los establecimientos 'Abarrotes Don Rafa' y 'Abarrotes Cristal'.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -443,7 +285,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "MA ELENA SÁNCHEZ TRUJILLO y CRISTAL GUADALUPE RODRÍGUEZ VEGA",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -453,9 +298,9 @@
    }
   },
   {
-   "n": 10,
-   "numeral": "X",
-   "resumen": "Se aprobaron por unanimidad tres licencias comerciales para venta de alcohol en El Moralete, La Virgencita y Residencial Santa Gertrudis.",
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "El cabildo autorizó por unanimidad tres licencias de venta de bebidas alcohólicas para 'Abarrotes Álvarez', 'Abarrotes Michelita' y 'Cumbre Tirafuego'.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -466,21 +311,24 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "SANDRA ISABEL IÑIGUEZ MUÑOZ, LETICIA VAZQUEZ ABARCA y CUMBRE TIRAFUEGO S.A. DE C.V.",
+    "tipo": "otro"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
-    "id": "juan-carlos-gomez-diaz"
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
-   "n": 11,
-   "numeral": "XI",
-   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se autorizó al Presidente Municipal, a la Síndica y al Secretario del Ayuntamiento para firmarlo.",
+   "n": 10,
+   "numeral": "X",
+   "resumen": "El cabildo aprobó por unanimidad dar de baja la licencia B-00025 de Rafael Anguiano Chávez, abarrotes con venta de cerveza en Las Tunas.",
    "sentido": "aprobado",
-   "categoria": "convenio",
+   "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
     "Las Tunas"
@@ -500,11 +348,33 @@
    }
   },
   {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se autorizó al Presidente Municipal, a la Síndica y al Secretario del Ayuntamiento para firmarlo.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Acuática Tiburones",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo escolar 2024-2025, a cinco estudiantes del Bachillerato CEDART Juan Rulfo, con un total de 50,000 pesos en cinco estímulos de 10,000 pesos.",
+   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo escolar 2024-2025, a cinco estudiantes del Bachillerato CEDART Juan Rulfo, con un total de 50,000 pesos (cinco estímulos de 10,000 pesos).",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -519,21 +389,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Acuática Tiburones",
-    "tipo": "empresa"
+    "nombre": "alumnos y/o alumnas del Bachillerato CEDART \"Juan Rulfo\"",
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Gobernación y Reglamentos y de Juventud y Deporte",
+   "comision": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
-    "id": "claudia-janeth-farias-lopez"
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la agencia automotriz Grupo Automotriz PYD para que el personal municipal obtenga descuentos en vehículos nuevos de la marca MG.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la agencia automotriz Grupo Automotriz PYD, que dará descuentos del 8% en vehículos de flotilla y 5,000 pesos adicionales al personal del municipio en vehículos nuevos MG.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -546,21 +416,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
-    "tipo": "ciudadania"
+    "nombre": "Grupo Automotriz PYD (Agencia MG)",
+    "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación, y Hacienda Municipal",
+   "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Mtro. Federico Rangel Lozano",
-    "id": "federico-rangel-lozano"
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "En Asuntos Generales no se adoptó ningún acuerdo; regidoras y regidores expresaron posturas sobre transparencia en ayudas sociales, transmisión institucional de las sesiones, apoyos sociales, salud, educación y municipalización de colonias.",
+   "resumen": "En Asuntos Generales, las y los regidores expusieron temas de transparencia en ayudas sociales, transmisión oficial de sesiones, atención en Justicia Cívica, reconocimientos a maestros y deportistas, y la reactivación del Consejo Contra la Discriminación; no hubo votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -585,7 +455,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión a las 13:14 horas, una vez agotado el orden del día.",
+   "resumen": "Se declaró clausurada la sesión a las 13:14 horas del 15 de junio de 2026, una vez agotado el orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

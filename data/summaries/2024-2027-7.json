@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T17:12:58+00:00",
+ "generado": "2026-08-14T00:54:24+00:00",
  "lectura": {
   "chars_ocr": 57936,
   "chars_leidos": 57936,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó la baja de una licencia de alcohol, el traspaso de dos locales, un crédito de 35 millones de pesos y reformas a un reglamento; además se desahogaron trámites.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El Cabildo aprobó la baja de la licencia B-002753, dos traspasos en mercados y un empréstito de 35 millones de pesos; dio lectura a reforma reglamentaria.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, constatando la presencia de la mayoría de los miembros.",
+   "resumen": "Se pasó lista de asistencia; se registró la presencia de la mayoría de regidores, una comparecencia remota y una falta justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se modificó la denominación del punto VII y se aprobó el orden del día por unanimidad.",
+   "resumen": "Se aprobó por unanimidad modificar la denominación del punto sobre el empréstito para precisar que es a corto plazo y por hasta 35 millones de pesos.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,8 +69,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó el acta de cabildo número 5 por unanimidad; el acta 6 quedó pendiente.",
-   "sentido": "aprobado",
+   "resumen": "Se dispensó la lectura y se aprobó por unanimidad el Acta N° 5; el Acta N° 6 quedó pendiente para la próxima sesión.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,7 +85,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó la baja de la licencia B-002753 para venta de alcohol, a petición del titular.",
+   "resumen": "Se aprobó por unanimidad dar de baja la licencia B-002753 para venta de bebidas alcohólicas del restaurante de Israel Omar Saldívar Wood, en la Colonia Centro.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -93,7 +94,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Israel Omar Saldívar Wood",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -105,14 +109,17 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó el traspaso de dos locales en los mercados Francisco Ramírez Villareal y General Francisco Villa.",
+   "resumen": "Se aprobaron por unanimidad dos traspasos de locales en los mercados Francisco Ramírez Villareal (Placetas) y Gral. Francisco Villa, a favor de David Alonso Isidoro Coronel y Mariano Israel Rodríguez González.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "patrimonio",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "David Alonso Isidoro Coronel y Mariano Israel Rodríguez González",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -124,7 +131,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad la contratación de un financiamiento a corto plazo por $35,000,000 para cubrir obligaciones laborales de trabajadores municipales.",
+   "resumen": "Se aprobó por unanimidad autorizar al municipio a contratar un empréstito a corto plazo de hasta 35 millones de pesos para cubrir insuficiencias temporales de liquidez.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -132,11 +139,14 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$35,000,000.00 (treinta y cinco millones de pesos 00/100 m.n.)",
+     "texto": "$35,000,000.00 (TREINTA Y CINCO MILLONES DE PESOS 00/100 M.N.)",
      "valor_mxn": 35000000
     }
    ],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Municipio de Colima",
+    "tipo": "dependencia"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
@@ -148,14 +158,17 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobaron por unanimidad reformas a los artículos 8, 11 y 24 del Reglamento para el Funcionamiento de Establecimientos Comerciales, para agilizar trámites de licencias SARE.",
+   "resumen": "Se aprobó reformar los artículos 8, 11 y 24 del Reglamento para el Funcionamiento de Establecimientos Comerciales, Industriales y de Servicios del Municipio de Colima, para agilizar la expedición de licencias SARE y sustituir el dictamen de vocación de suelo por un informe.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "usuarios o solicitantes de licencias SARE",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
@@ -167,7 +180,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó por unanimidad el nombramiento de Vanessa Velázquez Venegas como Secretaria Ejecutiva de SIPINNA.",
+   "resumen": "Se aprobó nombrar a Vanessa Velázquez Venegas como Secretaria Ejecutiva del Sistema Municipal de Protección Integral de los Derechos de Niñas, Niños y Adolescentes (SIPINNA), y rindió protesta.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
@@ -175,7 +188,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "VANESSA VELÁZQUEZ VENEGAS",
+    "nombre": "Vanessa Velázquez Venegas",
     "tipo": "persona"
    },
    "votos_en_contra": [],

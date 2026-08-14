@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-26T01:25:25+00:00",
+ "generado": "2026-08-13T22:59:45+00:00",
  "lectura": {
   "chars_ocr": 107749,
   "chars_leidos": 107749,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron licencias y bajas de alcohol, se retiraron dos puntos del orden, y se leyó un convenio educativo sin votación.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "En esta sesión el Cabildo aprobó por unanimidad varios dictámenes sobre licencias de bebidas alcohólicas (expediciones y bajas) y dio lectura a un convenio de colaboración con el Instituto Tecnológico de Ciudad Guzmán.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia de los miembros.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente municipal, la síndica y diez regidores, con una falta justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,8 +53,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al Orden del Día y se aprobó por unanimidad una modificación que retiró dos puntos.",
-   "sentido": "aprobado",
+   "resumen": "Se dio lectura al orden del día y, a petición de dos regidores, se retiraron la convocatoria de comités de participación ciudadana y el punto sobre la Guía Consultiva de Desempeño Municipal; la modificación fue aprobada por unanimidad.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -68,8 +69,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura de las actas 19 y 20 y se aprobaron por unanimidad.",
-   "sentido": "aprobado",
+   "resumen": "Se dispensó la lectura de las actas 19 y 20, y ambas fueron aprobadas por unanimidad.",
+   "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,12 +85,12 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizó la expedición de una licencia para venta de cerveza a Abarrotes Nuevo Amanecer, en la colonia Francisco Villa.",
+   "resumen": "Se autorizó la apertura de la tienda de abarrotes con venta de cerveza 'Abarrotes Nuevo Amanecer', de Rosa Isela Cortez Luna, en la colonia Francisco Villa.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Francisco Villa"
+    "Colonia Francisco Villa"
    ],
    "obras": [],
    "montos": [],
@@ -108,17 +109,20 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se autorizó la apertura de un restaurante y un cambio de giro para venta de cerveza, en colonias Esmeralda Norte y Santa Bárbara.",
+   "resumen": "Se autorizó la apertura del restaurante 'The Street', de Reynaldo Ocampo Valencia, en la colonia Residencial Esmeralda Norte, y el cambio de giro del 'Minisúper El Golfito', de Ernesto Javier Alonso Lepe, en la colonia Residencial Santa Bárbara.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Residencial Esmeralda Norte",
-    "Residencial Santa Bárbara"
+    "Colonia Residencial Esmeralda Norte",
+    "Colonia Residencial Santa Bárbara"
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "REYNALDO OCAMPO VALENCIA, ERNESTO JAVIER ALONSO LEPE",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -130,7 +134,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizó la baja de dos licencias de venta de alcohol de los titulares Irma Concepción López Cortés y Ángela Rodríguez Puente.",
+   "resumen": "Se autorizó la baja de dos licencias de venta de bebidas alcohólicas de Irma Concepción López Cortés y Ángela Rodríguez Puente, cuyos establecimientos ya no funcionaban.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -140,7 +144,10 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Irma Concepción López Cortés, Ángela Rodríguez Puente",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -152,7 +159,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se autorizó la baja de catorce licencias de venta de alcohol de diversos titulares.",
+   "resumen": "Se autorizó la baja de catorce licencias de establecimientos con venta de bebidas alcohólicas que ya no funcionaban.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -180,7 +187,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Municipio de Colima y el Instituto Tecnológico de Ciudad Guzmán para residencias profesionales.",
+   "resumen": "Se aprobó la suscripción de un convenio con el Instituto Tecnológico de Ciudad Guzmán para que sus estudiantes realicen residencias profesionales en el municipio.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -202,7 +209,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la suscripción de cuatro convenios de colaboración entre el Municipio de Colima y el Instituto Tecnológico de Colima.",
+   "resumen": "Se aprobaron cuatro convenios con el Instituto Tecnológico de Colima para colaboración académica, residencias profesionales, servicio social y educación dual.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -211,7 +218,7 @@
    "montos": [],
    "beneficiario": {
     "nombre": "Instituto Tecnológico de Colima",
-    "tipo": "dependencia"
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -224,14 +231,17 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó el Programa Parcial de Urbanización 'La Benjamina' en el predio El Torreón, promovido por Emilia Navarrete Díaz.",
+   "resumen": "Se aprobó el Programa Parcial de Urbanización La Benjamina, con un lote para industria ligera y otro para áreas verdes, promovido por Emilia Navarrete Díaz.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "LA BENJAMINA"
+   ],
    "obras": [
-    "Calle La Benjamina",
-    "Boulevard Rodolfo Chávez Carrillo"
+    "Programa Parcial de Urbanización LA BENJAMINA",
+    "Boulevard Rodolfo Chávez Carrillo",
+    "calle local La Benjamina"
    ],
    "montos": [
     {
@@ -240,7 +250,7 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Emilia Navarrete Díaz",
+    "nombre": "EMILIA NAVARRETE DÍAZ",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -254,22 +264,26 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó la municipalización de las Etapas 2, 3, 4 y 7 del Fraccionamiento Bosque de la Cantera, promovido por LEGA DESARROLLOS, S.A. DE C.V. Y/O ING. EDUARDO ANTONIO BRUN SOLÓRZANO.",
+   "resumen": "Se aprobó la municipalización de las etapas 2, 3, 4 y 7 del fraccionamiento Bosque de la Cantera, promovida por LEGA DESARROLLOS; el desarrollador otorgó una fianza de $1,126,070.66 para garantizar obras y vicios ocultos.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "Bosque de la Cantera"
+    "BOSQUE DE LA CANTERA"
    ],
-   "obras": [],
+   "obras": [
+    "Municipalización de las Etapas 2, 3, 4 y 7 del Fraccionamiento Bosque de la Cant",
+    "Paseo del Camichín",
+    "Paseo del Bosque"
+   ],
    "montos": [
     {
-     "texto": "$1,126,070.66 (UN MILLÓN CIENTO VEINTISEIS MIL SETENTA PESOS 66/100 M.N.)",
+     "texto": "$1,126,070.66",
      "valor_mxn": 1126070.66
     }
    ],
    "beneficiario": {
-    "nombre": "LEGA DESARROLLOS, S.A. DE C.V.",
+    "nombre": "LEGA DESARROLLOS, S.A. DE C.V. Y/O ING. EDUARDO ANTONIO BRUN SOLÓRZANO",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
@@ -283,7 +297,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se autorizó la participación del Municipio de Colima en la Guía Consultiva de Desempeño Municipal 2025-2027.",
+   "resumen": "Se aprobó la participación del Municipio de Colima en la Guía Consultiva de Desempeño Municipal 2025-2027 y se autorizó al presidente municipal a realizar las gestiones correspondientes.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -292,20 +306,20 @@
    "montos": [],
    "beneficiario": {
     "nombre": "Municipio de Colima",
-    "tipo": "dependencia"
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": null,
+   "comision": "Comisión de Planeación, Obras y Servicios Públicos",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de a Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se presentaron asuntos generales: entrega de peticiones ciudadanas, informe trimestral de actividades de la Regidora Diana Gabriela Vizcaíno Aguirre, y anuncio de bodas colectivas.",
+   "resumen": "Se expusieron asuntos generales: la regidora Azucena López reportó ferias de bienestar y entregó solicitudes ciudadanas; el presidente informó sobre el informe trimestral de la regidora Gabriela y sobre eventos como bodas colectivas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -323,9 +337,9 @@
    "autor": null
   },
   {
-   "n": 17,
-   "numeral": "XVII",
-   "resumen": "Se declaró clausurada la sesión.",
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Se declaró clausurada la sesión al agotarse el orden del día.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

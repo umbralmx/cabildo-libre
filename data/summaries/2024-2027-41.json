@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T17:09:10+00:00",
+ "generado": "2026-08-13T23:46:55+00:00",
  "lectura": {
   "chars_ocr": 99557,
   "chars_leidos": 99557,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobó una licencia de bebidas alcohólicas, se retiró el informe financiero, se aplazaron actas, y se leyó dictamen de baja de 91 comerciantes.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El cabildo modificó su orden del día, difirió actas previas, aprobó una licencia de venta de cerveza en Prados del Sur y dejó pendiente la baja de 91 comerciantes temporales.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, registrando la presencia de regidores y la ausencia justificada de una regidora.",
+   "resumen": "Se pasó lista de asistencia; se registraron los ediles presentes, una regidora vía remota y una ausencia justificada.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura y se aprobó el Orden del Día con la modificación de retirar el séptimo punto.",
+   "resumen": "Se dio lectura al orden del día. El cabildo aprobó retirar el punto del informe financiero semestral y rechazó retirar el punto sobre la baja de comerciantes; el orden del día quedó modificado.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -68,8 +69,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó presentar las Actas de Cabildo 39 y 40 en la próxima sesión, aplazando su aprobación.",
-   "sentido": "aplazado",
+   "resumen": "A solicitud del presidente municipal, se autorizó por unanimidad presentar las actas 39 y 40 en la próxima sesión.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -84,7 +85,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó la expedición de una licencia de apertura para la tienda de abarrotes 'MINI SÚPER SELECTO DE COLIMA' con venta de cerveza, ubicada en Blvd. Paseo de los Doctores 525, Colonia Prados del Sur, a nombre de Erick Servín Sánchez.",
+   "resumen": "Se aprobó la expedición de una licencia de apertura para la tienda 'Mini Súper Selecto de Colima' de Erick Servín Sánchez, en Prados del Sur, para venta de cerveza.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -108,26 +109,40 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó dar de baja en el sistema EMPRESS 91 perfiles de comerciantes temporales erróneamente registrados como fijos.",
+   "resumen": "Se aprobó dar de baja en el sistema EMPRESS a 91 perfiles de comerciantes temporales que estaban erróneamente registrados como fijos; hubo un voto en contra y una abstención.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [
     "COLIMA CENTRO",
-    "ELPEDREGAL",
+    "EL PEDREGAL",
     "MAGISTERIAL",
     "RESIDENCIAL ESMERALDA",
     "RIVERA DEL JAZMIN",
-    "SARDINES DEL SAL",
-    "VILLA DE ALVAREZ",
+    "JARDINES DEL SOL",
+    "JARDINES DE LA CORREGIDORA",
+    "VILLA DE ÁLVAREZ",
     "BUROCRATAS",
     "LAS PALMAS",
-    "SIN NOMBRE",
-    "ORIENTAL",
-    "LAZARO CARDENAS"
+    "INFONAVIT (LA ESTANCIA)",
+    "TORRES QUINTERO",
+    "Infonavit La Estancia",
+    "Revolución",
+    "Los Jazmines",
+    "San Rafael",
+    "Oriental",
+    "Popular",
+    "Sardines del Sol",
+    "Prados del Sur",
+    "Camino Real"
    ],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "más de 11 millones de pesos",
+     "valor_mxn": null
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [
     {
@@ -142,31 +157,12 @@
     }
    ],
    "comision": "Comisiones conjuntas de Hacienda Municipal y Comercio, Mercados y Restaurantes",
-   "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
-    "id": "itzel-sarahi-rios-de-la-mora"
-   }
+   "autor": null
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se retiró del Orden del Día el dictamen sobre el Informe de Avance de la Gestión Financiera del primer semestre de 2025.",
-   "sentido": "retirado",
-   "categoria": "tramite",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 8,
-   "numeral": "VIII",
-   "resumen": "Se presentó la iniciativa con proyecto de decreto para otorgar incentivos fiscales a contribuyentes del Municipio de Colima; no se determinó su aprobación en este fragmento.",
+   "resumen": "Se dio lectura al dictamen que propone otorgar diversos incentivos fiscales a favor de los contribuyentes del municipio de Colima; el fragmento no muestra la votación.",
    "sentido": "no_determinable",
    "categoria": "presupuesto_finanzas",
    "votacion": "no_determinable",
@@ -186,14 +182,38 @@
    }
   },
   {
-   "n": 12,
-   "numeral": "XII",
-   "resumen": "Se aprobó el Programa Parcial de Urbanización 'Residencial Santa Cristina', promovido por Mauricio Ortiz Espinoza, que incluye obras como rehabilitación del pozo El Zarco y construcción de un subcolector.",
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización 'Residencial Santa Cristina', promovido por Mauricio Ortiz Espinoza, con las áreas y obligaciones de urbanización señaladas en el dictamen.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
-    "La Capacha",
+    "Residencial Santa Cristina"
+   ],
+   "obras": [
+    "Rehabilitación y equipamiento del pozo profundo denominado el Zarco I",
+    "construcción de un subcolector de 14” y entroncarse al inicio del colector exist",
+    "Todas y cada una de las obras que determine el proyecto ejecutivo de urbanizació"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "C. MAURICIO ORTIZ ESPINOZA",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "El Cabildo reprobó por mayoría la minuta con proyecto de decreto que reforma la Constitución del Estado en materia de acceso a la información y protección de datos personales; votaron en contra las regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "rechazado",
+   "categoria": "reglamento_normativo",
+   "votacion": "mayoria",
+   "colonias": [
     "Paseo de los Sauces",
     "Merit Residencial",
     "Residencial San Agustín",
@@ -203,36 +223,22 @@
     "Vista La Capacha",
     "Real La Floresta",
     "Punto Rioja",
+    "La Capacha",
     "Residencial Santa Cristina"
    ],
    "obras": [
-    "Rehabilitación y equipamiento del pozo profundo El Zarco I",
-    "Construcción de subcolector de 14 pulgadas",
-    "Consolidación de vialidades",
-    "Rehabilitación y equipamiento del pozo profundo denominado el Zarco l",
-    "Construcción de un subcolector de 14” y entronque al colector existente sobre la"
+    "pozo profundo El Zarco I",
+    "subcolector de 14 pulgadas",
+    "pasos peatonales y rampas para discapacitados",
+    "reforestación de vías y espacios públicos",
+    "vialidad principal VP-2",
+    "Avenida de las Pirámides"
    ],
    "montos": [],
    "beneficiario": {
     "nombre": "Mauricio Ortiz Espinoza",
     "tipo": "persona"
    },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 13,
-   "numeral": "XIII",
-   "resumen": "Se reprobó por mayoría la Minuta con Proyecto de Decreto de reforma constitucional en materia de acceso a la información y protección de datos personales.",
-   "sentido": "rechazado",
-   "categoria": "reglamento_normativo",
-   "votacion": "mayoria",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": null,
    "votos_en_contra": [
     {
      "nombre": "C. Azucena López Legorreta",
@@ -245,14 +251,17 @@
    ],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "C. Azucena López Legorreta",
+    "id": "azucena-lopez-legorreta"
+   }
   },
   {
-   "n": 14,
-   "numeral": "XIV",
-   "resumen": "Se trataron asuntos generales: entrega de informes, posicionamientos de regidores y conmemoración histórica.",
-   "sentido": "tramite",
-   "categoria": "tramite",
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Asuntos Generales: no se registró votación; se presentaron informes y posicionamientos de regidores, incluida la entrega de informes de munícipes y la conmemoración de la fundación de la Villa de Colima.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
    "votacion": "no_determinable",
    "colonias": [],
    "obras": [],
@@ -264,9 +273,9 @@
    "autor": null
   },
   {
-   "n": 15,
-   "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión.",
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "El presidente municipal declaró clausurada la sesión a las 11:01 horas del día de su fecha.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

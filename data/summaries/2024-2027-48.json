@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T15:20:12+00:00",
+ "generado": "2026-08-14T00:26:36+00:00",
  "lectura": {
   "chars_ocr": 382875,
   "chars_leidos": 382875,
@@ -14,15 +14,14 @@
   "ventanas_fallidas": 0,
   "completa": true
  },
- "puntos_en_conflicto": [
-  7
- ],
- "resumen_sesion": "Se aprobó modificar el orden del día, se aplazó el acta anterior y se leyó un dictamen de adecuaciones presupuestarias por $24.5 millones; la votación de este último no se determinó en el fragmento.",
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "La sesión aprobó el orden del día modificado, difirió el acta 47 y dio lectura al dictamen de adecuaciones presupuestales de septiembre 2025 por 24.5 millones de pesos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia, constatando la presencia de la mayoría de los miembros.",
+   "resumen": "Se pasó lista de asistencia; estuvieron presentes el presidente municipal, la síndica y las y los regidores, una de ellas vía remota.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -54,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad modificar el Orden del Día, retirando el punto sobre ampliaciones presupuestarias por cambio de nómina e incorporando un punto de acuerdo sobre el jardín Torres Quintero.",
+   "resumen": "Se aprobó por unanimidad el orden del día modificado: se retiró el dictamen de ampliaciones presupuestarias por cambio de tipo de nómina y se incorporó el punto de acuerdo para declarar el jardín Torres Quintero como recinto de la sesión solemne del 23 de octubre.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -70,7 +69,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se autorizó por unanimidad presentar el Acta de Cabildo N° 47 en la próxima sesión, aplazando su aprobación.",
+   "resumen": "Se aprobó por unanimidad presentar el Acta de Cabildo N° 47 en la próxima sesión.",
    "sentido": "aplazado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -81,12 +80,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
   },
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría la realización de adecuaciones presupuestarias solicitadas por la Tesorería Municipal para septiembre de 2025, por un total de $3,692,843.57.",
+   "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias de septiembre de 2025, por un total de 3,692,843.57 pesos, con los votos en contra de dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -94,8 +96,168 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$24,531,860.37 (Veinticuatro millones quinientos treinta y un mil ochocientos sesenta pesos 37/100 m.n.)",
+     "texto": "$24'531,860.37",
      "valor_mxn": 24531860.37
+    },
+    {
+     "texto": "707.20",
+     "valor_mxn": 707.2
+    },
+    {
+     "texto": "847.26",
+     "valor_mxn": 847.26
+    },
+    {
+     "texto": "24.42",
+     "valor_mxn": 24.42
+    },
+    {
+     "texto": "701.97",
+     "valor_mxn": 701.97
+    },
+    {
+     "texto": "7,960.86",
+     "valor_mxn": 7960.86
+    },
+    {
+     "texto": "5,575.36",
+     "valor_mxn": 5575.36
+    },
+    {
+     "texto": "1,112.56",
+     "valor_mxn": 1112.56
+    },
+    {
+     "texto": "1,118.95",
+     "valor_mxn": 1118.95
+    },
+    {
+     "texto": "1,527.16",
+     "valor_mxn": 1527.16
+    },
+    {
+     "texto": "843.31",
+     "valor_mxn": 843.31
+    },
+    {
+     "texto": "774.82",
+     "valor_mxn": 774.82
+    },
+    {
+     "texto": "1,313.43",
+     "valor_mxn": 1313.43
+    },
+    {
+     "texto": "966.48",
+     "valor_mxn": 966.48
+    },
+    {
+     "texto": "862.26",
+     "valor_mxn": 862.26
+    },
+    {
+     "texto": "290.50",
+     "valor_mxn": 290.5
+    },
+    {
+     "texto": "1,960.44",
+     "valor_mxn": 1960.44
+    },
+    {
+     "texto": "8,791.26",
+     "valor_mxn": 8791.26
+    },
+    {
+     "texto": "677.96",
+     "valor_mxn": 677.96
+    },
+    {
+     "texto": "1,073,509.90",
+     "valor_mxn": 1073509.9
+    },
+    {
+     "texto": "1,319,323.63",
+     "valor_mxn": 1319323.63
+    },
+    {
+     "texto": "20,000.00",
+     "valor_mxn": 20000.0
+    },
+    {
+     "texto": "580,000.00",
+     "valor_mxn": 580000.0
+    },
+    {
+     "texto": "6,694.00",
+     "valor_mxn": 6694.0
+    },
+    {
+     "texto": "5,283.83",
+     "valor_mxn": 5283.83
+    },
+    {
+     "texto": "47,560.00",
+     "valor_mxn": 47560.0
+    },
+    {
+     "texto": "25,000.03",
+     "valor_mxn": 25000.03
+    },
+    {
+     "texto": "75,000.00",
+     "valor_mxn": 75000.0
+    },
+    {
+     "texto": "3,924.85",
+     "valor_mxn": 3924.85
+    },
+    {
+     "texto": "21,000.00",
+     "valor_mxn": 21000.0
+    },
+    {
+     "texto": "5,877.39",
+     "valor_mxn": 5877.39
+    },
+    {
+     "texto": "802.42",
+     "valor_mxn": 802.42
+    },
+    {
+     "texto": "1,262.37",
+     "valor_mxn": 1262.37
+    },
+    {
+     "texto": "623.00",
+     "valor_mxn": 623.0
+    },
+    {
+     "texto": "139.26",
+     "valor_mxn": 139.26
+    },
+    {
+     "texto": "2,653.27",
+     "valor_mxn": 2653.27
+    },
+    {
+     "texto": "2,116.52",
+     "valor_mxn": 2116.52
+    },
+    {
+     "texto": "532.84",
+     "valor_mxn": 532.84
+    },
+    {
+     "texto": "1,820.82",
+     "valor_mxn": 1820.82
+    },
+    {
+     "texto": "701.25",
+     "valor_mxn": 701.25
+    },
+    {
+     "texto": "1,528.89",
+     "valor_mxn": 1528.89
     },
     {
      "texto": "3,692,843.57",
@@ -103,16 +265,16 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Tesorería Municipal del Municipio de Colima",
+    "nombre": "Tesorería Municipal",
     "tipo": "dependencia"
    },
    "votos_en_contra": [
     {
-     "nombre": "Azucena López Legorreta",
+     "nombre": "C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
@@ -126,24 +288,37 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de septiembre de 2025.",
+   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de septiembre de 2025, con los votos en contra de dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "más de quinientos mil pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "más de ciento catorce millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "más de cuatro millones de pesos",
+     "valor_mxn": null
+    }
+   ],
    "beneficiario": {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia"
    },
    "votos_en_contra": [
     {
-     "nombre": "Azucena López Legorreta",
+     "nombre": "C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
@@ -157,18 +332,22 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "El dictamen sobre ampliaciones presupuestarias por cambio de nómina SUPERNUMERARIO-BASE fue retirado del orden del día a solicitud de la Síndica.",
+   "resumen": "Se aprobó por unanimidad expedir tres licencias comerciales para venta y consumo de bebidas alcohólicas a los establecimientos Abarrotes Lupita, Terraza Arboreal y El Domo, en Colima.",
    "sentido": "aprobado",
-   "categoria": "presupuesto_finanzas",
+   "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
     "Centro",
     "Fraccionamiento Balcón de Abajo",
-    "Colonia Camino Real"
+    "Lo de Villa",
+    "Camino Real"
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "Gregory Anthony Vergara Gutiérrez, Jorge Armando Bayardo Aguilar y Balerio Muñiz Madrigal",
+    "tipo": "persona"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -180,7 +359,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se aprobó por unanimidad la incorporación municipal directa de tres predios del fraccionamiento Girasoles.",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal directa de tres predios del fraccionamiento Girasoles, al norte de Colima, promovida por Sonia Mariana Vázquez Abaroa e Ignacio Leonel Cárdenas Macías.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -190,7 +369,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Sonia Mariana Vázquez Abaroa e Ignacio Leonel Cárdenas Macías",
+    "nombre": "SONIA MARIANA VÁZQUEZ ABAROA e IGNACIO LEONEL CÁRDENAS MACÍAS",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -204,15 +383,24 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Punto sobre incorporación municipal de la Etapa 6 del Desarrollo Comercial La Palma; no se determina el resultado en este fragmento.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa 6 del Desarrollo Comercial La Palma, al nororiente de la ciudad, con 3 lotes y 3,734.65 m²; el urbanizador garantiza las obras con una fianza de $2,427,317.69.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
+   "votacion": "unanime",
+   "colonias": [
+    "DESARROLLO COMERCIAL \"LA PALMA\""
+   ],
+   "obras": [
+    "LIBRAMIENTO EJÉRCITO MEXICANO"
+   ],
+   "montos": [
+    {
+     "texto": "$ 2, 427,317.69",
+     "valor_mxn": 2427317.69
+    }
+   ],
    "beneficiario": {
-    "nombre": "Miguel Ángel Flores Vizcaíno (apoderado legal de María Guadalupe Vizcaíno Galindo, Daniel Antonio Murakami Parra, María ",
+    "nombre": "LIC. MIGUEL ÁNGEL FLORES VIZCAÍNO, C. MARÍA GUADALUPE VIZCAÍNO GALINDO, DANIEL ANTONIO MURAKAMI PARRA, MARÍA DE LOS ÁNGE",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -226,33 +414,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la incorporación municipal de la Etapa 6 del Desarrollo Comercial 'La Palma', con 3 lotes comerciales y vialidad, garantizado con fianza de $2,427,317.69 M.N.",
-   "sentido": "aprobado",
-   "categoria": "fraccionamiento",
-   "votacion": "unanime",
-   "colonias": [],
-   "obras": [
-    "Libramiento Ejército Mexicano"
-   ],
-   "montos": [
-    {
-     "texto": "$ 2, 427,317.69 (DOS MILLONES CUATROCIENTOS VEINTISIETE MIL TRESCIENTOS DIECISIETE PESOS 69/100 M.N.)",
-     "valor_mxn": 2427317.69
-    }
-   ],
-   "beneficiario": {
-    "nombre": "MIGUEL ÁNGEL FLORES VIZCAÍNO, como apoderado legal de la C. MARÍA GUADALUPE VIZCAÍNO GALINDO, DANIEL ANTONIO MURAKAMI PA",
-    "tipo": "persona"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": null,
-   "autor": null
-  },
-  {
-   "n": 11,
-   "numeral": "XI",
-   "resumen": "Se aprobó la renovación del comodato del inmueble en Calle Prof. Francisco Hernández Espinoza No. 1265, Colonia Oriental, a favor del Grupo de Apoyo Amanecer I.A.P.",
+   "resumen": "Se aprobó la renovación del comodato del inmueble en calle Prof. Francisco Hernández Espinoza 1265, colonia Oriental, a favor del Grupo de Apoyo Amanecer I.A.P., representado por Lorenza Zamora Camacho.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
@@ -274,9 +436,9 @@
    }
   },
   {
-   "n": 12,
-   "numeral": "XII",
-   "resumen": "Se aprobó el Reglamento para el Funcionamiento del Consejo de Paz y Justicia Cívica del Municipio de Colima.",
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó el Reglamento para el Funcionamiento del Consejo de Paz y Justicia Cívica del Municipio de Colima, que crea un órgano asesor de mediación y resolución pacífica de conflictos.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "unanime",
@@ -293,13 +455,15 @@
    }
   },
   {
-   "n": 13,
-   "numeral": "XIII",
-   "resumen": "Se aprobó por unanimidad la licencia temporal de la regidora Elia Margarita Moreno González y se tomó protesta a su suplente Nancy Susana Martínez Briceño, quien además recibió asignación de comisiones.",
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó por unanimidad la licencia temporal de la regidora Elia Margarita Moreno González, se tomó protesta a Nancy Susana Martínez Briceño como regidora suplente y se le asignaron comisiones.",
    "sentido": "aprobado",
    "categoria": "nombramiento",
    "votacion": "unanime",
-   "colonias": [],
+   "colonias": [
+    "Cuauhtémoc"
+   ],
    "obras": [],
    "montos": [],
    "beneficiario": {
@@ -309,31 +473,73 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "J. Francisco Anzar Herrera",
+    "id": null
+   }
   },
   {
-   "n": 14,
-   "numeral": "XIV",
-   "resumen": "Se aprobó por unanimidad la adición del artículo 317 BIS al Reglamento del Gobierno Municipal para capacitar anualmente a autoridades auxiliares en protección civil. También se presentó una propuesta para eliminar el nivel salarial 16 (turnada a comisión) y se realizaron anuncios sobre el informe de gobierno y cambio de fecha de sesión.",
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó por unanimidad declarar el Jardín Torres Quintero como recinto oficial para la Sesión Solemne del Cabildo del 23 de octubre de 2025, donde se entregarán las Preseas al Mérito Magisterial.",
    "sentido": "aprobado",
-   "categoria": "reglamento_normativo",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "Jardín Torres Quintero"
+   ],
    "montos": [],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "En asuntos generales se aprobó por unanimidad adicionar el artículo 317 BIS al Reglamento del Gobierno Municipal para capacitar anualmente a las autoridades auxiliares en protección civil; también se turnó a comisiones el punto de acuerdo para eliminar el nivel 16 del tabulador salarial.",
+   "sentido": "aprobado",
+   "categoria": "reglamento_normativo",
+   "votacion": "unanime",
+   "colonias": [
+    "Acatitán"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "diez mil pesos al mes",
+     "valor_mxn": 10000
+    },
+    {
+     "texto": "$278.80 pesos diarios",
+     "valor_mxn": 278.8
+    },
+    {
+     "texto": "$8,480.17 pesos mensuales",
+     "valor_mxn": 8480.17
+    }
+   ],
+   "beneficiario": {
+    "nombre": "autoridades auxiliares del municipio",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
    "comision": "Comisión de Protección Civil",
    "autor": {
-    "nombre": "Regidora Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la Sesión Ordinaria de Cabildo a las 12:33 horas.",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 12:33 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",

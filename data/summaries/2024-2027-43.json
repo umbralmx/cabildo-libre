@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T15:06:55+00:00",
+ "generado": "2026-08-13T23:56:30+00:00",
  "lectura": {
   "chars_ocr": 301860,
   "chars_leidos": 301860,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se declaró instalada la sesión, se aprobó el orden del día con modificación, se aprobaron actas 41 y 42, y se presentó el dictamen de adecuaciones presupuestales.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "La sesión aprobó modificar el orden del día para incluir ampliaciones presupuestales y las actas 41 y 42; dio lectura al dictamen de adecuaciones presupuestarias por $23,605,381.50.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia; se registró la presencia del Presidente, Síndica y regidores.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente municipal, la síndica y los regidores.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se leyó el orden del día, se aprobó por unanimidad una modificación para incluir ampliaciones presupuestales y se aprobó el orden modificado.",
+   "resumen": "El cabildo aprobó por unanimidad modificar el orden del día para incorporar el dictamen de ampliaciones presupuestales solicitado por la Tesorería Municipal.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -63,12 +64,15 @@
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": null,
-   "autor": null
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
   },
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de cabildo números 41 y 42.",
+   "resumen": "Se dispensó la lectura de las actas 41 y 42 y el cabildo las aprobó por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +88,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se autorizaron las adecuaciones presupuestarias solicitadas por la Tesorería Municipal para julio, por un total de 4,653,443.09 pesos.",
+   "resumen": "El Cabildo aprobó por mayoría las adecuaciones presupuestales de julio solicitadas por la Tesorería Municipal, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -92,12 +96,240 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$23,605,381.50 (Veintitrés millones seiscientos cinco mil trescientos ochenta y un pesos con 50/100 m.n.)",
+     "texto": "$23,605,381.50",
      "valor_mxn": 23605381.5
     },
     {
-     "texto": "4,653,443.09",
-     "valor_mxn": 4653443.09
+     "texto": "6,746.28",
+     "valor_mxn": 6746.28
+    },
+    {
+     "texto": "83,731.88",
+     "valor_mxn": 83731.88
+    },
+    {
+     "texto": "39,677.48",
+     "valor_mxn": 39677.48
+    },
+    {
+     "texto": "209,217.80",
+     "valor_mxn": 209217.8
+    },
+    {
+     "texto": "24,097.33",
+     "valor_mxn": 24097.33
+    },
+    {
+     "texto": "2,391,494.51",
+     "valor_mxn": 2391494.51
+    },
+    {
+     "texto": "500,000.00",
+     "valor_mxn": 500000.0
+    },
+    {
+     "texto": "723,892.55",
+     "valor_mxn": 723892.55
+    },
+    {
+     "texto": "112,068.77",
+     "valor_mxn": 112068.77
+    },
+    {
+     "texto": "3,105.08",
+     "valor_mxn": 3105.08
+    },
+    {
+     "texto": "2,070.01",
+     "valor_mxn": 2070.01
+    },
+    {
+     "texto": "40,000,00",
+     "valor_mxn": null
+    },
+    {
+     "texto": "56,684.11",
+     "valor_mxn": 56684.11
+    },
+    {
+     "texto": "799,298.00",
+     "valor_mxn": 799298.0
+    },
+    {
+     "texto": "628,678.25",
+     "valor_mxn": 628678.25
+    },
+    {
+     "texto": "32,000.00",
+     "valor_mxn": 32000.0
+    },
+    {
+     "texto": "2,253.64",
+     "valor_mxn": 2253.64
+    },
+    {
+     "texto": "41,607.42",
+     "valor_mxn": 41607.42
+    },
+    {
+     "texto": "36,700.00",
+     "valor_mxn": 36700.0
+    },
+    {
+     "texto": "2,763.70",
+     "valor_mxn": 2763.7
+    },
+    {
+     "texto": "163,376.08",
+     "valor_mxn": 163376.08
+    },
+    {
+     "texto": "2,410.00",
+     "valor_mxn": 2410.0
+    },
+    {
+     "texto": "27.00",
+     "valor_mxn": 27.0
+    },
+    {
+     "texto": "51,310.00",
+     "valor_mxn": 51310.0
+    },
+    {
+     "texto": "40,000.00",
+     "valor_mxn": 40000.0
+    },
+    {
+     "texto": "70,203.00",
+     "valor_mxn": 70203.0
+    },
+    {
+     "texto": "26,182.19",
+     "valor_mxn": 26182.19
+    },
+    {
+     "texto": "80,057.31",
+     "valor_mxn": 80057.31
+    },
+    {
+     "texto": "26,500.00",
+     "valor_mxn": 26500.0
+    },
+    {
+     "texto": "18,328.00",
+     "valor_mxn": 18328.0
+    },
+    {
+     "texto": "250,000.03",
+     "valor_mxn": 250000.03
+    },
+    {
+     "texto": "96,000.00",
+     "valor_mxn": 96000.0
+    },
+    {
+     "texto": "8,276.07",
+     "valor_mxn": 8276.07
+    },
+    {
+     "texto": "87,067.59",
+     "valor_mxn": 87067.59
+    },
+    {
+     "texto": "168,053.11",
+     "valor_mxn": 168053.11
+    },
+    {
+     "texto": "80,985.52",
+     "valor_mxn": 80985.52
+    },
+    {
+     "texto": "96,811.77",
+     "valor_mxn": 96811.77
+    },
+    {
+     "texto": "2,150,692.83",
+     "valor_mxn": 2150692.83
+    },
+    {
+     "texto": "12,000.00",
+     "valor_mxn": 12000.0
+    },
+    {
+     "texto": "56,866.00",
+     "valor_mxn": 56866.0
+    },
+    {
+     "texto": "225,528.97",
+     "valor_mxn": 225528.97
+    },
+    {
+     "texto": "73,771.78",
+     "valor_mxn": 73771.78
+    },
+    {
+     "texto": "21,251.02",
+     "valor_mxn": 21251.02
+    },
+    {
+     "texto": "43,234.78",
+     "valor_mxn": 43234.78
+    },
+    {
+     "texto": "11,676.63",
+     "valor_mxn": 11676.63
+    },
+    {
+     "texto": "31,764.87",
+     "valor_mxn": 31764.87
+    },
+    {
+     "texto": "6,627.50",
+     "valor_mxn": 6627.5
+    },
+    {
+     "texto": "14,486.77",
+     "valor_mxn": 14486.77
+    },
+    {
+     "texto": "19,538.72",
+     "valor_mxn": 19538.72
+    },
+    {
+     "texto": "5,434.83",
+     "valor_mxn": 5434.83
+    },
+    {
+     "texto": "18,104.94",
+     "valor_mxn": 18104.94
+    },
+    {
+     "texto": "18,109.41",
+     "valor_mxn": 18109.41
+    },
+    {
+     "texto": "13,964.29",
+     "valor_mxn": 13964.29
+    },
+    {
+     "texto": "24,671.04",
+     "valor_mxn": 24671.04
+    },
+    {
+     "texto": "19,602.93",
+     "valor_mxn": 19602.93
+    },
+    {
+     "texto": "716,703.25",
+     "valor_mxn": 716703.25
+    },
+    {
+     "texto": "dos millones trescientos noventa y un mil cuatrocientos noventa y cinco pesos",
+     "valor_mxn": 2391495.0
+    },
+    {
+     "texto": "doce millones de pesos",
+     "valor_mxn": 12000000.0
     }
    ],
    "beneficiario": {
@@ -124,14 +356,17 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó la remisión al Congreso del Estado de la Cuenta Pública Municipal de julio de 2025.",
+   "resumen": "El Cabildo aprobó por mayoría remitir al Congreso del Estado los resultados de la Cuenta Pública de julio de 2025, con el voto en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
    "votos_en_contra": [
     {
      "nombre": "C. Azucena López Legorreta",
@@ -145,14 +380,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Alondra Isabel López Alonso",
+    "nombre": "Licda. Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se autorizaron cuatro licencias de apertura y un cambio de domicilio para venta de bebidas alcohólicas en Colima.",
+   "resumen": "El Cabildo autorizó por unanimidad cuatro licencias para venta y consumo de bebidas alcohólicas (Abarrotes Hernández, Mini Súper Mago, Abarrotes La Unidad y Bofo Wins) y el cambio de domicilio de Los Varos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -166,35 +401,40 @@
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se autorizaron cinco traspasos de locales en los mercados Gral. Francisco Villa, José Juárez Martínez y Gral. Álvaro Obregón.",
+   "resumen": "El Cabildo autorizó por unanimidad cinco traspasos de locales en los mercados Gral. Francisco Villa, José Juárez Martínez y Gral. Álvaro Obregón.",
    "sentido": "aprobado",
-   "categoria": "patrimonio",
+   "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "10.00",
+     "valor_mxn": 10.0
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración con la Universidad ITECCE, S.C. para ofrecer servicios educativos y programas de educación dual a trabajadores del ayuntamiento.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Ayuntamiento de Colima y la Universidad ITECCE, S.C., para ofrecer servicios educativos, cursos con tarifas accesibles y un programa de formación dual a los trabajadores municipales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -207,16 +447,16 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Educación, Cultura y Recreación",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
    "autor": {
-    "nombre": "Federico Rangel Lozano",
+    "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración con la empresa GQB Consulting L.L.C. para implementar acciones conjuntas en innovación y mejora de la gestión pública municipal.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Ayuntamiento de Colima y la empresa GQB Consulting L.L.C. para impulsar la innovación, la calidad gubernamental y la mejora de la gestión pública municipal.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -224,12 +464,12 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "GQB Consulting L.L.C.",
+    "nombre": "GQB CONSULTING L.L.C.",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Turismo, Fomento Económico y Empresarial",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -238,20 +478,53 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó declarar recinto ferial para la Expo Col 2025 en varios espacios del centro histórico, autorizando cobros de derechos y aprovechamientos, así como la realización del Primer Certamen Nacional de Huapango con premiación de $60,000.",
+   "resumen": "Se aprobó declarar recinto ferial para la Expo Col 2025 los días 15, 16, 17, 22, 23 y 24 de agosto, autorizar cobros de derechos y aprovechamientos, y realizar el Primer Certamen Nacional de Huapango con 60,000 pesos en premios.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
    "colonias": [],
-   "obras": [],
+   "obras": [
+    "Jardín Libertad",
+    "calle Reforma",
+    "calle Miguel Hidalgo",
+    "calle Santos Degollado",
+    "calle Francisco I. Madero",
+    "Jardín Torres Quintero",
+    "calle Medellín",
+    "Andador Ana Martín",
+    "calle Ocampo",
+    "Plaza de las y los Poetas",
+    "Av. Constitución",
+    "calle Zaragoza"
+   ],
    "montos": [
+    {
+     "texto": "$113.14",
+     "valor_mxn": 113.14
+    },
+    {
+     "texto": "$152.73",
+     "valor_mxn": 152.73
+    },
+    {
+     "texto": "$2,001.44",
+     "valor_mxn": 2001.44
+    },
+    {
+     "texto": "$841.76",
+     "valor_mxn": 841.76
+    },
+    {
+     "texto": "$504.60",
+     "valor_mxn": 504.6
+    },
     {
      "texto": "$3,500.53",
      "valor_mxn": 3500.53
     },
     {
-     "texto": "$60,000.00 (Sesenta mil pesos 00/100 m.n.)",
-     "valor_mxn": 60000
+     "texto": "$60,000.00 (sesenta mil pesos 00/100 m.n.)",
+     "valor_mxn": 60000.0
     }
    ],
    "beneficiario": null,
@@ -266,7 +539,7 @@
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
-   "comision": "Comisión de Educación, Cultura y Recreación, Hacienda Municipal, Comercios, Mercados y Restaurantes, Turismo, Fomento Económico y Empresarial, y Patrimonio Municipal",
+   "comision": "Comisiones de Educación, Cultura y Recreación; Hacienda Municipal; Comercios, Mercados y Restaurantes; Turismo, Fomento Económico y Empresarial; Patrimonio Municipal",
    "autor": {
     "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
@@ -275,17 +548,26 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó la municipalización de las etapas 10 y 11 del Fraccionamiento Bosque de la Cantera, ubicado al norte de la ciudad, promovido por LEGA DESARROLLOS, S.A. DE C.V.",
+   "resumen": "Se aprobó la municipalización de las etapas 10 y 11 del fraccionamiento Bosque de la Cantera, al norte de la ciudad, con una fianza de 270,433.37 pesos para garantizar las obras de urbanización.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
    "colonias": [
     "BOSQUE DE LA CANTERA"
    ],
-   "obras": [],
-   "montos": [],
+   "obras": [
+    "Un tramo de la calle Paseo de la Cantera",
+    "Un tramo de la lateral Tercer Anillo Periférico",
+    "Av. Ignacio Sandoval"
+   ],
+   "montos": [
+    {
+     "texto": "$270,433.37 (DOSCIENTOS SETENTA MIL CUATROCIENTOS TREINTA Y TRES PESOS 37/100 M.N.)",
+     "valor_mxn": 270433.37
+    }
+   ],
    "beneficiario": {
-    "nombre": "LEGA DESARROLLOS, S.A. DE C.V.",
+    "nombre": "LEGA DESARROLLOS, S.A. DE C.V. Y/O ING. EDUARDO ANTONIO BRUN SOLÓRZANO",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
@@ -299,7 +581,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó la convocatoria para la elección de la Reina y/o Embajadora del Municipio de Colima 2025, con un estímulo económico de $10,000 y $20,000 para la ganadora.",
+   "resumen": "Aprobar la publicación de la convocatoria y bases para elegir a la Reina y/o Embajadora del Municipio de Colima 2025, quien representará al municipio en el certamen estatal de la Feria de Todos los Santos. La ganadora recibirá $10,000.00 aportados por el Cabildo y $20,000.00 del municipio.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -327,10 +609,10 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "Se autorizaron ampliaciones presupuestales por $12,070,000.00 para diversos proyectos y dependencias municipales.",
+   "resumen": "Aprobar las ampliaciones presupuestales al Presupuesto de Ingresos y Egresos 2025 solicitadas por la Tesorería Municipal, por un total de $12,070,000.00, con asignaciones a Protección Civil, institutos municipales, obras y alumbrado público. La votación fue aprobada con las abstenciones de dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
-   "votacion": "unanime",
+   "votacion": "mayoria",
    "colonias": [],
    "obras": [],
    "montos": [
@@ -396,10 +678,10 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se trataron asuntos generales, incluyendo informes trimestrales, posicionamientos sobre presuntos aviadores, y la aprobación de una propuesta para conmemorar el 168 aniversario luctuoso del General Manuel Álvarez.",
-   "sentido": "tramite",
-   "categoria": "tramite",
-   "votacion": "no_determinable",
+   "resumen": "En asuntos generales, se entregaron informes trimestrales de regidoras, se presentaron posicionamientos sobre presuntos aviadores y violencia simbólica, y se aprobó realizar una ceremonia por el 168 aniversario luctuoso del General Manuel Álvarez.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],

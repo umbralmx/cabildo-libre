@@ -6,7 +6,7 @@
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
  "fuente_texto": "tesseract-spa",
- "generado": "2026-07-25T17:00:28+00:00",
+ "generado": "2026-08-13T23:39:00+00:00",
  "lectura": {
   "chars_ocr": 265867,
   "chars_leidos": 265867,
@@ -15,12 +15,13 @@
   "completa": true
  },
  "puntos_en_conflicto": [],
- "resumen_sesion": "Se aprobaron el orden del día modificado, el acta anterior, un convenio educativo, iluminación por independencia colombiana y un bono para padres trabajadores; se inició trámite para nombrar una sala.",
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "La sesión aprobó un convenio con la Universidad Vizcaya de las Américas, la iluminación por el Día de Colombia y un bono a padres trabajadores; retiró dos asuntos.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los miembros del cabildo.",
+   "resumen": "Se registró la asistencia de los miembros del cabildo; se consignaron dos faltas justificadas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -36,7 +37,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Se declaró legalmente instalada la sesión al contar con quórum.",
+   "resumen": "Se declaró quórum legal y se instaló formalmente la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -52,7 +53,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad el orden del día modificado, retirando los puntos originales VI y X a solicitud de la Síndica y un regidor.",
+   "resumen": "Se dio lectura al orden del día; se retiraron el dictamen del segundo listado de obras del POA 2025 y el punto de fideicomiso con Bansi, y se aprobó el orden del día modificado por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -68,7 +69,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se dispensó la lectura y se aprobó por unanimidad el acta de cabildo número 35.",
+   "resumen": "Se dispensó la lectura del acta de cabildo 35 y se aprobó por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -84,7 +85,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por unanimidad suscribir un convenio de colaboración con la Universidad Vizcaya de las Américas para fortalecer la cooperación educativa y otorgar becas a trabajadores municipales.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con la Universidad Vizcaya de las Américas Campus Colima para becas, servicio social y prácticas profesionales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -92,12 +93,12 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Centro de Estudios Universitarios Vizcaya de las Américas",
+    "nombre": "Universidad Vizcaya de las Américas Campus Colima",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
    "autor": {
     "nombre": "Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
@@ -106,7 +107,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por unanimidad iluminar espacios públicos municipales con los colores de la bandera de Colombia del 18 al 20 de julio.",
+   "resumen": "Se aprobó iluminar los espacios públicos con los colores de la bandera de Colombia los días 18, 19 y 20 de julio con motivo de su independencia.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -128,7 +129,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad otorgar un bono de $1,037.99 a los padres trabajadores de base, confianza y supernumerarios del Ayuntamiento por el Día del Padre.",
+   "resumen": "Se aprobó otorgar el Bono del Día del Padre por $1,037.99 a los padres trabajadores de base, confianza y supernumerarios del Ayuntamiento.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
@@ -142,11 +143,11 @@
    ],
    "beneficiario": {
     "nombre": "padres trabajadores de base, confianza y supernumerarios del H. Ayuntamiento de Colima",
-    "tipo": "ciudadania"
+    "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos y de Hacienda Municipal",
+   "comision": "Comisiones de Gobernación y Reglamentos y de Hacienda Municipal",
    "autor": {
     "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
@@ -155,15 +156,15 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se dio lectura al dictamen para asignar el nombre 'Mtra. Rocío Valdovinos Anguiano' a la Sala 1 del Centro de Justicia Cívica Municipal; no se registró el resultado de la votación.",
-   "sentido": "no_determinable",
-   "categoria": "patrimonio",
-   "votacion": "no_determinable",
+   "resumen": "Se aprobó por unanimidad que el Auditorio Sala 1 del Centro de Justicia Cívica Municipal se llame Auditorio Mtra. María del Rosío Valdovinos Anguiano, en reconocimiento a su trayectoria.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
    "colonias": [],
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Mtra. Rocío Valdovinos Anguiano",
+    "nombre": "Mtra. Rosío Valdovinos Anguiano",
     "tipo": "persona"
    },
    "votos_en_contra": [],
@@ -177,26 +178,7 @@
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó por unanimidad nombrar el Auditorio Sala 1 del Centro de Justicia Cívica Municipal como 'Auditorio Mtra. María del Rosío Valdovinos Anguiano' en reconocimiento a su trayectoria.",
-   "sentido": "aprobado",
-   "categoria": "otro",
-   "votacion": "unanime",
-   "colonias": [],
-   "obras": [],
-   "montos": [],
-   "beneficiario": {
-    "nombre": "Mtra. María del Rosío Valdovinos Anguiano",
-    "tipo": "persona"
-   },
-   "votos_en_contra": [],
-   "abstenciones": [],
-   "comision": "Comisión de Gobernación y Reglamentos",
-   "autor": null
-  },
-  {
-   "n": 11,
-   "numeral": "XI",
-   "resumen": "Se aprobó por unanimidad la municipalización de las Etapas 1, 2 y 5 del Fraccionamiento 'HACIENDA EL BALCÓN', incluyendo calles y una fianza de $667,724.53.",
+   "resumen": "Se aprobó por unanimidad la municipalización de las etapas 1, 2 y 5 del fraccionamiento Hacienda El Balcón, que incluye 120 lotes y las vialidades Calle del Molino, Calle Balcones, Calle Pioneros y Hacienda Real; el desarrollador INMOBILIARIA JYZAO S.A. de C.V. otorgó fianza por $667,724.53.",
    "sentido": "aprobado",
    "categoria": "fraccionamiento",
    "votacion": "unanime",
@@ -216,8 +198,8 @@
     }
    ],
    "beneficiario": {
-    "nombre": "INMOBILIARIA JYZAO S.A. DE C.V.",
-    "tipo": "empresa"
+    "nombre": "HACIENDA EL BALCÓN",
+    "tipo": "fraccionamiento"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -228,9 +210,9 @@
    }
   },
   {
-   "n": 12,
-   "numeral": "XII",
-   "resumen": "Se autorizó a la Tesorería Municipal a realizar las adecuaciones presupuestarias del mes de mayo de 2025, con transferencias por más de 28 millones de pesos y 2.4 millones de pesos del FORTAMUN, aprobado por mayoría con dos votos en contra.",
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias de mayo de 2025; votaron en contra Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -238,35 +220,15 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$28,861,199.34",
+     "texto": "$28\"861,199,34",
      "valor_mxn": 28861199.34
-    },
-    {
-     "texto": "1,639.67",
-     "valor_mxn": 1639.67
-    },
-    {
-     "texto": "2,624.01",
-     "valor_mxn": 2624.01
-    },
-    {
-     "texto": "266,433.19",
-     "valor_mxn": 266433.19
-    },
-    {
-     "texto": "11,837.80",
-     "valor_mxn": 11837.8
-    },
-    {
-     "texto": "1,276.00",
-     "valor_mxn": 1276.0
     },
     {
      "texto": "28,861,199.34",
      "valor_mxn": 28861199.34
     },
     {
-     "texto": "2,416,977.80",
+     "texto": "$2,416,977.80",
      "valor_mxn": 2416977.8
     }
    ],
@@ -276,11 +238,11 @@
    },
    "votos_en_contra": [
     {
-     "nombre": "Azucena López Legorreta",
+     "nombre": "C. Azucena López Legorreta",
      "id": "azucena-lopez-legorreta"
     },
     {
-     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
      "id": "diana-gabriela-vizcaino-aguirre"
     }
    ],
@@ -292,15 +254,20 @@
    }
   },
   {
-   "n": 13,
-   "numeral": "XIII",
-   "resumen": "Se aprobó remitir al Congreso del Estado la Cuenta Pública de mayo de 2025, con dos votos en contra.",
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "El cabildo aprobó, por mayoría, el dictamen que propone no autorizar la cuenta pública de mayo de 2025 y turnar el resultado al Congreso del Estado, al considerar injustificados los incrementos de gasto.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
    "colonias": [],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "casi 12 millones de pesos",
+     "valor_mxn": null
+    }
+   ],
    "beneficiario": {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia"
@@ -318,28 +285,108 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Alondra Isabel López Alonso",
+    "nombre": "Licda. Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
-   "n": 14,
-   "numeral": "XIV",
-   "resumen": "Se autorizaron seis aperturas de establecimientos con venta de alcohol: ABARROTES NICOLE, EL REY MARISQUERÍA DE BARRIO, TEQUILA VELOCITY, GREEN HOUSE, AUTO CARNES BALLESTEROS y MI RANCHITO.",
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó por unanimidad la expedición de seis licencias de apertura para venta de bebidas alcohólicas en los establecimientos Abarrotes Nicole, El Rey Marisquería de Barrio, Tequila Velocity, Green House, Auto Carnes Ballesteros y Mi Ranchito, en distintas colonias de Colima.",
    "sentido": "aprobado",
-   "categoria": "licencia",
+   "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [
-    "Colonia Diamantes II",
-    "Colonia Santa Amalia",
-    "Colonia Lomas de Circunvalación",
-    "Colonia Gardens La Hermitha",
-    "Localidad El Chanal",
-    "Colonia La Armonía",
-    "Colonia Residencial Esmeralda Norte"
+    "Diamantes II",
+    "Santa Amalia",
+    "Lomas de Circunvalación",
+    "Gardens La Hermitha",
+    "La Armonía",
+    "Residencial Esmeralda Norte"
    ],
    "obras": [],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "2,500.00",
+     "valor_mxn": 2500.0
+    },
+    {
+     "texto": "23,749.98",
+     "valor_mxn": 23749.98
+    },
+    {
+     "texto": "6,666.72",
+     "valor_mxn": 6666.72
+    },
+    {
+     "texto": "12,499.98",
+     "valor_mxn": 12499.98
+    },
+    {
+     "texto": "185,851.91",
+     "valor_mxn": 185851.91
+    },
+    {
+     "texto": "2,380.19",
+     "valor_mxn": 2380.19
+    },
+    {
+     "texto": "3,978.70",
+     "valor_mxn": 3978.7
+    },
+    {
+     "texto": "3,066.62",
+     "valor_mxn": 3066.62
+    },
+    {
+     "texto": "50,000.00",
+     "valor_mxn": 50000.0
+    },
+    {
+     "texto": "154,331.48",
+     "valor_mxn": 154331.48
+    },
+    {
+     "texto": "100,000.00",
+     "valor_mxn": 100000.0
+    },
+    {
+     "texto": "34,457.00",
+     "valor_mxn": 34457.0
+    },
+    {
+     "texto": "19,874.48",
+     "valor_mxn": 19874.48
+    },
+    {
+     "texto": "56,198.53",
+     "valor_mxn": 56198.53
+    },
+    {
+     "texto": "1,614.60",
+     "valor_mxn": 1614.6
+    },
+    {
+     "texto": "48,683.09",
+     "valor_mxn": 48683.09
+    },
+    {
+     "texto": "5,900.84",
+     "valor_mxn": 5900.84
+    },
+    {
+     "texto": "277,607.69",
+     "valor_mxn": 277607.69
+    },
+    {
+     "texto": "677.96",
+     "valor_mxn": 677.96
+    },
+    {
+     "texto": "272.91",
+     "valor_mxn": 272.91
+    }
+   ],
    "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
@@ -350,16 +397,16 @@
    }
   },
   {
-   "n": 15,
-   "numeral": "XV",
-   "resumen": "Se autorizó una apertura de tienda de abarrotes con venta de cerveza (ABARROTES EUS) y un cambio de domicilio de un depósito de venta de alcohol (COLIPISTO).",
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó por unanimidad la expedición de una licencia de apertura para Abarrotes Eus y el cambio de domicilio del depósito Colipisto, ambos para venta de bebidas alcohólicas.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
    "colonias": [
-    "Colonia Lomas de Santa Elena",
-    "Colonia La Virgencita",
-    "Colonia Josefa Ortiz de Domínguez"
+    "Lomas de Santa Elena",
+    "La Virgencita",
+    "Josefa Ortiz de Domínguez"
    ],
    "obras": [],
    "montos": [],
@@ -373,20 +420,23 @@
    }
   },
   {
-   "n": 16,
-   "numeral": "XVI",
-   "resumen": "Se presentó dictamen para autorizar tres aperturas de establecimientos con venta de alcohol (LAS KETRANZAS, ABARROTES HERMANOS VÁZQUEZ, ABARROTES ARJIM), pero no se registró el resultado de la votación.",
-   "sentido": "no_determinable",
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "El Cabildo aprobó por unanimidad el dictamen de expedición de licencias comerciales; en la discusión se destacó el apoyo a nuevos emprendedores y pequeños negocios.",
+   "sentido": "aprobado",
    "categoria": "licencia",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "Lomas de Vista Hermosa",
-    "Colonia Mirador de la Cumbre II",
-    "Colonia Placetas"
+    "Mirador de la Cumbre II",
+    "Placetas"
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": null,
+   "beneficiario": {
+    "nombre": "nuevos emprendedores",
+    "tipo": "ciudadania"
+   },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercio, Mercados y Restaurantes",
@@ -396,9 +446,9 @@
    }
   },
   {
-   "n": 17,
-   "numeral": "XVII",
-   "resumen": "Se presentaron varios asuntos generales: la colecta para el Teletón en Colima, el reconocimiento de edificios municipales como espacios libres de humo de tabaco, la información sobre el Padrón de Deudores Alimentarios Morosos, la Alianza Colima por la Seguridad y Armonía, y comentarios del Presidente Municipal sobre discapacidad, violencia contra la mujer y otros temas. No se tomó ninguna decisión.",
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "En Asuntos Generales, las y los regidores comentaron sobre el Teletón en Colima, el reconocimiento de edificios municipales como espacios libres de humo, la Alianza Colima, el padrón de deudores alimentarios y diversos temas del presidente municipal; no se sometió a votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -412,9 +462,9 @@
    "autor": null
   },
   {
-   "n": 18,
-   "numeral": "XVIII",
-   "resumen": "El Presidente Municipal declaró clausurada la sesión a las 12:45 horas.",
+   "n": 16,
+   "numeral": "XVI",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 12:45 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
