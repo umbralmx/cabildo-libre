@@ -59,8 +59,37 @@ for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "me
     ? ok('data-mode="instrumento" en el HTML')
     : fail(`la página no declara modo instrumento (data-mode="${d.documentElement.dataset.mode ?? ""}")`);
   // El isotipo claro sobre fondo oscuro es el archivo `-dark`.
-  const iso = d.querySelector(".brand img");
+  const iso = d.querySelector(".u-brand img");
   if (iso && /isotype-light/.test(iso.getAttribute("src") ?? "")) fail("isotipo de fondo claro sobre fondo oscuro");
+
+  // Mismas medidas y mismo encabezado que el panel. Antes esta hoja tenía una
+  // columna de 880px y el panel 1200/1080: pasar de una página a la otra movía
+  // el contenido, y un instrumento con dos anchos son dos instrumentos.
+  // Se leen las REGLAS, no el estilo computado: jsdom no resuelve `var()` desde
+  // una hoja externa y devolvería `none` para un max-width que sí existe. Es la
+  // misma trampa que con font-weight, y la razón de no fiarse de un navegador
+  // para esto (docs/framework-notes.md §11).
+  if (!d.querySelector(".u-sheet")) fail("la página no está montada sobre .u-sheet");
+  const hoja = readFileSync(DIR + "styles.css", "utf8");
+  const tok = (n) => (hoja.match(new RegExp(`${n}:\\s*([^;]+)`)) || [])[1]?.trim();
+  const medidas = {"--u-sheet": "1200px", "--u-column": "1080px", "--u-edge": "32px"};
+  const malas = Object.entries(medidas).filter(([k, v]) => tok(k) !== v);
+  malas.length
+    ? malas.forEach(([k, v]) => fail(`${k} es ${tok(k) ?? "—"}, se esperaba ${v}`))
+    : ok(`hoja ${tok("--u-sheet")}, columna ${tok("--u-column")}, margen ${tok("--u-edge")}`);
+  if (!/\.u-sheet\s*\{[^}]*max-width:\s*var\(--u-sheet\)/.test(hoja)) fail(".u-sheet no usa --u-sheet");
+  if (!/^main\s*\{[^}]*max-width:\s*var\(--u-column\)/m.test(hoja)) fail("main no usa --u-column");
+
+  // Sin barra de encabezado: la marca y las pestañas viven en el contenido.
+  if (d.querySelector(".site-header")) fail("sigue habiendo una barra de encabezado");
+  const nav = d.querySelector(".u-nav");
+  if (!nav) fail("sin navegación de pestañas");
+  else {
+    const cur = nav.querySelector('[aria-current="page"]');
+    // El estado no puede quedar codificado sólo por el trazo (UMB-A11Y-005).
+    cur ? ok(`pestaña actual «${cur.textContent}» de ${nav.querySelectorAll("a").length}`)
+        : fail("ninguna pestaña lleva aria-current");
+  }
   w.close();
 }
 
@@ -120,6 +149,13 @@ console.log("\n── panel (Observable Framework · instrumento) ──");
       /fonts\.googleapis|fonts\.gstatic/.test(css) && fail("la hoja carga fuentes de un CDN (UMB-TYP-005)");
     }
     /prefers-color-scheme/.test(html) && fail("el panel deja el modo al sistema del lector (UMB-COL-011)");
+    // Las mismas medidas que las páginas estáticas.
+    const sheetCss = readFileSync("site/panel/" + href.slice(2), "utf8");
+    for (const [tok, esperado] of [["--u-sheet", "1200px"], ["--u-column", "1080px"], ["--u-edge", "32px"]]) {
+      const got = (sheetCss.match(new RegExp(`${tok}:\\s*([^;]+)`)) || [])[1]?.trim();
+      if (got !== esperado) fail(`el panel declara ${tok}: ${got ?? "—"}, el sitio usa ${esperado}`);
+    }
+    ok("el panel comparte hoja, columna y margen con las páginas estáticas");
   }
   // La URL vieja sigue resolviendo.
   const redir = readFileSync(DIR + "panel.html", "utf8");

@@ -355,6 +355,54 @@ tiempo de ejecución debajo de esas decisiones, no las decisiones.
 `site/panel.html` se quedó como redirección a `./panel/`. Los enlaces publicados
 antes del cambio siguen resolviendo.
 
+## Un solo idioma de página en todo el instrumento (2026-09-05)
+
+Después de poner todo en modo instrumento quedaba una costura visible: el panel y
+las páginas estáticas no compartían ni las medidas ni el encabezado. Pasar del
+buscador al panel movía el contenido de sitio.
+
+### Medidas
+
+| | Antes (`site/`) | Ahora, en los dos |
+|---|---|---|
+| Hoja | — | `--u-sheet: 1200px` |
+| Columna | `main` a 880px | `--u-column: 1080px` |
+| Margen | 24px | `--u-edge: 32px` |
+
+Son las mismas de `desaparecidosmx`, y ahora las mismas de `panel/umbral.css`.
+`scripts/verificar-render.mjs` compara los tres tokens **entre las dos
+superficies** y falla si se separan: la comprobación no es que valgan 1200/1080/32,
+es que valgan lo mismo en las dos.
+
+### Encabezado
+
+Se quitó la barra `.site-header`. La marca va ahora al principio del contenido,
+alineada con el titular, y debajo la navegación como pestañas
+(guide/14-superficies/landing.md § Sin barra de navegación). Cuatro entradas no
+justifican una banda fija que repita lo que la página ya muestra.
+
+Las pestañas son el control segmentado de UMB-LAY-008: la regla de 1px del
+contenedor es el riel y la página actual se marca con un subrayado de 2px que se
+apoya en él. Cada pestaña reserva ese subrayado en transparente, así que la fila
+no se mueve al cambiar de página.
+
+Dos decisiones dentro de eso:
+
+- **El subrayado va en `ink`, no en `signal`.** La navegación no es capa de dato
+  y el acento de la vista tiene que quedar libre para la gráfica (UMB-COL-004).
+- **La página actual lleva `aria-current="page"`**, no sólo el trazo. Ni el color
+  ni el trazo solos codifican nada para quien no los ve (UMB-A11Y-005).
+
+Las etiquetas son mono y en minúsculas, como el resto de las etiquetas de
+estructura (UMB-LAY-006): *buscador · panel por administración · metodología ·
+fuente oficial*. Las cuatro páginas llevan las cuatro, en el mismo orden.
+
+### El titular
+
+Bajó de `clamp(40px, 5.5vw, 56px)` a `clamp(30px, 4.4vw, 46px)` con `max-width:
+22ch`, que es la escala del panel. Con una columna de 1080px, el titular anterior
+se estiraba demasiado.
+
 ## Lista de verificación previa al lanzamiento
 
 - [x] Modo correcto para el medio (laboratorio/light para sitio web)

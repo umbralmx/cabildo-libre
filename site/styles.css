@@ -30,6 +30,16 @@
      · hover / focus    — component spec (umbral-engineering §3)
 */
 
+/* Las mismas medidas que el panel (panel/umbral.css) y que el resto de los
+   instrumentos de Umbral. Antes esta hoja tenía una columna de 880px y 24px de
+   margen, y el panel 1200/1080/32: navegar de una página a la otra movía el
+   contenido. Un instrumento con dos anchos son dos instrumentos. */
+:root {
+  --u-edge: 32px;
+  --u-sheet: 1200px;
+  --u-column: 1080px;
+}
+
 * { box-sizing: border-box; margin: 0; }
 
 html { scroll-behavior: smooth; }
@@ -60,8 +70,16 @@ body::before {
   background-image: radial-gradient(var(--u-baseline) 1px, transparent 1.6px);
   background-size: 22px 22px;
 }
-.site-header, main, .site-footer { position: relative; z-index: 1; background: var(--u-base); }
-@media (max-width: 980px) { body::before { display: none; } }
+.u-sheet {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 var(--u-edge);
+  max-width: var(--u-sheet);
+  background: var(--u-base);
+}
+@media (max-width: 1240px) { body::before { display: none; } }
+@media (max-width: 720px) { :root { --u-edge: 20px; } }
 
 a { color: var(--u-ink); text-decoration-color: var(--u-baseline); text-underline-offset: 3px; }
 a:hover { color: var(--u-signal-text); text-decoration-color: var(--u-signal-text); }
@@ -75,28 +93,64 @@ h1, h2, h3 {
   letter-spacing: var(--u-tracking-display);
 }
 
-/* ── header ── clear space around the isotype = one bar-height (brand §5) ── */
-.site-header {
-  display: flex; align-items: center; justify-content: space-between;
-  flex-wrap: wrap; gap: 16px;
-  padding: 24px 32px;
+/* ── marca y navegación ──
+   Sin barra de encabezado. La marca va al principio del contenido, alineada con
+   el titular, y la navegación debajo (guide/14-superficies/landing.md § Sin
+   barra de navegación). Es la misma forma que usa el panel, para que pasar de
+   una página a otra no mueva nada. */
+
+main { max-width: var(--u-column); margin: 0 auto; padding-bottom: 80px; }
+
+.u-brand {
+  display: inline-flex; align-items: center; gap: 11px;
+  margin: clamp(28px, 5vh, 44px) 0 clamp(24px, 4vh, 32px);
+  text-decoration: none;
+}
+.u-brand img { display: block; height: 24px; width: auto; }
+.u-brand .u-wordmark {
+  font-family: var(--u-font-display);
+  font-weight: var(--u-weight-display);
+  letter-spacing: var(--u-tracking-display);
+  font-size: 20px;
+  color: var(--u-ink);
+}
+.u-brand .u-wordmark span { color: var(--u-signal-text); }
+
+/* Pestañas con la forma del control segmentado (UMB-LAY-008): la regla de 1px
+   del contenedor es el riel, y la página actual se marca con un subrayado de
+   2px que se apoya en él. Cada pestaña reserva ese subrayado en transparente,
+   así que la fila no se mueve al cambiar de página.
+
+   El subrayado va en `ink`, no en `signal`: la navegación no es capa de dato y
+   el acento de la vista tiene que quedar libre (UMB-COL-004). El estado lleva
+   `aria-current` además del trazo, porque ni el color ni el trazo solos
+   codifican nada para quien no los ve (UMB-A11Y-005). */
+.u-nav {
+  display: flex; flex-wrap: wrap;
+  margin: 0 0 clamp(36px, 6vh, 64px);
   border-bottom: var(--u-rule) solid var(--u-border);
 }
-.brand { display: flex; align-items: center; gap: 16px; text-decoration: none; }
-.brand img { display: block; }
-.wordmark {
-  font-family: var(--u-font-display); font-weight: 500; font-size: 24px;
-  letter-spacing: var(--u-tracking-display);
+.u-nav a {
+  display: inline-flex; align-items: center;
+  min-height: var(--u-touch-target);
+  padding: 0 var(--u-space-2);
+  font-family: var(--u-font-mono);
+  font-size: var(--u-size-label);
+  color: var(--u-caption);
+  text-decoration: none;
+  border-bottom: var(--u-rule-strong) solid transparent;
+  margin-bottom: calc(-1 * var(--u-rule));
 }
-.wordmark .underscore { color: var(--u-signal-text); }   /* per logo spec */
-.site-header nav { display: flex; gap: 24px; font-size: 14px; }
-.site-header nav a { text-decoration: none; padding: 8px 0; }
-.site-header nav a:hover { box-shadow: inset 0 -2px 0 var(--u-signal); }
-
-main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
+.u-nav a:first-child { padding-left: 0; }
+.u-nav a:hover { color: var(--u-ink); }
+.u-nav a[aria-current="page"] { color: var(--u-ink); border-bottom-color: var(--u-ink); }
+.u-nav a:focus-visible {
+  outline: var(--u-rule-strong) solid var(--u-signal);
+  outline-offset: calc(-1 * var(--u-rule-strong));
+}
 
 /* ── hero ── headline ≤ 2 lines, one signal accent, one supporting sentence ── */
-.hero { padding: 72px 0 40px; }
+.hero { padding: 0 0 clamp(32px, 5vh, 48px); }
 /* UMB-LAY-006 — a section label is mono, lowercase, caption. It was uppercase
    with 0.04em tracking until v1.2.0 made the minimal idiom normative. */
 .kicker {
@@ -104,9 +158,9 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   text-transform: lowercase; color: var(--u-caption);
   margin-bottom: var(--u-space-2);
 }
-.hero h1 { font-size: clamp(40px, 5.5vw, 56px); line-height: 1.1; }
+.hero h1 { font-size: clamp(30px, 4.4vw, 46px); line-height: 1.16; max-width: 22ch; }
 .hero .accent { color: var(--u-signal); display: block; }  /* deliberate 2-line hero */
-.lede { max-width: 65ch; margin-top: 24px; color: var(--u-muted); font-size: 17px; }
+.lede { max-width: var(--u-measure); margin-top: var(--u-space-3); color: var(--u-muted); font-size: 17px; }
 
 /* ── stats ── the KPI row is .u-kpi from the component sheet. Its figures are
    MONO, not display: a KPI row exists to be read column against column, and
@@ -354,11 +408,11 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .site-footer {
   border-top: var(--u-rule) solid var(--u-border);
   margin-top: 80px;
-  padding: 32px;
+  padding: var(--u-space-4) 0;
 }
 .site-footer p {
   font-family: var(--u-font-mono); font-size: var(--u-size-source); color: var(--u-caption);
-  max-width: 880px; margin: 0 auto;
+  max-width: var(--u-column); margin: 0 auto;
 }
 /* The footer carries the site's own source line, in the same two-sided form the
    charts use (UMB-CHT-003): origin on the left, site on the right. */
@@ -370,9 +424,7 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .site-footer p + p { margin-top: var(--u-space-1); }
 
 @media (max-width: 720px) {
-  .site-header { padding: 16px; }
-  main { padding: 0 16px 64px; }
-  .hero { padding: 48px 0 32px; }
+  main { padding-bottom: 64px; }
   .statrow { gap: 24px 32px; }
   .session > summary { grid-template-columns: 1fr auto; gap: 8px 16px; }
   .session .s-fecha { grid-column: 1 / -1; }

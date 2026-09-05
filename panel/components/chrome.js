@@ -32,9 +32,10 @@ document.documentElement.dataset.mode = "instrumento";
  * absoluto saltaría al sitio raíz y sacaría al lector del proyecto.
  */
 const PAGES = [
-  {href: "../", label: "buscador"},
-  {href: "../metodologia.html", label: "metodología"},
-  {href: "https://www.colima.gob.mx/portal2016/actas-de-cabildo/", label: "fuente oficial"}
+  {id: "index", href: "../", label: "buscador"},
+  {id: "panel", href: "./", label: "panel por administración"},
+  {id: "metodo", href: "../metodologia.html", label: "metodología"},
+  {id: "fuente", href: "https://www.colima.gob.mx/portal2016/actas-de-cabildo/", label: "fuente oficial"}
 ];
 
 /** El lockup, dentro del contenido. Vuelve al buscador. */
@@ -46,9 +47,13 @@ export function brand() {
 }
 
 /** La navegación de vuelta. */
-export function nav() {
+export function nav(current = "panel") {
   return html`<nav class="u-nav" aria-label="Secciones">
-    ${PAGES.map((p) => html`<a href=${p.href}>${p.label}</a>`)}
+    ${PAGES.map(
+      (p) => html`<a href=${p.href}
+        aria-current=${p.id === current ? "page" : null}
+        rel=${p.id === "fuente" ? "external" : null}>${p.label}</a>`
+    )}
   </nav>`;
 }
 

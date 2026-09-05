@@ -6,6 +6,40 @@
 
 ---
 
+## 2026-09-05 — La costura que quedaba: dos anchos y dos encabezados
+
+Con todo ya en modo instrumento quedaba una diferencia que se veía al navegar: el
+panel y las páginas estáticas no compartían ni medidas ni encabezado. El buscador
+tenía una columna de 880px con 24px de margen y una barra de encabezado; el panel,
+hoja de 1200, columna de 1080, margen de 32 y la marca dentro del contenido. Pasar
+de una página a la otra movía todo de sitio.
+
+Ahora las dos usan las medidas de `desaparecidosmx`: `--u-sheet: 1200px`,
+`--u-column: 1080px`, `--u-edge: 32px`. Y las dos usan el mismo encabezado: sin
+barra, con la marca al principio del contenido y la navegación como pestañas
+debajo.
+
+Las pestañas son el control segmentado de UMB-LAY-008 —la regla de 1px del
+contenedor es el riel y la actual se marca con un subrayado de 2px que se apoya en
+él—. El subrayado va en `ink` y no en `signal`, porque la navegación no es capa de
+dato y el acento tiene que quedar libre para la gráfica. La página actual lleva
+`aria-current`, no sólo el trazo.
+
+**La comprobación no es que las medidas valgan 1200/1080/32.** Es que valgan **lo
+mismo en las dos superficies**: `verificar-render.mjs` lee los tokens de
+`styles.css` y los del CSS empaquetado del panel y falla si se separan. Se probó
+moviendo cada uno por su lado y las dos direcciones disparan.
+
+**Un tropiezo, anotado porque es fácil repetirlo.** Al restaurar el árbol después
+de esas pruebas usé `git checkout site/index.html` para deshacer una edición de
+prueba. Pero el archivo tenía además el trabajo del día sin commitear, así que el
+checkout lo revirtió entero al último commit y deshizo la reestructuración del
+encabezado. Se detectó porque la suite volvió a fallar, no porque se notara. La
+lección: para deshacer una edición de prueba sobre un archivo con trabajo sin
+guardar, se restaura desde una copia hecha antes de la prueba, no desde git.
+
+---
+
 ## 2026-09-05 — Un instrumento a medias claro no es un instrumento
 
 **La corrección.** Se había movido sólo el panel a modo instrumento, apoyándose en
