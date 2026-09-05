@@ -120,3 +120,36 @@ errores: se crea en la primera corrida limpia.
   limpieza se aplica al leer, no re-procesa.
 - **Pendiente (pase enriquecido):** marcar como `[ilegible]` los tramos de baja confianza
   del propio Tesseract (requiere re-OCR capturando confianza) y subir DPI/preprocesado.
+
+---
+
+## `verificar_marca.py` — la puerta de marca
+
+`verificar.py` pregunta si una cifra es cierta. Ésta pregunta si la interfaz publicada
+sigue el sistema de diseño Umbral. Son preguntas distintas y ninguna cubre a la otra.
+
+```sh
+python3 processor/verificar_marca.py --guia ../umbral-style-guide
+```
+
+Sin dependencias, sin navegador, corre en un segundo. Revisa seis cosas que el linter
+del propio sistema no puede ver, porque viven en la prosa y en el JS que genera las
+gráficas:
+
+| Comprobación | Regla |
+|---|---|
+| La línea de fuente tiene dos lados, sin licencia ni instantánea | UMB-CHT-003, UMB-DAT-002/004 |
+| El subtítulo nombra una transformación y un periodo | UMB-CHT-002 |
+| El dominio es `umbral.org.mx` | v2.0.0 |
+| Las etiquetas de sección van en minúsculas | UMB-LAY-006 |
+| La página declara la licencia que la gráfica ya no lleva | UMB-DAT-004 |
+| Los tokens no se han desviado de los de la guía | deriva de versión |
+
+`--guia` es opcional; sin ella no se comprueba la deriva de tokens y se avisa.
+
+Correr también el linter del sistema, que cubre la capa mecánica (hexes escritos a mano,
+radios, sombras):
+
+```sh
+python3 ../umbral-style-guide/skills/umbral-brand/scripts/lint.py site
+```

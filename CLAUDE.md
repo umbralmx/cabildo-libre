@@ -14,6 +14,14 @@
 > Batches publish themselves — see `docs/bitacora.md` 2026-07-26. The other four terms
 > (~560 actas) are untouched.
 >
+> **UI migrated to Umbral v2.0.0 on 2026-09-04.** The site was built against v1.1.0; the
+> guide has since shipped the minimal idiom (1.2.0), the component layer (1.6.0) and a
+> breaking chart-frame change (2.0.0) that names this repo in its migration list. All of it
+> is adopted — see `docs/diseno.md` and `docs/bitacora.md` 2026-09-04. Two stale numbers
+> surfaced and were fixed: the root `assets/tokens.css` was still v1.0 (with the 2.37:1
+> `caption`), and the cadence chart's subtitle still said "74 sesiones" against its own
+> title's 78. **Still pending: the on-screen visual pass** — the browser tool was down again.
+>
 > **Open defect (2026-08-13): the agenda-renumbering bug.** 19 of the 78 actas modify their
 > órden del día in session. The scraped agenda is the *previous* one, so from the first change
 > the index numbering stops matching the acta body, and reading windows disagree about which
@@ -293,6 +301,7 @@ dictionary review.
 | `docs/a3-spike.md` | The OCR spike: evidence that the PDFs are scans |
 | `docs/phase2-ocr-spike.md` | Phase 2 engine spike: Tesseract vs vision, the DeepSeek decision, cost table |
 | `processor/README.md` | **How Phase 2 runs** — the OCR + summary stages, deps, provider-swap, honesty rules, and the `verificar.py` gate |
+| `processor/verificar_marca.py` | **The brand gate** — does the published UI still obey the Umbral system? Chart-frame contract, domain, lowercase labels, token drift. Run it with `--guia <path to umbral-style-guide>` |
 | `docs/indicadores-v2.md` | **The dictionary review (2026-08-13)** — Popolo/ILTL/IMCO benchmarks, the *Procedimiento* family, what else the OCR already holds. Read before resuming Phase 3 |
 | `docs/indicadores.md` + `data/indicadores.json` | **Phase 3 indicator dictionary** — the 26 `ya`/`1 paso` analyses, each with source, computation, audience, caveat. Source of truth for L4/L5 |
 | `docs/indicadores-revision.md` | **Critical review of those 26 against the real data (2026-07-25)** — which hold up, which mislead, 6 new ones. Read before building L4 |
@@ -311,3 +320,6 @@ dictionary review.
 - **Never fill a gap in the source by inference.** Missing dates, missing agendas, skipped numerals and dead links stay visible in the data and, where it matters, on screen. The one exception (backfilling a blank período from the session date) is documented in `docs/metodologia.md` §3.3.
 - **Declaring provenance is not the same as being true, and the project long conflated them.** A figure can carry its base, its `cobertura` and its caveat and still be false (the acta 17 amount the OCR never contained) or meaningless (a "total" that adds revenue to spending to their difference). **Any new published figure needs a check in `processor/verificar.py`** answering *does this mean what its label says* — not only *where did it come from*. ERROR blocks publication; AVISO is for what needs human judgement. Run it before trusting any number you are about to put on screen.
 - **Follow the brand system in `assets/`** for anything user-facing; record interpretation calls in `docs/diseno.md` rather than drifting silently.
+- **The component layer is `site/assets/components.css`, vendored from the style guide. If a form exists there, use its class and do not restyle it in `styles.css`.** Duplicating a rule is how the two sheets drift apart without anyone noticing. `components.css` and `tokens.css` are vendored copies — update them by re-copying from `umbral-style-guide`, never by editing in place.
+- **A chart's subtitle says how the figure is BUILT** — the transformation, the unit, the scope and the period (UMB-CHT-002). Its source line has two sides and carries neither the licence nor the snapshot tag; both live on the page (UMB-CHT-003, UMB-DAT-002/004). `.fig` promises a figure over data and is bound by those rules; prose that only wants the same typography uses `.explica`.
+- **Run both gates before publishing:** `processor/verificar.py` asks whether a figure is true, `processor/verificar_marca.py` asks whether the interface still obeys the design system. They are different questions and neither covers the other.

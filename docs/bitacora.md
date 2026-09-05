@@ -6,6 +6,85 @@
 
 ---
 
+## 2026-09-04 — El sistema de marca llegó a 2.0.0 y el sitio se quedó en 1.1.0
+
+**Qué cambió afuera.** `umbral-style-guide` avanzó cuatro versiones desde que este sitio
+se diseñó. Tres importan aquí:
+
+- **1.2.0** hizo normativo el *idioma mínimo*: etiquetas de sección en mono y **minúsculas**,
+  listas separadas por reglas de 1px **en vez de tarjetas**, controles secundarios en mono
+  con borde de 1px, y la retícula de puntos acotada al margen exterior.
+- **1.6.0** publicó `components.css`, la hoja **escrita a mano** con los diez componentes
+  que necesita una superficie de datos. Es la única hoja del sistema que edita una persona.
+- **2.0.0** rompió el marco de gráfica, y nombra a `cabildo-libre` en su lista de migración.
+
+**Lo que rompió 2.0.0.** El subtítulo ya no es `geografía · periodo · unidad`: dice **cómo
+está construida** la cifra —la transformación, la unidad, el alcance y el periodo—. La razón
+es concreta: una suma acumulada y un total anual dibujan curvas distintas con los mismos
+datos, y el subtítulo viejo no nombraba ninguna de las dos. Y la línea de fuente pasó a tener
+**dos lados**: origen y fecha de consulta a la izquierda, el sitio a la derecha. La licencia
+y la etiqueta de instantánea se **mudaron a la página**, porque cinco campos en una línea no
+sobrevivían a una tarjeta social ni a una diapositiva.
+
+Las ocho gráficas del panel llevaban la línea vieja. Ahora las ocho leen, por ejemplo:
+
+```
+Fuente: Elaboración propia con el pase de lista de cada acta de cabildo del
+Ayuntamiento de Colima. Consulta realizada el 2026-08-14.        umbral.org.mx
+```
+
+La fecha se lee de `generado` en el payload, nunca escrita a mano: es la misma disciplina
+que ya rige a la página de metodología.
+
+**Lo que se adoptó.** El sitio ahora carga `components.css` y **borra su copia local** de
+cada forma que la hoja ya define. Los controles, la tabla gemela, el buscador de colonias,
+la fila de KPI y los renglones de resultado dejaron de tener CSS propio. Son ~110 líneas
+menos y, sobre todo, un solo lugar donde vive cada forma. Dos consecuencias visibles: los
+KPI pasan a **mono tabular** —se leen columna contra columna, y para eso sirve la cifra
+mono— y los resultados de búsqueda dejaron de ser **tarjetas**: hoy son renglones separados
+por reglas de 1px, como manda UMB-LAY-007.
+
+**Dos hallazgos que no se buscaban.**
+
+1. `assets/tokens.css` —la carpeta fuente de marca— seguía en la **versión 1.0**, con
+   `caption` en `#9AA19B`: **2.37:1**, el peor fallo de contraste que midió la auditoría de
+   julio. El sitio servía la copia corregida, así que nadie lo veía. Las dos copias no se
+   comparaban con nada. Ahora sí.
+2. La gráfica de cadencia decía en su título «sesionó **78** veces» y en su subtítulo
+   «cubre las **74** sesiones del término». El 74 estaba escrito a mano y se quedó ahí
+   cuando el término creció. Es exactamente la falla contra la que advierte el encabezado
+   de `metodologia.js`. Las dos cifras se leen del payload.
+
+**Una separación que faltaba.** La página de metodología tenía cuatro bloques con el marco
+de gráfica y sólo **uno** era una gráfica. Los otros tres son un encabezado, un párrafo y
+una tabla de referencia. Llevar el marco los obligaba a UMB-CHT-002 y UMB-CHT-003, que no
+podían cumplir con honestidad: una tabla que describe **nuestro propio proceso** no tiene
+fuente externa, y poner al Ayuntamiento como origen le atribuiría una afirmación que nunca
+hizo. Se separaron: `.fig` significa *figura sobre datos*, `.explica` es prosa con la misma
+tipografía y sin la promesa.
+
+**La puerta.** `processor/verificar_marca.py` — 165 líneas, sin dependencias, sin navegador.
+El linter del propio sistema ya pasaba limpio: la capa mecánica (hexes, radios, sombras) no
+era el problema. Lo que no puede ver es el contrato del marco, que vive en la prosa y en el
+JS que la genera. La puerta revisa los dos lados de la línea de fuente, que el subtítulo
+nombre una transformación y un periodo, el dominio, las versalitas, la licencia en la página
+y la **deriva de tokens** contra el repo de la guía. Las seis comprobaciones se probaron
+rompiendo el sitio a propósito una por una: **las seis dispararon**.
+
+Se verificó también con render real (jsdom): las tres páginas montan sin errores, la búsqueda
+de «carsol» sigue dando sus dos puntos y la línea de tiempo sus 15 años. **El navegador
+seguía caído**, así que falta el repaso visual — igual que el 2026-07-20. Vale la nota de
+`docs/framework-notes.md` de desaparecidosmx: durante aquella migración el navegador devolvió
+marcos obsoletos dos veces y llevó a concluir que una página que funcionaba estaba congelada.
+Aquí jsdom hizo lo mismo en pequeño —devolvió estilo vacío para reglas que sí existen— y por
+eso la puerta lee la regla CSS, no el estilo computado.
+
+**Sigue pendiente.** El repaso visual en pantalla. Y la retícula de puntos es la única pieza
+del idioma mínimo que se añadió sin haber estado antes: si estorba, se quita borrando un
+bloque de `styles.css`.
+
+---
+
 ## 2026-08-14 — El sistema declaraba de dónde venía cada cifra, no si era cierta
 
 **El diagnóstico.** Se revisó el plan completo contra los tres objetivos de `CLAUDE.md`.

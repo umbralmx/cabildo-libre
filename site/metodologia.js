@@ -33,10 +33,12 @@ function slot(id, valor) {
 }
 
 function stat(label, value, det) {
-  const s = el('div', 'stat');
-  s.append(el('span', 'stat-label', label));
-  s.append(el('span', 'stat-value mono', value));
-  if (det) s.append(el('span', 'medidor-det', det));
+  const s = el('div', 'u-kpi');
+  s.append(el('span', 'u-kpi__label', label));
+  s.append(el('span', 'u-kpi__value', value));
+  // UMB-NUM-002 — a figure without its denominator is not a rate, so the
+  // qualifier rides with the KPI rather than sitting in a footnote.
+  if (det) s.append(el('span', 'u-kpi__note', det));
   return s;
 }
 
@@ -119,6 +121,7 @@ async function main() {
   }
   slot('n-actas-b', fmtN(cob.actas_en_termino || 0));
   slot('n-actas-c', fmtN(cob.actas_en_termino || 0));
+  slot('n-actas-d', fmtN(cob.actas_en_termino || 0));
 
   const est = an.estructura || {};
   if (est.orden_del_dia_modificado != null) {
@@ -138,6 +141,12 @@ async function main() {
     const f = new Date(an.generado);
     slot('snapshot', `Cifras de esta página: corte del ${f.toLocaleDateString('es-MX',
       { day: 'numeric', month: 'long', year: 'numeric' })}. Se recalculan en cada procesamiento.`);
+    // UMB-CHT-003 — the access date belongs in each source line, in ISO
+    // (UMB-NUM-003), and is read from the payload so it cannot go stale.
+    const iso = an.generado.slice(0, 10);
+    document.querySelectorAll('.fig-src .consulta').forEach((n) => {
+      n.textContent = ` Consulta realizada el ${iso}.`;
+    });
   }
 }
 

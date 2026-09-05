@@ -8,6 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/components.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -51,8 +52,8 @@
     <h2><span class="section-num">02</span>El recorrido de un acta</h2>
     <p>Cinco etapas automáticas. Cualquiera puede correrlas y obtener lo mismo.</p>
 
-    <div class="fig">
-      <table class="tabla">
+    <div class="explica">
+      <table class="u-table">
         <thead>
           <tr><th>Etapa</th><th>Qué hace</th><th>Qué no hace</th></tr>
         </thead>
@@ -84,7 +85,8 @@
           </tr>
         </tbody>
       </table>
-      <p class="fig-src mono">Código y datos: github.com/umbralmx/cabildo-libre · CC BY 4.0</p>
+      <p class="explica-src mono">Cada etapa es un script reproducible:
+      github.com/umbralmx/cabildo-libre</p>
     </div>
 
     <p class="nota">Procesar un término entero —<span id="n-actas-b">78</span> actas,
@@ -119,19 +121,21 @@
     <p>Ninguno era previsible desde fuera. Se documentan porque cualquiera que intente esto en
     otro municipio se los va a encontrar.</p>
 
-    <div class="fig">
-      <h3 class="fig-title">Las actas no son documentos: son fotografías de papel</h3>
-      <p class="fig-sub">Comprobado sobre una muestra de 2016 a 2026.</p>
+    <div class="explica">
+      <h3 class="explica-title">Las actas no son documentos: son fotografías de papel</h3>
+      <p class="explica-sub">Comprobado sobre una muestra de 2016 a 2026.</p>
       <p>El plan suponía PDF con texto extraíble. Ninguno lo trae: todos son salida de escáner,
       páginas de imagen sin una sola letra seleccionable. Eso obliga a pasar <strong>el 100 % de
       las actas</strong> por OCR antes de leer una palabra, con el ruido que implica — numerales
       mal leídos, nombres deformados, columnas entremezcladas.</p>
-      <p class="fig-src mono">Detalle: docs/a3-spike.md</p>
+      <p class="explica-src mono">Detalle del muestreo en docs/a3-spike.md.</p>
     </div>
 
-    <div class="fig">
+    <figure class="fig" role="figure" aria-label="Leíamos la primera página y creíamos leer el acta entera">
       <h3 class="fig-title">Leíamos la primera página y creíamos leer el acta entera</h3>
-      <p class="fig-sub">El defecto más grave, y el más silencioso.</p>
+      <p class="fig-sub">Proporción de puntos sin resultado legible antes y después del arreglo
+      de ventanas de lectura, sobre las <span id="n-actas-d">78</span> actas del término
+      2024-2027. El defecto más grave, y el más silencioso.</p>
       <p>Un acta puede tener 400 000 caracteres. Se enviaban al modelo los primeros 45 000, sin
       avisar de nada.</p>
       <p>El síntoma engañaba: el <strong>58 %</strong> de las decisiones salía «sin resultado
@@ -142,12 +146,14 @@
       gana a uno no leído</strong>. Si dos lecturas discrepan, el punto se marca para revisión en
       vez de resolverse por desempate silencioso.</p>
       <div class="fig-body" id="c-antes-despues"></div>
-      <p class="fig-src mono">Fuente: 78 actas del término 2024-2027 · umbral.mx · CC BY 4.0</p>
-    </div>
+      <figcaption class="fig-src mono"><span class="fig-src-origen">Fuente: Elaboración propia
+      con el OCR de las 78 actas del término 2024-2027 del Ayuntamiento de Colima.<span
+      class="consulta"></span></span><span class="fig-src-sitio">umbral.org.mx</span></figcaption>
+    </figure>
 
-    <div class="fig">
-      <h3 class="fig-title">Cuando el cabildo cambia su agenda a media sesión</h3>
-      <p class="fig-sub">Ocurre en <span id="n-modificadas">19</span> de las <span id="n-actas-c">78</span> actas del término.</p>
+    <div class="explica">
+      <h3 class="explica-title">Cuando el cabildo cambia su agenda a media sesión</h3>
+      <p class="explica-sub">Ocurre en <span id="n-modificadas">19</span> de las <span id="n-actas-c">78</span> actas del término.</p>
       <p>El órden del día que publica el portal es el <em>previo</em> a la sesión. Si el cabildo
       retira o incorpora asuntos, todo lo posterior recorre un lugar: el punto 7 publicado ya no
       es el punto 7 del acta. Eso mezclaba dos asuntos distintos en un mismo registro.</p>
@@ -163,8 +169,8 @@
   <section id="medimos" class="section">
     <h2><span class="section-num">05</span>Qué se puede medir y qué no</h2>
     <p>No todo lo interesante está en el acta. Separar una cosa de la otra es parte del método.</p>
-    <div class="fig">
-      <table class="tabla">
+    <div class="explica">
+      <table class="u-table">
         <thead><tr><th>Se mide</th><th>Porque el acta lo declara</th></tr></thead>
         <tbody>
           <tr><td>El resultado de cada punto</td><td>«fue aprobado por unanimidad de votos»</td></tr>
@@ -176,8 +182,8 @@
         </tbody>
       </table>
     </div>
-    <div class="fig">
-      <table class="tabla">
+    <div class="explica">
+      <table class="u-table">
         <thead><tr><th>No se mide</th><th>Por qué</th></tr></thead>
         <tbody>
           <tr><td>Quién votó a favor</td><td>El acta nombra a los disidentes, no a la mayoría. Contar «a favor» por descarte sería inferencia.</td></tr>
@@ -243,8 +249,11 @@
 </main>
 
 <footer class="site-footer">
-  <p>Fuente: Ayuntamiento de Colima, actas de cabildo · umbral.mx · estructura CC BY 4.0
-  · proyecto independiente, sin relación con el Ayuntamiento</p>
+  <p>Código MIT · estructura y datos derivados CC BY 4.0 · el texto de las actas es del
+  Ayuntamiento de Colima y se atribuye a su fuente.</p>
+  <p class="foot-src"><span>Fuente: Elaboración propia con datos del Ayuntamiento de Colima
+  (actas de cabildo).</span><span>umbral.org.mx</span></p>
+  <p>Proyecto independiente, sin relación con el Ayuntamiento.</p>
 </footer>
 
 <script src="metodologia.js"></script>

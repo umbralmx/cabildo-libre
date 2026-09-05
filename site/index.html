@@ -8,6 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/components.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -38,30 +39,30 @@
 
   <section class="controls" aria-label="Búsqueda y filtros">
     <div class="searchrow">
-      <input id="q" type="search" autocomplete="off" spellcheck="false"
+      <input id="q" class="u-input" type="search" autocomplete="off" spellcheck="false"
              placeholder="Buscar — p. ej. licencia, fraccionamiento, o &quot;La Estancia&quot; entre comillas para frase exacta"
              aria-label="Buscar en los órdenes del día">
     </div>
     <div class="filterrow">
       <label>
         <span class="field-label">Período</span>
-        <select id="f-periodo"><option value="">Todos</option></select>
+        <select id="f-periodo" class="u-select"><option value="">Todos</option></select>
       </label>
       <label>
         <span class="field-label">Desde</span>
-        <input type="date" id="f-desde" min="2012-01-01" max="2027-12-31">
+        <input type="date" id="f-desde" class="u-input" min="2012-01-01" max="2027-12-31">
       </label>
       <label>
         <span class="field-label">Hasta</span>
-        <input type="date" id="f-hasta" min="2012-01-01" max="2027-12-31">
+        <input type="date" id="f-hasta" class="u-input" min="2012-01-01" max="2027-12-31">
       </label>
-      <button id="f-clear" type="button" class="btn-secondary">Limpiar</button>
+      <button id="f-clear" type="button" class="u-btn">Limpiar</button>
     </div>
   </section>
 
   <section id="results" class="results" aria-live="polite" hidden>
     <p class="result-count mono" id="result-count"></p>
-    <ol id="result-list" class="result-list"></ol>
+    <ol id="result-list" class="result-list u-rows"></ol>
     <div id="fulltext" class="fulltext" hidden></div>
   </section>
 
@@ -81,6 +82,8 @@
       <a href="actas.csv" download>Descargar CSV — un renglón por punto de agenda</a>
     </p>
     <p class="snapshot" id="snapshot"></p>
+    <p class="snapshot">Código MIT · estructura y datos derivados CC BY 4.0 · el texto de los
+    órdenes del día es del Ayuntamiento de Colima y se atribuye a su fuente.</p>
   </section>
 
   <section id="metodologia" class="section">
@@ -109,8 +112,9 @@
 </main>
 
 <footer class="site-footer">
-  <p>Fuente: Ayuntamiento de Colima, actas de cabildo · umbral.mx · estructura CC BY 4.0
-  · proyecto independiente, sin relación con el Ayuntamiento</p>
+  <p class="foot-src"><span>Fuente: Elaboración propia con datos del Ayuntamiento de Colima
+  (actas de cabildo).</span><span>umbral.org.mx</span></p>
+  <p>Proyecto independiente, sin relación con el Ayuntamiento.</p>
 </footer>
 
 <script src="app.js"></script>

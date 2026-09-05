@@ -2,10 +2,12 @@
 
 Registro de cómo se aplicó el manual de marca (`assets/CLAUDE.md`) y
 `assets/umbral-engineering.md` a este sitio, y de las decisiones que requirieron
-interpretación. Última revisión: **2026-07-20**.
+interpretación. Última revisión: **2026-09-04** (sistema Umbral **v2.0.0**).
 
 Modo: **laboratorio (light)**, que es el que corresponde a sitios web y reportes
-según §8 del manual. No hay modo instrumento en este proyecto.
+según §8 del manual. No hay modo instrumento en este proyecto — y desde v1.4.0 eso
+es una regla escrita, UMB-COL-011: el modo lo elige el medio, no el sistema operativo
+del lector.
 
 ## Presupuesto de signal — la decisión de más criterio
 
@@ -146,6 +148,102 @@ Otras notas de implementación:
 - **La lista de colonias no tiene scroll propio.** Un contenedor con scroll interno se come
   el scroll de la página cuando el cursor cae encima; se muestra un tope de 12 con botón para
   ver las 57.
+
+## Migración al sistema v2.0.0 (2026-09-04)
+
+El sitio se diseñó contra la v1.1.0. La guía llegó a la 2.0.0. Esto es lo que se
+adoptó y las llamadas de criterio que hizo falta hacer.
+
+### La capa de componentes, y qué se borró
+
+`components.css` (v1.6.0) es la hoja **escrita a mano** del sistema: los diez
+componentes que necesita una superficie de datos. El sitio la carga y **borra su
+copia local** de cada forma que ya define.
+
+| Forma | Antes, en `styles.css` | Ahora |
+|---|---|---|
+| Botón | `.btn-secondary`, cara display | `.u-btn` |
+| Campo y selector | reglas propias por control | `.u-input` · `.u-select` |
+| Tabla gemela | `.tabla` + `.num` | `.u-table` + `data-numeric` |
+| Lista de colonias | `.colonia-item` | `.u-rows` · `.u-row` |
+| Fila de KPI | `.stat-value`, cara display | `.u-kpi` |
+| Estado vacío | `.colonia-vacio` | `.u-empty` |
+
+La regla que queda para adelante: **si la forma existe en `components.css`, se usa
+su clase y no se le vuelve a dar estilo aquí.** Duplicar una regla es como las dos
+hojas se separan sin que nadie lo note.
+
+Dos cambios se ven en pantalla:
+
+- **Los KPI pasan a mono tabular.** Estaban en Space Grotesk. Una fila de KPI existe
+  para leerse columna contra columna, y las cifras sólo se alinean en mono con
+  numerales tabulares (UMB-TYP-004).
+- **Los resultados de búsqueda dejan de ser tarjetas.** Eran cajas con relleno
+  `panel`, borde y 24px de padding. UMB-LAY-007 dice que una lista de elementos se
+  separa con reglas de 1px. Ahora son renglones. El renglón es `display: block` y no
+  el flex de `.u-row`, porque un resultado apila metadatos, texto, resumen y enlace
+  en vez de emparejar una etiqueta con una cifra; la caja es la misma.
+
+### El marco de gráfica v2.0.0
+
+El subtítulo dice **cómo está construida** la cifra. El cambio no es cosmético: una
+suma acumulada y un total anual dibujan curvas distintas con los mismos datos, y el
+subtítulo viejo (`geografía · periodo · unidad`) no nombraba ninguna transformación.
+
+La línea de fuente tiene dos lados y ya no lleva licencia ni etiqueta de instantánea.
+Las dos se mudaron a la página. La fecha de consulta se lee de `generado` en el
+payload — **nunca escrita a mano**, que es la misma disciplina de la página de
+metodología.
+
+`figura()` en `panel.js` replica la estructura de `Frame.render` de
+`@umbralmx/umbral-plot`: `h3`, `p`, cuerpo, `figcaption`. Mantener la forma idéntica
+es lo que permite que esta página y una gráfica de Plot se lean como el mismo sistema
+aunque no compartan una línea de código.
+
+### `.fig` es una figura sobre datos; `.explica` es prosa
+
+**La llamada de criterio de esta migración.** La página de metodología tenía cuatro
+bloques con el marco de gráfica y sólo uno era una gráfica; los otros tres eran un
+encabezado, un párrafo y una tabla de referencia.
+
+Vestir el marco los sometía a UMB-CHT-002 y UMB-CHT-003. No podían cumplirlas con
+honestidad: **una tabla que describe nuestro propio proceso no tiene fuente externa**,
+y poner «Elaboración propia con datos del Ayuntamiento de Colima» encima de ella le
+atribuiría al Ayuntamiento una afirmación que nunca hizo. Cumplir la regla al pie
+habría producido una mentira pequeña.
+
+Así que se separaron. `.fig` promete una figura sobre datos y carga con las dos reglas.
+`.explica` tiene la misma tipografía y no promete nada. Lo que se movió a `.explica`:
+la tabla de las cinco etapas, las dos tablas de «se mide / no se mide» y dos bloques de
+prosa. Se quedó en `.fig` la única gráfica real de la página.
+
+### La retícula de puntos
+
+UMB-LAY-009, añadida porque sin ella la retícula sería una excepción no escrita a
+UMB-LAY-005 (que prohíbe la ilustración decorativa). Escrita, está acotada: vive detrás
+de la página en `baseline` a 22px, el encabezado, la hoja y el pie la tapan con `base`,
+y **nunca queda debajo de texto, tabla ni gráfica** — por eso no mueve ningún contraste
+medido. Desaparece bajo 980px, donde no hay margen que llenar.
+
+Es la única pieza que se añadió sin haber estado antes. Si estorba, se quita borrando
+un bloque.
+
+### Etiquetas en minúsculas
+
+Cinco reglas estaban en versalitas con 0.04em de tracking. UMB-LAY-006 pide mono,
+**minúsculas**, en `caption`. Se corrigieron las cinco; el tracking se va con las
+versalitas, porque existía para compensarlas.
+
+### La puerta de marca
+
+`processor/verificar_marca.py`. El linter del sistema ya pasaba limpio: la capa
+mecánica no era el problema. Lo que no puede ver es el contrato del marco, que vive en
+la prosa y en el JS que la genera. La puerta revisa eso, más la **deriva de tokens**:
+`assets/tokens.css` llevaba la v1.0 —con `caption` en 2.37:1— mientras el sitio servía
+la corregida, y nada comparaba las dos copias.
+
+Las seis comprobaciones se probaron rompiendo el sitio a propósito, una por una. Las
+seis dispararon. Una puerta que nunca dispara no es una puerta.
 
 ## Lista de verificación previa al lanzamiento
 

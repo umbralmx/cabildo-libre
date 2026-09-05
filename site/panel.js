@@ -67,17 +67,46 @@ function el(tag, cls, text) {
   return n;
 }
 
-/** A chart block: title states the finding, subtitle gives base/unit, source line
-    in mono above a 1px rule (brand §6.1). */
-function figura(parent, { titulo, subtitulo, fuente }) {
+/** The chart frame (UMB-CHT-001..003, Umbral v2.0.0).
+
+    - `titulo` states the finding as a sentence, generated from the data.
+    - `subtitulo` says how the figure is BUILT — the transformation, the unit,
+      the scope and the period. Before 2.0 this field was `geografía · periodo ·
+      unidad`, which named no transformation: a cumulative sum and an annual
+      total draw different curves from the same data and the old subtitle named
+      neither.
+    - `fuente` is the ORIGIN as a phrase. The frame writes `Fuente: … .` around
+      it and appends the access date, so no caller repeats the wrapper.
+
+    The source line has two sides above one 1px rule: origin and access date on
+    the left, the site on the right. It carries neither the licence nor the
+    snapshot tag — both moved to the page (UMB-DAT-004, UMB-DAT-002). Five
+    fields on one line did not survive a social card or a slide.
+
+    The structure mirrors @umbralmx/umbral-plot's `Frame.render`: h3, p, body,
+    then the figcaption. Keeping the shape identical is what lets this page and
+    a Plot chart look like the same system. */
+const SITIO = 'umbral.org.mx';
+let CONSULTADO = '';   // ISO date, read from the payload's `generado`.
+
+function figura(parent, { titulo, subtitulo, fuente, consultado = null }) {
   const fig = el('figure', 'fig');
-  const cap = el('figcaption');
-  cap.append(el('h3', 'fig-title', titulo));
-  if (subtitulo) cap.append(el('p', 'fig-sub', subtitulo));
-  fig.append(cap);
+  fig.setAttribute('role', 'figure');
+  // The aria-label carries the finding, not the chart type (UMB-A11Y-002).
+  fig.setAttribute('aria-label', titulo);
+  fig.append(el('h3', 'fig-title', titulo));
+  if (subtitulo) fig.append(el('p', 'fig-sub', subtitulo));
   const body = el('div', 'fig-body');
   fig.append(body);
-  if (fuente) fig.append(el('p', 'fig-src mono', fuente));
+  if (fuente) {
+    const cap = el('figcaption', 'fig-src mono');
+    const origen = String(fuente).trim().replace(/\.$/, '');
+    const fecha = consultado ?? CONSULTADO;
+    cap.append(el('span', 'fig-src-origen',
+      `Fuente: ${origen}.` + (fecha ? ` Consulta realizada el ${fecha}.` : '')));
+    cap.append(el('span', 'fig-src-sitio', SITIO));
+    fig.append(cap);
+  }
   parent.append(fig);
   return body;
 }
@@ -87,12 +116,12 @@ function figura(parent, { titulo, subtitulo, fuente }) {
 function tablaDatos(parent, cols, rows, resumen = 'Ver los datos') {
   const d = el('details', 'datos');
   d.append(el('summary', null, resumen));
-  const t = el('table', 'tabla');
+  const t = el('table', 'u-table');
   const thead = el('thead');
   const htr = el('tr');
   cols.forEach((c) => {
     const th = el('th', null, c.label);
-    if (c.num) th.className = 'num';
+    if (c.num) th.setAttribute('data-numeric', '');
     htr.append(th);
   });
   thead.append(htr);
@@ -101,7 +130,8 @@ function tablaDatos(parent, cols, rows, resumen = 'Ver los datos') {
   rows.forEach((r) => {
     const tr = el('tr');
     cols.forEach((c) => {
-      const td = el('td', c.num ? 'num mono' : null);
+      const td = el('td');
+      if (c.num) td.setAttribute('data-numeric', '');
       const nodo = c.get(r);
       td.append(nodo instanceof Node ? nodo : document.createTextNode(nodo));
       tr.append(td);
@@ -181,8 +211,8 @@ function statrow(d) {
     ['Texto leído', lec.proporcion != null ? fmtPct(lec.proporcion) : 'sin medir'],
   ];
   stats.forEach(([label, value]) => {
-    const s = el('div', 'stat');
-    s.append(el('span', 'stat-label', label), el('span', 'stat-value', value));
+    const s = el('div', 'u-kpi');
+    s.append(el('span', 'u-kpi__label', label), el('span', 'u-kpi__value', value));
     row.append(s);
   });
 }
@@ -198,10 +228,11 @@ function cobertura(d) {
   const b1 = figura(c, {
     titulo: `Se han leído ${cob.con_resumen} de las ${cob.actas_en_termino} actas del término`
       + (lec.proporcion != null ? `, y de ellas el ${fmtPct(lec.proporcion)} de su texto` : ''),
-    subtitulo: 'Dos coberturas distintas: cuántas actas se procesaron, y cuánto del texto de '
-      + 'esas actas alcanzó a leer el modelo que redacta los resúmenes. Las gráficas de este '
-      + 'panel se calculan sobre la primera; su precisión depende de la segunda.',
-    fuente: 'Fuente: procesamiento propio sobre las actas del Ayuntamiento de Colima · umbral.mx',
+    subtitulo: `Proporción de actas resumidas y proporción del texto leído en cada una, `
+      + `término ${TERMINO}. Son dos coberturas distintas: cuántas actas se procesaron, y `
+      + 'cuánto del texto de esas actas alcanzó a leer el modelo que redacta los resúmenes. '
+      + 'Las gráficas de este panel se calculan sobre la primera; su precisión depende de la segunda.',
+    fuente: 'Elaboración propia con el OCR de las actas de cabildo del Ayuntamiento de Colima',
   });
 
   // Reading depth is the page's single signal-coloured element (brand §3); the
@@ -275,10 +306,11 @@ function cadencia(d) {
   const body = figura(c, {
     titulo: `El cabildo sesionó ${fmtN(ses.length)} veces en ${fmtN(meses)} meses — `
       + `entre ${Math.min(...vals)} y ${Math.max(...vals)} veces por mes`,
-    subtitulo: `Colima, ${fmtFecha(ses[0].fecha)} a ${fmtFecha(ses[ses.length - 1].fecha)}. `
-      + `Promedio de ${media.toFixed(1)} sesiones por mes. Esta sección se calcula sobre el `
-      + 'índice oficial y cubre las 74 sesiones del término, procesadas o no.',
-    fuente: 'Fuente: índice de actas de cabildo, Ayuntamiento de Colima · umbral.mx',
+    subtitulo: `Conteo de sesiones por mes, Colima, ${fmtFecha(ses[0].fecha)} a `
+      + `${fmtFecha(ses[ses.length - 1].fecha)}. Promedio de ${media.toFixed(1)} sesiones por `
+      + `mes. Esta sección se calcula sobre el índice oficial y cubre las `
+      + `${fmtN(d.cobertura.actas_en_termino)} sesiones del término, procesadas o no.`,
+    fuente: 'Elaboración propia con datos del índice de actas de cabildo del Ayuntamiento de Colima',
   });
   columnas(body, rows, { etiquetaY: 'sesiones' });
   tablaDatos(c, [
@@ -305,12 +337,14 @@ function categorias(d) {
   const etiquetasTop = top3.map((r, i) => (i === 0 ? r.etiqueta : r.etiqueta.toLowerCase()));
   const body = figura(c, {
     titulo: `${etiquetasTop.join(', ')} concentran ${fmtPct(shareTop3)} de los asuntos de fondo`,
-    subtitulo: `${fmtN(total)} puntos de ${fmtN(d.cobertura.con_resumen)} actas leídas (de `
+    subtitulo: `Distribución de los puntos de fondo por categoría de asunto, término `
+      + `${TERMINO}. ${fmtN(total)} puntos de ${fmtN(d.cobertura.con_resumen)} actas leídas (de `
       + `${fmtN(d.cobertura.actas_en_termino)} del término). Quedan fuera los puntos de mero `
       + 'trámite de sesión —lista de asistencia, quórum, lectura del órden, clausura—; la '
       + 'categoría «trámite interno» agrupa los asuntos de procedimiento que sí se sometieron '
       + 'a votación.',
-    fuente: 'Fuente: resúmenes generados sobre el OCR de las actas · umbral.mx',
+    fuente: 'Elaboración propia con los resúmenes generados sobre el OCR de las actas '
+      + 'de cabildo del Ayuntamiento de Colima',
   });
   barrasH(body, rows, { total });
   tablaDatos(c, [
@@ -334,14 +368,16 @@ function categorias(d) {
       titulo: nd > 0.15
         ? `El resultado no se alcanza a leer en ${fmtPct(nd)} de los puntos`
         : `El acta declara el resultado en ${fmtPct(1 - nd)} de los puntos`,
-      subtitulo: `${fmtN(tot)} puntos sustantivos de ${fmtN(d.cobertura.con_resumen)} actas `
+      subtitulo: `Distribución de los puntos sustantivos por sentido de la resolución, término `
+        + `${TERMINO}. ${fmtN(tot)} puntos de ${fmtN(d.cobertura.con_resumen)} actas `
         + `leídas de ${fmtN(d.cobertura.actas_en_termino)}.`
         + (hayND
           ? ' «Sin resultado legible» no significa que el cabildo no resolviera: significa que '
             + 'el texto disponible no permite afirmarlo, y por eso no se cuenta como aprobado '
             + 'ni como rechazado.'
           : ' Es el resultado que cada acta asienta; se cuenta sólo lo que declara.'),
-      fuente: 'Fuente: resúmenes generados sobre el OCR de las actas · umbral.mx',
+      fuente: 'Elaboración propia con los resúmenes generados sobre el OCR de las actas '
+      + 'de cabildo del Ayuntamiento de Colima',
     });
     barrasH(body2, rowsS, { total: tot });
     if (nd > 0.15) {
@@ -365,10 +401,12 @@ function montos(d, urlPorActa) {
     // public money figure loses its meaning.
     titulo: `La decisión económica más grande que declaran las actas leídas es de `
       + `${fmtMXN(mayores[0]?.valor_mxn)}`,
-    subtitulo: `${fmtN(m.n_con_valor)} cantidades con cifra, en ${fmtN(d.cobertura.con_resumen)} `
-      + `actas leídas de ${fmtN(d.cobertura.actas_en_termino)}. Son los montos que el acta `
-      + 'enuncia de forma explícita, no un presupuesto ni un gasto ejercido.',
-    fuente: 'Fuente: montos declarados en las actas · umbral.mx',
+    subtitulo: `Montos que las actas enuncian de forma explícita, ordenados de mayor a menor, `
+      + `en pesos corrientes, término ${TERMINO}. ${fmtN(m.n_con_valor)} cantidades con cifra, `
+      + `en ${fmtN(d.cobertura.con_resumen)} actas leídas de `
+      + `${fmtN(d.cobertura.actas_en_termino)}. No son un presupuesto ni un gasto ejercido.`,
+    fuente: 'Elaboración propia con los montos declarados en las actas de cabildo del '
+      + 'Ayuntamiento de Colima',
   });
   barrasH(body, mayores.map((x) => ({
     etiqueta: `Acta ${x.no_acta} · punto ${x.punto}`,
@@ -431,10 +469,12 @@ function asistencia(d) {
     titulo: perfectos === con.length
       ? `Los ${fmtN(con.length)} integrantes asistieron a todas las sesiones leídas`
       : `${fmtN(perfectos)} de ${fmtN(con.length)} integrantes asistieron a todas las sesiones leídas`,
-    subtitulo: `Pase de lista de ${fmtN(a.sesiones_consideradas)} sesiones de `
+    subtitulo: `Tasa de asistencia por integrante sobre las sesiones con pase de lista `
+      + `legible, término ${TERMINO}. ${fmtN(a.sesiones_consideradas)} sesiones de `
       + `${fmtN(d.cobertura.actas_en_termino)} del término. Asistencia promedio `
       + `${fmtPct(media, 1)}. Cuenta como asistencia la presencia física y la remota.`,
-    fuente: 'Fuente: pase de lista de cada acta · umbral.mx',
+    fuente: 'Elaboración propia con el pase de lista de cada acta de cabildo del Ayuntamiento '
+      + 'de Colima',
   });
   barrasH(body, rows.map((p) => ({
     etiqueta: p.nombre,
@@ -473,15 +513,17 @@ function colonias(d) {
   const body = figura(c, {
     titulo: `Las actas leídas mencionan ${fmtN(cols.length)} colonias, fraccionamientos o `
       + 'localidades',
-    subtitulo: `De ${fmtN(d.cobertura.con_resumen)} actas leídas de `
+    subtitulo: `Conteo de menciones por colonia en las actas leídas, término ${TERMINO}. `
+      + `De ${fmtN(d.cobertura.con_resumen)} actas leídas de `
       + `${fmtN(d.cobertura.actas_en_termino)}. Es una lista de menciones, no un censo: que `
       + 'una colonia no aparezca no significa que el cabildo no haya decidido nada sobre ella, '
       + 'sino que ninguna de las actas leídas la nombra.',
-    fuente: 'Fuente: colonias nombradas en las actas · umbral.mx',
+    fuente: 'Elaboración propia con las colonias nombradas en las actas de cabildo del '
+      + 'Ayuntamiento de Colima',
   });
 
   const buscador = el('div', 'col-buscador');
-  const input = el('input');
+  const input = el('input', 'u-input');
   input.type = 'search';
   input.placeholder = 'Filtrar por colonia — p. ej. Fátima';
   input.setAttribute('aria-label', 'Filtrar colonias');
@@ -491,8 +533,8 @@ function colonias(d) {
   // Shown in full on request rather than inside a scrolling box: an inner
   // scroller swallows the page scroll when the cursor is over it.
   const TOPE = 12;
-  const lista = el('ul', 'colonia-list');
-  const masBtn = el('button', 'btn-secondary col-mas');
+  const lista = el('ul', 'u-rows');
+  const masBtn = el('button', 'u-btn col-mas');
   masBtn.type = 'button';
   let todas = false;
 
@@ -502,17 +544,19 @@ function colonias(d) {
     const vis = cols.filter((x) => !f || x.nombre.toLowerCase().includes(f));
     if (!vis.length) {
       masBtn.hidden = true;
-      lista.append(el('li', 'colonia-vacio',
+      lista.append(el('li', 'u-empty',
         'Ninguna de las actas leídas menciona una colonia con ese nombre. Puede que la '
         + 'decisión exista en un acta que aún no se ha procesado.'));
       return;
     }
     const mostradas = (todas || f) ? vis : vis.slice(0, TOPE);
     mostradas.forEach((x) => {
-      const li = el('li', 'colonia-item');
-      li.append(el('span', 'colonia-nombre', x.nombre));
-      li.append(el('span', 'colonia-n mono',
-        `${fmtN(x.menciones)} ${x.menciones === 1 ? 'mención' : 'menciones'}`));
+      const li = el('li', 'u-row');
+      li.append(el('span', null, x.nombre));
+      const n = el('span', null,
+        `${fmtN(x.menciones)} ${x.menciones === 1 ? 'mención' : 'menciones'}`);
+      n.setAttribute('data-numeric', '');   // mono + tabular, per the component sheet
+      li.append(n);
       lista.append(li);
     });
     const oculta = vis.length - mostradas.length;
@@ -555,16 +599,18 @@ function integridad(d) {
     titulo: hallazgos.length
       ? `El expediente del término tiene ${fmtN(hallazgos.length)} inconsistencia(s) de origen`
       : 'El expediente del término está completo en el índice oficial',
-    subtitulo: `${fmtN(g.actas_en_termino)} sesiones. Lo que falta o no cuadra en la fuente se `
+    subtitulo: `Conteo de inconsistencias del índice oficial, término ${TERMINO}. `
+      + `${fmtN(g.actas_en_termino)} sesiones. Lo que falta o no cuadra en la fuente se `
       + 'declara aquí y se conserva así en los datos: no se rellena por inferencia.',
-    fuente: 'Fuente: índice de actas de cabildo, Ayuntamiento de Colima · umbral.mx',
+    fuente: 'Elaboración propia con datos del índice de actas de cabildo del Ayuntamiento de Colima',
   });
   if (hallazgos.length) {
     const ul = el('ul', 'hallazgos');
     hallazgos.forEach((h) => ul.append(el('li', null, h)));
     c.append(ul);
   } else {
-    nota(c, 'Las 74 sesiones tienen número, fecha, órden del día y enlace al PDF.');
+    nota(c, `Las ${fmtN(g.actas_en_termino)} sesiones tienen número, fecha, órden del día `
+      + 'y enlace al PDF.');
   }
   nota(c, g.nota);
 }
@@ -585,6 +631,14 @@ async function main() {
     return;
   }
 
+  // UMB-CHT-003 — the access date is read from the payload, never hardcoded, so
+  // it tracks the pipeline instead of drifting from it. ISO, per UMB-NUM-003.
+  CONSULTADO = (d.generado || '').slice(0, 10);
+  const snap = $('snapshot');
+  if (snap && CONSULTADO) {
+    snap.textContent = `Instantánea de los datos: ${CONSULTADO}. Cada gráfica declara esa `
+      + 'misma fecha de consulta en su línea de fuente.';
+  }
   $('termino').textContent = d.termino || TERMINO;
   const urlPorActa = new Map((d.calendario?.sesiones || []).map((s) => [s.acta, s.pdf_url]));
 

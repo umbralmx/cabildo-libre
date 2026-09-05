@@ -1,4 +1,12 @@
 /* Actas Abiertas — Umbral modo laboratorio (light).
+   Umbral design system v2.0.0.
+
+   This file layers ON TOP of assets/components.css, which is the guide's own
+   authored component sheet (the ten forms a data surface needs, v1.6.0). The
+   rule is: if a form exists there, use its class and do not restyle it here.
+   What stays here is what is specific to this product — the timeline, the
+   agenda, the search result, the chart marks — and nothing else.
+
    Tokens are the source of truth: assets/tokens.css. No hard-coded hexes.
    Spacing follows the 8px scale (tokens.json scale.unit = 8).
 
@@ -23,6 +31,25 @@ body {
   line-height: 1.55;
   -webkit-font-smoothing: antialiased;
 }
+
+/* ── UMB-LAY-009 — the dot field ──
+   The instrument's graph paper: behind the page, in `baseline`, at a 22px step.
+   It is bounded on purpose. UMB-LAY-005 bans decorative illustration, so the
+   field lives in a furniture token, sits only in the OUTER MARGIN beside the
+   content sheet, and never lands under text, a table or a chart — which is why
+   it changes no measured contrast. The header, the sheet and the footer all
+   paint `base` over it. Narrow screens have no margin to fill, so it goes. */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(var(--u-baseline) 1px, transparent 1.6px);
+  background-size: 22px 22px;
+}
+.site-header, main, .site-footer { position: relative; z-index: 1; background: var(--u-base); }
+@media (max-width: 980px) { body::before { display: none; } }
 
 a { color: var(--u-ink); text-decoration-color: var(--u-baseline); text-underline-offset: 3px; }
 a:hover { color: var(--u-signal-text); text-decoration-color: var(--u-signal-text); }
@@ -58,92 +85,74 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 
 /* ── hero ── headline ≤ 2 lines, one signal accent, one supporting sentence ── */
 .hero { padding: 72px 0 40px; }
+/* UMB-LAY-006 — a section label is mono, lowercase, caption. It was uppercase
+   with 0.04em tracking until v1.2.0 made the minimal idiom normative. */
 .kicker {
-  font-family: var(--u-font-mono); font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--u-caption);
-  margin-bottom: 16px;
+  font-family: var(--u-font-mono); font-size: var(--u-size-label);
+  text-transform: lowercase; color: var(--u-caption);
+  margin-bottom: var(--u-space-2);
 }
 .hero h1 { font-size: clamp(40px, 5.5vw, 56px); line-height: 1.1; }
 .hero .accent { color: var(--u-signal); display: block; }  /* deliberate 2-line hero */
 .lede { max-width: 65ch; margin-top: 24px; color: var(--u-muted); font-size: 17px; }
 
-/* ── stats — numbers carry the argument (brand §2; KPI spec engineering §3) ── */
+/* ── stats ── the KPI row is .u-kpi from the component sheet. Its figures are
+   MONO, not display: a KPI row exists to be read column against column, and
+   tabular mono is what makes the digits line up (UMB-TYP-004). They were set in
+   Space Grotesk until v1.6.0 shipped the component. The label order is handled
+   by .u-kpi's column flex, so nothing here restates it. */
 .statrow {
-  display: flex; flex-wrap: wrap; gap: 40px;
-  margin-top: 40px; padding-top: 24px;
+  display: flex; flex-wrap: wrap; gap: var(--u-space-5);
+  margin-top: var(--u-space-5); padding-top: var(--u-space-3);
   border-top: var(--u-rule) solid var(--u-border);
 }
-.stat .stat-label {
-  display: block;
-  font-family: var(--u-font-mono); font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--u-caption);
-  margin-bottom: 8px;
-}
-.stat .stat-value {
-  display: block;
-  font-family: var(--u-font-display); font-weight: var(--u-weight-display);
-  font-size: 32px; letter-spacing: var(--u-tracking-display);
-  font-variant-numeric: tabular-nums;
-  line-height: 1.1;
-}
 
-/* ── controls ── flat bordered controls, no pills (engineering §3) ── */
-.controls { margin: 48px 0; }
-.searchrow input[type="search"] {
+/* ── controls ── UMB-LAY-008. The forms come from components.css: the markup
+   carries .u-input / .u-select / .u-btn and this file only sizes and lays out
+   the search row. Nothing below re-declares a border, a radius or a focus
+   colour — that is the component sheet's job, and duplicating it is how the
+   two drift apart. */
+.controls { margin: var(--u-space-6) 0; }
+/* The primary search field is the page's main affordance, so it is bigger than
+   the .u-input default and full-width. Everything else it inherits. */
+.searchrow .u-input {
   width: 100%;
-  padding: 16px;
-  font: 16px var(--u-font-body);
-  color: var(--u-ink);
-  background: var(--u-panel);
-  border: var(--u-rule) solid var(--u-baseline);
-  border-radius: var(--u-radius);
+  padding: var(--u-space-2);
+  font-size: var(--u-size-body);
   -webkit-appearance: none; appearance: none;
 }
-.searchrow input::placeholder { color: var(--u-caption); }
-.searchrow input:focus { border-color: var(--u-signal); outline: none; }
 .filterrow {
-  display: flex; flex-wrap: wrap; gap: 16px 24px; align-items: end;
-  margin-top: 24px; font-size: 13px; color: var(--u-muted);
+  display: flex; flex-wrap: wrap; gap: var(--u-space-2) var(--u-space-3); align-items: end;
+  margin-top: var(--u-space-3); font-size: var(--u-size-label); color: var(--u-muted);
 }
-.filterrow label { display: flex; flex-direction: column; gap: 8px; }
+.filterrow label { display: flex; flex-direction: column; gap: var(--u-space-1); }
 .filterrow .field-label {
-  font-family: var(--u-font-mono); font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--u-caption);
+  font-family: var(--u-font-mono); font-size: var(--u-size-label);
+  text-transform: lowercase; color: var(--u-caption);
 }
-.filterrow select, .filterrow input[type="date"] {
-  min-height: 44px;                        /* touch target (engineering §4) */
-  padding: 8px 12px;
-  font: 14px var(--u-font-body);
-  color: var(--u-ink);
-  background: var(--u-panel);
-  border: var(--u-rule) solid var(--u-border);
-  border-radius: var(--u-radius);
-}
-.filterrow select:hover, .filterrow input[type="date"]:hover { border-color: var(--u-baseline); }
-.btn-secondary {
-  min-height: 44px;
-  padding: 13px 26px;                      /* button spec */
-  font: 500 14px var(--u-font-display);
-  letter-spacing: var(--u-tracking-display);
-  color: var(--u-ink);
-  background: transparent;
-  border: var(--u-rule) solid var(--u-baseline);
-  border-radius: var(--u-radius);
-  cursor: pointer;
-}
-.btn-secondary:hover { color: var(--u-signal-text); border-color: var(--u-signal); }
+/* A date input is a .u-input; it only needs its intrinsic width unset here. */
+.filterrow .u-input[type="date"] { font-family: var(--u-font-mono); }
 
-/* ── results ── */
-.result-count { font-size: 12px; color: var(--u-caption); margin-bottom: 24px; }
-.result-list { list-style: none; padding: 0; display: flex; flex-direction: column; gap: 16px; }
+/* ── results ── UMB-LAY-007: a list of items is rows separated by 1px rules,
+   not cards. These were panel-filled bordered boxes with 24px padding until
+   v1.2.0 made the minimal idiom normative. The list carries .u-rows from the
+   component sheet; the row is block rather than .u-row's flex, because a result
+   stacks meta / text / summary / link instead of pairing a label with a figure.
+   The box is the same one .u-row draws: vertical padding, a 1px bottom rule,
+   no fill and no border. */
+.result-count {
+  font-family: var(--u-font-mono); font-size: var(--u-size-label);
+  text-transform: lowercase; color: var(--u-caption);
+  margin-bottom: var(--u-space-2);
+}
+.result-list { list-style: none; margin: 0; padding: 0; }
 .result {
-  background: var(--u-panel);
-  border: var(--u-rule) solid var(--u-border);
-  padding: 24px;                           /* card spec: 24–32px */
+  padding: var(--u-space-3) 0;
+  border-bottom: var(--u-rule) solid var(--u-border);
 }
 .result .meta {
-  display: flex; flex-wrap: wrap; gap: 8px 24px; align-items: baseline;
-  font-size: 12px; color: var(--u-muted); margin-bottom: 16px;
+  display: flex; flex-wrap: wrap; gap: var(--u-space-1) var(--u-space-3); align-items: baseline;
+  font-size: var(--u-size-axis); color: var(--u-muted); margin-bottom: var(--u-space-2);
 }
 .result .meta .fecha { color: var(--u-ink); }
 .result .texto { max-width: 65ch; text-wrap: pretty; }
@@ -175,13 +184,13 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .result .resumen { margin-top: 12px; }
 .sentido {
   font-family: var(--u-font-mono);
-  font-size: 12px; letter-spacing: 0.04em; text-transform: uppercase;
+  font-size: var(--u-size-axis); text-transform: lowercase;
   color: var(--u-caption);
   white-space: nowrap;
 }
 .sentido::before { content: "· "; }
 .sentido.sd-alert { color: var(--u-alert-text); }
-.sentido.sd-open { text-transform: none; letter-spacing: 0; font-style: italic; }
+.sentido.sd-open { font-style: italic; }
 .resumen-nota {
   margin: 8px 0 20px 160px;
   font-size: 12px; color: var(--u-caption); font-style: italic;
@@ -190,19 +199,6 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 
 /* ── Phase 2: full-content search over OCR text ── */
 .fulltext { margin-top: 40px; }
-.ft-btn {
-  width: 100%;
-  padding: 14px 16px;
-  font: 500 14px var(--u-font-display);
-  letter-spacing: var(--u-tracking-display);
-  text-align: left;
-  color: var(--u-ink);
-  background: transparent;
-  border: var(--u-rule) solid var(--u-baseline);
-  border-radius: var(--u-radius);
-  cursor: pointer;
-}
-.ft-btn:hover { color: var(--u-signal-text); border-color: var(--u-signal); }
 .ft-intro {
   font-size: 12px; color: var(--u-caption);
   padding-top: 16px; margin-bottom: 16px;
@@ -349,9 +345,17 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   padding: 32px;
 }
 .site-footer p {
-  font-family: var(--u-font-mono); font-size: 12px; color: var(--u-caption);
+  font-family: var(--u-font-mono); font-size: var(--u-size-source); color: var(--u-caption);
   max-width: 880px; margin: 0 auto;
 }
+/* The footer carries the site's own source line, in the same two-sided form the
+   charts use (UMB-CHT-003): origin on the left, site on the right. */
+.foot-src {
+  display: flex; flex-wrap: wrap; gap: var(--u-space-1) var(--u-space-2);
+  justify-content: space-between; align-items: baseline;
+  padding-bottom: var(--u-space-1);
+}
+.site-footer p + p { margin-top: var(--u-space-1); }
 
 @media (max-width: 720px) {
   .site-header { padding: 16px; }
@@ -381,19 +385,53 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
    in §01 — because that figure is the condition for reading everything else.
    ════════════════════════════════════════════════════════════════════════════ */
 
-.fig { margin: 32px 0 0; }
+.fig { margin: var(--u-space-4) 0 0; }
 .fig-title {
-  font-size: 22px; line-height: 1.25; max-width: 60ch;   /* 22–26px per brand */
+  font-size: var(--u-size-chart-title); line-height: 1.25; max-width: 60ch;
 }
+/* UMB-CHT-002 (v2.0.0) — the subtitle says how the figure is BUILT: the
+   transformation, the unit, the scope and the period. It used to be
+   `geografía · periodo · unidad`, which named no transformation. */
 .fig-sub {
-  margin-top: 8px; max-width: 65ch;
-  color: var(--u-muted); font-size: 15px;
+  margin-top: var(--u-space-1); max-width: 65ch;
+  color: var(--u-muted); font-size: var(--u-size-body-small);
 }
-.fig-body { margin-top: 24px; }
+.fig-body { margin-top: var(--u-space-3); }
+
+/* UMB-CHT-003 (v2.0.0) — the source line has two sides above one 1px rule:
+   where the data came from and when it was read on the left, the site on the
+   right. It carries neither the licence nor the snapshot tag any more; those
+   moved to the page (UMB-DAT-004, UMB-DAT-002). Five fields on one line did
+   not survive a social card or a slide. It stacks rather than colliding when
+   the column is narrow. */
 .fig-src {
-  margin-top: 16px; padding-top: 8px;
+  margin-top: var(--u-space-2); padding-top: var(--u-space-1);
   border-top: var(--u-rule) solid var(--u-border);
-  font-size: 12px; color: var(--u-caption);
+  font-size: var(--u-size-source); color: var(--u-caption);
+  display: flex; flex-wrap: wrap; gap: var(--u-space-1) var(--u-space-2);
+  justify-content: space-between; align-items: baseline;
+}
+.fig-src .fig-src-origen { max-width: 65ch; }
+.fig-src .fig-src-sitio { flex: 0 0 auto; }
+
+/* ── .explica — a prose block, NOT a figure ──
+   The methodology page had four blocks wearing .fig: one real chart and three
+   that were a heading, a paragraph and a reference table. Wearing the chart
+   frame made them subject to UMB-CHT-002 and UMB-CHT-003, which they failed and
+   could not honestly pass: a table describing our own pipeline has no external
+   source, and naming the Ayuntamiento as one would credit it with a claim it
+   never made. So the frame now means "figure over data", and .explica carries
+   the same typography without the promise. */
+.explica { margin: var(--u-space-4) 0 0; }
+.explica-title { font-size: var(--u-size-chart-title); line-height: 1.25; max-width: 60ch; }
+.explica-sub {
+  margin-top: var(--u-space-1); max-width: 65ch;
+  color: var(--u-muted); font-size: var(--u-size-body-small);
+}
+.explica-src {
+  margin-top: var(--u-space-2); padding-top: var(--u-space-1);
+  border-top: var(--u-rule) solid var(--u-border);
+  font-size: var(--u-size-source); color: var(--u-caption);
 }
 
 /* ── horizontal bars ── rounded data-end only, anchored to the baseline ── */
@@ -499,36 +537,19 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .datos > summary::before { content: "+ "; font-family: var(--u-font-mono); }
 .datos[open] > summary::before { content: "− "; }
 .datos > summary:hover { color: var(--u-signal); }
-.tabla { width: 100%; border-collapse: collapse; font-size: 14px; }
-.tabla th, .tabla td {
-  text-align: left; padding: 8px 16px 8px 0;
-  border-bottom: var(--u-rule) solid var(--u-border);
-}
-.tabla th {
-  font-family: var(--u-font-mono); font-size: 12px; letter-spacing: 0.04em;
-  text-transform: uppercase; color: var(--u-caption); font-weight: 500;
-  border-bottom-color: var(--u-ink);
-}
-.tabla .num { text-align: right; font-variant-numeric: tabular-nums; }
+/* The table twin is a .u-table from the component sheet. It already gives the
+   mono lowercase header, the 2px baseline under it, the 1px row rules and the
+   right-aligned tabular figures, so all that is left here is the cell padding
+   this layout wants. Figure columns carry data-numeric, not .num. */
+.u-table th, .u-table td { padding-left: 0; padding-right: var(--u-space-2); }
+.u-table td:last-child, .u-table th:last-child { padding-right: 0; }
 
 /* ── colonia lookup ── */
-.col-buscador { margin-bottom: 24px; }
-.col-buscador input {
-  width: 100%; padding: 12px 16px;
-  font: 15px var(--u-font-body); color: var(--u-ink);
-  background: var(--u-panel);
-  border: var(--u-rule) solid var(--u-border); border-radius: 0;
-}
-.col-buscador input:focus-visible { border-color: var(--u-signal); }
-.colonia-list { list-style: none; padding: 0; }
-.col-mas { margin-top: 16px; }
-.colonia-item {
-  display: flex; align-items: baseline; justify-content: space-between; gap: 16px;
-  padding: 10px 0; border-bottom: var(--u-rule) solid var(--u-border);
-}
-.colonia-nombre { font-size: 15px; }
-.colonia-n { font-size: 13px; color: var(--u-caption); white-space: nowrap; }
-.colonia-vacio { padding: 16px 0; font-size: 14px; color: var(--u-muted); }
+/* The colonia lookup is .u-input over .u-rows / .u-row — the component sheet
+   draws the field, the rules and the tabular figure. Only the width is ours. */
+.col-buscador { margin-bottom: var(--u-space-3); }
+.col-buscador .u-input { width: 100%; padding: var(--u-space-1) var(--u-space-2); }
+.col-mas { margin-top: var(--u-space-2); }
 
 @media (max-width: 720px) {
   .barra-row { grid-template-columns: 1fr auto; gap: 4px 12px; }
@@ -536,5 +557,5 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   .fig-title { font-size: 20px; }
   .cols-grid { height: 140px; }
   .cols-ytick { position: static; padding: 0; }
-  .tabla { display: block; overflow-x: auto; }
+  .u-table { display: block; overflow-x: auto; }
 }

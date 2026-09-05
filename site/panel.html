@@ -8,6 +8,7 @@
   <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/tokens.css">
+  <link rel="stylesheet" href="assets/components.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -89,6 +90,12 @@
     cantidades son sólo las que el acta enuncia de forma explícita — nunca un total
     calculado y presentado como oficial. Cada cifra enlaza al acta original para
     verificarla.</p>
+    <!-- UMB-DAT-002 / UMB-DAT-004 — the snapshot tag and the licence live on the
+         page, not in every chart's source line. v2.0.0 took them off the charts
+         so the line survives a social card or a slide. -->
+    <p class="snapshot" id="snapshot"></p>
+    <p class="snapshot">Código MIT · estructura y datos derivados CC BY 4.0 · el texto de las
+    actas es del Ayuntamiento de Colima y se atribuye a su fuente.</p>
     <p>Cómo se construye este archivo, qué problemas hubo que resolver y qué no se puede medir:
     <a href="metodologia.html">metodología pública</a>. El detalle técnico está en la
     <a href="https://github.com/umbralmx/cabildo-libre/blob/main/docs/metodologia.md" rel="external">metodología completa</a>
@@ -97,8 +104,9 @@
 </main>
 
 <footer class="site-footer">
-  <p>Fuente: Ayuntamiento de Colima, actas de cabildo · umbral.mx · estructura CC BY 4.0
-  · proyecto independiente, sin relación con el Ayuntamiento</p>
+  <p class="foot-src"><span>Fuente: Elaboración propia con datos del Ayuntamiento de Colima
+  (actas de cabildo).</span><span>umbral.org.mx</span></p>
+  <p>Proyecto independiente, sin relación con el Ayuntamiento.</p>
 </footer>
 
 <script src="panel.js"></script>

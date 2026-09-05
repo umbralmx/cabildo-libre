@@ -410,13 +410,13 @@ function renderFulltext(ms) {
   const totalActas = state.ftIndex.actas.length;
   el.innerHTML = `
     <p class="ft-intro mono">Texto completo · «${q}» — ${totalOcc} ${totalOcc === 1 ? "coincidencia" : "coincidencias"} en ${results.length} de ${totalActas} ${totalActas === 1 ? "acta procesada" : "actas procesadas"}. El OCR abarca ${totalActas} de ${actasDelTermino(TERMINO_OCR)} actas del término ${TERMINO_OCR}; el resto se irá incorporando.</p>
-    <ol class="result-list">${results.map((r) => `
+    <ol class="result-list u-rows">${results.map((r) => `
       <li class="result ft-result">
         <p class="meta mono"><span class="fecha">${fechaLarga(r.acta.fecha)}</span><span>Acta ${r.acta.no_acta ?? "s/n"}</span><span>${r.count} ${r.count === 1 ? "coincidencia" : "coincidencias"}${r.shown < r.count ? ` · se muestran ${r.shown}` : ""}</span></p>
         ${r.snippets.map((s) => `<p class="texto ft-snip">${highlight(s, ms)}</p>`).join("")}
         ${state.summaries[r.acta.id] ? actaDetalleHTML(r.acta.id, "Ver texto completo (OCR) de esta acta →") : ""}
         ${r.acta.pdf_url ? `<a class="acta-link" href="${esc(r.acta.pdf_url)}" rel="external">Ver acta original (PDF) →</a>` : ""}
-      </li>`).join("") || `<li class="result"><p class="texto nota">Ninguna de las ${totalActas} actas con texto completo contiene «${q}».</p></li>`}</ol>`;
+      </li>`).join("") || `<li class="u-empty">Ninguna de las ${totalActas} actas con texto completo contiene «${q}».</li>`}</ol>`;
 }
 
 function renderTimeline() {
@@ -540,9 +540,9 @@ function renderStats(generado) {
     ["Administraciones", periodos],
   ];
   $("#statrow").innerHTML = stats.map(([label, value]) => `
-    <div class="stat">
-      <span class="stat-label">${label}</span>
-      <span class="stat-value">${value}</span>
+    <div class="u-kpi">
+      <span class="u-kpi__label">${label}</span>
+      <span class="u-kpi__value">${value}</span>
     </div>`).join("");
 
   if (generado) {
