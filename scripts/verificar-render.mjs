@@ -24,6 +24,29 @@ let bad = 0;
 const fail = (m) => { bad++; console.log(`  ✗ ${m}`); };
 const ok = (m) => console.log(`  ✓ ${m}`);
 
+/**
+ * Lee la retícula de puntos de una hoja, venga escrita o minificada.
+ *
+ * El empaquetador de Framework escribe `body:before` con un solo dos puntos y
+ * `opacity:.55` sin el cero, así que comparar el texto tal cual daba una
+ * diferencia donde no la hay. Se normaliza antes de comparar.
+ */
+function reticula(css) {
+  const b = (css.match(/body::?before\s*\{([\s\S]*?)\}/) || [])[1] ?? "";
+  const g = (n) => {
+    const v = (b.match(new RegExp(`${n}\\s*:\\s*([^;}]+)`)) || [])[1]?.trim();
+    if (v === undefined) return undefined;
+    // `.55` y `0.55` son el mismo número; los espacios alrededor de una coma
+    // tampoco cambian nada. Se compara el valor, no cómo se escribió.
+    return v
+      .replace(/(^|[\s(,])\.(\d)/g, "$10.$2")
+      .replace(/\s*,\s*/g, ",")
+      .replace(/\s+/g, " ")
+      .trim();
+  };
+  return {opacity: g("opacity"), size: g("background-size"), image: g("background-image")};
+}
+
 /* ── 1. Las dos páginas estáticas ──────────────────────────────────────── */
 for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "metodologia.js"]]) {
   console.log(`\n── ${page} (instrumento) ──`);
@@ -79,6 +102,15 @@ for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "me
     : ok(`hoja ${tok("--u-sheet")}, columna ${tok("--u-column")}, margen ${tok("--u-edge")}`);
   if (!/\.u-sheet\s*\{[^}]*max-width:\s*var\(--u-sheet\)/.test(hoja)) fail(".u-sheet no usa --u-sheet");
   if (!/^main\s*\{[^}]*max-width:\s*var\(--u-column\)/m.test(hoja)) fail("main no usa --u-column");
+
+  // La retícula de puntos tiene que pesar lo mismo en las dos superficies. La
+  // opacidad faltaba aquí y estaba en el panel, así que los puntos del margen
+  // cambiaban de peso al navegar. Es mobiliario (UMB-LAY-009): tiene que
+  // desaparecer igual en las dos.
+  const r = reticula(hoja);
+  r.opacity === "0.55"
+    ? ok(`retícula: opacidad ${r.opacity}, paso ${r.size}`)
+    : fail(`la retícula tiene opacidad ${r.opacity ?? "sin declarar"}, el panel usa 0.55`);
 
   // Sin barra de encabezado: la marca y las pestañas viven en el contenido.
   if (d.querySelector(".site-header")) fail("sigue habiendo una barra de encabezado");
@@ -155,7 +187,15 @@ console.log("\n── panel (Observable Framework · instrumento) ──");
       const got = (sheetCss.match(new RegExp(`${tok}:\\s*([^;]+)`)) || [])[1]?.trim();
       if (got !== esperado) fail(`el panel declara ${tok}: ${got ?? "—"}, el sitio usa ${esperado}`);
     }
-    ok("el panel comparte hoja, columna y margen con las páginas estáticas");
+    // La retícula del panel, comparada contra la del sitio declaración por
+    // declaración: no basta con que las dos existan, tienen que pesar igual.
+    // La retícula del panel contra la del sitio, declaración por declaración:
+    // no basta con que las dos existan, tienen que pesar igual.
+    const rp = reticula(sheetCss);
+    const rs = reticula(readFileSync(DIR + "styles.css", "utf8"));
+    const difs = ["opacity", "size", "image"].filter((k) => rp[k] !== rs[k]);
+    difs.forEach((k) => fail(`la retícula difiere en ${k}: sitio "${rs[k] ?? "—"}" vs panel "${rp[k] ?? "—"}"`));
+    if (!difs.length) ok(`retícula idéntica en las dos superficies (opacidad ${rp.opacity})`);
   }
   // La URL vieja sigue resolviendo.
   const redir = readFileSync(DIR + "panel.html", "utf8");

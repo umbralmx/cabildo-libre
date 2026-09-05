@@ -69,6 +69,11 @@ body::before {
   pointer-events: none;
   background-image: radial-gradient(var(--u-baseline) 1px, transparent 1.6px);
   background-size: 22px 22px;
+  /* El mismo valor que el panel y que el resto de los instrumentos. El capítulo
+     de la guía no lo trae; `baseline` puro deja los puntos más presentes de lo
+     que un mobiliario debe estar, sobre todo en fondo oscuro. Faltaba aquí y
+     estaba en el panel, así que los puntos cambiaban de peso al navegar. */
+  opacity: 0.55;
 }
 .u-sheet {
   position: relative;

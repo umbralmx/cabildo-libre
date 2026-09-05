@@ -397,6 +397,21 @@ Las etiquetas son mono y en minúsculas, como el resto de las etiquetas de
 estructura (UMB-LAY-006): *buscador · panel por administración · metodología ·
 fuente oficial*. Las cuatro páginas llevan las cuatro, en el mismo orden.
 
+### La retícula de puntos
+
+La opacidad estaba en el panel y faltaba en las páginas estáticas, así que los
+puntos del margen cambiaban de peso al navegar. Las dos usan ahora `opacity:
+0.55`, que es lo que usa `desaparecidosmx`. El capítulo de la guía no trae ese
+valor: `baseline` puro deja el mobiliario más presente de lo que debe estar,
+sobre todo en fondo oscuro.
+
+`verificar-render.mjs` compara las tres declaraciones —opacidad, paso y
+gradiente— entre las dos superficies. La comparación **normaliza** antes de
+comparar, porque el empaquetador de Framework escribe `body:before` con un solo
+dos puntos, `opacity:.55` sin el cero y sin espacio tras la coma del gradiente:
+comparar el texto tal cual daba una diferencia donde no la había. Se compara el
+valor, no cómo se escribió.
+
 ### El titular
 
 Bajó de `clamp(40px, 5.5vw, 56px)` a `clamp(30px, 4.4vw, 46px)` con `max-width:
