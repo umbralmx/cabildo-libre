@@ -4,17 +4,51 @@ Registro de cómo se aplicó el manual de marca (`assets/CLAUDE.md`) y
 `assets/umbral-engineering.md` a este sitio, y de las decisiones que requirieron
 interpretación. Última revisión: **2026-09-04** (sistema Umbral **v2.0.0**).
 
-**Modos: los dos, uno por superficie.** UMB-COL-011 dice que el modo lo fija el
-medio, y la tabla de superficies de la guía reparte así:
+**Modo: instrumento, en todo el proyecto.**
 
 | Superficie | Archivos | Modo |
 |---|---|---|
-| Web — lectura y documento | `site/index.html`, `site/metodologia.html` | **laboratorio** |
-| Observable Framework — el tablero | `panel/` → `site/panel/` | **instrumento** |
+| Buscador y metodología | `site/*.html` | **instrumento** |
+| El tablero (Observable Framework) | `panel/` → `site/panel/` | **instrumento** |
 
 Este registro dijo durante un tiempo «no hay modo instrumento en este proyecto».
 Era falso, y de la peor manera: no por un descuido de implementación sino por no
-haber leído la tabla. El panel es un tablero, y un tablero va en instrumento.
+haber leído la tabla de superficies.
+
+### Por qué todo el proyecto va en instrumento (desviación deliberada)
+
+La tabla de superficies de la guía pone `web` en laboratorio, así que poner las
+páginas estáticas en instrumento **se aparta de ella**. Queda anotado aquí y no
+se disimula.
+
+El razonamiento es el que `desaparecidosmx` usó para revertir exactamente esta
+decisión el mismo día que la tomó: *«la tabla de superficies es la regla más
+específica, y esta página es un monitor sobre un registro vivo, no una página
+sobre el proyecto.»* Aquí aplica igual. `cabildo-libre` no es un micrositio que
+habla de un proyecto: es la superficie de consulta sobre el registro de actas de
+un ayuntamiento, y en el vocabulario del laboratorio es un **instrumento**. Un
+instrumento con la mitad de sus páginas claras y la otra mitad oscuras no es un
+instrumento: son dos cosas con el mismo dominio.
+
+Lo que UMB-COL-011 sí exige, y esto cumple, es que el modo sea **uno solo por
+artefacto** y que lo fije el medio y no el `prefers-color-scheme` del lector.
+Media superficie clara y media oscura es justo el defecto que la regla existe
+para evitar, y era el estado en que quedó el proyecto cuando sólo se movió el
+panel. `verificar_marca.py` lo comprueba página por página.
+
+**Qué costó el cambio: nada de color.** Ni una regla de `styles.css` se tocó.
+Los 63 usos de color de la hoja salen de tokens, y `tokens.css` los redefine bajo
+`[data-mode="instrumento"]`; el cambio es un atributo en el `<html>` de cada
+página. Eso es exactamente lo que la cadena de tokens existe para permitir, y la
+primera vez que este proyecto lo cobra.
+
+**El atributo va en el HTML, no en el JavaScript.** Si lo pusiera un script, la
+página pintaría en claro y se oscurecería después, a la vista del lector.
+
+**Contraste: mejora.** La auditoría pasa 44 de 44 pares en los dos modos, y en
+instrumento la mayoría mejora — `signal` sobre `base` sube de 4.22:1 a 10.30:1.
+El isotipo pasa a la variante `-dark`, que es la marca clara (`#5fd4c4`) para
+fondo oscuro.
 
 ## Presupuesto de signal — la decisión de más criterio
 
@@ -261,9 +295,10 @@ mal y ninguna era una elección: eran una lectura que no se hizo.
 
 ### Qué se movió y qué no
 
-Sólo el panel. El buscador y la metodología **no** son tableros —son lectura y
-documento— y se quedan en la superficie web, en laboratorio. La frontera no es de
-conveniencia: la fija la tabla de superficies.
+Sólo el panel cambió de *tecnología*: es el único que necesitaba Observable Plot
+y un tiempo de ejecución de tablero. El **modo**, en cambio, es instrumento en
+todo el proyecto (ver arriba); dejar las páginas estáticas en laboratorio habría
+partido el instrumento en dos.
 
 ### El modo vive en tres lugares y tienen que coincidir
 

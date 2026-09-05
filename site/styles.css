@@ -1,5 +1,17 @@
-/* Actas Abiertas — Umbral modo laboratorio (light).
+/* Actas Abiertas — Umbral **modo instrumento** (oscuro).
    Umbral design system v2.0.0.
+
+   Todo el instrumento va en instrumento, incluidas estas páginas web. Es una
+   desviación deliberada de la tabla de superficies, que pone `web` en
+   laboratorio; el porqué está en docs/diseno.md. En resumen: esto no es una
+   página *sobre* el proyecto, es la superficie de consulta sobre un registro
+   público, y `cabildo-libre` es un instrumento de Umbral, no un documento.
+
+   El modo lo fija `data-mode="instrumento"` en el <html> de cada página —en el
+   HTML, no por JavaScript, o la página parpadearía en claro antes de
+   oscurecerse—. Esta hoja no cambia con el modo: cada color sale de un token y
+   tokens.css los redefine bajo [data-mode="instrumento"]. Por eso el cambio no
+   tocó una sola regla de color aquí.
 
    This file layers ON TOP of assets/components.css, which is the guide's own
    authored component sheet (the ten forms a data surface needs, v1.6.0). The

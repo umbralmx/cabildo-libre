@@ -24,9 +24,9 @@ let bad = 0;
 const fail = (m) => { bad++; console.log(`  ✗ ${m}`); };
 const ok = (m) => console.log(`  ✓ ${m}`);
 
-/* ── 1. Las dos superficies web, en laboratorio ────────────────────────── */
+/* ── 1. Las dos páginas estáticas ──────────────────────────────────────── */
 for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "metodologia.js"]]) {
-  console.log(`\n── ${page} (web · laboratorio) ──`);
+  console.log(`\n── ${page} (instrumento) ──`);
   const dom = new JSDOM(readFileSync(DIR + page, "utf8"),
     {url: BASE + page, runScripts: "outside-only", pretendToBeVisual: true});
   const w = dom.window;
@@ -52,8 +52,15 @@ for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "me
   if (/umbral\.mx(?!\w)/.test(d.body.textContent.replace(/umbral\.org\.mx/g, ""))) fail("umbral.mx sigue en pantalla");
   ok("licencia en la página · dominio umbral.org.mx");
 
-  // Esta superficie es laboratorio: no debe declararse instrumento.
-  if (d.documentElement.dataset.mode === "instrumento") fail("una superficie de lectura en modo instrumento");
+  // Todo el instrumento va en modo instrumento, y el atributo tiene que venir
+  // en el HTML: si lo pusiera el JavaScript, la página parpadearía en claro
+  // antes de oscurecerse.
+  d.documentElement.dataset.mode === "instrumento"
+    ? ok('data-mode="instrumento" en el HTML')
+    : fail(`la página no declara modo instrumento (data-mode="${d.documentElement.dataset.mode ?? ""}")`);
+  // El isotipo claro sobre fondo oscuro es el archivo `-dark`.
+  const iso = d.querySelector(".brand img");
+  if (iso && /isotype-light/.test(iso.getAttribute("src") ?? "")) fail("isotipo de fondo claro sobre fondo oscuro");
   w.close();
 }
 

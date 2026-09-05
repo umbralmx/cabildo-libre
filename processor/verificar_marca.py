@@ -234,15 +234,40 @@ def deriva_de_tokens(guia: Path | None) -> list[Hallazgo]:
     return out
 
 
-def panel_instrumento(guia: Path | None) -> list[Hallazgo]:
-    """El panel es un tablero, y la tabla de superficies asigna al tablero el
-    modo **instrumento**. El buscador y la metodología son lectura y documento,
-    y se quedan en laboratorio (UMB-COL-011: el modo lo fija el medio).
+def modo_instrumento() -> list[Hallazgo]:
+    """**Todo el instrumento va en modo instrumento**, no sólo el panel.
 
-    El modo vive en tres lugares y los tres tienen que coincidir. Si uno se
-    mueve solo, la página pinta medio clara y medio oscura, o parpadea en claro
-    antes de oscurecerse.
+    Es una desviación deliberada de la tabla de superficies, que pone `web` en
+    laboratorio; el porqué está en docs/diseno.md. Lo que la regla sí exige, y
+    esto comprueba, es que el modo sea **uno solo por artefacto** y que lo fije
+    el medio y no el `prefers-color-scheme` del lector (UMB-COL-011). Media
+    superficie clara y media oscura es el defecto que la regla existe para
+    evitar, y es exactamente lo que pasa si una página se queda atrás.
+
+    El atributo tiene que venir en el HTML. Si lo pusiera el JavaScript, la
+    página parpadearía en claro antes de oscurecerse.
     """
+    out: list[Hallazgo] = []
+    for p in sorted(SITE.glob("*.html")):
+        html = _lee(p)
+        if 'data-mode="instrumento"' not in html:
+            out.append(Hallazgo("modo", "ERROR",
+                                f"{p.name} no declara modo instrumento en su <html>"))
+        if "umbral-isotype-light.svg" in html:
+            out.append(Hallazgo("modo", "ERROR",
+                                f"{p.name} usa el isotipo de fondo claro sobre fondo oscuro"))
+        if "prefers-color-scheme" in html:
+            out.append(Hallazgo("modo", "ERROR",
+                                f"{p.name} deja el modo al sistema del lector (UMB-COL-011)"))
+    if "prefers-color-scheme" in _lee(SITE / "styles.css"):
+        out.append(Hallazgo("modo", "ERROR",
+                            "styles.css empareja un tema claro y uno oscuro (UMB-COL-011)"))
+    return out
+
+
+def panel_instrumento(guia: Path | None) -> list[Hallazgo]:
+    """El panel, además, es una app de Observable Framework: su modo vive en
+    tres lugares y los tres tienen que coincidir."""
     out: list[Hallazgo] = []
     fmt_js = _lee(PANEL / "components" / "format.js")
     chrome = _lee(PANEL / "components" / "chrome.js")
@@ -308,6 +333,7 @@ def main() -> int:
     hallazgos += etiquetas_en_minuscula()
     hallazgos += licencia_en_pagina()
     hallazgos += deriva_de_tokens(args.guia)
+    hallazgos += modo_instrumento()
     hallazgos += panel_instrumento(args.guia)
 
     errores = [h for h in hallazgos if h.severidad == "ERROR"]

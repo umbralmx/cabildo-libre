@@ -6,6 +6,45 @@
 
 ---
 
+## 2026-09-05 — Un instrumento a medias claro no es un instrumento
+
+**La corrección.** Se había movido sólo el panel a modo instrumento, apoyándose en
+que la tabla de superficies pone `web` en laboratorio. El mantenedor lo corrigió:
+**todas** las páginas de cabildo-libre van en instrumento. Tiene razón, y por una
+razón que la tabla no alcanza a ver.
+
+`cabildo-libre` no es un micrositio que habla de un proyecto: es la superficie de
+consulta sobre el registro de actas de un ayuntamiento. En el vocabulario del
+laboratorio es un **instrumento**. Es el mismo razonamiento con que
+`desaparecidosmx` revirtió esta decisión el mismo día que la tomó: «la tabla de
+superficies es la regla más específica, y esta página es un monitor sobre un
+registro vivo, no una página sobre el proyecto.»
+
+Y hay un argumento más fuerte todavía. Lo que UMB-COL-011 exige es **un solo modo
+por artefacto**. Dejar el buscador en claro y el panel en oscuro producía media
+superficie de cada color bajo el mismo dominio — exactamente el defecto que la
+regla existe para evitar. La desviación no era poner todo en instrumento: era
+haberlo partido en dos.
+
+**Lo que costó.** Ni una regla de color. Los 63 usos de color de `styles.css` salen
+de tokens, y `tokens.css` los redefine bajo `[data-mode="instrumento"]`. El cambio
+completo es un atributo en el `<html>` de cada página, más el isotipo en su variante
+`-dark` (la marca clara, `#5fd4c4`, para fondo oscuro). Es la primera vez que este
+proyecto cobra lo que la cadena de tokens venía prometiendo.
+
+**El atributo va en el HTML, no en el JavaScript**, o la página pinta en claro y se
+oscurece a la vista del lector.
+
+**Contraste: mejora.** 44 de 44 pares pasan en los dos modos, y en instrumento la
+mayoría sube: `signal` sobre `base` pasa de 4.22:1 a 10.30:1.
+
+**La puerta.** `verificar_marca.py` gana una comprobación que recorre página por
+página: cada `site/*.html` declara instrumento, ninguna usa el isotipo claro, y
+ninguna —ni la hoja— empareja un tema con `prefers-color-scheme`. La desviación
+respecto de la tabla queda anotada en `docs/diseno.md`, no disimulada.
+
+---
+
 ## 2026-09-05 — El panel era HTML a mano en modo claro, y debía ser un tablero
 
 **El reclamo, y tenía razón.** Después de dar por terminada la migración de marca,
