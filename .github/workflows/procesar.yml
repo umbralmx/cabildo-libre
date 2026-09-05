@@ -134,10 +134,15 @@ jobs:
       contents: read
       pages: write
       id-token: write
-    # Mismo grupo que `actualizar.yml`: dos despliegues a Pages hacen cola, no se pisan.
+    # Mismo grupo que `actualizar.yml`: los despliegues no se pisan. Uno nuevo
+    # **reemplaza** al anterior en vez de hacer cola detrás de él — de un
+    # despliegue sólo importa el último. Ver la nota en `actualizar.yml`: con
+    # `false`, una corrida atascada en `waiting` bloqueó el grupo un mes entero.
+    # El grupo `procesar` de arriba sí sigue en `false`: ese job cuesta dinero y
+    # 330 minutos, y no se cancela por un despliegue.
     concurrency:
       group: pages
-      cancel-in-progress: false
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

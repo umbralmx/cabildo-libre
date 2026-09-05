@@ -15,8 +15,12 @@ permissions:
   pages: write
   id-token: write
 
+# El scrape escribe en git, así que dos corridas no deben solaparse y ninguna
+# debe cancelarse a media escritura. El grupo de despliegue va en el job
+# `publicar`, no aquí: cuando estaba a nivel de workflow, un push podía cancelar
+# un re-scrapeo en curso.
 concurrency:
-  group: pages
+  group: actualizar
   cancel-in-progress: false
 
 jobs:
@@ -41,6 +45,17 @@ jobs:
     needs: actualizar
     if: ${{ always() && needs.actualizar.result != 'failure' }}
     runs-on: ubuntu-latest
+    # Mismo grupo que `procesar.yml`: los despliegues no se pisan. Pero uno nuevo
+    # **reemplaza** al anterior en vez de hacer cola detrás de él, porque de un
+    # despliegue sólo importa el último. Estuvo en `false` y costó un mes de
+    # publicaciones: una corrida del 2026-08-06 se quedó en `waiting` esperando
+    # una aprobación que nadie podía dar, y como no se cancelaba, todo lo que
+    # entró después al grupo hizo cola y acabó cancelado. `procesar` seguía
+    # commiteando y el sitio no se actualizaba. Con `true` esa corrida la
+    # reemplaza la siguiente y la cola nunca se atasca.
+    concurrency:
+      group: pages
+      cancel-in-progress: true
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}

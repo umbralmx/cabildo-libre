@@ -6,6 +6,53 @@
 
 ---
 
+## 2026-09-05 — El sitio llevaba un mes sin publicarse y nadie lo sabía
+
+**El síntoma.** Al empujar la migración de marca, la corrida de despliegue se quedó en
+`pending` sin arrancar ningún job. Al mirar el historial, **todas** las corridas desde el
+2026-08-06 estaban en `cancelled`. Ni una sola publicación en un mes.
+
+**Por qué no se notó.** Porque los datos sí llegaban. El job `procesar` terminaba en
+`success` y commiteaba su lote —por eso hay cuatro commits «fase 2: procesar lote» en
+agosto—, y sólo se moría el job `publicar`. El repo avanzaba y el sitio no. Un vistazo al
+historial de commits no mostraba nada raro; había que mirar el estado **por job**:
+
+```
+procesar: completed/success
+publicar: completed/cancelled
+```
+
+**La causa.** Una corrida programada del **2026-08-06** se quedó con su job `publicar` en
+estado `waiting`, pidiendo aprobación del entorno `github-pages`. La petición no tenía
+revisores y su temporizador era cero: nadie podía aprobarla nunca. Y como los dos workflows
+comparten `concurrency: group: pages` con `cancel-in-progress: false`, esa corrida zombi se
+quedó a la cabeza de la cola. Todo `publicar` posterior hizo fila detrás de ella y acabó
+cancelado cuando entraba el siguiente. Las «duraciones» de 3 h y 41 h que mostraba el
+historial no eran trabajo: era tiempo en cola.
+
+`gh run cancel` no la mató —GitHub no cancela una corrida detenida en `waiting`—. La mató
+`POST /actions/runs/{id}/force-cancel`. El despliegue pendiente pasó de `pending` a
+`in_progress` en el instante en que se soltó el candado.
+
+**El arreglo, para que no vuelva a pasar.** No basta con destrabarla a mano: hay que quitar
+la posibilidad de que una corrida atascada bloquee a las demás.
+
+- Los dos jobs `publicar` pasan a `cancel-in-progress: true`. De un despliegue sólo importa
+  el último, así que uno nuevo **reemplaza** al anterior en vez de hacer cola detrás de él.
+  Una corrida zombi ya no bloquea: la siguiente la sustituye.
+- En `actualizar.yml` el grupo `pages` estaba a nivel de **workflow**, así que cubría también
+  al re-scrapeo. Se movió al job `publicar`, y el workflow queda en un grupo `actualizar`
+  propio con `cancel-in-progress: false`: el scrape escribe en git y no debe cancelarse a
+  media escritura.
+- El grupo `procesar` sigue en `false`. Ese job cuesta dinero y hasta 330 minutos; un
+  despliegue no lo cancela.
+
+**Queda pendiente.** Las cuatro acciones (`checkout@v4`, `configure-pages@v5`,
+`deploy-pages@v4`, `upload-artifact@v4`) apuntan a Node 20 y el runner las fuerza a Node 24.
+Funciona, y conviene subirlas antes de que deje de funcionar.
+
+---
+
 ## 2026-09-04 — El sistema de marca llegó a 2.0.0 y el sitio se quedó en 1.1.0
 
 **Qué cambió afuera.** `umbral-style-guide` avanzó cuatro versiones desde que este sitio
