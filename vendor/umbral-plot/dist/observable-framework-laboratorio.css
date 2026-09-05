@@ -1,0 +1,142 @@
+/*
+observable-framework-laboratorio.css — GENERATED from tokens/src/. Do not edit.
+Umbral design system · https://github.com/umbralmx/umbral-style-guide
+Code MIT · content CC BY 4.0
+
+Observable Framework — modo laboratorio (light).
+
+  // observablehq.config.js
+  export default {
+    style: "observable-framework-laboratorio.css",
+    globalStylesheets: []
+  };
+
+Three deliberate choices are baked in here.
+
+1. This is a `style`, not a `theme`. `style` overrides `theme`, so no built-in
+   theme loads. Framework's themes derive muted / faint / fainter / faintest with
+   color-mix() from one foreground, and a derived colour never reaches
+   contrast.json, so the gate cannot measure it (UMB-COL-012). All nine
+   --theme-* properties are declared below instead.
+
+2. One file per mode. Import exactly one. Framework's default pairs a light and a
+   dark theme under prefers-color-scheme, which lets the reader's operating system
+   pick the mode. The medium picks the mode (UMB-COL-011).
+
+3. `globalStylesheets` must be []. Its default loads Source Serif 4 from Google
+   Fonts. Self-host the three families instead (UMB-TYP-005).
+*/
+
+@import url("observablehq:default.css");
+
+:root {
+  color-scheme: light;
+
+  /* ── the nine --theme-* properties: declared, never derived (UMB-COL-012) ── */
+  --theme-foreground: #16191c;           /* ink */
+  --theme-background: #f2f3f1;           /* base */
+  --theme-background-alt: #fafaf8;       /* panel */
+  --theme-foreground-alt: #16191c;       /* ink — headings */
+  --theme-foreground-muted: #6c706d;     /* caption — secondary TEXT, clears 4.5:1 */
+  --theme-foreground-faint: #c4c9c4;     /* baseline */
+  --theme-foreground-fainter: #dde0dc;   /* border */
+  --theme-foreground-faintest: #e6e8e4;  /* gridline */
+  --theme-foreground-focus: #227c6f;     /* signal-text, not signal — links are text */
+
+  /* Framework's four accents. Umbral has no green and no yellow, so .green and
+     .yellow render as plain ink: they encode meaning by colour alone, which
+     UMB-A11Y-005 forbids, and rendering them prettily would hide that. */
+  --theme-blue: #5a63d8;
+  --theme-red: #c8503f;
+  --theme-green: #16191c;
+  --theme-yellow: #16191c;
+
+  /* ── type ── */
+  --u-font-display: "Space Grotesk", system-ui, sans-serif;
+  /* Umbral has no serif. --serif points at the body stack so a stray var(--serif)
+     left over from a Framework example cannot summon Times (UMB-TYP-002). */
+  --serif: "IBM Plex Sans", system-ui, sans-serif;
+  --sans-serif: "IBM Plex Sans", system-ui, sans-serif;
+  --monospace: "IBM Plex Mono", ui-monospace, monospace;
+  --monospace-font: 14px/1.5 var(--monospace);
+
+  /* A row of KPIs is compared column against column, so .big is mono, not
+     display (UMB-TYP-004). Framework's default is 700 weight (UMB-TYP-001). */
+  --font-big: 500 32px/1 var(--monospace);
+  --font-small: 14px var(--sans-serif);
+
+  --u-measure: 65ch;
+  --u-radius-max: 2px;
+  --u-touch-target: 44px;
+}
+
+/* ── corrections to Framework's defaults ── */
+
+/* global.css sets 17px/1.5 var(--serif) on the body. */
+body {
+  font: 16px/1.5 var(--sans-serif);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--u-font-display);
+  font-weight: 500;
+  letter-spacing: -0.02em;
+}
+
+.big {
+  font-variant-numeric: tabular-nums;
+}
+
+/* card.css sets border-radius: 0.75rem — twelve times the maximum (UMB-LAY-001).
+   A card is still not the way to render a LIST; that stays rows separated by 1px
+   rules (UMB-LAY-007). */
+.card {
+  border-radius: var(--u-radius-max);
+  border-color: var(--theme-foreground-fainter);
+  box-shadow: none;
+}
+
+/* layout.css paints the footer in --theme-foreground-faint, which is furniture and
+   is exempt from 4.5:1. Footer text is text (UMB-COL-005). */
+#observablehq-footer {
+  color: var(--theme-foreground-muted);
+}
+
+/* Framework leaves prose unconstrained out to --observablehq-max-width, so the
+   measure has to be set here (UMB-LAY-003). Wide elements opt back out. */
+#observablehq-main > p,
+#observablehq-main > ul,
+#observablehq-main > ol,
+#observablehq-main > blockquote,
+#observablehq-main > h1,
+#observablehq-main > h2,
+#observablehq-main > h3 {
+  max-width: var(--u-measure);
+}
+
+#observablehq-main > .grid,
+#observablehq-main > figure,
+#observablehq-main > table,
+#observablehq-main > pre {
+  max-width: none;
+}
+
+/* UMB-A11Y-006 — 44px is a floor, not a suggestion. Framework's sidebar links and
+   form inputs ship well under it. */
+#observablehq-sidebar a,
+input, select, button, .observablehq-input input {
+  min-height: var(--u-touch-target);
+}
+
+/* UMB-A11Y-006 — focus is drawn in signal, and it is drawn everywhere. */
+:focus-visible {
+  outline: 2px solid var(--theme-foreground-focus);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+  }
+}

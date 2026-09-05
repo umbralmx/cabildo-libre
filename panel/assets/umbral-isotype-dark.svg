@@ -1,0 +1,6 @@
+<!-- umbral-isotype-dark.svg — GENERATED from build/logo.mjs. Do not edit.
+     Bar ratio 5:44; bar crosses at 40% of the threshold line.
+     Umbral design system · code MIT · content CC BY 4.0 -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120" role="img" aria-label="umbral_">
+  <line x1="13.6" y1="60" x2="109.6" y2="60" stroke="#7a848f" stroke-width="7" stroke-dasharray="10.08 7.20" stroke-linecap="butt"/><rect x="47" y="16" width="10" height="88" fill="#5fd4c4"/>
+</svg>

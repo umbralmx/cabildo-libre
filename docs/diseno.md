@@ -4,10 +4,17 @@ Registro de cómo se aplicó el manual de marca (`assets/CLAUDE.md`) y
 `assets/umbral-engineering.md` a este sitio, y de las decisiones que requirieron
 interpretación. Última revisión: **2026-09-04** (sistema Umbral **v2.0.0**).
 
-Modo: **laboratorio (light)**, que es el que corresponde a sitios web y reportes
-según §8 del manual. No hay modo instrumento en este proyecto — y desde v1.4.0 eso
-es una regla escrita, UMB-COL-011: el modo lo elige el medio, no el sistema operativo
-del lector.
+**Modos: los dos, uno por superficie.** UMB-COL-011 dice que el modo lo fija el
+medio, y la tabla de superficies de la guía reparte así:
+
+| Superficie | Archivos | Modo |
+|---|---|---|
+| Web — lectura y documento | `site/index.html`, `site/metodologia.html` | **laboratorio** |
+| Observable Framework — el tablero | `panel/` → `site/panel/` | **instrumento** |
+
+Este registro dijo durante un tiempo «no hay modo instrumento en este proyecto».
+Era falso, y de la peor manera: no por un descuido de implementación sino por no
+haber leído la tabla. El panel es un tablero, y un tablero va en instrumento.
 
 ## Presupuesto de signal — la decisión de más criterio
 
@@ -244,6 +251,74 @@ la corregida, y nada comparaba las dos copias.
 
 Las seis comprobaciones se probaron rompiendo el sitio a propósito, una por una. Las
 seis dispararon. Una puerta que nunca dispara no es una puerta.
+
+## El panel, reconstruido sobre Observable Framework (2026-09-05)
+
+La guía movió la superficie de tablero de Streamlit a Observable Framework en la
+v1.4.0 (ADR-0004), y su tabla de superficies asigna **instrumento** al tablero. El
+panel de este proyecto era HTML y JS a mano, en laboratorio. Las dos cosas estaban
+mal y ninguna era una elección: eran una lectura que no se hizo.
+
+### Qué se movió y qué no
+
+Sólo el panel. El buscador y la metodología **no** son tableros —son lectura y
+documento— y se quedan en la superficie web, en laboratorio. La frontera no es de
+conveniencia: la fija la tabla de superficies.
+
+### El modo vive en tres lugares y tienen que coincidir
+
+Si uno se mueve solo, la página pinta medio clara y medio oscura, o parpadea en
+claro antes de oscurecerse:
+
+1. `MODE` en `panel/components/format.js` — gobierna el tema de Plot y los tokens.
+2. `data-mode` en `<html>`, que escribe `scripts/copy-static.mjs` **en el HTML
+   construido**, no por JavaScript. Si llegara por JS, la página parpadearía.
+3. El isotipo: `umbral-isotype-dark.svg`, que es el claro sobre fondo oscuro.
+
+`processor/verificar_marca.py` comprueba los tres, y las comprobaciones se
+probaron rompiéndolas una por una.
+
+### Las trampas de Framework que costaron trabajo
+
+Todas están en `docs/framework-notes.md` de `desaparecidosmx`; se siguieron desde
+ahí en vez de volver a descubrirlas.
+
+- **`style`, nunca `theme`.** Los temas de Framework derivan cuatro colores con
+  `color-mix()` desde un solo primer plano. Un color derivado no llega nunca a
+  `contrast.json`, así que la compuerta lo da por bueno sin haberlo medido
+  (UMB-COL-012).
+- **`globalStylesheets: []`.** Si no se vacía, Framework carga Source Serif 4 de
+  Google Fonts, y un CDN filtra la IP de cada lector (UMB-TYP-005).
+- **`<html>` sin `lang`.** No con uno equivocado: sin ninguno, que es el caso peor
+  de UMB-A11Y-001. Framework no expone la etiqueta, así que se reescribe el HTML
+  construido.
+- **Las `@font-face` no pueden vivir en la hoja.** El empaquetador de CSS de
+  Framework no tiene cargador para `.woff2`. Se inyectan desde `fonts.js` con
+  `FileAttachment`, que da la misma URL con hash en `preview` y en `build`.
+- **El tope de 640px.** Framework limita toda `<figure>` a 640px y la hoja
+  generada levanta el tope **sólo para los hijos directos** de
+  `#observablehq-main`. El idioma mínimo pide secciones, así que toda gráfica
+  dentro de una `<section>` se quedaba pequeña — bien proporcionada y pequeña, que
+  es por qué cuesta verlo. `umbral.css` la exceptúa por clase.
+- **Los `import` se separan por lo que esperan.** Framework fusiona todos los de
+  un bloque en una celda que resuelve cuando resuelve el más lento. La marca no
+  debe esperar detrás del archivo de datos.
+
+### Lo que no cambió
+
+La decisión de que **ninguna gráfica codifique nada por color**. El gris `muted` y
+`signal` no se separan como par categórico bajo deuteranopía (ΔE 1.8), así que cada
+gráfica sigue siendo de una sola serie y la identidad viene de la etiqueta y de la
+cifra en mono. El presupuesto de `signal` se sigue gastando en un solo elemento: el
+medidor de profundidad de lectura.
+
+Tampoco cambió el encuadre 2.0.0 ni la regla de no imputar. Lo que cambió es el
+tiempo de ejecución debajo de esas decisiones, no las decisiones.
+
+### La URL vieja sigue viva
+
+`site/panel.html` se quedó como redirección a `./panel/`. Los enlaces publicados
+antes del cambio siguen resolviendo.
 
 ## Lista de verificación previa al lanzamiento
 

@@ -63,6 +63,17 @@ jobs:
       - uses: actions/checkout@v4
         with:
           ref: main
+      # El panel es una app de Observable Framework y se construye aquí, no se
+      # commitea: `site/panel/` es salida de compilación y vive en .gitignore.
+      # El resto de `site/` es estático y ya está en el repo, así que lo que se
+      # sube es el directorio entero con el panel recién construido dentro.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - name: Construir el panel (Observable Framework, modo instrumento)
+        run: npm run build
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

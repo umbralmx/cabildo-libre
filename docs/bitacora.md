@@ -6,6 +6,72 @@
 
 ---
 
+## 2026-09-05 — El panel era HTML a mano en modo claro, y debía ser un tablero
+
+**El reclamo, y tenía razón.** Después de dar por terminada la migración de marca,
+el mantenedor señaló dos cosas que no se habían hecho: los colores de modo
+instrumento, y usar Observable Framework para el panel. Ninguna de las dos era una
+omisión de detalle. Las dos estaban escritas en la guía y no se leyeron.
+
+**Lo que dice la tabla de superficies.** Es explícita y no admite lectura:
+
+| Superficie | Modo |
+|---|---|
+| Web | laboratorio |
+| **Observable Framework — el tablero** | **instrumento** |
+
+Y UMB-COL-011: «Laboratorio es lectura y documento. **Instrumento es tablero en
+vivo.**» El panel es un tablero. Estaba en laboratorio, escrito a mano en HTML y JS,
+mientras la guía movía la superficie de tablero a Framework desde la v1.4.0
+(ADR-0004). Peor: `docs/diseno.md` afirmaba «no hay modo instrumento en este
+proyecto», que era falso por no haber mirado la tabla.
+
+**Qué se movió.** Sólo el panel. El buscador y la metodología no son tableros —son
+lectura y documento— y se quedan en la superficie web, en laboratorio. La frontera
+la fija la tabla, no la conveniencia.
+
+El panel vive ahora en `panel/`, se construye a `site/panel/` y se sirve en
+`…/cabildo-libre/panel/`. Las ocho gráficas se rehicieron en Observable Plot con el
+tema del sistema. El encuadre lo valida `Frame` de `@umbralmx/umbral-plot`: se
+**niega** a construir una gráfica sin fuente, y se comprobó que lanza.
+
+**El modo vive en tres lugares y tienen que coincidir.** `MODE` en `format.js`,
+`data-mode` en el `<html>` construido, y el isotipo claro sobre fondo oscuro. Si uno
+se mueve solo, la página pinta medio clara o parpadea en claro antes de oscurecerse.
+`verificar_marca.py` comprueba los tres, y las cinco comprobaciones nuevas se
+probaron rompiéndolas una por una: **las cinco dispararon**.
+
+**Las trampas de Framework no se volvieron a descubrir.** Están escritas en
+`docs/framework-notes.md` de `desaparecidosmx` y se siguieron desde ahí: `style` y
+nunca `theme` (un tema deriva colores con `color-mix()` que la compuerta de
+contraste no puede medir); `globalStylesheets: []` o Framework trae fuentes de un
+CDN; `<html>` sin `lang`, que es peor que uno equivocado; las `@font-face` por
+`FileAttachment` porque el empaquetador no tiene cargador para `.woff2`; y el tope
+de 640px que sólo se levanta para hijos directos de `#observablehq-main`, así que
+toda gráfica dentro de una `<section>` se quedaba pequeña. Esa última es la que
+cuesta ver: la gráfica se ve bien proporcionada, sólo que chica.
+
+**Lo que no cambió.** Que ninguna gráfica codifique nada por color: `muted` y
+`signal` no se separan bajo deuteranopía (ΔE 1.8), así que cada gráfica sigue siendo
+de una sola serie y `signal` se sigue gastando en un único elemento, el medidor de
+profundidad de lectura. Tampoco cambió el encuadre 2.0.0 ni la regla de no imputar.
+Cambió el tiempo de ejecución debajo de esas decisiones, no las decisiones.
+
+**Detalles de la migración.** El panel es salida de compilación y no se commitea:
+vive en `.gitignore` y los dos jobs `publicar` lo construyen con Node antes de subir
+`site/`. `site/panel.html` se quedó como redirección para que los enlaces viejos
+sigan resolviendo. `@umbralmx/umbral-plot` no está en npm, así que se vendoriza en
+`vendor/` como dependencia `file:`.
+
+**Pendiente.** El repaso visual en pantalla, que sigue sin hacerse porque el
+navegador continúa caído. Y el linter del sistema marca `panel/components/charts.js`
+por no llevar línea de fuente: es un falso positivo que el propio `lint.py` explica
+en su encabezado —la heurística mira un archivo a la vez— y aquí la garantía es más
+fuerte, porque `chartFrame` se niega a construir sin fuente. Queda anotado con la
+directiva `ignore-file` y documentado en `processor/README.md`.
+
+---
+
 ## 2026-09-05 — El sitio llevaba un mes sin publicarse y nadie lo sabía
 
 **El síntoma.** Al empujar la migración de marca, la corrida de despliegue se quedó en

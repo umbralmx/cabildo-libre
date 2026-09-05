@@ -47,6 +47,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
+PANEL = ROOT / "panel"
 SITIO = "umbral.org.mx"
 
 # Frame.warnings() en @umbralmx/umbral-plot rechaza un subtítulo que no nombre
@@ -111,45 +112,69 @@ def linea_de_fuente() -> list[Hallazgo]:
 
 
 def marco_generado() -> list[Hallazgo]:
-    """Las ocho gráficas del panel se construyen en JS: se revisa la fuente."""
-    js = _lee(SITE / "panel.js")
+    """Las gráficas del panel se construyen en JS, así que se revisa la fuente.
+
+    Desde que el panel se reconstruyó sobre Observable Framework, el encuadre
+    vive en `panel/components/frame.js` y las llamadas en `panel/index.md`. La
+    validación dura la hace `Frame` de @umbralmx/umbral-plot en tiempo de
+    ejecución —sin fuente, lanza—; esto es la comprobación estática que corre
+    antes, sin navegador.
+    """
+    frame_js = _lee(PANEL / "components" / "frame.js")
+    pagina = _lee(PANEL / "index.md")
     out: list[Hallazgo] = []
 
-    if f"const SITIO = '{SITIO}'" not in js:
-        out.append(Hallazgo("marco", "ERROR", f"panel.js no fija el sitio en {SITIO}"))
-    if "Consulta realizada el" not in js:
-        out.append(Hallazgo("marco", "ERROR",
-                            "el marco no escribe la fecha de consulta (UMB-CHT-003)"))
-    if "CONSULTADO = (d.generado" not in js:
-        out.append(Hallazgo("marco", "AVISO",
-                            "la fecha de consulta no se lee del payload; puede quedar obsoleta"))
+    if not frame_js or not pagina:
+        return [Hallazgo("marco", "ERROR", "no se encontró el panel en panel/")]
 
-    fuentes = re.findall(r"fuente:\s*'([^']*)'", js)
-    for f in fuentes:
+    # El encuadre delega en Frame, que es quien se niega a dibujar sin fuente.
+    if "from \"@umbralmx/umbral-plot\"" not in frame_js:
+        out.append(Hallazgo("marco", "ERROR",
+                            "frame.js no usa el Frame del sistema; la validación de "
+                            "UMB-CHT-001/002/003 quedaría sin hacer"))
+    if "frame.sourceLine()" not in frame_js or "frame.siteLine()" not in frame_js:
+        out.append(Hallazgo("marco", "ERROR",
+                            "el pie no se arma con las dos mitades de Frame (UMB-CHT-003)"))
+    if "UMB-A11Y-004" not in frame_js or "download" not in frame_js:
+        out.append(Hallazgo("marco", "AVISO", "el encuadre no exige el CSV de cada gráfica"))
+    if "ariaLabel()" not in frame_js:
+        out.append(Hallazgo("marco", "ERROR",
+                            "la figura no lleva el hallazgo como aria-label (UMB-A11Y-002)"))
+
+    # La licencia y el corte bajaron al pie de página, fuera de la línea de
+    # fuente (UMB-DAT-002, UMB-DAT-004).
+    if "CC BY 4.0" not in frame_js:
+        out.append(Hallazgo("marco", "AVISO",
+                            "el encuadre no declara la licencia junto al CSV"))
+
+    # La fecha de consulta se lee del payload, nunca escrita a mano.
+    if "d.generado" not in pagina:
+        out.append(Hallazgo("marco", "ERROR",
+                            "la fecha de consulta no se lee de `generado`; puede quedar obsoleta"))
+
+    # Cada llamada a chartFrame lleva su fuente y su subtítulo.
+    llamadas = pagina.count("chartFrame({")
+    if llamadas < 8:
+        out.append(Hallazgo("marco", "AVISO",
+                            f"se esperaban 8 gráficas encuadradas, se hallaron {llamadas}"))
+    for f in re.findall(r"source:\s*\n?\s*[\"']([^\"']*)", pagina):
         if f.startswith("Fuente:"):
             out.append(Hallazgo("marco", "ERROR",
                                 "el llamador repite «Fuente:»; el marco ya lo escribe", [f[:70]]))
         if not f.startswith("Elaboración propia"):
             out.append(Hallazgo("marco", "AVISO",
                                 "la fuente no abre con «Elaboración propia»", [f[:70]]))
-    if len(fuentes) < 8:
-        out.append(Hallazgo("marco", "AVISO",
-                            f"se esperaban 8 gráficas con fuente, se hallaron {len(fuentes)}"))
 
-    # UMB-CHT-002 — cada subtítulo nombra una transformación y un periodo.
-    for m in re.finditer(r"subtitulo:\s*(.*?)(?:\n\s*fuente:|\n\s*\}\))", js, re.S):
+    # UMB-CHT-002 — cada subtítulo nombra una transformación y un periodo. Se
+    # aceptan las interpoladas: `${TERMINO}` produce el periodo en pantalla.
+    for m in re.finditer(r"subtitle:\s*(.*?)(?:\n\s*source:|\n\s*consultado:)", pagina, re.S):
         cuerpo = m.group(1)
-        plano = " ".join(re.findall(r"[`'\"]([^`'\"]*)[`'\"]", cuerpo))
+        plano = " ".join(re.findall(r"[`\"']([^`\"']*)[`\"']", cuerpo))
         if not TRANSFORMACION.search(plano):
             out.append(Hallazgo("marco", "ERROR",
                                 "subtítulo sin transformación nombrada (UMB-CHT-002)",
                                 [plano[:80]]))
-        # El periodo puede venir interpolado: `${TERMINO}` o una fecha real del
-        # payload. Exigir un literal de cuatro dígitos obligaría a escribir un
-        # subtítulo peor —«2024-2027» en vez de «1 oct 2024 a 14 ago 2026»—, así
-        # que la comprobación acepta la interpolación que sí produce un periodo.
-        interpolado = "TERMINO" in cuerpo or "fecha" in cuerpo or "fmtFecha" in cuerpo
-        if not PERIODO.search(plano) and not interpolado:
+        if not PERIODO.search(plano) and "TERMINO" not in cuerpo and "fecha" not in cuerpo.lower():
             out.append(Hallazgo("marco", "ERROR",
                                 "subtítulo sin periodo (UMB-CHT-002)", [plano[:80]]))
     return out
@@ -170,9 +195,17 @@ def licencia_en_pagina() -> list[Hallazgo]:
     """UMB-DAT-004 — si la gráfica ya no lleva la licencia, la página debe."""
     out = []
     for p in sorted(SITE.glob("*.html")):
-        if "CC BY 4.0" not in _lee(p):
+        html = _lee(p)
+        # panel.html quedó como redirección al panel de Framework; su licencia
+        # la declara la página de destino, no el trampolín.
+        if "http-equiv=\"refresh\"" in html:
+            continue
+        if "CC BY 4.0" not in html:
             out.append(Hallazgo("licencia", "ERROR",
                                 f"{p.name} no declara la licencia en la página"))
+    if "CC BY 4.0" not in _lee(PANEL / "index.md"):
+        out.append(Hallazgo("licencia", "ERROR",
+                            "el panel no declara la licencia en la página (UMB-DAT-004)"))
     return out
 
 
@@ -201,6 +234,67 @@ def deriva_de_tokens(guia: Path | None) -> list[Hallazgo]:
     return out
 
 
+def panel_instrumento(guia: Path | None) -> list[Hallazgo]:
+    """El panel es un tablero, y la tabla de superficies asigna al tablero el
+    modo **instrumento**. El buscador y la metodología son lectura y documento,
+    y se quedan en laboratorio (UMB-COL-011: el modo lo fija el medio).
+
+    El modo vive en tres lugares y los tres tienen que coincidir. Si uno se
+    mueve solo, la página pinta medio clara y medio oscura, o parpadea en claro
+    antes de oscurecerse.
+    """
+    out: list[Hallazgo] = []
+    fmt_js = _lee(PANEL / "components" / "format.js")
+    chrome = _lee(PANEL / "components" / "chrome.js")
+    copia = _lee(ROOT / "scripts" / "copy-static.mjs")
+    conf = _lee(ROOT / "observablehq.config.js")
+
+    if not conf:
+        return [Hallazgo("panel", "ERROR", "no existe observablehq.config.js")]
+
+    if 'MODE = "instrumento"' not in fmt_js:
+        out.append(Hallazgo("panel", "ERROR",
+                            "components/format.js no declara MODE = instrumento (UMB-COL-011)"))
+    if 'dataset.mode = "instrumento"' not in chrome:
+        out.append(Hallazgo("panel", "ERROR",
+                            "chrome.js no fija data-mode en preview; la página parpadearía en claro"))
+    if 'data-mode="instrumento"' not in copia:
+        out.append(Hallazgo("panel", "ERROR",
+                            "copy-static.mjs no escribe data-mode en el HTML construido"))
+    if 'lang="es"' not in copia:
+        out.append(Hallazgo("panel", "ERROR",
+                            "copy-static.mjs no escribe lang; Framework emite <html> sin idioma "
+                            "(UMB-A11Y-001, el caso peor: ausente, no equivocado)"))
+
+    # `style`, nunca `theme`: un tema de Framework deriva cuatro colores con
+    # color-mix() y ninguno llega a la compuerta de contraste (UMB-COL-012).
+    if re.search(r"^\s*theme:", conf, re.M):
+        out.append(Hallazgo("panel", "ERROR",
+                            "observablehq.config.js usa `theme`; debe usar `style` (UMB-COL-012)"))
+    if "globalStylesheets: []" not in conf:
+        out.append(Hallazgo("panel", "ERROR",
+                            "globalStylesheets no está vacío; Framework cargaría fuentes de un CDN "
+                            "(UMB-TYP-005)"))
+
+    # El isotipo claro es el que se ve sobre fondo oscuro.
+    if "umbral-isotype-dark.svg" not in chrome:
+        out.append(Hallazgo("panel", "AVISO",
+                            "chrome.js no usa el isotipo de modo oscuro sobre fondo instrumento"))
+
+    # La hoja generada se copia, no se escribe. Si diverge de la del sistema,
+    # alguien la editó a mano.
+    gen = PANEL / "observable-framework-instrumento.css"
+    if not gen.exists():
+        out.append(Hallazgo("panel", "ERROR", "falta observable-framework-instrumento.css"))
+    elif guia:
+        canon = guia / "packages" / "umbral-plot" / "dist" / gen.name
+        if canon.exists() and _lee(canon) != _lee(gen):
+            out.append(Hallazgo("panel", "ERROR",
+                                "observable-framework-instrumento.css fue editada a mano; "
+                                "se reemplaza con la del sistema, no se edita"))
+    return out
+
+
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--guia", type=Path, default=None,
@@ -214,6 +308,7 @@ def main() -> int:
     hallazgos += etiquetas_en_minuscula()
     hallazgos += licencia_en_pagina()
     hallazgos += deriva_de_tokens(args.guia)
+    hallazgos += panel_instrumento(args.guia)
 
     errores = [h for h in hallazgos if h.severidad == "ERROR"]
     avisos = [h for h in hallazgos if h.severidad == "AVISO"]

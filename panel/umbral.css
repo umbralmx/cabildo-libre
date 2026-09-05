@@ -1,0 +1,238 @@
+/* Actas Abiertas · panel por administración.
+ *
+ * Modo instrumento (oscuro), que es lo que la tabla de superficies asigna a
+ * un tablero. El buscador y la metodología viven en `site/` y siguen en
+ * laboratorio: son lectura y documento, no tablero (UMB-COL-011).
+ *
+ * Esta hoja NO redefine nada que ya venga de arriba. Las tres importaciones
+ * traen, en orden:
+ *
+ *   1. observable-framework-instrumento.css — GENERADA, copiada tal cual del
+ *      sistema. Trae observablehq:default.css, las nueve propiedades
+ *      --theme-*, las pilas tipográficas, el radio de .card, la medida de
+ *      UMB-LAY-003, el área táctil de 44px y prefers-reduced-motion. No
+ *      editar: se reemplaza con cada versión del sistema.
+ *   2. tokens.css — los --u-* de ambos modos. El documento lleva
+ *      data-mode="instrumento", así que resuelven a la paleta oscura.
+ *   3. components.css — los diez componentes del catálogo.
+ *
+ * Lo que queda abajo es sólo lo que ninguna de las tres cubre: el idioma
+ * visual mínimo (retícula, hoja, marca, navegación) y el encuadre de gráfica.
+ */
+
+@import url("./observable-framework-instrumento.css");
+@import url("./assets/tokens.css");
+@import url("./components.css");
+
+/* Las @font-face se inyectan desde components/fonts.js con FileAttachment:
+   el empaquetador de CSS de Framework no tiene cargador para .woff2, así que
+   una url() a una fuente aquí rompe la construcción (UMB-TYP-005). */
+
+:root {
+  --u-edge: 32px;
+  --u-sheet: 1200px;
+  --u-column: 1080px;
+  --observablehq-max-width: 1200px;
+}
+
+/* ── Retícula de puntos ─────────────────────────────────────────────
+   UMB-LAY-009. Detrás de la página, en el margen exterior. La hoja la tapa
+   con `base`, así que nunca queda debajo de texto, tabla ni gráfica: no
+   cambia ningún contraste medido. En pantallas estrechas se apaga. */
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image: radial-gradient(var(--u-baseline) 1px, transparent 1.6px);
+  background-size: 22px 22px;
+  opacity: 0.55;
+}
+@media (max-width: 1240px) { body::before { display: none; } }
+
+/* ── Hoja y columna ─────────────────────────────────────────────────── */
+
+html { background: var(--u-base); }
+body { max-width: none; margin: 0; color: var(--u-ink); background: transparent; }
+
+#observablehq-center {
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  padding: 0 var(--u-edge);
+  max-width: var(--u-sheet);
+  background: var(--u-base);
+}
+#observablehq-main { max-width: var(--u-column); margin: 0 auto; padding-bottom: 24px; }
+
+@media (max-width: 720px) { :root { --u-edge: 20px; } }
+
+/* ── Titular y bajada ───────────────────────────────────────────────── */
+
+#observablehq-main > h1 {
+  font-size: clamp(30px, 4.4vw, 46px);
+  line-height: 1.16;
+  max-width: 22ch;
+  margin: 0 0 16px;
+}
+/* Framework italiciza el h2 que sigue a un h1 y lo trata como bajada. */
+#observablehq-main > h1 + h2 { font-style: normal; }
+
+.u-standfirst {
+  font-size: 17px;
+  color: var(--u-muted);
+  max-width: var(--u-measure);
+  margin: 0 0 clamp(32px, 5vh, 48px);
+}
+
+.u-section {
+  margin: 0 0 clamp(48px, 8vh, 88px);
+  padding-top: clamp(24px, 4vh, 40px);
+  border-top: var(--u-rule) solid var(--u-border);
+}
+.u-section:first-of-type { border-top: 0; padding-top: 0; }
+
+/* ── Marca y navegación ─────────────────────────────────────────────
+   Sin barra fija: la marca va al principio del contenido, alineada con el
+   titular (guide/14-superficies/landing.md § Sin barra de navegación). */
+
+.u-brand {
+  display: inline-flex; align-items: center; gap: 11px;
+  margin: clamp(28px, 5vh, 44px) 0 clamp(24px, 4vh, 32px);
+  text-decoration: none;
+}
+.u-brand img { display: block; height: 24px; width: auto; }
+.u-brand .u-wordmark {
+  font-family: var(--u-font-display);
+  font-weight: var(--u-weight-display);
+  letter-spacing: var(--u-tracking-display);
+  font-size: 20px;
+  color: var(--u-ink);
+}
+.u-brand .u-wordmark span { color: var(--u-signal-text); }
+
+.u-nav {
+  display: flex; flex-wrap: wrap;
+  margin: 0 0 clamp(36px, 6vh, 64px);
+  border-bottom: var(--u-rule) solid var(--u-border);
+}
+.u-nav a {
+  display: inline-flex; align-items: center;
+  min-height: var(--u-touch-target);
+  padding: 0 var(--u-space-2);
+  font-family: var(--u-font-mono);
+  font-size: var(--u-size-label);
+  color: var(--u-caption);
+  text-decoration: none;
+  border-bottom: var(--u-rule-strong) solid transparent;
+  margin-bottom: calc(-1 * var(--u-rule));
+}
+.u-nav a:first-child { padding-left: 0; }
+.u-nav a:hover { color: var(--u-ink); }
+.u-nav a:focus-visible {
+  outline: var(--u-rule-strong) solid var(--u-signal);
+  outline-offset: calc(-1 * var(--u-rule-strong));
+}
+
+/* ── Fila de cifras ─────────────────────────────────────────────────
+   Las celdas las dibuja .u-kpi de components.css. Aquí sólo la retícula que
+   las separa con reglas de 1px, no con tarjetas (UMB-LAY-007). */
+
+.u-kpis {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 0;
+  margin: 0 0 20px;
+  border-top: var(--u-rule) solid var(--u-border);
+}
+.u-kpis > .u-kpi { padding: 20px 24px 20px 0; border-bottom: var(--u-rule) solid var(--u-border); }
+.u-kpi__note { max-width: 34ch; }
+
+/* ── El encuadre de gráfica ─────────────────────────────────────────
+   Framework limita TODA <figure>, <table> y <figcaption> a 640px en su
+   global.css. La hoja generada levanta ese tope, pero SÓLO para los hijos
+   directos de #observablehq-main. Las gráficas viven dentro de
+   <section class="u-section">, así que nunca coinciden con esa excepción y
+   se quedarían en 640px: Plot dibuja a todo el ancho y el `max-width: 100%`
+   del svg lo vuelve a encoger. La gráfica se ve bien proporcionada y
+   pequeña, que es por qué cuesta notarlo. Reportado en
+   umbralmx/umbral-style-guide#9.
+
+   La medida de 65ch es para la prosa (UMB-LAY-003); una gráfica y su tabla
+   usan la columna entera. */
+.u-chart,
+.u-chart > figcaption,
+.u-chart-foot,
+.u-table-wrap,
+table.u-table,
+.u-kpis { max-width: none; }
+
+.u-chart { margin: 0 0 8px; }
+
+.u-chart-title {
+  font-family: var(--u-font-display);
+  font-weight: var(--u-weight-display);
+  letter-spacing: var(--u-tracking-display);
+  font-size: var(--u-size-chart-title);
+  line-height: 1.25;
+  color: var(--u-ink);
+  margin: 0 0 6px;
+  max-width: 46ch;
+}
+.u-chart-subtitle {
+  font-size: 15px; color: var(--u-muted);
+  margin: 0 0 20px; max-width: var(--u-measure);
+}
+.u-chart-plot { overflow-x: auto; }
+.u-chart-plot svg { max-width: 100%; height: auto; }
+
+.u-chart-foot {
+  display: flex; flex-wrap: wrap;
+  align-items: baseline; justify-content: space-between;
+  gap: 4px 24px;
+  margin-top: 12px; padding-top: 10px;
+  border-top: var(--u-rule) solid var(--u-border);
+}
+.u-chart-foot .u-source { flex: 1 1 auto; }
+.u-chart-foot .u-site { flex: 0 0 auto; text-align: right; }
+
+.u-chart-proc {
+  display: flex; flex-wrap: wrap; align-items: center;
+  gap: 8px 16px; margin-top: 10px;
+}
+
+.u-source {
+  font-family: var(--u-font-mono);
+  font-size: var(--u-size-source);
+  line-height: 1.5; color: var(--u-caption);
+  margin: 0; max-width: none;
+}
+
+.u-note {
+  font-size: 14px; color: var(--u-muted);
+  max-width: var(--u-measure); margin: 12px 0 0;
+}
+/* Una advertencia que el lector necesita para no malinterpretar la cifra.
+   `alert` marca el borde, nunca el texto: el texto se queda legible. */
+.u-note--alert { border-left: var(--u-rule-strong) solid var(--u-alert); padding-left: 12px; }
+
+.u-table-wrap { overflow-x: auto; margin-top: 16px; }
+
+details.u-details { margin-top: 16px; }
+details.u-details > summary {
+  font-family: var(--u-font-mono);
+  font-size: var(--u-size-source);
+  color: var(--u-caption);
+  cursor: pointer; padding: 6px 0; list-style: none;
+}
+details.u-details > summary::-webkit-details-marker { display: none; }
+details.u-details > summary::before { content: "+ "; }
+details.u-details[open] > summary::before { content: "− "; }
+details.u-details > summary:hover { color: var(--u-signal-text); }
+
+/* Lista de hallazgos de integridad. */
+ol.u-caveats { padding-left: 1.2em; max-width: var(--u-measure); }
+ol.u-caveats > li { margin-bottom: 14px; }
+ol.u-caveats > li::marker { font-family: var(--u-font-mono); color: var(--u-caption); }

@@ -2,9 +2,12 @@
 <html lang="es">
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- El panel se reconstruyó sobre Observable Framework y vive en ./panel/.
+       Esta página se queda como redirección para que los enlaces publicados
+       antes del cambio sigan resolviendo. -->
+  <meta http-equiv="refresh" content="0; url=./panel/">
+  <link rel="canonical" href="./panel/">
   <title>Panel por administración — Cabildo de Colima · umbral_</title>
-  <meta name="description" content="Qué decidió el cabildo de Colima en el término 2024-2027: asuntos, dinero declarado, asistencia de regidores y cadencia de sesiones, con la cobertura del análisis declarada.">
   <link rel="icon" type="image/svg+xml" href="assets/umbral-favicon.svg">
   <link rel="stylesheet" href="assets/fonts/fonts.css">
   <link rel="stylesheet" href="assets/tokens.css">
@@ -12,103 +15,9 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-<header class="site-header">
-  <a class="brand" href="./" aria-label="umbral_ — inicio">
-    <img src="assets/umbral-isotype-light.svg" alt="" width="24" height="24">
-    <span class="wordmark" aria-hidden="true">umbral<span class="underscore">_</span></span>
-  </a>
-  <nav aria-label="Secciones">
-    <a href="./">Buscador</a>
-    <a href="metodologia.html">Metodología</a>
-    <a href="#cobertura">Cobertura</a>
-    <a href="https://www.colima.gob.mx/portal2016/actas-de-cabildo/" rel="external">Fuente oficial</a>
-  </nav>
-</header>
-
 <main>
-  <section class="hero">
-    <p class="kicker">Ayuntamiento de Colima · término <span id="termino">2024-2027</span></p>
-    <h1>Panel por <span class="accent">administración</span></h1>
-    <p class="lede">Qué tipo de decisiones tomó este cabildo, cuánto dinero nombró, quién
-    asistió y con qué frecuencia sesionó. Cada cifra dice sobre cuántas actas se calculó:
-    el análisis avanza por lotes y ninguna gráfica supone más de lo que se ha leído.</p>
-    <div class="statrow" id="statrow"></div>
-  </section>
-
-  <!-- Cobertura primero, no al pie: es la condición para leer todo lo demás. -->
-  <section id="cobertura" class="section">
-    <h2><span class="section-num">01</span>Cobertura del análisis</h2>
-    <div id="c-cobertura"></div>
-  </section>
-
-  <section id="sesiones" class="section">
-    <h2><span class="section-num">02</span>Cadencia de sesiones</h2>
-    <div id="c-cadencia"></div>
-  </section>
-
-  <section id="asuntos" class="section">
-    <h2><span class="section-num">03</span>Mezcla de asuntos</h2>
-    <div id="c-categorias"></div>
-  </section>
-
-  <section id="dinero" class="section">
-    <h2><span class="section-num">04</span>Dinero declarado</h2>
-    <div id="c-montos"></div>
-  </section>
-
-  <section id="asistencia" class="section">
-    <h2><span class="section-num">05</span>Asistencia del cabildo</h2>
-    <div id="c-asistencia"></div>
-  </section>
-
-  <section id="colonias" class="section">
-    <h2><span class="section-num">06</span>Qué se decidió en mi colonia</h2>
-    <div id="c-colonias"></div>
-  </section>
-
-  <section id="integridad" class="section">
-    <h2><span class="section-num">07</span>Integridad del expediente</h2>
-    <div id="c-integridad"></div>
-  </section>
-
-  <section id="metodologia" class="section">
-    <h2><span class="section-num">08</span>Cómo leer este panel</h2>
-    <p>Las cifras salen de dos fuentes distintas y conviene no confundirlas. La
-    <strong>cadencia de sesiones</strong> y la <strong>integridad del expediente</strong>
-    se calculan sobre el índice oficial y cubren todas las sesiones del término. Todo lo
-    demás —asuntos, dinero, asistencia, colonias— se extrae del texto de las actas, que
-    son escaneos sin capa de texto: se pasan por OCR y un modelo de lenguaje redacta el
-    resumen y clasifica cada punto.</p>
-    <p>De ahí las dos coberturas que el panel declara arriba: <em>cuántas actas</em> se han
-    procesado y <em>cuánto del texto de cada una</em> alcanzó a leerse. Una gráfica
-    calculada sobre una parte de las actas no describe al cabildo del término: describe esa parte.</p>
-    <p>Los resúmenes y las clasificaciones son <strong>generados por IA sobre texto OCR y
-    pueden contener errores</strong>. Cuando el acta no declara con claridad un resultado,
-    se marca como no determinable en vez de inventarlo; los nombres que no corresponden a
-    ningún integrante del cabildo se reportan tal cual, sin asignarlos a nadie; y las
-    cantidades son sólo las que el acta enuncia de forma explícita — nunca un total
-    calculado y presentado como oficial. Cada cifra enlaza al acta original para
-    verificarla.</p>
-    <!-- UMB-DAT-002 / UMB-DAT-004 — the snapshot tag and the licence live on the
-         page, not in every chart's source line. v2.0.0 took them off the charts
-         so the line survives a social card or a slide. -->
-    <p class="snapshot" id="snapshot"></p>
-    <p class="snapshot">Código MIT · estructura y datos derivados CC BY 4.0 · el texto de las
-    actas es del Ayuntamiento de Colima y se atribuye a su fuente.</p>
-    <p>Cómo se construye este archivo, qué problemas hubo que resolver y qué no se puede medir:
-    <a href="metodologia.html">metodología pública</a>. El detalle técnico está en la
-    <a href="https://github.com/umbralmx/cabildo-libre/blob/main/docs/metodologia.md" rel="external">metodología completa</a>
-    y en la <a href="https://github.com/umbralmx/cabildo-libre/blob/main/docs/indicadores-revision.md" rel="external">revisión de indicadores</a>.</p>
-  </section>
+  <p class="lede" style="padding-top:80px">El panel por administración se movió a
+  <a href="./panel/">./panel/</a>. Si tu navegador no te lleva solo, sigue el enlace.</p>
 </main>
-
-<footer class="site-footer">
-  <p class="foot-src"><span>Fuente: Elaboración propia con datos del Ayuntamiento de Colima
-  (actas de cabildo).</span><span>umbral.org.mx</span></p>
-  <p>Proyecto independiente, sin relación con el Ayuntamiento.</p>
-</footer>
-
-<script src="panel.js"></script>
 </body>
 </html>

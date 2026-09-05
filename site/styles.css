@@ -375,7 +375,13 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 }
 
 /* ════════════════════════════════════════════════════════════════════════════
-   Panel por administración (Fase 3 · L4) — site/panel.html
+   Figuras de la página de metodología.
+
+   El panel por administración ya no vive aquí: se reconstruyó sobre Observable
+   Framework, en modo instrumento, bajo `panel/` (ver observablehq.config.js).
+   Lo que queda de este bloque es el encuadre de figura que la metodología
+   comparte con él —título, subtítulo, línea de fuente a dos lados— y los
+   medidores del arreglo de lectura.
 
    Chart marks deliberately carry NO colour encoding. Umbral's muted gray and
    signal fail CVD separation as a categorical pair (ΔE 1.8 deutan, 8.5 normal —
@@ -434,56 +440,6 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
   font-size: var(--u-size-source); color: var(--u-caption);
 }
 
-/* ── horizontal bars ── rounded data-end only, anchored to the baseline ── */
-.barras { display: flex; flex-direction: column; gap: 8px; }
-.barra-row {
-  display: grid; grid-template-columns: minmax(120px, 22ch) 1fr minmax(64px, auto);
-  align-items: center; gap: 16px;
-}
-.barra-lab { font-size: 14px; text-wrap: pretty; }
-.barra-track {
-  height: 18px;
-  border-left: 2px solid var(--u-baseline);   /* the baseline the bars sit on */
-  background: linear-gradient(var(--u-gridline), var(--u-gridline)) no-repeat;
-  background-size: 100% var(--u-rule); background-position: 0 50%;
-}
-.barra-fill {
-  height: 100%;
-  background: var(--u-ink);
-  border-radius: 0 2px 2px 0;                /* max 2px anywhere (brand §7) */
-  min-width: 2px;
-}
-.barra-val { font-size: 13px; text-align: right; font-variant-numeric: tabular-nums; }
-
-/* ── columns over time ── horizontal gridlines only, no vertical rules ── */
-.cols { margin-top: 8px; }
-.cols-grid {
-  position: relative; height: 180px;
-  border-bottom: 2px solid var(--u-baseline);
-}
-.cols-gridline {
-  position: absolute; left: 0; right: 0; height: var(--u-rule);
-  background: var(--u-gridline);
-}
-.cols-ytick {
-  position: absolute; right: 100%; top: -0.6em; padding-right: 8px;
-  font-size: 12px; color: var(--u-caption);
-}
-.cols-plot {
-  position: absolute; inset: 0;
-  display: flex; align-items: flex-end; gap: 2px;      /* 2px surface gap */
-}
-.col { flex: 1 1 0; height: 100%; display: flex; align-items: flex-end; position: relative; }
-.col-fill {
-  width: 100%; background: var(--u-ink);
-  border-radius: 2px 2px 0 0; min-height: 2px;
-}
-.col-tick {
-  position: absolute; top: 100%; left: 0; right: 0; padding-top: 8px;
-  text-align: center; font-size: 12px; color: var(--u-caption);
-}
-.cols + * { margin-top: 32px; }
-
 /* ── the reading-depth meters — the page's one signal element ── */
 .medidores { display: flex; flex-direction: column; gap: 24px; }
 .medidor { display: grid; grid-template-columns: 1fr minmax(56px, auto); gap: 4px 16px; }
@@ -514,48 +470,3 @@ main { max-width: 880px; margin: 0 auto; padding: 0 24px 80px; }
 .hallazgos { margin-top: 16px; max-width: 65ch; padding-left: 20px; }
 .hallazgos li { font-size: 15px; margin-top: 8px; color: var(--u-ink); }
 
-/* ── declared total ── */
-.total-declarado {
-  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between;
-  gap: 8px 24px; margin-top: 24px; padding-top: 16px;
-  border-top: 2px solid var(--u-ink);
-}
-.total-lab { font-size: 14px; color: var(--u-muted); }
-.total-val {
-  font-family: var(--u-font-display); font-weight: var(--u-weight-display);
-  font-size: 28px; letter-spacing: var(--u-tracking-display);
-  font-variant-numeric: tabular-nums;
-}
-
-/* ── the table twin of every chart ── */
-.datos { margin-top: 24px; }
-.datos > summary {
-  cursor: pointer; font-size: 13px; color: var(--u-muted);
-  padding: 8px 0; list-style: none;
-}
-.datos > summary::-webkit-details-marker { display: none; }
-.datos > summary::before { content: "+ "; font-family: var(--u-font-mono); }
-.datos[open] > summary::before { content: "− "; }
-.datos > summary:hover { color: var(--u-signal); }
-/* The table twin is a .u-table from the component sheet. It already gives the
-   mono lowercase header, the 2px baseline under it, the 1px row rules and the
-   right-aligned tabular figures, so all that is left here is the cell padding
-   this layout wants. Figure columns carry data-numeric, not .num. */
-.u-table th, .u-table td { padding-left: 0; padding-right: var(--u-space-2); }
-.u-table td:last-child, .u-table th:last-child { padding-right: 0; }
-
-/* ── colonia lookup ── */
-/* The colonia lookup is .u-input over .u-rows / .u-row — the component sheet
-   draws the field, the rules and the tabular figure. Only the width is ours. */
-.col-buscador { margin-bottom: var(--u-space-3); }
-.col-buscador .u-input { width: 100%; padding: var(--u-space-1) var(--u-space-2); }
-.col-mas { margin-top: var(--u-space-2); }
-
-@media (max-width: 720px) {
-  .barra-row { grid-template-columns: 1fr auto; gap: 4px 12px; }
-  .barra-lab { grid-column: 1 / -1; }
-  .fig-title { font-size: 20px; }
-  .cols-grid { height: 140px; }
-  .cols-ytick { position: static; padding: 0; }
-  .u-table { display: block; overflow-x: auto; }
-}

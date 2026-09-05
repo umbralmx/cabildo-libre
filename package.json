@@ -1,0 +1,26 @@
+{
+  "name": "cabildo-libre-panel",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Actas Abiertas · panel por administración — Observable Framework, modo instrumento",
+  "license": "MIT",
+  "scripts": {
+    "dev": "observable preview",
+    "build": "observable build && node scripts/copy-static.mjs",
+    "clean": "observable clean",
+    "verificar": "node scripts/verificar-render.mjs"
+  },
+  "dependencies": {
+    "@observablehq/framework": "^1.13.4",
+    "@observablehq/plot": "^0.6.17",
+    "@umbralmx/umbral-plot": "file:vendor/umbral-plot",
+    "d3-array": "^3.2.4"
+  },
+  "engines": {
+    "node": ">=20.6"
+  },
+  "devDependencies": {
+    "jsdom": "^29.1.1"
+  }
+}

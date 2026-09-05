@@ -153,3 +153,26 @@ radios, sombras):
 ```sh
 python3 ../umbral-style-guide/skills/umbral-brand/scripts/lint.py site
 ```
+
+### Correr el linter del sistema
+
+El linter cubre la capa mecánica (hexes a mano, radios, sombras). Dos rutas se
+excluyen a propósito y hay que excluirlas a mano, porque `lint.py` no lee
+directivas de ignorado:
+
+- **`site/panel/`** — salida de compilación de Observable Framework. No está en
+  el repo (vive en `.gitignore`), así que sólo aparece si acabas de construir.
+- **`panel/observable-framework-instrumento.css`** — hoja GENERADA, copiada del
+  sistema. Contiene hexes por definición; no se edita, se reemplaza.
+- **`panel/components/charts.js`** — dibuja marcas, no publica gráficas. La
+  línea de fuente la pone `frame.js`, y `chartFrame` se niega a construir sin
+  ella. El archivo lleva la directiva `ignore-file` que sí entiende el
+  `umbral-lint` completo.
+
+```sh
+# Sobre las fuentes versionadas, que es lo que tiene un clon limpio:
+git ls-files site panel > /tmp/f && mkdir -p /tmp/lintsrc
+while read f; do mkdir -p "/tmp/lintsrc/$(dirname "$f")"; cp "$f" "/tmp/lintsrc/$f"; done < /tmp/f
+rm -f /tmp/lintsrc/panel/observable-framework-instrumento.css
+python3 ../umbral-style-guide/skills/umbral-brand/scripts/lint.py /tmp/lintsrc
+```

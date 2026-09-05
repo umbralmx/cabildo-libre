@@ -2,3 +2,7 @@ __pycache__/
 .DS_Store
 data/raw/
 data/raw/pdfs/
+node_modules/
+.observablehq/cache/
+panel/.observablehq/
+site/panel/
