@@ -549,6 +549,34 @@ function renderStats(generado) {
     $("#snapshot").textContent =
       `Última actualización de los datos: ${fechaLarga(generado.slice(0, 10))}.`;
   }
+  // La última sesión con fecha del corpus: hasta dónde llega lo publicado.
+  const conFecha = state.actas.map((a) => a.fecha).filter(Boolean).sort();
+  pintaMeta(generado, conFecha[conFecha.length - 1]);
+}
+
+/* La cápsula de actualización, redactada desde el dato y nunca escrita a mano.
+   Dice dos cosas distintas que se confunden con facilidad: **cuándo se corrió
+   el proceso** y **hasta dónde llega lo que alcanzó a leer**. Un archivo puede
+   actualizarse hoy y no traer nada nuevo, que es justo lo que pasó con los
+   cuatro lotes de agosto. */
+const MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+  "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+function mesDeISO(iso) {
+  if (!iso) return null;
+  const [y, m] = iso.slice(0, 10).split("-");
+  return `${MESES_LARGOS[Number(m) - 1]} de ${y}`;
+}
+
+function pintaMeta(generado, ultimaSesion) {
+  const el = document.getElementById("u-meta");
+  if (!el) return;
+  const act = mesDeISO(generado);
+  const hasta = mesDeISO(ultimaSesion);
+  if (!act && !hasta) return;
+  el.textContent = act && hasta
+    ? `Última actualización en ${act}, con datos hasta ${hasta}`
+    : (act ? `Última actualización en ${act}` : `Datos hasta ${hasta}`);
 }
 
 function initFilters() {

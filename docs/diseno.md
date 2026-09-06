@@ -397,20 +397,47 @@ Las etiquetas son mono y en minúsculas, como el resto de las etiquetas de
 estructura (UMB-LAY-006): *buscador · panel por administración · metodología ·
 fuente oficial*. Las cuatro páginas llevan las cuatro, en el mismo orden.
 
-### La retícula de puntos
+### Los puntos se fueron del margen a una cinta bajo el titular
 
-La opacidad estaba en el panel y faltaba en las páginas estáticas, así que los
-puntos del margen cambiaban de peso al navegar. Las dos usan ahora `opacity:
-0.55`, que es lo que usa `desaparecidosmx`. El capítulo de la guía no trae ese
-valor: `baseline` puro deja el mobiliario más presente de lo que debe estar,
-sobre todo en fondo oscuro.
+**Los márgenes quedan en blanco.** La retícula de fondo se retiró de las dos
+superficies. En su lugar hay una **cinta de puntos de 16px entre el titular y la
+bajada**, y una cápsula sobre el titular que dice de cuándo son los datos. La
+forma está tomada de `opencode.ai/data`.
 
-`verificar-render.mjs` compara las tres declaraciones —opacidad, paso y
-gradiente— entre las dos superficies. La comparación **normaliza** antes de
-comparar, porque el empaquetador de Framework escribe `body:before` con un solo
-dos puntos, `opacity:.55` sin el cero y sin espacio tras la coma del gradiente:
-comparar el texto tal cual daba una diferencia donde no la había. Se compara el
-valor, no cómo se escribió.
+**Esto se aparta de UMB-LAY-009**, que acota la retícula al margen exterior de la
+hoja. Queda anotado, no disimulado. El argumento para moverla: en el margen los
+puntos eran decoración tolerada por una regla escrita a propósito para
+tolerarlos; en la cinta hacen **trabajo estructural** —separan el titular de la
+bajada, que es lo que UMB-LAY-002 encarga a las reglas de 1px—. Siguen siendo
+mobiliario: un solo token (`baseline`), sin tono propio, nunca debajo de texto, y
+marcados `aria-hidden` porque no dicen nada.
+
+**Cómo se dibuja.** Igual que en la referencia: un fondo del color del token,
+recortado por una máscara SVG de un cuadro de 2×2 sobre una retícula de 6×6, a
+`mask-size: 6px 6px`. La máscara sólo lleva alfa; el color sale del token, no del
+SVG, así que la cinta cambia con el modo como todo lo demás.
+
+### La cápsula de actualización
+
+Sobre el titular, una cápsula sobre `panel` —no sobre `signal`: es contexto, no
+el hallazgo, y el acento tiene que quedar libre (UMB-COL-004)—. En mono, porque
+es una etiqueta y lleva fechas.
+
+Dice **dos cosas que se confunden con facilidad**: cuándo se corrió el proceso y
+hasta dónde llega lo que alcanzó a leerse.
+
+> Última actualización en septiembre de 2026, con datos hasta junio de 2026
+
+Distinguirlas importa aquí más que en otros proyectos: los cuatro lotes
+programados de agosto actualizaron el archivo **sin traer un solo dato nuevo**.
+Una cápsula que sólo dijera «actualizado en septiembre» habría sido cierta y
+engañosa a la vez.
+
+Las dos fechas se calculan del dato —`generado` y la última sesión con fecha del
+corpus— y nunca se escriben a mano. El HTML trae un texto de respaldo para que la
+página se lea sin JavaScript. Por eso el buscador dice *agosto* (su último
+re-scrapeo) y el panel *septiembre* (su último procesamiento): son procesos
+distintos y la cápsula no los promedia.
 
 ### El titular
 

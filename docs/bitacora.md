@@ -6,6 +6,41 @@
 
 ---
 
+## 2026-09-06 — Los puntos salen del margen y se ponen a trabajar
+
+Los márgenes quedan en blanco. La retícula de fondo se retiró de las dos
+superficies y los puntos pasan a una **cinta de 16px entre el titular y la
+bajada**, con una **cápsula** encima del titular que dice de cuándo son los
+datos. La forma viene de `opencode.ai/data`, y se leyó de su hoja de estilo, no
+de una captura: un fondo del color del token recortado por una máscara SVG de un
+cuadro de 2×2 sobre una retícula de 6×6.
+
+**Se aparta de UMB-LAY-009**, que acota la retícula al margen exterior. Queda
+anotado en `docs/diseno.md`. El argumento: en el margen los puntos eran
+decoración que una regla toleraba a propósito; en la cinta separan el titular de
+la bajada, que es trabajo estructural. Siguen siendo mobiliario —un token, sin
+tono propio, `aria-hidden`, nunca bajo texto.
+
+**La cápsula dice dos cosas, y separarlas era el punto.** Cuándo se corrió el
+proceso, y hasta dónde llega lo que alcanzó a leerse:
+
+> Última actualización en septiembre de 2026, con datos hasta junio de 2026
+
+Aquí eso importa más que en otro proyecto: los cuatro lotes de agosto
+actualizaron el archivo **sin traer un dato nuevo**. Una cápsula que sólo dijera
+«actualizado en septiembre» habría sido cierta y engañosa a la vez. Las dos
+fechas salen del dato y no se escriben a mano, y por eso el buscador dice *agosto*
+—su último re-scrapeo— y el panel *septiembre* —su último procesamiento—: son
+procesos distintos y la cápsula no los promedia.
+
+**Las comprobaciones se movieron con el diseño.** La que comparaba la opacidad de
+la retícula entre superficies ya no tenía objeto; ahora compara la cinta (altura,
+color y paso), exige la cápsula con su fecha, verifica el orden de lectura del
+hero —cápsula, titular, cinta, bajada— y **falla si la retícula del margen
+vuelve**. Las cinco se probaron rompiéndolas una por una.
+
+---
+
 ## 2026-09-05 — La costura que quedaba: dos anchos y dos encabezados
 
 Con todo ya en modo instrumento quedaba una diferencia que se veía al navegar: el

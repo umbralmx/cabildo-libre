@@ -9,14 +9,14 @@ title: Panel por administración · Cabildo de Colima
 // esperan hace que la marca pinte en cuanto llega su módulo, en vez de
 // esperar detrás del archivo de datos (docs/framework-notes.md §1).
 import "./components/fonts.js";
-import {brand, nav, label} from "./components/chrome.js";
+import {brand, nav, label, dots, meta} from "./components/chrome.js";
 ```
 
 ```js
 // Bloque 2 — funciones puras. No espera red.
 import {chartFrame, figureRow, dataTable} from "./components/frame.js";
 import {barrasH, columnas, medidor} from "./components/charts.js";
-import {fmt, fmtPct, fmtMXN, fmtMXNCorto, fmtFecha, CATEGORIA_ES, SENTIDO_ES} from "./components/format.js";
+import {fmt, fmtPct, fmtMXN, fmtMXNCorto, fmtFecha, textoMeta, CATEGORIA_ES, SENTIDO_ES} from "./components/format.js";
 ```
 
 ```js
@@ -36,7 +36,17 @@ const TERMINO = d.termino;
 <div>${brand()}</div>
 <div>${nav()}</div>
 
+```js
+// La cápsula sale del payload: cuándo se procesó y hasta dónde llegan los datos.
+const sesionesConFecha = (d.calendario?.sesiones ?? []).map((x) => x.fecha).filter(Boolean).sort();
+const ultimaSesion = sesionesConFecha[sesionesConFecha.length - 1];
+```
+
+<div>${meta(textoMeta(d.generado, ultimaSesion))}</div>
+
 # Panel por administración
+
+<div>${dots()}</div>
 
 <p class="u-standfirst">
 Qué tipo de decisiones tomó este cabildo, cuánto dinero nombró, quién asistió y con

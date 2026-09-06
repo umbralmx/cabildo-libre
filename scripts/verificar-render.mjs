@@ -25,26 +25,27 @@ const fail = (m) => { bad++; console.log(`  ✗ ${m}`); };
 const ok = (m) => console.log(`  ✓ ${m}`);
 
 /**
- * Lee la retícula de puntos de una hoja, venga escrita o minificada.
+ * Lee la cinta de puntos de una hoja, venga escrita o minificada.
  *
- * El empaquetador de Framework escribe `body:before` con un solo dos puntos y
- * `opacity:.55` sin el cero, así que comparar el texto tal cual daba una
- * diferencia donde no la hay. Se normaliza antes de comparar.
+ * La retícula del margen se quitó: los márgenes quedan en blanco. Los puntos
+ * viven ahora en una cinta de 16px entre el titular y la bajada, donde hacen
+ * trabajo estructural en vez de decorar (ver docs/diseno.md).
+ *
+ * El empaquetador de Framework quita espacios y ceros a la izquierda, así que
+ * se normaliza antes de comparar: se compara el valor, no cómo se escribió.
  */
-function reticula(css) {
-  const b = (css.match(/body::?before\s*\{([\s\S]*?)\}/) || [])[1] ?? "";
+function cinta(css) {
+  const b = (css.match(/\.u-dots\s*\{([\s\S]*?)\}/) || [])[1] ?? "";
   const g = (n) => {
-    const v = (b.match(new RegExp(`${n}\\s*:\\s*([^;}]+)`)) || [])[1]?.trim();
+    const v = (b.match(new RegExp(`(?:^|[;{\\s])${n}\\s*:\\s*([^;}]+)`)) || [])[1]?.trim();
     if (v === undefined) return undefined;
-    // `.55` y `0.55` son el mismo número; los espacios alrededor de una coma
-    // tampoco cambian nada. Se compara el valor, no cómo se escribió.
     return v
       .replace(/(^|[\s(,])\.(\d)/g, "$10.$2")
       .replace(/\s*,\s*/g, ",")
       .replace(/\s+/g, " ")
       .trim();
   };
-  return {opacity: g("opacity"), size: g("background-size"), image: g("background-image")};
+  return {height: g("height"), background: g("background"), size: g("mask-size")};
 }
 
 /* ── 1. Las dos páginas estáticas ──────────────────────────────────────── */
@@ -107,10 +108,23 @@ for (const [page, script] of [["index.html", "app.js"], ["metodologia.html", "me
   // opacidad faltaba aquí y estaba en el panel, así que los puntos del margen
   // cambiaban de peso al navegar. Es mobiliario (UMB-LAY-009): tiene que
   // desaparecer igual en las dos.
-  const r = reticula(hoja);
-  r.opacity === "0.55"
-    ? ok(`retícula: opacidad ${r.opacity}, paso ${r.size}`)
-    : fail(`la retícula tiene opacidad ${r.opacity ?? "sin declarar"}, el panel usa 0.55`);
+  // Los márgenes quedan en blanco: la retícula de fondo se retiró.
+  if (/body::?before\s*\{[^}]*radial-gradient/.test(hoja)) fail("volvió la retícula del margen");
+  const c = cinta(hoja);
+  c.height === "16px" && c.size === "6px 6px"
+    ? ok(`cinta de puntos: ${c.height}, paso ${c.size}`)
+    : fail(`la cinta mide ${c.height ?? "—"} con paso ${c.size ?? "—"}, se esperaba 16px / 6px 6px`);
+  // La cápsula tiene que estar y no puede quedar escrita a mano.
+  const cap = d.querySelector(".u-meta");
+  if (!cap) fail("sin cápsula de actualización sobre el titular");
+  else if (!/^Última actualización en \w+ de \d{4}/.test(cap.textContent.trim()))
+    fail(`la cápsula no dice la fecha de actualización: "${cap.textContent.trim().slice(0, 50)}"`);
+  else ok(`cápsula: «${cap.textContent.trim()}»`);
+  // El orden de lectura: cápsula, titular, cinta, bajada.
+  const hero = d.querySelector(".hero");
+  const orden = [...(hero?.children ?? [])].map((e) => e.className || e.tagName.toLowerCase());
+  const iMeta = orden.indexOf("u-meta"), iH1 = orden.indexOf("h1"), iDots = orden.indexOf("u-dots");
+  if (!(iMeta >= 0 && iH1 > iMeta && iDots > iH1)) fail(`orden del hero inesperado: ${orden.join(" → ")}`);
 
   // Sin barra de encabezado: la marca y las pestañas viven en el contenido.
   if (d.querySelector(".site-header")) fail("sigue habiendo una barra de encabezado");
@@ -191,11 +205,13 @@ console.log("\n── panel (Observable Framework · instrumento) ──");
     // declaración: no basta con que las dos existan, tienen que pesar igual.
     // La retícula del panel contra la del sitio, declaración por declaración:
     // no basta con que las dos existan, tienen que pesar igual.
-    const rp = reticula(sheetCss);
-    const rs = reticula(readFileSync(DIR + "styles.css", "utf8"));
-    const difs = ["opacity", "size", "image"].filter((k) => rp[k] !== rs[k]);
-    difs.forEach((k) => fail(`la retícula difiere en ${k}: sitio "${rs[k] ?? "—"}" vs panel "${rp[k] ?? "—"}"`));
-    if (!difs.length) ok(`retícula idéntica en las dos superficies (opacidad ${rp.opacity})`);
+    if (/body::?before\s*\{[^}]*radial-gradient/.test(sheetCss)) fail("el panel conserva la retícula del margen");
+    const cp = cinta(sheetCss);
+    const cs2 = cinta(readFileSync(DIR + "styles.css", "utf8"));
+    const difs = ["height", "background", "size"].filter((k) => cp[k] !== cs2[k]);
+    difs.forEach((k) => fail(`la cinta difiere en ${k}: sitio "${cs2[k] ?? "—"}" vs panel "${cp[k] ?? "—"}"`));
+    if (!difs.length) ok(`cinta idéntica en las dos superficies (${cp.height}, paso ${cp.size})`);
+    if (!/class="u-meta"|u-meta/.test(sheetCss + html)) fail("el panel no trae la cápsula de actualización");
   }
   // La URL vieja sigue resolviendo.
   const redir = readFileSync(DIR + "panel.html", "utf8");

@@ -56,6 +56,27 @@ export const SENTIDO_ES = {
   retirado: "Retirado", no_determinable: "Sin resultado legible"
 };
 
+/* La cápsula de actualización, redactada desde el dato y nunca escrita a mano.
+   Dice dos cosas que se confunden con facilidad: **cuándo se corrió el proceso**
+   y **hasta dónde llega lo que alcanzó a leer**. Un archivo puede actualizarse
+   hoy y no traer nada nuevo, que es lo que pasó con los cuatro lotes de agosto. */
+const MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+  "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+export function mesDeISO(iso) {
+  if (!iso) return null;
+  const [y, m] = iso.slice(0, 10).split("-");
+  return `${MESES_LARGOS[Number(m) - 1]} de ${y}`;
+}
+
+/** El texto de la cápsula: actualización y cobertura, en una línea. */
+export function textoMeta(generado, ultimaSesion) {
+  const act = mesDeISO(generado);
+  const hasta = mesDeISO(ultimaSesion);
+  if (act && hasta) return `Última actualización en ${act}, con datos hasta ${hasta}`;
+  return act ? `Última actualización en ${act}` : `Datos hasta ${hasta}`;
+}
+
 /* ── CSV ────────────────────────────────────────────────────────────── */
 
 function toCSV(rows, columns) {

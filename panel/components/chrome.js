@@ -57,6 +57,17 @@ export function nav(current = "panel") {
   </nav>`;
 }
 
+/** La cinta de puntos que separa el titular de la bajada. Es mobiliario y no
+    dice nada, así que se oculta a los lectores de pantalla. */
+export function dots() {
+  return html`<div class="u-dots" aria-hidden="true"></div>`;
+}
+
+/** La cápsula de actualización, sobre el titular. */
+export function meta(texto) {
+  return html`<p class="u-meta">${texto}</p>`;
+}
+
 /** Etiqueta de sección: mono, minúsculas, en caption (UMB-LAY-006). */
 export function label(text) {
   return html`<h2 class="u-label">${text}</h2>`;

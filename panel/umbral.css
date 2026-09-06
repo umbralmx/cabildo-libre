@@ -35,23 +35,6 @@
   --observablehq-max-width: 1200px;
 }
 
-/* ── Retícula de puntos ─────────────────────────────────────────────
-   UMB-LAY-009. Detrás de la página, en el margen exterior. La hoja la tapa
-   con `base`, así que nunca queda debajo de texto, tabla ni gráfica: no
-   cambia ningún contraste medido. En pantallas estrechas se apaga. */
-
-body::before {
-  content: "";
-  position: fixed;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-  background-image: radial-gradient(var(--u-baseline) 1px, transparent 1.6px);
-  background-size: 22px 22px;
-  opacity: 0.55;
-}
-@media (max-width: 1240px) { body::before { display: none; } }
-
 /* ── Hoja y columna ─────────────────────────────────────────────────── */
 
 html { background: var(--u-base); }
@@ -93,6 +76,49 @@ body { max-width: none; margin: 0; color: var(--u-ink); background: transparent;
   border-top: var(--u-rule) solid var(--u-border);
 }
 .u-section:first-of-type { border-top: 0; padding-top: 0; }
+
+
+/* ── La cinta de puntos y la cápsula de actualización ──────────────────────
+   Reemplazan a la retícula del margen, que se quitó: los márgenes quedan en
+   blanco. Es una desviación de UMB-LAY-009, que acota la retícula al margen
+   exterior; queda anotada en docs/diseno.md. El argumento para moverla es que
+   aquí los puntos hacen **trabajo estructural** —separan el titular de la
+   bajada, que es lo que UMB-LAY-002 encarga a las reglas de 1px— en vez de
+   decorar un margen vacío. Sigue siendo mobiliario: un solo token, sin tono
+   propio, y nunca debajo de texto.
+
+   La cinta se dibuja como en opencode.ai/data: un fondo del color del token,
+   recortado por una máscara de un cuadro de 2×2 sobre una retícula de 6×6. La
+   máscara sólo lleva alfa; el color viene del token, no del SVG. */
+
+.u-dots {
+  width: 100%;
+  height: 16px;
+  background: var(--u-baseline);
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H2V2H0V0Z' fill='%23000'/%3E%3C/svg%3E");
+  mask-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 0H2V2H0V0Z' fill='%23000'/%3E%3C/svg%3E");
+  -webkit-mask-size: 6px 6px;
+  mask-size: 6px 6px;
+  -webkit-mask-repeat: repeat;
+  mask-repeat: repeat;
+}
+
+/* La cápsula dice de cuándo es lo que se está leyendo, antes de que se lea.
+   Va sobre `panel` y no sobre `signal`: es contexto, no el hallazgo, y el
+   presupuesto de acento tiene que quedar libre (UMB-COL-004). Mono, porque es
+   una etiqueta y lleva fechas (UMB-LAY-006, UMB-TYP-004). */
+.u-meta {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  padding: 0 var(--u-space-1);
+  margin-bottom: var(--u-space-2);
+  background: var(--u-panel);
+  color: var(--u-muted);
+  font-family: var(--u-font-mono);
+  font-size: var(--u-size-label);
+  line-height: 1.35;
+}
 
 /* ── Marca y navegación ─────────────────────────────────────────────
    Sin barra fija: la marca va al principio del contenido, alineada con el

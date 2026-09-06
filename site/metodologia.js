@@ -27,6 +27,31 @@ function el(tag, cls, text) {
 
 /** Sustituye el contenido de un marcador sólo si hay dato. El HTML trae un
     valor de respaldo para que la página se lea con JS desactivado. */
+/* La cápsula de actualización, redactada desde el dato y nunca escrita a mano.
+   Dice dos cosas distintas que se confunden con facilidad: **cuándo se corrió
+   el proceso** y **hasta dónde llega lo que alcanzó a leer**. Un archivo puede
+   actualizarse hoy y no traer nada nuevo, que es justo lo que pasó con los
+   cuatro lotes de agosto. */
+const MESES_LARGOS = ["enero", "febrero", "marzo", "abril", "mayo", "junio", "julio",
+  "agosto", "septiembre", "octubre", "noviembre", "diciembre"];
+
+function mesDeISO(iso) {
+  if (!iso) return null;
+  const [y, m] = iso.slice(0, 10).split("-");
+  return `${MESES_LARGOS[Number(m) - 1]} de ${y}`;
+}
+
+function pintaMeta(generado, ultimaSesion) {
+  const el = document.getElementById("u-meta");
+  if (!el) return;
+  const act = mesDeISO(generado);
+  const hasta = mesDeISO(ultimaSesion);
+  if (!act && !hasta) return;
+  el.textContent = act && hasta
+    ? `Última actualización en ${act}, con datos hasta ${hasta}`
+    : (act ? `Última actualización en ${act}` : `Datos hasta ${hasta}`);
+}
+
 function slot(id, valor) {
   const n = $(id);
   if (n && valor != null) n.textContent = valor;
@@ -144,6 +169,8 @@ async function main() {
     // UMB-CHT-003 — the access date belongs in each source line, in ISO
     // (UMB-NUM-003), and is read from the payload so it cannot go stale.
     const iso = an.generado.slice(0, 10);
+    const ses = (an.calendario?.sesiones ?? []).map((x) => x.fecha).filter(Boolean).sort();
+    pintaMeta(an.generado, ses[ses.length - 1]);
     document.querySelectorAll('.fig-src .consulta').forEach((n) => {
       n.textContent = ` Consulta realizada el ${iso}.`;
     });
