@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-09-08T17:21:44+00:00",
+ "generado": "2026-09-08T17:39:33+00:00",
  "cobertura": {
   "actas_en_termino": 80,
   "con_resumen": 80,
@@ -40,10 +40,10 @@
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 876,
-  "n_con_valor": 790,
-  "suma_bruta_mxn": 17649991779.96,
-  "suma_declarada_mxn": 17151615017.25,
+  "n_declarados": 873,
+  "n_con_valor": 788,
+  "suma_bruta_mxn": 17595614257.57,
+  "suma_declarada_mxn": 17150312676.98,
   "puntos_total_y_desglose": [
    {
     "acta": "2024-2027-22",
@@ -90,8 +90,8 @@
     "no_acta": 53,
     "punto": 6,
     "total_mxn": 661792051.55,
-    "n_componentes": 19,
-    "suma_componentes_mxn": 431941177.52
+    "n_componentes": 18,
+    "suma_componentes_mxn": 378865995.4
    },
    {
     "acta": "2024-2027-59",

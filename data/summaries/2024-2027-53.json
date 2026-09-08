@@ -142,10 +142,6 @@
      "valor_mxn": 661792051.55
     },
     {
-     "texto": "$53,075,182.12",
-     "valor_mxn": 53075182.12
-    },
-    {
      "texto": "$5,342,049.09",
      "valor_mxn": 5342049.09
     },
@@ -255,5 +251,8 @@
    "comision": null,
    "autor": null
   }
+ ],
+ "montos_descartados": [
+  "punto 6: $53,075,182.12"
  ]
 }

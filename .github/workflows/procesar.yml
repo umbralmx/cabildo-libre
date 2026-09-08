@@ -28,6 +28,9 @@ on:
         description: "Sólo las actas que modificaron su órden del día en sesión (arreglo de numeración)"
         type: boolean
         default: false
+      ids:
+        description: "Actas concretas, separadas por coma (ej. 2024-2027-34,2024-2027-46). Vacío = el lote normal"
+        default: ""
   schedule:
     - cron: "0 7 * * 6" # sábados 1:00 Colima, fuera de horas pico
 
@@ -67,8 +70,11 @@ jobs:
       - name: Resúmenes (DeepSeek) — sólo si hay llave
         if: ${{ env.DEEPSEEK_API_KEY != '' }}
         run: |
+          # `--ids` gana sobre `--limit`: sirve para reparar actas concretas sin
+          # volver a tocar el resto. Hacía falta y no existía — CLAUDE.md pedía
+          # re-correr 19 actas por número y no había forma de pedirlo.
           python3 processor/summarize_colima.py \
-            --limit "${{ github.event.inputs.lote || '10' }}" \
+            ${{ github.event.inputs.ids != '' && format('--ids {0}', github.event.inputs.ids) || format('--limit {0}', github.event.inputs.lote || '10') }} \
             ${{ github.event.inputs.resumir_forzar == 'true' && '--force' || '' }} \
             ${{ github.event.inputs.solo_modificadas == 'true' && '--solo-modificadas' || '' }}
 

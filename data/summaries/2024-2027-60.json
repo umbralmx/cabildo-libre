@@ -104,10 +104,6 @@
     {
      "texto": "$101,701.14",
      "valor_mxn": 101701.14
-    },
-    {
-     "texto": "$1,302,340.27",
-     "valor_mxn": 1302340.27
     }
    ],
    "beneficiario": null,
@@ -307,5 +303,8 @@
    "comision": null,
    "autor": null
   }
+ ],
+ "montos_descartados": [
+  "punto 5: $1,302,340.27"
  ]
 }

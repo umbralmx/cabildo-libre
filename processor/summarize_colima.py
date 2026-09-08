@@ -338,6 +338,46 @@ def _clean_personas(raw: object, cap: int = 13) -> list[dict]:
     return out
 
 
+def descartar_montos_inventados(puntos: list[dict], texto: str) -> tuple[list[dict], list[str]]:
+    """Quita todo monto cuya cifra no aparezca en el OCR del acta.
+
+    `verificar.py` ya detectaba esto **después** de publicar. Detectarlo tarde no
+    sirve de nada cuando lo que se cuela es una cifra de dinero público: el acta
+    60 declaraba $1,302,340.27, que el acta no dice en ninguna parte y que sale
+    exactamente de restar $101,701.14 al total de $1,404,041.41. El modelo no la
+    leyó: la calculó. El acta 53 traía $53,075,182.12 sin ningún dígito parecido
+    en el documento, mientras se le escapaban cuatro cantidades que sí estaban.
+
+    La regla es la del proyecto: **nunca se rellena un vacío por inferencia.** Un
+    monto derivado es una inferencia aunque la aritmética sea correcta, porque lo
+    que se publica es «el acta declara X» y el acta no declara X.
+
+    La prueba es la misma que la de la puerta, deliberadamente conservadora: se
+    compara contra el OCR reducido a sólo dígitos, así que da igual cómo el
+    escáner rompiera los separadores. Sólo cae cuando la secuencia de dígitos no
+    está en ninguna parte del acta. Un falso positivo aquí sería ruido; lo que no
+    puede haber son falsos negativos.
+
+    Devuelve los puntos ya limpios y la lista de lo descartado, que se guarda en
+    el JSON del acta: un monto que se cae se reporta, no se desvanece.
+    """
+    digitos = re.sub(r"\D", "", texto or "")
+    descartados: list[str] = []
+    for pt in puntos:
+        conservados = []
+        for m in pt.get("montos") or []:
+            nums = re.findall(r"\d[\d,\.\s]*\d|\d", m.get("texto") or "")
+            cifra = re.sub(r"\D", "", max(nums, key=len)) if nums else ""
+            # Menos de cuatro dígitos es una fecha, un numeral o un número de
+            # oficio; no se juzga como monto.
+            if len(cifra) >= 4 and cifra not in digitos:
+                descartados.append(f"punto {pt.get('n')}: {m.get('texto')}")
+                continue
+            conservados.append(m)
+        pt["montos"] = conservados
+    return puntos, descartados
+
+
 def parse_summary(raw: str, acta: dict) -> tuple[str, list[dict]]:
     """Validate the model output against the agenda; drop anything malformed.
     Returns (resumen_sesion, puntos)."""
@@ -517,6 +557,9 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
     puntos, conflictos = fusionar_puntos(parciales)
     if not puntos:
         raise ValueError("el modelo no devolvió ningún punto del órden del día")
+    puntos, montos_descartados = descartar_montos_inventados(puntos, texto)
+    for d in montos_descartados:
+        print(f"  ! monto que el acta no contiene, descartado — {d}", flush=True)
     # Overlap means the windows double-count characters; what matters is whether
     # the whole acta was seen — true unless MAX_VENTANAS cut it or a window failed.
     paso = VENTANA_CHARS - SOLAPE_CHARS
@@ -528,6 +571,7 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
         "periodo": acta["periodo"],
         "esquema": ESQUEMA,
         "modelo": LLM_MODEL,
+        "montos_descartados": montos_descartados,
         "fuente_texto": ocr["motor"],
         "generado": datetime.datetime.now(datetime.timezone.utc).isoformat(timespec="seconds"),
         # Coverage of the source text, so the dashboard can state how much of the

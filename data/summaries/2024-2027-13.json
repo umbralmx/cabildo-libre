@@ -176,10 +176,6 @@
     {
      "texto": "1,088,247.18",
      "valor_mxn": null
-    },
-    {
-     "texto": "1,088,207.18",
-     "valor_mxn": null
     }
    ],
    "beneficiario": null,
@@ -207,5 +203,8 @@
    "comision": null,
    "autor": null
   }
+ ],
+ "montos_descartados": [
+  "punto 6: 1,088,207.18"
  ]
 }
