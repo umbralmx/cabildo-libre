@@ -7,22 +7,22 @@
  "modelo": "deepseek-v4-flash",
  "montos_descartados": [],
  "fuente_texto": "tesseract-spa",
- "generado": "2026-09-08T18:00:53+00:00",
+ "generado": "2026-09-08T18:47:45+00:00",
  "lectura": {
   "chars_ocr": 288107,
-  "chars_leidos": 246107,
+  "chars_leidos": 288107,
   "ventanas": 7,
-  "ventanas_fallidas": 1,
-  "completa": false
+  "ventanas_fallidas": 0,
+  "completa": true
  },
  "puntos_en_conflicto": [],
  "orden_del_dia_modificado": true,
- "resumen_sesion": "Asistencia y quórum; se retiró del orden la reforma al Reglamento del Gobierno Municipal, se aprobaron las actas 30 y 31, y se leyó el dictamen de adecuaciones presupuestales.",
+ "resumen_sesion": "El cabildo aprobó el orden del día modificado (retiró el punto del Reglamento) y las actas 30 y 31; dio lectura al dictamen de adecuaciones presupuestarias sin votarlo.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se pasó lista de asistencia y se registró la presencia del Presidente Municipal, la Síndica, regidoras y regidores, incluida una regidora vía remota.",
+   "resumen": "Se pasó lista de asistencia; estuvieron presentes el presidente, la síndica y las y los regidores, una de ellos por vía remota.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -38,7 +38,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Al contar con quórum legal, se declaró formalmente instalada la sesión ordinaria.",
+   "resumen": "Se declaró formalmente instalada la sesión al contar con quórum legal.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -54,7 +54,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "El Cabildo aprobó por unanimidad el orden del día, retirando de él el dictamen que reformaría el Reglamento del Gobierno Municipal.",
+   "resumen": "Se dio lectura al orden del día; el regidor Francisco Javier Bravo Gallardo solicitó retirar el dictamen que reforma el Reglamento del Gobierno Municipal y la modificación se aprobó por unanimidad.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -70,7 +70,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobaron por unanimidad las actas de Cabildo 30 y 31, y se autorizó presentar las actas 32 y 33 en la próxima sesión.",
+   "resumen": "Se aprobaron por unanimidad las Actas de Cabildo 30 y 31, y se autorizó presentar las actas 32 y 33 en la próxima sesión.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -86,7 +86,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias solicitadas, con ampliaciones, creaciones y transferencias entre partidas, por un total de 24,893,862.77 pesos. Votaron en contra la Regidora Azucena López Legorreta y la Licda. Diana Gabriela Vizcaíno Aguirre.",
+   "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias especificadas, con un total reportado de 24,893,862.77 pesos. El dictamen fue aprobado por mayoría, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -122,7 +122,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública Municipal de abril de 2025. Votaron en contra las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública correspondiente a abril de 2025. Fue aprobado por mayoría, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -130,16 +130,16 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$208.15 millones de pesos (doscientos ocho millones ciento cincuenta mil pesos)",
+     "texto": "$208.15 millones de pesos",
      "valor_mxn": 208150000
     },
     {
-     "texto": "$154.5 millones de pesos (ciento cincuenta y cuatro millones quinientos mil pesos)",
+     "texto": "$154.5 millones de pesos",
      "valor_mxn": 154500000
     },
     {
-     "texto": "$560 millones de pesos",
-     "valor_mxn": 560000000
+     "texto": "cercanos a $560 millones de pesos",
+     "valor_mxn": null
     },
     {
      "texto": "$644 millones de pesos",
@@ -148,7 +148,7 @@
    ],
    "beneficiario": {
     "nombre": "H. Congreso del Estado de Colima",
-    "tipo": "dependencia"
+    "tipo": "otro"
    },
    "votos_en_contra": [
     {
@@ -163,14 +163,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Licda. Alondra Isabel López Alonso",
+    "nombre": "Alondra Isabel López Alonso",
     "id": "alondra-isabel-lopez-alonso"
    }
   },
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se aprobó por unanimidad dar de baja la licencia de venta de bebidas alcohólicas de SUPER KIOSKO SA DE CV, tipo depósito de cerveza, vinos y licores, ubicada en Calzada del Campesino 163, colonia El Moralete, porque el establecimiento ya no funciona.",
+   "resumen": "Se autorizó por unanimidad dar de baja la licencia de venta y consumo de bebidas alcohólicas del establecimiento Depósito de Cerveza, Vinos y Licores de Super Kiosko SA de CV, ubicado en Calzada del Campesino No. 163, colonia El Moralete.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -187,26 +187,38 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "La Regidora Claudia Janeth Farías López dio lectura al dictamen que propone autorizar la incorporación municipal anticipada de la Etapa 2 del fraccionamiento Andares del Jazmín IV, con 139 lotes y una superficie de 27,502.80 metros cuadrados. Este fragmento no registra la votación.",
-   "sentido": "no_determinable",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la Etapa 2 del fraccionamiento ANDARES DEL JAZMÍN IV, al oriente de Colima, con 139 lotes, vialidades y dos fianzas de BERKLEY INTERNATIONAL COMPAÑÍA DE GARANTÍAS MÉXICO, S.A. DE C.V. por $1,060,323.00 y $3,948,201.40 para garantizar obras de urbanización. Autoriza al urbanizador DELAMO GRUPO CONSTRUCTOR, S.A. de C.V.",
+   "sentido": "aprobado",
    "categoria": "fraccionamiento",
-   "votacion": "no_determinable",
+   "votacion": "unanime",
    "colonias": [
     "ANDARES DEL JAZMÍN IV"
    ],
    "obras": [
     "CALLE REPUBLICA DE CONGO",
     "CALLE REPUBLICA DE NICARAGUA",
-    "CALLE REPUBLICA DEL SALVADOR"
+    "CALLE REPUBLICA DEL SALVADOR",
+    "AV. FRANCISCO RAMÍREZ VILLARREAL",
+    "Obras de urbanización de la Etapa 2",
+    "Obras faltantes de urbanización de la Etapa 2"
    ],
-   "montos": [],
+   "montos": [
+    {
+     "texto": "$ 1, 060,323.00 (Un Millón Sesenta Mil Trescientos Veintitrés Pesos 00/100 M.N.)",
+     "valor_mxn": 1060323.0
+    },
+    {
+     "texto": "$ 3, 948,201.40 (Tres Millones Novecientos Cuarenta Y Ocho Mil Doscientos Un Pesos 40/100 M.N.)",
+     "valor_mxn": 3948201.4
+    }
+   ],
    "beneficiario": {
     "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
     "tipo": "empresa"
@@ -215,14 +227,14 @@
    "abstenciones": [],
    "comision": "Comisión de Desarrollo Urbano y Vivienda",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se aprobó el dictamen que expide el Reglamento Interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad, con el voto en contra de la regidora Azucena López Legorreta.",
+   "resumen": "Se aprobó por mayoría, con voto en contra de la regidora Azucena López Legorreta, el reglamento interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima; el acuerdo ordena las transferencias y gestiones administrativas para operarlo.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "mayoria",
@@ -230,7 +242,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima",
+    "nombre": "Instituto para el Desarrollo, la Inclusión y Atención a la Discapacidad del Municipio de Colima",
     "tipo": "dependencia"
    },
    "votos_en_contra": [
@@ -240,13 +252,16 @@
     }
    ],
    "abstenciones": [],
-   "comision": null,
-   "autor": null
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
   },
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se aprobó por mayoría el Reglamento interior del Instituto Municipal para la Paz Intrafamiliar; la regidora Azucena López Legorreta votó en contra por considerarlo propio de la Comisión de Hacienda.",
+   "resumen": "Se aprobó por mayoría el Reglamento interior del Instituto Municipal para la Paz Intrafamiliar y se instruyó publicarlo y hacer las adecuaciones presupuestales. Votó en contra la Regidora Azucena López Legorreta.",
    "sentido": "aprobado",
    "categoria": "reglamento_normativo",
    "votacion": "mayoria",
@@ -254,7 +269,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Instituto Municipal para la Paz Intrafamiliar del Municipio de Colima",
+    "nombre": "Instituto Municipal para la Paz Intrafamiliar",
     "tipo": "dependencia"
    },
    "votos_en_contra": [
@@ -273,7 +288,7 @@
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó renovar el comodato del inmueble en la calle Concepción Ramos Brun 1474, colonia Josefa Ortiz de Domínguez, a favor de Casa Hogar San Juan Pablo II, I.A.P., hasta el 15 de octubre de 2027.",
+   "resumen": "Se aprobó por unanimidad renovar el comodato del inmueble en la calle Concepción Ramos Brun No. 1474, colonia Josefa Ortiz de Domínguez, a favor de la Casa Hogar San Juan Pablo II I.A.P., hasta el 15 de octubre de 2027.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
@@ -283,7 +298,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Casa Hogar San Juan Pablo II, I.A.P.",
+    "nombre": "Casa Hogar San Juan Pablo II I.A.P.",
     "tipo": "otro"
    },
    "votos_en_contra": [],
@@ -297,7 +312,7 @@
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó renovar el comodato del inmueble en la calle Josefa Ortiz de Domínguez 540, colonia La Albarrada, a favor del Centro de Promoción Humana y de Cultura de Colima, I.A.P. (Hogar del Refugio), hasta el 15 de octubre de 2027.",
+   "resumen": "Se aprobó por unanimidad renovar el comodato del inmueble en la calle Josefa Ortiz de Domínguez No. 540, colonia La Albarrada, a favor del Centro de Promoción Humana y de Cultura de Colima I.A.P., conocido como Hogar del Refugio, hasta el 15 de octubre de 2027.",
    "sentido": "aprobado",
    "categoria": "patrimonio",
    "votacion": "unanime",
@@ -307,7 +322,7 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Centro de Promoción Humana y de Cultura de Colima, I.A.P. (Hogar del Refugio)",
+    "nombre": "Centro de Promoción Humana y de Cultura de Colima I.A.P., conocido como Hogar del Refugio",
     "tipo": "otro"
    },
    "votos_en_contra": [],
@@ -321,7 +336,7 @@
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó que los aspirantes a policías municipales en formación cuenten con seguridad social del IMSS y que su beca se equipare al salario de un agente de la Policía Municipal.",
+   "resumen": "Se aprobó por unanimidad que los aspirantes a policías en formación inicial reciban seguridad social del IMSS y que su beca se equipare al salario de un agente de la Policía Municipal.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -329,8 +344,8 @@
    "obras": [],
    "montos": [],
    "beneficiario": {
-    "nombre": "Aspirantes a policías municipales en formación",
-    "tipo": "otro"
+    "nombre": "aspirantes a policías municipales",
+    "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
@@ -343,9 +358,9 @@
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "En asuntos generales hubo mensajes y reconocimientos, sin acuerdos sometidos a votación.",
-   "sentido": "tramite",
-   "categoria": "tramite",
+   "resumen": "Los asuntos generales consistieron en reconocimientos a maestros y personal de Secretaría, avisos de actividades y la petición no aceptada de asentar un voto en contra de la Regidora Gaby Vizcaíno en el punto diez.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
    "votacion": "no_determinable",
    "colonias": [
     "Piscila"

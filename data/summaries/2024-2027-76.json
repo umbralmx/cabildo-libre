@@ -7,22 +7,22 @@
  "modelo": "deepseek-v4-flash",
  "montos_descartados": [],
  "fuente_texto": "tesseract-spa",
- "generado": "2026-09-08T18:36:15+00:00",
+ "generado": "2026-09-08T18:56:28+00:00",
  "lectura": {
   "chars_ocr": 244600,
-  "chars_leidos": 202600,
+  "chars_leidos": 244600,
   "ventanas": 6,
-  "ventanas_fallidas": 1,
-  "completa": false
+  "ventanas_fallidas": 0,
+  "completa": true
  },
  "puntos_en_conflicto": [],
  "orden_del_dia_modificado": true,
- "resumen_sesion": "El fragmento solo cubre trámites: instalación, orden del día modificado, acta 75, y la lectura del dictamen de transferencias presupuestarias por $22,025,530.93, sin votación.",
+ "resumen_sesion": "Este fragmento solo alcanza a los trámites iniciales y a la lectura del dictamen de adecuaciones presupuestales por $22,025,530.93; ninguna decisión de fondo consta aún.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia de los miembros del cabildo para iniciar la sesión.",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del presidente municipal, la síndica y las y los regidores; una regidora asistió de forma remota.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -38,7 +38,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -54,7 +54,7 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se aprobó por unanimidad la modificación al orden del día, retirando el séptimo punto e incorporando el dictamen de convenio con Grupo Automotriz PYD.",
+   "resumen": "El Cabildo aprobó por unanimidad modificar el orden del día: retirar el séptimo punto, relativo al renombramiento del Auditorio Miguel de la Madrid, e incorporar el dictamen de convenio con Grupo Automotriz PYD (Agencia MG).",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -70,7 +70,7 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "Se aprobó por unanimidad el acta de la sesión de cabildo número 75.",
+   "resumen": "Se aprobó por unanimidad el Acta de Cabildo número 75.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
@@ -86,7 +86,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "El Cabildo aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestarias de mayo de 2026; votaron en contra dos regidoras.",
+   "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal realizar las adecuaciones presupuestarias de mayo de 2026, con el voto en contra de dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -94,15 +94,15 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$22\"025,530.93",
+     "texto": "$22,025,530.93 (Veintidós millones veinticinco mil quinientos treinta pesos 93/100 m.n.)",
      "valor_mxn": 22025530.93
     },
     {
-     "texto": "22,025,530.93",
+     "texto": "$22,025,530.93",
      "valor_mxn": 22025530.93
     },
     {
-     "texto": "2,617,944.04",
+     "texto": "$2,617,944.04",
      "valor_mxn": 2617944.04
     }
    ],
@@ -123,14 +123,14 @@
    "abstenciones": [],
    "comision": "Comisión de Hacienda Municipal",
    "autor": {
-    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "nombre": "Itzel Sarahí Ríos de la Mora",
     "id": "itzel-sarahi-rios-de-la-mora"
    }
   },
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública de mayo de 2026, pese a dos votos en contra por considerar que faltaba claridad en las finanzas.",
+   "resumen": "El Cabildo aprobó el dictamen de la Cuenta Pública de mayo de 2026 para remitirla al H. Congreso del Estado; el acta registra once votos a favor y dos en contra.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -161,7 +161,7 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "Se declaró al Fraccionamiento Residencial Romanza recinto oficial para celebrar el 17 de junio de 2026 la sesión extraordinaria que tratará la municipalización de sus etapas 1 y 2.",
+   "resumen": "El Cabildo declaró recinto oficial, por única vez, al Fraccionamiento Residencial Romanza para la sesión extraordinaria del 17 de junio en la que se tratará su municipalización.",
    "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "mayoria",
@@ -195,7 +195,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "Se autorizaron dos licencias comerciales para venta de cerveza: Abarrotes Don Rafa, de Ma Elena Sánchez Trujillo, en Las Tunas, y Abarrotes Cristal, de Cristal Guadalupe Rodríguez Vega, en Los Asmoles.",
+   "resumen": "El Cabildo autorizó dos licencias de venta de cerveza en zona rural para 'Abarrotes Don Rafa' de MA Elena Sánchez Trujillo en Las Tunas y 'Abarrotes Cristal' de Cristal Guadalupe Rodríguez Vega en Los Asmoles.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -205,22 +205,19 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "MA ELENA SÁNCHEZ TRUJILLO y CRISTAL GUADALUPE RODRÍGUEZ VEGA",
-    "tipo": "persona"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "Se autorizaron tres licencias comerciales para establecimientos con venta de alcohol: Abarrotes Álvarez, Abarrotes Michelita y el restaurante Cumbre Tirafuego, tras verificar que cumplen los requisitos.",
+   "resumen": "El Cabildo autorizó tres licencias de bebidas alcohólicas para 'Abarrotes Álvarez' en El Moralete, 'Abarrotes Michelita' en La Virgencita y 'Cumbre Tirafuego' en Residencial Santa Gertrudis.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -231,10 +228,7 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "SANDRA ISABEL IÑIGUEZ MUÑOZ, LETICIA VAZQUEZ ABARCA y CUMBRE TIRAFUEGO S.A. DE C.V.",
-    "tipo": "otro"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
@@ -246,7 +240,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "Se autorizó la baja definitiva de la licencia comercial B-00025 de Rafael Anguiano Chávez, porque el establecimiento de abarrotes en Las Tunas ya no funciona.",
+   "resumen": "El Cabildo aprobó dar de baja la licencia B-00025 de Rafael Anguiano Chávez para abarrotes con venta de cerveza en Las Tunas.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -255,22 +249,19 @@
    ],
    "obras": [],
    "montos": [],
-   "beneficiario": {
-    "nombre": "Rafael Anguiano Chávez",
-    "tipo": "persona"
-   },
+   "beneficiario": null,
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se autorizó firmarlo al presidente municipal, a la síndica y al secretario.",
+   "resumen": "Se autorizó la suscripción de un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se facultó al presidente municipal, la síndica y el secretario para firmarlo.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -283,18 +274,18 @@
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Gobernación y Reglamentos y de Juventud y Deporte",
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
    "autor": {
-    "nombre": "Regidora Licda. Claudia Janeth Farías López",
+    "nombre": "Licda. Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo 2024-2025, a cinco alumnas y alumnos del Bachillerato CEDART Juan Rulfo, con $10,000 para cada uno y un total de $50,000.",
+   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo 2024-2025, a cinco estudiantes del Bachillerato CEDART Juan Rulfo, con 50,000 pesos en total, mediante cinco estímulos de 10,000 pesos cada uno.",
    "sentido": "aprobado",
-   "categoria": "otro",
+   "categoria": "presupuesto_finanzas",
    "votacion": "unanime",
    "colonias": [],
    "obras": [],
@@ -309,21 +300,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
-    "tipo": "otro"
+    "nombre": "Cinco alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
+    "tipo": "ciudadania"
    },
    "votos_en_contra": [],
    "abstenciones": [],
-   "comision": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
+   "comision": "Comisiones conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
    "autor": {
-    "nombre": "Regidor Mtro. Federico Rangel Lozano",
+    "nombre": "Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la agencia automotriz Grupo Automotriz PYD, que otorgará descuentos de 8% en flotilla y $5,000 adicionales al personal activo del municipio.",
+   "resumen": "Se aprobó el convenio de colaboración entre el Municipio de Colima y la Agencia Automotriz Grupo Automotriz PYD para dar descuentos en vehículos MG al personal municipal, incluido 8% en unidades de flotilla y 5,000 pesos adicionales.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -343,14 +334,14 @@
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "nombre": "Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "En Asuntos Generales se expusieron pronunciamientos sobre la transmisión institucional de las sesiones, la atención a casos de justicia cívica, las ayudas sociales, la salud y otros temas; no se sometió a votación.",
+   "resumen": "En asuntos generales, integrantes del Cabildo expusieron temas de transparencia en ayudas sociales, transmisión oficial de sesiones, salud, educación y municipalización de colonias; no se sometió ningún acuerdo a votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -362,7 +353,7 @@
    "obras": [],
    "montos": [
     {
-     "texto": "un millón y medio",
+     "texto": "un millón y medio en ayudas sociales",
      "valor_mxn": 1500000
     }
    ],

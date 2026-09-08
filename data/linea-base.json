@@ -1,0 +1,19 @@
+{
+ "termino": "2024-2027",
+ "generado": "2026-09-08T18:56:37+00:00",
+ "cifras": {
+  "cobertura.actas_en_termino": 80,
+  "cobertura.con_resumen": 80,
+  "decisiones.n_puntos": 933,
+  "decisiones.n_sustantivos": 595,
+  "montos.n_con_valor": 699,
+  "montos.suma_bruta_mxn": 17051960453.98,
+  "montos.suma_declarada_mxn": 16616181495.56,
+  "lectura.proporcion": 1.0,
+  "decisiones.por_sentido.aprobado": 541,
+  "decisiones.por_sentido.no_determinable": 27,
+  "decisiones.por_sentido.aplazado": 22,
+  "decisiones.por_sentido.rechazado": 3,
+  "decisiones.por_sentido.retirado": 2
+ }
+}

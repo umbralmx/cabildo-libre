@@ -1,7 +1,7 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-09-08T18:36:24+00:00",
+ "generado": "2026-09-08T18:56:37+00:00",
  "cobertura": {
   "actas_en_termino": 80,
   "con_resumen": 80,
@@ -12,9 +12,9 @@
  },
  "decisiones": {
   "n_puntos": 933,
-  "n_sustantivos": 594,
+  "n_sustantivos": 595,
   "por_sentido": {
-   "aprobado": 540,
+   "aprobado": 541,
    "no_determinable": 27,
    "aplazado": 22,
    "rechazado": 3,
@@ -23,7 +23,7 @@
   "por_categoria": {
    "tramite": 113,
    "licencia": 85,
-   "presupuesto_finanzas": 83,
+   "presupuesto_finanzas": 84,
    "convenio": 75,
    "fraccionamiento": 71,
    "otro": 52,
@@ -33,17 +33,17 @@
    "obra_publica": 15
   },
   "por_votacion": {
-   "unanime": 482,
+   "unanime": 483,
    "mayoria": 70,
    "no_determinable": 42
   },
   "base_tier_a": "categoría y votación se cuentan sólo sobre los puntos con campos analíticos."
  },
  "montos": {
-  "n_declarados": 773,
-  "n_con_valor": 698,
-  "suma_bruta_mxn": 17606951929.58,
-  "suma_declarada_mxn": 17171172971.16,
+  "n_declarados": 775,
+  "n_con_valor": 699,
+  "suma_bruta_mxn": 17051960453.98,
+  "suma_declarada_mxn": 16616181495.56,
   "puntos_total_y_desglose": [
    {
     "acta": "2024-2027-22",
@@ -174,13 +174,6 @@
     "punto": 6
    },
    {
-    "texto": "$560 millones de pesos",
-    "valor_mxn": 560000000,
-    "acta": "2024-2027-34",
-    "no_acta": 34,
-    "punto": 6
-   },
-   {
     "texto": "530,400,000.00",
     "valor_mxn": 530400000.0,
     "acta": "2024-2027-17",
@@ -200,17 +193,24 @@
     "acta": "2024-2027-17",
     "no_acta": 17,
     "punto": 5
+   },
+   {
+    "texto": "223,596,769.00",
+    "valor_mxn": 223596769,
+    "acta": "2024-2027-30",
+    "no_acta": 30,
+    "punto": 10
    }
   ]
  },
  "lectura": {
   "chars_ocr": 11173712,
-  "chars_leidos": 11089712,
-  "proporcion": 0.9925,
-  "actas_completas": 78,
+  "chars_leidos": 11173712,
+  "proporcion": 1.0,
+  "actas_completas": 80,
   "actas_con_dato": 80,
   "actas_sin_dato": 0,
-  "ventanas_fallidas": 2,
+  "ventanas_fallidas": 0,
   "puntos_en_conflicto": [],
   "nota": "Proporción del texto OCR de cada acta que llegó al modelo que redacta los resúmenes. Un acta se lee en ventanas solapadas; si una ventana falla, su parte se descuenta aquí en vez de darse por leída. `puntos_en_conflicto` son los puntos en que dos ventanas afirmaron resultados distintos: se resolvió por mayoría y se listan para poder verificarlos contra el PDF. Las actas resumidas antes de esta medición aparecen en `actas_sin_dato`: no se les supone cobertura."
  },
@@ -902,15 +902,15 @@
    "menciones": 10
   },
   {
+   "nombre": "Piscila",
+   "menciones": 10
+  },
+  {
    "nombre": "El Moralete",
    "menciones": 9
   },
   {
    "nombre": "La Capacha",
-   "menciones": 9
-  },
-  {
-   "nombre": "Piscila",
    "menciones": 9
   },
   {
@@ -1916,7 +1916,7 @@
  ],
  "registro_voto": {
   "base_actas": 80,
-  "base_puntos": 594,
+  "base_puntos": 595,
   "por_integrante": [
    {
     "id": "azucena-lopez-legorreta",
@@ -1996,7 +1996,7 @@
     "cargo": "regidor",
     "votos_en_contra": 0,
     "abstenciones": 0,
-    "dictamenes_presentados": 62
+    "dictamenes_presentados": 63
    },
    {
     "id": "itzel-sarahi-rios-de-la-mora",
@@ -2338,7 +2338,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal las adecuaciones presupuestarias solicitadas, con ampliaciones, creaciones y transferencias entre partidas, por un total de 24,893,862.77 pesos. Votaron en contra la Regidora Azucena López Legorreta y la Licda. Diana Gabriela Vizcaíno Aguirre.",
+    "resumen": "Se autorizó a la Tesorería Municipal realizar las adecuaciones presupuestarias especificadas, con un total reportado de 24,893,862.77 pesos. El dictamen fue aprobado por mayoría, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2358,7 +2358,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública Municipal de abril de 2025. Votaron en contra las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+    "resumen": "Se aprobó remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública correspondiente a abril de 2025. Fue aprobado por mayoría, con los votos en contra de Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2378,7 +2378,7 @@
     "punto": 9,
     "categoria": "reglamento_normativo",
     "votacion": "mayoria",
-    "resumen": "Se aprobó el dictamen que expide el Reglamento Interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad, con el voto en contra de la regidora Azucena López Legorreta.",
+    "resumen": "Se aprobó por mayoría, con voto en contra de la regidora Azucena López Legorreta, el reglamento interior del Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima; el acuerdo ordena las transferencias y gestiones administrativas para operarlo.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -2394,7 +2394,7 @@
     "punto": 10,
     "categoria": "reglamento_normativo",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría el Reglamento interior del Instituto Municipal para la Paz Intrafamiliar; la regidora Azucena López Legorreta votó en contra por considerarlo propio de la Comisión de Hacienda.",
+    "resumen": "Se aprobó por mayoría el Reglamento interior del Instituto Municipal para la Paz Intrafamiliar y se instruyó publicarlo y hacer las adecuaciones presupuestales. Votó en contra la Regidora Azucena López Legorreta.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3754,7 +3754,7 @@
     "punto": 5,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "El Cabildo aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestarias de mayo de 2026; votaron en contra dos regidoras.",
+    "resumen": "Se aprobó por mayoría autorizar a la Tesorería Municipal realizar las adecuaciones presupuestarias de mayo de 2026, con el voto en contra de dos regidoras.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3774,7 +3774,7 @@
     "punto": 6,
     "categoria": "presupuesto_finanzas",
     "votacion": "mayoria",
-    "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública de mayo de 2026, pese a dos votos en contra por considerar que faltaba claridad en las finanzas.",
+    "resumen": "El Cabildo aprobó el dictamen de la Cuenta Pública de mayo de 2026 para remitirla al H. Congreso del Estado; el acta registra once votos a favor y dos en contra.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3794,7 +3794,7 @@
     "punto": 7,
     "categoria": "tramite",
     "votacion": "mayoria",
-    "resumen": "Se declaró al Fraccionamiento Residencial Romanza recinto oficial para celebrar el 17 de junio de 2026 la sesión extraordinaria que tratará la municipalización de sus etapas 1 y 2.",
+    "resumen": "El Cabildo declaró recinto oficial, por única vez, al Fraccionamiento Residencial Romanza para la sesión extraordinaria del 17 de junio en la que se tratará su municipalización.",
     "votos_en_contra": [
      {
       "nombre": "C. Azucena López Legorreta",
@@ -3842,16 +3842,16 @@
   "nota": "Sólo cuenta lo que el acta nombra explícitamente: un cero no significa que la persona siempre votó a favor, sino que ninguna de las 80 actas con ficha de decisión la nombró votando en contra o absteniéndose. Los nombres que no corresponden a ningún integrante del cabildo (suplentes, o nombres que el OCR deformó) se listan aparte en nombres_sin_mapear, sin asignarlos a nadie."
  },
  "disenso_por_categoria": {
-  "base_puntos": 594,
+  "base_puntos": 595,
   "filas": [
    {
     "categoria": "presupuesto_finanzas",
-    "puntos": 83,
+    "puntos": 84,
     "mayoria": 47,
     "con_votos_en_contra": 46,
     "votos_en_contra": 74,
     "con_abstenciones": 9,
-    "tasa_disenso": 0.554
+    "tasa_disenso": 0.548
    },
    {
     "categoria": "obra_publica",
@@ -3938,14 +3938,14 @@
   "nota": "tasa_disenso = puntos con votos en contra nombrados / puntos de esa categoría con ficha de decisión. Un dictamen aprobado por mayoría cuya acta no nombra a los disidentes cuenta en 'mayoria' pero no en 'con_votos_en_contra'."
  },
  "beneficiarios": {
-  "base_puntos": 594,
+  "base_puntos": 595,
   "filas": [
    {
     "nombre": "H. Congreso del Estado de Colima",
     "tipo": "dependencia",
     "menciones": 20,
     "actas": 19,
-    "monto_declarado_mxn": 5750012171.66,
+    "monto_declarado_mxn": 5190012171.66,
     "puntos_con_monto": 5
    },
    {
@@ -3965,19 +3965,19 @@
     "puntos_con_monto": 4
    },
    {
+    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
+    "tipo": "empresa",
+    "menciones": 4,
+    "actas": 4,
+    "monto_declarado_mxn": 5847342.45,
+    "puntos_con_monto": 2
+   },
+   {
     "nombre": "contribuyentes del Municipio de Colima",
     "tipo": "ciudadania",
     "menciones": 4,
     "actas": 4,
     "monto_declarado_mxn": 1447830.0,
-    "puntos_con_monto": 1
-   },
-   {
-    "nombre": "DELAMO GRUPO CONSTRUCTOR, S.A. DE C.V.",
-    "tipo": "empresa",
-    "menciones": 4,
-    "actas": 4,
-    "monto_declarado_mxn": 838818.05,
     "puntos_con_monto": 1
    },
    {
@@ -4063,6 +4063,14 @@
    {
     "nombre": "Rafael Brizuela Olivo",
     "tipo": "persona",
+    "menciones": 2,
+    "actas": 2,
+    "monto_declarado_mxn": null,
+    "puntos_con_monto": 0
+   },
+   {
+    "nombre": "aspirantes a policías municipales",
+    "tipo": "ciudadania",
     "menciones": 2,
     "actas": 2,
     "monto_declarado_mxn": null,
@@ -4477,8 +4485,8 @@
     "puntos_con_monto": 1
    },
    {
-    "nombre": "alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
-    "tipo": "otro",
+    "nombre": "Cinco alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
+    "tipo": "ciudadania",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": 60000.0,
@@ -4797,22 +4805,6 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Aspirantes a policías municipales",
-    "tipo": "ciudadania",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "Aspirantes a policías municipales en formación",
-    "tipo": "otro",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
     "nombre": "Autoridades Auxiliares electas para el período 2024-2027",
     "tipo": "otro",
     "menciones": 1,
@@ -4949,7 +4941,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Casa Hogar San Juan Pablo II, I.A.P.",
+    "nombre": "Casa Hogar San Juan Pablo II I.A.P.",
     "tipo": "otro",
     "menciones": 1,
     "actas": 1,
@@ -4965,7 +4957,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Centro de Promoción Humana y de Cultura de Colima, I.A.P. (Hogar del Refugio)",
+    "nombre": "Centro de Promoción Humana y de Cultura de Colima I.A.P., conocido como Hogar del Refugio",
     "tipo": "otro",
     "menciones": 1,
     "actas": 1,
@@ -5333,7 +5325,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Instituto Municipal para la Paz Intrafamiliar del Municipio de Colima",
+    "nombre": "Instituto Municipal para la Paz Intrafamiliar",
     "tipo": "dependencia",
     "menciones": 1,
     "actas": 1,
@@ -5389,7 +5381,7 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Instituto para el Desarrollo, la Inclusión y la Atención a la Discapacidad del Municipio de Colima",
+    "nombre": "Instituto para el Desarrollo, la Inclusión y Atención a la Discapacidad del Municipio de Colima",
     "tipo": "dependencia",
     "menciones": 1,
     "actas": 1,
@@ -5519,14 +5511,6 @@
    {
     "nombre": "Licencia B-002619",
     "tipo": "otro",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "MA ELENA SÁNCHEZ TRUJILLO y CRISTAL GUADALUPE RODRÍGUEZ VEGA",
-    "tipo": "persona",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -5813,24 +5797,8 @@
     "puntos_con_monto": 0
    },
    {
-    "nombre": "Rafael Anguiano Chávez",
-    "tipo": "persona",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
     "nombre": "Renati Colima S.A.P.I. de C.V. (Clínica Oncológica Onkimia)",
     "tipo": "empresa",
-    "menciones": 1,
-    "actas": 1,
-    "monto_declarado_mxn": null,
-    "puntos_con_monto": 0
-   },
-   {
-    "nombre": "SANDRA ISABEL IÑIGUEZ MUÑOZ, LETICIA VAZQUEZ ABARCA y CUMBRE TIRAFUEGO S.A. DE C.V.",
-    "tipo": "otro",
     "menciones": 1,
     "actas": 1,
     "monto_declarado_mxn": null,
@@ -6048,7 +6016,7 @@
   "nota": "Contrapartes tal como el acta las nombra. monto_declarado_mxn suma los montos declarados en los puntos donde aparece la contraparte —con la misma regla anti-doble-conteo que la sección de montos—: es lo que el acta dice, no un contrato verificado ni un pago ejercido. La recurrencia se registra; no implica irregularidad."
  },
  "comisiones": {
-  "base_puntos": 594,
+  "base_puntos": 595,
   "filas": [
    {
     "nombre": "Comisión de Desarrollo Urbano y Vivienda",
@@ -6064,7 +6032,7 @@
    },
    {
     "nombre": "Comisión de Gobernación y Reglamentos",
-    "puntos": 48
+    "puntos": 49
    },
    {
     "nombre": "Comisión de Comercio, Mercados y Restaurantes",
@@ -6155,7 +6123,15 @@
     "puntos": 2
    },
    {
+    "nombre": "Comisiones conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
+    "puntos": 2
+   },
+   {
     "nombre": "Comisión de Gobernación y Reglamentos y de Desarrollo Social y Rural",
+    "puntos": 2
+   },
+   {
+    "nombre": "Comisiones conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
     "puntos": 2
    },
    {
@@ -6379,23 +6355,7 @@
     "puntos": 1
    },
    {
-    "nombre": "Comisiones conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
-    "puntos": 1
-   },
-   {
     "nombre": "Comisión de Gobernación y Reglamentos y de Derechos Humanos y Participación Ciudadana",
-    "puntos": 1
-   },
-   {
-    "nombre": "Comisiones de Gobernación y Reglamentos y de Juventud y Deporte",
-    "puntos": 1
-   },
-   {
-    "nombre": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
-    "puntos": 1
-   },
-   {
-    "nombre": "Comisiones conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
     "puntos": 1
    }
   ],
