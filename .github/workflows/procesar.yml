@@ -67,6 +67,13 @@ jobs:
             --periodo "${{ github.event.inputs.periodo || '2024-2027' }}" \
             --limit "${{ github.event.inputs.lote || '10' }}"
 
+      # Antes de gastar: se ejecutan las funciones puras del camino de escritura.
+      # Un `NameError` dentro de una función no lo ve ni `py_compile` ni un
+      # `import`; sólo lo ve ejecutarla. Una corrida hizo las siete ventanas de
+      # un acta, pagó sus llamadas y se cayó al terminar por uno.
+      - name: Ensayo en seco antes de gastar
+        run: python3 processor/preflight.py
+
       - name: Resúmenes (DeepSeek) — sólo si hay llave
         if: ${{ env.DEEPSEEK_API_KEY != '' }}
         run: |
