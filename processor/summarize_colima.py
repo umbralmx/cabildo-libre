@@ -84,6 +84,9 @@ MAX_VENTANAS = 24      # ~1M chars; beyond this the acta is flagged, not silentl
 # (it did: a 25-acta pass died on the first acta with IncompleteRead).
 LLM_MAX_INTENTOS = 4
 LLM_BACKOFF_BASE = 6  # seconds, doubled per retry, plus jitter
+# Intentos por ventana, alrededor de la llamada y del parseo. Una respuesta
+# mal formada es un fallo del modelo, no de la red, y es transitoria.
+VENTANA_INTENTOS = 3
 
 SISTEMA = (
     "Eres un asistente que explica, en español claro y sobrio, las decisiones de "
@@ -540,14 +543,33 @@ def summarize_acta(acta: dict, ocr: dict, dry_run: bool) -> dict | None:
     for i, trozo in enumerate(trozos, 1):
         if n > 1:
             print(f"  · ventana {i}/{n} ({len(trozo):,} chars)", flush=True)
-        try:
-            raw = call_llm(build_messages(acta, trozo, (i, n), modificado))
-            rs, puntos = parse_summary(raw, acta)
-        except (ValueError, KeyError, OSError, http.client.HTTPException) as e:
-            # Losing one window of fourteen must not cost the whole acta. The gap
-            # is subtracted from the coverage figure instead of being papered over.
-            print(f"  ! ventana {i}/{n}: {type(e).__name__}: {e}; se omite", flush=True)
-            fallidas += 1
+        mensajes = build_messages(acta, trozo, (i, n), modificado)
+        rs = puntos = None
+        # `call_llm` reintenta el fallo de red, pero una respuesta que llega
+        # entera y no es JSON válido es una llamada HTTP exitosa: revienta
+        # después, en `parse_summary`, fuera de aquel reintento. Por eso una
+        # ventana se perdía para siempre por un desliz de formato del modelo:
+        # así se quedaron sin leer 42,000 caracteres de las actas 34 y 76. El
+        # reintento va aquí, alrededor de la llamada Y del parseo.
+        for intento in range(1, VENTANA_INTENTOS + 1):
+            try:
+                raw = call_llm(mensajes)
+                rs, puntos = parse_summary(raw, acta)
+                break
+            except (ValueError, KeyError, OSError, http.client.HTTPException) as e:
+                if intento == VENTANA_INTENTOS:
+                    # Perder una ventana de catorce no puede costar el acta
+                    # entera. El hueco se descuenta de la cobertura en vez de
+                    # darse por leído.
+                    print(f"  ! ventana {i}/{n}: {type(e).__name__}: {e}; "
+                          f"se omite tras {intento} intentos", flush=True)
+                    fallidas += 1
+                    break
+                espera = LLM_BACKOFF_BASE * intento + random.uniform(0, 3)
+                print(f"  · ventana {i}/{n}: {type(e).__name__}: {e} — reintento "
+                      f"{intento}/{VENTANA_INTENTOS - 1} en {espera:.0f}s", flush=True)
+                time.sleep(espera)
+        if puntos is None:
             continue
         parciales.append(puntos)
         if not resumen_sesion:
