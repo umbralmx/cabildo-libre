@@ -5,8 +5,9 @@
  "periodo": "2024-2027",
  "esquema": 3,
  "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
  "fuente_texto": "tesseract-spa",
- "generado": "2026-08-14T01:00:03+00:00",
+ "generado": "2026-09-08T18:36:15+00:00",
  "lectura": {
   "chars_ocr": 244600,
   "chars_leidos": 202600,
@@ -16,12 +17,12 @@
  },
  "puntos_en_conflicto": [],
  "orden_del_dia_modificado": true,
- "resumen_sesion": "La sesión tuvo trámites y ajustes al orden del día; se aprobó el acta previa y se leyó el dictamen de adecuaciones presupuestarias por $22,025,530.93, sin votación en este fragmento.",
+ "resumen_sesion": "El fragmento solo cubre trámites: instalación, orden del día modificado, acta 75, y la lectura del dictamen de transferencias presupuestarias por $22,025,530.93, sin votación.",
  "puntos": [
   {
    "n": 1,
    "numeral": "I",
-   "resumen": "Se registró la asistencia del Presidente Municipal, la Síndica, las y los regidores, una de ellos vía remota.",
+   "resumen": "Se registró la asistencia de los miembros del cabildo para iniciar la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -37,7 +38,7 @@
   {
    "n": 2,
    "numeral": "II",
-   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
@@ -53,8 +54,8 @@
   {
    "n": 3,
    "numeral": "III",
-   "resumen": "Se dio lectura al orden del día; el Regidor Francisco Javier Bravo Gallardo propuso incluir el convenio con Grupo Automotriz PYD y Federico Rangel Lozano pidió retirar el Séptimo Punto; la modificación fue aprobada por unanimidad.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó por unanimidad la modificación al orden del día, retirando el séptimo punto e incorporando el dictamen de convenio con Grupo Automotriz PYD.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -69,8 +70,8 @@
   {
    "n": 4,
    "numeral": "IV",
-   "resumen": "El Acta de Cabildo N° 75 fue aprobada por unanimidad.",
-   "sentido": "tramite",
+   "resumen": "Se aprobó por unanimidad el acta de la sesión de cabildo número 75.",
+   "sentido": "aprobado",
    "categoria": "tramite",
    "votacion": "unanime",
    "colonias": [],
@@ -85,7 +86,7 @@
   {
    "n": 5,
    "numeral": "V",
-   "resumen": "Se aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal las adecuaciones presupuestarias de mayo de 2026, con redistribuciones por $22,025,530.93 y pólizas FORTAMUN por $2,617,944.04.",
+   "resumen": "El Cabildo aprobó por mayoría el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestarias de mayo de 2026; votaron en contra dos regidoras.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -93,88 +94,8 @@
    "obras": [],
    "montos": [
     {
-     "texto": "$22,025,530.93",
+     "texto": "$22\"025,530.93",
      "valor_mxn": 22025530.93
-    },
-    {
-     "texto": "200,000.00",
-     "valor_mxn": 200000.0
-    },
-    {
-     "texto": "423,047.12",
-     "valor_mxn": 423047.12
-    },
-    {
-     "texto": "868,458.69",
-     "valor_mxn": 868458.69
-    },
-    {
-     "texto": "2,047,625.56",
-     "valor_mxn": 2047625.56
-    },
-    {
-     "texto": "110,000.00",
-     "valor_mxn": 110000.0
-    },
-    {
-     "texto": "588,600.00",
-     "valor_mxn": 588600.0
-    },
-    {
-     "texto": "112,778.01",
-     "valor_mxn": 112778.01
-    },
-    {
-     "texto": "2,985.90",
-     "valor_mxn": 2985.9
-    },
-    {
-     "texto": "4,973,528,24",
-     "valor_mxn": null
-    },
-    {
-     "texto": "60,000.00",
-     "valor_mxn": 60000.0
-    },
-    {
-     "texto": "17,292,15",
-     "valor_mxn": null
-    },
-    {
-     "texto": "2,227.38",
-     "valor_mxn": 2227.38
-    },
-    {
-     "texto": "4,767.47",
-     "valor_mxn": 4767.47
-    },
-    {
-     "texto": "1,510.81",
-     "valor_mxn": 1510.81
-    },
-    {
-     "texto": "4,718.17",
-     "valor_mxn": 4718.17
-    },
-    {
-     "texto": "281.85",
-     "valor_mxn": 281.85
-    },
-    {
-     "texto": "155,980.54",
-     "valor_mxn": 155980.54
-    },
-    {
-     "texto": "2,199.18",
-     "valor_mxn": 2199.18
-    },
-    {
-     "texto": "1,047,506.47",
-     "valor_mxn": 1047506.47
-    },
-    {
-     "texto": "1,049.67",
-     "valor_mxn": 1049.67
     },
     {
      "texto": "22,025,530.93",
@@ -209,7 +130,7 @@
   {
    "n": 6,
    "numeral": "VI",
-   "resumen": "Se aprobó por mayoría, con once votos a favor y dos en contra, el dictamen que autoriza remitir al H. Congreso del Estado de Colima los resultados de la Cuenta Pública de mayo de 2026.",
+   "resumen": "Se aprobó por mayoría remitir al Congreso del Estado la Cuenta Pública de mayo de 2026, pese a dos votos en contra por considerar que faltaba claridad en las finanzas.",
    "sentido": "aprobado",
    "categoria": "presupuesto_finanzas",
    "votacion": "mayoria",
@@ -240,13 +161,12 @@
   {
    "n": 7,
    "numeral": "VII",
-   "resumen": "El cabildo aprobó por mayoría declarar recinto oficial, por única vez, el Fraccionamiento Residencial Romanza para una sesión extraordinaria el 17 de junio de 2026, con un voto en contra y una abstención.",
+   "resumen": "Se declaró al Fraccionamiento Residencial Romanza recinto oficial para celebrar el 17 de junio de 2026 la sesión extraordinaria que tratará la municipalización de sus etapas 1 y 2.",
    "sentido": "aprobado",
-   "categoria": "fraccionamiento",
+   "categoria": "tramite",
    "votacion": "mayoria",
    "colonias": [
-    "Fraccionamiento Residencial Romanza",
-    "Fraccionamiento Romanza"
+    "Fraccionamiento Residencial Romanza"
    ],
    "obras": [],
    "montos": [],
@@ -275,7 +195,7 @@
   {
    "n": 8,
    "numeral": "VIII",
-   "resumen": "El cabildo autorizó por unanimidad dos licencias de venta de cerveza en zona rural para los establecimientos 'Abarrotes Don Rafa' y 'Abarrotes Cristal'.",
+   "resumen": "Se autorizaron dos licencias comerciales para venta de cerveza: Abarrotes Don Rafa, de Ma Elena Sánchez Trujillo, en Las Tunas, y Abarrotes Cristal, de Cristal Guadalupe Rodríguez Vega, en Los Asmoles.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -293,14 +213,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 9,
    "numeral": "IX",
-   "resumen": "El cabildo autorizó por unanimidad tres licencias de venta de bebidas alcohólicas para 'Abarrotes Álvarez', 'Abarrotes Michelita' y 'Cumbre Tirafuego'.",
+   "resumen": "Se autorizaron tres licencias comerciales para establecimientos con venta de alcohol: Abarrotes Álvarez, Abarrotes Michelita y el restaurante Cumbre Tirafuego, tras verificar que cumplen los requisitos.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -326,7 +246,7 @@
   {
    "n": 10,
    "numeral": "X",
-   "resumen": "El cabildo aprobó por unanimidad dar de baja la licencia B-00025 de Rafael Anguiano Chávez, abarrotes con venta de cerveza en Las Tunas.",
+   "resumen": "Se autorizó la baja definitiva de la licencia comercial B-00025 de Rafael Anguiano Chávez, porque el establecimiento de abarrotes en Las Tunas ya no funciona.",
    "sentido": "aprobado",
    "categoria": "licencia",
    "votacion": "unanime",
@@ -343,14 +263,14 @@
    "abstenciones": [],
    "comision": "Comisión de Comercios, Mercados y Restaurantes",
    "autor": {
-    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
     "id": "juan-carlos-gomez-diaz"
    }
   },
   {
    "n": 11,
    "numeral": "XI",
-   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se autorizó al Presidente Municipal, a la Síndica y al Secretario del Ayuntamiento para firmarlo.",
+   "resumen": "Se aprobó la suscripción de un convenio de colaboración entre el Municipio de Colima y la empresa Acuática Tiburones, y se autorizó firmarlo al presidente municipal, a la síndica y al secretario.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -365,14 +285,14 @@
    "abstenciones": [],
    "comision": "Comisiones de Gobernación y Reglamentos y de Juventud y Deporte",
    "autor": {
-    "nombre": "Licda. Claudia Janeth Farías López",
+    "nombre": "Regidora Licda. Claudia Janeth Farías López",
     "id": "claudia-janeth-farias-lopez"
    }
   },
   {
    "n": 12,
    "numeral": "XII",
-   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo escolar 2024-2025, a cinco estudiantes del Bachillerato CEDART Juan Rulfo, con un total de 50,000 pesos (cinco estímulos de 10,000 pesos).",
+   "resumen": "Se aprobó entregar la Beca a la Excelencia Académica y Artística Vera Vázquez, ciclo 2024-2025, a cinco alumnas y alumnos del Bachillerato CEDART Juan Rulfo, con $10,000 para cada uno y un total de $50,000.",
    "sentido": "aprobado",
    "categoria": "otro",
    "votacion": "unanime",
@@ -389,21 +309,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "alumnos y/o alumnas del Bachillerato CEDART \"Juan Rulfo\"",
+    "nombre": "alumnas y alumnos del Bachillerato CEDART Juan Rulfo",
     "tipo": "otro"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
    "autor": {
-    "nombre": "Mtro. Federico Rangel Lozano",
+    "nombre": "Regidor Mtro. Federico Rangel Lozano",
     "id": "federico-rangel-lozano"
    }
   },
   {
    "n": 13,
    "numeral": "XIII",
-   "resumen": "Se aprobó suscribir un convenio de colaboración con la agencia automotriz Grupo Automotriz PYD, que dará descuentos del 8% en vehículos de flotilla y 5,000 pesos adicionales al personal del municipio en vehículos nuevos MG.",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la agencia automotriz Grupo Automotriz PYD, que otorgará descuentos de 8% en flotilla y $5,000 adicionales al personal activo del municipio.",
    "sentido": "aprobado",
    "categoria": "convenio",
    "votacion": "unanime",
@@ -416,21 +336,21 @@
     }
    ],
    "beneficiario": {
-    "nombre": "Grupo Automotriz PYD (Agencia MG)",
+    "nombre": "Grupo Automotriz PYD",
     "tipo": "empresa"
    },
    "votos_en_contra": [],
    "abstenciones": [],
    "comision": "Comisión de Gobernación y Reglamentos",
    "autor": {
-    "nombre": "Francisco Javier Bravo Gallardo",
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
     "id": "francisco-javier-bravo-gallardo"
    }
   },
   {
    "n": 14,
    "numeral": "XIV",
-   "resumen": "En Asuntos Generales, las y los regidores expusieron temas de transparencia en ayudas sociales, transmisión oficial de sesiones, atención en Justicia Cívica, reconocimientos a maestros y deportistas, y la reactivación del Consejo Contra la Discriminación; no hubo votación.",
+   "resumen": "En Asuntos Generales se expusieron pronunciamientos sobre la transmisión institucional de las sesiones, la atención a casos de justicia cívica, las ayudas sociales, la salud y otros temas; no se sometió a votación.",
    "sentido": "no_determinable",
    "categoria": "otro",
    "votacion": "no_determinable",
@@ -442,7 +362,7 @@
    "obras": [],
    "montos": [
     {
-     "texto": "un millón y medio en ayudas sociales",
+     "texto": "un millón y medio",
      "valor_mxn": 1500000
     }
    ],
@@ -455,7 +375,7 @@
   {
    "n": 15,
    "numeral": "XV",
-   "resumen": "Se declaró clausurada la sesión a las 13:14 horas del 15 de junio de 2026, una vez agotado el orden del día.",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 13:14 horas.",
    "sentido": "tramite",
    "categoria": "tramite",
    "votacion": "no_determinable",
