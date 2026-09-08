@@ -1,0 +1,210 @@
+{
+ "id": "2024-2027-80",
+ "no_acta": 80,
+ "fecha": "2026-07-10",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-09-08T17:12:24+00:00",
+ "lectura": {
+  "chars_ocr": 44605,
+  "chars_leidos": 44605,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El Cabildo aprobó municipalizar la Etapa 4 del fraccionamiento Francisco Zaragoza Vázquez y autorizó tres convenios de colaboración con Vocablo Idiomas Premium, El Güero Grupo Llantero y Renati Colima Onkimia para beneficiar a trabajadores y ciudadanía.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registraron los ediles presentes, con una falta justificada.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Al contar con quórum legal, se declaró formalmente instalada la sesión extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó por unanimidad presentar el Acta de Cabildo número 79 en la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la municipalización de la Etapa 4 del fraccionamiento Francisco Zaragoza Vázquez, lo que incorpora sus vialidades y servicios públicos al municipio y brinda certeza jurídica a sus habitantes.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Zaragoza Vázquez"
+   ],
+   "obras": [
+    "Municipalización de la Etapa 4 del Fraccionamiento Francisco Zaragoza Vázquez",
+    "Carlos Zaragoza de la Fuente",
+    "Enrique Zaragoza de la Fuente",
+    "Esteban Meneses Flores",
+    "Esteban Zaragoza de la Fuente",
+    "Fco. Amezcua Delgado",
+    "Av. Francisco Zaragoza Vázquez"
+   ],
+   "montos": [
+    {
+     "texto": "$ 985,979.71",
+     "valor_mxn": 985979.71
+    }
+   ],
+   "beneficiario": {
+    "nombre": "las y los vecinos del fraccionamiento Francisco Zaragoza Vázquez",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó por unanimidad firmar el convenio con Vocablo Idiomas Premium para otorgar descuentos de 60% al personal del ayuntamiento y sus familiares, y de 50% a la población, en cursos de idiomas.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Asociación Civil \"Formación de Ejecutivos Exitosos\" (Escuela Vocablo Idiomas Premium)",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó por unanimidad firmar el convenio con El Güero Grupo Llantero para que trabajadores activos y jubilados del ayuntamiento reciban sin costo la membresía premium, descuentos y atención preferencial en llantas y servicios.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,900.00 pesos",
+     "valor_mxn": 1900.0
+    }
+   ],
+   "beneficiario": {
+    "nombre": "El Güero Grupo Llantero S.A.P.I. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizó por unanimidad firmar el convenio con la empresa Renati Colima, Onkimia, para ofrecer a trabajadores del ayuntamiento y sus familias descuentos en consultas y tratamientos oncológicos.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Renati Colima S.A.P.I. de C.V. (Clínica Oncológica Onkimia)",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Profra. Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Agotado el orden del día, se declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

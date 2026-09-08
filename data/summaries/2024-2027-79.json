@@ -1,0 +1,369 @@
+{
+ "id": "2024-2027-79",
+ "no_acta": 79,
+ "fecha": "2026-07-07",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-09-08T17:10:48+00:00",
+ "lectura": {
+  "chars_ocr": 146426,
+  "chars_leidos": 146426,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "El Cabildo aprobó la incorporación del almacén de botanas y de Misión San Cayetano, cinco licencias de alcohol y las actas; el proyecto CRIT no se resolvió en este fragmento.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia; se registraron el presidente municipal, la síndica, regidores y dos asistencias remotas, con una falta justificada.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Al contar con quórum legal, se declaró formalmente instalada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se dio lectura al orden del día; el regidor Francisco Javier Bravo Gallardo propuso retirar los puntos XIII y XIV, y el orden modificado fue aprobado por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "El Cabildo dispensó la lectura de las actas 76, 77 y 78 y las aprobó por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa Única del desarrollo 'Almacén para Venta y Distribución de Botanas y Golosinas', promovido por Inmobiliaria Mavasali, S.A. de C.V. y/o Lic. María Magdalena Becerra de Alba.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Av. Ejército Mexicano",
+    "Libramiento Ejército Mexicano"
+   ],
+   "montos": [
+    {
+     "texto": "$ 3,549,741.44",
+     "valor_mxn": 3549741.44
+    },
+    {
+     "texto": "$ 649,513.52",
+     "valor_mxn": 649513.52
+    },
+    {
+     "texto": "$ 6,226,671.97",
+     "valor_mxn": 6226671.97
+    }
+   ],
+   "beneficiario": {
+    "nombre": "INMOBILIARIA MAVASAL, S.A. DE C.V. y/o Lic. María Magdalena Becerra de Alba",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la incorporación municipal anticipada de la Etapa 1 del fraccionamiento 'Misión San Cayetano', promovido por el Arq. Gilberto Lares Moreno.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "MISSIÓN SAN CAYETANO"
+   ],
+   "obras": [
+    "EMILIO BRUN AILLAUD"
+   ],
+   "montos": [
+    {
+     "texto": "$ 3,061,474.92",
+     "valor_mxn": 3061474.92
+    },
+    {
+     "texto": "$ 143,683.77",
+     "valor_mxn": 143683.77
+    }
+   ],
+   "beneficiario": {
+    "nombre": "ARQ. GILBERTO LARES MORENO",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó la expedición de cinco licencias comerciales para venta y consumo de bebidas alcohólicas a favor de los establecimientos Interestelar, Carnitas Don Alejo, OXXO Glorieta del Charro, La Esquina de Juárez y Súper Mercadito.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Santa Bárbara",
+    "El Chanal",
+    "Placetas",
+    "Centro",
+    "Magisterial"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó por unanimidad diseñar e implementar el proyecto municipal para integrar el CRIT Colima a su entorno, con medidas de banquetas, cruces peatonales, estudio de impacto vial y entorno seguro, en beneficio de las personas con discapacidad.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Proyecto Municipal Urbano y Social para la Integración del CRIT Colima a su Ento"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CRIT Colima",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Metropolitano",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó por unanimidad declarar recinto oficial, por única vez, el fraccionamiento Francisco Zaragoza Vázquez para celebrar ahí una sesión extraordinaria de cabildo sobre la municipalización de su etapa 4.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [
+    "Francisco Zaragoza Vázquez"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": null
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "El Cabildo aprobó por unanimidad el Programa Parcial de Urbanización del Fraccionamiento Distrito Capacha, un desarrollo habitacional de densidad baja con 134 lotes, promovido por particulares; ordenó publicarlo en el Periódico Oficial e inscribirlo en el Registro Público de la Propiedad.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Distrito Capacha",
+    "Residencial Victoria Norte",
+    "Residencial Victoria",
+    "Residencial Tabachines",
+    "Primavera Hills",
+    "Jardines de la Hacienda"
+   ],
+   "obras": [
+    "Programa Parcial de Urbanización del Fraccionamiento Distrito Capacha",
+    "AV. CONSTITUCION",
+    "AV. DE LOS DIAMANTES"
+   ],
+   "montos": [
+    {
+     "texto": "$213,187.47",
+     "valor_mxn": 213187.47
+    }
+   ],
+   "beneficiario": {
+    "nombre": "ELVIA ESTELA FUENTES GÓMEZ, DIEGO ERNESTO CÁRDENAS FUENTES y ALEJANDRO CÁRDENAS FUENTES",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "El Cabildo aprobó desincorporar del patrimonio municipal 1,037 bienes muebles en estado de inoperancia, resguardados en la bodega municipal, y ordenó a la Dirección de Recursos Materiales realizar la baja.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Ayuntamiento de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó desincorporar del patrimonio municipal el lote 4 de la manzana 16, en la calle Zacapoaxtla 135, colonia Ignacio Zaragoza, y escriturarlo a favor de Andrés Godoy Guillén; los gastos notariales serán a cargo del adquirente.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Ignacio Zaragoza"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "ANDRÉS GODOY GUILLÉN",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "El Secretario del Ayuntamiento presentó el calendario trimestral de sesiones ordinarias de julio a septiembre de 2026; se informaron fechas y la sede del Auditorio Municipal, sin que conste una votación de aprobación.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "En asuntos generales no se sometió a votación ningún acuerdo; las y los regidores expresaron posturas sobre la reforma al Reglamento del Gobierno Municipal retirada del orden del día, condolencias, reconocimientos a trabajadores y afectaciones por lluvias.",
+   "sentido": "no_determinable",
+   "categoria": "otro",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 12:14 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
