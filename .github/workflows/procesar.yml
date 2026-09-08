@@ -98,7 +98,26 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/ocr data/summaries data/asistencia data/estructura data/linea-base.json site/summaries.json site/fulltext-index.json site/fulltext site/analytics-*.json 2>/dev/null || true
+          # `git add` aborta ENTERO si UN pathspec no existe, y no añade nada.
+          # `data/linea-base.json` no existe mientras la verificación tenga
+          # errores: verificar.py se niega a fijar una línea base anclada a un
+          # estado malo. La primera corrida con esa ruta en la lista tiró un
+          # lote completo —OCR y llamadas a DeepSeek ya pagadas— sin decir
+          # nada, porque `2>/dev/null || true` se tragaba el `fatal:` y el
+          # `git diff --cached --quiet` que sigue daba «nada que commitear».
+          # Se añade ruta por ruta y se salta lo que no está.
+          for ruta in data/ocr data/summaries data/asistencia data/estructura \
+                      data/linea-base.json site/summaries.json \
+                      site/fulltext-index.json site/fulltext site/analytics-*.json; do
+            if [ -e "$ruta" ]; then git add "$ruta"; fi
+          done
+          # Un lote que produjo archivos y no logró preparar ninguno es el
+          # fallo silencioso de arriba repitiéndose: se cae con ruido.
+          if [ -n "$(git status --porcelain data/ocr data/summaries)" ] \
+             && git diff --cached --quiet; then
+            echo "::error::el lote generó archivos pero no se preparó ninguno; revisa las rutas del git add"
+            exit 1
+          fi
           git diff --cached --quiet || git commit -m "fase 2: procesar lote $(date -u +%F)"
           # Un lote tarda una hora larga. Si algo más entró a main mientras tanto, un push
           # a secas se rechaza y el lote se pierde entero —una hora de OCR y de llamadas ya
