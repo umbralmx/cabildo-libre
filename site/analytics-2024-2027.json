@@ -1,14 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-09-28T20:25:42+00:00",
+ "generado": "2026-10-01T19:20:03+00:00",
  "cobertura": {
-  "actas_en_termino": 80,
+  "actas_en_termino": 81,
   "con_resumen": 80,
   "con_tier_a": 80,
   "con_ficha_decision": 80,
   "con_asistencia": 80,
-  "nota": "Análisis parcial: 80 de 80 actas del término tienen resumen, 80 tienen los campos analíticos (categoría, votación, colonias, montos) y 80 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 80 de 81 actas del término tienen resumen, 80 tienen los campos analíticos (categoría, votación, colonias, montos) y 80 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 933,
@@ -855,12 +855,20 @@
     "n_puntos": 9,
     "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/08/acta-no-80.pdf"
+   },
+   {
+    "acta": "2024-2027-81",
+    "no_acta": 81,
+    "fecha": "2026-07-14",
+    "n_puntos": 12,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/09/acta-no-81_opt.pdf"
    }
   ],
-  "nota": "Las 80 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 81 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
-  "actas_en_termino": 80,
+  "actas_en_termino": 81,
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
