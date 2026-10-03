@@ -1,0 +1,475 @@
+{
+ "id": "2024-2027-81",
+ "no_acta": 81,
+ "fecha": "2026-07-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-03T12:17:50+00:00",
+ "lectura": {
+  "chars_ocr": 282752,
+  "chars_leidos": 282752,
+  "ventanas": 7,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "Sesión extraordinaria dedicada principalmente al dictamen de la Comisión de Hacienda que autoriza transferencias presupuestarias por 18 millones 822 mil 66 pesos, solicitadas por la Tesorería Municipal, además de los trámites iniciales.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia del Presidente Municipal, la Síndica y las y los regidores, cuatro de ellos de manera remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión Extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se aprobó por unanimidad la solicitud del Presidente Municipal para presentar las Actas de Cabildo N° 79 y 80 en la próxima sesión, por lo que su aprobación quedó pendiente.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestarias de junio de 2026, mediante ampliaciones, reducciones y transferencias entre partidas; dos regidoras votaron en contra.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$18'822,066.02",
+     "valor_mxn": 18822066.02
+    },
+    {
+     "texto": "833,022.03",
+     "valor_mxn": 833022.03
+    },
+    {
+     "texto": "706,860.00",
+     "valor_mxn": 706860.0
+    },
+    {
+     "texto": "3,297.95",
+     "valor_mxn": 3297.95
+    },
+    {
+     "texto": "2,764.72",
+     "valor_mxn": 2764.72
+    },
+    {
+     "texto": "2,877.42",
+     "valor_mxn": 2877.42
+    },
+    {
+     "texto": "82,001.18",
+     "valor_mxn": 82001.18
+    },
+    {
+     "texto": "106,430.50",
+     "valor_mxn": 106430.5
+    },
+    {
+     "texto": "4,151.96",
+     "valor_mxn": 4151.96
+    },
+    {
+     "texto": "5,189.95",
+     "valor_mxn": 5189.95
+    },
+    {
+     "texto": "300.00",
+     "valor_mxn": 300.0
+    },
+    {
+     "texto": "15,789.97",
+     "valor_mxn": 15789.97
+    },
+    {
+     "texto": "200,000.00",
+     "valor_mxn": 200000.0
+    },
+    {
+     "texto": "3,878.00",
+     "valor_mxn": 3878.0
+    },
+    {
+     "texto": "2,304,331.39",
+     "valor_mxn": 2304331.39
+    },
+    {
+     "texto": "360,477.37",
+     "valor_mxn": 360477.37
+    },
+    {
+     "texto": "50,000.00",
+     "valor_mxn": 50000.0
+    },
+    {
+     "texto": "766,800.00",
+     "valor_mxn": 766800.0
+    },
+    {
+     "texto": "494,988.97",
+     "valor_mxn": 494988.97
+    },
+    {
+     "texto": "25,112.81",
+     "valor_mxn": 25112.81
+    },
+    {
+     "texto": "11,874.41",
+     "valor_mxn": 11874.41
+    },
+    {
+     "texto": "170,169.76",
+     "valor_mxn": 170169.76
+    },
+    {
+     "texto": "322.95",
+     "valor_mxn": 322.95
+    },
+    {
+     "texto": "79,220.80",
+     "valor_mxn": 79220.8
+    },
+    {
+     "texto": "32,491.45",
+     "valor_mxn": 32491.45
+    },
+    {
+     "texto": "131,181.55",
+     "valor_mxn": 131181.55
+    },
+    {
+     "texto": "2,414.57",
+     "valor_mxn": 2414.57
+    },
+    {
+     "texto": "92,227.47",
+     "valor_mxn": 92227.47
+    },
+    {
+     "texto": "130,516.46",
+     "valor_mxn": 130516.46
+    },
+    {
+     "texto": "206,241.12",
+     "valor_mxn": 206241.12
+    },
+    {
+     "texto": "963,658.49",
+     "valor_mxn": 963658.49
+    },
+    {
+     "texto": "2,038,921.29",
+     "valor_mxn": 2038921.29
+    },
+    {
+     "texto": "815,833.09",
+     "valor_mxn": 815833.09
+    },
+    {
+     "texto": "18,822,066.02",
+     "valor_mxn": 18822066.02
+    },
+    {
+     "texto": "9,088,810.15",
+     "valor_mxn": 9088810.15
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó por mayoría el dictamen de la Comisión de Hacienda sobre la remisión de información a los órganos fiscalizadores; votaron en contra las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó instituir el Premio Lucio Uribe, un reconocimiento anual a las y los profesionales destacados de la arquitectura en el municipio de Colima.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Palacio de Gobierno",
+    "Teatro Hidalgo",
+    "Catedral de Colima",
+    "Palacio Federal",
+    "Portal Medellín",
+    "Templo de la Salud",
+    "puentes sobre el río Colima"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Metropolitano y Comisión de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó crear el Micrositio Especial de la Biblioteca Digital del Municipio de Colima, integrado al portal oficial del Ayuntamiento, para rescatar y difundir el patrimonio documental y cultural.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación e Innovación y Mejora Regulatoria",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó la incorporación municipal directa del predio con clave catastral 02-01-06-165-017-000 del fraccionamiento Girasoles, promovida por su propietario Luis Octavio Munguía López.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Girasoles"
+   ],
+   "obras": [
+    "Calle Francisco Zarco"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Luis Octavio Munguía López",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la modificación al Programa Parcial de Urbanización Cementerio Parque Jardín Esperanza Real, promovida por Estancia Jardín Real de Colima, S.A. de C.V., que reorganiza el predio en 16 lotes (13 de uso mixto MD-2, 2 de equipamiento especial y 1 de cesión) y entrega al municipio un jardín vecinal de 2,159.89 m²; el trámite de aprobación se pagó con 40,061.88 pesos.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Fraccionamiento Santa Cristina",
+    "Ejido El Trapiche"
+   ],
+   "obras": [
+    "Cementerio Parque Jardín Esperanza Real",
+    "Avenida Karim Assam Assam",
+    "Avenida De Las Pirámides",
+    "calle Jardín Edén",
+    "calle Jardín Real",
+    "Jardín Vecinal"
+   ],
+   "montos": [
+    {
+     "texto": "$40,061.88",
+     "valor_mxn": 40061.88
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Estancia Jardín Real de Colima, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó la desincorporación y enajenación de 50 vehículos municipales que ya no prestan servicio y son chatarra, por considerar que estorban y representan un riesgo en el predio donde se encuentran.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "mayoria",
+   "colonias": [
+    "Villas del Bosque",
+    "La Rivera"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Patrimonio Municipal y Hacienda Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la Modificación al Programa Parcial de Urbanización Embotelladora Coca-Cola para cambiar el uso de un predio de 6,235.23 m² que era vialidad en desuso y consignarlo como Servicios a la Industria y el Comercio.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "mayoria",
+   "colonias": [
+    "Embotelladora Coca-Cola"
+   ],
+   "obras": [
+    "Modificación al Programa Parcial de Urbanización denominado Embotelladora Coca-C",
+    "Av. Tecomán",
+    "Libramiento Ejército Mexicano"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ayuntamiento de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  }
+ ]
+}
