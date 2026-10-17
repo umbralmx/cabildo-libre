@@ -1,0 +1,281 @@
+{
+ "id": "2024-2027-83",
+ "no_acta": 83,
+ "fecha": "2026-07-23",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-17T11:23:12+00:00",
+ "lectura": {
+  "chars_ocr": 75188,
+  "chars_leidos": 75188,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El cabildo aprobó convenios con OKOPILI, A.C. para el programa Palma Amarilla y con la Escuela Nido Águila Colima, y discutió nombrar una plazoleta en Villa San Sebastián.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia de los integrantes del cabildo, con dos faltas justificadas y una asistencia remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Con quórum legal, se declaró formalmente instalada la sesión extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día de la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura de las actas 79 a 82; se aprobaron las actas 79 y 80 por unanimidad, con abstenciones, y las actas 81 y 82 quedaron pendientes para la próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó suscribir un convenio de colaboración y cesión de derechos entre el Municipio, el Instituto de Planeación y OKOPILI, A.C. para gestionar el Programa Parcial de Urbanización Palma Amarilla, en el Ejido El Diezmo.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [
+    "Ejido El Diezmo"
+   ],
+   "obras": [
+    "Programa Parcial de Urbanización Palma Amarilla"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Asociación Civil OKOPILI, A.C.",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio y la Escuela Filial Oficial Club América Nido Águila Colima para actividades de fútbol, visorias, descuentos y mantenimiento del Centro Deportivo Venustiano Carranza.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Centro Deportivo Venustiano Carranza",
+    "campos de fútbol"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Escuela Filial Oficial Club América “Nido Águila Colima”",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Licda. Claudia Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó nombrar la plazoleta de la colonia Villa San Sebastián como Capitán José María Gutiérrez Mendoza, homenaje póstumo impulsado por los vecinos, con develación de placa en la colonia.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Villa San Sebastián",
+    "Villas San Sebastián"
+   ],
+   "obras": [
+    "Plazoleta contigua a la Capilla de la colonia Villa San Sebastián",
+    "plazoleta de Villa San Sebastián"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Capitán José María Gutiérrez Mendoza",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Desarrollo Urbano y Vivienda y Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizaron cinco traspasos de locales en los mercados Gral. Francisco Villa y Gral. Álvaro Obregón, a favor de las personas señaladas en el dictamen, y se facultó al Presidente, al Secretario y al Director de Abasto a firmar las licencias de traspaso.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizaron dos licencias comerciales para venta y consumo de bebidas alcohólicas: el restaurante SMOKE DISTRICT, de Carlos Omar Padilla Sandoval, en Julio García 323, Colonia Centro, y ABARROTES ROBER, de Roberto Juan Díaz Pérez, en Clavellinas 702, Colonia Las Fuentes.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Centro",
+    "Las Fuentes"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la empresa CI2S, S.A.P.I. de C.V. para tareas conjuntas en innovación, calidad gubernamental y mejora de la gestión pública municipal.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "CI2S, S.A.P.I. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos e Innovación y Mejora Regulatoria",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 12 horas con 29 minutos.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

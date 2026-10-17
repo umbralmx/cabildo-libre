@@ -1,0 +1,131 @@
+{
+ "id": "2024-2027-82",
+ "no_acta": 82,
+ "fecha": "2026-07-23",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-17T11:22:36+00:00",
+ "lectura": {
+  "chars_ocr": 6561,
+  "chars_leidos": 6561,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "Sesión extraordinaria breve en la que el Cabildo de Colima aprobó por unanimidad dejar para la próxima sesión las actas 79, 80 y 81, y declarar la Sala de Cabildos recinto oficial del 23 al 31 de julio de 2026 por la restauración del Auditorio Manuel Álvarez.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la presencia del Presidente Municipal, la Síndica y nueve regidores; tres integrantes faltaron con justificación.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión Extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "El Presidente Municipal solicitó autorización para presentar las Actas de Cabildo 79, 80 y 81 en la próxima sesión; la solicitud fue aprobada por unanimidad, de modo que esas actas quedaron pendientes de aprobación.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad declarar la Sala de Cabildos, a un costado de Presidencia Municipal, como recinto oficial para las sesiones del 23 al 31 de julio de 2026, porque el Auditorio General Manuel Álvarez está en labores de restauración.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Restauración del Auditorio General Manuel Álvarez",
+    "Salón de Cabildos a un costado del edificio de Presidencia Municipal"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Ayuntamiento de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Agotado el orden del día, el Presidente Municipal clausuró la sesión a las 10:41 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

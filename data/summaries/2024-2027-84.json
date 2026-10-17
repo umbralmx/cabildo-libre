@@ -1,0 +1,363 @@
+{
+ "id": "2024-2027-84",
+ "no_acta": 84,
+ "fecha": "2026-07-31",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-17T11:24:08+00:00",
+ "lectura": {
+  "chars_ocr": 162121,
+  "chars_leidos": 162121,
+  "ventanas": 4,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El cabildo desincorporó un vehículo siniestrado, autorizó dos licencias para venta de bebidas alcohólicas e incorporó al municipio la Etapa 1A del proyecto Comercial Francisco I. Madero.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia de los regidores, con tres de ellos participando de forma remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Verificada la asistencia, se declaró formalmente instalada la sesión por existir quórum legal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura de las actas 81, 82 y 83 y se aprobaron las actas 81 y 82; el acta 83 quedó pendiente para presentarse en una próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó desincorporar del patrimonio municipal el vehículo número económico 484, marca Chevrolet Silverado 2013 adscrito al despacho de Presidencia, declarado pérdida total por la aseguradora.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó la expedición de dos licencias comerciales para venta y consumo de bebidas alcohólicas: el restaurante bar El Guachi, de José Daniel Macías Lepe, en Paseo la Cantera, y el restaurante Baratie, de Raúl Alejandro Silva Gutiérrez, en Residencial Santa Bárbara.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Paseo la Cantera",
+    "Residencial Santa Bárbara"
+   ],
+   "obras": [
+    "EL GUACHI, Av. Ignacio Sandoval No. 1943",
+    "BARATIE, Prol. Venustiano Carranza No. 1450-18"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "José Daniel Macías Lepe y Raúl Alejandro Silva Gutiérrez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la incorporación municipal de la Etapa 1A del proyecto Comercial Francisco I. Madero, de un lote comercial de 1,998.75 metros cuadrados, promovida por el apoderado legal de la propietaria, con una fianza de 48,967.31 pesos para garantizar las obras.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "COMERCIAL FRANCISCO I. MADERO, Etapa 1A",
+    "LIBRAMIENTO EJERCITO MEXICANO"
+   ],
+   "montos": [
+    {
+     "texto": "$1,900.19",
+     "valor_mxn": 1900.19
+    },
+    {
+     "texto": "$569,695.96",
+     "valor_mxn": 569695.96
+    },
+    {
+     "texto": "$48,967.31",
+     "valor_mxn": 48967.31
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ramón Cuevas Sánchez, apoderado legal de Mirna Lituania Montes Campos",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó la Fe de Erratas del Programa Parcial de Urbanización del Fraccionamiento Valle del Carmen, promovida por la empresa JADE Grupo Inmobiliario, para ajustar las secciones viales y los materiales de rodamiento de varias calles del proyecto; el costo de la publicación corre a cargo del urbanizador.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Valle del Carmen"
+   ],
+   "obras": [
+    "Arteria Colectora AC-21 (Prolongación Belisario Domínguez)",
+    "Calle de Distribución CD-16 (5 de Febrero)",
+    "Calle local CL-1 (Valle de los Olivos)",
+    "Calle local CL-2 (La Rioja, Privada La Rioja, Valle de los Reyes, Valle de Bravo",
+    "Calle local CL-3 (Francisco Cortés de San Buenaventura)",
+    "Calle local CL-4 (Valle del Bajío)"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "JADE Grupo Inmobiliario, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó dar de baja la licencia comercial B-002513, a nombre de Mario Rosales Ramos, para una tienda de abarrotes con venta de bebidas alcohólicas, porque el establecimiento ya no funciona; se instruyó avisar a Tesorería y a la Dirección de Inspección y Licencias.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Mario Rosales Ramos",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se autorizó a Dejanira Giselle Bonilla García la licencia comercial para el restaurante con venta de cerveza 'Ahogadas El Registro', en Avenida Venustiano Carranza 2220-14, colonia Stella, previo cumplimiento de requisitos ante Inspección y Licencias.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Stella"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Dejanira Giselle Bonilla García",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó el Punto de Acuerdo para solicitar al Congreso del Estado modificaciones al Decreto 315 en materia de estímulos fiscales, con el fin de que los ciudadanos con adeudos puedan cubrir sus contribuciones y el municipio obtenga recursos extraordinarios para servicios como parque vehicular y camiones de basura.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "Siglo XXI"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda",
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la baja de 15 perfiles de comerciantes del Sistema EMPRESS y la revocación definitiva de sus licencias, con la recuperación de 15 locales abandonados en los mercados Constitución, Placetas, Gral. Manuel Álvarez, Gral. Francisco Villa y José Juárez Martínez (Moralete); la Tesorería revisará los adeudos caso por caso.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercios, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó aceptar el avalúo del déficit de 2,381.79 metros cuadrados de área de cesión del fraccionamiento Savanna Hábitat Residencial, a 2,300 pesos por metro cuadrado, por lo que la empresa promovente deberá pagar 5 millones 478 mil 100 pesos a favor del Ayuntamiento a través de la Tesorería Municipal.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Savanna Hábitat Residencial"
+   ],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$2,300.00",
+     "valor_mxn": 2300
+    },
+    {
+     "texto": "$5'478,100.00",
+     "valor_mxn": 5478100
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Fraccionamiento Savanna Hábitat Residencial",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "En asuntos generales se informó de la entrega de informes trimestrales de actividades de los munícipes y se habló de la promoción de los mercados, del convenio con la Escuela Filial Oficial del Club América Nido Águila Colima en las canchas de El Diezmo, de la trata de personas y de la atención a personas en situación vulnerable; no hubo una votación sobre estos temas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [
+    "El Diezmo",
+    "Niños Héroes"
+   ],
+   "obras": [
+    "Centro Deportivo Venustiano Carranza",
+    "canchas deportivas de El Diezmo"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 13 horas con 11 minutos y se levantó el acta con las firmas de los asistentes.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

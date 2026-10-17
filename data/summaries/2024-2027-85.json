@@ -1,0 +1,362 @@
+{
+ "id": "2024-2027-85",
+ "no_acta": 85,
+ "fecha": "2026-08-05",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-17T11:25:08+00:00",
+ "lectura": {
+  "chars_ocr": 78825,
+  "chars_leidos": 78825,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "La sesión difirió las actas 83 y 84, aprobó por mayoría enviar al Congreso el informe financiero semestral 2026 y conoció el Programa Operativo Anual 2026 con 27 obras.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia del Presidente Municipal, la Síndica y las y los regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se autorizó por unanimidad que las Actas de Cabildo N° 83 y 84 se presenten en la próxima sesión, en lugar de aprobarse en esta.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por mayoría remitir al H. Congreso del Estado de Colima el Informe de Avance de la Gestión Financiera del primer semestre de 2026, con los votos en contra de las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "más de noventa y dos millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "menos de sesenta y cinco millones",
+     "valor_mxn": null
+    },
+    {
+     "texto": "quinientos cuarenta y seis millones de pesos",
+     "valor_mxn": 546000000
+    },
+    {
+     "texto": "más de seiscientos diecisiete millones",
+     "valor_mxn": null
+    },
+    {
+     "texto": "más de sesenta millones de pesos de diferencia",
+     "valor_mxn": null
+    },
+    {
+     "texto": "casi cuarenta y cinco millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "más de diez millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "casi ciento sesenta y cuatro millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "casi noventa y tres millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "apenas treinta y tres mil pesos",
+     "valor_mxn": 33000
+    },
+    {
+     "texto": "más de un millón cien mil pesos",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó la ejecución de 27 obras y acciones, en su mayoría rehabilitación de alumbrado público y sustitución de luminarias en diversas colonias, con una inversión total de 56,882,340.51 pesos: 39,494,719.37 pesos con recurso del FAISMUN y 17,387,621.13 pesos de un crédito de BANOBRAS.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "COLONIA FRACCIONAMIENTO DIAMANTES",
+    "COLONIA RESIDENCIAL ESMERALDA",
+    "COL. REAL VISTA HERMOSA",
+    "COLONIA HACIENDA REAL",
+    "COLONIA RESIDENCIAL ESMERALDA NORTE",
+    "COLONIA NUEVO MILENIO",
+    "COLONIAS RESIDENCIAL LOMAS VERDES",
+    "RESIDENCIAL BUGAMBILIAS",
+    "JARDINES VISTA HERMOSA",
+    "COLONIA EL DIEZMO",
+    "COLONIA PRADOS DEL SUR",
+    "COLONIA MIGUEL HIDALGO",
+    "Miguel Hidalgo",
+    "Residencial Valle Dorado",
+    "San Pablo",
+    "El Moralete",
+    "Infonavit La Estancia",
+    "Camino Real",
+    "Fovissste Infonavit Camino Real",
+    "Las Víboras",
+    "Luis Donaldo Colosio",
+    "Revolución",
+    "La Virgencita",
+    "Josefa Ortiz de Domínguez"
+   ],
+   "obras": [
+    "CONSTRUCCIÓN DE MURO DE CONTENCIÓN EN COLIMA, ARROYO SANTA GERTRUDIS ENTRE AVENI",
+    "CONSTRUCCIÓN DE CANCHA DE USOS MÚLTIPLES EN COLIMA, COLONIA FRACCIONAMIENTO DIAM",
+    "REHABILITACIÓN DE JARDÍN PÚBLICO EN COLIMA, COLONIA RESIDENCIAL ESMERALDA, AVENI",
+    "REHABILITACIÓN DE JARDÍN PÚBLICO EN COLIMA, COL. REAL VISTA HERMOSA (COLONIA HAC",
+    "REHABILITACIÓN JARDÍN PÚBLICO EN COLIMA, COLONIA RESIDENCIAL ESMERALDA NORTE EN ",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN COLIMA, COLONIA NUEVO MILENIO CALLE LA CUMBRE TRAM",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN DE CONCRETO HIDRÁULICO EN COLIMA, COLONIAS RESIDEN",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN DE CONCRETO HIDRÁULICO EN COLIMA, COLONIA EL DIEZM",
+    "CONSTRUCCIÓN DE PAVIMENTACIÓN EN COLIMA, COLONIA PRADOS DEL SUR, CALLE RICARDO P",
+    "CONSTRUCCIÓN DE RED DE ALCANTARILLADO PLUVIAL, COLECTOR Y BOCA DE TORMENTA EN CO",
+    "CONSTRUCCIÓN DE RED DE ALCANTARILLADO PLUVIAL Y BOCA DE TORMENTA EN COLIMA, COLO",
+    "REHABILITACIÓN DE ALUMBRADO PÚBLICO, SUSTITUCIÓN DE LUMINARIAS, EN COLIMA, COLON",
+    "Rehabilitación de alumbrado público y sustitución de luminarias",
+    "Construcción de canal pluvial y boca de tormenta en la colonia Residencial Valle",
+    "Calzada La Armonía entre Venustiano Carranza y el Río Colima",
+    "Construcción de pavimentación con concreto hidráulico en la colonia El Diezmo"
+   ],
+   "montos": [
+    {
+     "texto": "$56,882,340.51",
+     "valor_mxn": 56882340.51
+    },
+    {
+     "texto": "$39,494,719.37",
+     "valor_mxn": 39494719.37
+    },
+    {
+     "texto": "$17,387,621.13",
+     "valor_mxn": 17387621.13
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó asignar el espacio en la intersección del distribuidor vial norte, entre la Avenida Ignacio Sandoval y el Tercer Anillo Periférico, para edificar la Torre Conmemorativa Bastión por los 500 años de la Fundación de la Villa de San Sebastián de la Provincia de Colima; los costos de la construcción serán cubiertos por la sociedad civil organizada.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [
+    "Torre Bastión conmemorativa al Quinto Centenario de la Fundación de la Villa de ",
+    "Distribuidor vial norte, intersección entre la Avenida Ignacio Sandoval y el Ter"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Comité Ciudadano para la Conmemoración del Quinto Centenario de la Fundación de la Villa de San Sebastián de la Provinci",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación; de Patrimonio Municipal; y de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la Universidad de las Américas y El Caribe para vinculación institucional, formación continua, eventos académicos y culturales, servicio social y prácticas profesionales, así como becas y descuentos para trabajadores del Ayuntamiento y sus familiares directos.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Universidad de las Américas y El Caribe",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y la Institución de Asistencia Privada Inclusión, Un Mundo Diferente, para impartir talleres de Lengua de Señas a trabajadores del Ayuntamiento y público en general, y coordinar capacitaciones para mejorar los niveles de interpretación en Lengua de Señas Mexicana.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Institución de Asistencia Privada “Inclusión, Un Mundo Diferente”",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Salud Pública, Familia y Grupos Vulnerables",
+   "autor": {
+    "nombre": "Profra. Ana Isabel Flores Viera",
+    "id": "ana-isabel-flores-viera"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se presentó el dictamen que autoriza suscribir dos convenios de colaboración con las empresas QR Fitness, S.A. de C.V. y QR Padel, S.A. de C.V., que ofrecen a los trabajadores del Ayuntamiento descuentos en inscripción y mensualidad de hasta el 100 por ciento en inscripción y una mensualidad de 800 pesos, así como actividades deportivas conjuntas; el fragmento no permite confirmar el resultado de la votación.",
+   "sentido": "no_determinable",
+   "categoria": "convenio",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$1,000.00 pesos",
+     "valor_mxn": 1000
+    },
+    {
+     "texto": "$800.00 pesos",
+     "valor_mxn": 800
+    }
+   ],
+   "beneficiario": {
+    "nombre": "QR Fitness, S.A. de C.V. y QR Padel, S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Gobernación y Reglamentos y de Juventud y Deporte",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se declaró clausurada la sesión a las 13 horas con 38 minutos del día, una vez agotado el orden del día.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
