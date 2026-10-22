@@ -1,14 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-10-19T19:42:34+00:00",
+ "generado": "2026-10-22T18:24:32+00:00",
  "cobertura": {
-  "actas_en_termino": 88,
+  "actas_en_termino": 89,
   "con_resumen": 85,
   "con_tier_a": 85,
   "con_ficha_decision": 85,
   "con_asistencia": 85,
-  "nota": "Análisis parcial: 85 de 88 actas del término tienen resumen, 85 tienen los campos analíticos (categoría, votación, colonias, montos) y 85 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 85 de 89 actas del término tienen resumen, 85 tienen los campos analíticos (categoría, votación, colonias, montos) y 85 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 988,
@@ -897,6 +897,14 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-85.pdf"
    },
    {
+    "acta": "2024-2027-86",
+    "no_acta": 86,
+    "fecha": "2026-08-14",
+    "n_puntos": 15,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-86_opt.pdf"
+   },
+   {
     "acta": "2024-2027-87",
     "no_acta": 87,
     "fecha": "2026-08-29",
@@ -921,15 +929,14 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-92.pdf"
    }
   ],
-  "nota": "Las 88 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 89 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
-  "actas_en_termino": 88,
+  "actas_en_termino": 89,
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
   "huecos_de_numeracion": [
-   86,
    88,
    89,
    91
