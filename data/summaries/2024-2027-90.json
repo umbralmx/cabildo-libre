@@ -1,0 +1,140 @@
+{
+ "id": "2024-2027-90",
+ "no_acta": 90,
+ "fecha": "2026-09-09",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-24T12:00:28+00:00",
+ "lectura": {
+  "chars_ocr": 25264,
+  "chars_leidos": 25264,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El Cabildo aprobó donar a la Diócesis de Colima un predio de 1,292.01 metros cuadrados en la colonia Pablo Silva García para la capilla San Judas Tadeo, y aplazó la aprobación de cuatro actas.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia de diez integrantes de forma presencial, dos vía remota y una falta justificada.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Comprobado el quórum legal, se declaró formalmente instalada la sesión extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "A petición del Presidente Municipal se autorizó por unanimidad presentar las Actas de Cabildo 86, 87, 88 y 89 en una próxima sesión, por lo que no se aprobaron en esta fecha.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó con doce votos la desafectación, desincorporación y enajenación a título gratuito del predio con clave catastral 02-01-20-158-001-000, de 1,292.01 metros cuadrados, ubicado entre las calles República de Nicaragua y República de Panamá de la colonia Pablo Silva García, a favor de la Diócesis de Colima para construir y operar la capilla San Judas Tadeo; los gastos de escrituración quedan a cargo del donatario.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "mayoria",
+   "colonias": [
+    "Pablo Silva García",
+    "Santa Elena",
+    "Antorchista",
+    "Gregorio Torres Quintero",
+    "El Moralete",
+    "El Diezmo",
+    "Las Américas"
+   ],
+   "obras": [
+    "Construcción de la capilla San Judas Tadeo",
+    "Calle República de Nicaragua",
+    "Calle República de Panamá"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Diócesis de Colima, Asociación Religiosa",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

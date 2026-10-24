@@ -1,0 +1,566 @@
+{
+ "id": "2024-2027-86",
+ "no_acta": 86,
+ "fecha": "2026-08-14",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-24T11:58:43+00:00",
+ "lectura": {
+  "chars_ocr": 360212,
+  "chars_leidos": 360212,
+  "ventanas": 9,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El cabildo de Colima sesionó para tratar adecuaciones presupuestales de julio de 2026 por 26.6 millones de pesos solicitadas por la Tesorería, y aprobó el acta 83, dejando pendientes las 84 y 85.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista: asistieron el Presidente Municipal y ocho regidores y regidoras presentes, tres más de forma remota, con falta justificada de la Síndica Municipal.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión Ordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura de las actas 83, 84 y 85 y se aprobó el Acta de Cabildo 83 por unanimidad; las actas 84 y 85 quedaron pendientes para una próxima sesión.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "El acta asienta que el dictamen que autoriza a la Tesorería Municipal las adecuaciones presupuestales de julio de 2026 se aprobó por mayoría, con dos regidoras en contra. La Comisión de Hacienda lo había presentado en sentido negativo, por lo que el texto no aclara si las adecuaciones quedaron autorizadas.",
+   "sentido": "no_determinable",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$26\"639,079.47",
+     "valor_mxn": 26639079.47
+    },
+    {
+     "texto": "26,639,079.47",
+     "valor_mxn": 26639079.47
+    },
+    {
+     "texto": "$4'313,991.75 (Cuatro millones trescientos trece mil novecientos noventa y un pesos 75/100 m.n.)",
+     "valor_mxn": 4313991.75
+    },
+    {
+     "texto": "nueve millones quinientos setenta y cuatro mil trescientos sesenta y dos pesos con cinco centavos",
+     "valor_mxn": 9574362.05
+    },
+    {
+     "texto": "catorce millones ochocientos ochenta y cuatro mil treinta y seis pesos con cincuenta y ocho centavos",
+     "valor_mxn": 14884036.58
+    },
+    {
+     "texto": "un millón quinientos ochenta y dos mil doscientos pesos",
+     "valor_mxn": 1582200.0
+    },
+    {
+     "texto": "superior a cincuenta y ocho millones de pesos",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se discutió el dictamen sobre los resultados de la Cuenta Pública de julio de 2026; un integrante de la Comisión de Hacienda sostuvo un dictamen en sentido negativo por inconsistencias en la información. El acta registra que el dictamen fue aprobado por mayoría, con los votos en contra de las Regidoras Azucena López Legorreta y Diana Gabriela Vizcaíno Aguirre.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "más de doscientos ochenta y tres millones de pesos",
+     "valor_mxn": null
+    }
+   ],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": null
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se autorizó la baja definitiva de la licencia B-000538 de Adriana Mireya Manjarrez González, para restaurante con venta de cerveza en Av. San Fernando 201, colonia Lomas de Circunvalación, porque el establecimiento ya no funciona.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Lomas de Circunvalación"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Adriana Mireya Manjarrez González",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autorizaron cuatro licencias para la venta y consumo de bebidas alcohólicas: tienda de abarrotes 'Los Abuelos' en Infonavit Camino Real, 'Abarrotes Jimena' en colonia Centro, restaurante 'Güero Zarandero' en Residencial Puerta del Sol y restaurante 'La Martha Aguachiles y Zarandeados' en Los Girasoles; los titulares tienen 45 días hábiles para cubrir los derechos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Infonavit Camino Real",
+    "Centro",
+    "Residencial Puerta del Sol",
+    "Los Girasoles"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Brayan Humberto Munguía Gómez, Eduardo Josuel Medina Anguiano, Leonardo Rey Castañeda Lira y José Ramiro Castañeda Lira",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizaron las ampliaciones presupuestales solicitadas por la Tesorería Municipal para el ejercicio 2026: recursos fiscales a Servicios Generales, 1,214,710 pesos adicionales de FORTAMUN y una reducción de 8,161,971 pesos en FAISMUN para obras.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$19000,000.00",
+     "valor_mxn": 19000000
+    },
+    {
+     "texto": "$7'400,000.00",
+     "valor_mxn": 7400000
+    },
+    {
+     "texto": "$5'600,000.00",
+     "valor_mxn": 5600000
+    },
+    {
+     "texto": "$6'000.000.00",
+     "valor_mxn": 6000000
+    },
+    {
+     "texto": "$241'924,073",
+     "valor_mxn": 241924073
+    },
+    {
+     "texto": "$161'573,642.00",
+     "valor_mxn": 161573642
+    },
+    {
+     "texto": "$73'403,170.00",
+     "valor_mxn": 73403170
+    },
+    {
+     "texto": "$ - 8,161,971.00",
+     "valor_mxn": -8161971
+    },
+    {
+     "texto": "$1'214,710.00",
+     "valor_mxn": 1214710
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Mtro. Edgar Osiris Alcaraz Saucedo",
+    "id": "edgar-osiris-alcaraz-saucedo"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprobó la convocatoria para elegir a la Embajadora del Municipio de Colima 2026, quien representará al municipio en el certamen estatal de la Feria de Todos los Santos; la ganadora recibirá un estímulo de 25,000 pesos.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$25,000.00 (veinticinco mil pesos 00/100 m.n.)",
+     "valor_mxn": 25000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Embajadora del Municipio de Colima 2026",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Educación, Cultura y Recreación y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó el dictamen de adecuaciones presupuestales del POA 2026 que autoriza obras de pavimentación y alumbrado público por 56,882,340.50 pesos: 39,494,719.37 del FAISMUN y 17,387,621.13 de crédito BANOBRAS, y se instruye a la Tesorería realizar las ampliaciones y transferencias y al Presidente girar las instrucciones.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [
+    "Fraccionamiento Diamantes",
+    "Residencial Esmeralda",
+    "Real Vista Hermosa",
+    "Hacienda Real",
+    "Residencial Esmeralda Norte",
+    "Residencial Lomas Verdes",
+    "Residencial Bugambilias",
+    "Jardines Vista Hermosa",
+    "El Diezmo",
+    "Prados del Sur",
+    "Miguel Hidalgo",
+    "Valle Dorado",
+    "San Pablo",
+    "El Moralete",
+    "Infonavit La Estancia",
+    "Camino Real",
+    "Fovissste",
+    "Infonavit Camino Real",
+    "Las Víboras"
+   ],
+   "obras": [
+    "Construcción de cancha de usos múltiples en colonia Fraccionamiento Diamantes, a",
+    "Rehabilitación de jardín público en colonia Residencial Esmeralda, avenida Venus",
+    "Rehabilitación de jardín público en colonia Hacienda Real, calle J. Jesús Ponce ",
+    "Rehabilitación de jardín lineal en colonia Residencial Esmeralda Norte, calle Ja",
+    "Construcción de pavimentación de concreto hidráulico en colonias Residencial Lom",
+    "Construcción de pavimentación de concreto hidráulico en colonia El Diezmo, calle",
+    "Construcción de pavimentación en colonia Prados del Sur, calle Ricardo Palacios ",
+    "Construcción de red de alcantarillado pluvial y boca de tormenta en colonia Migu",
+    "Construcción de red de alcantarillado pluvial y boca de tormenta en colonia Resi",
+    "Rehabilitación de alumbrado público, sustitución de luminarias, en colonia San P",
+    "Rehabilitación de alumbrado público, sustitución de luminarias, en colonias San ",
+    "Rehabilitación de alumbrado público, sustitución de luminarias, en colonias Info",
+    "Pavimentación de concreto hidráulico en calle 27 de Septiembre, entre Agustín Yá",
+    "Pavimentación de concreto hidráulico en colonia El Diezmo, calle Prof. Cruz Camp",
+    "Pavimentación en colonia Prados del Sur, calle Ricardo Palacios, tramo carretera",
+    "Rehabilitación de alumbrado público en San Pablo, Avenida 20 de Noviembre, glori",
+    "Rehabilitación de alumbrado público en San Pablo y El Moralete, Calzada del Camp",
+    "Rehabilitación de alumbrado público en Infonavit La Estancia, Camino Real, Fovis",
+    "Rehabilitación de alumbrado público en Avenida Gonzalo de Sandoval (112 luminari",
+    "Rehabilitación de alumbrado público en Unidad Antorchista, Avenida Leonardo Brav",
+    "Rehabilitación de alumbrado público en Avenida Leonardo Bravo Sur (24 piezas)",
+    "Rehabilitación de alumbrado público en Avenida Tecnológico (27 piezas)",
+    "Rehabilitación de alumbrado público en Avenida Felipe Sevilla del Río (64 piezas",
+    "Rehabilitación de alumbrado público en Avenida Miguel Cervantes de Saavedra (15 "
+   ],
+   "montos": [
+    {
+     "texto": "$2,845,808.08",
+     "valor_mxn": 2845808.08
+    },
+    {
+     "texto": "$2,224,556.05",
+     "valor_mxn": 2224556.05
+    },
+    {
+     "texto": "$1,598,915.09",
+     "valor_mxn": 1598915.09
+    },
+    {
+     "texto": "$1,519,333.10",
+     "valor_mxn": 1519333.1
+    },
+    {
+     "texto": "$4,957,522.07",
+     "valor_mxn": 4957522.07
+    },
+    {
+     "texto": "$4,301,856.87",
+     "valor_mxn": 4301856.87
+    },
+    {
+     "texto": "$397,552.28",
+     "valor_mxn": 397552.28
+    },
+    {
+     "texto": "$567,931.82",
+     "valor_mxn": 567931.82
+    },
+    {
+     "texto": "$695,716.48",
+     "valor_mxn": 695716.48
+    },
+    {
+     "texto": "$1,606,946.52",
+     "valor_mxn": 1606946.52
+    },
+    {
+     "texto": "$205,052.67",
+     "valor_mxn": 205052.67
+    },
+    {
+     "texto": "$ 39,494,719.37",
+     "valor_mxn": 39494719.37
+    },
+    {
+     "texto": "$17,387,621.13",
+     "valor_mxn": 17387621.13
+    },
+    {
+     "texto": "$56,882,340.50",
+     "valor_mxn": 56882340.5
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la Fe de Erratas al Programa Parcial de Urbanización del Fraccionamiento Allure Residencial, promovida por Ardica Construcciones y Desarrolla y Edifica Colima, que corrige números de lote y manzana, claves catastrales, medidas de linderos y nombres de calles; el costo de publicación e inscripción lo cubre el urbanizador.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Allure Residencial"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ardica Construcciones S.A. de C.V. y Desarrolla y Edifica Colima S.A. de C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó aceptar el avalúo de la M. Arq. Sandra Zenaida Gutiérrez Ramírez y pagar el área de cesión faltante del lote 02-04-66-024-006-000, en Granjas y Campestres del Chanal, a $3,256.00 por metro cuadrado, con un total de $399,647.95 a favor del Ayuntamiento.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Granjas y Campestres del Chanal"
+   ],
+   "obras": [
+    "Av. V. Carranza"
+   ],
+   "montos": [
+    {
+     "texto": "$ 3,256.00",
+     "valor_mxn": 3256.0
+    },
+    {
+     "texto": "$399,647.95",
+     "valor_mxn": 399647.95
+    }
+   ],
+   "beneficiario": {
+    "nombre": "C. Brenda Guadalupe Romaña Russi",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó por unanimidad el Programa Parcial de Urbanización Colinas de San Rafael, promovido por Ezequiel Franco Castellanos y Raúl Venegas Ochoa, que obliga a los promotores a habilitar la Avenida Constitución, el camino Chanal-La Capacha y las calles locales, y a entregar urbanizados los jardines vecinales; su publicación e inscripción correrán por cuenta del urbanizador.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Colinas de San Rafael",
+    "Residencial Jardines Victoria",
+    "Residencial Valle Verde",
+    "Fraccionamiento Punta Norte",
+    "Pedregal Residencial",
+    "fraccionamiento Victoria",
+    "La Capacha"
+   ],
+   "obras": [
+    "Av. Constitución",
+    "Camino Chanal-La Capacha",
+    "calle Rafael Venegas Maciel",
+    "calle Guadalupe Ochoa",
+    "calle María Maciel",
+    "pozo profundo",
+    "Vialidad Principal VP-6 (Avenida Constitución)",
+    "Arteria Colectora AC-68 (Camino Chanal-La Capacha)",
+    "calle Rafael Venegas Maciel, calle Guadalupe Ochoa y calle María Maciel",
+    "perforación y equipamiento de un pozo profundo",
+    "Jardines Vecinales"
+   ],
+   "montos": [
+    {
+     "texto": "$120,821.10",
+     "valor_mxn": 120821.1
+    }
+   ],
+   "beneficiario": {
+    "nombre": "EZEQUIEL FRANCO CASTELLANOS y RAÚL VENEGAS OCHOA",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Regidora Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "En Asuntos Generales no se presentaron temas a tratar.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,405 @@
+{
+ "id": "2024-2027-87",
+ "no_acta": 87,
+ "fecha": "2026-08-29",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-10-24T12:00:12+00:00",
+ "lectura": {
+  "chars_ocr": 222442,
+  "chars_leidos": 222442,
+  "ventanas": 6,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El cabildo aprobó las actas 84 y 85 y la incorporación municipal anticipada de la etapa 1 del fraccionamiento Valle del Carmen, y conoció un dictamen para vender y donar predios municipales.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de los regidores, con la comparecencia remota de la regidora Elia Margarita Moreno González.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura de las actas 84 y 85 y éstas se aprobaron por mayoría, con el voto en contra de dos regidoras; el acta 86 se presentará en la próxima sesión, lo que se aprobó por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad la incorporación municipal anticipada de la etapa 1 del fraccionamiento Valle del Carmen, con 84 lotes y 18,448.79 metros cuadrados, promovida por la empresa desarrolladora, que otorgó fianzas por las obras de urbanización.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "VALLE DEL CARMEN"
+   ],
+   "obras": [
+    "VALLE DEL VIZCAINO",
+    "VALLE DE LOS REYES",
+    "FCO. CORTES DE SAN BUENAVENTURA",
+    "VALLE DEL BAJÍO",
+    "5 DE FEBRERO",
+    "LA RIOJA"
+   ],
+   "montos": [
+    {
+     "texto": "$1'966,407.96",
+     "valor_mxn": 1966407.96
+    },
+    {
+     "texto": "$2'485,342.40",
+     "valor_mxn": 2485342.4
+    }
+   ],
+   "beneficiario": {
+    "nombre": "JADE GRUPO INMOBILIARIO S.A. DE C.V.",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó desincorporar y desafectar bienes inmuebles municipales y enajenar seis de ellos, donar cuatro predios de Villas del Bosque al INCOIFED y uno de Los Sauces a la Sociedad Civil Reg Siglo XXI AC, y cambiar la zonificación de un lote a habitacional plurifamiliar de densidad media; no se fijaron precios ni avalúos.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "mayoria",
+   "colonias": [
+    "Primavera Hills",
+    "Lo de Villa",
+    "Residencial Esmeralda Norte",
+    "Jardines Vista Hermosa",
+    "Villas del Bosque",
+    "Los Sauces",
+    "Jardines Residenciales",
+    "Margaritas II",
+    "Nuevo Milenio II",
+    "Residencial La Primavera",
+    "El Manchón"
+   ],
+   "obras": [
+    "Bachillerato Nacional Margarita Maza",
+    "Paseo Río Manrique",
+    "calle Onix",
+    "calle Amatista",
+    "calle Zafiro",
+    "calle Manuel Payno",
+    "Carretera Colima-Coquimatlán",
+    "calle Libro de Texto Gratuito",
+    "prolongación Esteban García",
+    "Callejón 1 Villas del Bosque",
+    "Callejón 2 Villas del Bosque",
+    "Callejón 3 Villas del Bosque",
+    "Callejón 4 Villas del Bosque",
+    "Casas del Bienestar",
+    "bachillerato",
+    "Centro Comunitario México Imparable"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "INCOIFED Instituto Colimense de la Infraestructura Física Educativa",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    }
+   ],
+   "abstenciones": [
+    {
+     "nombre": "Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó la entrega-recepción al Municipio de la infraestructura de alumbrado público del fraccionamiento MERIT RESIDENCIAL, etapas 1 a la 15, ubicado al norte de la ciudad. La obra se reporta concluida al 100% con lámparas LED y el urbanizador deberá entregar fianza de un año por calidad de materiales y vicios ocultos.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "MERIT RESIDENCIAL"
+   ],
+   "obras": [
+    "Infraestructura de Alumbrado Público",
+    "Infraestructura de Alumbrado Público del fraccionamiento MERIT RESIDENCIAL, Etap"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Fraccionamiento MERIT RESIDENCIAL",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se aprobó llevar a cabo la entrega-recepción de la infraestructura de alumbrado público del fraccionamiento Primavera Hills, Etapas 1 y 2, mediante convenio con el urbanizador, quien deberá exhibir fianza por un año que garantice la calidad de los materiales y la ausencia de vicios ocultos.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "PRIMAVERA HILLS",
+    "PRIMAVERA HILLS ETAPAS 1 y 2"
+   ],
+   "obras": [
+    "Infraestructura de Alumbrado Público del fraccionamiento PRIMAVERA HILLS, Etapas",
+    "Infraestructura de Alumbrado Público del Fraccionamiento PRIMAVERA HILLS ETAPAS "
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Fraccionamiento PRIMAVERA HILLS, Etapas 1 y 2",
+    "tipo": "fraccionamiento"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autorizó dar de baja la licencia comercial B-002635, titular Beatriz Montes de Oca Sánchez, giro restaurante con venta de cerveza, con domicilio en Av. Ignacio Sandoval No. 1866-9, Real Vista Hermosa III, debido a que el establecimiento ya no funciona.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Real Vista Hermosa III"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Beatriz Montes de Oca Sánchez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se autorizó la expedición de dos licencias comerciales para venta y consumo de bebidas alcohólicas: un depósito de cerveza denominado Depósito Reforma, de Ismael Jesús Velasco Carrasco, en Reforma No. 345, Colonia Centro, y una cervecería denominada Cervecería de la Costa, de DIRECTO DE LA COSTA S.A. de C.V., en Av. Venustiano Carranza No. 2213 int. 6-7, Residencial Rincón del Colibrí, sujetas al cumplimiento de requisitos y pago de derechos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Centro",
+    "Residencial Rincón del Colibrí"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ismael Jesús Velasco Carrasco",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se aprobó suscribir un convenio de colaboración con las veterinarias Morelos Alpha Vet Shop y Veterinaria y Alimentos Morelos para ofrecer a la población asesoría en el control y tratamiento del gusano barrenador, con descuento del 20 por ciento en productos veterinarios para su control.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Veterinaria Morelos Alpha Vet Shop",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Gobernación y Reglamentos y de Desarrollo Social y Rural",
+   "autor": {
+    "nombre": "Emilio Rosario Aldorica Pulido",
+    "id": "emilio-rosario-aldorica-pulido"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó iniciar la intención de hermanamiento entre el Ayuntamiento de Colima y el Ayuntamiento de Guadalupe, Cáceres, provincia de Extremadura, España, para fortalecer lazos culturales, históricos y de investigación académica en torno a la figura de Lorenzo Lebrón de Quiñones, y se instruyó a la Dirección de Asuntos Jurídicos a realizar los trámites ante la Secretaría de Relaciones Exteriores.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Ayuntamiento de Guadalupe, Cáceres, Provincia de Extremadura, España",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones de Educación, Cultura y Recreación y de Gobernación y Reglamentos",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 13,
+   "numeral": "XIII",
+   "resumen": "Se aprobó remitir al Congreso del Estado la iniciativa para declarar formalmente 2027 como Año del Quinto Centenario de la Fundación de la Villa de San Sebastián de la Provincia de Colima, y se instruyó al Secretario del Ayuntamiento enviarla.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Comité Ciudadano para la Conmemoración del Quinto Centenario de la Fundación de la Villa de San Sebastián de la Provinci",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 14,
+   "numeral": "XIV",
+   "resumen": "Se aprobó declarar el Patio Central de la Presidencia Municipal como recinto oficial para la sesión extraordinaria del 18 de septiembre de 2026, en la que se instalará el Cabildo Juvenil 2026 con jóvenes integrantes del mismo.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Cabildo Juvenil 2026",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 15,
+   "numeral": "XV",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 21 horas con 05 minutos.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
