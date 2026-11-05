@@ -1,14 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-11-02T22:38:13+00:00",
+ "generado": "2026-11-05T20:57:31+00:00",
  "cobertura": {
-  "actas_en_termino": 89,
+  "actas_en_termino": 91,
   "con_resumen": 89,
   "con_tier_a": 89,
   "con_ficha_decision": 89,
   "con_asistencia": 89,
-  "nota": "Análisis parcial: 89 de 89 actas del término tienen resumen, 89 tienen los campos analíticos (categoría, votación, colonias, montos) y 89 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 89 de 91 actas del término tienen resumen, 89 tienen los campos analíticos (categoría, votación, colonias, montos) y 89 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 1036,
@@ -913,6 +913,22 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-87_opt.pdf"
    },
    {
+    "acta": "2024-2027-88",
+    "no_acta": 88,
+    "fecha": "2026-09-04",
+    "n_puntos": 8,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-88.pdf"
+   },
+   {
+    "acta": "2024-2027-89",
+    "no_acta": 89,
+    "fecha": "2026-09-09",
+    "n_puntos": 6,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-89.pdf"
+   },
+   {
     "acta": "2024-2027-90",
     "no_acta": 90,
     "fecha": "2026-09-09",
@@ -929,16 +945,14 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-92.pdf"
    }
   ],
-  "nota": "Las 89 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 91 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
-  "actas_en_termino": 89,
+  "actas_en_termino": 91,
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
   "huecos_de_numeracion": [
-   88,
-   89,
    91
   ],
   "numeros_duplicados": [],
