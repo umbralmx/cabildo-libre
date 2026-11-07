@@ -1,0 +1,147 @@
+{
+ "id": "2024-2027-89",
+ "no_acta": 89,
+ "fecha": "2026-09-09",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-07T13:43:48+00:00",
+ "lectura": {
+  "chars_ocr": 17491,
+  "chars_leidos": 17491,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El Cabildo declaró recinto oficial el área verde de la colonia Pablo Silva García para sesionar por la tarde, autorizó un contrato de compensación vehicular y pospuso la lectura de tres actas.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista: asistieron el Presidente, la Síndica y ocho regidores y regidoras, tres de ellas vía remota, con falta justificada de dos regidoras.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión Extraordinaria de Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "A solicitud del Presidente Municipal, el Cabildo autorizó presentar las Actas de Cabildo N° 86, 87 y 88 en una próxima sesión, en lugar de leerlas y aprobarlas en esta fecha.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se declaró recinto oficial, por única vez, el área verde entre las calles República de Nicaragua y República de Panamá, de la colonia Pablo Silva García, para celebrar la Sesión Extraordinaria de Cabildo a las 17:00 horas, en la que se presentaría el dictamen sobre la donación del predio para la capilla San Judas Tadeo a la Diócesis de Colima.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Pablo Silva García",
+    "Pablo Silva",
+    "Lázaro Cárdenas",
+    "Antorchista"
+   ],
+   "obras": [
+    "área verde ubicada entre las calles República de Nicaragua y República de Panamá",
+    "capilla San Judas Tadeo"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Diócesis de Colima, Asociación Religiosa",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autorizó celebrar un contrato de compensación por desgaste de vehículo particular con el trabajador Daniel Alejandro González Blanco, adscrito a Recursos Humanos, vigente hasta el 31 de diciembre de 2026, con apoyo quincenal de $409.24, hasta 50 litros de gasolina al mes y la mitad del mantenimiento.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$409.24 (cuatrocientos nueve pesos 24/100 M.N.)",
+     "valor_mxn": 409.24
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Daniel Alejandro González Blanco",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Hacienda Municipal",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  }
+ ]
+}

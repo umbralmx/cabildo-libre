@@ -1,0 +1,259 @@
+{
+ "id": "2024-2027-88",
+ "no_acta": 88,
+ "fecha": "2026-09-04",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-07T13:43:33+00:00",
+ "lectura": {
+  "chars_ocr": 68170,
+  "chars_leidos": 68170,
+  "ventanas": 2,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El Cabildo aprobó el segundo listado de obras del POA 2026 por 13.4 millones de pesos, redujo el costo de una cancha en Fraccionamiento Diamantes y corrigió la fuente de financiamiento de una obra en la colonia Miguel Hidalgo.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia de diez regidores y regidoras, la Síndica y el Presidente Municipal, con una regidora presente vía remota y una falta justificada.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Al existir quórum legal se declaró formalmente instalada la sesión extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "A solicitud del Presidente Municipal se autorizó, por unanimidad, presentar las Actas de Cabildo 86 y 87 en la próxima sesión, por lo que su lectura y aprobación quedaron para ese momento.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad el segundo listado de obras del POA 2026, con cuatro obras directas, dos complementarias y el arrendamiento de tres vehículos, por 13 millones 414 mil 159.61 pesos; además se redujo el costo de la cancha de usos múltiples del Fraccionamiento Diamantes en 147 mil 438.76 pesos y se corrigió la fuente de financiamiento de la obra de alcantarillado de la colonia Miguel Hidalgo, de BANOBRAS a FAISMUN.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Fraccionamiento Diamantes",
+    "Miguel Hidalgo",
+    "Los Tepames",
+    "Platanarillo",
+    "Las Tunas",
+    "Residencial Girasoles",
+    "Las Pérgolas",
+    "Real Vista Hermosa",
+    "El Diezmo",
+    "Residencial Lomas Verdes",
+    "Residencial Bugambilias",
+    "Jardines Vista Hermosa"
+   ],
+   "obras": [
+    "Construcción de cancha de usos múltiples en Colima, colonia Fraccionamiento Diam",
+    "Construcción de red de alcantarillado pluvial, colector y boca de tormenta en Co",
+    "Rehabilitación de camino en Colima, localidad Los Tepames a Platanarillo",
+    "Rehabilitación de jardín público en Colima, localidad de Las Tunas",
+    "Construcción de pavimentación en crucero en Colima, colonias Residencial Girasol",
+    "Rehabilitación de drenaje sanitario en Colima, colonia El Diezmo, calle Prof. Cr",
+    "Rehabilitación de drenaje sanitario en Colima, colonias Residencial Lomas Verdes",
+    "Rehabilitación de alumbrado público, sustitución de luminarias, en Colima, colon",
+    "Arrendamiento de tres vehículos"
+   ],
+   "montos": [
+    {
+     "texto": "$13,414,159.61",
+     "valor_mxn": 13414159.61
+    },
+    {
+     "texto": "$2,845,808.08",
+     "valor_mxn": 2845808.08
+    },
+    {
+     "texto": "$2,698,369.32",
+     "valor_mxn": 2698369.32
+    },
+    {
+     "texto": "$147,438.76",
+     "valor_mxn": 147438.76
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó el Tercer Listado de Obras del POA 2026 con 7 obras por 13,265,588.58 pesos: 5,191,930.31 del FAISMUN y 8,073,658.27 del crédito BANOBRAS. Incluye techado de canchas de usos múltiples en Estapilla y Acatitán, sustitución de luminarias en colonias del norte de la ciudad, pavimentación de la calle Madero en Piscila y rehabilitación de caminos rurales.",
+   "sentido": "aprobado",
+   "categoria": "obra_publica",
+   "votacion": "unanime",
+   "colonias": [
+    "Infonavit La Estancia de los Trabajadores",
+    "La Virgencita",
+    "Los Ángeles",
+    "San Rafael",
+    "La Guadalupe",
+    "El Pedregal",
+    "Vicente Guerrero",
+    "Camino Real Insurgentes",
+    "Estapilla",
+    "Acatitán",
+    "Los Tepames",
+    "Platanarillo"
+   ],
+   "obras": [
+    "Rehabilitación y techado de cancha de usos múltiples en Colima, localidad Estapi",
+    "Rehabilitación y techado de cancha de usos múltiples en Colima, localidad de Aca",
+    "Rehabilitación de alumbrado público, sustitución de luminarias, en colonias Info",
+    "Construcción de pavimentación asfáltica en Colima, localidad Piscila, calle Made",
+    "Rehabilitación del camino de la localidad de Los Tepames a Platanarillo",
+    "Rehabilitación del jardín público de la localidad de Las Tunas",
+    "Rehabilitación del camino del Astillero de Arriba a La Media Luna",
+    "Rehabilitación del camino de Piscila a El Alpuyequito",
+    "Rehabilitación del camino del Astillero de Arriba hacia El Bordo"
+   ],
+   "montos": [
+    {
+     "texto": "$625,403.94",
+     "valor_mxn": 625403.94
+    },
+    {
+     "texto": "$395,825.28",
+     "valor_mxn": 395825.28
+    },
+    {
+     "texto": "$1,221,780.67",
+     "valor_mxn": 1221780.67
+    },
+    {
+     "texto": "$2,948,920.42",
+     "valor_mxn": 2948920.42
+    },
+    {
+     "texto": "$2,556,587.07",
+     "valor_mxn": 2556587.07
+    },
+    {
+     "texto": "$5,191,930.31",
+     "valor_mxn": 5191930.31
+    },
+    {
+     "texto": "$8,073,658.27",
+     "valor_mxn": 8073658.27
+    },
+    {
+     "texto": "$13,265,588.58",
+     "valor_mxn": 13265588.58
+    }
+   ],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Planeación, Obras y Servicios Públicos y Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se aprobó suscribir un convenio de colaboración entre el Municipio de Colima y el Instituto de Educación Universitaria Romero-Abaroa (UNIR-A) para realizar acciones conjuntas de educación continua, certificación de competencias, servicio social y prácticas profesionales. Se autorizó a la Presidenta o Presidente Municipal, a la Síndica y al Secretario del Ayuntamiento a firmarlo.",
+   "sentido": "aprobado",
+   "categoria": "convenio",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Instituto de Educación Universitaria Romero-Abaroa (UNIR-A)",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones conjuntas de Gobernación y Reglamentos y de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Agotado el orden del día, el Presidente Municipal declaró clausurada la sesión a las 13 horas con 19 minutos del 4 de septiembre de 2026.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
