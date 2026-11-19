@@ -1,14 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-11-16T23:15:16+00:00",
+ "generado": "2026-11-19T22:00:15+00:00",
  "cobertura": {
-  "actas_en_termino": 91,
+  "actas_en_termino": 93,
   "con_resumen": 91,
   "con_tier_a": 91,
   "con_ficha_decision": 91,
   "con_asistencia": 91,
-  "nota": "Análisis parcial: 91 de 91 actas del término tienen resumen, 91 tienen los campos analíticos (categoría, votación, colonias, montos) y 91 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 91 de 93 actas del término tienen resumen, 91 tienen los campos analíticos (categoría, votación, colonias, montos) y 91 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 1050,
@@ -937,23 +937,43 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-90.pdf"
    },
    {
+    "acta": "2024-2027-91",
+    "no_acta": 91,
+    "fecha": "2026-09-15",
+    "n_puntos": 12,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-91_opt.pdf"
+   },
+   {
     "acta": "2024-2027-92",
     "no_acta": 92,
     "fecha": "2026-09-22",
     "n_puntos": 12,
     "procesada": true,
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-92.pdf"
+   },
+   {
+    "acta": "2024-2027-98",
+    "no_acta": 98,
+    "fecha": "2026-10-30",
+    "n_puntos": 6,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-98.pdf"
    }
   ],
-  "nota": "Las 91 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 93 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
-  "actas_en_termino": 91,
+  "actas_en_termino": 93,
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
   "huecos_de_numeracion": [
-   91
+   93,
+   94,
+   95,
+   96,
+   97
   ],
   "numeros_duplicados": [],
   "nota": "Vacíos de la fuente, no imputados: sesiones cuyo órden del día no aparece en el índice, sin enlace al PDF o sin fecha, números de acta ausentes en el rango del término, y números que la fuente asigna a dos sesiones distintas. Se declaran tal como están: no se renumera ni se rellena nada."
