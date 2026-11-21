@@ -1,0 +1,136 @@
+{
+ "id": "2024-2027-98",
+ "no_acta": 98,
+ "fecha": "2026-10-30",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-21T15:08:37+00:00",
+ "lectura": {
+  "chars_ocr": 12337,
+  "chars_leidos": 12337,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "Sesión extraordinaria del 30 de octubre de 2026 en la que se aprobó cambiar el donatario de cuatro predios de Villas del Bosque, en la zona del Manchón, a favor de la SEP y dejar sin efectos la donación previa al INCOIFED; las actas 93, 96 y 97 se dejaron para la próxima sesión.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia de los integrantes del Ayuntamiento, incluidos tres munícipes que participaron de forma remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Al haber quórum legal se declaró formalmente instalada la Sesión Extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "El Presidente Municipal solicitó que las Actas de Cabildo 93, 96 y 97 se presenten y discutan en la próxima sesión, en lugar de esta; la solicitud se aprobó por unanimidad, por lo que su lectura y aprobación quedó pendiente.",
+   "sentido": "aplazado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó dejar sin efectos la donación de cuatro predios en Villas del Bosque (claves 02-01-03-146-016-000 a 02-01-03-146-019-000) al INCOIFED y escriturarlos a favor de la Secretaría de Educación Pública, con reversión al municipio si en dos años no se ejecutan las acciones solicitadas.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "mayoria",
+   "colonias": [
+    "Colonia Villas del Bosque",
+    "zona conocida como el Manchón, Zona de Tolerancia"
+   ],
+   "obras": [
+    "Callejón 1 Villas del Bosque",
+    "Callejón 2 Villas del Bosque",
+    "Callejón 3 Villas del Bosque",
+    "Callejón 4 Villas del Bosque"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Secretaría de Educación Pública (SEP)",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Patrimonio Municipal y Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Agotado el Orden del Día, el Presidente Municipal declaró clausurada la sesión a las 11 horas con 34 minutos.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

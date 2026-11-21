@@ -1,0 +1,539 @@
+{
+ "id": "2024-2027-91",
+ "no_acta": 91,
+ "fecha": "2026-09-15",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [
+  "punto 5: 28,123,633.59",
+  "punto 6: 1,783,630.96"
+ ],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-21T15:08:29+00:00",
+ "lectura": {
+  "chars_ocr": 302149,
+  "chars_leidos": 302149,
+  "ventanas": 8,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": true,
+ "resumen_sesion": "Sesión del 15 de septiembre: se aprobaron las actas 86, 88 y 89, se añadieron dos reconocimientos al orden del día y se presentó un dictamen de adecuaciones presupuestales por 24.9 millones de pesos.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia: estuvieron presentes el presidente municipal, la síndica y los regidores, uno de ellos de forma remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "Se aprobó por unanimidad el orden del día, al que se incorporaron dos asuntos: el reconocimiento Colimense Distinguido cada 15 de septiembre, propuesto por la Síndica, y la convocatoria para la Presea al Mérito Docente Profr. Jorge Castell Guerrero 2026, propuesta por el regidor Federico Rangel Lozano.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "Se dispensó la lectura de las actas 86 a 90; el acta 86 se aprobó por mayoría y las actas 88 y 89 por unanimidad, y quedaron pendientes para la próxima sesión el acta 87 y otra cuya numeración el texto no permite leer con certeza.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó el dictamen que autoriza a la Tesorería Municipal realizar las adecuaciones presupuestarias de agosto de 2026, con ampliaciones y reducciones compensadas por 24,886,709.56 pesos, e instruye al Presidente Municipal girar las instrucciones para aplicarlas y a la Secretaría certificar el acuerdo y turnarlo a Tesorería y Contraloría.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$24'886,709.56",
+     "valor_mxn": 24886709.56
+    },
+    {
+     "texto": "3,469.14",
+     "valor_mxn": 3469.14
+    },
+    {
+     "texto": "1,602.74",
+     "valor_mxn": 1602.74
+    },
+    {
+     "texto": "1,388.57",
+     "valor_mxn": 1388.57
+    },
+    {
+     "texto": "55,905.65",
+     "valor_mxn": 55905.65
+    },
+    {
+     "texto": "227,343.31",
+     "valor_mxn": 227343.31
+    },
+    {
+     "texto": "799,298.00",
+     "valor_mxn": 799298.0
+    },
+    {
+     "texto": "866,406.22",
+     "valor_mxn": 866406.22
+    },
+    {
+     "texto": "1,530,473.10",
+     "valor_mxn": 1530473.1
+    },
+    {
+     "texto": "1,711,592.61",
+     "valor_mxn": 1711592.61
+    },
+    {
+     "texto": "1,944,382.72",
+     "valor_mxn": 1944382.72
+    },
+    {
+     "texto": "2,120,137.22",
+     "valor_mxn": 2120137.22
+    },
+    {
+     "texto": "4,583,333.33",
+     "valor_mxn": 4583333.33
+    },
+    {
+     "texto": "24,886,709.56",
+     "valor_mxn": 24886709.56
+    },
+    {
+     "texto": "$3,236,924.03 (Tres millones doscientos treinta y seis mil novecientos veinticuatro pesos 03/100 m.n.)",
+     "valor_mxn": 3236924.03
+    },
+    {
+     "texto": "2,194,088.61",
+     "valor_mxn": 2194088.61
+    },
+    {
+     "texto": "2,143,221.78",
+     "valor_mxn": 2143221.78
+    },
+    {
+     "texto": "1,166,666.66",
+     "valor_mxn": 1166666.66
+    },
+    {
+     "texto": "851,718.46",
+     "valor_mxn": 851718.46
+    },
+    {
+     "texto": "641,390.22",
+     "valor_mxn": 641390.22
+    },
+    {
+     "texto": "312,879.71",
+     "valor_mxn": 312879.71
+    },
+    {
+     "texto": "diecisiete millones diez mil pesos",
+     "valor_mxn": 17010000
+    },
+    {
+     "texto": "cincuenta millones quinientos siete mil pesos",
+     "valor_mxn": 50507000
+    },
+    {
+     "texto": "treinta y tres millones cuatrocientos noventa y siete mil pesos",
+     "valor_mxn": 33497000
+    },
+    {
+     "texto": "trescientos noventa mil pesos",
+     "valor_mxn": 390000
+    },
+    {
+     "texto": "ochocientos veintinueve mil cuatrocientos veintiún pesos",
+     "valor_mxn": 829421
+    },
+    {
+     "texto": "noventa y dos mil ciento catorce pesos",
+     "valor_mxn": 92114
+    },
+    {
+     "texto": "cuatro millones quinientos ochenta y tres mil trecientos treinta y tres pesos con treinta y tres centavos",
+     "valor_mxn": 4583333.33
+    },
+    {
+     "texto": "ochocientos treinta y un mil seiscientos pesos",
+     "valor_mxn": 831600
+    },
+    {
+     "texto": "mil ochenta pesos",
+     "valor_mxn": 1080
+    },
+    {
+     "texto": "más de nueve millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "seis millones quinientos cincuenta mil pesos",
+     "valor_mxn": 6550000
+    },
+    {
+     "texto": "ocho millones quinientos treinta y ocho mil pesos",
+     "valor_mxn": 8538000
+    },
+    {
+     "texto": "3,236,924.03",
+     "valor_mxn": 3236924.03
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Tesorería Municipal",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se autoriza remitir al Congreso del Estado la Cuenta Pública de agosto de 2026; se aprueba por mayoría con dos votos en contra.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "mayoria",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "sesenta y dos millones ochocientos treinta y nueve mil pesos",
+     "valor_mxn": 62839000
+    },
+    {
+     "texto": "ochenta y seis millones noventa y dos mil pesos",
+     "valor_mxn": 86092000
+    },
+    {
+     "texto": "cincuenta y cinco millones cincuenta y dos mil pesos",
+     "valor_mxn": 55052000
+    },
+    {
+     "texto": "un millón setecientos ochenta y tres mil pesos",
+     "valor_mxn": 1783000
+    },
+    {
+     "texto": "más de cincuenta y tres millones de pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "veinte millones novecientos veintiocho mil pesos",
+     "valor_mxn": 20928000
+    },
+    {
+     "texto": "cincuenta y un mil trescientos sesenta y nueve pesos",
+     "valor_mxn": 51369
+    },
+    {
+     "texto": "dos millones setecientos noventa y ocho mil pesos",
+     "valor_mxn": 2798000
+    },
+    {
+     "texto": "dieciocho millones ciento treinta mil pesos",
+     "valor_mxn": 18130000
+    },
+    {
+     "texto": "veintiún millones ochocientos cincuenta y seis mil pesos",
+     "valor_mxn": 21856000
+    },
+    {
+     "texto": "novecientos veintisiete mil ochocientos treinta y un pesos",
+     "valor_mxn": 927831
+    },
+    {
+     "texto": "trescientos veintiún mil millones ochocientos cuarenta y tres mil pesos",
+     "valor_mxn": null
+    },
+    {
+     "texto": "doscientos treinta y nueve millones doscientos noventa y nueve mil pesos",
+     "valor_mxn": 239299000
+    },
+    {
+     "texto": "ochenta y dos millones quinientos cuarenta y cuatro mil pesos",
+     "valor_mxn": 82544000
+    },
+    {
+     "texto": "doscientos setenta y siete millones de pesos",
+     "valor_mxn": 277000000
+    },
+    {
+     "texto": "ochenta y siete millones setecientos quince mil pesos",
+     "valor_mxn": 87715000
+    },
+    {
+     "texto": "sesenta y seis millones ochocientos catorce mil pesos",
+     "valor_mxn": 66814000
+    },
+    {
+     "texto": "tres millones seiscientos noventa y tres mil pesos",
+     "valor_mxn": 3693000
+    },
+    {
+     "texto": "sesenta y tres millones ciento veinte mil pesos",
+     "valor_mxn": 63120000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "H. Congreso del Estado de Colima",
+    "tipo": "dependencia"
+   },
+   "votos_en_contra": [
+    {
+     "nombre": "C. Azucena López Legorreta",
+     "id": "azucena-lopez-legorreta"
+    },
+    {
+     "nombre": "Licda. Diana Gabriela Vizcaíno Aguirre",
+     "id": "diana-gabriela-vizcaino-aguirre"
+    }
+   ],
+   "abstenciones": [],
+   "comision": "Comisión de Hacienda Municipal",
+   "autor": {
+    "nombre": "Regidora Licda. Alondra Isabel López Alonso",
+    "id": "alondra-isabel-lopez-alonso"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Se crea la condecoración Mestizaje Colimense-Villa de San Sebastián de la Provincia de Colima, que se entregará cada 20 de enero y por primera vez el 20 de enero de 2027; se aprueba por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "patrimonio",
+   "votacion": "unanime",
+   "colonias": [
+    "Tecomán",
+    "Cajitlán",
+    "Villa de San Sebastián",
+    "Colima"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "personas físicas o morales que así lo acrediten",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Educación, Cultura y Recreación",
+   "autor": {
+    "nombre": "Regidor Mtro. Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  },
+  {
+   "n": 8,
+   "numeral": "VIII",
+   "resumen": "Se autoriza dar de baja la licencia B-002510 de Gerardo Nim Rod Villegas Larios para una cenaduría con venta de cerveza en Residencial Santa Bárbara, porque el establecimiento ya no funciona; se aprueba por unanimidad.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Residencial Santa Bárbara"
+   ],
+   "obras": [
+    "Prol. Venustiano Carranza No.1340-C"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Gerardo Nim Rod Villegas Larios",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 9,
+   "numeral": "IX",
+   "resumen": "Se autoriza la expedición de una licencia para tienda de abarrotes con venta de cerveza, a nombre de Claudia Alejandra Velasco López, en la calle Los Regalado 298, Colonia Centro, con nombre comercial Abarrotes Mitzy; la persona interesada tiene 45 días hábiles para cubrir los derechos.",
+   "sentido": "aprobado",
+   "categoria": "licencia",
+   "votacion": "unanime",
+   "colonias": [
+    "Colonia Centro"
+   ],
+   "obras": [
+    "Los Regalado no. 298"
+   ],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Claudia Alejandra Velasco López",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Comercio, Mercados y Restaurantes",
+   "autor": {
+    "nombre": "Regidor Lic. Juan Carlos Gómez Díaz",
+    "id": "juan-carlos-gomez-diaz"
+   }
+  },
+  {
+   "n": 10,
+   "numeral": "X",
+   "resumen": "Se aprueba el Estudio de Impacto Territorial y Urbano del lote 02-04-66-023-004-000 del Fraccionamiento Granjas y Campestres del Chanal, promovido por Sergio Nava García en representación del propietario Humberto Javier Iberri Reyes, para un uso comercial y habitacional de densidad media; se ordena su publicación e inscripción, con cargo a los promoventes, y se registra un pago de 25,547.77 pesos por el estudio.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Granjas y Campestres del Chanal",
+    "El Chanal",
+    "Montevista Residencial"
+   ],
+   "obras": [
+    "línea de conducción de 6 pulgadas de diámetro",
+    "consolidación de la acera al frente del inmueble",
+    "acciones de arbolado al interior y exterior del inmueble"
+   ],
+   "montos": [
+    {
+     "texto": "$ 25,547.77",
+     "valor_mxn": 25547.77
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Ing. Sergio Nava García en representación del Dr. Humberto Javier Iberri Reyes",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 11,
+   "numeral": "XI",
+   "resumen": "Se instituye el reconocimiento Colimense Distinguido, que se entregará cada 15 de septiembre en la Marcha de la Gratitud a una a tres personas, y para 2026 se otorga a Gustavo Adolfo El Toto Fernández Gutiérrez por su trayectoria en el jaripeo y los toros de reparo.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [
+    "Villa de Álvarez",
+    "Ocotillo",
+    "Coquimatlán",
+    "Comala",
+    "Tecomán"
+   ],
+   "obras": [],
+   "montos": [],
+   "beneficiario": {
+    "nombre": "Gustavo Adolfo El Toto Fernández Gutiérrez",
+    "tipo": "persona"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 12,
+   "numeral": "XII",
+   "resumen": "Se aprobó la convocatoria de la Presea al Mérito Docente Profr. Jorge Castell Guerrero 2026, que premiará a diez docentes con diploma y seis mil pesos cada uno, con erogación a cargo de recursos propios.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$73,000.00",
+     "valor_mxn": 73000
+    },
+    {
+     "texto": "seis mil pesos",
+     "valor_mxn": 6000
+    }
+   ],
+   "beneficiario": {
+    "nombre": "diez docentes del Municipio de Colima",
+    "tipo": "ciudadania"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisiones Conjuntas de Educación, Cultura y Recreación y Hacienda Municipal",
+   "autor": {
+    "nombre": "Federico Rangel Lozano",
+    "id": "federico-rangel-lozano"
+   }
+  }
+ ]
+}
