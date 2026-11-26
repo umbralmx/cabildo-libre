@@ -1,14 +1,14 @@
 {
  "termino": "2024-2027",
  "municipio": "Colima",
- "generado": "2026-11-24T01:31:29+00:00",
+ "generado": "2026-11-26T22:52:39+00:00",
  "cobertura": {
-  "actas_en_termino": 93,
+  "actas_en_termino": 95,
   "con_resumen": 93,
   "con_tier_a": 93,
   "con_ficha_decision": 93,
   "con_asistencia": 93,
-  "nota": "Análisis parcial: 93 de 93 actas del término tienen resumen, 93 tienen los campos analíticos (categoría, votación, colonias, montos) y 93 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
+  "nota": "Análisis parcial: 93 de 95 actas del término tienen resumen, 93 tienen los campos analíticos (categoría, votación, colonias, montos) y 93 tienen ficha de decisión (beneficiario, votos en contra, abstenciones, comisión, autoría). Las cifras crecen conforme avanza el procesamiento."
  },
  "decisiones": {
   "n_puntos": 1068,
@@ -953,6 +953,22 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/10/acta-no-92.pdf"
    },
    {
+    "acta": "2024-2027-94",
+    "no_acta": 94,
+    "fecha": "2026-10-05",
+    "n_puntos": 6,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-94.pdf"
+   },
+   {
+    "acta": "2024-2027-95",
+    "no_acta": 95,
+    "fecha": "2026-10-06",
+    "n_puntos": 7,
+    "procesada": false,
+    "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-95.pdf"
+   },
+   {
     "acta": "2024-2027-98",
     "no_acta": 98,
     "fecha": "2026-10-30",
@@ -961,17 +977,15 @@
     "pdf_url": "https://www.colima.gob.mx/portal2016/wp-content/uploads/2026/11/acta-no-98.pdf"
    }
   ],
-  "nota": "Las 93 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
+  "nota": "Las 95 sesiones del término según el índice oficial, procesadas o no. Esta sección no depende del OCR."
  },
  "integridad": {
-  "actas_en_termino": 93,
+  "actas_en_termino": 95,
   "sin_agenda_publicada": [],
   "sin_enlace_pdf": [],
   "sin_fecha_publicada": [],
   "huecos_de_numeracion": [
    93,
-   94,
-   95,
    96,
    97
   ],
