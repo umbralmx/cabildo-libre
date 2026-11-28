@@ -1,0 +1,163 @@
+{
+ "id": "2024-2027-95",
+ "no_acta": 95,
+ "fecha": "2026-10-06",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-28T15:56:24+00:00",
+ "lectura": {
+  "chars_ocr": 23543,
+  "chars_leidos": 23543,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "El cabildo municipalizó las Etapas 1 a 4 del Fraccionamiento Real La Floresta, con lo que el Ayuntamiento asume sus servicios, y declaró recinto oficial el Lienzo Charro Hacienda El Alpuyeque para una sesión extraordinaria de reconocimiento a la charrería.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista de asistencia y se registró la presencia de nueve regidores y del presidente municipal, con la comparecencia a distancia de una regidora y faltas justificadas de la síndica y dos regidores.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Habiendo quórum legal, se declaró formalmente instalada la Sesión Extraordinaria de Cabildo.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al orden del día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "A solicitud del presidente municipal, el cabildo autorizó dejar para una próxima sesión la presentación de las Actas de Cabildo N° 91, 93 y 94.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó municipalizar las Etapas 1, 2, 3 y 4 del Fraccionamiento Real La Floresta, con 124 lotes y calles como Av. de los Diamantes y Calle Bromelia, a favor del promotor Grupo Gosain; el urbanizador dejó una fianza de 356,029.04 pesos para garantizar las obras.",
+   "sentido": "aprobado",
+   "categoria": "fraccionamiento",
+   "votacion": "unanime",
+   "colonias": [
+    "Real La Floresta"
+   ],
+   "obras": [
+    "Av. de los Diamantes",
+    "Calle Bromelia",
+    "Calle Iris",
+    "Calle Flor de Coral",
+    "Prol. Av. Leonardo Bravo",
+    "Calle Petunia"
+   ],
+   "montos": [
+    {
+     "texto": "$ 356,029.04",
+     "valor_mxn": 356029.04
+    }
+   ],
+   "beneficiario": {
+    "nombre": "GRUPO GOSAIN S.A. DE C.V. Y/O ING. ISAAC RODRIGUEZ GOSAIN",
+    "tipo": "empresa"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": "Comisión de Desarrollo Urbano y Vivienda",
+   "autor": {
+    "nombre": "Licda. Claudia Janeth Farías López",
+    "id": "claudia-janeth-farias-lopez"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Se aprobó declarar por única vez recinto oficial el Lienzo Charro Hacienda El Alpuyeque, en el kilómetro 2.5 de la carretera Colima-Jiquilpan, para celebrar el 11 de octubre una sesión extraordinaria que reconocerá a niñas, niños, mujeres y hombres de la charrería colimense.",
+   "sentido": "aprobado",
+   "categoria": "otro",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [
+    "Lienzo Charro Hacienda El Alpuyeque, kilómetro 2.5 carretera Colima-Jiquilpan"
+   ],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Lic. Francisco Javier Bravo Gallardo",
+    "id": "francisco-javier-bravo-gallardo"
+   }
+  },
+  {
+   "n": 7,
+   "numeral": "VII",
+   "resumen": "Agotado el orden del día, el presidente municipal declaró clausurada la sesión a las 19:37 horas.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "id": "2024-2027-94",
+ "no_acta": 94,
+ "fecha": "2026-10-05",
+ "periodo": "2024-2027",
+ "esquema": 3,
+ "modelo": "deepseek-v4-flash",
+ "montos_descartados": [],
+ "fuente_texto": "tesseract-spa",
+ "generado": "2026-11-28T15:56:12+00:00",
+ "lectura": {
+  "chars_ocr": 27069,
+  "chars_leidos": 27069,
+  "ventanas": 1,
+  "ventanas_fallidas": 0,
+  "completa": true
+ },
+ "puntos_en_conflicto": [],
+ "orden_del_dia_modificado": false,
+ "resumen_sesion": "En sesión extraordinaria, el Cabildo de Colima aprobó por unanimidad eliminar el nivel 16 del tabulador de sueldos para 2027 y reubicar en el nivel 15 a quienes ahí laboran.",
+ "puntos": [
+  {
+   "n": 1,
+   "numeral": "I",
+   "resumen": "Se pasó lista y se registró la asistencia del Presidente, la Síndica, regidoras y regidores, incluida la Regidora Azucena López Legorreta vía remota.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 2,
+   "numeral": "II",
+   "resumen": "Constatado el quórum legal, se declaró instalada formalmente la Sesión Extraordinaria.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 3,
+   "numeral": "III",
+   "resumen": "El Secretario del Ayuntamiento dio lectura al Orden del Día previsto para la sesión.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  },
+  {
+   "n": 4,
+   "numeral": "IV",
+   "resumen": "A solicitud del Presidente Municipal, el Cabildo autorizó por unanimidad que las Actas de Cabildo 91 y 93 se presenten para su aprobación en una próxima sesión, en lugar de desahogarse en esta.",
+   "sentido": "aprobado",
+   "categoria": "tramite",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Mtro. Riult Rivera Gutiérrez",
+    "id": "riult-rivera-gutierrez"
+   }
+  },
+  {
+   "n": 5,
+   "numeral": "V",
+   "resumen": "Se aprobó por unanimidad eliminar el nivel 16 del Tabulador de Sueldos y Remuneraciones del Municipio de Colima para el ejercicio fiscal 2027, con la finalidad de que ningún nivel quede por debajo del salario mínimo, y reubicar al personal de ese nivel en el nivel 15, con efectos a partir del 1 de enero de 2027 y sólo en caso de que vulnere la garantía de pago del salario mínimo. Se instruyó a Oficialía Mayor y Tesorería hacer las adecuaciones presupuestales correspondientes.",
+   "sentido": "aprobado",
+   "categoria": "presupuesto_finanzas",
+   "votacion": "unanime",
+   "colonias": [],
+   "obras": [],
+   "montos": [
+    {
+     "texto": "$9,451.20 (nueve mil cuatrocientos cincuenta y un pesos 20/100 m.n.)",
+     "valor_mxn": 9451.2
+    },
+    {
+     "texto": "$8,695.10 (Ocho mil seiscientos noventa y cinco pesos 10/100 m.n.)",
+     "valor_mxn": 8695.1
+    },
+    {
+     "texto": "$315.04",
+     "valor_mxn": 315.04
+    }
+   ],
+   "beneficiario": {
+    "nombre": "Personas trabajadoras del Municipio de Colima ubicadas en el nivel salarial 16",
+    "tipo": "otro"
+   },
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": {
+    "nombre": "Dra. Itzel Sarahí Ríos de la Mora",
+    "id": "itzel-sarahi-rios-de-la-mora"
+   }
+  },
+  {
+   "n": 6,
+   "numeral": "VI",
+   "resumen": "Agotado el Orden del Día, el Presidente Municipal declaró clausurada la sesión a las 12 horas con 42 minutos.",
+   "sentido": "tramite",
+   "categoria": "tramite",
+   "votacion": "no_determinable",
+   "colonias": [],
+   "obras": [],
+   "montos": [],
+   "beneficiario": null,
+   "votos_en_contra": [],
+   "abstenciones": [],
+   "comision": null,
+   "autor": null
+  }
+ ]
+}
